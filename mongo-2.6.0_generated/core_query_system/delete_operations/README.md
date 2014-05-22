@@ -8,8 +8,8 @@ Code that is specific to deletion operations
 Standalone function to perform a delete operation.  Nothing more than a thin shim around the core deletion functionality.
 
 #### Files
-- src/mongo/db/ops/delete.cpp   (mongod, tools)
-- src/mongo/db/ops/delete.h   (mongod, tools)
+- [src/mongo/db/ops/delete.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/ops/delete.cpp)   (mongod, tools)
+- [src/mongo/db/ops/delete.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/ops/delete.h)   (mongod, tools)
 
 #### [Interface](interface/0)
 
@@ -21,7 +21,7 @@ Standalone function to perform a delete operation.  Nothing more than a thin shi
 Parsed representation of a delete request that contains all information needed to execute a delete operation.
 
 #### Files
-- src/mongo/db/ops/delete\_request.h   (mongod, tools)
+- [src/mongo/db/ops/delete\_request.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/ops/delete_request.h)   (mongod, tools)
 
 #### [Interface](interface/1)
 
@@ -33,8 +33,8 @@ Parsed representation of a delete request that contains all information needed t
 Class for parsing and executing a delete operation.  This exists to centralize all the delete execution code as well as to separate the processing and actual execution of a delete request so that as much is done outside a write lock as possible.
 
 #### Files
-- src/mongo/db/ops/delete\_executor.h   (mongod, tools)
-- src/mongo/db/ops/delete\_executor.cpp   (mongod, tools)
+- [src/mongo/db/ops/delete\_executor.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/ops/delete_executor.h)   (mongod, tools)
+- [src/mongo/db/ops/delete\_executor.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/ops/delete_executor.cpp)   (mongod, tools)
 
 #### [Interface](interface/2)
 

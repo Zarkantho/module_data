@@ -8,8 +8,8 @@ Entry points into the query system from outside the query system.  Note that the
 Top level entry point for find and getMore operations.  Essentially a bunch of glue that connects all the different pieces of the query system together.
 
 #### Files
-- src/mongo/db/query/new\_find.cpp   (mongod, tools)
-- src/mongo/db/query/new\_find.h   (mongod, tools)
+- [src/mongo/db/query/new\_find.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/query/new_find.cpp)   (mongod, tools)
+- [src/mongo/db/query/new\_find.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/query/new_find.h)   (mongod, tools)
 
 #### [Interface](interface/0)
 
@@ -21,8 +21,8 @@ Top level entry point for find and getMore operations.  Essentially a bunch of g
 Entry point to run the count command.  Defers actual work to the core query system.
 
 #### Files
-- src/mongo/db/ops/count.cpp   (mongod, tools)
-- src/mongo/db/ops/count.h   (mongod, tools)
+- [src/mongo/db/ops/count.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/ops/count.cpp)   (mongod, tools)
+- [src/mongo/db/ops/count.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/ops/count.h)   (mongod, tools)
 
 #### [Interface](interface/1)
 

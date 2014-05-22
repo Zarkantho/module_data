@@ -34,8 +34,8 @@ Here is a visual representation of the work done by the journal thread. https://
 Page aligned buffer builder
 
 #### Files
-- src/mongo/util/alignedbuilder.cpp   (mongod, tools)
-- src/mongo/util/alignedbuilder.h   (mongod, tools)
+- [src/mongo/util/alignedbuilder.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/alignedbuilder.cpp)   (mongod, tools)
+- [src/mongo/util/alignedbuilder.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/alignedbuilder.h)   (mongod, tools)
 
 #### [Interface](interface/0)
 
@@ -47,8 +47,8 @@ Page aligned buffer builder
 In memory classes that store operations from clients that need to be journaled that have not yet been serialized into journal entries.
 
 #### Files
-- src/mongo/db/dur\_commitjob.cpp   (mongod, tools)
-- src/mongo/db/dur\_commitjob.h   (mongod, tools)
+- [src/mongo/db/dur\_commitjob.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur_commitjob.cpp)   (mongod, tools)
+- [src/mongo/db/dur\_commitjob.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur_commitjob.h)   (mongod, tools)
 
 #### [Interface](interface/1)
 
@@ -60,7 +60,7 @@ In memory classes that store operations from clients that need to be journaled t
 Stage of journaling that takes the in memory representation of operations that need to be journaled and processes them to create the actual buffers that get written back to the journal files.  Also handles merging of overlapping entries.
 
 #### Files
-- src/mongo/db/dur\_preplogbuffer.cpp   (mongod, tools)
+- [src/mongo/db/dur\_preplogbuffer.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur_preplogbuffer.cpp)   (mongod, tools)
 
 #### [Interface](interface/2)
 
@@ -72,9 +72,9 @@ Stage of journaling that takes the in memory representation of operations that n
 Used to manage the journal files, including allocation and appending data.  Actually writes the data to the on disk journal files.
 
 #### Files
-- src/mongo/db/dur\_journal.cpp   (mongod, tools)
-- src/mongo/db/dur\_journal.h   (mongod, tools)
-- src/mongo/db/dur\_journalimpl.h   (mongod, tools)
+- [src/mongo/db/dur\_journal.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur_journal.cpp)   (mongod, tools)
+- [src/mongo/db/dur\_journal.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur_journal.h)   (mongod, tools)
+- [src/mongo/db/dur\_journalimpl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur_journalimpl.h)   (mongod, tools)
 
 #### [Interface](interface/3)
 
@@ -86,7 +86,7 @@ Used to manage the journal files, including allocation and appending data.  Actu
 Stage of journaling that actully applies the journal operations to the shared view of the data files, logically writing the changes back to disk.  Journal files only get deleted when the changes have actually been written to disk.
 
 #### Files
-- src/mongo/db/dur\_writetodatafiles.cpp   (mongod, tools)
+- [src/mongo/db/dur\_writetodatafiles.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur_writetodatafiles.cpp)   (mongod, tools)
 
 #### [Interface](interface/4)
 
@@ -98,8 +98,8 @@ Stage of journaling that actully applies the journal operations to the shared vi
 Operations that need to be journaled that are not writes, such as data file creation.
 
 #### Files
-- src/mongo/db/durop.cpp   (mongod, tools)
-- src/mongo/db/durop.h   (mongod, tools)
+- [src/mongo/db/durop.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/durop.cpp)   (mongod, tools)
+- [src/mongo/db/durop.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/durop.h)   (mongod, tools)
 
 #### [Interface](interface/5)
 
@@ -111,8 +111,8 @@ Operations that need to be journaled that are not writes, such as data file crea
 Top level interface to the journaling system as well as the journal commit thread.  This interface can be transparently swapped out with a class that does not actually do the journaling in the case where journaling is disabled.
 
 #### Files
-- src/mongo/db/dur.cpp   (mongod, tools)
-- src/mongo/db/dur.h   (mongod, tools, mongos)
+- [src/mongo/db/dur.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur.cpp)   (mongod, tools)
+- [src/mongo/db/dur.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/6)
 
@@ -124,7 +124,7 @@ Top level interface to the journaling system as well as the journal commit threa
 On disk format of all journaling related objects.
 
 #### Files
-- src/mongo/db/dur\_journalformat.h   (mongod, tools)
+- [src/mongo/db/dur\_journalformat.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur_journalformat.h)   (mongod, tools)
 
 #### [Interface](interface/7)
 
@@ -136,8 +136,8 @@ On disk format of all journaling related objects.
 Code to actually apply the journal operations when the system is recovering.  Note that currently this is also used during normal operation when writing to the persistent representation of the datafiles.
 
 #### Files
-- src/mongo/db/dur\_recover.cpp   (mongod, tools)
-- src/mongo/db/dur\_recover.h   (mongod, tools)
+- [src/mongo/db/dur\_recover.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur_recover.cpp)   (mongod, tools)
+- [src/mongo/db/dur\_recover.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur_recover.h)   (mongod, tools)
 
 #### [Interface](interface/8)
 
@@ -149,7 +149,7 @@ Code to actually apply the journal operations when the system is recovering.  No
 Statistics about our journal operation.
 
 #### Files
-- src/mongo/db/dur\_stats.h   (mongod, tools)
+- [src/mongo/db/dur\_stats.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dur_stats.h)   (mongod, tools)
 
 #### [Interface](interface/9)
 
@@ -161,8 +161,8 @@ Statistics about our journal operation.
 Classes to make it easier to manage and keep track of the private and shared "views" of a file needed by the journaling system.  This also handles remapping the private view to allow the OS to free the pages that are no longer needed.
 
 #### Files
-- src/mongo/db/storage/durable\_mapped\_file.cpp   (mongod, tools)
-- src/mongo/db/storage/durable\_mapped\_file.h   (mongod, tools, mongos)
+- [src/mongo/db/storage/durable\_mapped\_file.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/storage/durable_mapped_file.cpp)   (mongod, tools)
+- [src/mongo/db/storage/durable\_mapped\_file.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/storage/durable_mapped_file.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/10)
 
@@ -174,8 +174,8 @@ Classes to make it easier to manage and keep track of the private and shared "vi
 Used by journaling system to write our prepared buffers to the journal files.
 
 #### Files
-- src/mongo/util/logfile.cpp   (mongod, tools)
-- src/mongo/util/logfile.h   (mongod, tools)
+- [src/mongo/util/logfile.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/logfile.cpp)   (mongod, tools)
+- [src/mongo/util/logfile.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/logfile.h)   (mongod, tools)
 
 #### [Interface](interface/11)
 

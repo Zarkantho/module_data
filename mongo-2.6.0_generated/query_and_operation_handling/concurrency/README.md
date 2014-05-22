@@ -8,8 +8,8 @@ Concurrency management for operations on mongod as well as synchronization primi
 Top level entry point into the mongod concurrency system.
 
 #### Files
-- src/mongo/db/d\_concurrency.cpp   (mongod, tools)
-- src/mongo/db/d\_concurrency.h   (mongod, tools, mongos)
+- [src/mongo/db/d\_concurrency.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/d_concurrency.cpp)   (mongod, tools)
+- [src/mongo/db/d\_concurrency.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/d_concurrency.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 
@@ -29,8 +29,8 @@ The "Special DB Level" locks are for the "admin" and "local" databases.  The ide
 All the DB level locks are "Reader Writer Locks", and the global lock is a "Quad Lock".
 
 #### Files
-- src/mongo/db/lockstate.cpp   (mongod, tools)
-- src/mongo/db/lockstate.h   (mongod, tools, mongos)
+- [src/mongo/db/lockstate.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/lockstate.cpp)   (mongod, tools)
+- [src/mongo/db/lockstate.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/lockstate.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/1)
 
@@ -42,9 +42,9 @@ All the DB level locks are "Reader Writer Locks", and the global lock is a "Quad
 Implementation of a reader writer lock primitive.
 
 #### Files
-- src/mongo/util/concurrency/rwlock.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/rwlockimpl.cpp   (mongod, tools, mongos)
-- src/mongo/util/concurrency/rwlockimpl.h   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/rwlock.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/rwlock.h)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/rwlockimpl.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/rwlockimpl.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/rwlockimpl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/rwlockimpl.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/2)
 
@@ -62,7 +62,7 @@ The mapping between the names of the states are as follows:
 <state in MongoDB Quad Lock> = <state in SQL Server Lock> r = IS w = IX R = S W = X X = U
 
 #### Files
-- src/mongo/util/concurrency/qlock.h   (mongod, tools)
+- [src/mongo/util/concurrency/qlock.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/qlock.h)   (mongod, tools)
 
 #### [Interface](interface/3)
 
@@ -74,9 +74,9 @@ The mapping between the names of the states are as follows:
 Spin locks
 
 #### Files
-- src/mongo/util/concurrency/spin\_lock.cpp   (mongod, tools, mongos)
-- src/mongo/util/concurrency/spin\_lock.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/spin\_lock\_test.cpp   ()
+- [src/mongo/util/concurrency/spin\_lock.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/spin_lock.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/spin\_lock.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/spin_lock.h)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/spin\_lock\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/spin_lock_test.cpp)   ()
 
 #### [Interface](interface/4)
 
@@ -88,8 +88,8 @@ Spin locks
 Condition Variables
 
 #### Files
-- src/mongo/util/concurrency/synchronization.cpp   (mongod, tools, mongos)
-- src/mongo/util/concurrency/synchronization.h   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/synchronization.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/synchronization.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/synchronization.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/synchronization.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/5)
 
@@ -101,8 +101,8 @@ Condition Variables
 Statistics about locking behavior.
 
 #### Files
-- src/mongo/db/lockstat.cpp   (mongod, tools)
-- src/mongo/db/lockstat.h   (mongod, tools, mongos)
+- [src/mongo/db/lockstat.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/lockstat.cpp)   (mongod, tools)
+- [src/mongo/db/lockstat.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/lockstat.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/6)
 

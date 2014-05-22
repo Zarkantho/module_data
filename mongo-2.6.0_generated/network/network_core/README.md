@@ -10,10 +10,10 @@ The format of the packets in our wire protocol upon which everything else is bui
 The Message class has the lowest level buffer management, while the DbMessage class is a wrapper on top of it that helps for dealing with the different types of operations.
 
 #### Files
-- src/mongo/db/dbmessage.cpp   (mongod, tools, mongos)
-- src/mongo/db/dbmessage.h   (mongod, tools, mongos)
-- src/mongo/util/net/message.cpp   (mongod, tools, mongos)
-- src/mongo/util/net/message.h   (mongod, tools, mongos)
+- [src/mongo/db/dbmessage.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dbmessage.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/dbmessage.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dbmessage.h)   (mongod, tools, mongos)
+- [src/mongo/util/net/message.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/message.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/net/message.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/message.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 
@@ -25,9 +25,9 @@ The Message class has the lowest level buffer management, while the DbMessage cl
 Class providing an abstraction around a network socket.  Also contains the socket exception class.
 
 #### Files
-- src/mongo/util/net/sock.cpp   (mongod, tools, mongos)
-- src/mongo/util/net/sock.h   (mongod, tools, mongos)
-- src/mongo/util/net/sock\_test.cpp   ()
+- [src/mongo/util/net/sock.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/sock.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/net/sock.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/sock.h)   (mongod, tools, mongos)
+- [src/mongo/util/net/sock\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/sock_test.cpp)   ()
 
 #### [Interface](interface/1)
 
@@ -39,8 +39,8 @@ Class providing an abstraction around a network socket.  Also contains the socke
 Interface for a class that listens on a port and accepts incoming connections.  This does not look like a C++ interface because it does not seem to have pure virtual functions, but using this class on its own will eventually cause assertion to fail when a connection is accepted.  This unfortunately turns a compile time check into a runtime check, and makes it harder to tell that this is an interface, but despite that this class is logically an interface and never used on its own.
 
 #### Files
-- src/mongo/util/net/listen.cpp   (mongod, tools, mongos)
-- src/mongo/util/net/listen.h   (mongod, tools, mongos)
+- [src/mongo/util/net/listen.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/listen.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/net/listen.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/listen.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/2)
 
@@ -52,8 +52,8 @@ Interface for a class that listens on a port and accepts incoming connections.  
 Wrapper around a single socket providing an interface that works with the MongoDB wire protocol classes rather than raw buffers.  Also has methods to run the SSL handshake on the connection, and automatically handles piggybacking data to reduce the total number of network operations.
 
 #### Files
-- src/mongo/util/net/message\_port.cpp   (mongod, tools, mongos)
-- src/mongo/util/net/message\_port.h   (mongod, tools, mongos)
+- [src/mongo/util/net/message\_port.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/message_port.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/net/message\_port.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/message_port.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/3)
 
@@ -65,7 +65,7 @@ Wrapper around a single socket providing an interface that works with the MongoD
 Helper class for storing and checking strings of the form "host:port"
 
 #### Files
-- src/mongo/util/net/hostandport.h   (mongod, tools, mongos)
+- [src/mongo/util/net/hostandport.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/hostandport.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/4)
 
@@ -77,8 +77,8 @@ Helper class for storing and checking strings of the form "host:port"
 Code to poll a socket to check if it is still alive.  Useful for connection pooling to check if a connection we are getting from the pool is still good.
 
 #### Files
-- src/mongo/util/net/socket\_poll.cpp   (mongod, tools, mongos)
-- src/mongo/util/net/socket\_poll.h   (mongod, tools, mongos)
+- [src/mongo/util/net/socket\_poll.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/socket_poll.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/net/socket\_poll.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/socket_poll.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/5)
 
@@ -94,7 +94,7 @@ Note that mongod and mongos have different "handler" classes.  Currently these a
 Note also that the classes that this is built on work with "Message" objects, which is the basic unit in the wire protocol, and what the name of this class is based on.
 
 #### Files
-- src/mongo/util/net/message\_server.h   (mongod, mongos)
+- [src/mongo/util/net/message\_server.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/message_server.h)   (mongod, mongos)
 
 #### [Interface](interface/6)
 
@@ -106,7 +106,7 @@ Note also that the classes that this is built on work with "Message" objects, wh
 Thread based implementation of a message server, and helpers. Listens on the provided port and spawns a thread for every new connection.  The thread reads all data from a connection and makes callbacks to the "handler" object that was registered for this message server.
 
 #### Files
-- src/mongo/util/net/message\_server\_port.cpp   (mongod, mongos)
+- [src/mongo/util/net/message\_server\_port.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/message_server_port.cpp)   (mongod, mongos)
 
 #### [Interface](interface/7)
 
@@ -129,10 +129,10 @@ Experimental async implementation of a message server.  This is experimental and
 Implementation of the logic to handle incoming messages on mongos. The Request class is the entry point that decodes the operation type and calls to the STRATEGY object to do the work of handling the specific operation.
 
 #### Files
-- src/mongo/s/request.cpp   (mongos)
-- src/mongo/s/request.h   (mongod, tools, mongos)
-- src/mongo/s/strategy.cpp   (mongos)
-- src/mongo/s/strategy.h   (mongod, tools, mongos)
+- [src/mongo/s/request.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/request.cpp)   (mongos)
+- [src/mongo/s/request.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/request.h)   (mongod, tools, mongos)
+- [src/mongo/s/strategy.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/strategy.cpp)   (mongos)
+- [src/mongo/s/strategy.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/strategy.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/9)
 
@@ -144,8 +144,8 @@ Implementation of the logic to handle incoming messages on mongos. The Request c
 Globals and helpers for keeping track of the data needed for getLastError (part of legacy wire protocol).  Note that the globals are thread local, and a thread represents a connection, which is why we have getLastError state per thread.
 
 #### Files
-- src/mongo/db/lasterror.cpp   (mongod, tools, mongos)
-- src/mongo/db/lasterror.h   (mongod, tools, mongos)
+- [src/mongo/db/lasterror.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/lasterror.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/lasterror.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/lasterror.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/10)
 

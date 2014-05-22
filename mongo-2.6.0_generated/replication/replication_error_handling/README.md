@@ -8,7 +8,7 @@ Replication code specific error handling mechanisms
 Exceptions that can be thrown from replication code
 
 #### Files
-- src/mongo/db/repl/rs\_exception.h   (mongod, tools, mongos)
+- [src/mongo/db/repl/rs\_exception.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/rs_exception.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 

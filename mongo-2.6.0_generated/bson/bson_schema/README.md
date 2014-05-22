@@ -8,8 +8,8 @@ Utilities and interfaces for converting BSON objects and BSON types to and from 
 Classes that represent a schema for a particular field in BSON.  For a field, having schema just means that the field must have a particular type.  The class itself does type validation at compile time and can be used with a BSONObjBuilder.
 
 #### Files
-- src/mongo/bson/bson\_field.h   (mongod, tools, mongos)
-- src/mongo/bson/bson\_field\_test.cpp   ()
+- [src/mongo/bson/bson\_field.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/bson_field.h)   (mongod, tools, mongos)
+- [src/mongo/bson/bson\_field\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/bson_field_test.cpp)   ()
 
 #### [Interface](interface/0)
 
@@ -21,10 +21,10 @@ Classes that represent a schema for a particular field in BSON.  For a field, ha
 Given a field schema description and a BSON object, attempts to parse the field out of the BSON object with the expected type.  It is an error if the field is in the BSON object with the wrong type.
 
 #### Files
-- src/mongo/db/field\_parser-inl.h   (mongod, tools, mongos)
-- src/mongo/db/field\_parser.cpp   (mongod, tools, mongos)
-- src/mongo/db/field\_parser.h   (mongod, tools, mongos)
-- src/mongo/db/field\_parser\_test.cpp   ()
+- [src/mongo/db/field\_parser-inl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/field_parser-inl.h)   (mongod, tools, mongos)
+- [src/mongo/db/field\_parser.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/field_parser.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/field\_parser.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/field_parser.h)   (mongod, tools, mongos)
+- [src/mongo/db/field\_parser\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/field_parser_test.cpp)   ()
 
 #### [Interface](interface/1)
 
@@ -36,9 +36,9 @@ Given a field schema description and a BSON object, attempts to parse the field 
 Helpers to extract specific typed values out of BSON objects.  This provides the same functionality as the field schema with a slightly different interface.
 
 #### Files
-- src/mongo/bson/util/bson\_extract.cpp   (mongod, tools, mongos)
-- src/mongo/bson/util/bson\_extract.h   (mongod, tools, mongos)
-- src/mongo/bson/util/bson\_extract\_test.cpp   ()
+- [src/mongo/bson/util/bson\_extract.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/util/bson_extract.cpp)   (mongod, tools, mongos)
+- [src/mongo/bson/util/bson\_extract.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/util/bson_extract.h)   (mongod, tools, mongos)
+- [src/mongo/bson/util/bson\_extract\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/util/bson_extract_test.cpp)   ()
 
 #### [Interface](interface/2)
 
@@ -50,7 +50,7 @@ Helpers to extract specific typed values out of BSON objects.  This provides the
 Interface for a C++ class that is serializable to BSON and deserializable from BSON.  Each C++ object that implements this interface effectively will enforce a "schema" on the BSON objects it is meant to parse and represent.
 
 #### Files
-- src/mongo/s/bson\_serializable.h   (mongod, tools, mongos)
+- [src/mongo/s/bson\_serializable.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/bson_serializable.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/3)
 

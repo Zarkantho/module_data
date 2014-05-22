@@ -8,8 +8,8 @@ Code where we ask the user how "concerned" they are about their writes, and make
 Main entry point to write concern checking.  Contains code to wait for the appropriate write concern to be satisfied.
 
 #### Files
-- src/mongo/db/write\_concern.cpp   (mongod, tools)
-- src/mongo/db/write\_concern.h   (mongod, tools, mongos)
+- [src/mongo/db/write\_concern.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/write_concern.cpp)   (mongod, tools)
+- [src/mongo/db/write\_concern.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/write_concern.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 
@@ -21,8 +21,8 @@ Main entry point to write concern checking.  Contains code to wait for the appro
 Implementation of replication specific write concern checks. Contains code for making sure an operation has been replicated to a certain number of nodes, but does not contain code for dealing with disk related write concern values.
 
 #### Files
-- src/mongo/db/repl/write\_concern.cpp   (mongod, tools)
-- src/mongo/db/repl/write\_concern.h   (mongod, tools, mongos)
+- [src/mongo/db/repl/write\_concern.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/write_concern.cpp)   (mongod, tools)
+- [src/mongo/db/repl/write\_concern.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/write_concern.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/1)
 
@@ -34,8 +34,8 @@ Implementation of replication specific write concern checks. Contains code for m
 Helper to parse write concern options out of a BSONObj representing a "write concern object"
 
 #### Files
-- src/mongo/db/write\_concern\_options.cpp   (mongod, tools, mongos)
-- src/mongo/db/write\_concern\_options.h   (mongod, tools, mongos)
+- [src/mongo/db/write\_concern\_options.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/write_concern_options.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/write\_concern\_options.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/write_concern_options.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/2)
 

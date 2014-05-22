@@ -10,9 +10,9 @@ See https://github.com/10gen/specifications/blob/master/source/write-commands.rs
 Schema for the responses to write commands.
 
 #### Files
-- src/mongo/s/write\_ops/batched\_command\_response.cpp   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_command\_response.h   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_command\_response\_test.cpp   ()
+- [src/mongo/s/write\_ops/batched\_command\_response.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_command_response.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_command\_response.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_command_response.h)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_command\_response\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_command_response_test.cpp)   ()
 
 #### [Interface](interface/0)
 
@@ -24,8 +24,8 @@ Schema for the responses to write commands.
 This contains the interface for dealing with the schema of the various write commands.  Note that this class does not actually contain the schema, but instead just multiplexes between the various write command types, calling straight through to the classes for each type when appropriate.
 
 #### Files
-- src/mongo/s/write\_ops/batched\_command\_request.cpp   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_command\_request.h   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_command\_request.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_command_request.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_command\_request.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_command_request.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/1)
 
@@ -37,21 +37,21 @@ This contains the interface for dealing with the schema of the various write com
 These files contain the schema for the various write commands.  Some of the classes are for schema restrictions that we have on nested objects.  For example, an update command has an overall schema, but the update objects that we send with the command have a schema of their own.
 
 #### Files
-- src/mongo/s/write\_ops/batched\_delete\_document.cpp   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_delete\_document.h   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_delete\_request.cpp   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_delete\_request.h   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_delete\_request\_test.cpp   ()
-- src/mongo/s/write\_ops/batched\_insert\_request.cpp   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_insert\_request.h   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_insert\_request\_test.cpp   ()
-- src/mongo/s/write\_ops/batched\_update\_document.cpp   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_update\_document.h   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_update\_request.cpp   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_update\_request.h   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_update\_request\_test.cpp   ()
-- src/mongo/s/write\_ops/batched\_upsert\_detail.cpp   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_upsert\_detail.h   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_delete\_document.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_delete_document.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_delete\_document.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_delete_document.h)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_delete\_request.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_delete_request.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_delete\_request.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_delete_request.h)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_delete\_request\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_delete_request_test.cpp)   ()
+- [src/mongo/s/write\_ops/batched\_insert\_request.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_insert_request.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_insert\_request.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_insert_request.h)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_insert\_request\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_insert_request_test.cpp)   ()
+- [src/mongo/s/write\_ops/batched\_update\_document.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_update_document.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_update\_document.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_update_document.h)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_update\_request.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_update_request.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_update\_request.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_update_request.h)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_update\_request\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_update_request_test.cpp)   ()
+- [src/mongo/s/write\_ops/batched\_upsert\_detail.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_upsert_detail.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_upsert\_detail.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_upsert_detail.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/2)
 
@@ -63,9 +63,9 @@ These files contain the schema for the various write commands.  Some of the clas
 Metadata passed in the request object that does not have to do with the contents of the write command itself.  Currently used to check the shard version in a sharded cluster.
 
 #### Files
-- src/mongo/s/write\_ops/batched\_request\_metadata.cpp   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_request\_metadata.h   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/batched\_request\_metadata\_test.cpp   ()
+- [src/mongo/s/write\_ops/batched\_request\_metadata.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_request_metadata.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_request\_metadata.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_request_metadata.h)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/batched\_request\_metadata\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/batched_request_metadata_test.cpp)   ()
 
 #### [Interface](interface/3)
 
@@ -77,10 +77,10 @@ Metadata passed in the request object that does not have to do with the contents
 Schema for the errors that can be returned from write commands.  The two types are write errors and write concern errors.
 
 #### Files
-- src/mongo/s/write\_ops/wc\_error\_detail.cpp   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/wc\_error\_detail.h   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/write\_error\_detail.cpp   (mongod, tools, mongos)
-- src/mongo/s/write\_ops/write\_error\_detail.h   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/wc\_error\_detail.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/wc_error_detail.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/wc\_error\_detail.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/wc_error_detail.h)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/write\_error\_detail.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/write_error_detail.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/write\_ops/write\_error\_detail.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/write_ops/write_error_detail.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/4)
 

@@ -8,8 +8,8 @@ General Utilities.  Not all of this is new or usable without pulling in more dep
 Code to manage paths to files.  Conversion from relative to full path within database directory as  well as code to get the current partition (for readahead checks).
 
 #### Files
-- src/mongo/util/paths.cpp   (mongod, tools, mongos)
-- src/mongo/util/paths.h   (mongod, tools, mongos)
+- [src/mongo/util/paths.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/paths.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/paths.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/paths.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 
@@ -21,15 +21,15 @@ Code to manage paths to files.  Conversion from relative to full path within dat
 Classes to help in tracking statistics
 
 #### Files
-- src/mongo/db/stats/counters.cpp   (mongod, tools, mongos)
-- src/mongo/db/stats/counters.h   (mongod, tools, mongos)
-- src/mongo/db/stats/snapshots.cpp   (mongod, tools)
-- src/mongo/db/stats/snapshots.h   (mongod, tools, mongos)
-- src/mongo/db/stats/snapshots\_webplugins.cpp   (mongod)
-- src/mongo/db/stats/timer\_stats.cpp   (mongod, tools, mongos)
-- src/mongo/db/stats/timer\_stats.h   (mongod, tools, mongos)
-- src/mongo/db/stats/top.cpp   (mongod, tools)
-- src/mongo/db/stats/top.h   (mongod, tools, mongos)
+- [src/mongo/db/stats/counters.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/stats/counters.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/stats/counters.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/stats/counters.h)   (mongod, tools, mongos)
+- [src/mongo/db/stats/snapshots.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/stats/snapshots.cpp)   (mongod, tools)
+- [src/mongo/db/stats/snapshots.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/stats/snapshots.h)   (mongod, tools, mongos)
+- [src/mongo/db/stats/snapshots\_webplugins.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/stats/snapshots_webplugins.cpp)   (mongod)
+- [src/mongo/db/stats/timer\_stats.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/stats/timer_stats.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/stats/timer\_stats.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/stats/timer_stats.h)   (mongod, tools, mongos)
+- [src/mongo/db/stats/top.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/stats/top.cpp)   (mongod, tools)
+- [src/mongo/db/stats/top.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/stats/top.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/1)
 
@@ -41,9 +41,9 @@ Classes to help in tracking statistics
 Utilities to hash BSON elements. Used in hashed shard keys and hashed indexes.
 
 #### Files
-- src/mongo/db/hasher.cpp   (mongod, tools, mongos)
-- src/mongo/db/hasher.h   (mongod, tools, mongos)
-- src/mongo/db/hasher\_test.cpp   ()
+- [src/mongo/db/hasher.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/hasher.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/hasher.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/hasher.h)   (mongod, tools, mongos)
+- [src/mongo/db/hasher\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/hasher_test.cpp)   ()
 
 #### [Interface](interface/2)
 
@@ -55,8 +55,8 @@ Utilities to hash BSON elements. Used in hashed shard keys and hashed indexes.
 Helpers to track in progress operations.  This works by inheriting from it when you make a class that represents an operation that should be tracked. The constructor registers itself in an "in progress" map, and the destructor removes it.
 
 #### Files
-- src/mongo/db/background.cpp   (mongod, tools)
-- src/mongo/db/background.h   (mongod, tools, mongos)
+- [src/mongo/db/background.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/background.cpp)   (mongod, tools)
+- [src/mongo/db/background.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/background.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/3)
 
@@ -68,8 +68,8 @@ Helpers to track in progress operations.  This works by inheriting from it when 
 Utility to check whether a certain time interval has elapsed. Currently only used in  d\_migrate.cpp to check if we should yield.
 
 #### Files
-- src/mongo/util/elapsed\_tracker.cpp   (mongod, tools)
-- src/mongo/util/elapsed\_tracker.h   (mongod, tools)
+- [src/mongo/util/elapsed\_tracker.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/elapsed_tracker.cpp)   (mongod, tools)
+- [src/mongo/util/elapsed\_tracker.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/elapsed_tracker.h)   (mongod, tools)
 
 #### [Interface](interface/4)
 
@@ -81,8 +81,8 @@ Utility to check whether a certain time interval has elapsed. Currently only use
 Helper classes to accumulate and log progress in a nice format using the logging system (so the logging system is only dependency)
 
 #### Files
-- src/mongo/util/progress\_meter.cpp   (mongod, tools, mongos)
-- src/mongo/util/progress\_meter.h   (mongod, tools, mongos)
+- [src/mongo/util/progress\_meter.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/progress_meter.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/progress\_meter.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/progress_meter.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/5)
 
@@ -94,8 +94,8 @@ Helper classes to accumulate and log progress in a nice format using the logging
 Debug macros and gdb server helpers
 
 #### Files
-- src/mongo/util/debug\_util.cpp   (mongod, tools, mongos)
-- src/mongo/util/debug\_util.h   (mongod, tools, mongos)
+- [src/mongo/util/debug\_util.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/debug_util.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/debug\_util.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/debug_util.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/6)
 
@@ -107,8 +107,8 @@ Debug macros and gdb server helpers
 Library to get and set the name of the current thread. Just uses a boost::thread\_specific\_ptr.
 
 #### Files
-- src/mongo/util/concurrency/thread\_name.cpp   (mongod, tools, mongos)
-- src/mongo/util/concurrency/thread\_name.h   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/thread\_name.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/thread_name.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/thread\_name.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/thread_name.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/7)
 
@@ -120,8 +120,8 @@ Library to get and set the name of the current thread. Just uses a boost::thread
 Utility library to manipulate hex strings
 
 #### Files
-- src/mongo/util/hex.cpp   (mongod, tools, mongos)
-- src/mongo/util/hex.h   (mongod, tools, mongos)
+- [src/mongo/util/hex.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/hex.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/hex.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/hex.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/8)
 
@@ -133,11 +133,11 @@ Utility library to manipulate hex strings
 Utilities to run jobs (threads) in the "background".  You can use this to run tasks periodically.  Note that there are two different classes here. One is a Task and one is a BackgroundJob.  They are both used in the code in various places.  Task is just a wrapper around BackgroundJob with a slightly simpler interface.  They both effectively serve the same purpose.
 
 #### Files
-- src/mongo/util/background.cpp   (mongod, tools, mongos)
-- src/mongo/util/background.h   (mongod, tools, mongos)
-- src/mongo/util/background\_job\_test.cpp   ()
-- src/mongo/util/concurrency/task.cpp   (mongod, tools, mongos)
-- src/mongo/util/concurrency/task.h   (mongod, tools, mongos)
+- [src/mongo/util/background.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/background.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/background.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/background.h)   (mongod, tools, mongos)
+- [src/mongo/util/background\_job\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/background_job_test.cpp)   ()
+- [src/mongo/util/concurrency/task.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/task.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/task.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/task.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/9)
 
@@ -149,7 +149,7 @@ Utilities to run jobs (threads) in the "background".  You can use this to run ta
 Wrapper around a background task that creates an object with a "server" interface.  What this means is that "messages" (in the form of lambdas) can be registered with this class to be called sometime in the future by the event loop in this task.  Some functions just register the function and return, and others will block until the function is executed.
 
 #### Files
-- src/mongo/util/concurrency/msg.h   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/msg.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/msg.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/10)
 
@@ -161,7 +161,7 @@ Wrapper around a background task that creates an object with a "server" interfac
 mapFindWithDefault - looks something up in a map with a default value.
 
 #### Files
-- src/mongo/util/map\_util.h   (mongod, tools, mongos)
+- [src/mongo/util/map\_util.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/map_util.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/11)
 
@@ -173,8 +173,8 @@ mapFindWithDefault - looks something up in a map with a default value.
 I still do not know what this was originally for, but I know we are slowly getting rid of it.
 
 #### Files
-- src/mongo/pch.cpp   (mongod, tools, mongos)
-- src/mongo/pch.h   (mongod, tools, mongos)
+- [src/mongo/pch.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/pch.cpp)   (mongod, tools, mongos)
+- [src/mongo/pch.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/pch.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/12)
 
@@ -186,8 +186,8 @@ I still do not know what this was originally for, but I know we are slowly getti
 Assertion library.
 
 #### Files
-- src/mongo/util/assert\_util.cpp   (mongod, tools, mongos)
-- src/mongo/util/assert\_util.h   (mongod, tools, mongos)
+- [src/mongo/util/assert\_util.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/assert_util.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/assert\_util.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/assert_util.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/13)
 
@@ -199,8 +199,8 @@ Assertion library.
 Helper library that you inherit from to make a class "reference counted"
 
 #### Files
-- src/mongo/util/intrusive\_counter.cpp   (mongod, tools, mongos)
-- src/mongo/util/intrusive\_counter.h   (mongod, tools, mongos)
+- [src/mongo/util/intrusive\_counter.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/intrusive_counter.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/intrusive\_counter.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/intrusive_counter.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/14)
 
@@ -212,11 +212,11 @@ Helper library that you inherit from to make a class "reference counted"
 md5 hash library
 
 #### Files
-- src/mongo/util/md5.cpp   (mongod, tools, mongos)
-- src/mongo/util/md5.h   (mongod, tools, mongos)
-- src/mongo/util/md5.hpp   (mongod, tools, mongos)
-- src/mongo/util/md5\_test.cpp   ()
-- src/mongo/util/md5main.cpp   ()
+- [src/mongo/util/md5.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/md5.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/md5.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/md5.h)   (mongod, tools, mongos)
+- [src/mongo/util/md5.hpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/md5.hpp)   (mongod, tools, mongos)
+- [src/mongo/util/md5\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/md5_test.cpp)   ()
+- [src/mongo/util/md5main.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/md5main.cpp)   ()
 
 #### [Interface](interface/15)
 
@@ -228,8 +228,8 @@ md5 hash library
 Windows service
 
 #### Files
-- src/mongo/util/ntservice.cpp   (mongod, mongos)
-- src/mongo/util/ntservice.h   (mongod, mongos)
+- [src/mongo/util/ntservice.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/ntservice.cpp)   (mongod, mongos)
+- [src/mongo/util/ntservice.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/ntservice.h)   (mongod, mongos)
 
 #### [Interface](interface/16)
 
@@ -241,8 +241,8 @@ Windows service
 Utilities to hash a username + password
 
 #### Files
-- src/mongo/client/auth\_helpers.cpp   (mongod, tools, mongos)
-- src/mongo/client/auth\_helpers.h   (mongod, tools, mongos)
+- [src/mongo/client/auth\_helpers.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/client/auth_helpers.cpp)   (mongod, tools, mongos)
+- [src/mongo/client/auth\_helpers.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/client/auth_helpers.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/17)
 
@@ -254,87 +254,87 @@ Utilities to hash a username + password
 Giant list of utilities that I haven't gotten to yet. TODO: document what these are for and why  you would use them.
 
 #### Files
-- src/mongo/util/queue.h   (mongod, tools)
-- src/mongo/util/ramlog.h   (mongod, tools, mongos)
-- src/mongo/util/safe\_num-inl.h   (mongod, tools, mongos)
-- src/mongo/util/safe\_num.cpp   (mongod, tools, mongos)
-- src/mongo/util/safe\_num.h   (mongod, tools, mongos)
-- src/mongo/util/safe\_num\_test.cpp   ()
-- src/mongo/util/scopeguard.h   (mongod, tools, mongos)
-- src/mongo/util/sequence\_util.h   (mongod, tools, mongos)
-- src/mongo/util/signal\_handlers.cpp   (mongod, mongos)
-- src/mongo/util/signal\_handlers.h   (mongod, mongos)
-- src/mongo/util/signal\_win32.cpp   (mongod, tools, mongos)
-- src/mongo/util/signal\_win32.h   (mongod, mongos)
-- src/mongo/util/stack\_introspect.cpp   (mongod, tools, mongos)
-- src/mongo/util/stack\_introspect.h   (mongod, tools, mongos)
-- src/mongo/util/stacktrace.cpp   (mongod, tools, mongos)
-- src/mongo/util/stacktrace.h   (mongod, tools, mongos)
-- src/mongo/util/startup\_test.cpp   (mongod, tools, mongos)
-- src/mongo/util/startup\_test.h   (mongod, tools, mongos)
-- src/mongo/util/string\_map.h   (mongod, tools, mongos)
-- src/mongo/util/string\_map\_test.cpp   ()
-- src/mongo/util/stringutils.cpp   (mongod, tools, mongos)
-- src/mongo/util/stringutils.h   (mongod, tools, mongos)
-- src/mongo/util/stringutils\_test.cpp   ()
-- src/mongo/util/tcmalloc\_server\_status\_section.cpp   (mongod, tools, mongos)
-- src/mongo/util/text.cpp   (mongod, tools, mongos)
-- src/mongo/util/text.h   (mongod, tools, mongos)
-- src/mongo/util/text\_startuptest.cpp   (mongod, tools, mongos)
-- src/mongo/util/text\_test.cpp   ()
-- src/mongo/util/time\_support.cpp   (mongod, tools, mongos)
-- src/mongo/util/time\_support.h   (mongod, tools, mongos)
-- src/mongo/util/time\_support\_test.cpp   ()
-- src/mongo/util/timer-generic-inl.h   (mongod, tools, mongos)
-- src/mongo/util/timer-inl.h   (mongod, tools, mongos)
-- src/mongo/util/timer-posixclock-inl.h   (mongod, tools, mongos)
-- src/mongo/util/timer-win32-inl.h   (mongod, tools, mongos)
-- src/mongo/util/timer.cpp   (mongod, tools, mongos)
-- src/mongo/util/timer.h   (mongod, tools, mongos)
-- src/mongo/util/touch\_pages.cpp   (mongod, tools)
-- src/mongo/util/touch\_pages.h   (mongod, tools)
-- src/mongo/util/trace.h   (mongod, tools, mongos)
-- src/mongo/util/unordered\_fast\_key\_table.h   (mongod, tools, mongos)
-- src/mongo/util/unordered\_fast\_key\_table\_internal.h   (mongod, tools, mongos)
-- src/mongo/util/util.cpp   (mongod, tools, mongos)
-- src/mongo/util/version\_reporting.cpp   (mongod, tools, mongos)
-- src/mongo/util/version\_reporting.h   (mongod, tools, mongos)
-- src/mongo/util/version\_test.cpp   ()
-- src/mongo/util/winutil.h   (mongod, mongos)
-- src/mongo/util/admin\_access.h   (mongod, tools, mongos)
-- src/mongo/util/allocator.h   (mongod, tools, mongos)
-- src/mongo/util/array.h   ()
-- src/mongo/util/base64.cpp   (mongod, tools, mongos)
-- src/mongo/util/base64.h   (mongod, tools, mongos)
-- src/mongo/util/bson\_util.h   (mongod, tools)
-- src/mongo/util/bufreader.h   (mongod, tools, mongos)
-- src/mongo/util/checksum.h   (mongod, tools)
-- src/mongo/util/compress.cpp   (mongod, tools)
-- src/mongo/util/compress.h   (mongod, tools)
-- src/mongo/util/concurrency/list.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/mapsf.h   (mongod, tools)
-- src/mongo/util/concurrency/mutex.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/mutexdebugger.cpp   (mongod, tools, mongos)
-- src/mongo/util/concurrency/mutexdebugger.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/mvar.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/race.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/shared\_mutex\_win.hpp   (mongod, tools, mongos)
-- src/mongo/util/concurrency/simplerwlock.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/thread\_pool.cpp   (mongod, tools, mongos)
-- src/mongo/util/concurrency/thread\_pool.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/threadlocal.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/ticketholder.h   (mongod, tools, mongos)
-- src/mongo/util/concurrency/value.h   (mongod, tools, mongos)
-- src/mongo/util/descriptive\_stats-inl.h   (mongod, tools)
-- src/mongo/util/descriptive\_stats.h   (mongod, tools)
-- src/mongo/util/descriptive\_stats\_test.cpp   ()
-- src/mongo/util/embedded\_builder.h   (mongod, tools, mongos)
-- src/mongo/util/exception\_filter\_win32.cpp   (mongod, tools, mongos)
-- src/mongo/util/exception\_filter\_win32.h   (mongod, tools, mongos)
-- src/mongo/util/exit\_code.h   (mongod, tools, mongos)
-- src/mongo/util/gcov.h   (mongod, tools, mongos)
-- src/mongo/util/goodies.h   (mongod, tools, mongos)
-- src/mongo/util/heapcheck.h   (mongod, tools, mongos)
+- [src/mongo/util/queue.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/queue.h)   (mongod, tools)
+- [src/mongo/util/ramlog.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/ramlog.h)   (mongod, tools, mongos)
+- [src/mongo/util/safe\_num-inl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/safe_num-inl.h)   (mongod, tools, mongos)
+- [src/mongo/util/safe\_num.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/safe_num.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/safe\_num.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/safe_num.h)   (mongod, tools, mongos)
+- [src/mongo/util/safe\_num\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/safe_num_test.cpp)   ()
+- [src/mongo/util/scopeguard.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/scopeguard.h)   (mongod, tools, mongos)
+- [src/mongo/util/sequence\_util.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/sequence_util.h)   (mongod, tools, mongos)
+- [src/mongo/util/signal\_handlers.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/signal_handlers.cpp)   (mongod, mongos)
+- [src/mongo/util/signal\_handlers.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/signal_handlers.h)   (mongod, mongos)
+- [src/mongo/util/signal\_win32.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/signal_win32.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/signal\_win32.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/signal_win32.h)   (mongod, mongos)
+- [src/mongo/util/stack\_introspect.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/stack_introspect.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/stack\_introspect.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/stack_introspect.h)   (mongod, tools, mongos)
+- [src/mongo/util/stacktrace.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/stacktrace.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/stacktrace.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/stacktrace.h)   (mongod, tools, mongos)
+- [src/mongo/util/startup\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/startup_test.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/startup\_test.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/startup_test.h)   (mongod, tools, mongos)
+- [src/mongo/util/string\_map.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/string_map.h)   (mongod, tools, mongos)
+- [src/mongo/util/string\_map\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/string_map_test.cpp)   ()
+- [src/mongo/util/stringutils.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/stringutils.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/stringutils.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/stringutils.h)   (mongod, tools, mongos)
+- [src/mongo/util/stringutils\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/stringutils_test.cpp)   ()
+- [src/mongo/util/tcmalloc\_server\_status\_section.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/tcmalloc_server_status_section.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/text.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/text.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/text.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/text.h)   (mongod, tools, mongos)
+- [src/mongo/util/text\_startuptest.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/text_startuptest.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/text\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/text_test.cpp)   ()
+- [src/mongo/util/time\_support.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/time_support.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/time\_support.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/time_support.h)   (mongod, tools, mongos)
+- [src/mongo/util/time\_support\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/time_support_test.cpp)   ()
+- [src/mongo/util/timer-generic-inl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/timer-generic-inl.h)   (mongod, tools, mongos)
+- [src/mongo/util/timer-inl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/timer-inl.h)   (mongod, tools, mongos)
+- [src/mongo/util/timer-posixclock-inl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/timer-posixclock-inl.h)   (mongod, tools, mongos)
+- [src/mongo/util/timer-win32-inl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/timer-win32-inl.h)   (mongod, tools, mongos)
+- [src/mongo/util/timer.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/timer.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/timer.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/timer.h)   (mongod, tools, mongos)
+- [src/mongo/util/touch\_pages.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/touch_pages.cpp)   (mongod, tools)
+- [src/mongo/util/touch\_pages.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/touch_pages.h)   (mongod, tools)
+- [src/mongo/util/trace.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/trace.h)   (mongod, tools, mongos)
+- [src/mongo/util/unordered\_fast\_key\_table.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/unordered_fast_key_table.h)   (mongod, tools, mongos)
+- [src/mongo/util/unordered\_fast\_key\_table\_internal.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/unordered_fast_key_table_internal.h)   (mongod, tools, mongos)
+- [src/mongo/util/util.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/util.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/version\_reporting.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/version_reporting.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/version\_reporting.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/version_reporting.h)   (mongod, tools, mongos)
+- [src/mongo/util/version\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/version_test.cpp)   ()
+- [src/mongo/util/winutil.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/winutil.h)   (mongod, mongos)
+- [src/mongo/util/admin\_access.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/admin_access.h)   (mongod, tools, mongos)
+- [src/mongo/util/allocator.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/allocator.h)   (mongod, tools, mongos)
+- [src/mongo/util/array.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/array.h)   ()
+- [src/mongo/util/base64.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/base64.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/base64.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/base64.h)   (mongod, tools, mongos)
+- [src/mongo/util/bson\_util.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/bson_util.h)   (mongod, tools)
+- [src/mongo/util/bufreader.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/bufreader.h)   (mongod, tools, mongos)
+- [src/mongo/util/checksum.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/checksum.h)   (mongod, tools)
+- [src/mongo/util/compress.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/compress.cpp)   (mongod, tools)
+- [src/mongo/util/compress.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/compress.h)   (mongod, tools)
+- [src/mongo/util/concurrency/list.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/list.h)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/mapsf.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/mapsf.h)   (mongod, tools)
+- [src/mongo/util/concurrency/mutex.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/mutex.h)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/mutexdebugger.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/mutexdebugger.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/mutexdebugger.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/mutexdebugger.h)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/mvar.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/mvar.h)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/race.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/race.h)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/shared\_mutex\_win.hpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/shared_mutex_win.hpp)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/simplerwlock.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/simplerwlock.h)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/thread\_pool.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/thread_pool.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/thread\_pool.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/thread_pool.h)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/threadlocal.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/threadlocal.h)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/ticketholder.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/ticketholder.h)   (mongod, tools, mongos)
+- [src/mongo/util/concurrency/value.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/concurrency/value.h)   (mongod, tools, mongos)
+- [src/mongo/util/descriptive\_stats-inl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/descriptive_stats-inl.h)   (mongod, tools)
+- [src/mongo/util/descriptive\_stats.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/descriptive_stats.h)   (mongod, tools)
+- [src/mongo/util/descriptive\_stats\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/descriptive_stats_test.cpp)   ()
+- [src/mongo/util/embedded\_builder.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/embedded_builder.h)   (mongod, tools, mongos)
+- [src/mongo/util/exception\_filter\_win32.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/exception_filter_win32.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/exception\_filter\_win32.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/exception_filter_win32.h)   (mongod, tools, mongos)
+- [src/mongo/util/exit\_code.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/exit_code.h)   (mongod, tools, mongos)
+- [src/mongo/util/gcov.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/gcov.h)   (mongod, tools, mongos)
+- [src/mongo/util/goodies.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/goodies.h)   (mongod, tools, mongos)
+- [src/mongo/util/heapcheck.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/heapcheck.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/18)
 
@@ -346,46 +346,46 @@ Giant list of utilities that I haven't gotten to yet. TODO: document what these 
 Platform specific code? TODO: Verify this and document what they are for.
 
 #### Files
-- src/mongo/platform/atomic\_intrinsics.h   (mongod, tools, mongos)
-- src/mongo/platform/atomic\_intrinsics\_gcc\_generic.h   (mongod, tools, mongos)
-- src/mongo/platform/atomic\_intrinsics\_gcc\_intel.h   (mongod, tools, mongos)
-- src/mongo/platform/atomic\_intrinsics\_win32.h   (mongod, tools, mongos)
-- src/mongo/platform/atomic\_word.h   (mongod, tools, mongos)
-- src/mongo/platform/atomic\_word\_test.cpp   ()
-- src/mongo/platform/backtrace.cpp   (mongod, tools, mongos)
-- src/mongo/platform/backtrace.h   (mongod, tools, mongos)
-- src/mongo/platform/basic.h   (mongod, tools, mongos)
-- src/mongo/platform/bits.h   (mongod, tools)
-- src/mongo/platform/bits\_test.cpp   ()
-- src/mongo/platform/compiler.h   (mongod, tools, mongos)
-- src/mongo/platform/compiler\_gcc.h   (mongod, tools, mongos)
-- src/mongo/platform/compiler\_msvc.h   (mongod, tools, mongos)
-- src/mongo/platform/cstdint.h   (mongod, tools, mongos)
-- src/mongo/platform/float\_utils.h   (mongod, tools, mongos)
-- src/mongo/platform/hash\_namespace.h   (mongod, tools, mongos)
-- src/mongo/platform/posix\_fadvise.cpp   (mongod, tools, mongos)
-- src/mongo/platform/posix\_fadvise.h   (mongod, tools, mongos)
-- src/mongo/platform/process\_id.cpp   (mongod, tools, mongos)
-- src/mongo/platform/process\_id.h   (mongod, tools, mongos)
-- src/mongo/platform/process\_id\_test.cpp   ()
-- src/mongo/platform/random.cpp   (mongod, tools, mongos)
-- src/mongo/platform/random.h   (mongod, tools, mongos)
-- src/mongo/platform/random\_test.cpp   ()
-- src/mongo/platform/strcasestr.cpp   (mongod, tools, mongos)
-- src/mongo/platform/strcasestr.h   (mongod, tools, mongos)
-- src/mongo/platform/strtoll.h   (mongod, tools, mongos)
-- src/mongo/platform/unordered\_map.h   (mongod, tools, mongos)
-- src/mongo/platform/unordered\_set.h   (mongod, tools, mongos)
-- src/mongo/platform/windows\_basic.h   (mongod, tools, mongos)
-- src/mongo/util/platform\_init.cpp   (mongod, tools, mongos)
-- src/mongo/util/processinfo.cpp   (mongod, tools, mongos)
-- src/mongo/util/processinfo.h   (mongod, tools, mongos)
-- src/mongo/util/processinfo\_darwin.cpp   (mongod, tools, mongos)
-- src/mongo/util/processinfo\_test.cpp   ()
-- src/mongo/util/mongoutils/checksum.h   (mongod, tools)
-- src/mongo/util/mongoutils/hash.h   (mongod, tools)
-- src/mongo/util/mongoutils/html.h   (mongod, tools, mongos)
-- src/mongo/util/mongoutils/str.h   (mongod, tools, mongos)
+- [src/mongo/platform/atomic\_intrinsics.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/atomic_intrinsics.h)   (mongod, tools, mongos)
+- [src/mongo/platform/atomic\_intrinsics\_gcc\_generic.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/atomic_intrinsics_gcc_generic.h)   (mongod, tools, mongos)
+- [src/mongo/platform/atomic\_intrinsics\_gcc\_intel.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/atomic_intrinsics_gcc_intel.h)   (mongod, tools, mongos)
+- [src/mongo/platform/atomic\_intrinsics\_win32.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/atomic_intrinsics_win32.h)   (mongod, tools, mongos)
+- [src/mongo/platform/atomic\_word.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/atomic_word.h)   (mongod, tools, mongos)
+- [src/mongo/platform/atomic\_word\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/atomic_word_test.cpp)   ()
+- [src/mongo/platform/backtrace.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/backtrace.cpp)   (mongod, tools, mongos)
+- [src/mongo/platform/backtrace.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/backtrace.h)   (mongod, tools, mongos)
+- [src/mongo/platform/basic.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/basic.h)   (mongod, tools, mongos)
+- [src/mongo/platform/bits.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/bits.h)   (mongod, tools)
+- [src/mongo/platform/bits\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/bits_test.cpp)   ()
+- [src/mongo/platform/compiler.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/compiler.h)   (mongod, tools, mongos)
+- [src/mongo/platform/compiler\_gcc.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/compiler_gcc.h)   (mongod, tools, mongos)
+- [src/mongo/platform/compiler\_msvc.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/compiler_msvc.h)   (mongod, tools, mongos)
+- [src/mongo/platform/cstdint.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/cstdint.h)   (mongod, tools, mongos)
+- [src/mongo/platform/float\_utils.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/float_utils.h)   (mongod, tools, mongos)
+- [src/mongo/platform/hash\_namespace.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/hash_namespace.h)   (mongod, tools, mongos)
+- [src/mongo/platform/posix\_fadvise.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/posix_fadvise.cpp)   (mongod, tools, mongos)
+- [src/mongo/platform/posix\_fadvise.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/posix_fadvise.h)   (mongod, tools, mongos)
+- [src/mongo/platform/process\_id.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/process_id.cpp)   (mongod, tools, mongos)
+- [src/mongo/platform/process\_id.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/process_id.h)   (mongod, tools, mongos)
+- [src/mongo/platform/process\_id\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/process_id_test.cpp)   ()
+- [src/mongo/platform/random.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/random.cpp)   (mongod, tools, mongos)
+- [src/mongo/platform/random.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/random.h)   (mongod, tools, mongos)
+- [src/mongo/platform/random\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/random_test.cpp)   ()
+- [src/mongo/platform/strcasestr.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/strcasestr.cpp)   (mongod, tools, mongos)
+- [src/mongo/platform/strcasestr.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/strcasestr.h)   (mongod, tools, mongos)
+- [src/mongo/platform/strtoll.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/strtoll.h)   (mongod, tools, mongos)
+- [src/mongo/platform/unordered\_map.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/unordered_map.h)   (mongod, tools, mongos)
+- [src/mongo/platform/unordered\_set.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/unordered_set.h)   (mongod, tools, mongos)
+- [src/mongo/platform/windows\_basic.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/platform/windows_basic.h)   (mongod, tools, mongos)
+- [src/mongo/util/platform\_init.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/platform_init.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/processinfo.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/processinfo.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/processinfo.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/processinfo.h)   (mongod, tools, mongos)
+- [src/mongo/util/processinfo\_darwin.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/processinfo_darwin.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/processinfo\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/processinfo_test.cpp)   ()
+- [src/mongo/util/mongoutils/checksum.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/mongoutils/checksum.h)   (mongod, tools)
+- [src/mongo/util/mongoutils/hash.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/mongoutils/hash.h)   (mongod, tools)
+- [src/mongo/util/mongoutils/html.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/mongoutils/html.h)   (mongod, tools, mongos)
+- [src/mongo/util/mongoutils/str.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/mongoutils/str.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/19)
 

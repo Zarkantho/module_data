@@ -10,9 +10,9 @@ Helper class that takes the current state of the configuration matadata for the 
 It does this by using the latest version that has been seen and makes a query that does not return anything lower than that version.
 
 #### Files
-- src/mongo/s/chunk\_diff-inl.cpp   (mongod, tools, mongos)
-- src/mongo/s/chunk\_diff.h   (mongod, tools, mongos)
-- src/mongo/s/chunk\_diff\_test.cpp   ()
+- [src/mongo/s/chunk\_diff-inl.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/chunk_diff-inl.cpp)   (mongod, tools, mongos)
+- [src/mongo/s/chunk\_diff.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/chunk_diff.h)   (mongod, tools, mongos)
+- [src/mongo/s/chunk\_diff\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/chunk_diff_test.cpp)   ()
 
 #### [Interface](interface/0)
 
@@ -24,8 +24,8 @@ It does this by using the latest version that has been seen and makes a query th
 Class that represents a version.  Used to version shards as well as chunks.
 
 #### Files
-- src/mongo/s/chunk\_version.h   (mongod, tools, mongos)
-- src/mongo/s/chunk\_version\_test.cpp   ()
+- [src/mongo/s/chunk\_version.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/chunk_version.h)   (mongod, tools, mongos)
+- [src/mongo/s/chunk\_version\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/chunk_version_test.cpp)   ()
 
 #### [Interface](interface/1)
 
@@ -37,7 +37,7 @@ Class that represents a version.  Used to version shards as well as chunks.
 Definitions of the exceptions that get thrown when a mongos tries to write to a mongod, but the mongos has an outdated config metadata version and should refresh.
 
 #### Files
-- src/mongo/s/stale\_exception.h   (mongod, tools, mongos)
+- [src/mongo/s/stale\_exception.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/stale_exception.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/2)
 
@@ -49,8 +49,8 @@ Definitions of the exceptions that get thrown when a mongos tries to write to a 
 Code for managing shard versions on a mongos.  This is the code that throws the stale config exceptions if the mongos metadata is out of date.
 
 #### Files
-- src/mongo/s/version\_manager.cpp   (mongos)
-- src/mongo/s/version\_manager.h   (mongod, tools, mongos)
+- [src/mongo/s/version\_manager.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/version_manager.cpp)   (mongos)
+- [src/mongo/s/version\_manager.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/version_manager.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/3)
 
@@ -62,7 +62,7 @@ Code for managing shard versions on a mongos.  This is the code that throws the 
 Stubs for code shared between mongos and mongod that references functions to set the shard version of connections.  You should not have to care about this unless you are fixing build dependencies.
 
 #### Files
-- src/mongo/s/default\_version.cpp   (mongod, tools)
+- [src/mongo/s/default\_version.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/default_version.cpp)   (mongod, tools)
 
 #### [Interface](interface/4)
 

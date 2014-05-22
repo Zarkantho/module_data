@@ -8,7 +8,7 @@ TODO: indexing description
 Top level interface for all indexes.
 
 #### Files
-- src/mongo/db/index/index\_access\_method.h   (mongod, tools, mongos)
+- [src/mongo/db/index/index\_access\_method.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/index_access_method.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 
@@ -20,8 +20,8 @@ Top level interface for all indexes.
 Top level interface for indexes that are backed by a btree.
 
 #### Files
-- src/mongo/db/index/btree\_based\_access\_method.h   (mongod, tools, mongos)
-- src/mongo/db/index/btree\_based\_access\_method.cpp   (mongod, tools)
+- [src/mongo/db/index/btree\_based\_access\_method.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/btree_based_access_method.h)   (mongod, tools, mongos)
+- [src/mongo/db/index/btree\_based\_access\_method.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/btree_based_access_method.cpp)   (mongod, tools)
 
 #### [Interface](interface/1)
 
@@ -33,8 +33,8 @@ Top level interface for indexes that are backed by a btree.
 Interface for a class that is responsible for generating the index keys for a given document.
 
 #### Files
-- src/mongo/db/index/key\_generator.cpp   (mongod, tools, mongos)
-- src/mongo/db/index/key\_generator.h   (mongod, tools, mongos)
+- [src/mongo/db/index/key\_generator.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/key_generator.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/index/key\_generator.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/key_generator.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/2)
 
@@ -46,7 +46,7 @@ Interface for a class that is responsible for generating the index keys for a gi
 Top level interface for iterating elements in an index.
 
 #### Files
-- src/mongo/db/index/index\_cursor.h   (mongod, tools, mongos)
+- [src/mongo/db/index/index\_cursor.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/index_cursor.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/3)
 
@@ -58,8 +58,8 @@ Top level interface for iterating elements in an index.
 Cursor to iterate the elements in a btree based index.
 
 #### Files
-- src/mongo/db/index/btree\_index\_cursor.cpp   (mongod, tools)
-- src/mongo/db/index/btree\_index\_cursor.h   (mongod, tools, mongos)
+- [src/mongo/db/index/btree\_index\_cursor.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/btree_index_cursor.cpp)   (mongod, tools)
+- [src/mongo/db/index/btree\_index\_cursor.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/btree_index_cursor.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/4)
 
@@ -71,8 +71,8 @@ Cursor to iterate the elements in a btree based index.
 Interface to interact with the underlying btree datastructure. Abstracts away the difference between our different index formats.
 
 #### Files
-- src/mongo/db/index/btree\_interface.cpp   (mongod, tools)
-- src/mongo/db/index/btree\_interface.h   (mongod, tools, mongos)
+- [src/mongo/db/index/btree\_interface.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/btree_interface.cpp)   (mongod, tools)
+- [src/mongo/db/index/btree\_interface.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/btree_interface.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/5)
 
@@ -84,14 +84,14 @@ Interface to interact with the underlying btree datastructure. Abstracts away th
 Files containing the btree datastructure implementation.  Currently this is the only index datastructure we use.  While this is intended to be a low level datastructure, it currently has a few fingers into replication and other parts of the server, including calling isMaster
 
 #### Files
-- src/mongo/db/structure/btree/btree.cpp   (mongod, tools)
-- src/mongo/db/structure/btree/btree.h   (mongod, tools, mongos)
-- src/mongo/db/structure/btree/btree\_stats.cpp   (mongod, tools)
-- src/mongo/db/structure/btree/btree\_stats.h   (mongod, tools)
-- src/mongo/db/structure/btree/btreebuilder.cpp   (mongod, tools)
-- src/mongo/db/structure/btree/btreebuilder.h   (mongod, tools)
-- src/mongo/db/structure/btree/key.cpp   (mongod, tools)
-- src/mongo/db/structure/btree/key.h   (mongod, tools, mongos)
+- [src/mongo/db/structure/btree/btree.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/structure/btree/btree.cpp)   (mongod, tools)
+- [src/mongo/db/structure/btree/btree.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/structure/btree/btree.h)   (mongod, tools, mongos)
+- [src/mongo/db/structure/btree/btree\_stats.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/structure/btree/btree_stats.cpp)   (mongod, tools)
+- [src/mongo/db/structure/btree/btree\_stats.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/structure/btree/btree_stats.h)   (mongod, tools)
+- [src/mongo/db/structure/btree/btreebuilder.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/structure/btree/btreebuilder.cpp)   (mongod, tools)
+- [src/mongo/db/structure/btree/btreebuilder.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/structure/btree/btreebuilder.h)   (mongod, tools)
+- [src/mongo/db/structure/btree/key.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/structure/btree/key.cpp)   (mongod, tools)
+- [src/mongo/db/structure/btree/key.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/structure/btree/key.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/6)
 
@@ -103,10 +103,10 @@ Files containing the btree datastructure implementation.  Currently this is the 
 Btree based index implementation
 
 #### Files
-- src/mongo/db/index/btree\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/btree\_access\_method.h   (mongod, tools)
-- src/mongo/db/index/btree\_key\_generator.cpp   (mongod, tools, mongos)
-- src/mongo/db/index/btree\_key\_generator.h   (mongod, tools, mongos)
+- [src/mongo/db/index/btree\_access\_method.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/btree_access_method.cpp)   (mongod, tools)
+- [src/mongo/db/index/btree\_access\_method.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/btree_access_method.h)   (mongod, tools)
+- [src/mongo/db/index/btree\_key\_generator.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/btree_key_generator.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/index/btree\_key\_generator.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/btree_key_generator.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/7)
 
@@ -118,11 +118,11 @@ Btree based index implementation
 2d index implementation
 
 #### Files
-- src/mongo/db/index/2d\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/2d\_access\_method.h   (mongod, tools, mongos)
-- src/mongo/db/index/2d\_common.h   (mongod, tools, mongos)
-- src/mongo/db/index/2d\_key\_generator.cpp   (mongod, tools, mongos)
-- src/mongo/db/index/2d\_key\_generator.h   (mongod, tools, mongos)
+- [src/mongo/db/index/2d\_access\_method.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/2d_access_method.cpp)   (mongod, tools)
+- [src/mongo/db/index/2d\_access\_method.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/2d_access_method.h)   (mongod, tools, mongos)
+- [src/mongo/db/index/2d\_common.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/2d_common.h)   (mongod, tools, mongos)
+- [src/mongo/db/index/2d\_key\_generator.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/2d_key_generator.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/index/2d\_key\_generator.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/2d_key_generator.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/8)
 
@@ -134,10 +134,10 @@ Btree based index implementation
 S2 index implementation
 
 #### Files
-- src/mongo/db/index/s2\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/s2\_access\_method.h   (mongod, tools, mongos)
-- src/mongo/db/index/s2\_key\_generator.cpp   (mongod, tools, mongos)
-- src/mongo/db/index/s2\_key\_generator.h   (mongod, tools, mongos)
+- [src/mongo/db/index/s2\_access\_method.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/s2_access_method.cpp)   (mongod, tools)
+- [src/mongo/db/index/s2\_access\_method.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/s2_access_method.h)   (mongod, tools, mongos)
+- [src/mongo/db/index/s2\_key\_generator.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/s2_key_generator.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/index/s2\_key\_generator.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/s2_key_generator.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/9)
 
@@ -149,10 +149,10 @@ S2 index implementation
 Fts index implementation
 
 #### Files
-- src/mongo/db/index/fts\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/fts\_access\_method.h   (mongod, tools)
-- src/mongo/db/index/fts\_key\_generator.cpp   (mongod, tools, mongos)
-- src/mongo/db/index/fts\_key\_generator.h   (mongod, tools, mongos)
+- [src/mongo/db/index/fts\_access\_method.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/fts_access_method.cpp)   (mongod, tools)
+- [src/mongo/db/index/fts\_access\_method.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/fts_access_method.h)   (mongod, tools)
+- [src/mongo/db/index/fts\_key\_generator.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/fts_key_generator.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/index/fts\_key\_generator.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/fts_key_generator.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/10)
 
@@ -164,10 +164,10 @@ Fts index implementation
 Hashed index implementation
 
 #### Files
-- src/mongo/db/index/hash\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/hash\_access\_method.h   (mongod, tools, mongos)
-- src/mongo/db/index/hash\_key\_generator.cpp   (mongod, tools, mongos)
-- src/mongo/db/index/hash\_key\_generator.h   (mongod, tools, mongos)
+- [src/mongo/db/index/hash\_access\_method.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/hash_access_method.cpp)   (mongod, tools)
+- [src/mongo/db/index/hash\_access\_method.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/hash_access_method.h)   (mongod, tools, mongos)
+- [src/mongo/db/index/hash\_key\_generator.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/hash_key_generator.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/index/hash\_key\_generator.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/hash_key_generator.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/11)
 
@@ -179,11 +179,11 @@ Hashed index implementation
 Haystack index implementation
 
 #### Files
-- src/mongo/db/index/haystack\_access\_method.cpp   (mongod, tools)
-- src/mongo/db/index/haystack\_access\_method.h   (mongod, tools, mongos)
-- src/mongo/db/index/haystack\_access\_method\_internal.h   (mongod, tools, mongos)
-- src/mongo/db/index/haystack\_key\_generator.cpp   (mongod, tools, mongos)
-- src/mongo/db/index/haystack\_key\_generator.h   (mongod, tools, mongos)
+- [src/mongo/db/index/haystack\_access\_method.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/haystack_access_method.cpp)   (mongod, tools)
+- [src/mongo/db/index/haystack\_access\_method.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/haystack_access_method.h)   (mongod, tools, mongos)
+- [src/mongo/db/index/haystack\_access\_method\_internal.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/haystack_access_method_internal.h)   (mongod, tools, mongos)
+- [src/mongo/db/index/haystack\_key\_generator.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/haystack_key_generator.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/index/haystack\_key\_generator.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/haystack_key_generator.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/12)
 
@@ -195,8 +195,8 @@ Haystack index implementation
 In memory datastructure containing all information about a single index.
 
 #### Files
-- src/mongo/db/index/index\_descriptor.cpp   (mongod, tools)
-- src/mongo/db/index/index\_descriptor.h   (mongod, tools, mongos)
+- [src/mongo/db/index/index\_descriptor.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/index_descriptor.cpp)   (mongod, tools)
+- [src/mongo/db/index/index\_descriptor.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/index_descriptor.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/13)
 
@@ -208,7 +208,7 @@ In memory datastructure containing all information about a single index.
 Helpers for indexes where the index entries are some function of the index, including s2 indexes and hashed indexes.
 
 #### Files
-- src/mongo/db/index/expression\_index.h   (mongod, tools, mongos)
+- [src/mongo/db/index/expression\_index.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/expression_index.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/14)
 
@@ -220,7 +220,7 @@ Helpers for indexes where the index entries are some function of the index, incl
 Helpers to parse index specifications, like the ones that come from users when they run the ensureIndex command
 
 #### Files
-- src/mongo/db/index/expression\_params.h   (mongod, tools, mongos)
+- [src/mongo/db/index/expression\_params.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/expression_params.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/15)
 
@@ -232,8 +232,8 @@ Helpers to parse index specifications, like the ones that come from users when t
 Seems to be just a utility to check if a key is too large.  Used from things external to the indexing system to test the validity of index keys.
 
 #### Files
-- src/mongo/db/index/external\_key\_generator.cpp   ()
-- src/mongo/db/index/external\_key\_generator.h   ()
+- [src/mongo/db/index/external\_key\_generator.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/external_key_generator.cpp)   ()
+- [src/mongo/db/index/external\_key\_generator.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index/external_key_generator.h)   ()
 
 #### [Interface](interface/16)
 
@@ -245,8 +245,8 @@ Seems to be just a utility to check if a key is too large.  Used from things ext
 Code for building an index.  Also can handle spawing a thread to build an index in the background.
 
 #### Files
-- src/mongo/db/index\_builder.cpp   (mongod, tools)
-- src/mongo/db/index\_builder.h   (mongod, tools)
+- [src/mongo/db/index\_builder.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index_builder.cpp)   (mongod, tools)
+- [src/mongo/db/index\_builder.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index_builder.h)   (mongod, tools)
 
 #### [Interface](interface/17)
 
@@ -258,8 +258,8 @@ Code for building an index.  Also can handle spawing a thread to build an index 
 Behavior that the current implementation of the code and that some indexes require that does not fit in with the model for the main index interface.
 
 #### Files
-- src/mongo/db/index\_legacy.cpp   (mongod, tools)
-- src/mongo/db/index\_legacy.h   (mongod, tools)
+- [src/mongo/db/index\_legacy.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index_legacy.cpp)   (mongod, tools)
+- [src/mongo/db/index\_legacy.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index_legacy.h)   (mongod, tools)
 
 #### [Interface](interface/18)
 
@@ -271,8 +271,8 @@ Behavior that the current implementation of the code and that some indexes requi
 Enum of all the index types we currently support as well as utilities to manage index strings and check whether we support a given index type.
 
 #### Files
-- src/mongo/db/index\_names.cpp   (mongod, tools, mongos)
-- src/mongo/db/index\_names.h   (mongod, tools, mongos)
+- [src/mongo/db/index\_names.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index_names.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/index\_names.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index_names.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/19)
 
@@ -284,8 +284,8 @@ Enum of all the index types we currently support as well as utilities to manage 
 Background job that removes and potentially rebuilds incomplete indexes.  Whether we actually rebuild after removing the indexes is configurable at server startup time using a command line or config file option.
 
 #### Files
-- src/mongo/db/index\_rebuilder.cpp   (mongod, tools)
-- src/mongo/db/index\_rebuilder.h   (mongod, tools)
+- [src/mongo/db/index\_rebuilder.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index_rebuilder.cpp)   (mongod, tools)
+- [src/mongo/db/index\_rebuilder.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index_rebuilder.h)   (mongod, tools)
 
 #### [Interface](interface/20)
 
@@ -297,9 +297,9 @@ Background job that removes and potentially rebuilds incomplete indexes.  Whethe
 Set of all field references (dotted field names) that have been indexed in this collection.  Used to check whether an in place update will change a field that is indexed and thus cannot be done in place.
 
 #### Files
-- src/mongo/db/index\_set.cpp   (mongod, tools, mongos)
-- src/mongo/db/index\_set.h   (mongod, tools, mongos)
-- src/mongo/db/index\_set\_test.cpp   ()
+- [src/mongo/db/index\_set.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index_set.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/index\_set.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index_set.h)   (mongod, tools, mongos)
+- [src/mongo/db/index\_set\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/index_set_test.cpp)   ()
 
 #### [Interface](interface/21)
 
@@ -311,8 +311,8 @@ Set of all field references (dotted field names) that have been indexed in this 
 Helpers to pregenerate a bunch of index keys outside a lock.
 
 #### Files
-- src/mongo/db/catalog/index\_pregen.cpp   (mongod, tools)
-- src/mongo/db/catalog/index\_pregen.h   (mongod, tools, mongos)
+- [src/mongo/db/catalog/index\_pregen.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/catalog/index_pregen.cpp)   (mongod, tools)
+- [src/mongo/db/catalog/index\_pregen.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/catalog/index_pregen.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/22)
 
@@ -324,8 +324,8 @@ Helpers to pregenerate a bunch of index keys outside a lock.
 Check to see if an index spec passed in by the user is valid for creating an index.
 
 #### Files
-- src/mongo/db/catalog/index\_key\_validate.cpp   (mongod, tools)
-- src/mongo/db/catalog/index\_key\_validate.h   (mongod, tools)
+- [src/mongo/db/catalog/index\_key\_validate.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/catalog/index_key_validate.cpp)   (mongod, tools)
+- [src/mongo/db/catalog/index\_key\_validate.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/catalog/index_key_validate.h)   (mongod, tools)
 
 #### [Interface](interface/23)
 
@@ -337,8 +337,8 @@ Check to see if an index spec passed in by the user is valid for creating an ind
 Class representing an index spec, such as { "a" : 1, "b" : -1 }
 
 #### Files
-- src/mongo/db/keypattern.cpp   (mongod, tools, mongos)
-- src/mongo/db/keypattern.h   (mongod, tools, mongos)
+- [src/mongo/db/keypattern.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/keypattern.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/keypattern.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/keypattern.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/24)
 
@@ -350,8 +350,8 @@ Class representing an index spec, such as { "a" : 1, "b" : -1 }
 Background job that periodically checks a ttl index.
 
 #### Files
-- src/mongo/db/ttl.cpp   (mongod, tools)
-- src/mongo/db/ttl.h   (mongod, tools)
+- [src/mongo/db/ttl.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/ttl.cpp)   (mongod, tools)
+- [src/mongo/db/ttl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/ttl.h)   (mongod, tools)
 
 #### [Interface](interface/25)
 

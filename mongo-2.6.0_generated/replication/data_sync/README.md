@@ -8,7 +8,7 @@ This module contains the code that replica sets use to keep the data synced betw
 Implementation of "resync" command
 
 #### Files
-- src/mongo/db/repl/resync.cpp   (mongod, tools)
+- [src/mongo/db/repl/resync.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/resync.cpp)   (mongod, tools)
 
 #### [Interface](interface/0)
 
@@ -20,11 +20,11 @@ Implementation of "resync" command
 Code to do sync and inital sync.  Note that this is a complex class heirarchy, and the files do not map one to one with class definitions and implementation.  The sync thread is started and run in "rs\_sync.cpp".  It handles doing the initial sync if applicable, then tailing the oplog.
 
 #### Files
-- src/mongo/db/repl/rs\_initialsync.cpp   (mongod, tools)
-- src/mongo/db/repl/rs\_sync.cpp   (mongod, tools)
-- src/mongo/db/repl/rs\_sync.h   (mongod, tools, mongos)
-- src/mongo/db/repl/sync.cpp   (mongod, tools)
-- src/mongo/db/repl/sync.h   (mongod, tools, mongos)
+- [src/mongo/db/repl/rs\_initialsync.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/rs_initialsync.cpp)   (mongod, tools)
+- [src/mongo/db/repl/rs\_sync.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/rs_sync.cpp)   (mongod, tools)
+- [src/mongo/db/repl/rs\_sync.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/rs_sync.h)   (mongod, tools, mongos)
+- [src/mongo/db/repl/sync.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/sync.cpp)   (mongod, tools)
+- [src/mongo/db/repl/sync.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/sync.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/1)
 
@@ -36,8 +36,8 @@ Code to do sync and inital sync.  Note that this is a complex class heirarchy, a
 Threads that actually handle syncing the oplog from the sync source. This includes the thread that actually reads the data from the source as well as the thread that notifies the source of how far it read
 
 #### Files
-- src/mongo/db/repl/bgsync.cpp   (mongod, tools)
-- src/mongo/db/repl/bgsync.h   (mongod, tools)
+- [src/mongo/db/repl/bgsync.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/bgsync.cpp)   (mongod, tools)
+- [src/mongo/db/repl/bgsync.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/bgsync.h)   (mongod, tools)
 
 #### [Interface](interface/2)
 
@@ -49,8 +49,8 @@ Threads that actually handle syncing the oplog from the sync source. This includ
 Code to tell the sync source how far we have progressed in the oplog.  For new versions this is the "replSetUpdatePosition command, but for old versions this was a "ghost cursor" which would only be advanced when the batch had been processed
 
 #### Files
-- src/mongo/db/repl/sync\_source\_feedback.cpp   (mongod, tools)
-- src/mongo/db/repl/sync\_source\_feedback.h   (mongod, tools, mongos)
+- [src/mongo/db/repl/sync\_source\_feedback.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/sync_source_feedback.cpp)   (mongod, tools)
+- [src/mongo/db/repl/sync\_source\_feedback.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/sync_source_feedback.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/3)
 
@@ -62,8 +62,8 @@ Code to tell the sync source how far we have progressed in the oplog.  For new v
 Class to handle the details of how we are querying the oplog.  The interface is something like the interface for a cursor.
 
 #### Files
-- src/mongo/db/repl/oplogreader.cpp   (mongod, tools)
-- src/mongo/db/repl/oplogreader.h   (mongod, tools, mongos)
+- [src/mongo/db/repl/oplogreader.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/oplogreader.cpp)   (mongod, tools)
+- [src/mongo/db/repl/oplogreader.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/oplogreader.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/4)
 
@@ -75,8 +75,8 @@ Class to handle the details of how we are querying the oplog.  The interface is 
 Free helper functions to create the oplog, log operations into the oplog and apply operations from the oplog.
 
 #### Files
-- src/mongo/db/repl/oplog.cpp   (mongod, tools)
-- src/mongo/db/repl/oplog.h   (mongod, tools)
+- [src/mongo/db/repl/oplog.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/oplog.cpp)   (mongod, tools)
+- [src/mongo/db/repl/oplog.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/oplog.h)   (mongod, tools)
 
 #### [Interface](interface/5)
 
@@ -88,7 +88,7 @@ Free helper functions to create the oplog, log operations into the oplog and app
 Code to handle rollbacks when two nodes got different writes (in the case where two nodes thought they were primary for some period of time).
 
 #### Files
-- src/mongo/db/repl/rs\_rollback.cpp   (mongod, tools)
+- [src/mongo/db/repl/rs\_rollback.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/rs_rollback.cpp)   (mongod, tools)
 
 #### [Interface](interface/6)
 

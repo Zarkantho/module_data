@@ -46,8 +46,8 @@ The even better news is that when a 2.6 mongos is connecting to a 2.4 shard, the
 Thread on mongos that polls the shards for writebacks and sends any queued writebacks to the correct shard
 
 #### Files
-- src/mongo/s/writeback\_listener.cpp   (mongos)
-- src/mongo/s/writeback\_listener.h   (mongod, tools, mongos)
+- [src/mongo/s/writeback\_listener.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/writeback_listener.cpp)   (mongos)
+- [src/mongo/s/writeback\_listener.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/writeback_listener.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 
@@ -59,8 +59,8 @@ Thread on mongos that polls the shards for writebacks and sends any queued write
 Queue where mongod stores writebacks and command that the writebacklistener on mongos calls to poll the shard
 
 #### Files
-- src/mongo/s/d\_writeback.cpp   (mongod, tools)
-- src/mongo/s/d\_writeback.h   (mongod, tools)
+- [src/mongo/s/d\_writeback.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/d_writeback.cpp)   (mongod, tools)
+- [src/mongo/s/d\_writeback.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/d_writeback.h)   (mongod, tools)
 
 #### [Interface](interface/1)
 
@@ -72,7 +72,7 @@ Queue where mongod stores writebacks and command that the writebacklistener on m
 Code to check if an operation should result in a writeback being queued on the shard
 
 #### Files
-- src/mongo/s/d\_logic.cpp   (mongod, tools)
+- [src/mongo/s/d\_logic.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/d_logic.cpp)   (mongod, tools)
 
 #### [Interface](interface/2)
 

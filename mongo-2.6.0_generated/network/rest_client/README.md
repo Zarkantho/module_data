@@ -8,8 +8,8 @@ Client for accessing the mongodb rest api.  Only used by mongostat when run with
 Files containing the implementation of the mongodb rest api.
 
 #### Files
-- src/mongo/util/net/httpclient.cpp   (mongod, tools, mongos)
-- src/mongo/util/net/httpclient.h   (mongod, tools, mongos)
+- [src/mongo/util/net/httpclient.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/httpclient.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/net/httpclient.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/net/httpclient.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 

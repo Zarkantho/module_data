@@ -9,6 +9,8 @@ NOTE:  This README and entire subtree is automatically generated.
 * Version branch: (no branch)
 * Version tag: r2.6.0
 
+* Github URL: https://github.com/mongodb/mongo/tree/r2.6.0/
+
 ## [Third Party](third\_party)
 Third Party systems used in MongoDB
 

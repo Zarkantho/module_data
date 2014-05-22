@@ -8,7 +8,7 @@ Module for handling consensus between nodes of a replica set to ensure that one 
 Commands that are sent and recieved during election as well as implementation of some class methods related to elections.  Note that there is not a clear class separation between things related to elections and things not related to elections, so the method implementations in this file span multiple classes.
 
 #### Files
-- src/mongo/db/repl/consensus.cpp   (mongod, tools)
+- [src/mongo/db/repl/consensus.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/consensus.cpp)   (mongod, tools)
 
 #### [Interface](interface/0)
 
@@ -20,7 +20,7 @@ Commands that are sent and recieved during election as well as implementation of
 Helpers to send a command to multiple servers in parallel and collect the results.  Used in the election process.
 
 #### Files
-- src/mongo/db/repl/multicmd.h   (mongod, tools, mongos)
+- [src/mongo/db/repl/multicmd.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/multicmd.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/1)
 

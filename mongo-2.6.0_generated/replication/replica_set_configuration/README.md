@@ -8,7 +8,7 @@ Persistent configuration of a replica set.
 rs.initiate() (replSetInitiate) command
 
 #### Files
-- src/mongo/db/repl/rs\_initiate.cpp   (mongod, tools)
+- [src/mongo/db/repl/rs\_initiate.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/rs_initiate.cpp)   (mongod, tools)
 
 #### [Interface](interface/0)
 
@@ -20,8 +20,8 @@ rs.initiate() (replSetInitiate) command
 Class that manages the configuration of a replica set.  This is the static configuration in which changes are only really triggered by the user.  See the output of rs.conf(), which queries the current replica set configuration from the local database.
 
 #### Files
-- src/mongo/db/repl/rs\_config.cpp   (mongod, tools)
-- src/mongo/db/repl/rs\_config.h   (mongod, tools, mongos)
+- [src/mongo/db/repl/rs\_config.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/rs_config.cpp)   (mongod, tools)
+- [src/mongo/db/repl/rs\_config.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/rs_config.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/1)
 
@@ -33,7 +33,7 @@ Class that manages the configuration of a replica set.  This is the static confi
 Global configuration options for replication from the command line.
 
 #### Files
-- src/mongo/db/repl/replication\_server\_status.h   (mongod, tools)
+- [src/mongo/db/repl/replication\_server\_status.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/repl/replication_server_status.h)   (mongod, tools)
 
 #### [Interface](interface/2)
 

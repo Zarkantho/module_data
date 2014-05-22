@@ -12,7 +12,7 @@ See TODO: wiki on Contexts for an introduction to more specific implementation d
 mongos version of a "Client". This is the big bucket of global state.  This ALSO has the definition of "Command::execCommand" for mongos (the function that actually runs commands registered using the Command class, which gets called whenever a query against the "$cmd" collection is made)
 
 #### Files
-- src/mongo/s/s\_only.cpp   (mongos)
+- [src/mongo/s/s\_only.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/s_only.cpp)   (mongos)
 
 #### [Interface](interface/0)
 
@@ -24,8 +24,8 @@ mongos version of a "Client". This is the big bucket of global state.  This ALSO
 mongod version of a "Client". This is the big bucket of global state.  There is also the concept of a "Context" that one can take at the beginning of an operation that holds a subset of the global state. There is also a "ReadContext" and a "WriteContext" which take locks. These are all nested classes in "Client". It is a bizarre situation because "client.h" contains the declaration of the class, but there are two different definitions. One in "s\_only.cpp" for mongos, and one in "client.cpp" for mongod. This means that mongos files may contain "client.h" and pass compile fine when using something in it, but then may fail link because it happens to be something that is only defined in "client.cpp". I do not see any definitions so far for "Context" in mongos, and a grep for "Client::WriteContext::WriteContext" (the definition of the WriteContext constructor) only shows up in client.cpp, which is mongod only.
 
 #### Files
-- src/mongo/db/client.cpp   (mongod, tools)
-- src/mongo/db/client.h   (mongod, tools, mongos)
+- [src/mongo/db/client.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/client.cpp)   (mongod, tools)
+- [src/mongo/db/client.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/client.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/1)
 
@@ -37,10 +37,10 @@ mongod version of a "Client". This is the big bucket of global state.  There is 
 The current "operation" within the current "Client"
 
 #### Files
-- src/mongo/db/curop-inl.h   (mongod, tools, mongos)
-- src/mongo/db/curop.cpp   (mongod, tools)
-- src/mongo/db/curop.h   (mongod, tools, mongos)
-- src/mongo/db/curop\_test.cpp   ()
+- [src/mongo/db/curop-inl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/curop-inl.h)   (mongod, tools, mongos)
+- [src/mongo/db/curop.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/curop.cpp)   (mongod, tools)
+- [src/mongo/db/curop.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/curop.h)   (mongod, tools, mongos)
+- [src/mongo/db/curop\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/curop_test.cpp)   ()
 
 #### [Interface](interface/2)
 
@@ -52,8 +52,8 @@ The current "operation" within the current "Client"
 Functions to kill the current "operation"
 
 #### Files
-- src/mongo/db/kill\_current\_op.cpp   (mongod, tools)
-- src/mongo/db/kill\_current\_op.h   (mongod, tools)
+- [src/mongo/db/kill\_current\_op.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/kill_current_op.cpp)   (mongod, tools)
+- [src/mongo/db/kill\_current\_op.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/kill_current_op.h)   (mongod, tools)
 
 #### [Interface](interface/3)
 
@@ -65,11 +65,11 @@ Functions to kill the current "operation"
 Helpers to check whether the current operation in the current client has been interrupted.
 
 #### Files
-- src/mongo/db/interrupt\_status.h   (mongod, tools, mongos)
-- src/mongo/db/interrupt\_status\_mongod.cpp   (mongod, tools)
-- src/mongo/db/interrupt\_status\_mongod.h   (mongod, tools)
-- src/mongo/s/interrupt\_status\_mongos.cpp   (mongos)
-- src/mongo/s/interrupt\_status\_mongos.h   (mongos)
+- [src/mongo/db/interrupt\_status.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/interrupt_status.h)   (mongod, tools, mongos)
+- [src/mongo/db/interrupt\_status\_mongod.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/interrupt_status_mongod.cpp)   (mongod, tools)
+- [src/mongo/db/interrupt\_status\_mongod.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/interrupt_status_mongod.h)   (mongod, tools)
+- [src/mongo/s/interrupt\_status\_mongos.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/interrupt_status_mongos.cpp)   (mongos)
+- [src/mongo/s/interrupt\_status\_mongos.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/interrupt_status_mongos.h)   (mongos)
 
 #### [Interface](interface/4)
 
@@ -81,8 +81,8 @@ Helpers to check whether the current operation in the current client has been in
 Base class for a Client on mongod and mongos: ClientBasic
 
 #### Files
-- src/mongo/db/client\_basic.cpp   (mongod, tools, mongos)
-- src/mongo/db/client\_basic.h   (mongod, tools, mongos)
+- [src/mongo/db/client\_basic.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/client_basic.cpp)   (mongod, tools, mongos)
+- [src/mongo/db/client\_basic.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/client_basic.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/5)
 
@@ -94,8 +94,8 @@ Base class for a Client on mongod and mongos: ClientBasic
 Seems to be the "mongos version" of the "Client" class which inherits from "ClientBasic".  see ClientInfo in s\_only.cpp for more "mongos only" client state.  That class also inherits from ClientBasic
 
 #### Files
-- src/mongo/s/client\_info.cpp   (mongos)
-- src/mongo/s/client\_info.h   (mongod, tools, mongos)
+- [src/mongo/s/client\_info.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/client_info.cpp)   (mongos)
+- [src/mongo/s/client\_info.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/client_info.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/6)
 
@@ -107,8 +107,8 @@ Seems to be the "mongos version" of the "Client" class which inherits from "Clie
 The internal representation of a cursor from a client
 
 #### Files
-- src/mongo/db/clientcursor.cpp   (mongod, tools)
-- src/mongo/db/clientcursor.h   (mongod, tools, mongos)
+- [src/mongo/db/clientcursor.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/clientcursor.cpp)   (mongod, tools)
+- [src/mongo/db/clientcursor.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/clientcursor.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/7)
 
@@ -120,8 +120,8 @@ The internal representation of a cursor from a client
 Contains helper functions for running common operations against the local server. For example, has findOne, ensureIndex, upsert, etc. which all just run the respective operations on the server the code is running on.
 
 #### Files
-- src/mongo/db/dbhelpers.cpp   (mongod, tools)
-- src/mongo/db/dbhelpers.h   (mongod, tools, mongos)
+- [src/mongo/db/dbhelpers.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dbhelpers.cpp)   (mongod, tools)
+- [src/mongo/db/dbhelpers.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/dbhelpers.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/8)
 
@@ -133,8 +133,8 @@ Contains helper functions for running common operations against the local server
 Code to get a handle to the "system.profile" collection for a given Database
 
 #### Files
-- src/mongo/db/introspect.cpp   (mongod, tools)
-- src/mongo/db/introspect.h   (mongod, tools, mongos)
+- [src/mongo/db/introspect.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/introspect.cpp)   (mongod, tools)
+- [src/mongo/db/introspect.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/introspect.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/9)
 
@@ -146,7 +146,7 @@ Code to get a handle to the "system.profile" collection for a given Database
 Just an enum for different cursor time limit values that have a special meaning, such as "-1" for "no timeout".
 
 #### Files
-- src/mongo/db/max\_time.h   (mongos)
+- [src/mongo/db/max\_time.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/max_time.h)   (mongos)
 
 #### [Interface](interface/10)
 

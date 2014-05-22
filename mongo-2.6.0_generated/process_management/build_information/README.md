@@ -8,8 +8,8 @@ Information about this server build, including server version, compile informati
 Source files that get automatically generated in each compile.  Contains functions to get things like compile flags and the Javascript interpreter version
 
 #### Files
-- build/darwin/dbg\_off/opt\_off/ssl/buildinfo.cpp   (mongod, tools, mongos)
-- build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp   (mongod, tools, mongos)
+- [build/darwin/dbg\_off/opt\_off/ssl/buildinfo.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/build/darwin/dbg_off/opt_off/ssl/buildinfo.cpp)   (mongod, tools, mongos)
+- [build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/build/darwin/dbg_off/opt_off/ssl/mongo/buildinfo.cpp)   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 
@@ -21,8 +21,8 @@ Source files that get automatically generated in each compile.  Contains functio
 Contains the string for the current server version that gets bumped when we release, as well as code to parse it
 
 #### Files
-- src/mongo/util/version.cpp   (mongod, tools, mongos)
-- src/mongo/util/version.h   (mongod, tools, mongos)
+- [src/mongo/util/version.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/version.cpp)   (mongod, tools, mongos)
+- [src/mongo/util/version.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/util/version.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/1)
 
@@ -34,8 +34,8 @@ Contains the string for the current server version that gets bumped when we rele
 Helper to print version information about the running mongos
 
 #### Files
-- src/mongo/s/version\_mongos.cpp   (mongos)
-- src/mongo/s/version\_mongos.h   (mongos)
+- [src/mongo/s/version\_mongos.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/version_mongos.cpp)   (mongos)
+- [src/mongo/s/version\_mongos.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/version_mongos.h)   (mongos)
 
 #### [Interface](interface/2)
 
