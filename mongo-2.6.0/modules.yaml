@@ -286,8 +286,8 @@
         -   group_title: Auto Generated Files
             group_description: Third Party - V8 Javascript engine auto generated files
             group_files:
-            - build/darwin/ssl/third_party/v8/src/experimental-libraries.cc
-            - build/darwin/ssl/third_party/v8/src/libraries.cc
+            - build/darwin/dbg_off/opt_off/ssl/third_party/v8/src/experimental-libraries.cc
+            - build/darwin/dbg_off/opt_off/ssl/third_party/v8/src/libraries.cc
         -   group_title: V8 Javascript Engine
             group_description: Third Party - V8 Javascript engine
             group_files:
@@ -2094,19 +2094,19 @@
                 that sometimes the server needs to be recompiled to see changes in
                 Javascript files
             group_files:
-            - build/darwin/ssl/mongo/shell/mongo-server.cpp
-            - build/darwin/ssl/mongo/shell/mongo.cpp
+            - build/darwin/dbg_off/opt_off/ssl/mongo/shell/mongo-server.cpp
+            - build/darwin/dbg_off/opt_off/ssl/mongo/shell/mongo.cpp
         -   group_title: Shell Bulk API
-            group_description: 'Helpers for using write command bulk operations from the shell.  If
-            write commands are not supported, it emulates the bulk operation by executing the
-            commands one at a time using old style write operations and returns the whole result
-            batch to the user.'
+            group_description: Helpers for using write command bulk operations from
+                the shell.  If write commands are not supported, it emulates the bulk
+                operation by executing the commands one at a time using old style
+                write operations and returns the whole result batch to the user.
             group_files:
             - src/mongo/shell/bulk_api.js
         -   group_title: Shell Upgrade Checker
-            group_description: 'Helper to check whether the mongod version that this shell is
-            connected to has invalid databases somehow, likely because we now disallow some bad data
-            that we once allowed.  See http://dochub.mongodb.org/core/upgrade_checker_help'
+            group_description: Helper to check whether the mongod version that this
+                shell is connected to has invalid databases somehow, likely because
+                we now disallow some bad data that we once allowed.  See http://dochub.mongodb.org/core/upgrade_checker_help
             group_files:
             - src/mongo/shell/upgrade_check.js
         -   group_title: Javascript Helpers
@@ -2228,8 +2228,8 @@
             - src/mongo/base/status_with.h
             - src/mongo/base/error_codes.err
             - src/mongo/base/generate_error_codes.py
-            - build/darwin/ssl/mongo/base/error_codes.h
-            - build/darwin/ssl/mongo/base/error_codes.cpp
+            - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
+            - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.cpp
         -   group_title: Number To String Conversion
             group_description: Cross platform utilities to convert numbers to strings
             group_files:
@@ -2510,8 +2510,8 @@
             - src/mongo/util/mongoutils/str.h
 -   system_title: Replication
     system_name: replication
-    system_description: 'Code related specifically to replication support in MongoDB.  See
-        http://docs.mongodb.org/manual/replication/ for a high level description.'
+    system_description: Code related specifically to replication support in MongoDB.  See
+        http://docs.mongodb.org/manual/replication/ for a high level description.
     system_modules:
     -   module_title: Master Slave
         module_name: master_slave
@@ -2753,8 +2753,8 @@
             - src/mongo/db/write_concern_options.h
 -   system_title: Sharding
     system_name: sharding
-    system_description: 'Code related specifically to sharding support in MongoDB.  See
-        http://docs.mongodb.org/manual/sharding/ for a high level description.'
+    system_description: Code related specifically to sharding support in MongoDB.  See
+        http://docs.mongodb.org/manual/sharding/ for a high level description.
     system_modules:
     -   module_title: Writeback Listener
         module_name: writeback_listener
@@ -3431,8 +3431,8 @@
             - src/mongo/bson/mutable/mutable_bson_test_utils.h
 -   system_title: Query And Operation Handling
     system_name: query_and_operation_handling
-    system_description: 'Different operations that are supported in MongoDB, along with operation
-    management code.'
+    system_description: Different operations that are supported in MongoDB, along
+        with operation management code.
     system_modules:
     -   module_title: Client And Operation Tracking
         module_name: client_and_operation_tracking
@@ -3534,54 +3534,58 @@
             - src/mongo/db/max_time.h
     -   module_title: Concurrency
         module_name: concurrency
-        module_description: 'Concurrency management for operations on mongod as well as
-        synchronization primitives.'
+        module_description: Concurrency management for operations on mongod as well
+            as synchronization primitives.
         module_groups:
         -   group_title: Mongod Concurrency System Interface
-            group_description: 'Top level entry point into the mongod concurrency system.'
+            group_description: Top level entry point into the mongod concurrency system.
             group_files:
             - src/mongo/db/d_concurrency.cpp
             - src/mongo/db/d_concurrency.h
         -   group_title: Lock State
-            group_description: 'State of all the locks that this client/thread/operation has
-            aquired.  There is one LockState per thread stored in thread local storage.
+            group_description: 'State of all the locks that this client/thread/operation
+                has aquired.  There is one LockState per thread stored in thread local
+                storage.
 
-            The three lock types are:
+                The three lock types are:
 
-            1. Global
-            2. DB Level - called "other" in the code
-            3. Special DB Level - called "nestable" in the code
+                1. Global
+                2. DB Level - called "other" in the code
+                3. Special DB Level - called "nestable" in the code
 
-            The "Special DB Level" locks are for the "admin" and "local" databases.  The idea is
-            that sometimes we want to do something to one of those databases (like inserting into
-            the oplog), but we want still want to keep the lock on our original database (for
-            example, to preserve our ordering guarantees in relation to the oplog).  This is why the
-            lock is called "nestable".
+                The "Special DB Level" locks are for the "admin" and "local" databases.  The
+                idea is that sometimes we want to do something to one of those databases
+                (like inserting into the oplog), but we want still want to keep the
+                lock on our original database (for example, to preserve our ordering
+                guarantees in relation to the oplog).  This is why the lock is called
+                "nestable".
 
-            All the DB level locks are "Reader Writer Locks", and the global lock is a "Quad Lock".'
+                All the DB level locks are "Reader Writer Locks", and the global lock
+                is a "Quad Lock".'
             group_files:
             - src/mongo/db/lockstate.cpp
             - src/mongo/db/lockstate.h
         -   group_title: Reader Writer Locks
-            group_description: 'Implementation of a reader writer lock primitive.'
+            group_description: Implementation of a reader writer lock primitive.
             group_files:
             - src/mongo/util/concurrency/rwlock.h
             - src/mongo/util/concurrency/rwlockimpl.cpp
             - src/mongo/util/concurrency/rwlockimpl.h
         -   group_title: Quad Locks
-            group_description: 'Implmentation of a lock with intents and an upgradeable lock state.
+            group_description: 'Implmentation of a lock with intents and an upgradeable
+                lock state.
 
-            See http://technet.microsoft.com/en-us/library/aa213039(v=SQL.80).aspx for a general
-            discussion of locking.
+                See http://technet.microsoft.com/en-us/library/aa213039(v=SQL.80).aspx
+                for a general discussion of locking.
 
-            The mapping between the names of the states are as follows:
+                The mapping between the names of the states are as follows:
 
-            <state in MongoDB Quad Lock> = <state in SQL Server Lock>
-            r = IS
-            w = IX
-            R = S
-            W = X
-            X = U'
+                <state in MongoDB Quad Lock> = <state in SQL Server Lock>
+                r = IS
+                w = IX
+                R = S
+                W = X
+                X = U'
             group_files:
             - src/mongo/util/concurrency/qlock.h
         -   group_title: Spin Locks
@@ -3596,7 +3600,7 @@
             - src/mongo/util/concurrency/synchronization.cpp
             - src/mongo/util/concurrency/synchronization.h
         -   group_title: Lock Stats
-            group_description: 'Statistics about locking behavior.'
+            group_description: Statistics about locking behavior.
             group_files:
             - src/mongo/db/lockstat.cpp
             - src/mongo/db/lockstat.h
@@ -3611,8 +3615,7 @@
 
             Well, it turns out that commands are simply queries against the special
             reserved "$cmd" collection.  What this means is that "db.serverStatus()"
-            calls "db.runCommand({serverStatus:1})" which then calls
-            "db.$cmd.findOne({serverStatus:1})".
+            calls "db.runCommand({serverStatus:1})" which then calls "db.$cmd.findOne({serverStatus:1})".
 
             See TODO: wiki on Commands for more details.'
         module_groups:
@@ -3688,41 +3691,42 @@
         module_name: indexing
         module_description: 'TODO: indexing description'
         module_groups:
-        -   group_title: 'Index Interface'
-            group_description: 'Top level interface for all indexes.'
+        -   group_title: Index Interface
+            group_description: Top level interface for all indexes.
             group_files:
             - src/mongo/db/index/index_access_method.h
-        -   group_title: 'Btree Backed Index Interface'
-            group_description: 'Top level interface for indexes that are backed by a btree.'
+        -   group_title: Btree Backed Index Interface
+            group_description: Top level interface for indexes that are backed by
+                a btree.
             group_files:
             - src/mongo/db/index/btree_based_access_method.h
             - src/mongo/db/index/btree_based_access_method.cpp
-        -   group_title: 'Index Key Generation Interface'
-            group_description: 'Interface for a class that is responsible for generating the index
-            keys for a given document.'
+        -   group_title: Index Key Generation Interface
+            group_description: Interface for a class that is responsible for generating
+                the index keys for a given document.
             group_files:
             - src/mongo/db/index/key_generator.cpp
             - src/mongo/db/index/key_generator.h
-        -   group_title: 'Index Cursor Interface'
-            group_description: 'Top level interface for iterating elements in an index.'
+        -   group_title: Index Cursor Interface
+            group_description: Top level interface for iterating elements in an index.
             group_files:
             - src/mongo/db/index/index_cursor.h
-        -   group_title: 'Btree Index Cursor'
-            group_description: 'Cursor to iterate the elements in a btree based index.'
+        -   group_title: Btree Index Cursor
+            group_description: Cursor to iterate the elements in a btree based index.
             group_files:
             - src/mongo/db/index/btree_index_cursor.cpp
             - src/mongo/db/index/btree_index_cursor.h
-        -   group_title: 'Btree Interface'
-            group_description: 'Interface to interact with the underlying btree datastructure.
-            Abstracts away the difference between our different index formats.'
+        -   group_title: Btree Interface
+            group_description: Interface to interact with the underlying btree datastructure.
+                Abstracts away the difference between our different index formats.
             group_files:
             - src/mongo/db/index/btree_interface.cpp
             - src/mongo/db/index/btree_interface.h
         -   group_title: Btree Datastructure
             group_description: Files containing the btree datastructure implementation.  Currently
-                this is the only index datastructure we use.  While this is intended to be a low
-                level datastructure, it currently has a few fingers into replication and other parts
-                of the server, including calling isMaster
+                this is the only index datastructure we use.  While this is intended
+                to be a low level datastructure, it currently has a few fingers into
+                replication and other parts of the server, including calling isMaster
             group_files:
             - src/mongo/db/structure/btree/btree.cpp
             - src/mongo/db/structure/btree/btree.h
@@ -3732,113 +3736,119 @@
             - src/mongo/db/structure/btree/btreebuilder.h
             - src/mongo/db/structure/btree/key.cpp
             - src/mongo/db/structure/btree/key.h
-        -   group_title: 'Btree Indexes'
-            group_description: 'Btree based index implementation'
+        -   group_title: Btree Indexes
+            group_description: Btree based index implementation
             group_files:
             - src/mongo/db/index/btree_access_method.cpp
             - src/mongo/db/index/btree_access_method.h
             - src/mongo/db/index/btree_key_generator.cpp
             - src/mongo/db/index/btree_key_generator.h
-        -   group_title: '2d Indexes'
-            group_description: '2d index implementation'
+        -   group_title: 2d Indexes
+            group_description: 2d index implementation
             group_files:
             - src/mongo/db/index/2d_access_method.cpp
             - src/mongo/db/index/2d_access_method.h
             - src/mongo/db/index/2d_common.h
             - src/mongo/db/index/2d_key_generator.cpp
             - src/mongo/db/index/2d_key_generator.h
-        -   group_title: 'S2 Indexes'
-            group_description: 'S2 index implementation'
+        -   group_title: S2 Indexes
+            group_description: S2 index implementation
             group_files:
             - src/mongo/db/index/s2_access_method.cpp
             - src/mongo/db/index/s2_access_method.h
             - src/mongo/db/index/s2_key_generator.cpp
             - src/mongo/db/index/s2_key_generator.h
-        -   group_title: 'Fts Indexes'
-            group_description: 'Fts index implementation'
+        -   group_title: Fts Indexes
+            group_description: Fts index implementation
             group_files:
             - src/mongo/db/index/fts_access_method.cpp
             - src/mongo/db/index/fts_access_method.h
             - src/mongo/db/index/fts_key_generator.cpp
             - src/mongo/db/index/fts_key_generator.h
-        -   group_title: 'Hashed Indexes'
-            group_description: 'Hashed index implementation'
+        -   group_title: Hashed Indexes
+            group_description: Hashed index implementation
             group_files:
             - src/mongo/db/index/hash_access_method.cpp
             - src/mongo/db/index/hash_access_method.h
             - src/mongo/db/index/hash_key_generator.cpp
             - src/mongo/db/index/hash_key_generator.h
-        -   group_title: 'Haystack Indexes'
-            group_description: 'Haystack index implementation'
+        -   group_title: Haystack Indexes
+            group_description: Haystack index implementation
             group_files:
             - src/mongo/db/index/haystack_access_method.cpp
             - src/mongo/db/index/haystack_access_method.h
             - src/mongo/db/index/haystack_access_method_internal.h
             - src/mongo/db/index/haystack_key_generator.cpp
             - src/mongo/db/index/haystack_key_generator.h
-        -   group_title: 'Index Descriptor'
-            group_description: 'In memory datastructure containing all information about a single
-            index.'
+        -   group_title: Index Descriptor
+            group_description: In memory datastructure containing all information
+                about a single index.
             group_files:
             - src/mongo/db/index/index_descriptor.cpp
             - src/mongo/db/index/index_descriptor.h
-        -   group_title: 'Index Expression Helpers'
-            group_description: 'Helpers for indexes where the index entries are some function of the
-            index, including s2 indexes and hashed indexes.'
+        -   group_title: Index Expression Helpers
+            group_description: Helpers for indexes where the index entries are some
+                function of the index, including s2 indexes and hashed indexes.
             group_files:
             - src/mongo/db/index/expression_index.h
-        -   group_title: 'Index Spec Parsing'
-            group_description: 'Helpers to parse index specifications, like the ones that come from
-            users when they run the ensureIndex command'
+        -   group_title: Index Spec Parsing
+            group_description: Helpers to parse index specifications, like the ones
+                that come from users when they run the ensureIndex command
             group_files:
             - src/mongo/db/index/expression_params.h
-        -   group_title: 'Index Key Check'
-            group_description: 'Seems to be just a utility to check if a key is too large.  Used
-            from things external to the indexing system to test the validity of index keys.'
+        -   group_title: Index Key Check
+            group_description: Seems to be just a utility to check if a key is too
+                large.  Used from things external to the indexing system to test the
+                validity of index keys.
             group_files:
             - src/mongo/db/index/external_key_generator.cpp
             - src/mongo/db/index/external_key_generator.h
-        -   group_title: 'Background Index Build'
-            group_description: 'Code for building an index.  Also can handle spawing a thread to
-            build an index in the background.'
+        -   group_title: Background Index Build
+            group_description: Code for building an index.  Also can handle spawing
+                a thread to build an index in the background.
             group_files:
             - src/mongo/db/index_builder.cpp
             - src/mongo/db/index_builder.h
-        -   group_title: 'Index Legacy Exceptions'
-            group_description: 'Behavior that the current implementation of the code and that some
-            indexes require that does not fit in with the model for the main index interface.'
+        -   group_title: Index Legacy Exceptions
+            group_description: Behavior that the current implementation of the code
+                and that some indexes require that does not fit in with the model
+                for the main index interface.
             group_files:
             - src/mongo/db/index_legacy.cpp
             - src/mongo/db/index_legacy.h
-        -   group_title: 'Index Names'
-            group_description: 'Enum of all the index types we currently support as well as
-            utilities to manage index strings and check whether we support a given index type.'
+        -   group_title: Index Names
+            group_description: Enum of all the index types we currently support as
+                well as utilities to manage index strings and check whether we support
+                a given index type.
             group_files:
             - src/mongo/db/index_names.cpp
             - src/mongo/db/index_names.h
-        -   group_title: 'Index Rebuilder'
-            group_description: 'Background job that removes and potentially rebuilds incomplete
-            indexes.  Whether we actually rebuild after removing the indexes is configurable at
-            server startup time using a command line or config file option.'
+        -   group_title: Index Rebuilder
+            group_description: Background job that removes and potentially rebuilds
+                incomplete indexes.  Whether we actually rebuild after removing the
+                indexes is configurable at server startup time using a command line
+                or config file option.
             group_files:
             - src/mongo/db/index_rebuilder.cpp
             - src/mongo/db/index_rebuilder.h
-        -   group_title: 'Index Path Set'
-            group_description: 'Set of all field references (dotted field names) that have been
-            indexed in this collection.  Used to check whether an in place update will change a
-            field that is indexed and thus cannot be done in place.'
+        -   group_title: Index Path Set
+            group_description: Set of all field references (dotted field names) that
+                have been indexed in this collection.  Used to check whether an in
+                place update will change a field that is indexed and thus cannot be
+                done in place.
             group_files:
             - src/mongo/db/index_set.cpp
             - src/mongo/db/index_set.h
             - src/mongo/db/index_set_test.cpp
-        -   group_title: 'Index Key Pregeneration'
-            group_description: 'Helpers to pregenerate a bunch of index keys outside a lock.'
+        -   group_title: Index Key Pregeneration
+            group_description: Helpers to pregenerate a bunch of index keys outside
+                a lock.
             group_files:
             - src/mongo/db/catalog/index_pregen.cpp
             - src/mongo/db/catalog/index_pregen.h
-        -   group_title: 'Index Key Validation'
-            group_description: 'Check to see if an index spec passed in by the user is valid for
-            creating an index.'
+        -   group_title: Index Key Validation
+            group_description: Check to see if an index spec passed in by the user
+                is valid for creating an index.
             group_files:
             - src/mongo/db/catalog/index_key_validate.cpp
             - src/mongo/db/catalog/index_key_validate.h
@@ -3855,17 +3865,19 @@
             - src/mongo/db/ttl.h
 -   system_title: Core Query System
     system_name: core_query_system
-    system_description: 'Query execution framework.  Handles query parsing, optimization, and execution.
+    system_description: 'Query execution framework.  Handles query parsing, optimization,
+        and execution.
 
-    TODO: High level description of the phases of query execution.'
+        TODO: High level description of the phases of query execution.'
     system_modules:
     -   module_title: Query System Commands
         module_name: query_system_commands
-        module_description: 'Database commands specifically for interacting with the query system.'
+        module_description: Database commands specifically for interacting with the
+            query system.
         module_groups:
         -   group_title: Mongod Query System Commands
-            group_description: 'Query system commands for mongod.  They allow for some runtime
-            configuration of the query system.'
+            group_description: Query system commands for mongod.  They allow for some
+                runtime configuration of the query system.
             group_files:
             - src/mongo/db/commands/index_filter_commands.cpp
             - src/mongo/db/commands/index_filter_commands.h
@@ -3881,93 +3893,99 @@
             - src/mongo/s/commands/cluster_plan_cache_cmd.cpp
     -   module_title: Query System Parameters
         module_name: query_system_parameters
-        module_description: 'User facing or hard coded tunables or configuration for the query
-        system.'
+        module_description: User facing or hard coded tunables or configuration for
+            the query system.
         module_groups:
-        -   group_title: 'Query Constants'
-            group_description: 'Constants used in the query system.  Currently just has the maximum
-            batch size.'
+        -   group_title: Query Constants
+            group_description: Constants used in the query system.  Currently just
+                has the maximum batch size.
             group_files:
             - src/mongo/db/query/find_constants.h
-        -   group_title: 'Query Knobs'
-            group_description: 'Server Parameters that can be used to tune the query system.'
+        -   group_title: Query Knobs
+            group_description: Server Parameters that can be used to tune the query
+                system.
             group_files:
             - src/mongo/db/query/query_knobs.cpp
             - src/mongo/db/query/query_knobs.h
-        -   group_title: 'Query Settings'
-            group_description: 'User settings that put additional constraints on query execution.
-            See the index filter commands in index_filter_commands.cpp for an example.'
+        -   group_title: Query Settings
+            group_description: User settings that put additional constraints on query
+                execution. See the index filter commands in index_filter_commands.cpp
+                for an example.
             group_files:
             - src/mongo/db/query/query_settings.cpp
             - src/mongo/db/query/query_settings.h
     -   module_title: Legacy Query Code
         module_name: legacy_query_code
-        module_description: 'Old query code that is gradually being phased out.'
+        module_description: Old query code that is gradually being phased out.
         module_groups:
-        -   group_title: 'Legacy Query Utilities'
-            group_description: 'Legacy utilities for managing queries. Has utilities like range
-            intersection and application of skip and limit. These are allllmost dead. The
-            functionality should be replaced by the new matcher, expressions, and query system.'
+        -   group_title: Legacy Query Utilities
+            group_description: Legacy utilities for managing queries. Has utilities
+                like range intersection and application of skip and limit. These are
+                allllmost dead. The functionality should be replaced by the new matcher,
+                expressions, and query system.
             group_files:
             - src/mongo/db/queryutil-inl.h
             - src/mongo/db/queryutil.cpp
             - src/mongo/db/queryutil.h
     -   module_title: Query System Entry Points
         module_name: query_system_entry_points
-        module_description: 'Entry points into the query system from outside the query system.  Note
-        that there may be other things in the query system that are used elsewhere, but this is
-        where query operations start.  For example, another query system entry point that may not be
-        here is the update code, which also directly interacts with the query system itself.'
+        module_description: Entry points into the query system from outside the query
+            system.  Note that there may be other things in the query system that
+            are used elsewhere, but this is where query operations start.  For example,
+            another query system entry point that may not be here is the update code,
+            which also directly interacts with the query system itself.
         module_groups:
-        -   group_title: 'Find and getMore Entry Point'
-            group_description: 'Top level entry point for find and getMore operations.  Essentially
-            a bunch of glue that connects all the different pieces of the query system together.'
+        -   group_title: Find and getMore Entry Point
+            group_description: Top level entry point for find and getMore operations.  Essentially
+                a bunch of glue that connects all the different pieces of the query
+                system together.
             group_files:
             - src/mongo/db/query/new_find.cpp
             - src/mongo/db/query/new_find.h
-        -   group_title: 'Count Command'
-            group_description: 'Entry point to run the count command.  Defers actual work to the
-            core query system.'
+        -   group_title: Count Command
+            group_description: Entry point to run the count command.  Defers actual
+                work to the core query system.
             group_files:
             - src/mongo/db/ops/count.cpp
             - src/mongo/db/ops/count.h
     -   module_title: Query Preprocessing
         module_name: query_preprocessing
-        module_description: 'Classes that do processing of queries that is independent of the
-        database state, and does not involve coming up with a plan for executing the query.  This
-        parses the information contained in the query into a structured form that is easier to
-        manage as well as does some normalization of the query (for example, flattening a deep tree
-        of AND operations).'
+        module_description: Classes that do processing of queries that is independent
+            of the database state, and does not involve coming up with a plan for
+            executing the query.  This parses the information contained in the query
+            into a structured form that is easier to manage as well as does some normalization
+            of the query (for example, flattening a deep tree of AND operations).
         module_groups:
-        -   group_title: 'Canonical Query'
-            group_description: 'Entry point into the first stage of processing a query.  This is
-            built on top of the Lite Parsed Query, which is the raw interface to information about
-            the query, and the parsed representations of the query and projection.'
+        -   group_title: Canonical Query
+            group_description: Entry point into the first stage of processing a query.  This
+                is built on top of the Lite Parsed Query, which is the raw interface
+                to information about the query, and the parsed representations of
+                the query and projection.
             group_files:
             - src/mongo/db/query/canonical_query.cpp
             - src/mongo/db/query/canonical_query.h
             - src/mongo/db/query/canonical_query_test.cpp
-        -   group_title: 'Lite Parsed Query'
-            group_description: 'Lightweight class that parses a raw query message from the network
-            and provides accessors to make the data in the message easier to work with.  Created and
-            managed by the Canonical Query class.'
+        -   group_title: Lite Parsed Query
+            group_description: Lightweight class that parses a raw query message from
+                the network and provides accessors to make the data in the message
+                easier to work with.  Created and managed by the Canonical Query class.
             group_files:
             - src/mongo/db/query/lite_parsed_query.cpp
             - src/mongo/db/query/lite_parsed_query.h
             - src/mongo/db/query/lite_parsed_query_test.cpp
-        -   group_title: 'Parsed Projection'
-            group_description: 'Class that parses and validates a projection object and can answer
-            questions that factor into query planning, such as what fields are required to satisfy
-            the projection.'
+        -   group_title: Parsed Projection
+            group_description: Class that parses and validates a projection object
+                and can answer questions that factor into query planning, such as
+                what fields are required to satisfy the projection.
             group_files:
             - src/mongo/db/query/parsed_projection.cpp
             - src/mongo/db/query/parsed_projection.h
             - src/mongo/db/query/parsed_projection_test.cpp
         -   group_title: Query Expression Parser
-            group_description: 'Matcher expressions. The point of all of this is to take a query
-            string and turn it into a structured set of classes that represents a parsed query.
-            These classes can be used to efficiently test if a document matches the original
-            expression.'
+            group_description: Matcher expressions. The point of all of this is to
+                take a query string and turn it into a structured set of classes that
+                represents a parsed query. These classes can be used to efficiently
+                test if a document matches the original expression.
             group_files:
             - src/mongo/db/matcher/expression.cpp
             - src/mongo/db/matcher/expression.h
@@ -4027,27 +4045,28 @@
             group_files:
             - src/mongo/db/matcher/match_details.cpp
             - src/mongo/db/matcher/match_details.h
-        -   group_title: 'Projection Helper'
-            group_description: 'Standalone projection helper that does not represent a stage in the
-            core query system.  Seems to be used only in findAndModify.'
+        -   group_title: Projection Helper
+            group_description: Standalone projection helper that does not represent
+                a stage in the core query system.  Seems to be used only in findAndModify.
             group_files:
             - src/mongo/db/projection.cpp
             - src/mongo/db/projection.h
     -   module_title: Query Planner
         module_name: query_planner
-        module_description: 'This is the place where we try to make decisions that optimize query
-        execution.  We do both static and dynamic optimization.
+        module_description: 'This is the place where we try to make decisions that
+            optimize query execution.  We do both static and dynamic optimization.
 
-        The static optimization involves using information we have independendently of the actual
-        execution, such as whether a query can use an index, or whether a query can be satisfied
-        entirely by the index keys.
+            The static optimization involves using information we have independendently
+            of the actual execution, such as whether a query can use an index, or
+            whether a query can be satisfied entirely by the index keys.
 
-        The dynamic optimization involves using information about the actual execution of the query
-        to determine what solution to use, which is done by executing multiple possible solutions
-        and caching the best one.'
+            The dynamic optimization involves using information about the actual execution
+            of the query to determine what solution to use, which is done by executing
+            multiple possible solutions and caching the best one.'
         module_groups:
-        -   group_title: 'Query Solution'
-            group_description: 'Abstract representation of a possible query execution plan.'
+        -   group_title: Query Solution
+            group_description: Abstract representation of a possible query execution
+                plan.
             group_files:
             - src/mongo/db/query/query_solution.cpp
             - src/mongo/db/query/query_solution.h
@@ -4057,38 +4076,40 @@
             group_files:
             - src/mongo/db/query/lru_key_value.h
             - src/mongo/db/query/lru_key_value_test.cpp
-        -   group_title: 'Query Plan Cache'
-            group_description: 'Maps a parsed and canonicalized query to the best solution that we
-            know of.  Note that this is not the execution tree, but the solution tree, which is the
-            abstract representation of how we should execute the query.'
+        -   group_title: Query Plan Cache
+            group_description: Maps a parsed and canonicalized query to the best solution
+                that we know of.  Note that this is not the execution tree, but the
+                solution tree, which is the abstract representation of how we should
+                execute the query.
             group_files:
             - src/mongo/db/query/plan_cache.cpp
             - src/mongo/db/query/plan_cache.h
             - src/mongo/db/query/plan_cache_test.cpp
-        -   group_title: 'Get Query Runner'
-            group_description: 'Interface to get a query runner.  This contains the code that checks
-            if the plan is cached, looks at the plan parameters that are passed in, and executes the
-            query planner.  In essence, this code is the glue that is responsible for multiplexing
-            between the different types of runners.'
+        -   group_title: Get Query Runner
+            group_description: Interface to get a query runner.  This contains the
+                code that checks if the plan is cached, looks at the plan parameters
+                that are passed in, and executes the query planner.  In essence, this
+                code is the glue that is responsible for multiplexing between the
+                different types of runners.
             group_files:
             - src/mongo/db/query/get_runner.cpp
             - src/mongo/db/query/get_runner.h
             - src/mongo/db/query/get_runner_test.cpp
-        -   group_title: 'Query Explain Plan'
-            group_description: 'Code to handle constructing user facing explain output from internal
-            query execution information.'
+        -   group_title: Query Explain Plan
+            group_description: Code to handle constructing user facing explain output
+                from internal query execution information.
             group_files:
             - src/mongo/db/query/explain_plan.cpp
             - src/mongo/db/query/explain_plan.h
-        -   group_title: 'Explain Document Schema'
-            group_description: 'Schema of the document returned by the explain command, which is how
-            the user gets information about query execution.'
+        -   group_title: Explain Document Schema
+            group_description: Schema of the document returned by the explain command,
+                which is how the user gets information about query execution.
             group_files:
             - src/mongo/db/query/type_explain.cpp
             - src/mongo/db/query/type_explain.h
-        -   group_title: 'Query Planner'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
+        -   group_title: Query Planner
+            group_description: 'TODO: Document what these are for and how they fit
+                into the query system.'
             group_files:
             - src/mongo/db/query/planner_access.cpp
             - src/mongo/db/query/planner_access.h
@@ -4105,25 +4126,25 @@
             - src/mongo/db/query/query_planner_test_lib.cpp
             - src/mongo/db/query/query_planner_test_lib.h
             - src/mongo/db/query/query_planner_text_test.cpp
-        -   group_title: 'Query Plan'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
+        -   group_title: Query Plan
+            group_description: 'TODO: Document what these are for and how they fit
+                into the query system.'
             group_files:
             - src/mongo/db/query/internal_plans.h
             - src/mongo/db/query/plan_enumerator.cpp
             - src/mongo/db/query/plan_enumerator.h
             - src/mongo/db/query/plan_ranker.cpp
             - src/mongo/db/query/plan_ranker.h
-        -   group_title: 'Interval'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
+        -   group_title: Interval
+            group_description: 'TODO: Document what these are for and how they fit
+                into the query system.'
             group_files:
             - src/mongo/db/query/interval.cpp
             - src/mongo/db/query/interval.h
             - src/mongo/db/query/interval_test.cpp
-        -   group_title: 'Query Index Management'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
+        -   group_title: Query Index Management
+            group_description: 'TODO: Document what these are for and how they fit
+                into the query system.'
             group_files:
             - src/mongo/db/query/index_bounds.cpp
             - src/mongo/db/query/index_bounds.h
@@ -4137,34 +4158,36 @@
             - src/mongo/db/query/indexability.h
     -   module_title: Query Execution
         module_name: query_execution
-        module_description: 'This handles the actual execution of a query.  This is what interacts
-        with the indexes and the storage layer to actually fetch the stream of results.'
+        module_description: This handles the actual execution of a query.  This is
+            what interacts with the indexes and the storage layer to actually fetch
+            the stream of results.
         module_groups:
-        -   group_title: 'Query Plan Executor'
-            group_description: 'Class built on top of a Plan Stage tree that knows how to turn the
-            crank on query execution.'
+        -   group_title: Query Plan Executor
+            group_description: Class built on top of a Plan Stage tree that knows
+                how to turn the crank on query execution.
             group_files:
             - src/mongo/db/query/plan_executor.cpp
             - src/mongo/db/query/plan_executor.h
-        -   group_title: 'Query Plan Stage Interface'
-            group_description: 'A plan stage is the basic building block of a query execution plan.
-            The plan stage also keeps track of the state of the execution of the stage.'
+        -   group_title: Query Plan Stage Interface
+            group_description: A plan stage is the basic building block of a query
+                execution plan. The plan stage also keeps track of the state of the
+                execution of the stage.
             group_files:
             - src/mongo/db/exec/plan_stage.h
-        -   group_title: 'Query Plan Stage Builder'
-            group_description: 'Converts a query solution to an actual execution plan, using
-            specific information about the current state of the database, such as what indexes are
-            available.'
+        -   group_title: Query Plan Stage Builder
+            group_description: Converts a query solution to an actual execution plan,
+                using specific information about the current state of the database,
+                such as what indexes are available.
             group_files:
             - src/mongo/db/query/stage_builder.cpp
             - src/mongo/db/query/stage_builder.h
-        -   group_title: 'Query Plan Stage Types'
-            group_description: 'Enum of all the supported plan stage types.'
+        -   group_title: Query Plan Stage Types
+            group_description: Enum of all the supported plan stage types.
             group_files:
             - src/mongo/db/query/stage_types.h
-        -   group_title: 'Query Plan Stage Implementations'
-            group_description: 'Implementations for all the types of plan stages that can comprise a
-            query.'
+        -   group_title: Query Plan Stage Implementations
+            group_description: Implementations for all the types of plan stages that
+                can comprise a query.
             group_files:
             - src/mongo/db/exec/2d.cpp
             - src/mongo/db/exec/2d.h
@@ -4217,16 +4240,18 @@
             - src/mongo/db/exec/sort_test.cpp
             - src/mongo/db/exec/text.cpp
             - src/mongo/db/exec/text.h
-        -   group_title: 'Query Stage Test Command'
-            group_description: 'TODO: Document what these are for and how they fit into the system.'
+        -   group_title: Query Stage Test Command
+            group_description: 'TODO: Document what these are for and how they fit
+                into the system.'
             group_files:
             - src/mongo/db/exec/stagedebug_cmd.cpp
-        -   group_title: 'Query Plan Stats'
-            group_description: 'TODO: Document what these are for and how they fit into the system.'
+        -   group_title: Query Plan Stats
+            group_description: 'TODO: Document what these are for and how they fit
+                into the system.'
             group_files:
             - src/mongo/db/exec/plan_stats.h
-        -   group_title: 'Working Set'
-            group_description: 'All data in use by a query operation.'
+        -   group_title: Working Set
+            group_description: All data in use by a query operation.
             group_files:
             - src/mongo/db/exec/working_set.cpp
             - src/mongo/db/exec/working_set.h
@@ -4234,22 +4259,23 @@
             - src/mongo/db/exec/working_set_common.h
             - src/mongo/db/exec/working_set_computed_data.h
             - src/mongo/db/exec/working_set_test.cpp
-        -   group_title: 'Query Runner Interface'
+        -   group_title: Query Runner Interface
             group_description: 'Interface for an object that '
             group_files:
             - src/mongo/db/query/runner.h
-        -   group_title: 'Cache Aware Query Runners'
-            group_description: 'Query runners that exist because of our strategy of running multiple
-            plans and caching the best one.  They both are aware of the cache and provide feeback to
-            it based on the results of the query execution.'
+        -   group_title: Cache Aware Query Runners
+            group_description: Query runners that exist because of our strategy of
+                running multiple plans and caching the best one.  They both are aware
+                of the cache and provide feeback to it based on the results of the
+                query execution.
             group_files:
             - src/mongo/db/query/cached_plan_runner.cpp
             - src/mongo/db/query/cached_plan_runner.h
             - src/mongo/db/query/multi_plan_runner.cpp
             - src/mongo/db/query/multi_plan_runner.h
-        -   group_title: 'Query Runners'
-            group_description: 'TODO: Document what these are for and how they fit into the query
-            system.'
+        -   group_title: Query Runners
+            group_description: 'TODO: Document what these are for and how they fit
+                into the query system.'
             group_files:
             - src/mongo/db/query/eof_runner.cpp
             - src/mongo/db/query/eof_runner.h
@@ -4264,37 +4290,37 @@
             - src/mongo/db/query/subplan_runner.h
     -   module_title: Insert Operations
         module_name: insert_operations
-        module_description: 'Code that is specific to insert operations'
+        module_description: Code that is specific to insert operations
         module_groups:
-        -   group_title: 'Insert Utilities'
-            group_description: 'Utilities that are used for insert operations.  Includes the code
-            that automatically fills in zero timestamps and adds the "_id" field if it was not
-            present.  Since inserts can happen on two different code paths, there is code that uses
-            this in the legacy insert request handling as well as the insert write command request
-            handling.'
+        -   group_title: Insert Utilities
+            group_description: Utilities that are used for insert operations.  Includes
+                the code that automatically fills in zero timestamps and adds the
+                "_id" field if it was not present.  Since inserts can happen on two
+                different code paths, there is code that uses this in the legacy insert
+                request handling as well as the insert write command request handling.
             group_files:
             - src/mongo/db/ops/insert.cpp
             - src/mongo/db/ops/insert.h
     -   module_title: Delete Operations
         module_name: delete_operations
-        module_description: 'Code that is specific to deletion operations'
+        module_description: Code that is specific to deletion operations
         module_groups:
-        -   group_title: 'Legacy Delete Function'
-            group_description: 'Standalone function to perform a delete operation.  Nothing more
-            than a thin shim around the core deletion functionality.'
+        -   group_title: Legacy Delete Function
+            group_description: Standalone function to perform a delete operation.  Nothing
+                more than a thin shim around the core deletion functionality.
             group_files:
             - src/mongo/db/ops/delete.cpp
             - src/mongo/db/ops/delete.h
-        -   group_title: 'Delete Request'
-            group_description: 'Parsed representation of a delete request that contains all
-            information needed to execute a delete operation.'
+        -   group_title: Delete Request
+            group_description: Parsed representation of a delete request that contains
+                all information needed to execute a delete operation.
             group_files:
             - src/mongo/db/ops/delete_request.h
-        -   group_title: 'Delete Executor'
-            group_description: 'Class for parsing and executing a delete operation.  This exists to
-            centralize all the delete execution code as well as to separate the processing and
-            actual execution of a delete request so that as much is done outside a write lock as
-            possible.'
+        -   group_title: Delete Executor
+            group_description: Class for parsing and executing a delete operation.  This
+                exists to centralize all the delete execution code as well as to separate
+                the processing and actual execution of a delete request so that as
+                much is done outside a write lock as possible.
             group_files:
             - src/mongo/db/ops/delete_executor.h
             - src/mongo/db/ops/delete_executor.cpp
@@ -4396,7 +4422,8 @@
         -   group_title: Dotted Field Utilities
             group_description: 'Utilites for managing dotted field names such as "a.b.c"
 
-            TODO: Split this up and put all shared query utilities in the same module'
+                TODO: Split this up and put all shared query utilities in the same
+                module'
             group_files:
             - src/mongo/db/ops/path_support.cpp
             - src/mongo/db/ops/path_support.h
@@ -4410,16 +4437,16 @@
             - src/mongo/db/ops/field_checker.cpp
             - src/mongo/db/ops/field_checker.h
             - src/mongo/db/ops/field_checker_test.cpp
-        -   group_title: 'Update Request'
-            group_description: 'Parsed representation of an update request that contains all
-            information needed to execute an update operation.'
+        -   group_title: Update Request
+            group_description: Parsed representation of an update request that contains
+                all information needed to execute an update operation.
             group_files:
             - src/mongo/db/ops/update_request.h
-        -   group_title: 'Update Executor'
-            group_description: 'Class for parsing and executing an update operation.  This exists to
-            centralize all the update execution code as well as to separate the processing and
-            actual execution of an update request so that as much is done outside a write lock as
-            possible.'
+        -   group_title: Update Executor
+            group_description: Class for parsing and executing an update operation.  This
+                exists to centralize all the update execution code as well as to separate
+                the processing and actual execution of an update request so that as
+                much is done outside a write lock as possible.
             group_files:
             - src/mongo/db/ops/update_executor.h
             - src/mongo/db/ops/update_executor.cpp
@@ -4614,8 +4641,8 @@
                 auto generated C++ files.
             group_files:
             - src/mongo/db/fts/generate_stop_words.py
-            - build/darwin/ssl/mongo/db/fts/stop_words_list.cpp
-            - build/darwin/ssl/mongo/db/fts/stop_words_list.h
+            - build/darwin/dbg_off/opt_off/ssl/mongo/db/fts/stop_words_list.cpp
+            - build/darwin/dbg_off/opt_off/ssl/mongo/db/fts/stop_words_list.h
             - src/mongo/db/fts/stop_words_danish.txt
             - src/mongo/db/fts/stop_words_dutch.txt
             - src/mongo/db/fts/stop_words_english.txt
@@ -4736,8 +4763,8 @@
                 compile.  Contains functions to get things like compile flags and
                 the Javascript interpreter version
             group_files:
-            - build/darwin/ssl/buildinfo.cpp
-            - build/darwin/ssl/mongo/buildinfo.cpp
+            - build/darwin/dbg_off/opt_off/ssl/buildinfo.cpp
+            - build/darwin/dbg_off/opt_off/ssl/mongo/buildinfo.cpp
         -   group_title: Server Version Information
             group_description: Contains the string for the current server version
                 that gets bumped when we release, as well as code to parse it
@@ -4752,100 +4779,106 @@
             - src/mongo/s/version_mongos.h
     -   module_title: Logging System
         module_name: logging_system
-        module_description: 'System for managing log output from the server.  Currently this is also
-        shared by the tools since the tools share much of the server code.'
+        module_description: System for managing log output from the server.  Currently
+            this is also shared by the tools since the tools share much of the server
+            code.
         module_groups:
-        -   group_title: 'Log System Interface'
-            group_description: 'Helper functions that hide the more complex details of the logging
-            function and provide a simple interface with which to log messages.  This is what you
-            will be using if you are logging a message.'
+        -   group_title: Log System Interface
+            group_description: Helper functions that hide the more complex details
+                of the logging function and provide a simple interface with which
+                to log messages.  This is what you will be using if you are logging
+                a message.
             group_files:
             - src/mongo/util/log.cpp
             - src/mongo/util/log.h
-        -   group_title: 'Log System Globals Access'
-            group_description: 'Free functions to get access to the global instances of the various
-            components of the logging system.'
+        -   group_title: Log System Globals Access
+            group_description: Free functions to get access to the global instances
+                of the various components of the logging system.
             group_files:
             - src/mongo/logger/logger.cpp
             - src/mongo/logger/logger.h
-        -   group_title: 'Log Appender'
-            group_description: 'Interface for an object that logs can be appended to.  This is what
-            allows us to plug different log sinks into the logging system.'
+        -   group_title: Log Appender
+            group_description: Interface for an object that logs can be appended to.  This
+                is what allows us to plug different log sinks into the logging system.
             group_files:
             - src/mongo/logger/appender.h
-        -   group_title: 'Console Appender'
-            group_description: 'Implementation of an appender that sends messages to a console.  For
-            example, this is the appender that gets used when log messages are sent to stdout.'
+        -   group_title: Console Appender
+            group_description: Implementation of an appender that sends messages to
+                a console.  For example, this is the appender that gets used when
+                log messages are sent to stdout.
             group_files:
             - src/mongo/logger/console.cpp
             - src/mongo/logger/console.h
             - src/mongo/logger/console_appender.h
-        -   group_title: 'Syslog Appender'
-            group_description: 'Implementation of an appender that sends messages to syslog.'
+        -   group_title: Syslog Appender
+            group_description: Implementation of an appender that sends messages to
+                syslog.
             group_files:
             - src/mongo/logger/syslog_appender.h
-        -   group_title: 'Ram Log'
-            group_description: 'In memory log that can be accessed using the "getLog" command.  See
-            http://docs.mongodb.org/manual/reference/command/getLog/.'
+        -   group_title: Ram Log
+            group_description: In memory log that can be accessed using the "getLog"
+                command.  See http://docs.mongodb.org/manual/reference/command/getLog/.
             group_files:
             - src/mongo/logger/ramlog.cpp
             - src/mongo/logger/ramlog.h
-        -   group_title: 'Log Tee'
-            group_description: 'Class that can be streamed to a log builder to add another output
-            location for whatever gets sent to that log builder.'
+        -   group_title: Log Tee
+            group_description: Class that can be streamed to a log builder to add
+                another output location for whatever gets sent to that log builder.
             group_files:
             - src/mongo/logger/tee.h
-        -   group_title: 'Log Domain'
-            group_description: 'A class to manage appenders.  A single log domain can have many
-            appenders (log sinks) attached to it.'
+        -   group_title: Log Domain
+            group_description: A class to manage appenders.  A single log domain can
+                have many appenders (log sinks) attached to it.
             group_files:
             - src/mongo/logger/log_domain-impl.h
             - src/mongo/logger/log_domain.h
             - src/mongo/logger/message_log_domain.cpp
             - src/mongo/logger/message_log_domain.h
-        -   group_title: 'Log Manager'
-            group_description: 'Class to manage log domains.  Allows access to log domains by name.'
+        -   group_title: Log Manager
+            group_description: Class to manage log domains.  Allows access to log
+                domains by name.
             group_files:
             - src/mongo/logger/log_manager.cpp
             - src/mongo/logger/log_manager.h
-        -   group_title: 'Log Level'
-            group_description: 'Classes representing the severity of log messages.  Currently, we
-            log messages if they have a severity above the threshold set by the user, or if they are
-            unconditional.'
+        -   group_title: Log Level
+            group_description: Classes representing the severity of log messages.  Currently,
+                we log messages if they have a severity above the threshold set by
+                the user, or if they are unconditional.
             group_files:
             - src/mongo/logger/labeled_level.h
             - src/mongo/logger/log_severity-inl.h
             - src/mongo/logger/log_severity.cpp
             - src/mongo/logger/log_severity.h
-        -   group_title: 'Message Event'
-            group_description: 'Class containing all the details behind a log event, such as the
-            date and the severity.'
+        -   group_title: Message Event
+            group_description: Class containing all the details behind a log event,
+                such as the date and the severity.
             group_files:
             - src/mongo/logger/logstream_builder.cpp
             - src/mongo/logger/logstream_builder.h
-        -   group_title: 'Message Event'
-            group_description: 'Class containing all the details behind a log event, such as the
-            date and the severity.'
+        -   group_title: Message Event
+            group_description: Class containing all the details behind a log event,
+                such as the date and the severity.
             group_files:
             - src/mongo/logger/message_event.h
-        -   group_title: 'Encoder Interface'
-            group_description: 'Interface for classes that take event objects and convert them to
-            streams of data suitable for output to some log stream.'
+        -   group_title: Encoder Interface
+            group_description: Interface for classes that take event objects and convert
+                them to streams of data suitable for output to some log stream.
             group_files:
             - src/mongo/logger/encoder.h
-        -   group_title: 'Message Encoder'
-            group_description: 'Classes that take message event objects, convert them to a form
-            suitable to being output to a stream, and outputs them to a stream.  This is where the
-            the format of the log messages and log message timestamps is handled.'
+        -   group_title: Message Encoder
+            group_description: Classes that take message event objects, convert them
+                to a form suitable to being output to a stream, and outputs them to
+                a stream.  This is where the the format of the log messages and log
+                message timestamps is handled.
             group_files:
             - src/mongo/logger/message_event_utf8_encoder.cpp
             - src/mongo/logger/message_event_utf8_encoder.h
-        -   group_title: 'Log Unittests'
-            group_description: 'Some basic unittests of the logging system.'
+        -   group_title: Log Unittests
+            group_description: Some basic unittests of the logging system.
             group_files:
             - src/mongo/logger/log_test.cpp
-        -   group_title: 'Log File Rotation'
-            group_description: 'Classes to allow MongoDB to support logfile rotation.'
+        -   group_title: Log File Rotation
+            group_description: Classes to allow MongoDB to support logfile rotation.
             group_files:
             - src/mongo/logger/rotatable_file_appender.h
             - src/mongo/logger/rotatable_file_manager.cpp
@@ -4853,42 +4886,44 @@
             - src/mongo/logger/rotatable_file_writer.cpp
             - src/mongo/logger/rotatable_file_writer.h
             - src/mongo/logger/rotatable_file_writer_test.cpp
-        -   group_title: 'Process Info Loggers'
-            group_description: 'Helpers to dump a bunch of information about the current process'
+        -   group_title: Process Info Loggers
+            group_description: Helpers to dump a bunch of information about the current
+                process
             group_files:
             - src/mongo/db/log_process_details.cpp
             - src/mongo/db/log_process_details.h
-        -   group_title: 'Extra Log Context'
-            group_description: 'MONGO_INITIALIZERs to add extra information to the server logs.'
+        -   group_title: Extra Log Context
+            group_description: MONGO_INITIALIZERs to add extra information to the
+                server logs.
             group_files:
             - src/mongo/db/server_extra_log_context.cpp
-        -   group_title: 'Query Log'
-            group_description: 'Helper for verbose query logging.  Should be unified with the
-            logging system once it supports logging based on module.'
+        -   group_title: Query Log
+            group_description: Helper for verbose query logging.  Should be unified
+                with the logging system once it supports logging based on module.
             group_files:
             - src/mongo/db/query/qlog.cpp
             - src/mongo/db/query/qlog.h
     -   module_title: Mongod And Mongos Command Line Options
         module_name: mongod_and_mongos_command_line_options
-        module_description: 'Command line options for mongod and mongos that are not connected to a
-        specific module.'
+        module_description: Command line options for mongod and mongos that are not
+            connected to a specific module.
         module_groups:
-        -   group_title: 'Server Options'
-            group_description: 'Command line options shared between mongod and mongos, such as some
-            basic network options'
+        -   group_title: Server Options
+            group_description: Command line options shared between mongod and mongos,
+                such as some basic network options
             group_files:
             - src/mongo/db/server_options.cpp
             - src/mongo/db/server_options.h
             - src/mongo/db/server_options_helpers.cpp
             - src/mongo/db/server_options_helpers.h
             - src/mongo/db/server_options_test.cpp
-        -   group_title: 'Mongod Options'
+        -   group_title: Mongod Options
             group_description: Mongod command line options
             group_files:
             - src/mongo/db/mongod_options.cpp
             - src/mongo/db/mongod_options.h
             - src/mongo/db/mongod_options_init.cpp
-        -   group_title: 'Mongos Options'
+        -   group_title: Mongos Options
             group_description: Mongos command line options
             group_files:
             - src/mongo/s/mongos_options.cpp
@@ -4896,17 +4931,17 @@
             - src/mongo/s/mongos_options_init.cpp
     -   module_title: Mongos And Mongod Mains
         module_name: mongos_and_mongod_mains
-        module_description: 'Main functions for the mongos and mongod binaries'
+        module_description: Main functions for the mongos and mongod binaries
         module_groups:
-        -   group_title: 'Mongod Main'
-            group_description: 'Main for mongod.  Contains mongod startup and shutdown code as well
-            as the network message handler for mongod'
+        -   group_title: Mongod Main
+            group_description: Main for mongod.  Contains mongod startup and shutdown
+                code as well as the network message handler for mongod
             group_files:
             - src/mongo/db/db.cpp
             - src/mongo/db/db.h
-        -   group_title: 'Mongos Main'
-            group_description: 'Main for mongos.  Contains mongos startup and shutdown code as well
-            as the network message handler for mongos'
+        -   group_title: Mongos Main
+            group_description: Main for mongos.  Contains mongos startup and shutdown
+                code as well as the network message handler for mongos
             group_files:
             - src/mongo/s/server.cpp
             - src/mongo/s/server.h
@@ -4914,17 +4949,17 @@
         module_name: startup_initialization
         module_description: 'TODO: startup_initialization description'
         module_groups:
-        -   group_title: 'Startup Warnings'
-            group_description: 'Check various expected startup conditions, such as whether mongod is
-            running in 32 bit mode or on a numa machine, and log warnings to the startup warnings
-            log if necessary'
+        -   group_title: Startup Warnings
+            group_description: Check various expected startup conditions, such as
+                whether mongod is running in 32 bit mode or on a numa machine, and
+                log warnings to the startup warnings log if necessary
             group_files:
             - src/mongo/db/startup_warnings.cpp
             - src/mongo/db/startup_warnings.h
-        -   group_title: 'Initialization Framework'
-            group_description: 'MONGO_INITIALIZER startup initialization framework.  Used by
-            anything that shares the server code, which currently includes the tools and the mongo
-            shell'
+        -   group_title: Initialization Framework
+            group_description: MONGO_INITIALIZER startup initialization framework.  Used
+                by anything that shares the server code, which currently includes
+                the tools and the mongo shell
             group_files:
             - src/mongo/base/global_initializer.cpp
             - src/mongo/base/global_initializer.h
@@ -4943,13 +4978,13 @@
             - src/mongo/base/initializer_test.cpp
             - src/mongo/base/make_string_vector.cpp
             - src/mongo/base/make_string_vector.h
-        -   group_title: 'Global State Initialization'
+        -   group_title: Global State Initialization
             group_description: Initialize the global state common to mongod and mongos,
                 such as logging.
             group_files:
             - src/mongo/db/initialize_server_global_state.cpp
             - src/mongo/db/initialize_server_global_state.h
-        -   group_title: 'Options Parser'
+        -   group_title: Options Parser
             group_description: Options parser library (command line and config files)
             group_files:
             - src/mongo/util/options_parser/constraints.cpp
@@ -4971,19 +5006,19 @@
             - src/mongo/util/options_parser/startup_options.h
             - src/mongo/util/options_parser/value.cpp
             - src/mongo/util/options_parser/value.h
-        -   group_title: 'Command Line Censorship'
+        -   group_title: Command Line Censorship
             group_description: Utilities to censor passwords read in at startup
             group_files:
             - src/mongo/util/cmdline_utils/censor_cmdline.cpp
             - src/mongo/util/cmdline_utils/censor_cmdline.h
             - src/mongo/util/cmdline_utils/censor_cmdline_test.cpp
-        -   group_title: 'Password Prompt'
+        -   group_title: Password Prompt
             group_description: 'Only used to ask user for password at startup. TODO:
                 move into cmdline_utils directory'
             group_files:
             - src/mongo/util/password.cpp
             - src/mongo/util/password.h
-        -   group_title: 'Server Parameters'
+        -   group_title: Server Parameters
             group_description: ServerParameter class used to add new parameters to
                 the "setParameter" command. These can also be# configured to be runtime
                 modifiable.
@@ -5053,7 +5088,7 @@
             - src/mongo/client/syncclusterconnection.cpp
             - src/mongo/client/syncclusterconnection.h
         -   group_title: Connection Pool Options
-            group_description: 'Startup configuration for client side connection pools.'
+            group_description: Startup configuration for client side connection pools.
             group_files:
             - src/mongo/db/conn_pool_options.h
             - src/mongo/db/conn_pool_options.cpp
@@ -5407,10 +5442,10 @@
     system_modules:
     -   module_title: Repair Database
         module_name: repair_database
-        module_description: 'Implementation of the repair database command.'
+        module_description: Implementation of the repair database command.
         module_groups:
-        -   group_title: 'Repair Database'
-            group_description: 'Implementation of the repair database command.'
+        -   group_title: Repair Database
+            group_description: Implementation of the repair database command.
             group_files:
             - src/mongo/db/repair_database.cpp
             - src/mongo/db/repair_database.h
@@ -5572,26 +5607,28 @@
             - src/mongo/util/logfile.h
     -   module_title: Data Files
         module_name: data_files
-        module_description: 'Non journaling related code for dealing with database data files'
+        module_description: Non journaling related code for dealing with database
+            data files
         module_groups:
-        -   group_title: 'Mmapped File Interface'
-            group_description: 'Portion of the code for interacting with memory mapped files that is
-            not platform specific.'
+        -   group_title: Mmapped File Interface
+            group_description: Portion of the code for interacting with memory mapped
+                files that is not platform specific.
             group_files:
             - src/mongo/util/mmap.cpp
             - src/mongo/util/mmap.h
-        -   group_title: 'Posix Mmapped File Implementation'
-            group_description: 'Implementation for dealing with memory mapped files in a posix
-            system.'
+        -   group_title: Posix Mmapped File Implementation
+            group_description: Implementation for dealing with memory mapped files
+                in a posix system.
             group_files:
             - src/mongo/util/mmap_posix.cpp
-        -   group_title: 'Windows Mmapped File Implementation'
-            group_description: 'Implementation for dealing with memory mapped files in Windows.'
+        -   group_title: Windows Mmapped File Implementation
+            group_description: Implementation for dealing with memory mapped files
+                in Windows.
             group_files:
             - src/mongo/util/mmap_win.cpp
-        -   group_title: 'Data File Layout'
-            group_description: 'Class for interacting with a database data file and managing the on
-            disk data file format.'
+        -   group_title: Data File Layout
+            group_description: Class for interacting with a database data file and
+                managing the on disk data file format.
             group_files:
             - src/mongo/db/storage/data_file.cpp
             - src/mongo/db/storage/data_file.h
@@ -5658,16 +5695,17 @@
             - src/mongo/db/catalog/database.cpp
             - src/mongo/db/catalog/database.h
         -   group_title: Namespace Details
-            group_description: Class to manage the disk format of an entry for a single collection
-                in the ".ns" files
+            group_description: Class to manage the disk format of an entry for a single
+                collection in the ".ns" files
             group_files:
             - src/mongo/db/structure/catalog/namespace_details-inl.h
             - src/mongo/db/structure/catalog/namespace_details.cpp
             - src/mongo/db/structure/catalog/namespace_details.h
         -   group_title: Namespace Index
-            group_description: Manages the disk format for the ".ns" files, including adding the
-                metadata for a new namespace or removing metadata for a deleted namespace.  Provides
-                a way to access the Namespace Details for a single namespace
+            group_description: Manages the disk format for the ".ns" files, including
+                adding the metadata for a new namespace or removing metadata for a
+                deleted namespace.  Provides a way to access the Namespace Details
+                for a single namespace
             group_files:
             - src/mongo/db/structure/catalog/namespace_index.cpp
             - src/mongo/db/structure/catalog/namespace_index.h
@@ -5886,8 +5924,8 @@
             - src/mongo/db/auth/action_set.h
             - src/mongo/db/auth/action_set_test.cpp
             - src/mongo/db/auth/action_types.txt
-            - build/darwin/ssl/mongo/db/auth/action_type.h
-            - build/darwin/ssl/mongo/db/auth/action_type.cpp
+            - build/darwin/dbg_off/opt_off/ssl/mongo/db/auth/action_type.h
+            - build/darwin/dbg_off/opt_off/ssl/mongo/db/auth/action_type.cpp
             - src/mongo/db/auth/generate_action_types.py
         -   group_title: Privileges
             group_description: A privilege represents a set of actions that can be
@@ -6038,11 +6076,11 @@
             - src/mongo/db/auth/security_key.h
     -   module_title: Authentication Utilities
         module_name: authentication_utilities
-        module_description: 'Utilities used for authentication'
+        module_description: Utilities used for authentication
         module_groups:
-        -   group_title: 'Password Digest'
-            group_description: 'Securely hash the password so that it is not sent or stored in
-            plaintext'
+        -   group_title: Password Digest
+            group_description: Securely hash the password so that it is not sent or
+                stored in plaintext
             group_files:
             - src/mongo/util/password_digest.cpp
             - src/mongo/util/password_digest.h

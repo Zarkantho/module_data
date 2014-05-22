@@ -1,0 +1,1 @@
+{"platform": "macosx-10.8-intel", "flags": ["--jobs 8 --mute --dbg=off --opt=off --ssl --cpppath /usr/local/Cellar/openssl/1.0.1e/include --libpath /usr/local/Cellar/openssl/1.0.1e/lib"]}
