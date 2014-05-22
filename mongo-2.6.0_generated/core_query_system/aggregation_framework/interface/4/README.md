@@ -6,7 +6,39 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    vtable for mongo::ExpressionAdd
+
+- Used By:
+
+    - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    vtable for mongo::ExpressionNary
+
+- Used By:
+
+    - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
     mongo::Expression::ObjectCtx::ObjectCtx(int)
+
+- Used By:
+
+    - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::Expression::parseObject(mongo::BSONObj, mongo::Expression::ObjectCtx*, mongo::VariablesParseState const&)
+
+- Used By:
+
+    - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::ExpressionObject::addToDocument(mongo::MutableDocument&, mongo::Document const&, mongo::Variables*) const
 
 - Used By:
 
@@ -62,23 +94,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    vtable for mongo::ExpressionAdd
-
-- Used By:
-
-    - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
     mongo::ExpressionCoerceToBool::create(boost::intrusive_ptr<mongo::Expression> const&)
-
-- Used By:
-
-    - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    vtable for mongo::ExpressionNary
 
 - Used By:
 
@@ -95,14 +111,6 @@ This interface information represents symbols that are defined in this group but
 <div></div>
 
     typeinfo for mongo::ExpressionNary
-
-- Used By:
-
-    - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::ExpressionObject::addToDocument(mongo::MutableDocument&, mongo::Document const&, mongo::Variables*) const
 
 - Used By:
 
@@ -135,14 +143,6 @@ This interface information represents symbols that are defined in this group but
 <div></div>
 
     mongo::ExpressionObject::includePath(std::string const&)
-
-- Used By:
-
-    - [src/mongo/dbtests/expressiontests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::Expression::parseObject(mongo::BSONObj, mongo::Expression::ObjectCtx*, mongo::VariablesParseState const&)
 
 - Used By:
 

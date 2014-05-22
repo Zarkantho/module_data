@@ -32,37 +32,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::MultiPlanRunner::hasBackupPlan() const
-
-- Used By:
-
-    - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
     mongo::MultiPlanRunner::pickBestPlan(unsigned long*, mongo::BSONObj*)
 
 - Used By:
 
     - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::MultiPlanRunner::cacheBestPlan()
-
-- Used By:
-
-    - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::MultiPlanRunner::MultiPlanRunner(mongo::Collection const*, mongo::CanonicalQuery*)
-
-- Used By:
-
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/query/get\_runner.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
 
 <div></div>
@@ -79,6 +53,32 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/query/get\_runner.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::MultiPlanRunner::hasBackupPlan() const
+
+- Used By:
+
+    - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::MultiPlanRunner::cacheBestPlan()
+
+- Used By:
+
+    - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::MultiPlanRunner::MultiPlanRunner(mongo::Collection const*, mongo::CanonicalQuery*)
+
+- Used By:
+
+    - [src/mongo/db/query/get\_runner.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/dbtests/query\_multi\_plan\_runner.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)

@@ -38,6 +38,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::MAXKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::getRangeMapOverlap(std::map<mongo::BSONObj, mongo::BSONObj, mongo::BSONObjCmp, std::allocator<std::pair<mongo::BSONObj const, mongo::BSONObj> > > const&, mongo::BSONObj const&, mongo::BSONObj const&, std::vector<std::pair<mongo::BSONObj, mongo::BSONObj>, std::allocator<std::pair<mongo::BSONObj, mongo::BSONObj> > >*)
 
 - Provided By:
@@ -91,6 +99,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/s/range\_arithmetic.cpp](../../../../sharding/chunk\_management)
+
+<div></div>
+
+    mongo::MINKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -272,6 +288,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
     mongo::CollectionType::toBSON() const
 
 - Provided By:
@@ -368,11 +392,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+    mongo::MINKEY
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -429,6 +453,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::MAXKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 

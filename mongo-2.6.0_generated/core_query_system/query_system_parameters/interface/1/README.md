@@ -38,16 +38,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::internalQueryForceIntersectionPlans
-
-- Used By:
-
-    - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/query/plan\_ranker.cpp](../../../../core\_query\_system/query\_planner)
-
-<div></div>
-
-    mongo::internalQueryCacheWriteOpsBetweenFlush
+    mongo::internalQueryCacheFeedbacksStored
 
 - Used By:
 
@@ -55,13 +46,22 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::internalQueryForceIntersectionPlans
+
+- Used By:
+
+    - [src/mongo/db/query/plan\_ranker.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
     mongo::internalQueryPlanEvaluationWorks
 
 - Used By:
 
-    - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/query/plan\_ranker.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -97,7 +97,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::internalQueryCacheFeedbacksStored
+    mongo::internalQueryCacheWriteOpsBetweenFlush
 
 - Used By:
 
@@ -110,5 +110,5 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/dbtests/plan\_ranking.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/query/get\_runner.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/exec/sort.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/get\_runner.cpp](../../../../core\_query\_system/query\_planner)

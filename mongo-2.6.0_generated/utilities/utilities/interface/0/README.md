@@ -10,8 +10,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/durop.cpp](../../../../storage/journaling)
-    - [src/mongo/db/dur\_journal.cpp](../../../../storage/journaling)
-    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/util/logfile.cpp](../../../../storage/journaling)
     - [src/mongo/util/file\_allocator.cpp](../../../../storage/file\_allocation)
+    - [src/mongo/db/durop.cpp](../../../../storage/journaling)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/dur\_journal.cpp](../../../../storage/journaling)

@@ -6,7 +6,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::DeleteExecutor::~DeleteExecutor()
+    mongo::DeleteExecutor::execute()
 
 - Used By:
 
@@ -24,7 +24,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::DeleteExecutor::execute()
+    mongo::DeleteExecutor::prepare()
 
 - Used By:
 
@@ -33,7 +33,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::DeleteExecutor::prepare()
+    mongo::DeleteExecutor::~DeleteExecutor()
 
 - Used By:
 

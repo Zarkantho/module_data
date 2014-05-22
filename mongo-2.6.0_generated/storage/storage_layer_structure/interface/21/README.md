@@ -6,11 +6,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::Extent::dump()
+    mongo::Extent::followupSize(int, int)
 
 - Used By:
 
-    - [src/mongo/db/commands/validate.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/dbtests/pdfiletests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -22,7 +22,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::Extent::followupSize(int, int)
+    mongo::Extent::maxSize()
 
 - Used By:
 
@@ -38,8 +38,8 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::Extent::maxSize()
+    mongo::Extent::dump()
 
 - Used By:
 
-    - [src/mongo/dbtests/pdfiletests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/validate.cpp](../../../../query\_and\_operation\_handling/database\_commands)

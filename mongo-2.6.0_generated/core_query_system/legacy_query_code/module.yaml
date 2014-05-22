@@ -259,7 +259,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/config/has_apply.hpp
         - src/third_party/boost/boost/mpl/aux_/full_lambda.hpp
         - src/third_party/boost/boost/smart_ptr/detail/spinlock_pt.hpp
-        - src/third_party/boost/boost/io/ios_state.hpp
+        - src/third_party/boost/boost/bind/arg.hpp
         - src/third_party/boost/boost/iterator/iterator_facade.hpp
         - src/third_party/boost/boost/smart_ptr/scoped_ptr.hpp
         - src/third_party/boost/boost/range/detail/begin.hpp
@@ -348,7 +348,7 @@ module_groups:
         - src/third_party/boost/boost/range/detail/const_iterator.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/facilities/identity.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/mpl/list.hpp
@@ -490,6 +490,7 @@ module_groups:
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/math/tools/real_cast.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -520,7 +521,7 @@ module_groups:
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/third_party/boost/boost/preprocessor/control/detail/while.hpp
         - src/third_party/boost/boost/date_time/time_facet.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/mpl/size.hpp
         - src/mongo/db/dur.h
@@ -663,7 +664,6 @@ module_groups:
         - src/third_party/boost/boost/date_time/date.hpp
         - src/third_party/boost/boost/preprocessor/punctuation/paren.hpp
         - src/third_party/boost/boost/mpl/void_fwd.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/numeric/conversion/detail/int_float_mixture.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
@@ -840,7 +840,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/remove_bounds.hpp
         - src/mongo/base/parse_number.h
         - src/third_party/boost/boost/date_time/date_facet.hpp
-        - src/third_party/boost/boost/bind/arg.hpp
+        - src/third_party/boost/boost/io/ios_state.hpp
         - src/third_party/boost/boost/mpl/limits/arity.hpp
         - src/third_party/boost/boost/type_traits/make_unsigned.hpp
         - src/third_party/boost/boost/date_time/gregorian/greg_duration.hpp
@@ -957,89 +957,19 @@ module_groups:
         - src/third_party/boost/boost/date_time/format_date_parser.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::FieldRangeVectorIterator::FieldIntervalMatcher::FieldIntervalMatcher(mongo::FieldInterval
-                const&, mongo::BSONElement const&, bool)
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRange::operator|=(mongo::FieldRange const&)
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::OrRangeGenerator::popOrClauseSingleKey()
-            symbol_uses:
-            - src/mongo/s/chunk.cpp
-        -   symbol_name: mongo::FieldRangeSet::toString() const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
         -   symbol_name: mongo::FieldRangeVectorIterator::prepDive()
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeVector::FieldRangeVector(mongo::FieldRangeSet
-                const&, mongo::BSONObj, int)
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRange::operator-=(mongo::FieldRange const&)
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldInterval::toString() const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeVector::startKey() const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeVector::endKey() const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeVector::startKeyInclusive() const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeVectorIterator::FieldIntervalMatcher::upperCmp()
-                const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeSet::subset(mongo::BSONObj const&) const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::isSimpleIdQuery(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/db/commands/find_and_modify.cpp
         -   symbol_name: mongo::FieldRangeVectorIterator::advance(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeSetPair::frsForIndex(mongo::NamespaceDetails
-                const*, int) const
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
         -   symbol_name: mongo::FieldRange::isPointIntervalSet() const
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeVectorIterator::FieldIntervalMatcher::lowerCmp()
-                const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeSet::universalRange() const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-            - src/mongo/db/keypattern.cpp
-            - src/mongo/s/chunk.cpp
         -   symbol_name: mongo::FieldRange::universal() const
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
             - src/mongo/s/chunk.cpp
-        -   symbol_name: mongo::FieldRangeVectorIterator::CompoundRangeCounter::CompoundRangeCounter(int,
-                int)
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeSetPair::operator&=(mongo::FieldRangeSetPair
-                const&)
-            symbol_uses:
-            - src/mongo/s/chunk.cpp
-        -   symbol_name: mongo::FieldRangeSetPair::operator-=(mongo::FieldRangeSet
-                const&)
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeVector::isSingleInterval() const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
         -   symbol_name: mongo::FieldRange::toString() const
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
@@ -1047,55 +977,125 @@ module_groups:
                 const*, int) const
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeSetPair::noNonUniversalRanges() const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
         -   symbol_name: mongo::FieldRange::FieldRange(mongo::BSONElement const&,
                 bool, bool)
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRange::intersect(mongo::FieldRange const&, bool)
+        -   symbol_name: mongo::FieldRangeSet::numNonUniversalRanges() const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeSet::operator-=(mongo::FieldRangeSet const&)
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeSet::prefixed(std::string const&) const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::OrRangeGenerator::popOrClauseSingleKey()
+            symbol_uses:
+            - src/mongo/s/chunk.cpp
+        -   symbol_name: mongo::FieldRangeSet::subset(mongo::BSONObj const&) const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeSetPair::operator&=(mongo::FieldRangeSetPair
+                const&)
+            symbol_uses:
+            - src/mongo/s/chunk.cpp
+        -   symbol_name: mongo::applySkipLimit(long long, mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/s/commands_public.cpp
+        -   symbol_name: mongo::FieldRangeVectorIterator::FieldIntervalMatcher::FieldIntervalMatcher(mongo::FieldInterval
+                const&, mongo::BSONElement const&, bool)
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
         -   symbol_name: mongo::FieldRangeVectorIterator::FieldRangeVectorIterator(mongo::FieldRangeVector
                 const&, int)
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeSet::operator&=(mongo::FieldRangeSet const&)
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
         -   symbol_name: mongo::FieldRangeSet::FieldRangeSet(char const*, mongo::BSONObj
                 const&, bool, bool)
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeSet::getSpecial() const
+        -   symbol_name: mongo::FieldRangeSetPair::toString() const
             symbol_uses:
-            - src/mongo/s/chunk.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRange::operator|=(mongo::FieldRange const&)
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeVectorIterator::FieldIntervalMatcher::lowerCmp()
+                const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeVector::startKeyInclusive() const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeSetPair::operator-=(mongo::FieldRangeSet
+                const&)
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRange::operator-=(mongo::FieldRange const&)
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeSetPair::noNonUniversalRanges() const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeVector::startKey() const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
         -   symbol_name: mongo::FieldRangeVector::toString() const
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeSet::numNonUniversalRanges() const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::applySkipLimit(long long, mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/s/commands_public.cpp
-        -   symbol_name: mongo::FieldRangeVector::endKeyInclusive() const
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeSet::operator-=(mongo::FieldRangeSet const&)
-            symbol_uses:
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::FieldRangeSetPair::toString() const
+        -   symbol_name: mongo::FieldRangeSetPair::frsForIndex(mongo::NamespaceDetails
+                const*, int) const
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
         -   symbol_name: mongo::OrRangeGenerator::OrRangeGenerator(char const*, mongo::BSONObj
                 const&, bool)
             symbol_uses:
             - src/mongo/s/chunk.cpp
-        -   symbol_name: mongo::FieldRangeSet::prefixed(std::string const&) const
+        -   symbol_name: mongo::FieldRangeSet::toString() const
             symbol_uses:
             - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeVector::FieldRangeVector(mongo::FieldRangeSet
+                const&, mongo::BSONObj, int)
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeVector::endKeyInclusive() const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeVectorIterator::FieldIntervalMatcher::upperCmp()
+                const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::isSimpleIdQuery(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/commands/find_and_modify.cpp
+        -   symbol_name: mongo::FieldRangeSet::universalRange() const
+            symbol_uses:
+            - src/mongo/db/keypattern.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/s/chunk.cpp
+        -   symbol_name: mongo::FieldInterval::toString() const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeVectorIterator::CompoundRangeCounter::CompoundRangeCounter(int,
+                int)
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeVector::endKey() const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeVector::isSingleInterval() const
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRange::intersect(mongo::FieldRange const&, bool)
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeSet::operator&=(mongo::FieldRangeSet const&)
+            symbol_uses:
+            - src/mongo/dbtests/queryutiltests.cpp
+        -   symbol_name: mongo::FieldRangeSet::getSpecial() const
+            symbol_uses:
+            - src/mongo/s/chunk.cpp
         file_dependencies:
         -   symbol_name: mongo::BSONObjBuilder::appendMaxForType(mongo::StringData
                 const&, int)

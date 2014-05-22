@@ -240,7 +240,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -320,6 +320,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/mongo/s/chunk_diff.h
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -337,7 +338,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -425,7 +426,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -634,6 +634,10 @@ module_groups:
             - src/mongo/unittest/unittest.cpp
         -   symbol_name: mongo::unittest::Suite::add(std::string const&, boost::function<void
                 ()> const&)
+            symbol_sources:
+            - src/mongo/unittest/unittest.cpp
+        -   symbol_name: mongo::unittest::TestAssertion::fail(std::string const&)
+                const
             symbol_sources:
             - src/mongo/unittest/unittest.cpp
         -   symbol_name: mongo::unittest::Test::run()
@@ -848,7 +852,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -927,6 +931,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -943,7 +948,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -1024,7 +1029,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -1438,7 +1442,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/config/static_constant.hpp
         - src/third_party/boost/boost/preprocessor/repetition/repeat.hpp
         - src/mongo/platform/windows_basic.h
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/date_time/time_formatting_streams.hpp
         - src/mongo/platform/process_id.h
         - src/third_party/boost/boost/detail/sp_typeinfo.hpp
         - src/third_party/boost/boost/mpl/aux_/integral_wrapper.hpp
@@ -1608,7 +1612,7 @@ module_groups:
         - src/third_party/boost/boost/range/detail/const_iterator.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/mpl/arg.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
@@ -1756,6 +1760,7 @@ module_groups:
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/math/tools/real_cast.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2001,7 +2006,6 @@ module_groups:
         - src/third_party/boost/boost/math/special_functions/fpclassify.hpp
         - src/third_party/boost/boost/mpl/eval_if.hpp
         - src/third_party/boost/boost/preprocessor/array/elem.hpp
-        - src/third_party/boost/boost/date_time/time_formatting_streams.hpp
         - src/third_party/boost/boost/mpl/aux_/preprocessor/params.hpp
         - src/third_party/boost/boost/mpl/assert.hpp
         - src/third_party/boost/boost/preprocessor/repetition/detail/dmc/for.hpp
@@ -2221,43 +2225,43 @@ module_groups:
         - src/third_party/boost/boost/date_time/format_date_parser.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string
-                const&)
-            symbol_uses:
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/client/parallel.cpp
         -   symbol_name: mongo::versionManager
             symbol_uses:
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/strategy.cpp
             - src/mongo/s/write_ops/dbclient_safe_writer.cpp
             - src/mongo/s/shardconnection.cpp
             - src/mongo/client/parallel.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/strategy.cpp
+        -   symbol_name: mongo::VersionManager::resetShardVersionCB(mongo::DBClientBase*)
+            symbol_uses:
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/shardconnection.cpp
+        -   symbol_name: mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*,
+                std::string const&, bool, int)
+            symbol_uses:
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/shardconnection.cpp
+        -   symbol_name: mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)
+            symbol_uses:
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/shardconnection.cpp
         -   symbol_name: mongo::VersionManager::initShardVersionCB(mongo::DBClientBase*,
                 mongo::BSONObj&)
             symbol_uses:
             - src/mongo/s/shard.cpp
-        -   symbol_name: mongo::VersionManager::resetShardVersionCB(mongo::DBClientBase*)
-            symbol_uses:
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/s/shard.cpp
-        -   symbol_name: mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*,
-                std::string const&, bool, int)
-            symbol_uses:
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/client/parallel.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
         -   symbol_name: mongo::VersionManager::checkShardVersionCB(mongo::ShardConnection*,
                 bool, int)
             symbol_uses:
             - src/mongo/s/shardconnection.cpp
-        -   symbol_name: mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)
+        -   symbol_name: mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string
+                const&)
             symbol_uses:
-            - src/mongo/s/shardconnection.cpp
+            - src/mongo/s/commands_public.cpp
             - src/mongo/client/parallel.cpp
-            - src/mongo/s/shard.cpp
+            - src/mongo/s/strategy.cpp
         file_dependencies:
         -   symbol_name: mongo::Grid::getDBConfig(mongo::StringData const&, bool,
                 std::string const&)
@@ -2505,7 +2509,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/config/static_constant.hpp
         - src/third_party/boost/boost/preprocessor/repetition/repeat.hpp
         - src/mongo/platform/windows_basic.h
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/detail/sp_typeinfo.hpp
         - src/third_party/boost/boost/type_traits/is_function.hpp
         - src/third_party/boost/boost/bind/bind.hpp
@@ -2596,7 +2599,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -2671,6 +2674,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2927,41 +2931,41 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::versionManager
-            symbol_uses:
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/client/parallel.cpp
-        -   symbol_name: mongo::VersionManager::checkShardVersionCB(mongo::ShardConnection*,
-                bool, int)
-            symbol_uses:
-            - src/mongo/s/shardconnection.cpp
-        -   symbol_name: mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)
-            symbol_uses:
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/client/parallel.cpp
-            - src/mongo/s/shard.cpp
         -   symbol_name: mongo::VersionManager::forceRemoteCheckShardVersionCB(std::string
                 const&)
             symbol_uses:
             - src/mongo/s/commands_public.cpp
-            - src/mongo/s/strategy.cpp
             - src/mongo/client/parallel.cpp
+            - src/mongo/s/strategy.cpp
         -   symbol_name: mongo::VersionManager::resetShardVersionCB(mongo::DBClientBase*)
             symbol_uses:
-            - src/mongo/s/shardconnection.cpp
             - src/mongo/s/shard.cpp
+            - src/mongo/s/shardconnection.cpp
+        -   symbol_name: mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*,
+                std::string const&, bool, int)
+            symbol_uses:
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/shardconnection.cpp
         -   symbol_name: mongo::VersionManager::initShardVersionCB(mongo::DBClientBase*,
                 mongo::BSONObj&)
             symbol_uses:
             - src/mongo/s/shard.cpp
-        -   symbol_name: mongo::VersionManager::checkShardVersionCB(mongo::DBClientBase*,
-                std::string const&, bool, int)
+        -   symbol_name: mongo::VersionManager::checkShardVersionCB(mongo::ShardConnection*,
+                bool, int)
             symbol_uses:
             - src/mongo/s/shardconnection.cpp
-            - src/mongo/client/parallel.cpp
+        -   symbol_name: mongo::versionManager
+            symbol_uses:
             - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/strategy.cpp
+        -   symbol_name: mongo::VersionManager::isVersionableCB(mongo::DBClientBase*)
+            symbol_uses:
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/shardconnection.cpp
         file_dependencies: []

@@ -18,5 +18,5 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repair\_database.cpp](../../../../storage/repair\_database)
     - [src/mongo/db/client.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/db/repair\_database.cpp](../../../../storage/repair\_database)

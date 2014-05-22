@@ -10,7 +10,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -75,7 +75,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -107,7 +107,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -147,7 +147,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -484,7 +484,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -556,7 +556,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -708,7 +708,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -716,7 +716,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -740,7 +740,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -804,7 +804,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -828,7 +828,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -868,7 +868,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -900,7 +900,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -972,7 +972,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -1044,7 +1044,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -1108,7 +1108,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -1165,6 +1165,7 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/queryutil.cpp](../../../../core\_query\_system/legacy\_query\_code)
+    - [src/mongo/db/ops/count.cpp](../../../../core\_query\_system/query\_system\_entry\_points)
 
 <div></div>
 
@@ -1276,7 +1277,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 

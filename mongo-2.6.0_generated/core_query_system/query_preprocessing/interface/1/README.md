@@ -6,20 +6,21 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::LiteParsedQuery::isTextScoreMeta(mongo::BSONElement)
+    mongo::LiteParsedQuery::metaGeoNearDistance
 
 - Used By:
 
-    - [src/mongo/db/exec/sort.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/client/parallel.cpp](../../../../sharding/routing)
+    - [src/mongo/db/exec/projection\_exec.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/commands/geonear.cpp](../../../../query\_and\_operation\_handling/database\_commands)
 
 <div></div>
 
-    mongo::LiteParsedQuery::parseMaxTimeMSQuery(mongo::BSONObj const&)
+    mongo::LiteParsedQuery::normalizeSortOrder(mongo::BSONObj const&)
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+    - [src/mongo/db/query/query\_planner.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/query/query\_solution.cpp](../../../../core\_query\_system/query\_planner)
 
 <div></div>
 
@@ -31,32 +32,21 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::LiteParsedQuery::normalizeSortOrder(mongo::BSONObj const&)
-
-- Used By:
-
-    - [src/mongo/db/query/query\_solution.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/query/query\_planner.cpp](../../../../core\_query\_system/query\_planner)
-
-<div></div>
-
     mongo::LiteParsedQuery::isQueryIsolated(mongo::BSONObj const&)
 
 - Used By:
 
-    - [src/mongo/db/ops/delete\_executor.cpp](../../../../core\_query\_system/delete\_operations)
     - [src/mongo/db/ops/update.cpp](../../../../core\_query\_system/update\_system)
+    - [src/mongo/db/ops/delete\_executor.cpp](../../../../core\_query\_system/delete\_operations)
 
 <div></div>
 
-    mongo::LiteParsedQuery::cmdOptionMaxTimeMS
+    mongo::LiteParsedQuery::metaTextScore
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
-    - [src/mongo/db/pipeline/pipeline.cpp](../../../../core\_query\_system/aggregation\_framework)
-    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/db/exec/projection\_exec.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../../core\_query\_system/full\_text\_search\_module)
 
 <div></div>
 
@@ -69,12 +59,40 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::LiteParsedQuery::metaGeoNearDistance
+    mongo::LiteParsedQuery::parseMaxTimeMSCommand(mongo::BSONObj const&)
 
 - Used By:
 
-    - [src/mongo/db/exec/projection\_exec.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/commands/geonear.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
+
+<div></div>
+
+    mongo::LiteParsedQuery::isTextScoreMeta(mongo::BSONElement)
+
+- Used By:
+
+    - [src/mongo/client/parallel.cpp](../../../../sharding/routing)
+    - [src/mongo/db/exec/sort.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::LiteParsedQuery::parseMaxTimeMSQuery(mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+
+<div></div>
+
+    mongo::LiteParsedQuery::cmdOptionMaxTimeMS
+
+- Used By:
+
+    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/pipeline/pipeline.cpp](../../../../core\_query\_system/aggregation\_framework)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -83,21 +101,3 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/exec/projection\_exec.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::LiteParsedQuery::parseMaxTimeMSCommand(mongo::BSONObj const&)
-
-- Used By:
-
-    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
-    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-
-<div></div>
-
-    mongo::LiteParsedQuery::metaTextScore
-
-- Used By:
-
-    - [src/mongo/db/exec/projection\_exec.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../../core\_query\_system/full\_text\_search\_module)

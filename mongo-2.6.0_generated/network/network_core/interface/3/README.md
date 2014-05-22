@@ -6,6 +6,25 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::MessagingPort::shutdown()
+
+- Used By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
+
+<div></div>
+
+    mongo::MessagingPort::say(mongo::Message&, int)
+
+- Used By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
+
+<div></div>
+
     mongo::MessagingPort::MessagingPort(double, mongo::logger::LogSeverity)
 
 - Used By:
@@ -14,13 +33,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::MessagingPort::say(mongo::Message&, int)
+    mongo::MessagingPort::setSocketTimeout(double)
 
 - Used By:
 
-    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
     - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
-    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
 
 <div></div>
 
@@ -28,17 +45,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
     - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
-
-<div></div>
-
-    mongo::MessagingPort::shutdown()
-
-- Used By:
-
     - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
-    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -59,18 +67,10 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::MessagingPort::setSocketTimeout(double)
-
-- Used By:
-
-    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
-
-<div></div>
-
     mongo::MessagingPort::call(mongo::Message&, mongo::Message&)
 
 - Used By:
 
-    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)
     - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
     - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/tools/bridge.cpp](../../../../tools/tools)

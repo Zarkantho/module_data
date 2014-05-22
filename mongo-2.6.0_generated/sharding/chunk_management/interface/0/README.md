@@ -10,8 +10,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_state.cpp](../../../../sharding/mongod\_sharding\_metadata)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/d\_state.cpp](../../../../sharding/mongod\_sharding\_metadata)
 
 <div></div>
 
@@ -19,8 +19,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/d\_state.cpp](../../../../sharding/mongod\_sharding\_metadata)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/d\_state.cpp](../../../../sharding/mongod\_sharding\_metadata)
 
 <div></div>
 

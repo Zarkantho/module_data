@@ -8,8 +8,8 @@ Information about this server build, including server version, compile informati
 Source files that get automatically generated in each compile.  Contains functions to get things like compile flags and the Javascript interpreter version
 
 #### Files
-- build/darwin/ssl/buildinfo.cpp   (mongod, tools, mongos)
-- build/darwin/ssl/mongo/buildinfo.cpp   (mongod, tools, mongos)
+- build/darwin/dbg\_off/opt\_off/ssl/buildinfo.cpp   (mongod, tools, mongos)
+- build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 

@@ -6,7 +6,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::KeyV1::dataSize() const
+    mongo::KeyV1::woCompare(mongo::KeyV1 const&, mongo::Ordering const&) const
 
 - Used By:
 
@@ -14,7 +14,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::KeyV1::woCompare(mongo::KeyV1 const&, mongo::Ordering const&) const
+    mongo::KeyBson::woCompare(mongo::KeyBson const&, mongo::Ordering const&) const
 
 - Used By:
 
@@ -26,16 +26,15 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/jsobjtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
-    mongo::KeyV1::toBson() const
+    mongo::KeyV1::dataSize() const
 
 - Used By:
 
-    - [src/mongo/db/commands/index\_stats.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/dbtests/jsobjtests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
@@ -44,13 +43,14 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/jsobjtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
-    mongo::KeyBson::woCompare(mongo::KeyBson const&, mongo::Ordering const&) const
+    mongo::KeyV1::toBson() const
 
 - Used By:
 
     - [src/mongo/dbtests/jsobjtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/index\_stats.cpp](../../../../query\_and\_operation\_handling/database\_commands)

@@ -6,7 +6,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::IndexLegacy::adjustIndexSpecObject(mongo::BSONObj const&)
+    mongo::IndexLegacy::postBuildHook(mongo::Collection*, mongo::BSONObj const&)
 
 - Used By:
 
@@ -14,7 +14,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::IndexLegacy::postBuildHook(mongo::Collection*, mongo::BSONObj const&)
+    mongo::IndexLegacy::adjustIndexSpecObject(mongo::BSONObj const&)
 
 - Used By:
 

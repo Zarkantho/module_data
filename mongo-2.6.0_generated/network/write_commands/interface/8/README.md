@@ -6,7 +6,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::msgToBatchRequests(mongo::Message const&, std::vector<mongo::BatchedCommandRequest*, std::allocator<mongo::BatchedCommandRequest*> >*)
+    mongo::batchErrorToLastError(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse const&, mongo::LastError*)
 
 - Used By:
 
@@ -14,7 +14,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::batchErrorToLastError(mongo::BatchedCommandRequest const&, mongo::BatchedCommandResponse const&, mongo::LastError*)
+    mongo::msgToBatchRequests(mongo::Message const&, std::vector<mongo::BatchedCommandRequest*, std::allocator<mongo::BatchedCommandRequest*> >*)
 
 - Used By:
 

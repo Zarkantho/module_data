@@ -6,16 +6,16 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::TwoDAccessMethod::TwoDAccessMethod(mongo::IndexCatalogEntry*)
-
-- Used By:
-
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
     mongo::TwoDAccessMethod::getKeys(mongo::BSONObj const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >&) const
 
 - Used By:
 
     - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::TwoDAccessMethod::TwoDAccessMethod(mongo::IndexCatalogEntry*)
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)

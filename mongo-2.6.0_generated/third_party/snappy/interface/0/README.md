@@ -6,11 +6,13 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    snappy::MaxCompressedLength(unsigned long)
+    snappy::RawUncompress(char const*, unsigned long, char*)
 
 - Used By:
 
-    - [src/mongo/util/compress.cpp](../../../../utilities/utilities)
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../../core\_query\_system/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../../core\_query\_system/aggregation\_framework)
+    - [src/mongo/db/extsort.cpp](../../../../core\_query\_system/aggregation\_framework)
 
 <div></div>
 
@@ -18,10 +20,10 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../../core\_query\_system/aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../../../../core\_query\_system/aggregation\_framework)
-    - [src/mongo/util/compress.cpp](../../../../utilities/utilities)
     - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../../core\_query\_system/aggregation\_framework)
+    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../../core\_query\_system/aggregation\_framework)
+    - [src/mongo/util/compress.cpp](../../../../utilities/utilities)
+    - [src/mongo/db/extsort.cpp](../../../../core\_query\_system/aggregation\_framework)
 
 <div></div>
 
@@ -33,13 +35,21 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    snappy::MaxCompressedLength(unsigned long)
+
+- Used By:
+
+    - [src/mongo/util/compress.cpp](../../../../utilities/utilities)
+
+<div></div>
+
     snappy::GetUncompressedLength(char const*, unsigned long, unsigned long*)
 
 - Used By:
 
+    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../../core\_query\_system/aggregation\_framework)
     - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../../core\_query\_system/aggregation\_framework)
     - [src/mongo/db/extsort.cpp](../../../../core\_query\_system/aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../../core\_query\_system/aggregation\_framework)
 
 <div></div>
 
@@ -48,13 +58,3 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/util/compress.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    snappy::RawUncompress(char const*, unsigned long, char*)
-
-- Used By:
-
-    - [src/mongo/db/pipeline/document\_source\_group.cpp](../../../../core\_query\_system/aggregation\_framework)
-    - [src/mongo/db/extsort.cpp](../../../../core\_query\_system/aggregation\_framework)
-    - [src/mongo/db/pipeline/document\_source\_sort.cpp](../../../../core\_query\_system/aggregation\_framework)

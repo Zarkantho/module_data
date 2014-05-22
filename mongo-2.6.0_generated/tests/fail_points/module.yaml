@@ -196,7 +196,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -272,6 +272,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -288,7 +289,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -365,7 +366,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -527,77 +527,77 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
-        -   symbol_name: mongo::FailPoint::slowShouldFailOpenBlock()
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/util/net/sock.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/curop.cpp
-            - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/exec/fetch.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/kill_current_op.cpp
-            - src/mongo/db/exec/collection_scan.cpp
-            - src/mongo/db/dbcommands_generic.cpp
-            - src/mongo/db/repl/rs_sync.cpp
         -   symbol_name: mongo::ScopedFailPoint::getData() const
             symbol_uses:
             - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/dbcommands_generic.cpp
             - src/mongo/db/kill_current_op.cpp
+            - src/mongo/db/dbcommands_generic.cpp
+        -   symbol_name: mongo::FailPoint::setMode(mongo::FailPoint::Mode, unsigned
+                int, mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/commands/fail_point_cmd.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+        -   symbol_name: mongo::FailPoint::shouldFailCloseBlock()
+            symbol_uses:
+            - src/mongo/db/exec/collection_scan.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/db/exec/fetch.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+        -   symbol_name: mongo::FailPoint::slowShouldFailOpenBlock()
+            symbol_uses:
+            - src/mongo/db/exec/collection_scan.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/dbcommands_generic.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/db/exec/fetch.cpp
+            - src/mongo/db/repl/rs_sync.cpp
         -   symbol_name: mongo::ScopedFailPoint::ScopedFailPoint(mongo::FailPoint*)
             symbol_uses:
             - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/dbcommands_generic.cpp
             - src/mongo/db/kill_current_op.cpp
-        -   symbol_name: mongo::ScopedFailPoint::~ScopedFailPoint()
+            - src/mongo/db/dbcommands_generic.cpp
+        -   symbol_name: mongo::FailPoint::FailPoint()
             symbol_uses:
+            - src/mongo/db/exec/collection_scan.cpp
             - src/mongo/db/repl/heartbeat.cpp
             - src/mongo/db/dbcommands_generic.cpp
-            - src/mongo/db/kill_current_op.cpp
-        -   symbol_name: mongo::FailPoint::shouldFailCloseBlock()
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
             - src/mongo/s/grid.cpp
-            - src/mongo/util/net/sock.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/curop.cpp
             - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/exec/fetch.cpp
             - src/mongo/db/instance.cpp
-            - src/mongo/db/exec/collection_scan.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/util/fail_point_service.cpp
+            - src/mongo/db/exec/fetch.cpp
             - src/mongo/db/repl/rs_sync.cpp
         -   symbol_name: mongo::FailPoint::toBSON() const
             symbol_uses:
             - src/mongo/db/commands/fail_point_cmd.cpp
-        -   symbol_name: mongo::FailPoint::FailPoint()
+        -   symbol_name: mongo::ScopedFailPoint::~ScopedFailPoint()
             symbol_uses:
-            - src/mongo/s/d_migrate.cpp
             - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/util/fail_point_service.cpp
-            - src/mongo/util/net/sock.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/exec/collection_scan.cpp
-            - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/exec/fetch.cpp
-            - src/mongo/db/instance.cpp
             - src/mongo/db/kill_current_op.cpp
-            - src/mongo/db/curop.cpp
             - src/mongo/db/dbcommands_generic.cpp
-            - src/mongo/db/repl/rs_sync.cpp
-        -   symbol_name: mongo::FailPoint::setMode(mongo::FailPoint::Mode, unsigned
-                int, mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/dbtests/query_stage_fetch.cpp
-            - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/commands/fail_point_cmd.cpp
-            - src/mongo/dbtests/oplogstarttests.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/db/repl/rs_sync.cpp
         file_dependencies:
         -   symbol_name: mongo::sleepmillis(long long)
             symbol_sources:
@@ -845,7 +845,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/util/fail_point_registry.h
         - src/mongo/base/status-inl.h
@@ -921,6 +921,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -937,7 +938,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -1014,7 +1015,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -1179,34 +1179,34 @@ module_groups:
         -   symbol_name: mongo::FailPointRegistry::FailPointRegistry()
             symbol_uses:
             - src/mongo/util/fail_point_service.cpp
+        -   symbol_name: mongo::FailPointRegistry::addFailPoint(std::string const&,
+                mongo::FailPoint*)
+            symbol_uses:
+            - src/mongo/db/exec/collection_scan.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/dbcommands_generic.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/util/fail_point_service.cpp
+            - src/mongo/db/exec/fetch.cpp
+            - src/mongo/db/repl/rs_sync.cpp
         -   symbol_name: mongo::FailPointRegistry::getFailPoint(std::string const&)
                 const
             symbol_uses:
+            - src/mongo/db/commands/fail_point_cmd.cpp
             - src/mongo/dbtests/query_stage_fetch.cpp
             - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/db/commands/fail_point_cmd.cpp
-            - src/mongo/dbtests/oplogstarttests.cpp
             - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
             - src/mongo/db/repl/rs_sync.cpp
         -   symbol_name: mongo::FailPointRegistry::freeze()
             symbol_uses:
             - src/mongo/util/fail_point_service.cpp
-        -   symbol_name: mongo::FailPointRegistry::addFailPoint(std::string const&,
-                mongo::FailPoint*)
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/util/fail_point_service.cpp
-            - src/mongo/util/net/sock.cpp
-            - src/mongo/db/exec/collection_scan.cpp
-            - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/exec/fetch.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/kill_current_op.cpp
-            - src/mongo/db/curop.cpp
-            - src/mongo/db/dbcommands_generic.cpp
-            - src/mongo/db/repl/rs_sync.cpp
         file_dependencies:
         -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
                 int)
@@ -1434,7 +1434,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/util/fail_point_registry.h
@@ -1516,6 +1516,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1532,7 +1533,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/mongo/base/initializer_dependency_graph.h
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -1615,7 +1616,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/smart_ptr/detail/atomic_count.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -1790,22 +1790,22 @@ module_groups:
         file_interface:
         -   symbol_name: mongo::getGlobalFailPointRegistry()
             symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/commands/fail_point_cmd.cpp
-            - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/util/net/sock.cpp
             - src/mongo/db/exec/collection_scan.cpp
-            - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/exec/fetch.cpp
-            - src/mongo/dbtests/oplogstarttests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
             - src/mongo/dbtests/query_stage_fetch.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/db/curop.cpp
             - src/mongo/db/dbcommands_generic.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/commands/fail_point_cmd.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
+            - src/mongo/db/exec/fetch.cpp
             - src/mongo/db/repl/rs_sync.cpp
         file_dependencies:
         -   symbol_name: mongo::FailPointRegistry::FailPointRegistry()
@@ -2028,7 +2028,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -2108,6 +2108,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2123,7 +2124,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -2204,7 +2205,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp

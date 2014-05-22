@@ -1532,6 +1532,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::UserException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::~LogstreamBuilder()
 
 - Provided By:

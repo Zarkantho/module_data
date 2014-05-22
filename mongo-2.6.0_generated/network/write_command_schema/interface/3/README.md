@@ -14,19 +14,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::BatchedRequestMetadata::setSession(long long)
+    mongo::BatchedRequestMetadata::setShardVersion(mongo::ChunkVersion const&)
 
 - Used By:
 
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
-
-<div></div>
-
-    mongo::BatchedRequestMetadata::getShardVersion() const
-
-- Used By:
-
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -38,14 +30,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::BatchedRequestMetadata::setShardVersion(mongo::ChunkVersion const&)
-
-- Used By:
-
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
-
-<div></div>
-
     mongo::BatchedRequestMetadata::getShardName() const
 
 - Used By:
@@ -54,7 +38,23 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::BatchedRequestMetadata::getShardVersion() const
+
+- Used By:
+
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+
+<div></div>
+
     mongo::BatchedRequestMetadata::setShardName(mongo::StringData const&)
+
+- Used By:
+
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::BatchedRequestMetadata::setSession(long long)
 
 - Used By:
 

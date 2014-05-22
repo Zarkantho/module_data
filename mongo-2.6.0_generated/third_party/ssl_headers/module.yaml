@@ -55,7 +55,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -66,7 +66,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -76,7 +76,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -87,7 +87,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -97,7 +97,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -108,7 +108,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -118,7 +118,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -129,7 +129,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -139,7 +139,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -150,7 +150,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -160,7 +160,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -171,7 +171,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -181,7 +181,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -192,7 +192,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -202,7 +202,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -213,7 +213,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -223,7 +223,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -234,7 +234,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -244,7 +244,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -255,7 +255,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -265,7 +265,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -276,7 +276,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -286,7 +286,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -297,7 +297,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -307,7 +307,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -318,7 +318,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -328,7 +328,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -339,7 +339,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -349,7 +349,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -360,7 +360,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -370,7 +370,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -381,7 +381,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -391,7 +391,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -402,7 +402,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -412,7 +412,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -423,7 +423,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -454,7 +454,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -465,7 +465,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -475,7 +475,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -486,7 +486,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -496,7 +496,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -507,7 +507,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -517,7 +517,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -528,7 +528,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -538,7 +538,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -549,7 +549,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -559,7 +559,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -570,7 +570,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -580,7 +580,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -591,7 +591,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -601,7 +601,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -612,7 +612,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -622,7 +622,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -633,7 +633,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -643,7 +643,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -654,7 +654,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -664,7 +664,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -675,7 +675,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -706,7 +706,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -717,7 +717,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -727,7 +727,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -738,7 +738,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -748,7 +748,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -759,7 +759,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -769,7 +769,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -780,7 +780,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -790,7 +790,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -801,7 +801,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -811,7 +811,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -822,7 +822,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -832,7 +832,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -843,7 +843,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -853,7 +853,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -864,7 +864,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -874,7 +874,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -885,7 +885,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -895,7 +895,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -906,7 +906,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -916,7 +916,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -927,7 +927,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -937,7 +937,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -948,7 +948,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []

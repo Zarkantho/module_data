@@ -88,11 +88,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+    mongo::MAXKEY
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -149,6 +149,22 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::MINKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 

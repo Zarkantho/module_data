@@ -280,14 +280,6 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&, bool, bool)
-
-- Provided By:
-
-    - [src/mongo/db/server\_parameters.cpp](../../../../process\_management/startup\_initialization)
-
-<div></div>
-
     mongo::auth::schemaVersionServerParameter
 
 - Provided By:
@@ -321,6 +313,14 @@ This dependency information represents symbols that are used in this group but d
 <div></div>
 
     mongo::ServerParameterSet::getGlobal()
+
+- Provided By:
+
+    - [src/mongo/db/server\_parameters.cpp](../../../../process\_management/startup\_initialization)
+
+<div></div>
+
+    mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*, std::string const&, bool, bool)
 
 - Provided By:
 

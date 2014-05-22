@@ -6,17 +6,17 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::HeartbeatInfo::numPings
-
-- Used By:
-
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/data\_sync)
-
-<div></div>
-
     mongo::requestHeartbeat(std::string const&, std::string const&, std::string const&, mongo::BSONObj&, int, int&, bool)
 
 - Used By:
 
     - [src/mongo/db/repl/rs\_initiate.cpp](../../../../replication/replica\_set\_configuration)
     - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replica\_set\_configuration)
+
+<div></div>
+
+    mongo::HeartbeatInfo::numPings
+
+- Used By:
+
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/data\_sync)

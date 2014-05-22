@@ -6,6 +6,14 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::IndexPathSet::mightBeIndexed(mongo::StringData const&) const
+
+- Used By:
+
+    - [src/mongo/db/ops/update\_driver.cpp](../../../../core\_query\_system/update\_system)
+
+<div></div>
+
     mongo::IndexPathSet::clear()
 
 - Used By:
@@ -19,11 +27,3 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::IndexPathSet::mightBeIndexed(mongo::StringData const&) const
-
-- Used By:
-
-    - [src/mongo/db/ops/update\_driver.cpp](../../../../core\_query\_system/update\_system)

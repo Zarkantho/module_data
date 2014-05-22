@@ -6,19 +6,19 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::LockStat::reset()
-
-- Used By:
-
-    - [src/mongo/db/curop.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
-
-<div></div>
-
     mongo::LockStat::report() const
 
 - Used By:
 
     - [src/mongo/db/client.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/db/curop.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::LockStat::reset()
+
+- Used By:
+
     - [src/mongo/db/curop.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
 
 <div></div>

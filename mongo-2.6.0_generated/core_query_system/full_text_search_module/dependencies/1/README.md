@@ -2,7 +2,7 @@
 # Interface for Full Text Search Stop Words
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
-### build/darwin/ssl/mongo/db/fts/stop\_words\_list.cpp
+### build/darwin/dbg\_off/opt\_off/ssl/mongo/db/fts/stop\_words\_list.cpp
 
 <div></div>
 

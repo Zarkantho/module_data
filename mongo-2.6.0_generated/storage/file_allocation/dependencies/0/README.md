@@ -46,6 +46,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
+
+<div></div>
+
     mongo::getThreadName()
 
 - Provided By:
@@ -203,14 +211,6 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
-
-<div></div>
-
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
 
 <div></div>
 

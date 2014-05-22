@@ -14,6 +14,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../../../../utilities/base\_utilites)
+
+<div></div>
+
     typeinfo for mongo::ServerParameter
 
 - Provided By:

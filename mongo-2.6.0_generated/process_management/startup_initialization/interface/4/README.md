@@ -6,14 +6,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::cmdline_utils::censorArgsVector(std::vector<std::string, std::allocator<std::string> >*)
-
-- Used By:
-
-    - [src/mongo/db/server\_options\_helpers.cpp](../../../../process\_management/mongod\_and\_mongos\_command\_line\_options)
-
-<div></div>
-
     mongo::cmdline_utils::censorBSONObj(mongo::BSONObj*)
 
 - Used By:
@@ -26,5 +18,13 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+
+<div></div>
+
+    mongo::cmdline_utils::censorArgsVector(std::vector<std::string, std::allocator<std::string> >*)
+
+- Used By:
+
+    - [src/mongo/db/server\_options\_helpers.cpp](../../../../process\_management/mongod\_and\_mongos\_command\_line\_options)

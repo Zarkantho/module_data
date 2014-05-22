@@ -10,8 +10,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../../replication/replication\_commands)
     - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../../replication/replication\_commands)
 
 <div></div>
 
@@ -19,15 +19,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::SyncSourceFeedback::ensureMe()
-
-- Used By:
-
     - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
@@ -45,3 +37,11 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/write\_concern)
+
+<div></div>
+
+    mongo::SyncSourceFeedback::ensureMe()
+
+- Used By:
+
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)

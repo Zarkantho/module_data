@@ -54,6 +54,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::MINKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::BSONObjBuilder::numStrs
 
 - Provided By:
@@ -94,6 +102,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::MAXKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::operator<<(std::ostream&, mongo::OID const&)
 
 - Provided By:
@@ -123,6 +139,22 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../../../../bson/bson)
+
+<div></div>
+
+    mongo::BSONUndefined
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
+    mongo::BSONNULL
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 

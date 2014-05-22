@@ -6,17 +6,17 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::_runCommands(char const*, mongo::BSONObj&, mongo::_BufBuilder<mongo::TrivialAllocator>&, mongo::BSONObjBuilder&, bool, int)
+
+- Used By:
+
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/query/new\_find.cpp](../../../../core\_query\_system/query\_system\_entry\_points)
+
+<div></div>
+
     mongo::Command::execCommand(mongo::Command*, mongo::Client&, int, char const*, mongo::BSONObj&, mongo::BSONObjBuilder&, bool)
 
 - Used By:
 
     - [src/mongo/db/dbwebserver.cpp](../../../../network/web\_server)
-
-<div></div>
-
-    mongo::_runCommands(char const*, mongo::BSONObj&, mongo::_BufBuilder<mongo::TrivialAllocator>&, mongo::BSONObjBuilder&, bool, int)
-
-- Used By:
-
-    - [src/mongo/db/query/new\_find.cpp](../../../../core\_query\_system/query\_system\_entry\_points)
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)

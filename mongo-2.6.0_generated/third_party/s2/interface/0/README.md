@@ -6,29 +6,29 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    LogMessageFatal::~LogMessageFatal()
-
-- Used By:
-
-    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/index/s2\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/index/external\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
     LogMessageFatal::LogMessageFatal(char const*, int)
 
 - Used By:
 
-    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/index/s2\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/index/external\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
     - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/index/s2\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
     - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
+
+<div></div>
+
+    LogMessageFatal::~LogMessageFatal()
+
+- Used By:
+
+    - [src/mongo/db/index/external\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/index/s2\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
 
 ### src/third\_party/s2/s1angle.cc
 
@@ -48,11 +48,11 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/index/s2\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/index/external\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/index/s2\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
 
@@ -60,11 +60,11 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/index/s2\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/index/external\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/index/s2\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
 
 ### src/third\_party/s2/s2cap.cc
 
@@ -74,8 +74,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
     - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
     - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
 
 <div></div>
@@ -88,31 +88,22 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    S2Cap::FromAxisAngle(Vector3<double> const&, S1Angle const&)
-
-- Used By:
-
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
-
-<div></div>
-
     S2Cap::MayIntersect(S2Cell const&) const
 
 - Used By:
 
     - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
 
-### src/third\_party/s2/s2cell.cc
-
 <div></div>
 
-    S2Cell::Init(S2CellId const&)
+    S2Cap::FromAxisAngle(Vector3<double> const&, S1Angle const&)
 
 - Used By:
 
     - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
     - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+
+### src/third\_party/s2/s2cell.cc
 
 <div></div>
 
@@ -120,17 +111,26 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/query/planner\_access.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/query/stage\_builder.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
-    - [src/mongo/db/query/query\_solution.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/matcher/expression\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
-    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/query/query\_planner.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
     - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/planner\_access.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/query/query\_solution.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/query/query\_planner.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
+
+<div></div>
+
+    S2Cell::Init(S2CellId const&)
+
+- Used By:
+
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
 
 <div></div>
 
@@ -144,34 +144,33 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    S2CellId::level() const
-
-- Used By:
-
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
     S2CellId::kNumFaces
 
 - Used By:
 
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
 
-    S2CellId::ToString() const
+    S2CellId::level() const
 
 - Used By:
 
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
     - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+
+<div></div>
+
+    S2CellId::kPosBits
+
+- Used By:
+
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
 
 <div></div>
 
@@ -187,19 +186,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    S2CellId::kPosBits
-
-- Used By:
-
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
 
@@ -208,6 +197,17 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
+
+<div></div>
+
+    S2CellId::ToString() const
+
+- Used By:
+
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
 
 ### src/third\_party/s2/s2latlng.cc
 
@@ -231,6 +231,15 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    vtable for S2LatLngRect
+
+- Used By:
+
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
+
+<div></div>
+
     S2LatLngRect::Area() const
 
 - Used By:
@@ -238,16 +247,15 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
 
+### src/third\_party/s2/s2loop.cc
+
 <div></div>
 
-    vtable for S2LatLngRect
+    S2Loop::S2Loop(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)
 
 - Used By:
 
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
-
-### src/third\_party/s2/s2loop.cc
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
 
 <div></div>
 
@@ -289,14 +297,6 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
 
-<div></div>
-
-    S2Loop::S2Loop(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)
-
-- Used By:
-
-    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
-
 ### src/third\_party/s2/s2polygon.cc
 
 <div></div>
@@ -305,13 +305,29 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
     - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
+
+<div></div>
+
+    S2Polygon::Project(Vector3<double> const&) const
+
+- Used By:
+
     - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
 
 <div></div>
 
     S2Polygon::Contains(S2Polygon const*) const
+
+- Used By:
+
+    - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
+
+<div></div>
+
+    S2Polygon::Contains(Vector3<double> const&) const
 
 - Used By:
 
@@ -339,9 +355,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
     - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
 
 <div></div>
 
@@ -351,23 +367,15 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
 
-<div></div>
-
-    S2Polygon::Contains(Vector3<double> const&) const
-
-- Used By:
-
-    - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
-
-<div></div>
-
-    S2Polygon::Project(Vector3<double> const&) const
-
-- Used By:
-
-    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-
 ### src/third\_party/s2/s2polygonbuilder.cc
+
+<div></div>
+
+    S2PolygonBuilder::AddLoop(S2Loop const*)
+
+- Used By:
+
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
 
 <div></div>
 
@@ -379,15 +387,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    S2PolygonBuilder::~S2PolygonBuilder()
-
-- Used By:
-
-    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
-
-<div></div>
-
-    S2PolygonBuilder::AddLoop(S2Loop const*)
+    S2PolygonBuilder::AssemblePolygon(S2Polygon*, std::vector<std::pair<Vector3<double>, Vector3<double> >, std::allocator<std::pair<Vector3<double>, Vector3<double> > > >*)
 
 - Used By:
 
@@ -403,7 +403,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    S2PolygonBuilder::AssemblePolygon(S2Polygon*, std::vector<std::pair<Vector3<double>, Vector3<double> >, std::allocator<std::pair<Vector3<double>, Vector3<double> > > >*)
+    S2PolygonBuilder::~S2PolygonBuilder()
 
 - Used By:
 
@@ -433,9 +433,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
     - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
 
 <div></div>
 
@@ -451,23 +451,7 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
     - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-
-<div></div>
-
-    S2Polyline::Init(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)
-
-- Used By:
-
-    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
-
-<div></div>
-
-    S2Polyline::Intersects(S2Polyline const*) const
-
-- Used By:
-
     - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
 
 <div></div>
@@ -486,6 +470,22 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
 
+<div></div>
+
+    S2Polyline::Init(std::vector<Vector3<double>, std::allocator<Vector3<double> > > const&)
+
+- Used By:
+
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
+
+<div></div>
+
+    S2Polyline::Intersects(S2Polyline const*) const
+
+- Used By:
+
+    - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
+
 ### src/third\_party/s2/s2region.cc
 
 <div></div>
@@ -494,18 +494,36 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/query/stage\_builder.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
-    - [src/mongo/db/query/planner\_access.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/matcher/expression\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
-    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/query\_solution.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/query\_planner.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
+    - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/planner\_access.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
+
+<div></div>
+
+    vtable for S2Region
+
+- Used By:
+
+    - [src/mongo/db/matcher/expression\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
+    - [src/mongo/db/query/query\_solution.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/query\_planner.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
+    - [src/mongo/db/geo/geoquery.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/planner\_access.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/geo/geoparser.cpp](../../../../core\_query\_system/geo\_queries)
 
 ### src/third\_party/s2/s2regioncoverer.cc
 
@@ -515,8 +533,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
@@ -533,20 +551,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
     - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    S2RegionCoverer::set_min_level(int)
-
-- Used By:
-
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
@@ -555,8 +562,19 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    S2RegionCoverer::set_min_level(int)
+
+- Used By:
+
+    - [src/mongo/db/geo/s2common.cpp](../../../../core\_query\_system/geo\_queries)
+    - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
@@ -565,23 +583,15 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
 
 ### src/third\_party/s2/s2regionintersection.cc
 
 <div></div>
 
-    S2RegionIntersection::S2RegionIntersection()
-
-- Used By:
-
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    S2RegionIntersection::Release(std::vector<S2Region*, std::allocator<S2Region*> >*)
+    S2RegionIntersection::~S2RegionIntersection()
 
 - Used By:
 
@@ -597,7 +607,15 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    S2RegionIntersection::~S2RegionIntersection()
+    S2RegionIntersection::S2RegionIntersection()
+
+- Used By:
+
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    S2RegionIntersection::Release(std::vector<S2Region*, std::allocator<S2Region*> >*)
 
 - Used By:
 

@@ -27,8 +27,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/commands/validate.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/commands/validate.cpp](../../../../query\_and\_operation\_handling/database\_commands)
 
 <div></div>
 
@@ -41,31 +41,13 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::NamespaceDetails::syncUserFlags(std::string const&)
-
-- Used By:
-
-    - [src/mongo/db/index\_legacy.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/ttl.cpp](../../../../query\_and\_operation\_handling/indexing)
-
-<div></div>
-
-    mongo::NamespaceDetails::getRecordAllocationSize(int)
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
     mongo::NamespaceDetails::setUserFlag(int)
 
 - Used By:
 
     - [src/mongo/db/index\_legacy.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/db/ttl.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
 
 <div></div>
 
@@ -73,9 +55,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
+    - [src/mongo/dbtests/queryutiltests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/commands/index\_stats.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/db/commands/touch.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/dbtests/queryutiltests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -88,33 +70,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::NamespaceDetails::alloc(mongo::Collection*, mongo::StringData const&, int)
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::NamespaceDetails::setPaddingFactor(double)
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/ops/update.cpp](../../../../core\_query\_system/update\_system)
-
-<div></div>
-
-    mongo::NamespaceDetails::clearUserFlag(int)
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-
-<div></div>
-
-    mongo::NamespaceDetails::setIndexIsMultikey(int, bool)
+    mongo::NamespaceDetails::getRecordAllocationSize(int)
 
 - Used By:
 
@@ -126,5 +82,49 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/ops/delete\_executor.cpp](../../../../core\_query\_system/delete\_operations)
     - [src/mongo/db/ops/update.cpp](../../../../core\_query\_system/update\_system)
+    - [src/mongo/db/ops/delete\_executor.cpp](../../../../core\_query\_system/delete\_operations)
+
+<div></div>
+
+    mongo::NamespaceDetails::setPaddingFactor(double)
+
+- Used By:
+
+    - [src/mongo/db/ops/update.cpp](../../../../core\_query\_system/update\_system)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::NamespaceDetails::syncUserFlags(std::string const&)
+
+- Used By:
+
+    - [src/mongo/db/index\_legacy.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/ttl.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+
+<div></div>
+
+    mongo::NamespaceDetails::clearUserFlag(int)
+
+- Used By:
+
+    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::NamespaceDetails::setIndexIsMultikey(int, bool)
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::NamespaceDetails::alloc(mongo::Collection*, mongo::StringData const&, int)
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)

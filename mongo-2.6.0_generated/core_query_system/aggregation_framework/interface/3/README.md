@@ -37,7 +37,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::DocumentSourceCursor::create(std::string const&, boost::shared_ptr<mongo::Runner> const&, boost::intrusive_ptr<mongo::ExpressionContext> const&)
+    mongo::DocumentSourceCursor::getLimit() const
 
 - Used By:
 
@@ -45,7 +45,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::DocumentSourceCursor::getLimit() const
+    mongo::DocumentSourceCursor::create(std::string const&, boost::shared_ptr<mongo::Runner> const&, boost::intrusive_ptr<mongo::ExpressionContext> const&)
 
 - Used By:
 
@@ -75,7 +75,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::DocumentSourceLimit::createFromBson(mongo::BSONElement, boost::intrusive_ptr<mongo::ExpressionContext> const&)
+    mongo::DocumentSourceLimit::create(boost::intrusive_ptr<mongo::ExpressionContext> const&, long long)
 
 - Used By:
 
@@ -83,7 +83,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::DocumentSourceLimit::create(boost::intrusive_ptr<mongo::ExpressionContext> const&, long long)
+    mongo::DocumentSourceLimit::createFromBson(mongo::BSONElement, boost::intrusive_ptr<mongo::ExpressionContext> const&)
 
 - Used By:
 
@@ -101,7 +101,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::DocumentSourceMatch::getQuery() const
+    typeinfo for mongo::DocumentSourceMatch
 
 - Used By:
 
@@ -117,7 +117,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    typeinfo for mongo::DocumentSourceMatch
+    mongo::DocumentSourceMatch::getQuery() const
 
 - Used By:
 
@@ -157,7 +157,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    typeinfo for mongo::DocumentSourceSort
+    mongo::DocumentSourceSort::createFromBson(mongo::BSONElement, boost::intrusive_ptr<mongo::ExpressionContext> const&)
 
 - Used By:
 
@@ -165,7 +165,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::DocumentSourceSort::createFromBson(mongo::BSONElement, boost::intrusive_ptr<mongo::ExpressionContext> const&)
+    typeinfo for mongo::DocumentSourceSort
 
 - Used By:
 

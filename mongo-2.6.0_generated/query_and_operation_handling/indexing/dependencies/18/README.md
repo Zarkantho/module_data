@@ -30,6 +30,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::BSONNULL
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:

@@ -110,7 +110,13 @@ module_groups:
         -   symbol_name: vtable for snappy::ByteArraySource
             symbol_uses:
             - src/third_party/snappy/snappy.cc
+        -   symbol_name: vtable for snappy::Source
+            symbol_uses:
+            - src/third_party/snappy/snappy.cc
         -   symbol_name: snappy::UncheckedByteArraySink::~UncheckedByteArraySink()
+            symbol_uses:
+            - src/third_party/snappy/snappy.cc
+        -   symbol_name: vtable for snappy::Sink
             symbol_uses:
             - src/third_party/snappy/snappy.cc
         file_dependencies: []
@@ -204,33 +210,33 @@ module_groups:
         - src/third_party/snappy/snappy-stubs-internal.h
         - /usr/bin/g++
         file_interface:
-        -   symbol_name: snappy::MaxCompressedLength(unsigned long)
+        -   symbol_name: snappy::RawUncompress(char const*, unsigned long, char*)
             symbol_uses:
-            - src/mongo/util/compress.cpp
-        -   symbol_name: snappy::Compress(char const*, unsigned long, std::string*)
-            symbol_uses:
+            - src/mongo/db/pipeline/document_source_sort.cpp
             - src/mongo/db/pipeline/document_source_group.cpp
             - src/mongo/db/extsort.cpp
-            - src/mongo/util/compress.cpp
+        -   symbol_name: snappy::Compress(char const*, unsigned long, std::string*)
+            symbol_uses:
             - src/mongo/db/pipeline/document_source_sort.cpp
+            - src/mongo/db/pipeline/document_source_group.cpp
+            - src/mongo/util/compress.cpp
+            - src/mongo/db/extsort.cpp
         -   symbol_name: snappy::RawCompress(char const*, unsigned long, char*, unsigned
                 long*)
+            symbol_uses:
+            - src/mongo/util/compress.cpp
+        -   symbol_name: snappy::MaxCompressedLength(unsigned long)
             symbol_uses:
             - src/mongo/util/compress.cpp
         -   symbol_name: snappy::GetUncompressedLength(char const*, unsigned long,
                 unsigned long*)
             symbol_uses:
+            - src/mongo/db/pipeline/document_source_sort.cpp
             - src/mongo/db/pipeline/document_source_group.cpp
             - src/mongo/db/extsort.cpp
-            - src/mongo/db/pipeline/document_source_sort.cpp
         -   symbol_name: snappy::Uncompress(char const*, unsigned long, std::string*)
             symbol_uses:
             - src/mongo/util/compress.cpp
-        -   symbol_name: snappy::RawUncompress(char const*, unsigned long, char*)
-            symbol_uses:
-            - src/mongo/db/pipeline/document_source_group.cpp
-            - src/mongo/db/extsort.cpp
-            - src/mongo/db/pipeline/document_source_sort.cpp
         file_dependencies:
         -   symbol_name: vtable for snappy::UncheckedByteArraySink
             symbol_sources:
@@ -241,7 +247,13 @@ module_groups:
         -   symbol_name: vtable for snappy::ByteArraySource
             symbol_sources:
             - src/third_party/snappy/snappy-sinksource.cc
+        -   symbol_name: vtable for snappy::Source
+            symbol_sources:
+            - src/third_party/snappy/snappy-sinksource.cc
         -   symbol_name: snappy::UncheckedByteArraySink::~UncheckedByteArraySink()
+            symbol_sources:
+            - src/third_party/snappy/snappy-sinksource.cc
+        -   symbol_name: vtable for snappy::Sink
             symbol_sources:
             - src/third_party/snappy/snappy-sinksource.cc
     -   file_name: src/third_party/snappy/snappy.h

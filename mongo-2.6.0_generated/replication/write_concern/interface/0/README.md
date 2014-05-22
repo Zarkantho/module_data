@@ -14,18 +14,18 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::waitForWriteConcern(mongo::WriteConcernOptions const&, mongo::OpTime const&, mongo::WriteConcernResult*)
-
-- Used By:
-
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
-    - [src/mongo/db/commands/get\_last\_error.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-
-<div></div>
-
     mongo::validateWriteConcern(mongo::WriteConcernOptions const&)
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
     - [src/mongo/db/commands/get\_last\_error.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::waitForWriteConcern(mongo::WriteConcernOptions const&, mongo::OpTime const&, mongo::WriteConcernResult*)
+
+- Used By:
+
+    - [src/mongo/db/commands/get\_last\_error.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)

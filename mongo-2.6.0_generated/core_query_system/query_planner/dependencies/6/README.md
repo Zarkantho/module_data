@@ -70,6 +70,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::MatchExpression
+
+- Provided By:
+
+    - [src/mongo/db/matcher/expression.cpp](../../../../core\_query\_system/query\_preprocessing)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
@@ -123,6 +131,22 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    vtable for S2Region
+
+- Provided By:
+
+    - [src/third\_party/s2/s2region.cc](../../../../third\_party/s2)
+
+<div></div>
+
+    vtable for mongo::ListOfMatchExpression
+
+- Provided By:
+
+    - [src/mongo/db/matcher/expression\_tree.cpp](../../../../core\_query\_system/query\_preprocessing)
 
 <div></div>
 
@@ -723,6 +747,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    vtable for S2Region
+
+- Provided By:
+
+    - [src/third\_party/s2/s2region.cc](../../../../third\_party/s2)
 
 <div></div>
 

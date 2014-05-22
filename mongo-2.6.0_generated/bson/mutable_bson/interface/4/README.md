@@ -10,8 +10,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/updatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -19,5 +19,5 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/updatetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)

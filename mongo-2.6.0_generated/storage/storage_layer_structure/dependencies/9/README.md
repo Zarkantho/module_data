@@ -106,7 +106,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -203,10 +203,10 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
     - [src/mongo/unittest/crutch.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 

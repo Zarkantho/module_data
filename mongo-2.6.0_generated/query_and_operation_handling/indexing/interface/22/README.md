@@ -6,26 +6,15 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::PregeneratedKeys::get(mongo::IndexCatalogEntry*) const
+    mongo::GeneratorHolder::getInstance()
 
 - Used By:
 
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::GeneratorHolder::droppedDatabase(std::string const&)
-
-- Used By:
-
     - [src/mongo/db/pdfile.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::GeneratorHolder::dropped(std::string const&)
-
-- Used By:
-
     - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
@@ -39,16 +28,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::GeneratorHolder::getInstance()
+    mongo::GeneratorHolder::droppedDatabase(std::string const&)
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/pdfile.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
-    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -56,5 +40,21 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::PregeneratedKeys::get(mongo::IndexCatalogEntry*) const
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_catalog.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::GeneratorHolder::dropped(std::string const&)
+
+- Used By:
+
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)

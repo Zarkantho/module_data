@@ -195,7 +195,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -259,7 +259,7 @@ module_groups:
         - src/third_party/boost/boost/bind/mem_fn_vw.hpp
         - src/third_party/boost/boost/preprocessor/slot/slot.hpp
         - src/third_party/boost/boost/type_traits/is_enum.hpp
-        - build/darwin/ssl/mongo/db/auth/action_type.h
+        - src/third_party/boost/boost/preprocessor/seq/size.hpp
         - src/third_party/boost/boost/mpl/aux_/preprocessor/sub.hpp
         - src/third_party/boost/boost/mpl/aux_/preprocessor/tuple.hpp
         - src/third_party/boost/boost/date_time/time_system_counted.hpp
@@ -272,6 +272,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -288,7 +289,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/mongo/db/namespace_string-inl.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -339,6 +340,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/empty.hpp
         - src/third_party/boost/boost/config/posix_features.hpp
         - src/third_party/boost/boost/optional/optional.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/db/auth/action_type.h
         - src/third_party/boost/boost/preprocessor/list/detail/edg/fold_left.hpp
         - src/third_party/boost/boost/operators.hpp
         - src/third_party/boost/boost/thread/detail/platform.hpp
@@ -368,7 +370,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -395,7 +396,6 @@ module_groups:
         - src/mongo/platform/unordered_map.h
         - src/third_party/boost/boost/utility/swap.hpp
         - src/mongo/logger/log_domain.h
-        - src/third_party/boost/boost/preprocessor/seq/size.hpp
         - src/third_party/boost/boost/date_time/gregorian/greg_day.hpp
         - src/third_party/boost/boost/thread/win32/thread_data.hpp
         - src/third_party/boost/boost/type_traits/detail/template_arity_spec.hpp
@@ -538,10 +538,6 @@ module_groups:
                 const&, mongo::mutablebson::Document const&, mongo::ErrorCodes::Error)
             symbol_uses:
             - src/mongo/db/commands.cpp
-        -   symbol_name: mongo::audit::logDropAllRolesFromDatabase(mongo::ClientBasic*,
-                mongo::StringData const&)
-            symbol_uses:
-            - src/mongo/db/commands/user_management_commands.cpp
         -   symbol_name: mongo::audit::logKillCursorsAuthzCheck(mongo::ClientBasic*,
                 mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)
             symbol_uses:
@@ -568,16 +564,17 @@ module_groups:
         -   symbol_name: mongo::audit::logKillOpAuthzCheck(mongo::ClientBasic*, mongo::BSONObj
                 const&, mongo::ErrorCodes::Error)
             symbol_uses:
-            - src/mongo/s/strategy.cpp
             - src/mongo/db/instance.cpp
+            - src/mongo/s/strategy.cpp
         -   symbol_name: mongo::audit::logDropAllUsersFromDatabase(mongo::ClientBasic*,
                 mongo::StringData const&)
             symbol_uses:
             - src/mongo/db/commands/user_management_commands.cpp
-        -   symbol_name: mongo::audit::logRenameCollection(mongo::ClientBasic*, mongo::StringData
-                const&, mongo::StringData const&)
+        -   symbol_name: mongo::audit::logUpdateAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString
+                const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool,
+                mongo::ErrorCodes::Error)
             symbol_uses:
-            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/instance.cpp
         -   symbol_name: mongo::audit::logGrantRolesToRole(mongo::ClientBasic*, mongo::RoleName
                 const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
                 > const&)
@@ -585,8 +582,8 @@ module_groups:
             - src/mongo/db/commands/user_management_commands.cpp
         -   symbol_name: mongo::audit::logShutdown(mongo::ClientBasic*)
             symbol_uses:
-            - src/mongo/s/server.cpp
             - src/mongo/db/instance.cpp
+            - src/mongo/s/server.cpp
         -   symbol_name: mongo::audit::logRevokeRolesFromUser(mongo::ClientBasic*,
                 mongo::UserName const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
                 > const&)
@@ -600,11 +597,10 @@ module_groups:
                 const&)
             symbol_uses:
             - src/mongo/db/catalog/database.cpp
-        -   symbol_name: mongo::audit::logUpdateUser(mongo::ClientBasic*, mongo::UserName
-                const&, bool, mongo::BSONObj const*, std::vector<mongo::RoleName,
-                std::allocator<mongo::RoleName> > const*)
+        -   symbol_name: mongo::audit::logShardCollection(mongo::ClientBasic*, mongo::StringData
+                const&, mongo::BSONObj const&, bool)
             symbol_uses:
-            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/s/commands_admin.cpp
         -   symbol_name: mongo::audit::logDropRole(mongo::ClientBasic*, mongo::RoleName
                 const&)
             symbol_uses:
@@ -636,11 +632,10 @@ module_groups:
                 > const&)
             symbol_uses:
             - src/mongo/db/commands/user_management_commands.cpp
-        -   symbol_name: mongo::audit::parseAndRemoveImpersonatedUserField(mongo::BSONObj,
-                mongo::AuthorizationSession*, std::vector<mongo::UserName, std::allocator<mongo::UserName>
-                >*, bool*)
+        -   symbol_name: mongo::audit::logRenameCollection(mongo::ClientBasic*, mongo::StringData
+                const&, mongo::StringData const&)
             symbol_uses:
-            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/catalog/database.cpp
         -   symbol_name: mongo::audit::logGrantRolesToUser(mongo::ClientBasic*, mongo::UserName
                 const&, std::vector<mongo::RoleName, std::allocator<mongo::RoleName>
                 > const&)
@@ -659,8 +654,8 @@ module_groups:
         -   symbol_name: mongo::audit::logQueryAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString
                 const&, mongo::BSONObj const&, mongo::ErrorCodes::Error)
             symbol_uses:
-            - src/mongo/s/strategy.cpp
             - src/mongo/db/instance.cpp
+            - src/mongo/s/strategy.cpp
         -   symbol_name: mongo::audit::logDropIndex(mongo::ClientBasic*, mongo::StringData
                 const&, mongo::StringData const&)
             symbol_uses:
@@ -668,21 +663,17 @@ module_groups:
         -   symbol_name: mongo::audit::logInProgAuthzCheck(mongo::ClientBasic*, mongo::BSONObj
                 const&, mongo::ErrorCodes::Error)
             symbol_uses:
-            - src/mongo/s/strategy.cpp
             - src/mongo/db/instance.cpp
+            - src/mongo/s/strategy.cpp
         -   symbol_name: mongo::audit::logEnableSharding(mongo::ClientBasic*, mongo::StringData
                 const&)
             symbol_uses:
             - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::audit::logUpdateAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString
-                const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool,
-                mongo::ErrorCodes::Error)
+        -   symbol_name: mongo::audit::logUpdateUser(mongo::ClientBasic*, mongo::UserName
+                const&, bool, mongo::BSONObj const*, std::vector<mongo::RoleName,
+                std::allocator<mongo::RoleName> > const*)
             symbol_uses:
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::audit::logShardCollection(mongo::ClientBasic*, mongo::StringData
-                const&, mongo::BSONObj const&, bool)
-            symbol_uses:
-            - src/mongo/s/commands_admin.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
         -   symbol_name: mongo::audit::logRemoveShard(mongo::ClientBasic*, mongo::StringData
                 const&)
             symbol_uses:
@@ -703,8 +694,17 @@ module_groups:
         -   symbol_name: mongo::audit::logGetMoreAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString
                 const&, long long, mongo::ErrorCodes::Error)
             symbol_uses:
-            - src/mongo/s/strategy.cpp
             - src/mongo/db/instance.cpp
+            - src/mongo/s/strategy.cpp
+        -   symbol_name: mongo::audit::logDropAllRolesFromDatabase(mongo::ClientBasic*,
+                mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::audit::parseAndRemoveImpersonatedUserField(mongo::BSONObj,
+                mongo::AuthorizationSession*, std::vector<mongo::UserName, std::allocator<mongo::UserName>
+                >*, bool*)
+            symbol_uses:
+            - src/mongo/db/dbcommands.cpp
         -   symbol_name: mongo::audit::logFsyncUnlockAuthzCheck(mongo::ClientBasic*,
                 mongo::ErrorCodes::Error)
             symbol_uses:

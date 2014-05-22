@@ -8,8 +8,8 @@ V8 Javascript interpreter by Google.  The basis of the mongo shell and the inter
 Third Party - V8 Javascript engine auto generated files
 
 #### Files
-- build/darwin/ssl/third\_party/v8/src/experimental-libraries.cc   (mongod, tools, mongos)
-- build/darwin/ssl/third\_party/v8/src/libraries.cc   (mongod, tools, mongos)
+- build/darwin/dbg\_off/opt\_off/ssl/third\_party/v8/src/experimental-libraries.cc   (mongod, tools, mongos)
+- build/darwin/dbg\_off/opt\_off/ssl/third\_party/v8/src/libraries.cc   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 

@@ -10,5 +10,5 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/extsorttests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/indexupdatetests.cpp](../../../../tests/unit\_tests)

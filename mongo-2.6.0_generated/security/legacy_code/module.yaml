@@ -13,18 +13,18 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
-        - test
+        - bsondump
         - mongoimport
         - mongos
         - mongooplog
-        - bsondump
+        - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers:
         - src/third_party/boost/boost/preprocessor/logical/not.hpp
         - src/third_party/boost/boost/type_traits/is_reference.hpp
@@ -206,7 +206,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -288,6 +288,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -305,7 +306,7 @@ module_groups:
         - src/mongo/base/initializer_dependency_graph.h
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/mongo/util/safe_num-inl.h
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/mongo/db/namespace_string-inl.h
@@ -365,6 +366,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/empty.hpp
         - src/third_party/boost/boost/config/posix_features.hpp
         - src/third_party/boost/boost/optional/optional.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/db/auth/action_type.h
         - src/third_party/boost/boost/type_traits/type_with_alignment.hpp
         - src/third_party/boost/boost/operators.hpp
         - src/third_party/boost/boost/thread/detail/platform.hpp
@@ -395,7 +397,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -424,7 +425,6 @@ module_groups:
         - src/mongo/platform/unordered_map.h
         - src/third_party/boost/boost/utility/swap.hpp
         - src/mongo/logger/log_domain.h
-        - build/darwin/ssl/mongo/db/auth/action_type.h
         - src/third_party/boost/boost/date_time/gregorian/greg_day.hpp
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/type_traits/detail/template_arity_spec.hpp
@@ -575,14 +575,14 @@ module_groups:
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface: []
         file_dependencies:
+        -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
+                int)
+            symbol_sources:
+            - src/mongo/base/status.cpp
         -   symbol_name: typeinfo for mongo::ServerParameter
             symbol_sources:
             - src/mongo/db/server_parameters.cpp
         -   symbol_name: mongo::ServerParameter::~ServerParameter()
-            symbol_sources:
-            - src/mongo/db/server_parameters.cpp
-        -   symbol_name: mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*,
-                std::string const&, bool, bool)
             symbol_sources:
             - src/mongo/db/server_parameters.cpp
         -   symbol_name: mongo::_makeStringVector(int, ...)
@@ -592,6 +592,10 @@ module_groups:
             symbol_sources:
             - src/mongo/db/auth/authorization_manager.cpp
         -   symbol_name: mongo::ServerParameterSet::getGlobal()
+            symbol_sources:
+            - src/mongo/db/server_parameters.cpp
+        -   symbol_name: mongo::ServerParameter::ServerParameter(mongo::ServerParameterSet*,
+                std::string const&, bool, bool)
             symbol_sources:
             - src/mongo/db/server_parameters.cpp
         -   symbol_name: mongo::msgasserted(int, char const*)

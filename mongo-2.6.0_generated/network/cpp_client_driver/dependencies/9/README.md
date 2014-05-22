@@ -118,6 +118,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::DATENOW
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::DBException::toString() const
 
 - Provided By:

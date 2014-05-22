@@ -162,8 +162,8 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/sorter/sorter\_test.cpp](../../../../core\_query\_system/aggregation\_framework)
     - [src/mongo/db/server\_options\_helpers.cpp](../../../../process\_management/mongod\_and\_mongos\_command\_line\_options)
+    - [src/mongo/db/sorter/sorter\_test.cpp](../../../../core\_query\_system/aggregation\_framework)
 
 <div></div>
 

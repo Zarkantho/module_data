@@ -6,15 +6,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    vtable for mongo::ConfigServerFixture
-
-- Used By:
-
-    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/chunk\_management)
-
-<div></div>
-
-    mongo::ConfigServerFixture::setUp()
+    typeinfo for mongo::ConfigServerFixture
 
 - Used By:
 
@@ -38,7 +30,15 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    typeinfo for mongo::ConfigServerFixture
+    vtable for mongo::ConfigServerFixture
+
+- Used By:
+
+    - [src/mongo/dbtests/merge\_chunk\_tests.cpp](../../../../sharding/chunk\_management)
+
+<div></div>
+
+    mongo::ConfigServerFixture::setUp()
 
 - Used By:
 

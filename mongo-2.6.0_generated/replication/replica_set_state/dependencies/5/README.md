@@ -383,6 +383,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::OpCounterServerStatusSection
+
+- Provided By:
+
+    - [src/mongo/db/commands/server\_status.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+
+<div></div>
+
     mongo::InternalRunner::InternalRunner(mongo::Collection const*, mongo::PlanStage*, mongo::WorkingSet*)
 
 - Provided By:

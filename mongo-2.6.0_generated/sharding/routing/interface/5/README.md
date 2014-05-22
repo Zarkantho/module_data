@@ -26,14 +26,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::ShardKeyPattern::hasShardKey(mongo::BSONObj const&) const
-
-- Used By:
-
-    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
-
-<div></div>
-
     mongo::ShardKeyPattern::isUniqueIndexCompatible(mongo::KeyPattern const&) const
 
 - Used By:
@@ -42,13 +34,21 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::ShardKeyPattern::hasShardKey(mongo::BSONObj const&) const
+
+- Used By:
+
+    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
+
+<div></div>
+
     mongo::ShardKeyPattern::ShardKeyPattern(mongo::BSONObj)
 
 - Used By:
 
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
-    - [src/mongo/dbtests/chunktests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
     - [src/mongo/dbtests/sharding.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
+    - [src/mongo/dbtests/chunktests.cpp](../../../../tests/unit\_tests)

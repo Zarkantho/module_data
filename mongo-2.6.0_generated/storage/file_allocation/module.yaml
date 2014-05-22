@@ -275,7 +275,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/detail/dmc/auto_rec.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/facilities/identity.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
@@ -392,6 +392,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -413,7 +414,7 @@ module_groups:
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/third_party/boost/boost/exception/detail/exception_ptr.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -525,7 +526,6 @@ module_groups:
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
         - src/third_party/boost/boost/mpl/void_fwd.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -756,36 +756,36 @@ module_groups:
                 long&)
             symbol_uses:
             - src/mongo/db/storage/data_file.cpp
-        -   symbol_name: mongo::ensureParentDirCreated(boost::filesystem3::path const&)
-            symbol_uses:
-            - src/mongo/db/durop.cpp
         -   symbol_name: mongo::FileAllocator::waitUntilFinished() const
             symbol_uses:
-            - src/mongo/db/repair_database.cpp
             - src/mongo/db/instance.cpp
+            - src/mongo/db/repair_database.cpp
             - src/mongo/dbtests/perf/perftest.cpp
         -   symbol_name: mongo::FileAllocator::allocateAsap(std::string const&, unsigned
                 long long&)
             symbol_uses:
             - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::ensureParentDirCreated(boost::filesystem3::path const&)
+            symbol_uses:
+            - src/mongo/db/durop.cpp
         -   symbol_name: mongo::FileAllocator::get()
             symbol_uses:
-            - src/mongo/tools/tool.cpp
-            - src/mongo/db/db.cpp
             - src/mongo/db/client.cpp
-            - src/mongo/db/repair_database.cpp
             - src/mongo/db/instance.cpp
+            - src/mongo/db/db.cpp
             - src/mongo/dbtests/framework.cpp
-            - src/mongo/dbtests/perf/perftest.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/tools/tool.cpp
             - src/mongo/util/mmap_posix.cpp
             - src/mongo/db/storage/data_file.cpp
+            - src/mongo/dbtests/perf/perftest.cpp
         -   symbol_name: mongo::FileAllocator::hasFailed() const
             symbol_uses:
             - src/mongo/db/client.cpp
         -   symbol_name: mongo::FileAllocator::start()
             symbol_uses:
-            - src/mongo/dbtests/framework.cpp
             - src/mongo/db/db.cpp
+            - src/mongo/dbtests/framework.cpp
             - src/mongo/tools/tool.cpp
         file_dependencies:
         -   symbol_name: typeinfo for boost::detail::thread_data_base
@@ -803,6 +803,9 @@ module_groups:
         -   symbol_name: mongo::msgasserted(int, std::string const&)
             symbol_sources:
             - src/mongo/util/assert_util.cpp
+        -   symbol_name: boost::system::system_category()
+            symbol_sources:
+            - src/third_party/boost/libs/system/src/error_code.cpp
         -   symbol_name: mongo::getThreadName()
             symbol_sources:
             - src/mongo/util/concurrency/thread_name.cpp
@@ -869,9 +872,6 @@ module_groups:
                 std::string const&, mongo::logger::LogSeverity)
             symbol_sources:
             - src/mongo/logger/logstream_builder.cpp
-        -   symbol_name: boost::system::system_category()
-            symbol_sources:
-            - src/third_party/boost/libs/system/src/error_code.cpp
         -   symbol_name: boost::filesystem3::path::parent_path() const
             symbol_sources:
             - src/third_party/boost/libs/filesystem/v3/src/path.cpp
@@ -915,7 +915,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -926,7 +926,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []

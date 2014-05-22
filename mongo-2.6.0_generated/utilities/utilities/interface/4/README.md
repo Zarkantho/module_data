@@ -6,24 +6,14 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::ElapsedTracker::resetLastTime()
-
-- Used By:
-
-    - [src/mongo/db/query/plan\_executor.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/catalog/index\_create.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
     mongo::ElapsedTracker::intervalHasElapsed()
 
 - Used By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/catalog/index\_create.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/plan\_executor.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 
@@ -31,7 +21,17 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/query/plan\_executor.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/catalog/index\_create.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/plan\_executor.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
+
+<div></div>
+
+    mongo::ElapsedTracker::resetLastTime()
+
+- Used By:
+
+    - [src/mongo/db/catalog/index\_create.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/plan\_executor.cpp](../../../../core\_query\_system/query\_execution)

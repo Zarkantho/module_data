@@ -18,8 +18,8 @@ Action types are things that users are allowed to do to a resource.  For example
 - src/mongo/db/auth/action\_set.h   (mongod, tools, mongos)
 - src/mongo/db/auth/action\_set\_test.cpp   ()
 - src/mongo/db/auth/action\_types.txt   (mongod, tools, mongos)
-- build/darwin/ssl/mongo/db/auth/action\_type.h   (mongod, tools, mongos)
-- build/darwin/ssl/mongo/db/auth/action\_type.cpp   (mongod, tools, mongos)
+- build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.h   (mongod, tools, mongos)
+- build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp   (mongod, tools, mongos)
 - src/mongo/db/auth/generate\_action\_types.py   (mongod, tools, mongos)
 
 #### [Interface](interface/0)

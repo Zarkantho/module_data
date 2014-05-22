@@ -299,6 +299,7 @@ module_groups:
         - src/third_party/boost/boost/ref.hpp
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/mongo/util/heapcheck.h
+        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/pcre-8.30/pcrecpp.h
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
@@ -317,7 +318,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -408,7 +409,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -542,7 +542,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/atomic_count_gcc.hpp
         - src/third_party/boost/boost/smart_ptr/detail/spinlock.hpp
         - src/third_party/boost/boost/smart_ptr/scoped_array.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/mongo/db/query/canonical_query.h
         - src/third_party/boost/boost/preprocessor/list/for_each_i.hpp
         - src/third_party/boost/boost/preprocessor/logical/compl.hpp

@@ -14,14 +14,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::audit::logDropAllRolesFromDatabase(mongo::ClientBasic*, mongo::StringData const&)
-
-- Used By:
-
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../../security/authorization)
-
-<div></div>
-
     mongo::audit::logKillCursorsAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, long long, mongo::ErrorCodes::Error)
 
 - Used By:
@@ -67,8 +59,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -80,11 +72,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::audit::logRenameCollection(mongo::ClientBasic*, mongo::StringData const&, mongo::StringData const&)
+    mongo::audit::logUpdateAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::ErrorCodes::Error)
 
 - Used By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -100,8 +92,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -129,11 +121,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::audit::logUpdateUser(mongo::ClientBasic*, mongo::UserName const&, bool, mongo::BSONObj const*, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const*)
+    mongo::audit::logShardCollection(mongo::ClientBasic*, mongo::StringData const&, mongo::BSONObj const&, bool)
 
 - Used By:
 
-    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../../security/authorization)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
 
 <div></div>
 
@@ -194,11 +186,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::audit::parseAndRemoveImpersonatedUserField(mongo::BSONObj, mongo::AuthorizationSession*, std::vector<mongo::UserName, std::allocator<mongo::UserName> >*, bool*)
+    mongo::audit::logRenameCollection(mongo::ClientBasic*, mongo::StringData const&, mongo::StringData const&)
 
 - Used By:
 
-    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -230,8 +222,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -247,8 +239,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
 
 <div></div>
 
@@ -260,19 +252,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::audit::logUpdateAuthzCheck(mongo::ClientBasic*, mongo::NamespaceString const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::ErrorCodes::Error)
+    mongo::audit::logUpdateUser(mongo::ClientBasic*, mongo::UserName const&, bool, mongo::BSONObj const*, std::vector<mongo::RoleName, std::allocator<mongo::RoleName> > const*)
 
 - Used By:
 
-    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::audit::logShardCollection(mongo::ClientBasic*, mongo::StringData const&, mongo::BSONObj const&, bool)
-
-- Used By:
-
-    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -312,8 +296,24 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+
+<div></div>
+
+    mongo::audit::logDropAllRolesFromDatabase(mongo::ClientBasic*, mongo::StringData const&)
+
+- Used By:
+
+    - [src/mongo/db/commands/user\_management\_commands.cpp](../../../../security/authorization)
+
+<div></div>
+
+    mongo::audit::parseAndRemoveImpersonatedUserField(mongo::BSONObj, mongo::AuthorizationSession*, std::vector<mongo::UserName, std::allocator<mongo::UserName> >*, bool*)
+
+- Used By:
+
+    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
 
 <div></div>
 

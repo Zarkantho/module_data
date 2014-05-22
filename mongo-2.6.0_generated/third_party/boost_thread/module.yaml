@@ -78,7 +78,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -89,7 +89,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -99,7 +99,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -110,7 +110,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -120,7 +120,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -131,7 +131,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -141,7 +141,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -152,7 +152,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -162,7 +162,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -173,7 +173,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -183,7 +183,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -194,7 +194,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -204,7 +204,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -215,7 +215,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -225,7 +225,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -236,7 +236,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -246,7 +246,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -257,7 +257,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -267,7 +267,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -278,7 +278,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -309,7 +309,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -320,7 +320,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -330,7 +330,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -341,7 +341,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -372,7 +372,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -383,7 +383,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -393,7 +393,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -404,7 +404,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -414,7 +414,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -425,7 +425,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -456,7 +456,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -467,7 +467,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -498,7 +498,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -509,7 +509,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -519,7 +519,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -530,7 +530,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -540,7 +540,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -551,7 +551,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -561,7 +561,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -572,7 +572,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -603,7 +603,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -614,7 +614,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -624,7 +624,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -635,7 +635,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -645,7 +645,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -656,7 +656,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -666,7 +666,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -677,7 +677,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -708,7 +708,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -719,7 +719,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -729,7 +729,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -740,7 +740,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -750,7 +750,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -761,7 +761,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -771,7 +771,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -782,7 +782,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -834,7 +834,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -845,7 +845,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -855,7 +855,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -866,7 +866,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -876,7 +876,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -887,7 +887,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -897,7 +897,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -908,7 +908,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -918,7 +918,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -929,7 +929,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -1437,421 +1437,421 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
-        -   symbol_name: typeinfo for boost::detail::thread_data_base
-            symbol_uses:
-            - src/mongo/shell/shell_utils_launcher.cpp
-            - src/mongo/s/server.cpp
-            - src/mongo/util/concurrency/thread_pool.cpp
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/s/config_server_checker_service.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/tools/bridge.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/util/file_allocator.cpp
-            - src/mongo/scripting/engine_v8.cpp
-            - src/mongo/util/background.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/scripting/v8_utils.cpp
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/repl/repl_start.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/util/signal_handlers.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/util/net/message_server_port.cpp
-            - src/mongo/s/distlock.cpp
-            - src/mongo/db/range_deleter.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/dbtests/threadedtests.cpp
         -   symbol_name: boost::detail::thread_data_base::~thread_data_base()
             symbol_uses:
-            - src/mongo/shell/shell_utils_launcher.cpp
-            - src/mongo/s/server.cpp
-            - src/mongo/util/concurrency/thread_pool.cpp
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/s/config_server_checker_service.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/tools/bridge.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/util/file_allocator.cpp
-            - src/mongo/scripting/engine_v8.cpp
             - src/mongo/util/background.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/scripting/v8_utils.cpp
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/repl/repl_start.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/util/signal_handlers.cpp
-            - src/mongo/db/repl/master_slave.cpp
             - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/util/signal_handlers.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/server.cpp
             - src/mongo/s/distlock.cpp
             - src/mongo/db/range_deleter.cpp
-            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
             - src/mongo/db/dur.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/v8_utils.cpp
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: vtable for boost::detail::thread_data_base
+            symbol_uses:
+            - src/mongo/util/background.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/util/signal_handlers.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/client/examples/mongoperf.cpp
             - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/v8_utils.cpp
+            - src/mongo/s/d_migrate.cpp
         -   symbol_name: boost::this_thread::disable_interruption::disable_interruption()
             symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/threadedtests.cpp
             - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/catalog/collection.cpp
-            - src/mongo/db/catalog/index_create.cpp
-            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/db/repl/consensus.cpp
             - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/pagefault.cpp
             - src/mongo/db/repl/manager.cpp
             - src/mongo/db/d_concurrency.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/index/btree_based_access_method.cpp
-            - src/mongo/db/pagefault.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/db/repl/consensus.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/db/repl/health.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/commands/touch.cpp
-            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/db/catalog/index_create.cpp
             - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/util/concurrency/rwlockimpl.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_migrate.cpp
             - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/repl/replset_commands.cpp
-            - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/util/mmap.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/util/mmap_posix.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/repl/oplog.cpp
+        -   symbol_name: boost::thread::interrupt()
+            symbol_uses:
+            - src/mongo/scripting/engine_v8.cpp
         -   symbol_name: boost::thread::detach()
             symbol_uses:
-            - src/mongo/client/replica_set_monitor.cpp
             - src/mongo/util/signal_handlers.cpp
+            - src/mongo/client/replica_set_monitor.cpp
         -   symbol_name: boost::this_thread::yield()
             symbol_uses:
             - src/mongo/dbtests/threadedtests.cpp
         -   symbol_name: boost::this_thread::interruption_point()
             symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
-            - src/mongo/s/d_writeback.cpp
-            - src/mongo/db/range_deleter.cpp
-            - src/mongo/util/concurrency/thread_pool.cpp
-            - src/mongo/db/repl/write_concern.cpp
-            - src/mongo/util/concurrency/task.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/kill_current_op.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/db/repl/rs_initialsync.cpp
-            - src/mongo/db/repl/manager.cpp
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/index/btree_based_access_method.cpp
-            - src/mongo/db/pagefault.cpp
-            - src/mongo/util/concurrency/synchronization.cpp
-            - src/mongo/db/range_deleter_mock_env.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/db/catalog/collection.cpp
-            - src/mongo/scripting/engine_v8.cpp
-            - src/mongo/util/background.cpp
-            - src/mongo/db/repl/consensus.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/db/commands/fsync.cpp
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/db/catalog/index_create.cpp
-            - src/mongo/db/repl/health.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/db/commands/touch.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/util/concurrency/rwlockimpl.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/repl/replset_commands.cpp
-            - src/mongo/bson/optime.cpp
             - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/util/file_allocator.cpp
-            - src/mongo/util/mmap.cpp
-            - src/mongo/db/repl/sync_source_feedback.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/dbtests/basictests.cpp
-            - src/mongo/util/mmap_posix.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/s/d_state.cpp
-            - src/mongo/db/repl/rs_sync.cpp
-        -   symbol_name: boost::thread::start_thread()
-            symbol_uses:
-            - src/mongo/shell/shell_utils_launcher.cpp
-            - src/mongo/s/server.cpp
-            - src/mongo/util/concurrency/thread_pool.cpp
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/s/config_server_checker_service.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/tools/bridge.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/util/file_allocator.cpp
-            - src/mongo/scripting/engine_v8.cpp
             - src/mongo/util/background.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/bson/optime.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/range_deleter_mock_env.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
+            - src/mongo/util/mmap.cpp
             - src/mongo/dbtests/counttests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/scripting/v8_utils.cpp
-            - src/mongo/scripting/bench.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/dbtests/basictests.cpp
             - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/repl/repl_start.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/util/signal_handlers.cpp
-            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/util/concurrency/task.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/s/d_writeback.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/util/concurrency/synchronization.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/commands/fsync.cpp
+        -   symbol_name: typeinfo for boost::detail::thread_data_base
+            symbol_uses:
+            - src/mongo/util/background.cpp
             - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/util/signal_handlers.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/server.cpp
             - src/mongo/s/distlock.cpp
             - src/mongo/db/range_deleter.cpp
-            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
             - src/mongo/db/dur.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/v8_utils.cpp
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: boost::thread::start_thread()
+            symbol_uses:
+            - src/mongo/util/background.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/util/signal_handlers.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/client/examples/mongoperf.cpp
             - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/v8_utils.cpp
+            - src/mongo/s/d_migrate.cpp
         -   symbol_name: boost::this_thread::disable_interruption::~disable_interruption()
             symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/threadedtests.cpp
             - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/catalog/collection.cpp
-            - src/mongo/db/catalog/index_create.cpp
-            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/db/repl/consensus.cpp
             - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/pagefault.cpp
             - src/mongo/db/repl/manager.cpp
             - src/mongo/db/d_concurrency.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/index/btree_based_access_method.cpp
-            - src/mongo/db/pagefault.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/db/repl/consensus.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/db/repl/health.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/commands/touch.cpp
-            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/db/catalog/index_create.cpp
             - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/util/concurrency/rwlockimpl.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_migrate.cpp
             - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/repl/replset_commands.cpp
-            - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/util/mmap.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/util/mmap_posix.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/repl/oplog.cpp
         -   symbol_name: boost::detail::get_current_thread_data()
             symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
-            - src/mongo/s/d_writeback.cpp
-            - src/mongo/db/range_deleter.cpp
-            - src/mongo/util/concurrency/thread_pool.cpp
-            - src/mongo/db/repl/write_concern.cpp
-            - src/mongo/util/concurrency/task.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/kill_current_op.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/db/repl/rs_initialsync.cpp
-            - src/mongo/db/repl/manager.cpp
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/index/btree_based_access_method.cpp
-            - src/mongo/db/pagefault.cpp
-            - src/mongo/util/concurrency/synchronization.cpp
-            - src/mongo/db/range_deleter_mock_env.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/db/catalog/collection.cpp
-            - src/mongo/scripting/engine_v8.cpp
-            - src/mongo/util/background.cpp
-            - src/mongo/db/repl/consensus.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/db/commands/fsync.cpp
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/db/catalog/index_create.cpp
-            - src/mongo/db/repl/health.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/db/commands/touch.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/util/concurrency/rwlockimpl.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/repl/replset_commands.cpp
-            - src/mongo/bson/optime.cpp
             - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/util/file_allocator.cpp
-            - src/mongo/util/mmap.cpp
+            - src/mongo/util/background.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/bson/optime.cpp
             - src/mongo/db/repl/sync_source_feedback.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/dbtests/basictests.cpp
-            - src/mongo/util/mmap_posix.cpp
             - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/s/d_state.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/range_deleter_mock_env.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/dbtests/basictests.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/util/concurrency/task.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/util/concurrency/rwlockimpl.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/s/d_writeback.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/db/catalog/index_create.cpp
             - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/util/concurrency/synchronization.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/commands/fsync.cpp
         -   symbol_name: boost::thread::join()
             symbol_uses:
-            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/dbtests/perftests.cpp
             - src/mongo/db/range_deleter.cpp
             - src/mongo/scripting/engine_v8.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/dbtests/counttests.cpp
             - src/mongo/scripting/v8_utils.cpp
             - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/util/concurrency/thread_pool.cpp
+            - src/mongo/dbtests/counttests.cpp
             - src/mongo/dbtests/documentsourcetests.cpp
         -   symbol_name: boost::detail::set_tss_data(void const*, boost::shared_ptr<boost::detail::tss_cleanup_function>,
                 void*, bool)
             symbol_uses:
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/repl/rs_initialsync.cpp
-            - src/mongo/db/repl/manager.cpp
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/pagefault.cpp
-            - src/mongo/util/time_support.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/db/repl/consensus.cpp
             - src/mongo/db/lasterror.cpp
             - src/mongo/db/storage/durable_mapped_file.cpp
-            - src/mongo/tools/sniffer.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/commands/touch.cpp
-            - src/mongo/shell/shell_utils.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/util/concurrency/thread_name.cpp
-            - src/mongo/s/client_info.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/util/net/ssl_manager.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/util/mmap.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/client/examples/mongoperf.cpp
             - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/s/client_info.cpp
             - src/mongo/s/distlock.cpp
             - src/mongo/s/d_state.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/util/time_support.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
             - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/util/concurrency/thread_name.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/util/net/ssl_manager.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/repl/rs.cpp
         -   symbol_name: boost::detail::get_tss_data(void const*)
             symbol_uses:
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/repl/rs_initialsync.cpp
-            - src/mongo/db/repl/manager.cpp
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/pagefault.cpp
-            - src/mongo/util/time_support.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/db/repl/consensus.cpp
             - src/mongo/db/lasterror.cpp
             - src/mongo/db/storage/durable_mapped_file.cpp
-            - src/mongo/tools/sniffer.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/commands/touch.cpp
-            - src/mongo/shell/shell_utils.cpp
-            - src/mongo/util/concurrency/thread_name.cpp
-            - src/mongo/s/client_info.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/util/net/ssl_manager.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/util/mmap.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/client/examples/mongoperf.cpp
             - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/s/client_info.cpp
             - src/mongo/s/distlock.cpp
             - src/mongo/s/d_state.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/util/time_support.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
             - src/mongo/db/repl/rs_sync.cpp
-        -   symbol_name: boost::thread::interrupt()
-            symbol_uses:
-            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/util/concurrency/thread_name.cpp
+            - src/mongo/db/commands/touch.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/util/net/ssl_manager.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/repl/rs.cpp
         -   symbol_name: boost::thread::~thread()
             symbol_uses:
-            - src/mongo/shell/shell_utils_launcher.cpp
-            - src/mongo/s/server.cpp
-            - src/mongo/util/concurrency/thread_pool.cpp
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/s/config_server_checker_service.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/tools/bridge.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/util/file_allocator.cpp
-            - src/mongo/scripting/engine_v8.cpp
             - src/mongo/util/background.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/scripting/v8_utils.cpp
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/repl/repl_start.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/util/signal_handlers.cpp
-            - src/mongo/db/repl/master_slave.cpp
             - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/util/signal_handlers.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/repl_start.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/server.cpp
             - src/mongo/s/distlock.cpp
             - src/mongo/db/range_deleter.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-        -   symbol_name: vtable for boost::detail::thread_data_base
-            symbol_uses:
-            - src/mongo/shell/shell_utils_launcher.cpp
-            - src/mongo/s/server.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/client/replica_set_monitor.cpp
             - src/mongo/util/concurrency/thread_pool.cpp
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/s/config_server_checker_service.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/scripting/bench.cpp
             - src/mongo/tools/bridge.cpp
             - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/util/file_allocator.cpp
-            - src/mongo/scripting/engine_v8.cpp
-            - src/mongo/util/background.cpp
             - src/mongo/dbtests/counttests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/scripting/v8_utils.cpp
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/repl/repl_start.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/util/signal_handlers.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/util/net/message_server_port.cpp
-            - src/mongo/s/distlock.cpp
-            - src/mongo/db/range_deleter.cpp
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+            - src/mongo/db/db.cpp
             - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/scripting/v8_utils.cpp
+            - src/mongo/s/d_migrate.cpp
         file_dependencies:
         -   symbol_name: boost::detail::once_epoch_mutex
             symbol_sources:

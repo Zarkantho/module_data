@@ -249,7 +249,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -326,6 +326,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -343,7 +344,7 @@ module_groups:
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/mongo/util/safe_num-inl.h
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -420,7 +421,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -588,135 +588,221 @@ module_groups:
         file_interface:
         -   symbol_name: mongo::mutablebson::Element::setValueSafeNum(mongo::SafeNum)
             symbol_uses:
-            - src/mongo/db/ops/modifier_inc.cpp
             - src/mongo/db/ops/modifier_bit.cpp
-        -   symbol_name: mongo::mutablebson::Element::isNumeric() const
-            symbol_uses:
             - src/mongo/db/ops/modifier_inc.cpp
         -   symbol_name: mongo::mutablebson::Document::makeElementSafeNum(mongo::StringData
                 const&, mongo::SafeNum)
             symbol_uses:
-            - src/mongo/db/ops/log_builder.cpp
-            - src/mongo/db/ops/modifier_inc.cpp
-            - src/mongo/db/ops/modifier_bit.cpp
             - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementBinary(mongo::StringData
-                const&, unsigned int, mongo::BinDataType, void const*)
+            - src/mongo/db/ops/modifier_bit.cpp
+            - src/mongo/db/ops/modifier_inc.cpp
+            - src/mongo/db/ops/log_builder.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementCode(mongo::StringData
+                const&, mongo::StringData const&)
             symbol_uses:
             - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementDate(mongo::StringData
+                const&, mongo::Date_t)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/ops/modifier_current_date.cpp
+        -   symbol_name: mongo::mutablebson::Element::getValueSafeNum() const
+            symbol_uses:
+            - src/mongo/db/ops/modifier_bit.cpp
+            - src/mongo/db/ops/modifier_inc.cpp
+        -   symbol_name: mongo::mutablebson::Element::getValue() const
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/ops/modifier_object_replace.cpp
+            - src/mongo/db/ops/modifier_pull.cpp
+            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementWithNewFieldName(mongo::StringData
+                const&, mongo::mutablebson::ConstElement)
+            symbol_uses:
+            - src/mongo/db/ops/modifier_pop.cpp
+            - src/mongo/db/ops/modifier_pull_all.cpp
+            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/db/ops/log_builder.cpp
+        -   symbol_name: mongo::mutablebson::Element::setValueTimestamp(mongo::OpTime)
+            symbol_uses:
+            - src/mongo/db/ops/modifier_current_date.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementCodeWithScope(mongo::StringData
+                const&, mongo::StringData const&, mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Document::reset(mongo::BSONObj const&,
+                mongo::mutablebson::Document::InPlaceMode)
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElement(mongo::BSONElement
+                const&)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/ops/update_driver.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementBool(mongo::StringData
+                const&, bool)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/ops/log_builder.cpp
+        -   symbol_name: mongo::mutablebson::Element::setValueDate(mongo::Date_t)
+            symbol_uses:
+            - src/mongo/db/ops/modifier_current_date.cpp
+        -   symbol_name: mongo::mutablebson::Element::hasChildren() const
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/ops/modifier_pull_all.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/modifier_pop.cpp
+            - src/mongo/db/ops/modifier_pull.cpp
+            - src/mongo/db/auth/authz_manager_external_state_local.cpp
+            - src/mongo/db/ops/log_builder.cpp
+            - src/mongo/db/ops/path_support.cpp
+        -   symbol_name: mongo::mutablebson::Element::setValueObject(mongo::BSONObj
+                const&)
+            symbol_uses:
+            - src/mongo/db/ops/modifier_set.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementArray(mongo::StringData
+                const&, mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementSymbol(mongo::StringData
+                const&, mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementMinKey(mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Element::writeArrayTo(mongo::BSONArrayBuilder*)
+                const
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementOID(mongo::StringData
+                const&, mongo::OID)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Element::getFieldName() const
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/ops/modifier_pull_all.cpp
+            - src/mongo/db/ops/modifier_inc.cpp
+            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/ops/modifier_pop.cpp
+            - src/mongo/db/ops/modifier_object_replace.cpp
+            - src/mongo/db/ops/modifier_bit.cpp
+            - src/mongo/db/ops/log_builder.cpp
+            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
         -   symbol_name: mongo::mutablebson::Element::setValueString(mongo::StringData
                 const&)
             symbol_uses:
             - src/mongo/db/commands/authentication_commands.cpp
             - src/mongo/db/commands/user_management_commands.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementString(mongo::StringData
-                const&, mongo::StringData const&)
+        -   symbol_name: mongo::mutablebson::Element::countChildren() const
             symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementCode(mongo::StringData
-                const&, mongo::StringData const&)
+            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+            - src/mongo/db/commands/write_commands/write_commands.cpp
+            - src/mongo/db/ops/path_support.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+        -   symbol_name: mongo::mutablebson::Document::Document()
             symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Document::disableInPlaceUpdates()
-            symbol_uses:
+            - src/mongo/db/auth/role_graph_update.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
             - src/mongo/db/ops/update_driver.cpp
-        -   symbol_name: mongo::mutablebson::Document::reset()
+            - src/mongo/db/auth/authz_manager_external_state_local.cpp
+            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::mutablebson::Element::remove()
             symbol_uses:
-            - src/mongo/db/ops/update_driver.cpp
             - src/mongo/db/ops/update.cpp
+            - src/mongo/db/ops/modifier_pull_all.cpp
+            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/ops/modifier_unset.cpp
+            - src/mongo/db/ops/modifier_pop.cpp
+            - src/mongo/db/ops/modifier_object_replace.cpp
+            - src/mongo/db/ops/modifier_pull.cpp
+            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementDBRef(mongo::StringData
+                const&, mongo::StringData const&, mongo::OID)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Element::rightChild() const
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/ops/modifier_pop.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+        -   symbol_name: mongo::mutablebson::Element::isNumeric() const
+            symbol_uses:
+            - src/mongo/db/ops/modifier_inc.cpp
+        -   symbol_name: mongo::mutablebson::Element::setValueInt(int)
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/write_commands.cpp
+        -   symbol_name: mongo::mutablebson::Element::setValueBSONElement(mongo::BSONElement
+                const&)
+            symbol_uses:
+            - src/mongo/db/ops/modifier_compare.cpp
+            - src/mongo/db/ops/modifier_set.cpp
+        -   symbol_name: mongo::mutablebson::Element::addSiblingRight(mongo::mutablebson::Element)
+            symbol_uses:
+            - src/mongo/db/ops/modifier_push.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementUndefined(mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementBinary(mongo::StringData
+                const&, unsigned int, mongo::BinDataType, void const*)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
         -   symbol_name: mongo::mutablebson::Element::isIntegral() const
             symbol_uses:
             - src/mongo/db/ops/modifier_bit.cpp
         -   symbol_name: mongo::mutablebson::Element::leftSibling(unsigned long) const
             symbol_uses:
-            - src/mongo/db/ops/update.cpp
             - src/mongo/db/ops/modifier_push.cpp
+            - src/mongo/db/ops/update.cpp
         -   symbol_name: mongo::mutablebson::Document::makeElementNull(mongo::StringData
                 const&)
             symbol_uses:
             - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Element::compareWithElement(mongo::mutablebson::ConstElement
-                const&, bool) const
-            symbol_uses:
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementDate(mongo::StringData
-                const&, mongo::Date_t)
-            symbol_uses:
-            - src/mongo/db/ops/modifier_current_date.cpp
-            - src/mongo/bson/mutable/element.cpp
         -   symbol_name: mongo::mutablebson::Document::makeElementTimestamp(mongo::StringData
                 const&, mongo::OpTime)
             symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
             - src/mongo/db/ops/modifier_current_date.cpp
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Document::Document()
+        -   symbol_name: mongo::mutablebson::Element::findFirstChildNamed(mongo::StringData
+                const&) const
             symbol_uses:
-            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
-            - src/mongo/db/auth/authz_manager_external_state_local.cpp
-            - src/mongo/db/ops/update_driver.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/db/auth/role_graph_update.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementArray(mongo::StringData
-                const&)
-            symbol_uses:
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/ops/modifier_pull.cpp
-            - src/mongo/db/auth/authz_manager_external_state_local.cpp
-        -   symbol_name: mongo::mutablebson::Element::getValueSafeNum() const
-            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/commands/write_commands/write_commands.cpp
             - src/mongo/db/ops/modifier_inc.cpp
-            - src/mongo/db/ops/modifier_bit.cpp
-        -   symbol_name: mongo::mutablebson::Element::addChild(mongo::mutablebson::Element,
-                bool)
-            symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Element::getValue() const
-            symbol_uses:
-            - src/mongo/db/ops/modifier_object_replace.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/path_support.cpp
+            - src/mongo/db/ops/modifier_pop.cpp
+            - src/mongo/db/commands/authentication_commands.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
             - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/ops/modifier_rename.cpp
-            - src/mongo/db/ops/modifier_pull.cpp
-            - src/mongo/bson/mutable/element.cpp
         -   symbol_name: mongo::mutablebson::Element::hasValue() const
             symbol_uses:
             - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Element::remove()
-            symbol_uses:
-            - src/mongo/db/ops/modifier_pull_all.cpp
-            - src/mongo/db/ops/modifier_unset.cpp
-            - src/mongo/db/ops/modifier_object_replace.cpp
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/ops/modifier_rename.cpp
-            - src/mongo/db/ops/modifier_pop.cpp
-            - src/mongo/db/ops/modifier_pull.cpp
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Element::rightChild() const
-            symbol_uses:
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/ops/modifier_pop.cpp
-            - src/mongo/bson/mutable/element.cpp
         -   symbol_name: mongo::mutablebson::Element::leftChild() const
             symbol_uses:
-            - src/mongo/db/ops/modifier_pull_all.cpp
-            - src/mongo/db/ops/modifier_object_replace.cpp
             - src/mongo/db/ops/update.cpp
-            - src/mongo/db/ops/modifier_bit.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/modifier_pull_all.cpp
             - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/ops/modifier_rename.cpp
-            - src/mongo/db/ops/modifier_pop.cpp
-            - src/mongo/db/ops/modifier_pull.cpp
             - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/ops/modifier_pop.cpp
+            - src/mongo/db/ops/modifier_object_replace.cpp
+            - src/mongo/db/ops/modifier_bit.cpp
+            - src/mongo/db/ops/modifier_pull.cpp
+            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/modifier_push.cpp
         -   symbol_name: mongo::mutablebson::Document::getInPlaceUpdates(std::vector<mongo::mutablebson::DamageEvent,
                 std::allocator<mongo::mutablebson::DamageEvent> >*, char const**,
                 unsigned long*)
@@ -725,180 +811,55 @@ module_groups:
         -   symbol_name: mongo::mutablebson::Element::rightSibling(unsigned long)
                 const
             symbol_uses:
+            - src/mongo/db/ops/update.cpp
             - src/mongo/db/ops/modifier_pull_all.cpp
+            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
             - src/mongo/db/commands/user_management_commands.cpp
             - src/mongo/db/ops/modifier_object_replace.cpp
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+            - src/mongo/db/ops/modifier_pull.cpp
             - src/mongo/db/ops/modifier_push.cpp
             - src/mongo/db/commands/authentication_commands.cpp
-            - src/mongo/db/ops/modifier_pull.cpp
         -   symbol_name: mongo::mutablebson::Document::makeElementObject(mongo::StringData
                 const&)
             symbol_uses:
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/ops/path_support.cpp
             - src/mongo/db/ops/log_builder.cpp
             - src/mongo/db/auth/authz_manager_external_state_local.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/db/ops/path_support.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
         -   symbol_name: mongo::mutablebson::Element::writeTo(mongo::BSONObjBuilder*)
                 const
             symbol_uses:
+            - src/mongo/db/client.cpp
+            - src/mongo/db/commands.cpp
+            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
             - src/mongo/db/ops/update_driver.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
             - src/mongo/db/ops/modifier_object_replace.cpp
-            - src/mongo/db/commands.cpp
-            - src/mongo/db/client.cpp
             - src/mongo/db/ops/update.cpp
-            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
-            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
             - src/mongo/db/auth/authz_manager_external_state_local.cpp
-            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/db/commands/authentication_commands.cpp
             - src/mongo/db/auth/role_graph_update.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementUndefined(mongo::StringData
-                const&)
-            symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Element::findFirstChildNamed(mongo::StringData
-                const&) const
-            symbol_uses:
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/ops/modifier_inc.cpp
-            - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/db/ops/path_support.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
-            - src/mongo/db/ops/modifier_pop.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementWithNewFieldName(mongo::StringData
-                const&, mongo::mutablebson::ConstElement)
-            symbol_uses:
-            - src/mongo/db/ops/log_builder.cpp
-            - src/mongo/db/ops/modifier_pull_all.cpp
-            - src/mongo/db/ops/modifier_rename.cpp
-            - src/mongo/db/ops/modifier_pop.cpp
-        -   symbol_name: mongo::mutablebson::Element::getType() const
-            symbol_uses:
-            - src/mongo/db/ops/modifier_rename.cpp
-            - src/mongo/db/ops/modifier_pull.cpp
-            - src/mongo/db/ops/modifier_set.cpp
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/ops/path_support.cpp
-            - src/mongo/db/ops/modifier_pop.cpp
-            - src/mongo/bson/mutable/element.cpp
-            - src/mongo/db/ops/modifier_pull_all.cpp
-            - src/mongo/db/ops/modifier_unset.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/ops/modifier_inc.cpp
-            - src/mongo/db/ops/log_builder.cpp
-            - src/mongo/db/ops/modifier_bit.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
-        -   symbol_name: mongo::mutablebson::Element::setValueTimestamp(mongo::OpTime)
-            symbol_uses:
-            - src/mongo/db/ops/modifier_current_date.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementCodeWithScope(mongo::StringData
-                const&, mongo::StringData const&, mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Element::compareWithBSONObj(mongo::BSONObj
-                const&, bool) const
-            symbol_uses:
-            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
-        -   symbol_name: mongo::mutablebson::Element::findElementNamed(mongo::StringData
-                const&) const
-            symbol_uses:
-            - src/mongo/db/ops/modifier_pull_all.cpp
-            - src/mongo/db/ops/modifier_rename.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/ops/modifier_bit.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
-        -   symbol_name: mongo::mutablebson::Document::Document(mongo::BSONObj const&,
-                mongo::mutablebson::Document::InPlaceMode)
-            symbol_uses:
-            - src/mongo/db/commands.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
-            - src/mongo/db/auth/authz_manager_external_state_local.cpp
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/dbtests/updatetests.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
-        -   symbol_name: mongo::mutablebson::Document::reset(mongo::BSONObj const&,
-                mongo::mutablebson::Document::InPlaceMode)
-            symbol_uses:
-            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
-            - src/mongo/db/ops/update.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementDBRef(mongo::StringData
-                const&, mongo::StringData const&, mongo::OID)
-            symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElement(mongo::BSONElement
-                const&)
-            symbol_uses:
-            - src/mongo/db/ops/update_driver.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementBool(mongo::StringData
-                const&, bool)
-            symbol_uses:
-            - src/mongo/db/ops/log_builder.cpp
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementSymbol(mongo::StringData
-                const&, mongo::StringData const&)
-            symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
         -   symbol_name: mongo::mutablebson::Document::makeElementDouble(mongo::StringData
                 const&, double)
-            symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementObject(mongo::StringData
-                const&, mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementWithNewFieldName(mongo::StringData
-                const&, mongo::BSONElement const&)
-            symbol_uses:
-            - src/mongo/db/ops/modifier_set.cpp
-            - src/mongo/db/ops/modifier_compare.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/ops/log_builder.cpp
-            - src/mongo/db/ops/modifier_rename.cpp
-            - src/mongo/db/ops/modifier_pull.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementRegex(mongo::StringData
-                const&, mongo::StringData const&, mongo::StringData const&)
             symbol_uses:
             - src/mongo/bson/mutable/element.cpp
         -   symbol_name: mongo::mutablebson::Element::compareWithBSONElement(mongo::BSONElement
                 const&, bool) const
             symbol_uses:
-            - src/mongo/db/ops/modifier_set.cpp
-            - src/mongo/db/ops/modifier_pull_all.cpp
-            - src/mongo/db/ops/modifier_object_replace.cpp
             - src/mongo/db/ops/update.cpp
+            - src/mongo/db/ops/modifier_pull_all.cpp
             - src/mongo/db/ops/modifier_compare.cpp
+            - src/mongo/db/ops/modifier_set.cpp
+            - src/mongo/db/ops/modifier_object_replace.cpp
             - src/mongo/db/ops/modifier_pull.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementMaxKey(mongo::StringData
-                const&)
+        -   symbol_name: mongo::mutablebson::Document::makeElementString(mongo::StringData
+                const&, mongo::StringData const&)
             symbol_uses:
             - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Element::setValueDate(mongo::Date_t)
-            symbol_uses:
-            - src/mongo/db/ops/modifier_current_date.cpp
-        -   symbol_name: mongo::mutablebson::Element::hasChildren() const
-            symbol_uses:
-            - src/mongo/db/ops/modifier_pull_all.cpp
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/db/ops/path_support.cpp
-            - src/mongo/db/ops/log_builder.cpp
-            - src/mongo/db/ops/modifier_pop.cpp
-            - src/mongo/db/ops/modifier_pull.cpp
-            - src/mongo/db/auth/authz_manager_external_state_local.cpp
         -   symbol_name: mongo::mutablebson::Document::makeElementLong(mongo::StringData
                 const&, long long)
             symbol_uses:
@@ -907,88 +868,127 @@ module_groups:
                 const&)
             symbol_uses:
             - src/mongo/db/ops/update.cpp
-        -   symbol_name: mongo::mutablebson::Element::setValueObject(mongo::BSONObj
-                const&)
-            symbol_uses:
-            - src/mongo/db/ops/modifier_set.cpp
-        -   symbol_name: mongo::mutablebson::Element::setValueInt(int)
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/write_commands.cpp
         -   symbol_name: mongo::mutablebson::Element::findNthChild(unsigned long)
                 const
             symbol_uses:
-            - src/mongo/db/ops/path_support.cpp
             - src/mongo/db/ops/modifier_push.cpp
+            - src/mongo/db/ops/path_support.cpp
+        -   symbol_name: mongo::mutablebson::Document::~Document()
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/auth/role_graph_update.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/update_driver.cpp
+            - src/mongo/db/commands/authentication_commands.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+            - src/mongo/db/auth/authz_manager_external_state_local.cpp
+            - src/mongo/db/commands.cpp
+            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/dbtests/updatetests.cpp
+        -   symbol_name: mongo::mutablebson::Element::compareWithBSONObj(mongo::BSONObj
+                const&, bool) const
+            symbol_uses:
+            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+        -   symbol_name: mongo::mutablebson::Document::disableInPlaceUpdates()
+            symbol_uses:
+            - src/mongo/db/ops/update_driver.cpp
         -   symbol_name: mongo::mutablebson::Document::makeElementArray(mongo::StringData
+                const&)
+            symbol_uses:
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/modifier_pull.cpp
+            - src/mongo/db/auth/authz_manager_external_state_local.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
+        -   symbol_name: mongo::mutablebson::Element::addChild(mongo::mutablebson::Element,
+                bool)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Element::getType() const
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/ops/modifier_pull_all.cpp
+            - src/mongo/db/ops/log_builder.cpp
+            - src/mongo/db/ops/path_support.cpp
+            - src/mongo/db/ops/modifier_inc.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/modifier_pop.cpp
+            - src/mongo/db/ops/modifier_set.cpp
+            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/ops/modifier_bit.cpp
+            - src/mongo/db/ops/modifier_pull.cpp
+            - src/mongo/db/ops/modifier_unset.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+        -   symbol_name: mongo::mutablebson::Element::findElementNamed(mongo::StringData
+                const&) const
+            symbol_uses:
+            - src/mongo/db/ops/modifier_pull_all.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/modifier_bit.cpp
+            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/db/commands/authentication_commands.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+        -   symbol_name: mongo::mutablebson::Document::Document(mongo::BSONObj const&,
+                mongo::mutablebson::Document::InPlaceMode)
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/commands/authentication_commands.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+            - src/mongo/db/auth/authz_manager_external_state_local.cpp
+            - src/mongo/db/commands.cpp
+            - src/mongo/dbtests/updatetests.cpp
+        -   symbol_name: mongo::mutablebson::Element::compareWithElement(mongo::mutablebson::ConstElement
+                const&, bool) const
+            symbol_uses:
+            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementObject(mongo::StringData
                 const&, mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementWithNewFieldName(mongo::StringData
+                const&, mongo::BSONElement const&)
+            symbol_uses:
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/modifier_compare.cpp
+            - src/mongo/db/ops/modifier_set.cpp
+            - src/mongo/db/ops/modifier_pull.cpp
+            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/db/ops/log_builder.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementRegex(mongo::StringData
+                const&, mongo::StringData const&, mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/bson/mutable/element.cpp
+        -   symbol_name: mongo::mutablebson::Document::reset()
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/ops/update_driver.cpp
+        -   symbol_name: mongo::mutablebson::Document::makeElementMaxKey(mongo::StringData
+                const&)
             symbol_uses:
             - src/mongo/bson/mutable/element.cpp
         -   symbol_name: mongo::mutablebson::Element::parent() const
             symbol_uses:
-            - src/mongo/db/ops/modifier_unset.cpp
             - src/mongo/db/ops/update.cpp
             - src/mongo/db/ops/modifier_rename.cpp
-        -   symbol_name: mongo::mutablebson::Element::setValueBSONElement(mongo::BSONElement
-                const&)
-            symbol_uses:
-            - src/mongo/db/ops/modifier_set.cpp
-            - src/mongo/db/ops/modifier_compare.cpp
+            - src/mongo/db/ops/modifier_unset.cpp
         -   symbol_name: mongo::mutablebson::Document::makeElementInt(mongo::StringData
                 const&, int)
-            symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementMinKey(mongo::StringData
-                const&)
             symbol_uses:
             - src/mongo/bson/mutable/element.cpp
         -   symbol_name: mongo::mutablebson::Element::setValueNull()
             symbol_uses:
             - src/mongo/db/ops/modifier_unset.cpp
-        -   symbol_name: mongo::mutablebson::Element::writeArrayTo(mongo::BSONArrayBuilder*)
-                const
-            symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Document::~Document()
-            symbol_uses:
-            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
-            - src/mongo/db/commands.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
-            - src/mongo/db/auth/authz_manager_external_state_local.cpp
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/ops/update_driver.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/dbtests/updatetests.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
-            - src/mongo/db/auth/role_graph_update.cpp
-        -   symbol_name: mongo::mutablebson::Element::addSiblingRight(mongo::mutablebson::Element)
-            symbol_uses:
-            - src/mongo/db/ops/modifier_push.cpp
-        -   symbol_name: mongo::mutablebson::Document::makeElementOID(mongo::StringData
-                const&, mongo::OID)
-            symbol_uses:
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Element::getFieldName() const
-            symbol_uses:
-            - src/mongo/db/ops/modifier_pull_all.cpp
-            - src/mongo/db/ops/modifier_object_replace.cpp
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/ops/modifier_inc.cpp
-            - src/mongo/db/ops/modifier_bit.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
-            - src/mongo/db/ops/log_builder.cpp
-            - src/mongo/db/ops/modifier_rename.cpp
-            - src/mongo/db/ops/modifier_pop.cpp
-            - src/mongo/bson/mutable/element.cpp
-        -   symbol_name: mongo::mutablebson::Element::countChildren() const
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
-            - src/mongo/db/ops/path_support.cpp
         file_dependencies:
         -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
                 const&, int, long*)
@@ -1310,7 +1310,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -1387,6 +1387,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1404,7 +1405,7 @@ module_groups:
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/mongo/util/safe_num-inl.h
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -1482,7 +1483,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -1648,23 +1648,13 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
-        -   symbol_name: mongo::mutablebson::Element::pushBack(mongo::mutablebson::Element)
-            symbol_uses:
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/ops/path_support.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/ops/log_builder.cpp
-            - src/mongo/db/ops/modifier_pull.cpp
-            - src/mongo/db/auth/authz_manager_external_state_local.cpp
         -   symbol_name: mongo::mutablebson::Element::appendElement(mongo::BSONElement
                 const&)
             symbol_uses:
-            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
-            - src/mongo/db/ops/modifier_object_replace.cpp
             - src/mongo/db/ops/update.cpp
             - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
+            - src/mongo/db/ops/modifier_object_replace.cpp
         -   symbol_name: mongo::mutablebson::Element::appendBool(mongo::StringData
                 const&, bool)
             symbol_uses:
@@ -1674,33 +1664,43 @@ module_groups:
             symbol_uses:
             - src/mongo/db/auth/authorization_manager.cpp
             - src/mongo/db/auth/authz_manager_external_state_local.cpp
+        -   symbol_name: mongo::mutablebson::Element::toString() const
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/ops/modifier_pull_all.cpp
+            - src/mongo/db/ops/modifier_inc.cpp
+            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/ops/modifier_pop.cpp
+            - src/mongo/db/ops/modifier_object_replace.cpp
+            - src/mongo/db/ops/modifier_bit.cpp
+            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/db/ops/path_support.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+        -   symbol_name: mongo::mutablebson::Element::pushFront(mongo::mutablebson::Element)
+            symbol_uses:
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+            - src/mongo/db/ops/update_driver.cpp
         -   symbol_name: mongo::mutablebson::Element::appendObject(mongo::StringData
                 const&, mongo::BSONObj const&)
             symbol_uses:
             - src/mongo/db/auth/authorization_manager.cpp
             - src/mongo/db/auth/authz_manager_external_state_local.cpp
-        -   symbol_name: mongo::mutablebson::Element::pushFront(mongo::mutablebson::Element)
+        -   symbol_name: mongo::mutablebson::Element::pushBack(mongo::mutablebson::Element)
             symbol_uses:
-            - src/mongo/db/ops/update_driver.cpp
-            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/ops/path_support.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/db/ops/modifier_pull.cpp
+            - src/mongo/db/auth/authz_manager_external_state_local.cpp
+            - src/mongo/db/ops/log_builder.cpp
             - src/mongo/db/ops/modifier_push.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
         -   symbol_name: mongo::mutablebson::Element::appendNull(mongo::StringData
                 const&)
             symbol_uses:
             - src/mongo/db/ops/path_support.cpp
-        -   symbol_name: mongo::mutablebson::Element::toString() const
-            symbol_uses:
-            - src/mongo/db/ops/modifier_pull_all.cpp
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/ops/modifier_object_replace.cpp
-            - src/mongo/db/ops/path_support.cpp
-            - src/mongo/db/ops/modifier_inc.cpp
-            - src/mongo/db/ops/modifier_bit.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/bson/mutable/mutable_bson_test_utils.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/ops/modifier_rename.cpp
-            - src/mongo/db/ops/modifier_pop.cpp
         file_dependencies:
         -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
                 const&, int, long*)
@@ -2086,7 +2086,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -2166,6 +2166,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2184,7 +2185,7 @@ module_groups:
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/mongo/util/safe_num-inl.h
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -2266,7 +2267,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/smart_ptr/detail/atomic_count.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -2757,7 +2757,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -2837,6 +2837,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2855,7 +2856,7 @@ module_groups:
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/mongo/util/safe_num-inl.h
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -2937,7 +2938,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/smart_ptr/detail/atomic_count.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -3739,7 +3739,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -3819,6 +3819,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -3837,7 +3838,7 @@ module_groups:
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/mongo/util/safe_num-inl.h
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -3919,7 +3920,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/smart_ptr/detail/atomic_count.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -4101,13 +4101,13 @@ module_groups:
         -   symbol_name: mongo::mutablebson::checkEqualNoOrdering(mongo::mutablebson::Document
                 const&, mongo::mutablebson::Document const&)
             symbol_uses:
-            - src/mongo/dbtests/repltests.cpp
             - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/dbtests/repltests.cpp
         -   symbol_name: mongo::mutablebson::operator<<(std::ostream&, mongo::mutablebson::UnorderedWrapper_Obj
                 const&)
             symbol_uses:
-            - src/mongo/dbtests/repltests.cpp
             - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/dbtests/repltests.cpp
         file_dependencies:
         -   symbol_name: mongo::mutablebson::Element::countChildren() const
             symbol_sources:

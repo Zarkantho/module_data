@@ -14,6 +14,15 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    vtable for mongo::logger::MessageEventUnadornedEncoder
+
+- Used By:
+
+    - [src/mongo/tools/tool\_logger.cpp](../../../../tools/tools)
+    - [src/mongo/shell/dbshell.cpp](../../../../mongo\_shell/mongo\_shell)
+
+<div></div>
+
     vtable for mongo::logger::MessageEventWithContextEncoder
 
 - Used By:
@@ -26,15 +35,6 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/tools/tool\_logger.cpp](../../../../tools/tools)
     - [src/mongo/db/initialize\_server\_global\_state.cpp](../../../../process\_management/startup\_initialization)
-
-<div></div>
-
-    vtable for mongo::logger::MessageEventUnadornedEncoder
-
-- Used By:
-
-    - [src/mongo/shell/dbshell.cpp](../../../../mongo\_shell/mongo\_shell)
     - [src/mongo/tools/tool\_logger.cpp](../../../../tools/tools)
+    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)

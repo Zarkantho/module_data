@@ -67,14 +67,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -88,14 +88,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -109,14 +109,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -151,14 +151,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -172,14 +172,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -214,14 +214,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -277,14 +277,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -298,14 +298,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -319,14 +319,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -340,14 +340,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -361,14 +361,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -382,14 +382,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - test
         - mongoimport
         - mongos
         - mongooplog
         - bsondump
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -1365,11 +1365,11 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/config/static_constant.hpp
         - src/third_party/boost/boost/preprocessor/facilities/empty.hpp
         file_interface:
-        -   symbol_name: boost::program_options::detail::common_config_file_iterator::common_config_file_iterator(std::set<std::string,
-                std::less<std::string>, std::allocator<std::string> > const&, bool)
+        -   symbol_name: boost::program_options::detail::common_config_file_iterator::get()
             symbol_uses:
             - src/third_party/boost/libs/program_options/src/parsers.cpp
-        -   symbol_name: boost::program_options::detail::common_config_file_iterator::get()
+        -   symbol_name: boost::program_options::detail::common_config_file_iterator::common_config_file_iterator(std::set<std::string,
+                std::less<std::string>, std::allocator<std::string> > const&, bool)
             symbol_uses:
             - src/third_party/boost/libs/program_options/src/parsers.cpp
         file_dependencies:
@@ -1457,8 +1457,8 @@ module_groups:
             - src/third_party/boost/libs/program_options/src/value_semantic.cpp
         -   symbol_name: boost::from_utf8(std::string const&)
             symbol_uses:
-            - src/third_party/boost/libs/program_options/src/value_semantic.cpp
             - src/third_party/boost/libs/program_options/src/parsers.cpp
+            - src/third_party/boost/libs/program_options/src/value_semantic.cpp
         -   symbol_name: boost::program_options::to_internal(std::basic_string<wchar_t,
                 std::char_traits<wchar_t>, std::allocator<wchar_t> > const&)
             symbol_uses:
@@ -2034,12 +2034,28 @@ module_groups:
         -   symbol_name: boost::program_options::option_description::key(std::string
                 const&) const
             symbol_uses:
-            - src/third_party/boost/libs/program_options/src/variables_map.cpp
             - src/third_party/boost/libs/program_options/src/cmdline.cpp
+            - src/third_party/boost/libs/program_options/src/variables_map.cpp
         -   symbol_name: boost::program_options::options_description::find(std::string
                 const&, bool, bool, bool) const
             symbol_uses:
             - src/third_party/boost/libs/program_options/src/variables_map.cpp
+        -   symbol_name: boost::program_options::option_description::semantic() const
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/cmdline.cpp
+            - src/third_party/boost/libs/program_options/src/variables_map.cpp
+        -   symbol_name: boost::program_options::option_description::long_name() const
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/parsers.cpp
+        -   symbol_name: boost::program_options::options_description::options_description(unsigned
+                int, unsigned int)
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::options_description::m_default_line_length
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+            - src/mongo/util/options_parser/option_section.cpp
         -   symbol_name: boost::program_options::options_description::options() const
             symbol_uses:
             - src/third_party/boost/libs/program_options/src/parsers.cpp
@@ -2048,28 +2064,15 @@ module_groups:
                 const&)
             symbol_uses:
             - src/mongo/util/options_parser/option_section.cpp
-        -   symbol_name: boost::program_options::options_description::m_default_line_length
-            symbol_uses:
-            - src/mongo/util/options_parser/option_section.cpp
-            - src/mongo/util/options_parser/options_parser.cpp
-        -   symbol_name: boost::program_options::option_description::long_name() const
-            symbol_uses:
-            - src/third_party/boost/libs/program_options/src/parsers.cpp
-        -   symbol_name: boost::program_options::options_description::options_description(unsigned
-                int, unsigned int)
-            symbol_uses:
-            - src/mongo/util/options_parser/option_section.cpp
-            - src/mongo/util/options_parser/options_parser.cpp
-        -   symbol_name: boost::program_options::option_description::semantic() const
-            symbol_uses:
-            - src/third_party/boost/libs/program_options/src/variables_map.cpp
-            - src/third_party/boost/libs/program_options/src/cmdline.cpp
         -   symbol_name: boost::program_options::options_description_easy_init::operator()(char
                 const*, boost::program_options::value_semantic const*, char const*)
             symbol_uses:
             - src/mongo/util/options_parser/option_section.cpp
         file_dependencies:
         -   symbol_name: vtable for boost::program_options::untyped_value
+            symbol_sources:
+            - src/third_party/boost/libs/program_options/src/value_semantic.cpp
+        -   symbol_name: vtable for boost::program_options::value_semantic_codecvt_helper<char>
             symbol_sources:
             - src/third_party/boost/libs/program_options/src/value_semantic.cpp
     -   file_name: src/third_party/boost/libs/program_options/src/parsers.cpp
@@ -2693,24 +2696,24 @@ module_groups:
         - src/third_party/boost/boost/version.hpp
         - /usr/bin/g++
         file_interface:
+        -   symbol_name: boost::program_options::positional_options_description::positional_options_description()
+            symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
+            - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: boost::program_options::positional_options_description::name_for_position(unsigned
+                int) const
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/cmdline.cpp
+            - src/mongo/util/options_parser/option_section.cpp
         -   symbol_name: boost::program_options::positional_options_description::max_total_count()
                 const
             symbol_uses:
-            - src/mongo/util/options_parser/option_section.cpp
             - src/third_party/boost/libs/program_options/src/cmdline.cpp
+            - src/mongo/util/options_parser/option_section.cpp
         -   symbol_name: boost::program_options::positional_options_description::add(char
                 const*, int)
             symbol_uses:
             - src/mongo/util/options_parser/option_section.cpp
-        -   symbol_name: boost::program_options::positional_options_description::positional_options_description()
-            symbol_uses:
-            - src/mongo/util/options_parser/option_section.cpp
-            - src/mongo/util/options_parser/options_parser.cpp
-        -   symbol_name: boost::program_options::positional_options_description::name_for_position(unsigned
-                int) const
-            symbol_uses:
-            - src/mongo/util/options_parser/option_section.cpp
-            - src/third_party/boost/libs/program_options/src/cmdline.cpp
         file_dependencies: []
     -   file_name: src/third_party/boost/libs/program_options/src/split.cpp
         file_executables:
@@ -3790,8 +3793,8 @@ module_groups:
             - src/mongo/util/options_parser/option_section.cpp
         -   symbol_name: typeinfo for boost::program_options::validation_error
             symbol_uses:
-            - src/mongo/util/options_parser/option_section.cpp
             - src/third_party/boost/libs/program_options/src/variables_map.cpp
+            - src/mongo/util/options_parser/option_section.cpp
         -   symbol_name: typeinfo for boost::program_options::value_semantic_codecvt_helper<char>
             symbol_uses:
             - src/mongo/util/options_parser/option_section.cpp
@@ -3806,13 +3809,14 @@ module_groups:
                 const&)
             symbol_uses:
             - src/mongo/util/options_parser/option_section.cpp
+        -   symbol_name: vtable for boost::program_options::value_semantic_codecvt_helper<char>
+            symbol_uses:
+            - src/third_party/boost/libs/program_options/src/options_description.cpp
+            - src/mongo/util/options_parser/option_section.cpp
         -   symbol_name: boost::program_options::validation_error::set_option_name(std::string
                 const&)
             symbol_uses:
             - src/third_party/boost/libs/program_options/src/variables_map.cpp
-        -   symbol_name: vtable for boost::program_options::value_semantic_codecvt_helper<char>
-            symbol_uses:
-            - src/mongo/util/options_parser/option_section.cpp
         -   symbol_name: boost::program_options::multiple_occurrences::set_option_name(std::string
                 const&)
             symbol_uses:

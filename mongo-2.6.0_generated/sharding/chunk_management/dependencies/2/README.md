@@ -334,6 +334,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
 - Provided By:
@@ -500,7 +508,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -790,7 +798,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -1012,6 +1020,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::MAXKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::uasserted(int, char const*)
 
 - Provided By:
@@ -1076,11 +1092,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+    mongo::ShardingState::gotShardName(std::string const&)
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/d\_state.cpp](../../../../sharding/mongod\_sharding\_metadata)
 
 <div></div>
 
@@ -1220,11 +1236,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::ShardingState::gotShardName(std::string const&)
+    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
 
 - Provided By:
 
-    - [src/mongo/s/d\_state.cpp](../../../../sharding/mongod\_sharding\_metadata)
+    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -1452,6 +1468,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::ShardingState::initialize(std::string const&)
 
 - Provided By:
@@ -1465,6 +1489,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    mongo::MINKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -1545,6 +1577,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::DBDirectClient
+
+- Provided By:
+
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 

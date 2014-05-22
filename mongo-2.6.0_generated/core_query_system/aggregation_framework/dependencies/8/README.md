@@ -158,6 +158,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:

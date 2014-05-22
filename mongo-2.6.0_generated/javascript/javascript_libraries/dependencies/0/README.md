@@ -58,7 +58,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -122,7 +122,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -154,7 +154,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -162,7 +162,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -170,7 +170,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -210,7 +210,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -234,7 +234,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -258,7 +258,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -282,7 +282,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -668,7 +668,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -1404,7 +1404,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp](../../../../mongo\_shell/mongo\_shell)
 
 <div></div>
 
@@ -1944,11 +1944,11 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
     - [src/mongo/unittest/crutch.cpp](../../../../tests/unit\_tests)
     - [src/mongo/s/d\_state.cpp](../../../../sharding/mongod\_sharding\_metadata)
-    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -2044,11 +2044,11 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
     - [src/mongo/unittest/crutch.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -2152,7 +2152,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/base/error\_codes.cpp](../../../../utilities/base\_utilites)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/base/error\_codes.cpp](../../../../utilities/base\_utilites)
 
 <div></div>
 
@@ -2786,6 +2786,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::BSONUndefined
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
@@ -2991,6 +2999,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    v8::HandleScope::CreateHandle(v8::internal::HeapObject*)
+
+- Provided By:
+
+    - [src/third\_party/v8/src/api.cc](../../../../third\_party/v8)
 
 <div></div>
 

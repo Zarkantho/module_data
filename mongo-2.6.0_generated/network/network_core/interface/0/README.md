@@ -14,6 +14,22 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+
+<div></div>
+
+    mongo::replyToQuery(int, mongo::Message&, mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/client/dbclientcursor.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::replyToQuery(int, mongo::Message&, mongo::DbResponse&, mongo::BSONObj)
 
 - Used By:
@@ -27,22 +43,6 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/s/d\_logic.cpp](../../../../sharding/writeback\_listener)
-
-<div></div>
-
-    mongo::replyToQuery(int, mongo::Message&, mongo::BSONObj const&)
-
-- Used By:
-
-    - [src/mongo/client/dbclientcursor.cpp](../../../../network/cpp\_client\_driver)
-
-<div></div>
-
-    mongo::replyToQuery(int, mongo::AbstractMessagingPort*, mongo::Message&, mongo::BSONObj const&)
-
-- Used By:
-
-    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 ### src/mongo/util/net/message.cpp
 

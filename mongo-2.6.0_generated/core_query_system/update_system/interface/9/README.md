@@ -6,15 +6,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::UpdateExecutor::execute()
-
-- Used By:
-
-    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
-
-<div></div>
-
     mongo::UpdateExecutor::~UpdateExecutor()
 
 - Used By:
@@ -34,6 +25,15 @@ This interface information represents symbols that are defined in this group but
 <div></div>
 
     mongo::UpdateExecutor::prepare()
+
+- Used By:
+
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::UpdateExecutor::execute()
 
 - Used By:
 

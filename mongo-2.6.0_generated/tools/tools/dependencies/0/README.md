@@ -246,6 +246,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
 - Provided By:
@@ -3197,6 +3205,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::BSONNULL
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::AuthorizationManager::versionDocumentQuery
 
 - Provided By:
@@ -3471,11 +3487,27 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::DBClientConnection::_numConnections
 
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::UserException
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -3745,6 +3777,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
 - Provided By:
@@ -3962,6 +4002,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/util/util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    vtable for mongo::DBClientWithCommands
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -4199,6 +4247,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     boost::system::system_category()
 
 - Provided By:
@@ -4308,11 +4364,11 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
     - [src/mongo/unittest/crutch.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -4692,7 +4748,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 

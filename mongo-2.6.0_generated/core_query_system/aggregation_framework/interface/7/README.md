@@ -6,14 +6,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::Pipeline::addRequiredPrivileges(mongo::Command*, std::string const&, mongo::BSONObj, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*)
-
-- Used By:
-
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
-
-<div></div>
-
     mongo::Pipeline::addInitialSource(boost::intrusive_ptr<mongo::DocumentSource>)
 
 - Used By:
@@ -31,6 +23,14 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::Pipeline::addRequiredPrivileges(mongo::Command*, std::string const&, mongo::BSONObj, std::vector<mongo::Privilege, std::allocator<mongo::Privilege> >*)
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
+
+<div></div>
+
     mongo::Pipeline::serialize() const
 
 - Used By:
@@ -40,7 +40,39 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::Pipeline::canRunInMongos() const
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
+
+<div></div>
+
+    mongo::Pipeline::writeExplainOps() const
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
+
+<div></div>
+
     mongo::Pipeline::stitch()
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
+
+<div></div>
+
+    mongo::Pipeline::getInitialQuery() const
+
+- Used By:
+
+    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
+
+<div></div>
+
+    mongo::Pipeline::commandName
 
 - Used By:
 
@@ -58,38 +90,6 @@ This interface information represents symbols that are defined in this group but
 <div></div>
 
     mongo::Pipeline::run(mongo::BSONObjBuilder&)
-
-- Used By:
-
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
-
-<div></div>
-
-    mongo::Pipeline::canRunInMongos() const
-
-- Used By:
-
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
-
-<div></div>
-
-    mongo::Pipeline::getInitialQuery() const
-
-- Used By:
-
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
-
-<div></div>
-
-    mongo::Pipeline::writeExplainOps() const
-
-- Used By:
-
-    - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
-
-<div></div>
-
-    mongo::Pipeline::commandName
 
 - Used By:
 

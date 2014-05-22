@@ -6,6 +6,23 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::resetSlaveCache()
+
+- Used By:
+
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../../replication/replication\_commands)
+
+<div></div>
+
+    mongo::opReplicatedEnough(mongo::OpTime, mongo::BSONElement)
+
+- Used By:
+
+    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../../sharding/chunk\_management)
+
+<div></div>
+
     mongo::updateSlaveLocation(mongo::CurOp&, char const*, mongo::OpTime)
 
 - Used By:
@@ -22,29 +39,12 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::resetSlaveCache()
-
-- Used By:
-
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../../replication/replication\_commands)
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
-
-<div></div>
-
     mongo::waitForReplication(mongo::OpTime, int, int)
 
 - Used By:
 
     - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/dbhelpers.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::opReplicatedEnough(mongo::OpTime, mongo::BSONElement)
-
-- Used By:
-
-    - [src/mongo/db/range\_deleter\_db\_env.cpp](../../../../sharding/chunk\_management)
 
 <div></div>
 

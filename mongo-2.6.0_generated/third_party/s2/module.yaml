@@ -312,7 +312,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -375,6 +375,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -388,7 +389,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -772,7 +772,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -835,6 +835,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -849,7 +850,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -1032,67 +1032,67 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/adl_barrier.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         file_interface:
-        -   symbol_name: LogMessageFatal::~LogMessageFatal()
-            symbol_uses:
-            - src/third_party/s2/s1interval.cc
-            - src/third_party/s2/s2polygon.cc
-            - src/mongo/db/geo/s2common.cpp
-            - src/third_party/s2/s2.cc
-            - src/mongo/db/index/s2_access_method.cpp
-            - src/third_party/s2/s2pointregion.cc
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/strings/strutil.cc
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
-            - src/mongo/db/query/index_bounds_builder.cpp
-            - src/third_party/s2/s2regionunion.cc
-            - src/third_party/s2/util/coding/coder.cc
-            - src/mongo/db/index/external_key_generator.cpp
-            - src/third_party/s2/s2loop.cc
-            - src/third_party/s2/s2regionintersection.cc
-            - src/third_party/s2/s2latlngrect.cc
-            - src/third_party/s2/s2edgeutil.cc
-            - src/third_party/s2/util/math/mathutil.cc
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2cellid.cc
-            - src/third_party/s2/strings/stringprintf.cc
-            - src/mongo/db/geo/geoparser.cpp
-            - src/mongo/db/exec/s2near.cpp
-            - src/third_party/s2/s2polygonbuilder.cc
-            - src/third_party/s2/s2r2rect.cc
-            - src/third_party/s2/s2cap.cc
-            - src/third_party/s2/s2cellunion.cc
-            - src/third_party/s2/s2latlng.cc
         -   symbol_name: LogMessageFatal::LogMessageFatal(char const*, int)
             symbol_uses:
             - src/third_party/s2/s1interval.cc
-            - src/third_party/s2/s2polygon.cc
-            - src/mongo/db/geo/s2common.cpp
-            - src/third_party/s2/s2.cc
-            - src/mongo/db/index/s2_access_method.cpp
-            - src/third_party/s2/s2pointregion.cc
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/strings/strutil.cc
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
-            - src/mongo/db/query/index_bounds_builder.cpp
-            - src/third_party/s2/s2regionunion.cc
-            - src/third_party/s2/util/coding/coder.cc
-            - src/mongo/db/index/external_key_generator.cpp
-            - src/third_party/s2/s2loop.cc
-            - src/third_party/s2/s2regionintersection.cc
-            - src/third_party/s2/s2latlngrect.cc
-            - src/third_party/s2/s2edgeutil.cc
-            - src/third_party/s2/util/math/mathutil.cc
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2cellid.cc
-            - src/third_party/s2/strings/stringprintf.cc
-            - src/mongo/db/geo/geoparser.cpp
-            - src/mongo/db/exec/s2near.cpp
-            - src/third_party/s2/s2polygonbuilder.cc
-            - src/third_party/s2/s2r2rect.cc
-            - src/third_party/s2/s2cap.cc
             - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2edgeutil.cc
+            - src/third_party/s2/s2regionunion.cc
+            - src/third_party/s2/s2r2rect.cc
+            - src/third_party/s2/s2polygon.cc
+            - src/third_party/s2/s2edgeindex.cc
+            - src/mongo/db/index/external_key_generator.cpp
+            - src/third_party/s2/s2pointregion.cc
+            - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2cellid.cc
+            - src/third_party/s2/s2regionintersection.cc
+            - src/mongo/db/geo/geoparser.cpp
+            - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/strings/stringprintf.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/third_party/s2/s2.cc
+            - src/third_party/s2/util/math/mathutil.cc
+            - src/mongo/db/geo/s2common.cpp
+            - src/third_party/s2/s2polygonbuilder.cc
+            - src/mongo/db/index/s2_access_method.cpp
+            - src/mongo/db/exec/s2near.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
+            - src/third_party/s2/s2cell.cc
+            - src/third_party/s2/s2cap.cc
+            - src/third_party/s2/strings/strutil.cc
+            - src/third_party/s2/util/coding/coder.cc
+            - src/third_party/s2/s2latlng.cc
+        -   symbol_name: LogMessageFatal::~LogMessageFatal()
+            symbol_uses:
+            - src/third_party/s2/s1interval.cc
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2edgeutil.cc
+            - src/third_party/s2/s2regionunion.cc
+            - src/third_party/s2/s2r2rect.cc
+            - src/third_party/s2/s2polygon.cc
+            - src/third_party/s2/s2edgeindex.cc
+            - src/mongo/db/index/external_key_generator.cpp
+            - src/third_party/s2/s2pointregion.cc
+            - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2cellid.cc
+            - src/third_party/s2/s2regionintersection.cc
+            - src/mongo/db/geo/geoparser.cpp
+            - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/strings/stringprintf.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/third_party/s2/s2.cc
+            - src/third_party/s2/util/math/mathutil.cc
+            - src/mongo/db/geo/s2common.cpp
+            - src/third_party/s2/s2polygonbuilder.cc
+            - src/mongo/db/index/s2_access_method.cpp
+            - src/mongo/db/exec/s2near.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
+            - src/third_party/s2/s2cell.cc
+            - src/third_party/s2/s2cap.cc
+            - src/third_party/s2/strings/strutil.cc
+            - src/third_party/s2/util/coding/coder.cc
             - src/third_party/s2/s2latlng.cc
         file_dependencies:
         -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
@@ -1358,7 +1358,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -1421,6 +1421,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1434,7 +1435,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -1620,9 +1620,9 @@ module_groups:
         file_interface:
         -   symbol_name: StringPrintf(char const*, ...)
             symbol_uses:
-            - src/third_party/s2/s2latlng.cc
-            - src/third_party/s2/s2cellid.cc
             - src/third_party/s2/strings/stringprintf.cc
+            - src/third_party/s2/s2cellid.cc
+            - src/third_party/s2/s2latlng.cc
         file_dependencies: []
     -   file_name: src/third_party/s2/base/stringprintf.h
         file_executables:
@@ -1947,7 +1947,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -2011,6 +2011,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2024,7 +2025,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/sub.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -2218,16 +2218,16 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/s2/base/casts.h
         file_interface:
+        -   symbol_name: S1Angle::S1Angle(Vector3<double> const&, Vector3<double>
+                const&)
+            symbol_uses:
+            - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2edgeutil.cc
+            - src/mongo/db/geo/s2common.cpp
         -   symbol_name: operator<<(std::ostream&, S1Angle const&)
             symbol_uses:
             - src/third_party/s2/s2cap.cc
             - src/third_party/s2/s2latlng.cc
-        -   symbol_name: S1Angle::S1Angle(Vector3<double> const&, Vector3<double>
-                const&)
-            symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
-            - src/third_party/s2/s2polyline.cc
-            - src/mongo/db/geo/s2common.cpp
         file_dependencies:
         -   symbol_name: S2LatLng::GetDistance(S2LatLng const&) const
             symbol_sources:
@@ -2411,7 +2411,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -2474,6 +2474,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2487,7 +2488,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -2677,17 +2677,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/s2/base/casts.h
         file_interface:
-        -   symbol_name: S1Interval::ApproxEquals(S1Interval const&, double) const
-            symbol_uses:
-            - src/third_party/s2/s2latlngrect.cc
         -   symbol_name: S1Interval::InteriorIntersects(S1Interval const&) const
-            symbol_uses:
-            - src/third_party/s2/s2latlngrect.cc
-        -   symbol_name: S1Interval::GetDirectedHausdorffDistance(S1Interval const&)
-                const
-            symbol_uses:
-            - src/third_party/s2/s2latlngrect.cc
-        -   symbol_name: S1Interval::Intersects(S1Interval const&) const
             symbol_uses:
             - src/third_party/s2/s2latlngrect.cc
         -   symbol_name: S1Interval::FromPoint(double)
@@ -2696,10 +2686,6 @@ module_groups:
         -   symbol_name: S1Interval::Contains(S1Interval const&) const
             symbol_uses:
             - src/third_party/s2/s2latlngrect.cc
-        -   symbol_name: S1Interval::Contains(double) const
-            symbol_uses:
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2latlngrect.cc
         -   symbol_name: S1Interval::Union(S1Interval const&) const
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
@@ -2707,35 +2693,49 @@ module_groups:
         -   symbol_name: S1Interval::AddPoint(double)
             symbol_uses:
             - src/third_party/s2/s2latlngrect.cc
-        -   symbol_name: S1Interval::InteriorContains(double) const
-            symbol_uses:
-            - src/third_party/s2/s2latlngrect.cc
-        -   symbol_name: S1Interval::Expanded(double) const
-            symbol_uses:
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2latlngrect.cc
-        -   symbol_name: S1Interval::GetCenter() const
-            symbol_uses:
-            - src/third_party/s2/s2latlngrect.cc
-        -   symbol_name: S1Interval::GetComplementCenter() const
-            symbol_uses:
-            - src/third_party/s2/s2latlngrect.cc
-        -   symbol_name: S1Interval::Intersection(S1Interval const&) const
-            symbol_uses:
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2latlngrect.cc
-        -   symbol_name: S1Interval::FromPointPair(double, double)
-            symbol_uses:
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2latlngrect.cc
         -   symbol_name: S1Interval::InteriorContains(S1Interval const&) const
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+        -   symbol_name: S1Interval::ApproxEquals(S1Interval const&, double) const
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+        -   symbol_name: S1Interval::Intersects(S1Interval const&) const
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+        -   symbol_name: S1Interval::InteriorContains(double) const
             symbol_uses:
             - src/third_party/s2/s2latlngrect.cc
         -   symbol_name: S1Interval::GetLength() const
             symbol_uses:
-            - src/third_party/s2/s2loop.cc
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2loop.cc
+        -   symbol_name: S1Interval::Intersection(S1Interval const&) const
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2polyline.cc
+        -   symbol_name: S1Interval::GetDirectedHausdorffDistance(S1Interval const&)
+                const
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+        -   symbol_name: S1Interval::GetCenter() const
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+        -   symbol_name: S1Interval::Expanded(double) const
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2cell.cc
+            - src/third_party/s2/s2polyline.cc
+        -   symbol_name: S1Interval::Contains(double) const
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2polyline.cc
+        -   symbol_name: S1Interval::GetComplementCenter() const
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+        -   symbol_name: S1Interval::FromPointPair(double, double)
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2cell.cc
         file_dependencies:
         -   symbol_name: LogMessageFatal::~LogMessageFatal()
             symbol_sources:
@@ -2930,7 +2930,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -2994,6 +2994,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -3008,7 +3009,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -3223,44 +3223,48 @@ module_groups:
         -   symbol_name: S2::kMinWidth
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2edgeindex.cc
-            - src/third_party/s2/s2polygonbuilder.cc
-            - src/third_party/s2/s2regioncoverer.cc
             - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/third_party/s2/s2polygonbuilder.cc
+            - src/third_party/s2/s2edgeindex.cc
         -   symbol_name: S2::kPosToIJ
             symbol_uses:
-            - src/third_party/s2/s2cell.cc
             - src/third_party/s2/s2cellid.cc
+            - src/third_party/s2/s2cell.cc
         -   symbol_name: S2::kAvgEdge
             symbol_uses:
+            - src/mongo/db/geo/s2common.cpp
+            - src/mongo/db/exec/s2near.cpp
+            - src/mongo/db/index/s2_access_method.cpp
             - src/mongo/db/query/index_bounds_builder.cpp
             - src/mongo/db/index/external_key_generator.cpp
-            - src/mongo/db/geo/s2common.cpp
-            - src/mongo/db/index/s2_access_method.cpp
-            - src/mongo/db/exec/s2near.cpp
         -   symbol_name: S2::OrderedCCW(Vector3<double> const&, Vector3<double> const&,
                 Vector3<double> const&, Vector3<double> const&)
             symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
-            - src/third_party/s2/s2polygonbuilder.cc
             - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2edgeutil.cc
             - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2polygonbuilder.cc
         -   symbol_name: S2::kMaxDetError
             symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
             - src/third_party/s2/s2polygon.cc
             - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2edgeutil.cc
             - src/third_party/s2/s2loop.cc
         -   symbol_name: S2::Area(Vector3<double> const&, Vector3<double> const&,
                 Vector3<double> const&)
             symbol_uses:
             - src/third_party/s2/s2cell.cc
+        -   symbol_name: S2::Ortho(Vector3<double> const&)
+            symbol_uses:
+            - src/third_party/s2/s2edgeutil.cc
+            - src/third_party/s2/s2loop.cc
         -   symbol_name: S2::ExpensiveCCW(Vector3<double> const&, Vector3<double>
                 const&, Vector3<double> const&)
             symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
             - src/third_party/s2/s2polygon.cc
             - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2edgeutil.cc
             - src/third_party/s2/s2loop.cc
         -   symbol_name: S2::SignedArea(Vector3<double> const&, Vector3<double> const&,
                 Vector3<double> const&)
@@ -3272,59 +3276,59 @@ module_groups:
             - src/third_party/s2/s2loop.cc
         -   symbol_name: S2::kMaxCellLevel
             symbol_uses:
-            - src/mongo/db/index/s2_access_method.cpp
-            - src/third_party/s2/s2cellid.cc
-            - src/mongo/db/geo/s2common.cpp
-            - src/third_party/s2/s2regioncoverer.cc
             - src/third_party/s2/s2edgeindex.cc
-            - src/mongo/db/query/index_bounds_builder.cpp
-            - src/mongo/db/exec/s2near.cpp
             - src/mongo/db/index/external_key_generator.cpp
-            - src/third_party/s2/s2polygonbuilder.cc
+            - src/mongo/db/exec/s2near.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
             - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/mongo/db/geo/s2common.cpp
+            - src/third_party/s2/s2cellid.cc
+            - src/third_party/s2/s2polygonbuilder.cc
+            - src/mongo/db/index/s2_access_method.cpp
         -   symbol_name: std::tr1::hash<Vector3<double> >::operator()(Vector3<double>
                 const&) const
             symbol_uses:
-            - src/third_party/s2/s2polygonbuilder.cc
             - src/third_party/s2/s2polygon.cc
             - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2polygonbuilder.cc
         -   symbol_name: S2::ApproxEquals(Vector3<double> const&, Vector3<double>
                 const&, double)
             symbol_uses:
             - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2cap.cc
             - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2cap.cc
         -   symbol_name: S2::RobustCCW(Vector3<double> const&, Vector3<double> const&,
                 Vector3<double> const&)
             symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
             - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2edgeutil.cc
         -   symbol_name: S2::kSwapMask
             symbol_uses:
             - src/third_party/s2/s2cellid.cc
         -   symbol_name: S2::RobustCrossProd(Vector3<double> const&, Vector3<double>
                 const&)
             symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
-            - src/third_party/s2/s2polygonbuilder.cc
-            - src/third_party/s2/s2loop.cc
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2edgeutil.cc
+            - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2polygonbuilder.cc
         -   symbol_name: S2::kAvgArea
             symbol_uses:
             - src/third_party/s2/s2cell.cc
         -   symbol_name: S2::IsUnitLength(Vector3<double> const&)
             symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
-            - src/third_party/s2/s2r2rect.cc
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2cap.cc
             - src/third_party/s2/s2edgeindex.cc
-            - src/third_party/s2/s2pointregion.cc
             - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2pointregion.cc
+            - src/third_party/s2/s2polyline.cc
             - src/third_party/s2/s2loop.cc
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2edgeutil.cc
+            - src/third_party/s2/s2cell.cc
+            - src/third_party/s2/s2cap.cc
+            - src/third_party/s2/s2polygon.cc
+            - src/third_party/s2/s2r2rect.cc
         -   symbol_name: S2::GetFrame(Vector3<double> const&, Matrix3x3<double>*)
             symbol_uses:
             - src/third_party/s2/s2polyline.cc
@@ -3333,12 +3337,8 @@ module_groups:
             - src/third_party/s2/s2polyline.cc
         -   symbol_name: S2::kPosToOrientation
             symbol_uses:
-            - src/third_party/s2/s2cell.cc
             - src/third_party/s2/s2cellid.cc
-        -   symbol_name: S2::Ortho(Vector3<double> const&)
-            symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
-            - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2cell.cc
         file_dependencies:
         -   symbol_name: LogMessageFatal::~LogMessageFatal()
             symbol_sources:
@@ -3535,7 +3535,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -3600,6 +3600,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -3613,7 +3614,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -3810,19 +3810,19 @@ module_groups:
         file_interface:
         -   symbol_name: S2Cap::GetRectBound() const
             symbol_uses:
-            - src/third_party/s2/s2r2rect.cc
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2r2rect.cc
         -   symbol_name: vtable for S2Cap
             symbol_uses:
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2cellunion.cc
-            - src/third_party/s2/s2pointregion.cc
-            - src/mongo/db/geo/geoparser.cpp
-            - src/mongo/db/exec/s2near.cpp
-            - src/third_party/s2/s2r2rect.cc
-            - src/mongo/db/geo/geoquery.cpp
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2pointregion.cc
+            - src/mongo/db/exec/s2near.cpp
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/third_party/s2/s2cell.cc
+            - src/mongo/db/geo/geoparser.cpp
+            - src/mongo/db/geo/geoquery.cpp
+            - src/third_party/s2/s2r2rect.cc
         -   symbol_name: S2Cap::AddCap(S2Cap const&)
             symbol_uses:
             - src/third_party/s2/s2cellunion.cc
@@ -3832,19 +3832,19 @@ module_groups:
         -   symbol_name: S2Cap::angle() const
             symbol_uses:
             - src/third_party/s2/s2regioncoverer.cc
-        -   symbol_name: S2Cap::FromAxisAngle(Vector3<double> const&, S1Angle const&)
-            symbol_uses:
-            - src/mongo/db/exec/s2near.cpp
-            - src/mongo/db/geo/geoparser.cpp
-            - src/third_party/s2/s2latlngrect.cc
-        -   symbol_name: S2Cap::AddPoint(Vector3<double> const&)
-            symbol_uses:
-            - src/third_party/s2/s2r2rect.cc
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2latlngrect.cc
         -   symbol_name: S2Cap::MayIntersect(S2Cell const&) const
             symbol_uses:
             - src/mongo/db/geo/geoquery.cpp
+        -   symbol_name: S2Cap::FromAxisAngle(Vector3<double> const&, S1Angle const&)
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+            - src/mongo/db/geo/geoparser.cpp
+            - src/mongo/db/exec/s2near.cpp
+        -   symbol_name: S2Cap::AddPoint(Vector3<double> const&)
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2cell.cc
+            - src/third_party/s2/s2r2rect.cc
         file_dependencies:
         -   symbol_name: S2LatLng::S2LatLng(Vector3<double> const&)
             symbol_sources:
@@ -3862,6 +3862,9 @@ module_groups:
             symbol_sources:
             - src/third_party/s2/s2.cc
         -   symbol_name: S2Region::~S2Region()
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
+        -   symbol_name: vtable for S2Region
             symbol_sources:
             - src/third_party/s2/s2region.cc
         -   symbol_name: LogMessageFatal::LogMessageFatal(char const*, int)
@@ -4075,7 +4078,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -4140,6 +4143,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -4153,7 +4157,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -4348,38 +4351,34 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/s2/base/casts.h
         file_interface:
-        -   symbol_name: S2Cell::Subdivide(S2Cell*) const
-            symbol_uses:
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
         -   symbol_name: S2Cell::GetCapBound() const
             symbol_uses:
             - src/third_party/s2/s2cellunion.cc
-        -   symbol_name: S2Cell::Init(S2CellId const&)
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
-            - src/mongo/db/geo/geoparser.cpp
-            - src/mongo/db/exec/s2near.cpp
-            - src/third_party/s2/s2cellunion.cc
         -   symbol_name: vtable for S2Cell
             symbol_uses:
-            - src/mongo/db/query/planner_access.cpp
-            - src/mongo/db/exec/2dnear.cpp
-            - src/mongo/db/query/stage_builder.cpp
-            - src/third_party/s2/s2polygon.cc
-            - src/mongo/db/matcher/expression_parser_geo.cpp
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
-            - src/mongo/db/query/query_solution.cpp
             - src/mongo/db/matcher/expression_geo.cpp
-            - src/mongo/db/geo/geoparser.cpp
+            - src/third_party/s2/s2edgeindex.cc
+            - src/mongo/db/exec/2dnear.cpp
+            - src/mongo/db/matcher/expression_parser_geo.cpp
+            - src/mongo/db/exec/s2near.cpp
+            - src/mongo/db/query/planner_access.cpp
+            - src/mongo/db/query/query_solution.cpp
             - src/mongo/db/query/query_planner.cpp
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/mongo/db/geo/geoparser.cpp
+            - src/third_party/s2/s2polygon.cc
             - src/mongo/db/geo/s2common.cpp
+            - src/mongo/db/query/stage_builder.cpp
+            - src/mongo/db/geo/geoquery.cpp
+        -   symbol_name: S2Cell::Init(S2CellId const&)
+            symbol_uses:
+            - src/third_party/s2/s2edgeindex.cc
             - src/mongo/db/exec/s2near.cpp
             - src/third_party/s2/s2cellunion.cc
-            - src/mongo/db/geo/geoquery.cpp
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/mongo/db/geo/geoparser.cpp
+            - src/third_party/s2/s2polygon.cc
         -   symbol_name: S2Cell::AverageArea(int)
             symbol_uses:
             - src/third_party/s2/s2cellunion.cc
@@ -4395,27 +4394,31 @@ module_groups:
         -   symbol_name: S2Cell::GetVertexRaw(int) const
             symbol_uses:
             - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2latlngrect.cc
-            - src/third_party/s2/s2cap.cc
-            - src/third_party/s2/s2loop.cc
             - src/third_party/s2/s2edgeindex.cc
+            - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2cap.cc
+            - src/third_party/s2/s2latlngrect.cc
         -   symbol_name: S2Cell::GetEdgeRaw(int) const
             symbol_uses:
             - src/third_party/s2/s2cap.cc
         -   symbol_name: S2Cell::GetCenterRaw() const
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2loop.cc
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2loop.cc
         -   symbol_name: S2Cell::GetRectBound() const
             symbol_uses:
             - src/third_party/s2/s2cellunion.cc
+        -   symbol_name: S2Cell::Subdivide(S2Cell*) const
+            symbol_uses:
+            - src/third_party/s2/s2edgeindex.cc
+            - src/third_party/s2/s2regioncoverer.cc
         -   symbol_name: S2Cell::Contains(Vector3<double> const&) const
             symbol_uses:
             - src/third_party/s2/s2pointregion.cc
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2cap.cc
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2cap.cc
+            - src/third_party/s2/s2polyline.cc
         file_dependencies:
         -   symbol_name: LogMessageFatal::~LogMessageFatal()
             symbol_sources:
@@ -4448,6 +4451,9 @@ module_groups:
         -   symbol_name: S2CellId::ToFaceIJOrientation(int*, int*, int*) const
             symbol_sources:
             - src/third_party/s2/s2cellid.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: S2::kPosToIJ
             symbol_sources:
             - src/third_party/s2/s2.cc
@@ -4687,7 +4693,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/function/function0.hpp
         - src/mongo/base/status-inl.h
@@ -4759,6 +4765,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -4772,7 +4779,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/sub.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -4995,55 +5001,56 @@ module_groups:
         -   symbol_name: S2CellId::AppendVertexNeighbors(int, std::vector<S2CellId,
                 std::allocator<S2CellId> >*) const
             symbol_uses:
-            - src/third_party/s2/s2polygonbuilder.cc
             - src/third_party/s2/s2regioncoverer.cc
             - src/third_party/s2/s2edgeindex.cc
-        -   symbol_name: S2CellId::level() const
+            - src/third_party/s2/s2polygonbuilder.cc
+        -   symbol_name: S2CellId::kMaxSize
             symbol_uses:
             - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2cellunion.cc
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
-            - src/mongo/db/query/index_bounds_builder.cpp
-            - src/mongo/db/geo/s2common.cpp
-            - src/mongo/db/exec/s2near.cpp
-            - src/third_party/s2/s2polygonbuilder.cc
             - src/third_party/s2/s2r2rect.cc
+        -   symbol_name: S2CellId::FromFacePosLevel(int, unsigned long long, int)
+            symbol_uses:
+            - src/third_party/s2/s2edgeindex.cc
+            - src/third_party/s2/s2regioncoverer.cc
         -   symbol_name: S2CellId::AppendAllNeighbors(int, std::vector<S2CellId, std::allocator<S2CellId>
                 >*) const
             symbol_uses:
             - src/third_party/s2/s2cellunion.cc
-        -   symbol_name: S2CellId::kNumFaces
-            symbol_uses:
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
-            - src/mongo/db/query/index_bounds_builder.cpp
-            - src/mongo/db/geo/s2common.cpp
-            - src/mongo/db/exec/s2near.cpp
-            - src/third_party/s2/s2polygonbuilder.cc
-            - src/third_party/s2/s2cellunion.cc
-        -   symbol_name: S2CellId::kMaxSize
-            symbol_uses:
-            - src/third_party/s2/s2r2rect.cc
-            - src/third_party/s2/s2cell.cc
-        -   symbol_name: S2CellId::ToPointRaw() const
-            symbol_uses:
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2cellunion.cc
-        -   symbol_name: S2CellId::FromFacePosLevel(int, unsigned long long, int)
-            symbol_uses:
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
         -   symbol_name: S2CellId::ToFaceIJOrientation(int*, int*, int*) const
             symbol_uses:
             - src/third_party/s2/s2cell.cc
-        -   symbol_name: S2CellId::ToString() const
+        -   symbol_name: S2CellId::kNumFaces
             symbol_uses:
-            - src/mongo/db/query/index_bounds_builder.cpp
-            - src/mongo/db/index/s2_key_generator.cpp
-            - src/mongo/db/geo/s2common.cpp
+            - src/third_party/s2/s2edgeindex.cc
             - src/mongo/db/exec/s2near.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/third_party/s2/s2cell.cc
+            - src/mongo/db/geo/s2common.cpp
+            - src/third_party/s2/s2polygonbuilder.cc
+        -   symbol_name: S2CellId::level() const
+            symbol_uses:
+            - src/third_party/s2/s2edgeindex.cc
+            - src/mongo/db/exec/s2near.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/third_party/s2/s2r2rect.cc
+            - src/mongo/db/geo/s2common.cpp
+            - src/third_party/s2/s2polygonbuilder.cc
+            - src/third_party/s2/s2cell.cc
+        -   symbol_name: S2CellId::kPosBits
+            symbol_uses:
+            - src/third_party/s2/s2edgeindex.cc
+            - src/mongo/db/exec/s2near.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/third_party/s2/s2r2rect.cc
+            - src/mongo/db/geo/s2common.cpp
+            - src/third_party/s2/s2polygonbuilder.cc
+            - src/third_party/s2/s2cell.cc
         -   symbol_name: S2CellId::GetEdgeNeighbors(S2CellId*) const
             symbol_uses:
             - src/third_party/s2/s2regioncoverer.cc
@@ -5055,38 +5062,37 @@ module_groups:
             - src/mongo/db/exec/s2near.cpp
         -   symbol_name: S2CellId::kMaxLevel
             symbol_uses:
-            - src/third_party/s2/s2cell.cc
+            - src/third_party/s2/s2edgeindex.cc
+            - src/mongo/db/exec/s2near.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
             - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/third_party/s2/s2r2rect.cc
             - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
-            - src/mongo/db/query/index_bounds_builder.cpp
             - src/mongo/db/geo/s2common.cpp
-            - src/mongo/db/exec/s2near.cpp
             - src/third_party/s2/s2polygonbuilder.cc
-            - src/third_party/s2/s2r2rect.cc
-        -   symbol_name: S2CellId::kPosBits
-            symbol_uses:
             - src/third_party/s2/s2cell.cc
+        -   symbol_name: S2CellId::ToPointRaw() const
+            symbol_uses:
             - src/third_party/s2/s2cellunion.cc
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
-            - src/mongo/db/query/index_bounds_builder.cpp
-            - src/mongo/db/geo/s2common.cpp
-            - src/mongo/db/exec/s2near.cpp
-            - src/third_party/s2/s2polygonbuilder.cc
-            - src/third_party/s2/s2r2rect.cc
+            - src/third_party/s2/s2cell.cc
         -   symbol_name: S2CellId::GetCenterUV() const
             symbol_uses:
             - src/third_party/s2/s2cell.cc
         -   symbol_name: S2CellId::FromPoint(Vector3<double> const&)
             symbol_uses:
+            - src/third_party/s2/s2edgeindex.cc
             - src/third_party/s2/s2cellunion.cc
             - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
+            - src/third_party/s2/s2r2rect.cc
             - src/mongo/db/geo/geoparser.cpp
             - src/third_party/s2/s2polygonbuilder.cc
-            - src/third_party/s2/s2r2rect.cc
+        -   symbol_name: S2CellId::ToString() const
+            symbol_uses:
+            - src/mongo/db/geo/s2common.cpp
+            - src/mongo/db/index/s2_key_generator.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
+            - src/mongo/db/exec/s2near.cpp
         file_dependencies:
         -   symbol_name: LogMessageFatal::~LogMessageFatal()
             symbol_sources:
@@ -5322,7 +5328,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -5387,6 +5393,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -5400,7 +5407,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -5596,15 +5602,15 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/s2/base/casts.h
         file_interface:
+        -   symbol_name: S2CellUnion::Denormalize(int, int, std::vector<S2CellId,
+                std::allocator<S2CellId> >*) const
+            symbol_uses:
+            - src/third_party/s2/s2regioncoverer.cc
         -   symbol_name: vtable for S2CellUnion
             symbol_uses:
             - src/third_party/s2/s2regioncoverer.cc
         -   symbol_name: S2CellUnion::InitSwap(std::vector<S2CellId, std::allocator<S2CellId>
                 >*)
-            symbol_uses:
-            - src/third_party/s2/s2regioncoverer.cc
-        -   symbol_name: S2CellUnion::Denormalize(int, int, std::vector<S2CellId,
-                std::allocator<S2CellId> >*) const
             symbol_uses:
             - src/third_party/s2/s2regioncoverer.cc
         file_dependencies:
@@ -5641,6 +5647,9 @@ module_groups:
         -   symbol_name: S2Cell::GetCapBound() const
             symbol_sources:
             - src/third_party/s2/s2cell.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: vtable for S2Cell
             symbol_sources:
             - src/third_party/s2/s2cell.cc
@@ -5878,7 +5887,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -5943,6 +5952,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -5956,7 +5966,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/sub.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -6152,12 +6161,12 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/s2/base/casts.h
         file_interface:
-        -   symbol_name: S2EdgeIndex::Iterator::GetCandidates(Vector3<double> const&,
-                Vector3<double> const&)
+        -   symbol_name: S2EdgeIndex::Reset()
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
             - src/third_party/s2/s2loop.cc
-        -   symbol_name: S2EdgeIndex::Reset()
+        -   symbol_name: S2EdgeIndex::Iterator::GetCandidates(Vector3<double> const&,
+                Vector3<double> const&)
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
             - src/third_party/s2/s2loop.cc
@@ -6197,6 +6206,9 @@ module_groups:
         -   symbol_name: S2CellId::FromFacePosLevel(int, unsigned long long, int)
             symbol_sources:
             - src/third_party/s2/s2cellid.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: vtable for S2Cell
             symbol_sources:
             - src/third_party/s2/s2cell.cc
@@ -6406,7 +6418,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -6470,6 +6482,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -6483,7 +6496,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -6678,16 +6690,17 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/s2/base/casts.h
         file_interface:
+        -   symbol_name: S2EdgeUtil::WedgeContains(Vector3<double> const&, Vector3<double>
+                const&, Vector3<double> const&, Vector3<double> const&, Vector3<double>
+                const&)
+            symbol_uses:
+            - src/third_party/s2/s2loop.cc
         -   symbol_name: S2EdgeUtil::EdgeCrosser::RobustCrossingInternal(Vector3<double>
                 const*)
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
             - src/third_party/s2/s2polyline.cc
             - src/third_party/s2/s2loop.cc
-        -   symbol_name: S2EdgeUtil::GetIntersection(Vector3<double> const&, Vector3<double>
-                const&, Vector3<double> const&, Vector3<double> const&)
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
         -   symbol_name: S2EdgeUtil::IsEdgeBNearEdgeA(Vector3<double> const&, Vector3<double>
                 const&, Vector3<double> const&, Vector3<double> const&, S1Angle const&)
             symbol_uses:
@@ -6705,6 +6718,10 @@ module_groups:
                 const&)
             symbol_uses:
             - src/third_party/s2/s2loop.cc
+        -   symbol_name: S2EdgeUtil::GetIntersection(Vector3<double> const&, Vector3<double>
+                const&, Vector3<double> const&, Vector3<double> const&)
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
         -   symbol_name: S2EdgeUtil::SimpleCrossing(Vector3<double> const&, Vector3<double>
                 const&, Vector3<double> const&, Vector3<double> const&)
             symbol_uses:
@@ -6723,8 +6740,8 @@ module_groups:
         -   symbol_name: S2EdgeUtil::GetDistance(Vector3<double> const&, Vector3<double>
                 const&, Vector3<double> const&, Vector3<double> const&)
             symbol_uses:
-            - src/third_party/s2/s2polygonbuilder.cc
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2polygonbuilder.cc
         -   symbol_name: S2EdgeUtil::GetWedgeRelation(Vector3<double> const&, Vector3<double>
                 const&, Vector3<double> const&, Vector3<double> const&, Vector3<double>
                 const&)
@@ -6737,11 +6754,6 @@ module_groups:
         -   symbol_name: S2EdgeUtil::RectBounder::AddPoint(Vector3<double> const*)
             symbol_uses:
             - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2loop.cc
-        -   symbol_name: S2EdgeUtil::WedgeContains(Vector3<double> const&, Vector3<double>
-                const&, Vector3<double> const&, Vector3<double> const&, Vector3<double>
-                const&)
-            symbol_uses:
             - src/third_party/s2/s2loop.cc
         -   symbol_name: S2EdgeUtil::InterpolateAtDistance(S1Angle const&, Vector3<double>
                 const&, Vector3<double> const&, S1Angle const&)
@@ -6989,7 +7001,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -7053,6 +7065,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -7066,7 +7079,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -7262,32 +7274,32 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/s2/base/casts.h
         file_interface:
-        -   symbol_name: S2LatLng::Normalized() const
+        -   symbol_name: S2LatLng::S2LatLng(Vector3<double> const&)
             symbol_uses:
-            - src/mongo/db/geo/geoparser.cpp
+            - src/third_party/s2/s2pointregion.cc
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2edgeutil.cc
+            - src/third_party/s2/s2cellid.cc
+            - src/third_party/s2/s2cap.cc
+            - src/third_party/s2/s2polygonbuilder.cc
         -   symbol_name: S2LatLng::GetDistance(S2LatLng const&) const
             symbol_uses:
             - src/third_party/s2/s1angle.cc
         -   symbol_name: operator<<(std::ostream&, S2LatLng const&)
             symbol_uses:
             - src/third_party/s2/s2pointregion.cc
-            - src/third_party/s2/s2polygonbuilder.cc
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2polygonbuilder.cc
+        -   symbol_name: S2LatLng::Normalized() const
+            symbol_uses:
+            - src/third_party/s2/s2latlngrect.cc
+            - src/mongo/db/geo/geoparser.cpp
         -   symbol_name: S2LatLng::ToPoint() const
             symbol_uses:
-            - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2cellid.cc
             - src/mongo/db/geo/geoparser.cpp
-            - src/third_party/s2/s2cellid.cc
-            - src/third_party/s2/s2latlngrect.cc
-        -   symbol_name: S2LatLng::S2LatLng(Vector3<double> const&)
-            symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
-            - src/third_party/s2/s2cellid.cc
-            - src/third_party/s2/s2cap.cc
-            - src/third_party/s2/s2pointregion.cc
-            - src/third_party/s2/s2polygonbuilder.cc
-            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2polyline.cc
         file_dependencies:
         -   symbol_name: LogMessageFatal::~LogMessageFatal()
             symbol_sources:
@@ -7493,7 +7505,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -7558,6 +7570,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -7571,7 +7584,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -7772,56 +7784,11 @@ module_groups:
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
             - src/third_party/s2/s2loop.cc
-        -   symbol_name: S2LatLngRect::GetCapBound() const
-            symbol_uses:
-            - src/third_party/s2/s2regionunion.cc
-            - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2loop.cc
-            - src/third_party/s2/s2regionintersection.cc
-        -   symbol_name: S2LatLngRect::Area() const
-            symbol_uses:
-            - src/mongo/db/query/index_bounds_builder.cpp
-            - src/mongo/db/exec/s2near.cpp
         -   symbol_name: S2LatLngRect::Intersects(S2LatLngRect const&) const
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
             - src/third_party/s2/s2polyline.cc
             - src/third_party/s2/s2loop.cc
-        -   symbol_name: S2LatLngRect::Intersection(S2LatLngRect const&) const
-            symbol_uses:
-            - src/third_party/s2/s2regionintersection.cc
-        -   symbol_name: S2LatLngRect::Union(S2LatLngRect const&) const
-            symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
-            - src/third_party/s2/s2regionunion.cc
-            - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2loop.cc
-            - src/third_party/s2/s2cellunion.cc
-        -   symbol_name: S2LatLngRect::AddPoint(S2LatLng const&)
-            symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
-        -   symbol_name: vtable for S2LatLngRect
-            symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2cap.cc
-            - src/third_party/s2/s2cellunion.cc
-            - src/mongo/db/query/index_bounds_builder.cpp
-            - src/third_party/s2/s2regionunion.cc
-            - src/third_party/s2/s2pointregion.cc
-            - src/mongo/db/exec/s2near.cpp
-            - src/third_party/s2/s2loop.cc
-            - src/third_party/s2/s2regionintersection.cc
-        -   symbol_name: S2LatLngRect::Contains(Vector3<double> const&) const
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2loop.cc
-        -   symbol_name: S2LatLngRect::FromPointPair(S2LatLng const&, S2LatLng const&)
-            symbol_uses:
-            - src/third_party/s2/s2edgeutil.cc
         -   symbol_name: S2LatLngRect::Contains(S2LatLngRect const&) const
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
@@ -7830,6 +7797,51 @@ module_groups:
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
             - src/third_party/s2/s2loop.cc
+        -   symbol_name: S2LatLngRect::GetCapBound() const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+            - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2regionintersection.cc
+            - src/third_party/s2/s2regionunion.cc
+        -   symbol_name: S2LatLngRect::Union(S2LatLngRect const&) const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2edgeutil.cc
+            - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2regionunion.cc
+        -   symbol_name: vtable for S2LatLngRect
+            symbol_uses:
+            - src/third_party/s2/s2regionintersection.cc
+            - src/mongo/db/exec/s2near.cpp
+            - src/third_party/s2/s2pointregion.cc
+            - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2loop.cc
+            - src/mongo/db/query/index_bounds_builder.cpp
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2edgeutil.cc
+            - src/third_party/s2/s2regionunion.cc
+            - src/third_party/s2/s2cell.cc
+            - src/third_party/s2/s2cap.cc
+            - src/third_party/s2/s2polygon.cc
+        -   symbol_name: S2LatLngRect::Area() const
+            symbol_uses:
+            - src/mongo/db/query/index_bounds_builder.cpp
+            - src/mongo/db/exec/s2near.cpp
+        -   symbol_name: S2LatLngRect::Intersection(S2LatLngRect const&) const
+            symbol_uses:
+            - src/third_party/s2/s2regionintersection.cc
+        -   symbol_name: S2LatLngRect::AddPoint(S2LatLng const&)
+            symbol_uses:
+            - src/third_party/s2/s2edgeutil.cc
+        -   symbol_name: S2LatLngRect::Contains(Vector3<double> const&) const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+            - src/third_party/s2/s2loop.cc
+        -   symbol_name: S2LatLngRect::FromPointPair(S2LatLng const&, S2LatLng const&)
+            symbol_uses:
+            - src/third_party/s2/s2edgeutil.cc
         file_dependencies:
         -   symbol_name: S2::RobustCrossProd(Vector3<double> const&, Vector3<double>
                 const&)
@@ -7937,6 +7949,9 @@ module_groups:
         -   symbol_name: operator<<(std::ostream&, S2LatLng const&)
             symbol_sources:
             - src/third_party/s2/s2latlng.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: S1Interval::FromPointPair(double, double)
             symbol_sources:
             - src/third_party/s2/s1interval.cc
@@ -8140,7 +8155,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -8205,6 +8220,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -8218,7 +8234,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -8416,55 +8431,10 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/s2/base/casts.h
         file_interface:
-        -   symbol_name: S2Loop::IsValid() const
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-            - src/mongo/db/geo/geoparser.cpp
-            - src/third_party/s2/s2polygonbuilder.cc
-        -   symbol_name: S2Loop::BoundaryNear(S2Loop const*, double) const
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-        -   symbol_name: S2Loop::S2Loop(S2Cell const&)
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-        -   symbol_name: S2Loop::Contains(S2Loop const*) const
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-            - src/mongo/db/geo/geoparser.cpp
-        -   symbol_name: S2Loop::~S2Loop()
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-            - src/mongo/db/geo/geoparser.cpp
-        -   symbol_name: S2Loop::Normalize()
-            symbol_uses:
-            - src/third_party/s2/s2polygonbuilder.cc
-            - src/mongo/db/geo/geoparser.cpp
-        -   symbol_name: S2Loop::Intersects(S2Loop const*) const
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-        -   symbol_name: S2Loop::BoundaryApproxEquals(S2Loop const*, double) const
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-        -   symbol_name: S2Loop::ContainsNested(S2Loop const*) const
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
         -   symbol_name: S2Loop::S2Loop()
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
         -   symbol_name: S2Loop::GetArea() const
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-        -   symbol_name: S2Loop::Invert()
-            symbol_uses:
-            - src/mongo/db/geo/geoparser.cpp
-        -   symbol_name: S2Loop::IsNormalized() const
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2polygonbuilder.cc
-        -   symbol_name: S2Loop::ContainsOrCrosses(S2Loop const*) const
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-        -   symbol_name: S2Loop::GetCentroid() const
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
         -   symbol_name: S2Loop::S2Loop(std::vector<Vector3<double>, std::allocator<Vector3<double>
@@ -8472,12 +8442,57 @@ module_groups:
             symbol_uses:
             - src/third_party/s2/s2polygonbuilder.cc
             - src/mongo/db/geo/geoparser.cpp
+        -   symbol_name: S2Loop::IsValid() const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+            - src/third_party/s2/s2polygonbuilder.cc
+            - src/mongo/db/geo/geoparser.cpp
+        -   symbol_name: S2Loop::Contains(S2Loop const*) const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+            - src/mongo/db/geo/geoparser.cpp
+        -   symbol_name: S2Loop::ContainsNested(S2Loop const*) const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
         -   symbol_name: S2Loop::BoundaryEquals(S2Loop const*) const
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
         -   symbol_name: S2Loop::Contains(Vector3<double> const&) const
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
+        -   symbol_name: S2Loop::~S2Loop()
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+            - src/mongo/db/geo/geoparser.cpp
+        -   symbol_name: S2Loop::S2Loop(S2Cell const&)
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+        -   symbol_name: S2Loop::Intersects(S2Loop const*) const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+        -   symbol_name: S2Loop::BoundaryApproxEquals(S2Loop const*, double) const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+        -   symbol_name: S2Loop::IsNormalized() const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+            - src/third_party/s2/s2polygonbuilder.cc
+        -   symbol_name: S2Loop::ContainsOrCrosses(S2Loop const*) const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+        -   symbol_name: S2Loop::BoundaryNear(S2Loop const*, double) const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+        -   symbol_name: S2Loop::Normalize()
+            symbol_uses:
+            - src/third_party/s2/s2polygonbuilder.cc
+            - src/mongo/db/geo/geoparser.cpp
+        -   symbol_name: S2Loop::GetCentroid() const
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+        -   symbol_name: S2Loop::Invert()
+            symbol_uses:
+            - src/mongo/db/geo/geoparser.cpp
         file_dependencies:
         -   symbol_name: S2::RobustCrossProd(Vector3<double> const&, Vector3<double>
                 const&)
@@ -8556,6 +8571,9 @@ module_groups:
                 Vector3<double> const&)
             symbol_sources:
             - src/third_party/s2/s2.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: S2EdgeUtil::GetDistance(Vector3<double> const&, Vector3<double>
                 const&, Vector3<double> const&)
             symbol_sources:
@@ -8799,7 +8817,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -8864,6 +8882,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -8877,7 +8896,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -9088,6 +9106,9 @@ module_groups:
         -   symbol_name: S2Region::~S2Region()
             symbol_sources:
             - src/third_party/s2/s2region.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: Encoder::EnsureSlowPath(int)
             symbol_sources:
             - src/third_party/s2/util/coding/coder.cc
@@ -9221,7 +9242,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/void_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_class.hpp
         - src/third_party/boost/boost/mpl/aux_/lambda_support.hpp
-        - src/third_party/boost/boost/mpl/aux_/static_cast.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/operator_bool.hpp
         - src/third_party/boost/boost/mpl/int.hpp
         - src/third_party/boost/boost/mpl/aux_/config/msvc.hpp
         - src/third_party/boost/boost/type_traits/detail/template_arity_spec.hpp
@@ -9274,6 +9295,7 @@ module_groups:
         - src/third_party/boost/boost/date_time/gregorian/greg_year.hpp
         - src/third_party/boost/boost/preprocessor/list/detail/fold_left.hpp
         - src/third_party/boost/boost/config/select_compiler_config.hpp
+        - src/third_party/boost/boost/mpl/aux_/static_cast.hpp
         - src/third_party/boost/boost/type_traits/has_trivial_destructor.hpp
         - src/third_party/boost/boost/smart_ptr/detail/atomic_count_pthreads.hpp
         - src/third_party/s2/s2polyline.h
@@ -9306,7 +9328,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -9372,6 +9394,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -9385,7 +9408,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/sub.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -9424,7 +9446,6 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_gcc_ia64.hpp
         - src/third_party/boost/boost/config/posix_features.hpp
         - src/third_party/boost/boost/date_time/gregorian_calendar.ipp
-        - src/third_party/boost/boost/config/requires_threads.hpp
         - src/third_party/boost/boost/thread/thread_time.hpp
         - src/third_party/s2/hash.h
         - src/third_party/boost/boost/preprocessor/empty.hpp
@@ -9455,7 +9476,7 @@ module_groups:
         - src/mongo/bson/util/builder.h
         - src/third_party/boost/boost/type_traits/is_union.hpp
         - src/third_party/boost/boost/type_traits/is_base_of.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/operator_bool.hpp
+        - src/third_party/boost/boost/config/requires_threads.hpp
         - src/third_party/boost/boost/preprocessor/seq/elem.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/mod.hpp
         - src/mongo/logger/appender.h
@@ -9587,41 +9608,41 @@ module_groups:
         file_interface:
         -   symbol_name: S2Polygon::S2Polygon()
             symbol_uses:
-            - src/mongo/db/geo/geoparser.cpp
+            - src/mongo/db/geo/s2common.cpp
             - src/mongo/db/geo/geoquery.cpp
+            - src/mongo/db/geo/geoparser.cpp
+        -   symbol_name: S2Polygon::IsValid(std::vector<S2Loop*, std::allocator<S2Loop*>
+                > const&)
+            symbol_uses:
+            - src/third_party/s2/s2polygonbuilder.cc
+        -   symbol_name: S2Polygon::Project(Vector3<double> const&) const
+            symbol_uses:
             - src/mongo/db/geo/s2common.cpp
         -   symbol_name: S2Polygon::Contains(S2Polygon const*) const
-            symbol_uses:
-            - src/mongo/db/geo/geoquery.cpp
-        -   symbol_name: S2Polygon::IntersectWithPolyline(S2Polyline const*, std::vector<S2Polyline*,
-                std::allocator<S2Polyline*> >*) const
             symbol_uses:
             - src/mongo/db/geo/geoquery.cpp
         -   symbol_name: S2Polygon::Init(std::vector<S2Loop*, std::allocator<S2Loop*>
                 >*)
             symbol_uses:
             - src/third_party/s2/s2polygonbuilder.cc
+        -   symbol_name: S2Polygon::Contains(Vector3<double> const&) const
+            symbol_uses:
+            - src/mongo/db/geo/geoquery.cpp
+        -   symbol_name: S2Polygon::IntersectWithPolyline(S2Polyline const*, std::vector<S2Polyline*,
+                std::allocator<S2Polyline*> >*) const
+            symbol_uses:
+            - src/mongo/db/geo/geoquery.cpp
         -   symbol_name: S2Polygon::MayIntersect(S2Cell const&) const
             symbol_uses:
             - src/mongo/db/geo/geoquery.cpp
         -   symbol_name: S2Polygon::~S2Polygon()
             symbol_uses:
-            - src/mongo/db/geo/geoparser.cpp
-            - src/mongo/db/geo/geoquery.cpp
             - src/mongo/db/geo/s2common.cpp
+            - src/mongo/db/geo/geoquery.cpp
+            - src/mongo/db/geo/geoparser.cpp
         -   symbol_name: S2Polygon::Intersects(S2Polygon const*) const
             symbol_uses:
             - src/mongo/db/geo/geoquery.cpp
-        -   symbol_name: S2Polygon::IsValid(std::vector<S2Loop*, std::allocator<S2Loop*>
-                > const&)
-            symbol_uses:
-            - src/third_party/s2/s2polygonbuilder.cc
-        -   symbol_name: S2Polygon::Contains(Vector3<double> const&) const
-            symbol_uses:
-            - src/mongo/db/geo/geoquery.cpp
-        -   symbol_name: S2Polygon::Project(Vector3<double> const&) const
-            symbol_uses:
-            - src/mongo/db/geo/s2common.cpp
         file_dependencies:
         -   symbol_name: S2Loop::IsValid() const
             symbol_sources:
@@ -9747,6 +9768,9 @@ module_groups:
                 const&, Vector3<double> const&)
             symbol_sources:
             - src/third_party/s2/s2edgeutil.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: S2EdgeUtil::GetDistance(Vector3<double> const&, Vector3<double>
                 const&, Vector3<double> const&)
             symbol_sources:
@@ -10011,7 +10035,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -10076,6 +10100,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -10089,7 +10114,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/sub.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -10286,28 +10310,18 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/s2/base/casts.h
         file_interface:
-        -   symbol_name: S2PolygonBuilder::S2PolygonBuilder(S2PolygonBuilderOptions
+        -   symbol_name: S2PolygonBuilder::AddEdge(Vector3<double> const&, Vector3<double>
                 const&)
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
-            - src/mongo/db/geo/geoparser.cpp
-        -   symbol_name: S2PolygonBuilder::~S2PolygonBuilder()
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-            - src/mongo/db/geo/geoparser.cpp
         -   symbol_name: S2PolygonBuilder::AddLoop(S2Loop const*)
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
             - src/mongo/db/geo/geoparser.cpp
-        -   symbol_name: S2PolygonBuilderOptions::set_vertex_merge_radius(S1Angle
+        -   symbol_name: S2PolygonBuilder::S2PolygonBuilder(S2PolygonBuilderOptions
                 const&)
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
-        -   symbol_name: S2PolygonBuilderOptions::set_undirected_edges(bool)
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
-        -   symbol_name: S2PolygonBuilderOptions::set_xor_edges(bool)
-            symbol_uses:
             - src/mongo/db/geo/geoparser.cpp
         -   symbol_name: S2PolygonBuilder::AssemblePolygon(S2Polygon*, std::vector<std::pair<Vector3<double>,
                 Vector3<double> >, std::allocator<std::pair<Vector3<double>, Vector3<double>
@@ -10315,14 +10329,24 @@ module_groups:
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
             - src/mongo/db/geo/geoparser.cpp
+        -   symbol_name: S2PolygonBuilderOptions::set_xor_edges(bool)
+            symbol_uses:
+            - src/mongo/db/geo/geoparser.cpp
+        -   symbol_name: S2PolygonBuilderOptions::set_undirected_edges(bool)
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+        -   symbol_name: S2PolygonBuilderOptions::set_vertex_merge_radius(S1Angle
+                const&)
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+        -   symbol_name: S2PolygonBuilder::~S2PolygonBuilder()
+            symbol_uses:
+            - src/third_party/s2/s2polygon.cc
+            - src/mongo/db/geo/geoparser.cpp
         -   symbol_name: S2PolygonBuilderOptions::set_validate(bool)
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
             - src/mongo/db/geo/geoparser.cpp
-        -   symbol_name: S2PolygonBuilder::AddEdge(Vector3<double> const&, Vector3<double>
-                const&)
-            symbol_uses:
-            - src/third_party/s2/s2polygon.cc
         file_dependencies:
         -   symbol_name: S2::RobustCrossProd(Vector3<double> const&, Vector3<double>
                 const&)
@@ -10591,7 +10615,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -10656,6 +10680,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -10669,7 +10694,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -10872,9 +10896,9 @@ module_groups:
             - src/mongo/db/geo/geoquery.cpp
         -   symbol_name: S2Polyline::S2Polyline()
             symbol_uses:
-            - src/mongo/db/geo/geoparser.cpp
-            - src/mongo/db/geo/geoquery.cpp
             - src/mongo/db/geo/s2common.cpp
+            - src/mongo/db/geo/geoquery.cpp
+            - src/mongo/db/geo/geoparser.cpp
         -   symbol_name: S2Polyline::S2Polyline(std::vector<Vector3<double>, std::allocator<Vector3<double>
                 > > const&)
             symbol_uses:
@@ -10886,26 +10910,26 @@ module_groups:
         -   symbol_name: S2Polyline::~S2Polyline()
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
-            - src/mongo/db/geo/geoquery.cpp
             - src/mongo/db/geo/s2common.cpp
-        -   symbol_name: S2Polyline::Init(std::vector<Vector3<double>, std::allocator<Vector3<double>
-                > > const&)
-            symbol_uses:
-            - src/mongo/db/geo/geoparser.cpp
-        -   symbol_name: S2Polyline::Intersects(S2Polyline const*) const
-            symbol_uses:
             - src/mongo/db/geo/geoquery.cpp
         -   symbol_name: S2Polyline::NearlyCoversPolyline(S2Polyline const&, S1Angle
                 const&) const
             symbol_uses:
             - src/mongo/db/geo/geoquery.cpp
+        -   symbol_name: S2Polyline::Project(Vector3<double> const&, int*) const
+            symbol_uses:
+            - src/mongo/db/geo/s2common.cpp
+        -   symbol_name: S2Polyline::Init(std::vector<Vector3<double>, std::allocator<Vector3<double>
+                > > const&)
+            symbol_uses:
+            - src/mongo/db/geo/geoparser.cpp
         -   symbol_name: S2Polyline::SubsampleVertices(S1Angle const&, std::vector<int,
                 std::allocator<int> >*) const
             symbol_uses:
             - src/third_party/s2/s2polygon.cc
-        -   symbol_name: S2Polyline::Project(Vector3<double> const&, int*) const
+        -   symbol_name: S2Polyline::Intersects(S2Polyline const*) const
             symbol_uses:
-            - src/mongo/db/geo/s2common.cpp
+            - src/mongo/db/geo/geoquery.cpp
         file_dependencies:
         -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
             symbol_sources:
@@ -10955,6 +10979,9 @@ module_groups:
         -   symbol_name: S1Interval::FromPoint(double)
             symbol_sources:
             - src/third_party/s2/s1interval.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: S1Interval::Expanded(double) const
             symbol_sources:
             - src/third_party/s2/s1interval.cc
@@ -11216,7 +11243,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -11281,6 +11308,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -11294,7 +11322,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -11514,6 +11541,9 @@ module_groups:
         -   symbol_name: S2CellId::kMaxLevel
             symbol_sources:
             - src/third_party/s2/s2cellid.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: S2Cap::GetRectBound() const
             symbol_sources:
             - src/third_party/s2/s2cap.cc
@@ -11718,7 +11748,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -11781,6 +11811,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -11794,7 +11825,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -11990,56 +12020,82 @@ module_groups:
         file_interface:
         -   symbol_name: S2Region::DecodeWithinScope(Decoder*)
             symbol_uses:
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2cap.cc
-            - src/third_party/s2/s2cellunion.cc
-            - src/third_party/s2/s2regionunion.cc
-            - src/third_party/s2/s2pointregion.cc
-            - src/third_party/s2/s2r2rect.cc
             - src/third_party/s2/s2regionintersection.cc
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2pointregion.cc
+            - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2regionunion.cc
+            - src/third_party/s2/s2cell.cc
+            - src/third_party/s2/s2cap.cc
+            - src/third_party/s2/s2r2rect.cc
         -   symbol_name: S2Region::~S2Region()
             symbol_uses:
-            - src/mongo/db/query/stage_builder.cpp
-            - src/third_party/s2/s2polygon.cc
-            - src/mongo/db/matcher/expression_parser_geo.cpp
-            - src/third_party/s2/s2pointregion.cc
-            - src/mongo/db/query/planner_access.cpp
-            - src/mongo/db/geo/geoquery.cpp
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2regioncoverer.cc
-            - src/third_party/s2/s2edgeindex.cc
-            - src/mongo/db/query/index_bounds_builder.cpp
+            - src/mongo/db/matcher/expression_geo.cpp
+            - src/mongo/db/query/query_solution.cpp
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2edgeutil.cc
             - src/third_party/s2/s2regionunion.cc
+            - src/third_party/s2/s2r2rect.cc
+            - src/third_party/s2/s2polygon.cc
+            - src/mongo/db/query/stage_builder.cpp
+            - src/third_party/s2/s2edgeindex.cc
             - src/mongo/db/exec/s2near.cpp
+            - src/third_party/s2/s2pointregion.cc
             - src/third_party/s2/s2loop.cc
             - src/third_party/s2/s2regionintersection.cc
-            - src/third_party/s2/s2latlngrect.cc
-            - src/third_party/s2/s2edgeutil.cc
-            - src/third_party/s2/s2cell.cc
-            - src/mongo/db/matcher/expression_geo.cpp
-            - src/mongo/db/geo/geoparser.cpp
-            - src/mongo/db/geo/s2common.cpp
-            - src/third_party/s2/s2r2rect.cc
-            - src/mongo/db/exec/2dnear.cpp
             - src/third_party/s2/s2cap.cc
-            - src/third_party/s2/s2cellunion.cc
-            - src/mongo/db/query/query_solution.cpp
+            - src/third_party/s2/s2polyline.cc
             - src/mongo/db/query/query_planner.cpp
+            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/mongo/db/geo/s2common.cpp
+            - src/mongo/db/matcher/expression_parser_geo.cpp
+            - src/mongo/db/geo/geoquery.cpp
+            - src/mongo/db/exec/2dnear.cpp
+            - src/mongo/db/query/planner_access.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
+            - src/third_party/s2/s2cell.cc
+            - src/mongo/db/geo/geoparser.cpp
         -   symbol_name: typeinfo for S2Region
             symbol_uses:
-            - src/third_party/s2/s2cell.cc
-            - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2polyline.cc
-            - src/third_party/s2/s2cap.cc
-            - src/third_party/s2/s2cellunion.cc
-            - src/third_party/s2/s2regionunion.cc
-            - src/third_party/s2/s2pointregion.cc
-            - src/third_party/s2/s2r2rect.cc
-            - src/third_party/s2/s2loop.cc
             - src/third_party/s2/s2regionintersection.cc
             - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2pointregion.cc
+            - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2regionunion.cc
+            - src/third_party/s2/s2cell.cc
+            - src/third_party/s2/s2cap.cc
+            - src/third_party/s2/s2polygon.cc
+            - src/third_party/s2/s2r2rect.cc
+        -   symbol_name: vtable for S2Region
+            symbol_uses:
+            - src/mongo/db/matcher/expression_geo.cpp
+            - src/mongo/db/query/query_solution.cpp
+            - src/third_party/s2/s2cellunion.cc
+            - src/third_party/s2/s2regionunion.cc
+            - src/third_party/s2/s2r2rect.cc
+            - src/third_party/s2/s2polygon.cc
+            - src/mongo/db/query/stage_builder.cpp
+            - src/third_party/s2/s2edgeindex.cc
+            - src/mongo/db/exec/s2near.cpp
+            - src/third_party/s2/s2pointregion.cc
+            - src/third_party/s2/s2loop.cc
+            - src/third_party/s2/s2regionintersection.cc
+            - src/third_party/s2/s2cap.cc
+            - src/third_party/s2/s2polyline.cc
+            - src/mongo/db/query/query_planner.cpp
+            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2regioncoverer.cc
+            - src/mongo/db/geo/s2common.cpp
+            - src/mongo/db/matcher/expression_parser_geo.cpp
+            - src/mongo/db/geo/geoquery.cpp
+            - src/mongo/db/exec/2dnear.cpp
+            - src/mongo/db/query/planner_access.cpp
+            - src/third_party/s2/s2cell.cc
+            - src/mongo/db/geo/geoparser.cpp
         file_dependencies: []
     -   file_name: src/third_party/s2/s2region.h
         file_executables:
@@ -12238,7 +12294,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/function/function0.hpp
         - src/mongo/base/status-inl.h
@@ -12309,6 +12365,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -12322,7 +12379,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/mongo/base/initializer_dependency_graph.h
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -12541,34 +12597,34 @@ module_groups:
         file_interface:
         -   symbol_name: S2RegionCoverer::S2RegionCoverer()
             symbol_uses:
-            - src/mongo/db/query/index_bounds_builder.cpp
             - src/mongo/db/index/s2_key_generator.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
             - src/mongo/db/exec/s2near.cpp
         -   symbol_name: S2RegionCoverer::set_max_cells(int)
             symbol_uses:
             - src/mongo/db/index/s2_key_generator.cpp
         -   symbol_name: S2RegionCoverer::set_max_level(int)
             symbol_uses:
-            - src/mongo/db/query/index_bounds_builder.cpp
-            - src/mongo/db/index/s2_key_generator.cpp
             - src/mongo/db/geo/s2common.cpp
-            - src/mongo/db/exec/s2near.cpp
-        -   symbol_name: S2RegionCoverer::set_min_level(int)
-            symbol_uses:
-            - src/mongo/db/query/index_bounds_builder.cpp
             - src/mongo/db/index/s2_key_generator.cpp
-            - src/mongo/db/geo/s2common.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
             - src/mongo/db/exec/s2near.cpp
         -   symbol_name: S2RegionCoverer::~S2RegionCoverer()
             symbol_uses:
-            - src/mongo/db/query/index_bounds_builder.cpp
             - src/mongo/db/index/s2_key_generator.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
+            - src/mongo/db/exec/s2near.cpp
+        -   symbol_name: S2RegionCoverer::set_min_level(int)
+            symbol_uses:
+            - src/mongo/db/geo/s2common.cpp
+            - src/mongo/db/index/s2_key_generator.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
             - src/mongo/db/exec/s2near.cpp
         -   symbol_name: S2RegionCoverer::GetCovering(S2Region const&, std::vector<S2CellId,
                 std::allocator<S2CellId> >*)
             symbol_uses:
-            - src/mongo/db/query/index_bounds_builder.cpp
             - src/mongo/db/index/s2_key_generator.cpp
+            - src/mongo/db/query/index_bounds_builder.cpp
             - src/mongo/db/exec/s2near.cpp
         file_dependencies:
         -   symbol_name: vtable for S2CellUnion
@@ -12616,6 +12672,9 @@ module_groups:
                 std::allocator<S2CellId> >*) const
             symbol_sources:
             - src/third_party/s2/s2cellunion.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: vtable for S2Cell
             symbol_sources:
             - src/third_party/s2/s2cell.cc
@@ -12835,7 +12894,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -12900,6 +12959,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -12913,7 +12973,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -13109,18 +13168,18 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/s2/base/casts.h
         file_interface:
-        -   symbol_name: S2RegionIntersection::S2RegionIntersection()
-            symbol_uses:
-            - src/mongo/db/exec/s2near.cpp
-        -   symbol_name: S2RegionIntersection::Release(std::vector<S2Region*, std::allocator<S2Region*>
-                >*)
+        -   symbol_name: S2RegionIntersection::~S2RegionIntersection()
             symbol_uses:
             - src/mongo/db/exec/s2near.cpp
         -   symbol_name: S2RegionIntersection::Init(std::vector<S2Region*, std::allocator<S2Region*>
                 >*)
             symbol_uses:
             - src/mongo/db/exec/s2near.cpp
-        -   symbol_name: S2RegionIntersection::~S2RegionIntersection()
+        -   symbol_name: S2RegionIntersection::S2RegionIntersection()
+            symbol_uses:
+            - src/mongo/db/exec/s2near.cpp
+        -   symbol_name: S2RegionIntersection::Release(std::vector<S2Region*, std::allocator<S2Region*>
+                >*)
             symbol_uses:
             - src/mongo/db/exec/s2near.cpp
         file_dependencies:
@@ -13142,6 +13201,9 @@ module_groups:
         -   symbol_name: S2LatLngRect::GetCapBound() const
             symbol_sources:
             - src/third_party/s2/s2latlngrect.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: LogMessageFatal::LogMessageFatal(char const*, int)
             symbol_sources:
             - src/third_party/s2/base/logging.cc
@@ -13337,7 +13399,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -13402,6 +13464,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -13415,7 +13478,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/s2/s1interval.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -13633,6 +13695,9 @@ module_groups:
         -   symbol_name: S2LatLngRect::GetCapBound() const
             symbol_sources:
             - src/third_party/s2/s2latlngrect.cc
+        -   symbol_name: vtable for S2Region
+            symbol_sources:
+            - src/third_party/s2/s2region.cc
         -   symbol_name: LogMessageFatal::LogMessageFatal(char const*, int)
             symbol_sources:
             - src/third_party/s2/base/logging.cc
@@ -13846,7 +13911,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -13911,6 +13976,7 @@ module_groups:
         - src/third_party/s2/strings/split.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -13924,7 +13990,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -14310,7 +14375,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -14373,6 +14438,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -14386,7 +14452,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -14763,7 +14828,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -14828,6 +14893,7 @@ module_groups:
         - src/third_party/s2/strings/split.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -14841,7 +14907,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -15242,7 +15307,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -15305,6 +15370,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -15318,7 +15384,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -15508,10 +15573,10 @@ module_groups:
         -   symbol_name: Encoder::EnsureSlowPath(int)
             symbol_uses:
             - src/third_party/s2/s2pointregion.cc
-            - src/third_party/s2/s2polyline.cc
+            - src/third_party/s2/s2latlngrect.cc
             - src/third_party/s2/s2loop.cc
             - src/third_party/s2/s2polygon.cc
-            - src/third_party/s2/s2latlngrect.cc
+            - src/third_party/s2/s2polyline.cc
         file_dependencies:
         -   symbol_name: Varint::Length64(unsigned long long)
             symbol_sources:
@@ -15594,19 +15659,19 @@ module_groups:
         -   symbol_name: Varint::Parse64Fallback(char const*, unsigned long long*)
             symbol_uses:
             - src/third_party/s2/util/coding/coder.cc
-        -   symbol_name: Varint::length32_bytes_required
-            symbol_uses:
-            - src/third_party/s2/util/coding/coder.cc
         -   symbol_name: Varint::kMax64
             symbol_uses:
             - src/third_party/s2/util/coding/coder.cc
         -   symbol_name: Varint::kMax32
             symbol_uses:
             - src/third_party/s2/util/coding/coder.cc
+        -   symbol_name: Varint::Parse32Fallback(char const*, unsigned int*)
+            symbol_uses:
+            - src/third_party/s2/util/coding/coder.cc
         -   symbol_name: Varint::Length64(unsigned long long)
             symbol_uses:
             - src/third_party/s2/util/coding/coder.cc
-        -   symbol_name: Varint::Parse32Fallback(char const*, unsigned int*)
+        -   symbol_name: Varint::length32_bytes_required
             symbol_uses:
             - src/third_party/s2/util/coding/coder.cc
         file_dependencies: []
@@ -15894,7 +15959,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -15957,6 +16022,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -15970,7 +16036,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -16161,12 +16226,12 @@ module_groups:
         -   symbol_name: LogMessageFatal::~LogMessageFatal()
             symbol_sources:
             - src/third_party/s2/base/logging.cc
-        -   symbol_name: LogMessageFatal::LogMessageFatal(char const*, int)
-            symbol_sources:
-            - src/third_party/s2/base/logging.cc
         -   symbol_name: mongo::logger::LogstreamBuilder::makeStream()
             symbol_sources:
             - src/mongo/logger/logstream_builder.cpp
+        -   symbol_name: LogMessageFatal::LogMessageFatal(char const*, int)
+            symbol_sources:
+            - src/third_party/s2/base/logging.cc
     -   file_name: src/third_party/s2/util/math/mathutil.h
         file_executables:
         - mongotop

@@ -199,7 +199,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/mpl/arg.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
@@ -271,6 +271,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/seq/detail/split.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -287,7 +288,6 @@ module_groups:
         - src/third_party/boost/boost/filesystem/v3/path_traits.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/detail/scoped_enum_emulation.hpp
         - src/third_party/boost/boost/mpl/aux_/arg_typedef.hpp
@@ -525,24 +525,24 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/adl_barrier.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         file_interface:
-        -   symbol_name: mongo::File::write(unsigned long long, char const*, unsigned
-                int)
-            symbol_uses:
-            - src/mongo/shell/shell_utils_extended.cpp
-            - src/mongo/db/durop.cpp
-            - src/mongo/db/dur_journal.cpp
         -   symbol_name: mongo::File::File()
             symbol_uses:
+            - src/mongo/scripting/engine.cpp
             - src/mongo/shell/shell_utils_extended.cpp
             - src/mongo/shell/dbshell.cpp
-            - src/mongo/scripting/engine.cpp
             - src/mongo/db/durop.cpp
             - src/mongo/db/dur_journal.cpp
         -   symbol_name: mongo::File::open(char const*, bool, bool)
             symbol_uses:
+            - src/mongo/scripting/engine.cpp
             - src/mongo/shell/shell_utils_extended.cpp
             - src/mongo/shell/dbshell.cpp
-            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::File::write(unsigned long long, char const*, unsigned
+                int)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_extended.cpp
             - src/mongo/db/durop.cpp
             - src/mongo/db/dur_journal.cpp
         -   symbol_name: mongo::File::truncate(unsigned long long)
@@ -550,33 +550,33 @@ module_groups:
             - src/mongo/db/dur_journal.cpp
         -   symbol_name: mongo::File::~File()
             symbol_uses:
+            - src/mongo/scripting/engine.cpp
             - src/mongo/shell/shell_utils_extended.cpp
             - src/mongo/shell/dbshell.cpp
-            - src/mongo/scripting/engine.cpp
             - src/mongo/db/durop.cpp
             - src/mongo/db/dur_journal.cpp
         -   symbol_name: mongo::File::is_open() const
             symbol_uses:
+            - src/mongo/scripting/engine.cpp
             - src/mongo/shell/shell_utils_extended.cpp
             - src/mongo/db/durop.cpp
-            - src/mongo/scripting/engine.cpp
             - src/mongo/db/dur_journal.cpp
         -   symbol_name: mongo::File::freeSpace(std::string const&)
             symbol_uses:
+            - src/mongo/db/dur_journal.cpp
             - src/mongo/db/repair_database.cpp
-            - src/mongo/db/dur_journal.cpp
-        -   symbol_name: mongo::File::fsync() const
-            symbol_uses:
-            - src/mongo/db/durop.cpp
-            - src/mongo/db/dur_journal.cpp
         -   symbol_name: mongo::File::len()
             symbol_uses:
             - src/mongo/scripting/engine.cpp
             - src/mongo/db/dur_journal.cpp
         -   symbol_name: mongo::File::read(unsigned long long, char*, unsigned int)
             symbol_uses:
-            - src/mongo/shell/shell_utils_extended.cpp
             - src/mongo/scripting/engine.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::File::fsync() const
+            symbol_uses:
+            - src/mongo/db/durop.cpp
             - src/mongo/db/dur_journal.cpp
         file_dependencies:
         -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()

@@ -102,6 +102,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::BSONNULL
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::StringData::Hasher::operator()(mongo::StringData const&) const
 
 - Provided By:

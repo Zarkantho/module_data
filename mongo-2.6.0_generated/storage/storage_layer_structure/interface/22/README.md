@@ -10,18 +10,10 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/commands/storage\_details.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/commands/touch.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/tools/dump.cpp](../../../../tools/tools)
     - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-
-<div></div>
-
-    mongo::ExtentManager::flushFiles(bool)
-
-- Used By:
-
-    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/commands/storage\_details.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/commands/touch.cpp](../../../../query\_and\_operation\_handling/database\_commands)
 
 <div></div>
 
@@ -30,6 +22,32 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/dbtests/pdfiletests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::ExtentManager::getNextRecordInExtent(mongo::DiskLoc const&) const
+
+- Used By:
+
+    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/commands/storage\_details.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+
+<div></div>
+
+    mongo::ExtentManager::getNextExtent(mongo::Extent*) const
+
+- Used By:
+
+    - [src/mongo/db/commands/storage\_details.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/commands/touch.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+
+<div></div>
+
+    mongo::ExtentManager::flushFiles(bool)
+
+- Used By:
+
+    - [src/mongo/db/repl/rs\_initialsync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -49,15 +67,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::ExtentManager::getNextRecordInExtent(mongo::DiskLoc const&) const
-
-- Used By:
-
-    - [src/mongo/db/commands/storage\_details.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/commands/parallel\_collection\_scan.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-
-<div></div>
-
     mongo::ExtentManager::fileSize() const
 
 - Used By:
@@ -71,12 +80,3 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-
-<div></div>
-
-    mongo::ExtentManager::getNextExtent(mongo::Extent*) const
-
-- Used By:
-
-    - [src/mongo/db/commands/touch.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/commands/storage\_details.cpp](../../../../query\_and\_operation\_handling/database\_commands)

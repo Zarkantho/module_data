@@ -41,8 +41,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
     - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
 
 ### src/mongo/db/commands/isself.cpp
 
@@ -52,12 +52,12 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/socktests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/repl/rs\_initiate.cpp](../../../../replication/replica\_set\_configuration)
-    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replica\_set\_configuration)
     - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/cloner.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/rs\_initiate.cpp](../../../../replication/replica\_set\_configuration)
     - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/dbtests/socktests.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/commands/mr\_common.cpp
 
@@ -83,18 +83,38 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)
+
+- Used By:
+
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/data\_sync)
+    - [src/mongo/s/client\_info.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/db/clientcursor.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/db/ttl.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/write\_concern.cpp](../../../../replication/write\_concern)
+    - [src/mongo/db/curop.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
+    - [src/mongo/s/d\_writeback.cpp](../../../../sharding/writeback\_listener)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/catalog/collection.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
     mongo::ServerStatusSection::ServerStatusSection(std::string const&)
 
 - Used By:
 
-    - [src/mongo/db/d\_concurrency.cpp](../../../../query\_and\_operation\_handling/concurrency)
-    - [src/mongo/util/tcmalloc\_server\_status\_section.cpp](../../../../utilities/utilities)
-    - [src/mongo/db/storage/record.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/clientcursor.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
     - [src/mongo/db/dur.cpp](../../../../storage/journaling)
-    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/structure/btree/btree\_stats.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/clientcursor.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/storage/record.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/util/tcmalloc\_server\_status\_section.cpp](../../../../utilities/utilities)
+    - [src/mongo/db/d\_concurrency.cpp](../../../../query\_and\_operation\_handling/concurrency)
 
 <div></div>
 
@@ -106,23 +126,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::ServerStatusMetric::ServerStatusMetric(std::string const&)
+    vtable for mongo::OpCounterServerStatusSection
 
 - Used By:
 
-    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
-    - [src/mongo/db/write\_concern.cpp](../../../../replication/write\_concern)
-    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/catalog/collection.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-    - [src/mongo/db/clientcursor.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
-    - [src/mongo/db/curop.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/data\_sync)
-    - [src/mongo/s/d\_writeback.cpp](../../../../sharding/writeback\_listener)
-    - [src/mongo/db/ttl.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/repl/oplogreader.cpp](../../../../replication/data\_sync)
-    - [src/mongo/s/client\_info.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replica\_set\_state)
 
 ### src/mongo/db/commands/shutdown.cpp
 

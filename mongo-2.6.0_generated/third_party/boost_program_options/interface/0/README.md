@@ -82,10 +82,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    boost::program_options::options_description::add(boost::program_options::options_description const&)
+    boost::program_options::options_description::options_description(unsigned int, unsigned int)
 
 - Used By:
 
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
     - [src/mongo/util/options\_parser/option\_section.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
@@ -94,17 +95,16 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/util/options\_parser/option\_section.cpp](../../../../process\_management/startup\_initialization)
     - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_section.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
-    boost::program_options::options_description::options_description(unsigned int, unsigned int)
+    boost::program_options::options_description::add(boost::program_options::options_description const&)
 
 - Used By:
 
     - [src/mongo/util/options\_parser/option\_section.cpp](../../../../process\_management/startup\_initialization)
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
 
 <div></div>
 
@@ -128,6 +128,23 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    boost::program_options::positional_options_description::positional_options_description()
+
+- Used By:
+
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
+    - [src/mongo/util/options\_parser/option\_section.cpp](../../../../process\_management/startup\_initialization)
+
+<div></div>
+
+    boost::program_options::positional_options_description::name_for_position(unsigned int) const
+
+- Used By:
+
+    - [src/mongo/util/options\_parser/option\_section.cpp](../../../../process\_management/startup\_initialization)
+
+<div></div>
+
     boost::program_options::positional_options_description::max_total_count() const
 
 - Used By:
@@ -137,23 +154,6 @@ This interface information represents symbols that are defined in this group but
 <div></div>
 
     boost::program_options::positional_options_description::add(char const*, int)
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/option\_section.cpp](../../../../process\_management/startup\_initialization)
-
-<div></div>
-
-    boost::program_options::positional_options_description::positional_options_description()
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/option\_section.cpp](../../../../process\_management/startup\_initialization)
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
-
-<div></div>
-
-    boost::program_options::positional_options_description::name_for_position(unsigned int) const
 
 - Used By:
 

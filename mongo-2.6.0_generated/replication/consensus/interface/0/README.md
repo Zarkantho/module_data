@@ -14,17 +14,17 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::Consensus::aMajoritySeemsToBeUp() const
-
-- Used By:
-
-    - [src/mongo/db/repl/health.cpp](../../../../replication/replica\_set\_state)
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
-
-<div></div>
-
     mongo::Consensus::shouldRelinquish() const
 
 - Used By:
 
     - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+
+<div></div>
+
+    mongo::Consensus::aMajoritySeemsToBeUp() const
+
+- Used By:
+
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/health.cpp](../../../../replication/replica\_set\_state)

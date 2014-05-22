@@ -10,6 +10,6 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/commands/apply\_ops.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/s/commands\_public.cpp](../../../../sharding/mongos\_commands)
+    - [src/mongo/db/commands/apply\_ops.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/db/dbeval.cpp](../../../../query\_and\_operation\_handling/database\_commands)

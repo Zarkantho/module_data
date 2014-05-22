@@ -24,6 +24,14 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::HashKeyGenerator::makeSingleHashKey(mongo::BSONElement const&, int, int)
+
+- Used By:
+
+    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
     mongo::HashKeyGenerator::getKeys(mongo::BSONObj const&, std::set<mongo::BSONObj, mongo::BSONObjCmp, std::allocator<mongo::BSONObj> >*) const
 
 - Used By:
@@ -33,14 +41,6 @@ This interface information represents symbols that are defined in this group but
 <div></div>
 
     vtable for mongo::HashKeyGenerator
-
-- Used By:
-
-    - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::HashKeyGenerator::makeSingleHashKey(mongo::BSONElement const&, int, int)
 
 - Used By:
 

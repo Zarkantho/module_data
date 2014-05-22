@@ -6,19 +6,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::IndexBuilder::killMatchingIndexBuilds(mongo::Collection*, mongo::IndexCatalog::IndexKillCriteria const&)
-
-- Used By:
-
-    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/commands/test\_commands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/commands/drop\_indexes.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/commands/rename\_collection.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/commands/compact.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-
-<div></div>
-
     mongo::IndexBuilder::IndexBuilder(mongo::BSONObj const&)
 
 - Used By:
@@ -31,11 +18,24 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/commands/drop\_indexes.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/commands/test\_commands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/db/commands/compact.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/db/commands/rename\_collection.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/commands/test\_commands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+
+<div></div>
+
+    mongo::IndexBuilder::killMatchingIndexBuilds(mongo::Collection*, mongo::IndexCatalog::IndexKillCriteria const&)
+
+- Used By:
+
+    - [src/mongo/db/commands/rename\_collection.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/commands/drop\_indexes.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/commands/compact.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/commands/collection\_to\_capped.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/commands/test\_commands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
 
 <div></div>
 

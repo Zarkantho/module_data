@@ -20,9 +20,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/queryutil.cpp](../../../../core\_query\_system/legacy\_query\_code)
-    - [src/mongo/db/exec/sort.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/dbtests/namespacetests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/exec/sort.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/queryutil.cpp](../../../../core\_query\_system/legacy\_query\_code)
 
 <div></div>
 

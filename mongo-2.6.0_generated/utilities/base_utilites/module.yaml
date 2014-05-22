@@ -17,7 +17,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -28,7 +28,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -204,7 +204,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/function/function0.hpp
         - src/mongo/base/status-inl.h
@@ -265,6 +265,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -278,7 +279,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -683,7 +683,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -744,6 +744,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -758,7 +759,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -1156,7 +1156,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -1217,6 +1217,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1230,7 +1231,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -1473,8 +1473,8 @@ module_groups:
     - src/mongo/base/status_with.h
     - src/mongo/base/error_codes.err
     - src/mongo/base/generate_error_codes.py
-    - build/darwin/ssl/mongo/base/error_codes.h
-    - build/darwin/ssl/mongo/base/error_codes.cpp
+    - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
+    - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.cpp
     group_generated_data:
     -   file_name: src/mongo/base/status-inl.h
         file_executables:
@@ -1482,7 +1482,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -1493,7 +1493,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -1526,8 +1526,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/seq/transform.hpp
         - src/third_party/boost/boost/preprocessor/list/detail/edg/fold_left.hpp
         - src/third_party/boost/boost/type.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
-        - src/third_party/boost/boost/preprocessor/list/fold_right.hpp
+        - src/third_party/boost/boost/preprocessor/list/adt.hpp
         - src/third_party/boost/boost/config.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
         - src/mongo/platform/compiler.h
@@ -1544,6 +1543,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/list/detail/edg/fold_right.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/inc.hpp
         - src/third_party/boost/boost/preprocessor/control/detail/dmc/while.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/control/detail/msvc/while.hpp
         - src/third_party/boost/boost/preprocessor/seq/cat.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_params.hpp
@@ -1551,7 +1551,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/seq/fold_left.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/add.hpp
         - src/third_party/boost/boost/preprocessor/control/detail/while.hpp
-        - src/third_party/boost/boost/preprocessor/list/adt.hpp
+        - src/third_party/boost/boost/preprocessor/list/fold_right.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/mongo/platform/atomic_intrinsics_win32.h
         - src/third_party/boost/boost/preprocessor/control/while.hpp
@@ -1608,387 +1608,394 @@ module_groups:
         - src/third_party/boost/boost/config/select_compiler_config.hpp
         - src/third_party/boost/boost/preprocessor/cat.hpp
         file_interface:
-        -   symbol_name: mongo::operator<<(std::ostream&, mongo::Status const&)
-            symbol_uses:
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/base/global_initializer_registerer.cpp
-            - src/mongo/base/initializer.cpp
-            - src/mongo/dbtests/jstests.cpp
-        -   symbol_name: mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)
-            symbol_uses:
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/db/json.cpp
         -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
                 int)
             symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
-            - src/mongo/db/commands/collection_to_capped.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/db/query/parsed_projection.cpp
-            - src/mongo/db/matcher/expression_parser.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
-            - src/mongo/db/query/canonical_query.cpp
-            - src/mongo/db/query/explain_plan.cpp
+            - src/mongo/db/write_concern.cpp
+            - src/mongo/db/auth/user_management_commands_parser.cpp
+            - src/mongo/db/commands/oplog_note.cpp
+            - src/mongo/db/fts/fts_enabled.cpp
+            - src/mongo/util/log.cpp
+            - src/mongo/db/ops/field_checker.cpp
             - src/mongo/s/d_state.cpp
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/auth/user_document_parser.cpp
-            - src/mongo/util/options_parser/options_parser.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/mongod_options.cpp
-            - src/mongo/logger/log_manager.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/db/commands/plan_cache_commands.cpp
-            - src/mongo/s/commands/cluster_plan_cache_cmd.cpp
-            - src/mongo/db/commands/merge_chunks_cmd.cpp
-            - src/mongo/s/dbclient_multi_command.cpp
-            - src/mongo/db/storage/data_file.cpp
+            - src/mongo/db/pipeline/document_source_cursor.cpp
+            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
+            - src/mongo/tools/mongostat_options.cpp
+            - src/mongo/db/query/qlog.cpp
+            - src/mongo/db/storage_options.cpp
+            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
+            - src/mongo/db/query/subplan_runner.cpp
+            - src/mongo/shell/dbshell.cpp
+            - src/mongo/s/mongos_options.cpp
+            - src/mongo/db/query/query_planner.cpp
+            - src/mongo/base/parse_number.cpp
+            - src/mongo/base/initializer_dependency_graph.cpp
             - src/mongo/db/commands/pipeline_command.cpp
             - src/mongo/unittest/unittest.cpp
-            - src/mongo/db/matcher/expression_where.cpp
-            - src/mongo/db/query/multi_plan_runner.cpp
-            - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
-            - src/mongo/s/mongos_options.cpp
-            - src/mongo/db/query/query_knobs.cpp
-            - src/mongo/db/commands/oplog_note.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/tools/mongorestore_options.cpp
-            - src/mongo/db/repl/rs_sync.cpp
-            - src/mongo/db/commands/group.cpp
-            - src/mongo/db/query/lite_parsed_query.cpp
-            - src/mongo/logger/ramlog.cpp
-            - src/mongo/db/exec/sort.cpp
-            - src/mongo/tools/mongodump_options.cpp
-            - src/mongo/tools/tool_logger.cpp
-            - src/mongo/util/time_support.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/db/commands/rename_collection_common.cpp
-            - src/mongo/db/geo/geoquery.cpp
-            - src/mongo/db/auth/user_cache_invalidator_job.cpp
-            - src/mongo/db/matcher/expression_parser_tree.cpp
-            - src/mongo/db/conn_pool_options.cpp
-            - src/mongo/bson/mutable/element.cpp
-            - src/mongo/db/ops/update_driver.cpp
-            - src/mongo/db/commands/create_indexes.cpp
-            - src/mongo/db/query/new_find.cpp
-            - src/mongo/db/ops/field_checker.cpp
-            - src/mongo/db/query/plan_cache.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/util/net/ssl_options.cpp
-            - src/mongo/db/commands/copydb_common.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/db/server_parameters.cpp
-            - src/mongo/db/query/subplan_runner.cpp
-            - src/mongo/db/write_concern_options.cpp
-            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
-            - src/mongo/db/query/query_planner.cpp
-            - src/mongo/db/auth/role_graph_update.cpp
-            - src/mongo/util/log.cpp
-            - src/mongo/util/fail_point_registry.cpp
-            - src/mongo/db/query/internal_runner.cpp
-            - src/mongo/tools/mongooplog_options.cpp
-            - src/mongo/db/ops/modifier_current_date.cpp
-            - src/mongo/db/commands.cpp
-            - src/mongo/util/options_parser/environment.cpp
-            - src/mongo/shell/dbshell.cpp
-            - src/mongo/db/server_options_helpers.cpp
-            - src/mongo/db/initialize_server_global_state.cpp
-            - src/mongo/db/ops/modifier_set.cpp
-            - src/mongo/client/sasl_client_authenticate.cpp
-            - src/mongo/db/ops/modifier_compare.cpp
-            - src/mongo/db/auth/authorization_session.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/s/cluster_client_internal.cpp
-            - src/mongo/db/storage_options.cpp
-            - src/mongo/tools/mongobridge_options.cpp
-            - src/mongo/db/exec/working_set_common.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/auth/authorization_manager_global.cpp
             - src/mongo/db/index/btree_index_cursor.cpp
-            - src/mongo/s/metadata_loader.cpp
-            - src/mongo/db/ops/insert.cpp
-            - src/mongo/db/write_concern.cpp
-            - src/mongo/s/commands/cluster_index_filter_cmd.cpp
-            - src/mongo/db/query/single_solution_runner.cpp
-            - src/mongo/db/commands/index_filter_commands.cpp
-            - src/mongo/bson/bson_validate.cpp
-            - src/mongo/db/query/cached_plan_runner.cpp
-            - src/mongo/tools/tool_options.cpp
-            - src/mongo/db/ops/modifier_bit.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/db/query/get_runner.cpp
-            - src/mongo/db/matcher/expression_leaf.cpp
-            - src/mongo/base/initializer_dependency_graph.cpp
-            - src/mongo/db/auth/authz_manager_external_state.cpp
-            - src/mongo/db/pipeline/document_source_cursor.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/bson/mutable/document.cpp
-            - src/mongo/s/config_upgrade.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-            - src/mongo/db/auth/user_management_commands_parser.cpp
-            - src/mongo/db/index/btree_based_access_method.cpp
-            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/db/initialize_server_global_state.cpp
+            - src/mongo/db/cloner.cpp
             - src/mongo/base/initializer.cpp
-            - src/mongo/util/background.cpp
+            - src/mongo/db/auth/authorization_manager_global.cpp
             - src/mongo/s/strategy.cpp
-            - src/mongo/db/ops/modifier_pull.cpp
-            - src/mongo/db/ops/path_support.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/query/multi_plan_runner.cpp
+            - src/mongo/util/background.cpp
+            - src/mongo/s/cluster_write.cpp
             - src/mongo/s/d_split.cpp
-            - src/mongo/db/fts/fts_enabled.cpp
-            - src/mongo/db/ops/modifier_inc.cpp
-            - src/mongo/tools/mongostat_options.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/ops/log_builder.cpp
-            - src/mongo/db/catalog/index_key_validate.cpp
-            - src/mongo/base/parse_number.cpp
-            - src/mongo/db/exec/projection_exec.cpp
-            - src/mongo/db/commands/write_commands/write_commands_common.cpp
+            - src/mongo/util/fail_point_registry.cpp
             - src/mongo/client/auth_helpers.cpp
-            - src/mongo/db/repair_database.cpp
-            - src/mongo/s/config_upgrade_helpers.cpp
-            - src/mongo/db/commands/parallel_collection_scan.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-        -   symbol_name: mongo::Status::operator!=(mongo::ErrorCodes::Error) const
-            symbol_uses:
-            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/logger/ramlog.cpp
+            - src/mongo/db/ops/path_support.cpp
             - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/util/options_parser/options_parser.cpp
+            - src/mongo/bson/mutable/document.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/db/auth/authz_manager_external_state.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/db/commands/create_indexes.cpp
+            - src/mongo/db/query/plan_cache.cpp
+            - src/mongo/db/query/internal_runner.cpp
+            - src/mongo/db/commands/authentication_commands.cpp
+            - src/mongo/db/commands/group.cpp
+            - src/mongo/s/cluster_client_internal.cpp
+            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/db/ops/modifier_compare.cpp
+            - src/mongo/db/commands/parameters.cpp
+            - src/mongo/s/dbclient_multi_command.cpp
+            - src/mongo/db/ops/modifier_pull.cpp
+            - src/mongo/db/query/query_knobs.cpp
+            - src/mongo/db/geo/geoquery.cpp
+            - src/mongo/client/sasl_client_authenticate.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/config_upgrade_helpers.cpp
+            - src/mongo/s/commands/cluster_index_filter_cmd.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/tools/tool_logger.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/db/ops/modifier_current_date.cpp
+            - src/mongo/db/auth/auth_server_parameters.cpp
+            - src/mongo/db/commands/merge_chunks_cmd.cpp
+            - src/mongo/db/query/lite_parsed_query.cpp
+            - src/mongo/db/matcher/expression_leaf.cpp
+            - src/mongo/db/auth/user_cache_invalidator_job.cpp
             - src/mongo/db/auth/authorization_session.cpp
-        -   symbol_name: mongo::Status::operator==(mongo::Status const&) const
-            symbol_uses:
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/s/metadata_loader.cpp
+            - src/mongo/db/write_concern_options.cpp
+            - src/mongo/util/net/ssl_options.cpp
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/db/auth/user_document_parser.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/query/parsed_projection.cpp
+            - src/mongo/db/ops/modifier_set.cpp
+            - src/mongo/db/storage/data_file.cpp
+            - src/mongo/util/time_support.cpp
+            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/db/commands/parallel_collection_scan.cpp
+            - src/mongo/db/query/get_runner.cpp
+            - src/mongo/db/commands/collection_to_capped.cpp
+            - src/mongo/db/query/canonical_query.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/db/matcher/expression_parser_tree.cpp
+            - src/mongo/db/exec/sort.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+            - src/mongo/db/matcher/expression_where.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+            - src/mongo/db/commands/plan_cache_commands.cpp
+            - src/mongo/db/query/cached_plan_runner.cpp
+            - src/mongo/db/query/new_find.cpp
+            - src/mongo/db/ops/insert.cpp
+            - src/mongo/db/server_options_helpers.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/tools/mongobridge_options.cpp
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/db/exec/working_set_common.cpp
+            - src/mongo/tools/tool_options.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/commands/write_commands/write_commands_common.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
+            - src/mongo/logger/log_manager.cpp
+            - src/mongo/db/conn_pool_options.cpp
+            - src/mongo/db/ops/log_builder.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/auth/role_graph_update.cpp
+            - src/mongo/tools/mongorestore_options.cpp
+            - src/mongo/db/ops/modifier_inc.cpp
+            - src/mongo/db/exec/projection_exec.cpp
+            - src/mongo/db/server_parameters.cpp
+            - src/mongo/db/commands/rename_collection_common.cpp
+            - src/mongo/tools/mongooplog_options.cpp
+            - src/mongo/db/commands/index_filter_commands.cpp
+            - src/mongo/util/options_parser/environment.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/tools/mongodump_options.cpp
+            - src/mongo/db/structure/btree/btree.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/db/ops/update_driver.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/db/ops/modifier_bit.cpp
+            - src/mongo/db/server_extra_log_context.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+            - src/mongo/db/commands.cpp
+            - src/mongo/db/query/explain_plan.cpp
+            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/s/commands/cluster_plan_cache_cmd.cpp
+            - src/mongo/db/commands/copydb_common.cpp
+            - src/mongo/db/matcher/expression_parser.cpp
+            - src/mongo/db/auth/authz_session_external_state_server_common.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/bson/bson_validate.cpp
+            - src/mongo/db/catalog/index_key_validate.cpp
+            - src/mongo/db/mongod_options.cpp
+            - src/mongo/db/query/single_solution_runner.cpp
         -   symbol_name: mongo::Status::operator==(mongo::ErrorCodes::Error) const
             symbol_uses:
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/db/auth/role_graph.cpp
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
             - src/mongo/db/commands.cpp
-            - src/mongo/bson/util/bson_extract.cpp
-            - src/mongo/util/options_parser/constraints.cpp
+            - src/mongo/db/auth/role_graph.cpp
             - src/mongo/db/ops/delete_executor.cpp
-            - src/mongo/db/ops/update_executor.cpp
+            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
             - src/mongo/db/auth/authz_manager_external_state_d.cpp
             - src/mongo/db/auth/authz_manager_external_state_local.cpp
-            - src/mongo/db/auth/role_graph_update.cpp
-        -   symbol_name: mongo::Status::toString() const
-            symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
-            - src/mongo/db/index_builder.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/s/server.cpp
-            - src/mongo/tools/mongofiles_options_init.cpp
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/pipeline/document_source_cursor.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/db/commands.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/db/exec/projection.cpp
-            - src/mongo/unittest/temp_dir.cpp
-            - src/mongo/db/repl/sync.cpp
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-            - src/mongo/db/server_options_helpers.cpp
-            - src/mongo/shell/shell_options_init.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
-            - src/mongo/tools/mongotop_options_init.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
-            - src/mongo/db/repl/rs_initialsync.cpp
-            - src/mongo/db/auth/authz_manager_external_state_local.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/util/options_parser/environment.cpp
-            - src/mongo/db/auth/authorization_session.cpp
-            - src/mongo/db/exec/index_scan.cpp
-            - src/mongo/util/options_parser/options_parser.cpp
-            - src/mongo/dbtests/framework_options_init.cpp
-            - src/mongo/tools/mongoexport_options.cpp
-            - src/mongo/db/mongod_options.cpp
-            - src/mongo/tools/mongodump_options_init.cpp
-            - src/mongo/util/net/ssl_options.cpp
-            - src/mongo/db/catalog/index_create.cpp
-            - src/mongo/tools/mongorestore_options_init.cpp
-            - src/mongo/util/options_parser/option_section.cpp
-            - src/mongo/db/ops/update_driver.cpp
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/db/exec/working_set_common.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
+            - src/mongo/bson/util/bson_extract.cpp
+            - src/mongo/util/options_parser/constraints.cpp
             - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/query/new_find.cpp
-            - src/mongo/tools/mongobridge_options_init.cpp
-            - src/mongo/tools/mongostat_options_init.cpp
-            - src/mongo/util/assert_util.cpp
-            - src/mongo/db/pdfile.cpp
-            - src/mongo/db/structure/catalog/cap.cpp
-            - src/mongo/db/matcher/matcher.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/commands/distinct.cpp
-            - src/mongo/db/index_rebuilder.cpp
-            - src/mongo/db/commands/rename_collection.cpp
-            - src/mongo/util/options_parser/option_description.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/tools/mongoexport_options_init.cpp
-            - src/mongo/s/config_upgrade_v4_to_v5.cpp
-            - src/mongo/tools/bsondump_options_init.cpp
-            - src/mongo/shell/shell_options.cpp
-            - src/mongo/db/query/cached_plan_runner.cpp
-            - src/mongo/tools/tool_options.cpp
-            - src/mongo/s/mongos_options_init.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/tools/mongooplog_options_init.cpp
-            - src/mongo/s/mongos_options.cpp
-            - src/mongo/tools/mongobridge_options.cpp
-            - src/mongo/dbtests/framework_options.cpp
-            - src/mongo/tools/mongoimport_options_init.cpp
-            - src/mongo/db/mongod_options_init.cpp
-        -   symbol_name: mongo::Status::operator!=(mongo::Status const&) const
+            - src/mongo/db/ops/update_executor.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/db/auth/role_graph_update.cpp
+        -   symbol_name: mongo::operator<<(std::ostream&, mongo::Status const&)
             symbol_uses:
-            - src/mongo/base/initializer_dependency_graph.cpp
             - src/mongo/base/global_initializer_registerer.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
             - src/mongo/base/initializer.cpp
-            - src/mongo/db/json.cpp
-            - src/mongo/db/query/explain_plan.cpp
-            - src/mongo/db/auth/action_set.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
         -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, std::string
                 const&, int)
             symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
-            - src/mongo/db/catalog/collection.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/util/options_parser/value.cpp
-            - src/mongo/unittest/temp_dir.cpp
-            - src/mongo/db/query/parsed_projection.cpp
-            - src/mongo/db/matcher/expression_parser.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
-            - src/mongo/db/geo/geoquery.cpp
-            - src/mongo/db/ops/modifier_object_replace.cpp
-            - src/mongo/s/d_state.cpp
-            - src/mongo/db/ops/update.cpp
-            - src/mongo/db/auth/user_document_parser.cpp
-            - src/mongo/util/options_parser/options_parser.cpp
-            - src/mongo/logger/rotatable_file_manager.cpp
-            - src/mongo/db/ops/modifier_push.cpp
-            - src/mongo/db/mongod_options.cpp
-            - src/mongo/db/exec/merge_sort.cpp
-            - src/mongo/util/options_parser/option_section.cpp
-            - src/mongo/db/ops/modifier_pull_all.cpp
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/logger/rotatable_file_writer.cpp
-            - src/mongo/db/jsobj.cpp
-            - src/mongo/db/commands/collection_to_capped.cpp
-            - src/mongo/s/dbclient_multi_command.cpp
-            - src/mongo/s/dbclient_shard_resolver.cpp
-            - src/mongo/db/matcher/expression_where.cpp
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/db/commands/parameters.cpp
-            - src/mongo/db/structure/record_store.cpp
-            - src/mongo/db/query/query_planner.cpp
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
-            - src/mongo/db/query/lite_parsed_query.cpp
-            - src/mongo/db/matcher/expression_parser_geo.cpp
-            - src/mongo/db/exec/projection.cpp
-            - src/mongo/dbtests/framework_options.cpp
-            - src/mongo/db/ops/modifier_rename.cpp
-            - src/mongo/db/exec/sort.cpp
-            - src/mongo/db/auth/role_graph.cpp
-            - src/mongo/util/time_support.cpp
-            - src/mongo/db/fts/fts_language.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/db/matcher/expression_parser_tree.cpp
-            - src/mongo/db/json.cpp
-            - src/mongo/db/ops/update_driver.cpp
-            - src/mongo/db/commands/create_indexes.cpp
-            - src/mongo/db/matcher/expression_parser_text.cpp
-            - src/mongo/db/ops/field_checker.cpp
-            - src/mongo/client/auth_helpers.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/util/net/ssl_options.cpp
-            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
-            - src/mongo/db/auth/role_graph_update.cpp
-            - src/mongo/util/fail_point_registry.cpp
-            - src/mongo/db/ops/modifier_current_date.cpp
-            - src/mongo/db/commands.cpp
-            - src/mongo/util/options_parser/constraints.cpp
-            - src/mongo/db/ops/modifier_compare.cpp
-            - src/mongo/db/server_options_helpers.cpp
-            - src/mongo/db/initialize_server_global_state.cpp
-            - src/mongo/db/ops/modifier_set.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/client/sasl_client_authenticate.cpp
-            - src/mongo/util/options_parser/environment.cpp
-            - src/mongo/db/auth/authorization_session.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/db/exec/and_sorted.cpp
-            - src/mongo/s/cluster_client_internal.cpp
-            - src/mongo/db/ops/modifier_pop.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/ops/modifier_unset.cpp
-            - src/mongo/bson/util/bson_extract.cpp
-            - src/mongo/s/metadata_loader.cpp
-            - src/mongo/db/ops/insert.cpp
             - src/mongo/db/write_concern.cpp
-            - src/mongo/bson/bson_validate.cpp
-            - src/mongo/shell/shell_options.cpp
-            - src/mongo/tools/tool_options.cpp
-            - src/mongo/db/ops/modifier_bit.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/ops/modifier_add_to_set.cpp
-            - src/mongo/db/query/get_runner.cpp
-            - src/mongo/db/exec/limit.cpp
+            - src/mongo/db/ops/modifier_pop.cpp
+            - src/mongo/db/auth/user_management_commands_parser.cpp
             - src/mongo/base/initializer_dependency_graph.cpp
-            - src/mongo/db/auth/authz_manager_external_state.cpp
-            - src/mongo/db/fts/fts_spec.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/db/ops/field_checker.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
+            - src/mongo/db/exec/s2near.cpp
+            - src/mongo/util/options_parser/option_section.cpp
+            - src/mongo/db/exec/or.cpp
+            - src/mongo/db/catalog/collection.cpp
+            - src/mongo/db/query/query_planner.cpp
+            - src/mongo/db/auth/authz_manager_external_state_local.cpp
+            - src/mongo/db/ops/modifier_unset.cpp
+            - src/mongo/db/exec/limit.cpp
+            - src/mongo/db/exec/and_sorted.cpp
+            - src/mongo/db/initialize_server_global_state.cpp
+            - src/mongo/base/initializer.cpp
+            - src/mongo/db/exec/skip.cpp
             - src/mongo/db/catalog/database.cpp
             - src/mongo/db/exec/fetch.cpp
-            - src/mongo/s/config_upgrade.cpp
-            - src/mongo/db/exec/skip.cpp
-            - src/mongo/db/auth/user_management_commands_parser.cpp
-            - src/mongo/db/auth/authz_manager_external_state_local.cpp
-            - src/mongo/db/index/btree_based_access_method.cpp
-            - src/mongo/base/initializer.cpp
-            - build/darwin/ssl/mongo/db/auth/action_type.cpp
-            - src/mongo/db/ops/modifier_pull.cpp
+            - src/mongo/db/ops/modifier_pull_all.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/util/fail_point_registry.cpp
+            - src/mongo/client/auth_helpers.cpp
+            - src/mongo/bson/util/bson_extract.cpp
             - src/mongo/db/ops/path_support.cpp
-            - src/mongo/db/exec/s2near.cpp
-            - src/mongo/db/exec/or.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/db/ops/modifier_inc.cpp
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/db/ops/log_builder.cpp
-            - src/mongo/db/catalog/index_key_validate.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/db/jsobj.cpp
             - src/mongo/util/options_parser/option_description.cpp
-            - src/mongo/db/exec/projection_exec.cpp
-            - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/db/commands/write_commands/write_commands_common.cpp
-            - src/mongo/db/exec/and_hash.cpp
+            - src/mongo/db/fts/fts_language.cpp
+            - src/mongo/db/structure/record_store.cpp
+            - src/mongo/db/auth/authz_manager_external_state.cpp
+            - src/mongo/db/exec/projection.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/db/commands/create_indexes.cpp
+            - src/mongo/db/matcher/expression_parser_text.cpp
+            - src/mongo/db/commands/authentication_commands.cpp
+            - src/mongo/s/cluster_client_internal.cpp
+            - src/mongo/db/ops/modifier_compare.cpp
+            - src/mongo/db/commands/parameters.cpp
+            - src/mongo/s/dbclient_shard_resolver.cpp
+            - src/mongo/s/dbclient_multi_command.cpp
             - src/mongo/db/exec/text.cpp
-            - src/mongo/db/repair_database.cpp
+            - src/mongo/db/ops/modifier_pull.cpp
+            - src/mongo/util/options_parser/constraints.cpp
+            - src/mongo/db/geo/geoquery.cpp
+            - src/mongo/client/sasl_client_authenticate.cpp
             - src/mongo/s/config_upgrade_helpers.cpp
-            - src/mongo/db/commands/parallel_collection_scan.cpp
+            - src/mongo/logger/rotatable_file_writer.cpp
+            - build/darwin/dbg_off/opt_off/ssl/mongo/db/auth/action_type.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/db/ops/modifier_current_date.cpp
+            - src/mongo/db/query/lite_parsed_query.cpp
+            - src/mongo/db/auth/authorization_session.cpp
+            - src/mongo/util/options_parser/value.cpp
+            - src/mongo/s/metadata_loader.cpp
             - src/mongo/db/structure/collection_compact.cpp
+            - src/mongo/util/net/ssl_options.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/db/commands/write_commands/write_commands.cpp
+            - src/mongo/logger/rotatable_file_manager.cpp
+            - src/mongo/db/auth/user_document_parser.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/db/query/parsed_projection.cpp
+            - src/mongo/db/ops/modifier_set.cpp
+            - src/mongo/db/ops/modifier_object_replace.cpp
+            - src/mongo/util/time_support.cpp
+            - src/mongo/db/ops/modifier_rename.cpp
+            - src/mongo/db/commands/parallel_collection_scan.cpp
+            - src/mongo/db/query/get_runner.cpp
+            - src/mongo/db/commands/collection_to_capped.cpp
+            - src/mongo/unittest/temp_dir.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/db/index/btree_based_access_method.cpp
+            - src/mongo/db/matcher/expression_parser_tree.cpp
+            - src/mongo/db/exec/sort.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+            - src/mongo/db/matcher/expression_where.cpp
+            - src/mongo/db/matcher/expression_parser_geo.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/db/auth/role_graph.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+            - src/mongo/shell/shell_options.cpp
+            - src/mongo/db/auth/authz_manager_external_state_mock.cpp
+            - src/mongo/db/server_options_helpers.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/db/ops/update.cpp
+            - src/mongo/tools/tool_options.cpp
+            - src/mongo/db/json.cpp
+            - src/mongo/db/commands/write_commands/write_commands_common.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/db/exec/merge_sort.cpp
+            - src/mongo/db/ops/log_builder.cpp
+            - src/mongo/db/auth/role_graph_update.cpp
+            - src/mongo/db/ops/modifier_inc.cpp
+            - src/mongo/db/exec/projection_exec.cpp
+            - src/mongo/util/options_parser/environment.cpp
+            - src/mongo/db/fts/fts_spec.cpp
+            - src/mongo/db/ops/update_driver.cpp
             - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/db/ops/modifier_bit.cpp
+            - src/mongo/db/ops/modifier_push.cpp
+            - src/mongo/db/commands.cpp
+            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/db/ops/insert.cpp
+            - src/mongo/db/matcher/expression_parser.cpp
+            - src/mongo/bson/bson_validate.cpp
+            - src/mongo/db/catalog/index_key_validate.cpp
+            - src/mongo/db/mongod_options.cpp
+            - src/mongo/db/exec/and_hash.cpp
+        -   symbol_name: mongo::operator<<(std::ostream&, mongo::ErrorCodes::Error)
+            symbol_uses:
+            - src/mongo/db/json.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+        -   symbol_name: mongo::Status::operator!=(mongo::ErrorCodes::Error) const
+            symbol_uses:
+            - src/mongo/db/auth/authorization_session.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+            - src/mongo/db/auth/authz_manager_external_state.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+        -   symbol_name: mongo::Status::operator==(mongo::Status const&) const
+            symbol_uses:
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+        -   symbol_name: mongo::Status::toString() const
+            symbol_uses:
+            - src/mongo/tools/mongobridge_options.cpp
+            - src/mongo/db/commands/rename_collection.cpp
+            - src/mongo/db/mongod_options_init.cpp
+            - src/mongo/tools/tool_options.cpp
+            - src/mongo/s/mongos_options_init.cpp
+            - src/mongo/tools/mongoexport_options.cpp
+            - src/mongo/util/assert_util.cpp
+            - src/mongo/tools/mongodump_options_init.cpp
+            - src/mongo/db/auth/authorization_session.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/db/exec/working_set_common.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/index_builder.cpp
+            - src/mongo/util/net/ssl_options.cpp
+            - src/mongo/dbtests/framework_options_init.cpp
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
+            - src/mongo/db/pipeline/document_source_cursor.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/db/repl/sync.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/db/ops/modifier_add_to_set.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/db/exec/projection.cpp
+            - src/mongo/util/options_parser/option_section.cpp
+            - src/mongo/db/structure/catalog/cap.cpp
+            - src/mongo/tools/mongoexport_options_init.cpp
+            - src/mongo/db/commands/distinct.cpp
+            - src/mongo/tools/mongotop_options_init.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/db/commands/authentication_commands.cpp
+            - src/mongo/util/options_parser/environment.cpp
+            - src/mongo/unittest/temp_dir.cpp
+            - src/mongo/tools/mongostat_options_init.cpp
+            - src/mongo/db/ops/update_driver.cpp
+            - src/mongo/s/config_upgrade_v4_to_v5.cpp
+            - src/mongo/s/mongos_options.cpp
+            - src/mongo/tools/mongorestore_options_init.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+            - src/mongo/tools/mongobridge_options_init.cpp
+            - src/mongo/db/auth/authz_manager_external_state_local.cpp
+            - src/mongo/db/server_options_helpers.cpp
+            - src/mongo/tools/mongoimport_options_init.cpp
+            - src/mongo/db/exec/index_scan.cpp
+            - src/mongo/tools/mongofiles_options_init.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+            - src/mongo/tools/bsondump_options_init.cpp
+            - src/mongo/db/commands.cpp
+            - src/mongo/db/matcher/matcher.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/tools/mongooplog_options_init.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/query/cached_plan_runner.cpp
+            - src/mongo/db/query/new_find.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/shell/shell_options.cpp
+            - src/mongo/util/options_parser/option_description.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/index_rebuilder.cpp
+            - src/mongo/db/mongod_options.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/shell/shell_options_init.cpp
+            - src/mongo/db/repl/oplog.cpp
+        -   symbol_name: mongo::Status::operator!=(mongo::Status const&) const
+            symbol_uses:
+            - src/mongo/db/json.cpp
+            - src/mongo/db/auth/action_set.cpp
+            - src/mongo/base/global_initializer_registerer.cpp
+            - src/mongo/base/initializer_dependency_graph.cpp
+            - src/mongo/db/query/explain_plan.cpp
+            - src/mongo/base/initializer.cpp
         file_dependencies:
         -   symbol_name: mongo::ErrorCodes::errorString(mongo::ErrorCodes::Error)
             symbol_sources:
-            - build/darwin/ssl/mongo/base/error_codes.cpp
+            - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.cpp
     -   file_name: src/mongo/base/status.h
         file_executables:
         - mongotop
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -1999,7 +2006,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -2149,7 +2156,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/function/function0.hpp
         - src/mongo/base/status-inl.h
@@ -2210,6 +2217,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2223,7 +2231,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -2429,7 +2436,7 @@ module_groups:
             - src/mongo/unittest/unittest.cpp
         -   symbol_name: mongo::ErrorCodes::fromInt(int)
             symbol_sources:
-            - build/darwin/ssl/mongo/base/error_codes.cpp
+            - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.cpp
         -   symbol_name: mongo::unittest::Test::~Test()
             symbol_sources:
             - src/mongo/unittest/unittest.cpp
@@ -2473,7 +2480,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -2484,7 +2491,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -2494,7 +2501,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -2505,7 +2512,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -2515,7 +2522,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -2526,17 +2533,17 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
-    -   file_name: build/darwin/ssl/mongo/base/error_codes.h
+    -   file_name: build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         file_executables:
         - mongotop
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -2547,11 +2554,11 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
-    -   file_name: build/darwin/ssl/mongo/base/error_codes.cpp
+    -   file_name: build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.cpp
         file_executables:
         - mongotop
         - mongod
@@ -2580,7 +2587,6 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/seq/transform.hpp
         - src/third_party/boost/boost/preprocessor/list/detail/edg/fold_left.hpp
         - src/third_party/boost/boost/type.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/list/adt.hpp
         - src/third_party/boost/boost/config.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -2599,6 +2605,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/list/detail/edg/fold_right.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/inc.hpp
         - src/third_party/boost/boost/preprocessor/control/detail/dmc/while.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/control/detail/msvc/while.hpp
         - src/third_party/boost/boost/preprocessor/seq/cat.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_params.hpp
@@ -2669,9 +2676,9 @@ module_groups:
         -   symbol_name: mongo::ErrorCodes::errorString(mongo::ErrorCodes::Error)
             symbol_uses:
             - src/mongo/db/json.cpp
+            - src/mongo/shell/shell_utils.cpp
             - src/mongo/base/status.cpp
             - src/mongo/scripting/v8_db.cpp
-            - src/mongo/shell/shell_utils.cpp
         -   symbol_name: mongo::ErrorCodes::isInterruption(mongo::ErrorCodes::Error)
             symbol_uses:
             - src/mongo/db/index/btree_based_access_method.cpp
@@ -2682,10 +2689,10 @@ module_groups:
             - src/mongo/db/catalog/index_catalog.cpp
             - src/mongo/db/exec/working_set_common.cpp
         file_dependencies:
-        -   symbol_name: mongo::msgasserted(int, char const*)
+        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
             symbol_sources:
             - src/mongo/util/assert_util.cpp
-        -   symbol_name: mongo::verifyFailed(char const*, char const*, unsigned int)
+        -   symbol_name: mongo::msgasserted(int, char const*)
             symbol_sources:
             - src/mongo/util/assert_util.cpp
 -   group_title: Number To String Conversion
@@ -2724,7 +2731,6 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/seq/transform.hpp
         - src/third_party/boost/boost/preprocessor/list/detail/edg/fold_left.hpp
         - src/third_party/boost/boost/type.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/list/adt.hpp
         - src/third_party/boost/boost/config.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -2743,6 +2749,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/list/detail/edg/fold_right.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/inc.hpp
         - src/third_party/boost/boost/preprocessor/control/detail/dmc/while.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/control/detail/msvc/while.hpp
         - src/third_party/boost/boost/preprocessor/seq/cat.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_params.hpp
@@ -2812,123 +2819,137 @@ module_groups:
         -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<unsigned
                 int>(mongo::StringData const&, int, unsigned int*)
             symbol_uses:
-            - src/mongo/db/jsobj.cpp
             - src/mongo/util/options_parser/options_parser.cpp
+            - src/mongo/db/jsobj.cpp
         -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
                 const&, int, long*)
             symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/db/pipeline/document_source_match.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/db/query/explain_plan.cpp
-            - src/mongo/dbtests/jstests.cpp
-            - src/mongo/s/d_state.cpp
-            - src/mongo/dbtests/jsobjtests.cpp
-            - src/mongo/util/options_parser/options_parser.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/client/parallel.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/db/query/index_bounds.cpp
-            - src/mongo/db/commands/plan_cache_commands.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/db/projection.cpp
-            - src/mongo/s/write_ops/batched_delete_request.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/db/commands/pipeline_command.cpp
-            - src/mongo/dbtests/updatetests.cpp
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
-            - src/mongo/db/index/haystack_access_method.cpp
-            - src/mongo/dbtests/expressiontests.cpp
-            - src/mongo/s/mongo_version_range.cpp
-            - src/mongo/s/version_manager.cpp
-            - src/mongo/db/commands/connection_status.cpp
-            - src/mongo/s/d_logic.cpp
-            - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/db/index/2d_key_generator.cpp
-            - src/mongo/db/server_options_helpers.cpp
-            - src/mongo/dbtests/documenttests.cpp
-            - src/mongo/db/repl/rs_config.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/db/auth/privilege_parser.cpp
-            - src/mongo/db/fts/fts_command_mongod.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/db/pipeline/value.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/shell/shell_utils_extended.cpp
-            - src/mongo/bson/mutable/element.cpp
-            - src/mongo/dbtests/matchertests.cpp
-            - src/mongo/db/query/new_find.cpp
-            - src/mongo/db/pipeline/pipeline.cpp
-            - src/mongo/s/write_ops/batched_insert_request.cpp
-            - src/mongo/db/commands/distinct.cpp
-            - src/mongo/s/write_ops/batched_update_request.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/db/commands/storage_details.cpp
-            - src/mongo/db/geo/shapes.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/dbtests/query_stage_count.cpp
-            - src/mongo/db/introspect.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/commands/apply_ops.cpp
             - src/mongo/dbtests/query_stage_distinct.cpp
-            - src/mongo/db/geo/hash.cpp
-            - src/mongo/client/dbclient.cpp
-            - src/mongo/db/query/type_explain.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/jsontests.cpp
-            - src/mongo/db/exec/stagedebug_cmd.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/scripting/v8_profiler.cpp
-            - src/mongo/s/write_ops/batched_request_metadata.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-            - src/mongo/db/commands/index_stats.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/s/metadata_loader.cpp
-            - src/mongo/dbtests/oplogstarttests.cpp
-            - src/mongo/db/query/idhack_runner.cpp
-            - src/mongo/db/dbcommands_generic.cpp
-            - src/mongo/db/commands/index_filter_commands.cpp
-            - src/mongo/db/range_deleter.cpp
             - src/mongo/db/repl/sync_source_feedback.cpp
-            - src/mongo/db/fts/fts_command_mongos.cpp
-            - src/mongo/s/collection_metadata.cpp
-            - src/mongo/dbtests/queryutiltests.cpp
-            - src/mongo/dbtests/mock/mock_remote_db_server.cpp
-            - src/mongo/bson/mutable/document.cpp
-            - src/mongo/tools/oplog.cpp
-            - src/mongo/tools/restore.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/db/pipeline/pipeline_d.cpp
-            - src/mongo/util/version.cpp
-            - src/mongo/s/write_ops/batched_command_response.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/type_chunk.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/d_split.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/tools/dump.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/db/pipeline/value.cpp
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/db/geo/hash.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/pipeline/pipeline.cpp
+            - src/mongo/db/commands/pipeline_command.cpp
+            - src/mongo/db/pipeline/document_source_match.cpp
             - src/mongo/db/queryutil.cpp
-            - src/mongo/db/exec/projection_exec.cpp
-            - src/mongo/dbtests/chunktests.cpp
-            - src/mongo/db/commands/server_status.cpp
-            - src/mongo/db/commands/parallel_collection_scan.cpp
+            - src/mongo/s/write_ops/batched_insert_request.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/collection_metadata.cpp
             - src/mongo/db/ops/update_lifecycle_impl.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/dbtests/jsontests.cpp
+            - src/mongo/dbtests/jsobjtests.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/expressiontests.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/scripting/v8_profiler.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/bson/mutable/document.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/tools/oplog.cpp
+            - src/mongo/db/fts/fts_command_mongod.cpp
+            - src/mongo/bson/mutable/element.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/d_logic.cpp
+            - src/mongo/db/commands/storage_details.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/s/write_ops/batched_command_response.cpp
+            - src/mongo/db/index/2d_key_generator.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
             - src/mongo/db/commands/validate.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/db/index/haystack_access_method.cpp
+            - src/mongo/db/pipeline/pipeline_d.cpp
+            - src/mongo/s/metadata_loader.cpp
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/db/dbcommands_generic.cpp
+            - src/mongo/dbtests/matchertests.cpp
+            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/db/commands/distinct.cpp
+            - src/mongo/db/query/index_bounds.cpp
+            - src/mongo/db/commands/parallel_collection_scan.cpp
+            - src/mongo/db/commands/server_status.cpp
+            - src/mongo/db/geo/shapes.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/dbtests/documenttests.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/db/query/idhack_runner.cpp
+            - src/mongo/tools/dump.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+            - src/mongo/db/introspect.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/util/version.cpp
+            - src/mongo/s/type_chunk.cpp
+            - src/mongo/db/commands/plan_cache_commands.cpp
+            - src/mongo/db/query/new_find.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+            - src/mongo/db/server_options_helpers.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/db/repl/rs_config.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/commands/index_stats.cpp
+            - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
+            - src/mongo/client/dbclient.cpp
+            - src/mongo/s/mongo_version_range.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/s/write_ops/batched_update_request.cpp
+            - src/mongo/db/projection.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/db/query/type_explain.cpp
+            - src/mongo/db/exec/projection_exec.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/db/exec/stagedebug_cmd.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/commands/index_filter_commands.cpp
+            - src/mongo/db/commands/apply_ops.cpp
+            - src/mongo/db/fts/fts_command_mongos.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/db/commands/connection_status.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
+            - src/mongo/db/auth/privilege_parser.cpp
+            - src/mongo/s/write_ops/batched_delete_request.cpp
+            - src/mongo/s/write_ops/batched_request_metadata.cpp
+            - src/mongo/db/query/explain_plan.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/dbtests/mock/mock_remote_db_server.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/dbtests/chunktests.cpp
+            - src/mongo/db/repl/oplog.cpp
+        -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData
+                const&, int, int*)
+            symbol_uses:
+            - src/mongo/util/version.cpp
+            - src/mongo/db/commands/parameters.cpp
+            - src/mongo/util/options_parser/options_parser.cpp
+            - src/mongo/db/server_parameters.cpp
+            - src/mongo/util/time_support.cpp
+            - src/mongo/db/query/get_runner.cpp
+        -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<long long>(mongo::StringData
+                const&, int, long long*)
+            symbol_uses:
+            - src/mongo/db/json.cpp
+            - src/mongo/db/server_parameters.cpp
         -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<unsigned
                 long long>(mongo::StringData const&, int, unsigned long long*)
             symbol_uses:
@@ -2936,23 +2957,9 @@ module_groups:
         -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<double>(mongo::StringData
                 const&, int, double*)
             symbol_uses:
+            - src/mongo/util/options_parser/options_parser.cpp
             - src/mongo/db/server_parameters.cpp
             - src/mongo/dbtests/jstests.cpp
-            - src/mongo/util/options_parser/options_parser.cpp
-        -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<int>(mongo::StringData
-                const&, int, int*)
-            symbol_uses:
-            - src/mongo/util/time_support.cpp
-            - src/mongo/db/server_parameters.cpp
-            - src/mongo/db/query/get_runner.cpp
-            - src/mongo/util/version.cpp
-            - src/mongo/db/commands/parameters.cpp
-            - src/mongo/util/options_parser/options_parser.cpp
-        -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<long long>(mongo::StringData
-                const&, int, long long*)
-            symbol_uses:
-            - src/mongo/db/server_parameters.cpp
-            - src/mongo/db/json.cpp
         file_dependencies:
         -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
                 int)
@@ -2964,7 +2971,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -2975,7 +2982,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -3138,7 +3145,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -3209,6 +3216,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -3222,7 +3230,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -3565,7 +3572,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -3576,7 +3583,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -3606,41 +3613,41 @@ module_groups:
         file_interface:
         -   symbol_name: mongo::operator<<(std::ostream&, mongo::StringData const&)
             symbol_uses:
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/db/commands.cpp
-            - src/mongo/db/range_deleter_db_env.cpp
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/scripting/engine_v8.cpp
-            - src/mongo/db/storage/extent.cpp
+            - src/mongo/logger/log_severity.cpp
             - src/mongo/db/field_ref.cpp
             - src/mongo/db/json.cpp
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/db/clientlistplugin.cpp
             - src/mongo/logger/message_event_utf8_encoder.cpp
-            - src/mongo/logger/log_severity.cpp
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+            - src/mongo/db/auth/authorization_manager.cpp
+            - src/mongo/db/range_deleter_db_env.cpp
             - src/mongo/s/distlock.cpp
-            - src/mongo/db/clientcursor.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/db/clientlistplugin.cpp
+            - src/mongo/db/commands/authentication_commands.cpp
             - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/db/commands.cpp
+            - src/mongo/db/storage/extent.cpp
+            - src/mongo/db/catalog/database.cpp
         -   symbol_name: mongo::StringData::Hasher::operator()(mongo::StringData const&)
                 const
             symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/db/ops/modifier_table.cpp
+            - src/mongo/db/projection.cpp
             - src/mongo/db/stats/top.cpp
             - src/mongo/db/exec/projection_exec.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/db/fts/stop_words.cpp
             - src/mongo/db/stats/snapshots.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/scripting/engine_v8.cpp
             - src/mongo/db/exec/projection.cpp
-            - src/mongo/db/projection.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/client/replica_set_monitor.cpp
             - src/mongo/db/pipeline/expression.cpp
-            - src/mongo/db/ops/modifier_table.cpp
+            - src/mongo/db/fts/stop_words.cpp
+            - src/mongo/db/catalog/database.cpp
             - src/mongo/db/query/planner_ixselect.cpp
-            - build/darwin/ssl/mongo/db/fts/stop_words_list.cpp
+            - build/darwin/dbg_off/opt_off/ssl/mongo/db/fts/stop_words_list.cpp
+            - src/mongo/db/d_concurrency.cpp
         file_dependencies:
         -   symbol_name: MurmurHash3_x64_128(void const*, int, unsigned int, void*)
             symbol_sources:
@@ -3651,7 +3658,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -3662,7 +3669,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -3812,7 +3819,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -3873,6 +3880,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -3886,7 +3894,6 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool_fwd.hpp
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp

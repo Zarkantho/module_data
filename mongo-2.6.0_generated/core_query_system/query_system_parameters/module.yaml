@@ -217,7 +217,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -294,6 +294,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -310,7 +311,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -394,7 +395,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -569,18 +569,18 @@ module_groups:
         -   symbol_name: mongo::internalQueryPlanEvaluationCollFraction
             symbol_uses:
             - src/mongo/db/query/multi_plan_runner.cpp
-        -   symbol_name: mongo::internalQueryForceIntersectionPlans
-            symbol_uses:
-            - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/db/query/plan_ranker.cpp
-        -   symbol_name: mongo::internalQueryCacheWriteOpsBetweenFlush
+        -   symbol_name: mongo::internalQueryCacheFeedbacksStored
             symbol_uses:
             - src/mongo/db/query/plan_cache.cpp
+        -   symbol_name: mongo::internalQueryForceIntersectionPlans
+            symbol_uses:
+            - src/mongo/db/query/plan_ranker.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
         -   symbol_name: mongo::internalQueryPlanEvaluationWorks
             symbol_uses:
-            - src/mongo/dbtests/plan_ranking.cpp
             - src/mongo/db/query/plan_ranker.cpp
             - src/mongo/db/query/multi_plan_runner.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
         -   symbol_name: mongo::internalQueryEnumerationMaxIntersectPerAnd
             symbol_uses:
             - src/mongo/db/query/query_planner.cpp
@@ -593,14 +593,14 @@ module_groups:
         -   symbol_name: mongo::internalQueryPlanOrChildrenIndependently
             symbol_uses:
             - src/mongo/db/query/get_runner.cpp
-        -   symbol_name: mongo::internalQueryCacheFeedbacksStored
+        -   symbol_name: mongo::internalQueryCacheWriteOpsBetweenFlush
             symbol_uses:
             - src/mongo/db/query/plan_cache.cpp
         -   symbol_name: mongo::internalQueryPlannerMaxIndexedSolutions
             symbol_uses:
             - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/db/query/get_runner.cpp
             - src/mongo/db/exec/sort.cpp
+            - src/mongo/db/query/get_runner.cpp
         file_dependencies:
         -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
                 int)
@@ -969,7 +969,7 @@ module_groups:
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/logical/or.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/facilities/identity.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/typeof/register_functions.hpp
@@ -985,6 +985,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/has_logical_or.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/add.hpp
         - src/third_party/boost/boost/type_traits/msvc/remove_bounds.hpp
+        - src/third_party/boost/boost/type_traits/has_operator.hpp
         - src/third_party/boost/boost/preprocessor/slot/detail/def.hpp
         - src/third_party/boost/boost/preprocessor/enum_params.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_pthreads.hpp
@@ -1103,7 +1104,7 @@ module_groups:
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/pcre-8.30/pcrecpp.h
         - src/third_party/boost/boost/type_traits/msvc/remove_volatile.hpp
-        - src/third_party/boost/boost/type_traits/has_operator.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1133,7 +1134,7 @@ module_groups:
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/third_party/boost/boost/mpl/multiplies.hpp
         - src/third_party/boost/boost/unordered/detail/util.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -1286,7 +1287,6 @@ module_groups:
         - src/third_party/boost/boost/date_time/date.hpp
         - src/third_party/boost/boost/detail/select_type.hpp
         - src/third_party/boost/boost/swap.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -1563,23 +1563,17 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::QuerySettings::clearAllowedIndices()
+        -   symbol_name: mongo::QuerySettings::QuerySettings()
             symbol_uses:
-            - src/mongo/db/commands/index_filter_commands.cpp
+            - src/mongo/db/catalog/collection_info_cache.cpp
         -   symbol_name: mongo::AllowedIndexEntry::~AllowedIndexEntry()
             symbol_uses:
             - src/mongo/db/commands/index_filter_commands.cpp
-        -   symbol_name: mongo::AllowedIndices::~AllowedIndices()
-            symbol_uses:
-            - src/mongo/db/query/get_runner.cpp
         -   symbol_name: mongo::QuerySettings::setAllowedIndices(mongo::CanonicalQuery
                 const&, std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj>
                 > const&)
             symbol_uses:
             - src/mongo/db/commands/index_filter_commands.cpp
-        -   symbol_name: mongo::QuerySettings::QuerySettings()
-            symbol_uses:
-            - src/mongo/db/catalog/collection_info_cache.cpp
         -   symbol_name: mongo::QuerySettings::~QuerySettings()
             symbol_uses:
             - src/mongo/db/catalog/collection.cpp
@@ -1590,8 +1584,14 @@ module_groups:
         -   symbol_name: mongo::QuerySettings::getAllAllowedIndices() const
             symbol_uses:
             - src/mongo/db/commands/index_filter_commands.cpp
+        -   symbol_name: mongo::QuerySettings::clearAllowedIndices()
+            symbol_uses:
+            - src/mongo/db/commands/index_filter_commands.cpp
         -   symbol_name: mongo::QuerySettings::getAllowedIndices(mongo::CanonicalQuery
                 const&, mongo::AllowedIndices**) const
+            symbol_uses:
+            - src/mongo/db/query/get_runner.cpp
+        -   symbol_name: mongo::AllowedIndices::~AllowedIndices()
             symbol_uses:
             - src/mongo/db/query/get_runner.cpp
         file_dependencies:

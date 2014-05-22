@@ -53,8 +53,8 @@ Stop words are words that get filtered out prior to text searches.  These are wo
 
 #### Files
 - src/mongo/db/fts/generate\_stop\_words.py   (mongod, tools, mongos)
-- build/darwin/ssl/mongo/db/fts/stop\_words\_list.cpp   (mongod, tools, mongos)
-- build/darwin/ssl/mongo/db/fts/stop\_words\_list.h   (mongod, tools, mongos)
+- build/darwin/dbg\_off/opt\_off/ssl/mongo/db/fts/stop\_words\_list.cpp   (mongod, tools, mongos)
+- build/darwin/dbg\_off/opt\_off/ssl/mongo/db/fts/stop\_words\_list.h   (mongod, tools, mongos)
 - src/mongo/db/fts/stop\_words\_danish.txt   (mongod, tools, mongos)
 - src/mongo/db/fts/stop\_words\_dutch.txt   (mongod, tools, mongos)
 - src/mongo/db/fts/stop\_words\_english.txt   (mongod, tools, mongos)

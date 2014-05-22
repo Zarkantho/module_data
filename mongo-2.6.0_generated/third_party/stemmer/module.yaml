@@ -355,70 +355,70 @@ module_groups:
             - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
         -   symbol_name: _SN_create_env
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
             - src/third_party/libstemmer_c/src_c/stem_KOI8_R_russian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
         -   symbol_name: _SN_close_env
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
             - src/third_party/libstemmer_c/src_c/stem_KOI8_R_russian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
         file_dependencies:
         -   symbol_name: _create_s
             symbol_sources:
@@ -496,325 +496,325 @@ module_groups:
         file_interface:
         -   symbol_name: _in_grouping
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_KOI8_R_russian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
+        -   symbol_name: _slice_from_s
+            symbol_uses:
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_KOI8_R_russian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
-        -   symbol_name: _slice_to
-            symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-        -   symbol_name: _insert_s
-            symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
         -   symbol_name: _lose_s
             symbol_uses:
             - src/third_party/libstemmer_c/runtime/api.c
+        -   symbol_name: _insert_s
+            symbol_uses:
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
         -   symbol_name: _out_grouping_b
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+        -   symbol_name: _replace_s
+            symbol_uses:
+            - src/third_party/libstemmer_c/runtime/api.c
         -   symbol_name: _create_s
             symbol_uses:
             - src/third_party/libstemmer_c/runtime/api.c
         -   symbol_name: _eq_v_b
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
         -   symbol_name: _out_grouping_b_U
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
         -   symbol_name: _eq_s_b
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_KOI8_R_russian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
+            - src/third_party/libstemmer_c/src_c/stem_KOI8_R_russian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
         -   symbol_name: _skip_utf8
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
-        -   symbol_name: _replace_s
-            symbol_uses:
-            - src/third_party/libstemmer_c/runtime/api.c
-        -   symbol_name: _eq_s
-            symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
-        -   symbol_name: _find_among
-            symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
         -   symbol_name: _out_grouping_U
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
+        -   symbol_name: _eq_s
+            symbol_uses:
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+        -   symbol_name: _find_among
+            symbol_uses:
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
         -   symbol_name: _in_grouping_U
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
         -   symbol_name: _out_grouping
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_KOI8_R_russian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_KOI8_R_russian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
         -   symbol_name: _find_among_b
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
             - src/third_party/libstemmer_c/src_c/stem_KOI8_R_russian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
         -   symbol_name: _in_grouping_b
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
         -   symbol_name: _in_grouping_b_U
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
         -   symbol_name: _slice_del
             symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_russian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_KOI8_R_russian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
-        -   symbol_name: _slice_from_s
-            symbol_uses:
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_norwegian.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_german.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_porter.c
+            - src/third_party/libstemmer_c/src_c/stem_KOI8_R_russian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_english.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_hungarian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_german.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_norwegian.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_english.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_spanish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_dutch.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_2_romanian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_italian.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_hungarian.c
             - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_spanish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_turkish.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_portuguese.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_porter.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_swedish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_dutch.c
-            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_italian.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
-            - src/third_party/libstemmer_c/src_c/stem_UTF_8_french.c
+        -   symbol_name: _slice_to
+            symbol_uses:
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
             - src/third_party/libstemmer_c/src_c/stem_UTF_8_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_finnish.c
+            - src/third_party/libstemmer_c/src_c/stem_UTF_8_danish.c
         file_dependencies: []
     -   file_name: src/third_party/libstemmer_c/src_c/stem_ISO_8859_1_danish.c
         file_executables:
@@ -1760,13 +1760,13 @@ module_groups:
         - src/third_party/libstemmer_c/runtime/api.h
         - /usr/bin/gcc
         file_interface:
-        -   symbol_name: _dutch_UTF_8_create_env
-            symbol_uses:
-            - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
         -   symbol_name: _dutch_UTF_8_stem
             symbol_uses:
             - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
         -   symbol_name: _dutch_UTF_8_close_env
+            symbol_uses:
+            - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
+        -   symbol_name: _dutch_UTF_8_create_env
             symbol_uses:
             - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
         file_dependencies:
@@ -2822,13 +2822,13 @@ module_groups:
         - src/third_party/libstemmer_c/runtime/api.h
         - /usr/bin/gcc
         file_interface:
-        -   symbol_name: _spanish_UTF_8_stem
-            symbol_uses:
-            - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
         -   symbol_name: _spanish_UTF_8_close_env
             symbol_uses:
             - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
         -   symbol_name: _spanish_UTF_8_create_env
+            symbol_uses:
+            - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
+        -   symbol_name: _spanish_UTF_8_stem
             symbol_uses:
             - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
         file_dependencies:
@@ -2990,10 +2990,10 @@ module_groups:
         -   symbol_name: _turkish_UTF_8_close_env
             symbol_uses:
             - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
-        -   symbol_name: _turkish_UTF_8_create_env
+        -   symbol_name: _turkish_UTF_8_stem
             symbol_uses:
             - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
-        -   symbol_name: _turkish_UTF_8_stem
+        -   symbol_name: _turkish_UTF_8_create_env
             symbol_uses:
             - src/third_party/libstemmer_c/libstemmer/libstemmer_utf8.c
         file_dependencies:

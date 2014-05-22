@@ -6,14 +6,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::getRBID(mongo::DBClientConnection*)
-
-- Used By:
-
-    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)
-
-<div></div>
-
     mongo::replSetForceInitialSyncFailure
 
 - Used By:
@@ -22,7 +14,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::incRBID()
+    mongo::getRBID(mongo::DBClientConnection*)
 
 - Used By:
 
@@ -36,3 +28,11 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/repl/health.cpp](../../../../replication/replica\_set\_state)
+
+<div></div>
+
+    mongo::incRBID()
+
+- Used By:
+
+    - [src/mongo/db/repl/rs\_rollback.cpp](../../../../replication/data\_sync)

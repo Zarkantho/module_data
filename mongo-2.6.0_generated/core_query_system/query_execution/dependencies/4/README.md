@@ -649,6 +649,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::ElementIterator
+
+- Provided By:
+
+    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
+
+<div></div>
+
     mongo::SimpleArrayElementIterator::SimpleArrayElementIterator(mongo::BSONElement const&, bool)
 
 - Provided By:
@@ -852,6 +860,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for S2Region
+
+- Provided By:
+
+    - [src/third\_party/s2/s2region.cc](../../../../third\_party/s2)
+
+<div></div>
+
     mongo::GeoHash::GeoHash(mongo::GeoHash const&)
 
 - Provided By:
@@ -963,6 +979,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
+    vtable for mongo::ElementIterator
+
+- Provided By:
+
+    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
 
 <div></div>
 
@@ -1096,6 +1120,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::ElementIterator
+
+- Provided By:
+
+    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
+
+<div></div>
+
     mongo::msgasserted(int, char const*)
 
 - Provided By:
@@ -1146,55 +1178,7 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::Record::likelyInPhysicalMemory() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::getGlobalFailPointRegistry()
-
-- Provided By:
-
-    - [src/mongo/util/fail\_point\_service.cpp](../../../../tests/fail\_points)
-
-<div></div>
-
     mongo::ElementIterator::Context::reset(mongo::BSONElement, mongo::BSONElement, bool)
-
-- Provided By:
-
-    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
-
-<div></div>
-
-    mongo::Collection::getIterator(mongo::DiskLoc const&, bool, mongo::CollectionScanParams::Direction const&) const
-
-- Provided By:
-
-    - [src/mongo/db/catalog/collection.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::BSONElementIterator::BSONElementIterator(mongo::ElementPath const*, mongo::BSONObj const&)
 
 - Provided By:
 
@@ -1210,6 +1194,78 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::msgasserted(int, std::string const&)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    boost::system::system_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
+
+<div></div>
+
+    mongo::invariantFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::getThreadName()
+
+- Provided By:
+
+    - [src/mongo/util/concurrency/thread\_name.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
+
+- Provided By:
+
+    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../../process\_management/startup\_initialization)
+
+<div></div>
+
+    mongo::getGlobalFailPointRegistry()
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point\_service.cpp](../../../../tests/fail\_points)
+
+<div></div>
+
+    mongo::FieldRef::dottedField(unsigned long) const
+
+- Provided By:
+
+    - [src/mongo/db/field\_ref.cpp](../../../../core\_query\_system/update\_system)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -1218,19 +1274,51 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::FailPoint::slowShouldFailOpenBlock()
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point.cpp](../../../../tests/fail\_points)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    mongo::DiskLoc::obj() const
+
+- Provided By:
+
+    - [src/mongo/db/storage/record.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::BSONElementIterator::BSONElementIterator(mongo::ElementPath const*, mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
+
+<div></div>
+
     mongo::Database::getCollection(mongo::StringData const&)
 
 - Provided By:
 
     - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::DiskLoc::rec() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -1258,83 +1346,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::FailPoint::slowShouldFailOpenBlock()
-
-- Provided By:
-
-    - [src/mongo/util/fail\_point.cpp](../../../../tests/fail\_points)
-
-<div></div>
-
-    mongo::msgasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::FailPoint::FailPoint()
-
-- Provided By:
-
-    - [src/mongo/util/fail\_point.cpp](../../../../tests/fail\_points)
-
-<div></div>
-
     mongo::FailPoint::shouldFailCloseBlock()
 
 - Provided By:
 
     - [src/mongo/util/fail\_point.cpp](../../../../tests/fail\_points)
-
-<div></div>
-
-    mongo::invariantFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::getThreadName()
-
-- Provided By:
-
-    - [src/mongo/util/concurrency/thread\_name.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::DiskLoc::obj() const
-
-- Provided By:
-
-    - [src/mongo/db/storage/record.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::_makeStringVector(int, ...)
-
-- Provided By:
-
-    - [src/mongo/base/make\_string\_vector.cpp](../../../../process\_management/startup\_initialization)
-
-<div></div>
-
-    mongo::logger::globalLogManager()
-
-- Provided By:
-
-    - [src/mongo/logger/logger.cpp](../../../../process\_management/logging\_system)
-
-<div></div>
-
-    boost::system::system_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
 
 <div></div>
 
@@ -1347,38 +1363,6 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::SimpleArrayElementIterator::SimpleArrayElementIterator(mongo::BSONElement const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
-
-<div></div>
-
-    mongo::GlobalInitializerRegisterer::GlobalInitializerRegisterer(std::string const&, boost::function<mongo::Status (mongo::InitializerContext*)> const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<std::string, std::allocator<std::string> > const&)
-
-- Provided By:
-
-    - [src/mongo/base/global\_initializer\_registerer.cpp](../../../../process\_management/startup\_initialization)
-
-<div></div>
-
     mongo::FailPointRegistry::addFailPoint(std::string const&, mongo::FailPoint*)
 
 - Provided By:
@@ -1387,7 +1371,7 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::FieldRef::dottedField(unsigned long) const
+    mongo::FieldRef::equalsDottedField(mongo::StringData const&) const
 
 - Provided By:
 
@@ -1395,11 +1379,67 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::FieldRef::equalsDottedField(mongo::StringData const&) const
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
 
 - Provided By:
 
-    - [src/mongo/db/field\_ref.cpp](../../../../core\_query\_system/update\_system)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    mongo::Record::likelyInPhysicalMemory() const
+
+- Provided By:
+
+    - [src/mongo/db/storage/record.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::Collection::getIterator(mongo::DiskLoc const&, bool, mongo::CollectionScanParams::Direction const&) const
+
+- Provided By:
+
+    - [src/mongo/db/catalog/collection.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::DiskLoc::rec() const
+
+- Provided By:
+
+    - [src/mongo/db/storage/record.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::FailPoint::FailPoint()
+
+- Provided By:
+
+    - [src/mongo/util/fail\_point.cpp](../../../../tests/fail\_points)
+
+<div></div>
+
+    mongo::_makeStringVector(int, ...)
+
+- Provided By:
+
+    - [src/mongo/base/make\_string\_vector.cpp](../../../../process\_management/startup\_initialization)
+
+<div></div>
+
+    vtable for mongo::ElementIterator
+
+- Provided By:
+
+    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
+
+<div></div>
+
+    mongo::SimpleArrayElementIterator::SimpleArrayElementIterator(mongo::BSONElement const&, bool)
+
+- Provided By:
+
+    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
 
 ### src/mongo/db/exec/count.cpp
 
@@ -1873,6 +1913,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::ElementIterator
+
+- Provided By:
+
+    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
+
+<div></div>
+
     mongo::SimpleArrayElementIterator::SimpleArrayElementIterator(mongo::BSONElement const&, bool)
 
 - Provided By:
@@ -2123,6 +2171,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::ElementIterator
+
+- Provided By:
+
+    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
+
+<div></div>
+
     mongo::BtreeIndexCursor::skip(mongo::BSONObj const&, int, bool, std::vector<mongo::BSONElement const*, std::allocator<mongo::BSONElement const*> > const&, std::vector<bool, std::allocator<bool> > const&)
 
 - Provided By:
@@ -2186,6 +2242,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    vtable for mongo::ElementIterator
+
+- Provided By:
+
+    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
 
 <div></div>
 
@@ -2446,11 +2510,27 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::invariantFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
     mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    vtable for mongo::ElementIterator
+
+- Provided By:
+
+    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
 
 <div></div>
 
@@ -2467,14 +2547,6 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
-
-<div></div>
-
-    mongo::invariantFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -3302,6 +3374,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for S2Region
+
+- Provided By:
+
+    - [src/third\_party/s2/s2region.cc](../../../../third\_party/s2)
+
+<div></div>
+
     typeinfo for mongo::MatchExpression
 
 - Provided By:
@@ -3449,6 +3529,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::KeyPattern::KeyPattern(mongo::BSONObj const&)
+
+- Provided By:
+
+    - [src/mongo/db/keypattern.cpp](../../../../query\_and\_operation\_handling/indexing)
+
+<div></div>
+
     mongo::CollectionMetadata::keyBelongsToMe(mongo::BSONObj const&) const
 
 - Provided By:
@@ -3458,14 +3546,6 @@ This dependency information represents symbols that are used in this group but d
 <div></div>
 
     mongo::KeyPattern::extractSingleKey(mongo::BSONObj const&) const
-
-- Provided By:
-
-    - [src/mongo/db/keypattern.cpp](../../../../query\_and\_operation\_handling/indexing)
-
-<div></div>
-
-    mongo::KeyPattern::KeyPattern(mongo::BSONObj const&)
 
 - Provided By:
 
@@ -4054,6 +4134,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
+
+<div></div>
+
+    vtable for mongo::ElementIterator
+
+- Provided By:
+
+    - [src/mongo/db/matcher/path.cpp](../../../../core\_query\_system/query\_preprocessing)
 
 <div></div>
 

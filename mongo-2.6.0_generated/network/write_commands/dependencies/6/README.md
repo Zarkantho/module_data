@@ -352,6 +352,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::unittest::Test::tearDown()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
     mongo::WriteErrorDetail::WriteErrorDetail()
 
 - Provided By:
@@ -421,6 +429,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -544,11 +560,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::unittest::ComparisonAssertion::ComparisonAssertion(char const*, char const*, char const*, unsigned int)
+    mongo::MINKEY
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -648,11 +664,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::unittest::Test::tearDown()
+    mongo::MAXKEY
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 

@@ -6,6 +6,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::MAXKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::BSONElementHasher::hash64(mongo::BSONElement const&, int)
 
 - Provided By:
@@ -27,6 +35,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/queryutil.cpp](../../../../core\_query\_system/legacy\_query\_code)
+
+<div></div>
+
+    mongo::MINKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 

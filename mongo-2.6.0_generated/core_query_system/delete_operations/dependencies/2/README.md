@@ -223,14 +223,6 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::legalClientSystemNS(mongo::StringData const&, bool)
-
-- Provided By:
-
-    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
     mongo::Collection::isCapped() const
 
 - Provided By:
@@ -260,6 +252,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/catalog/collection.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::legalClientSystemNS(mongo::StringData const&, bool)
+
+- Provided By:
+
+    - [src/mongo/db/structure/catalog/namespace\_details.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 

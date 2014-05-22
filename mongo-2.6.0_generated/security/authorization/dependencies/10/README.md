@@ -86,6 +86,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientBase
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::BackgroundJob::wait(unsigned int)
 
 - Provided By:
@@ -182,14 +190,6 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    vtable for mongo::DBClientBase
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
-
-<div></div>
-
     typeinfo for mongo::DBException
 
 - Provided By:
@@ -247,6 +247,14 @@ This dependency information represents symbols that are used in this group but d
 <div></div>
 
     vtable for mongo::DBClientConnection
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
 
 - Provided By:
 

@@ -8,8 +8,8 @@ The mongo shell is a the v8 javascript interpreter with bindings into the C++ dr
 C++ files that are automatically generated from the Javascript source files. This means that certain Javascript files work in the shell because they are actually compiled in, which means that sometimes the server needs to be recompiled to see changes in Javascript files
 
 #### Files
-- build/darwin/ssl/mongo/shell/mongo-server.cpp   ()
-- build/darwin/ssl/mongo/shell/mongo.cpp   (mongod, tools, mongos)
+- build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo-server.cpp   ()
+- build/darwin/dbg\_off/opt\_off/ssl/mongo/shell/mongo.cpp   (mongod, tools, mongos)
 
 #### [Interface](interface/0)
 

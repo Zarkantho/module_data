@@ -2058,169 +2058,169 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/adl_barrier.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         file_interface:
-        -   symbol_name: boost::filesystem3::absolute(boost::filesystem3::path const&,
-                boost::filesystem3::path const&)
-            symbol_uses:
-            - src/mongo/db/server_options_helpers.cpp
-            - src/mongo/db/initialize_server_global_state.cpp
-            - src/mongo/util/mmap.cpp
-            - src/mongo/util/net/ssl_options.cpp
-        -   symbol_name: boost::filesystem3::detail::directory_iterator_construct(boost::filesystem3::directory_iterator&,
-                boost::filesystem3::path const&, boost::system::error_code*)
-            symbol_uses:
-            - src/mongo/scripting/engine.cpp
-            - src/mongo/dbtests/framework_options.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/shell/shell_utils_launcher.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/dur_journal.cpp
-            - src/mongo/shell/shell_utils_extended.cpp
-            - src/mongo/tools/restore.cpp
-        -   symbol_name: boost::filesystem3::detail::temp_directory_path(boost::system::error_code*)
-            symbol_uses:
-            - src/mongo/unittest/temp_dir.cpp
-        -   symbol_name: boost::filesystem3::detail::rename(boost::filesystem3::path
-                const&, boost::filesystem3::path const&, boost::system::error_code*)
-            symbol_uses:
-            - src/mongo/db/repair_database.cpp
-            - src/mongo/db/dur_journal.cpp
-        -   symbol_name: boost::filesystem3::detail::directory_iterator_increment(boost::filesystem3::directory_iterator&,
-                boost::system::error_code*)
-            symbol_uses:
-            - src/mongo/scripting/engine.cpp
-            - src/mongo/dbtests/framework_options.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/shell/shell_utils_launcher.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/dur_journal.cpp
-            - src/mongo/shell/shell_utils_extended.cpp
-            - src/mongo/tools/restore.cpp
-        -   symbol_name: boost::filesystem3::detail::initial_path(boost::system::error_code*)
-            symbol_uses:
-            - src/mongo/shell/shell_utils_launcher.cpp
-        -   symbol_name: boost::filesystem3::detail::status(boost::filesystem3::path
-                const&, boost::system::error_code*)
-            symbol_uses:
-            - src/mongo/util/mmap.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/unittest/temp_dir.cpp
-            - src/mongo/tools/restore.cpp
-            - src/mongo/dbtests/framework_options.cpp
-            - src/mongo/db/initialize_server_global_state.cpp
-            - src/mongo/db/structure/catalog/namespace_index.cpp
-            - src/mongo/util/file_allocator.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/scripting/engine.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/shell/shell_utils_extended.cpp
-            - src/mongo/db/storage/extent_manager.cpp
-            - src/mongo/tools/import.cpp
-            - src/mongo/shell/shell_utils.cpp
-            - src/mongo/db/storage/data_file.cpp
-            - src/mongo/shell/shell_utils_launcher.cpp
-            - src/mongo/tools/tool_options.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/durop.cpp
-            - src/mongo/db/repair_database.cpp
-            - src/mongo/db/dur_journal.cpp
-            - src/mongo/client/gridfs.cpp
-        -   symbol_name: boost::filesystem3::path_traits::dispatch(boost::filesystem3::directory_entry
-                const&, std::string&, std::codecvt<wchar_t, char, __mbstate_t> const&)
-            symbol_uses:
-            - src/mongo/scripting/engine.cpp
-            - src/mongo/dbtests/framework_options.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/shell/shell_utils_launcher.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/dur_journal.cpp
-            - src/mongo/shell/shell_utils_extended.cpp
-            - src/mongo/tools/restore.cpp
         -   symbol_name: boost::filesystem3::detail::create_directory(boost::filesystem3::path
                 const&, boost::system::error_code*)
             symbol_uses:
             - src/mongo/util/file_allocator.cpp
             - src/mongo/shell/shell_utils_launcher.cpp
-            - src/mongo/unittest/temp_dir.cpp
             - src/mongo/db/repair_database.cpp
-            - src/mongo/db/dur_journal.cpp
             - src/mongo/dbtests/framework_options.cpp
             - src/mongo/db/structure/catalog/namespace_index.cpp
-        -   symbol_name: boost::filesystem3::detail::file_size(boost::filesystem3::path
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/unittest/temp_dir.cpp
+        -   symbol_name: boost::filesystem3::detail::remove_all(boost::filesystem3::path
                 const&, boost::system::error_code*)
             symbol_uses:
-            - src/mongo/db/storage/extent_manager.cpp
-            - src/mongo/db/extsort.cpp
-            - src/mongo/tools/import.cpp
-            - src/mongo/util/file_allocator.cpp
-            - src/mongo/db/pipeline/document_source_group.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/tools/tool.cpp
-            - src/mongo/util/mmap.cpp
-            - src/mongo/tools/restore.cpp
-            - src/mongo/db/repair_database.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/dur_journal.cpp
             - src/mongo/shell/shell_utils_extended.cpp
-            - src/mongo/db/pipeline/document_source_sort.cpp
-        -   symbol_name: boost::filesystem3::detail::dir_itr_close(void*&, void*&)
-            symbol_uses:
-            - src/mongo/scripting/engine.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/repair_database.cpp
             - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/unittest/temp_dir.cpp
+        -   symbol_name: boost::filesystem3::path_traits::dispatch(boost::filesystem3::directory_entry
+                const&, std::string&, std::codecvt<wchar_t, char, __mbstate_t> const&)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_extended.cpp
             - src/mongo/db/dur_recover.cpp
             - src/mongo/shell/shell_utils_launcher.cpp
             - src/mongo/db/db.cpp
             - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/scripting/engine.cpp
             - src/mongo/db/dur_journal.cpp
-            - src/mongo/shell/shell_utils_extended.cpp
             - src/mongo/tools/restore.cpp
+        -   symbol_name: boost::filesystem3::detail::status(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/tools/tool_options.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/tools/import.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/unittest/temp_dir.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/db/storage/data_file.cpp
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/initialize_server_global_state.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/client/gridfs.cpp
+        -   symbol_name: boost::filesystem3::detail::remove(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/db/pipeline/document_source_sort.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/dbcommands_admin.cpp
+            - src/mongo/db/pipeline/document_source_group.cpp
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: boost::filesystem3::detail::file_size(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/util/file_allocator.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/pipeline/document_source_sort.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/tools/import.cpp
+            - src/mongo/db/pipeline/document_source_group.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/tools/restore.cpp
+        -   symbol_name: boost::filesystem3::detail::directory_iterator_increment(boost::filesystem3::directory_iterator&,
+                boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/tools/restore.cpp
+        -   symbol_name: boost::filesystem3::detail::create_directories(boost::filesystem3::path
+                const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/tools/export.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/pipeline/document_source_sort.cpp
+            - src/mongo/db/extsort.cpp
+            - src/mongo/tools/dump.cpp
+            - src/mongo/db/pipeline/document_source_group.cpp
+            - src/mongo/db/dbhelpers.cpp
+        -   symbol_name: boost::filesystem3::detail::rename(boost::filesystem3::path
+                const&, boost::filesystem3::path const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/repair_database.cpp
+        -   symbol_name: boost::filesystem3::detail::directory_iterator_construct(boost::filesystem3::directory_iterator&,
+                boost::filesystem3::path const&, boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/tools/restore.cpp
+        -   symbol_name: boost::filesystem3::detail::current_path(boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/util/net/ssl_options.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/db/server_options_helpers.cpp
+        -   symbol_name: boost::filesystem3::detail::initial_path(boost::system::error_code*)
+            symbol_uses:
+            - src/mongo/shell/shell_utils_launcher.cpp
         -   symbol_name: boost::filesystem3::detail::copy_file(boost::filesystem3::path
                 const&, boost::filesystem3::path const&, boost::filesystem3::copy_option::enum_type,
                 boost::system::error_code*)
             symbol_uses:
             - src/mongo/shell/shell_utils_launcher.cpp
             - src/mongo/db/repair_database.cpp
-        -   symbol_name: boost::filesystem3::detail::remove(boost::filesystem3::path
-                const&, boost::system::error_code*)
+        -   symbol_name: boost::filesystem3::absolute(boost::filesystem3::path const&,
+                boost::filesystem3::path const&)
             symbol_uses:
-            - src/mongo/db/extsort.cpp
-            - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/util/file_allocator.cpp
-            - src/mongo/db/pipeline/document_source_group.cpp
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/db/dbcommands_admin.cpp
-            - src/mongo/db/durop.cpp
-            - src/mongo/db/repair_database.cpp
-            - src/mongo/db/dur_journal.cpp
-            - src/mongo/db/pipeline/document_source_sort.cpp
-        -   symbol_name: boost::filesystem3::detail::remove_all(boost::filesystem3::path
-                const&, boost::system::error_code*)
+            - src/mongo/util/net/ssl_options.cpp
+            - src/mongo/db/server_options_helpers.cpp
+            - src/mongo/util/mmap.cpp
+            - src/mongo/db/initialize_server_global_state.cpp
+        -   symbol_name: boost::filesystem3::detail::dir_itr_close(void*&, void*&)
             symbol_uses:
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/dur_recover.cpp
             - src/mongo/shell/shell_utils_launcher.cpp
             - src/mongo/db/db.cpp
-            - src/mongo/unittest/temp_dir.cpp
-            - src/mongo/db/repair_database.cpp
-            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/instance.cpp
             - src/mongo/dbtests/framework_options.cpp
-        -   symbol_name: boost::filesystem3::detail::create_directories(boost::filesystem3::path
-                const&, boost::system::error_code*)
+            - src/mongo/scripting/engine.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/tools/restore.cpp
+        -   symbol_name: boost::filesystem3::detail::temp_directory_path(boost::system::error_code*)
             symbol_uses:
-            - src/mongo/db/extsort.cpp
-            - src/mongo/tools/dump.cpp
-            - src/mongo/db/pipeline/document_source_group.cpp
-            - src/mongo/tools/export.cpp
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/db/pipeline/document_source_sort.cpp
-            - src/mongo/shell/shell_utils_extended.cpp
-        -   symbol_name: boost::filesystem3::detail::current_path(boost::system::error_code*)
-            symbol_uses:
-            - src/mongo/shell/shell_utils_extended.cpp
-            - src/mongo/db/server_options_helpers.cpp
-            - src/mongo/shell/shell_utils_launcher.cpp
-            - src/mongo/util/mmap.cpp
-            - src/mongo/util/net/ssl_options.cpp
+            - src/mongo/unittest/temp_dir.cpp
         file_dependencies:
         -   symbol_name: boost::filesystem3::path::root_name() const
             symbol_sources:
@@ -2641,57 +2641,57 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/adl_barrier.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         file_interface:
-        -   symbol_name: boost::filesystem3::path::root_name() const
+        -   symbol_name: boost::filesystem3::path::operator/=(char const*)
             symbol_uses:
-            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/dbcommands_admin.cpp
         -   symbol_name: boost::filesystem3::path::end() const
             symbol_uses:
             - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
-        -   symbol_name: boost::filesystem3::path::operator/=(char const*)
+        -   symbol_name: boost::filesystem3::path::root_directory() const
             symbol_uses:
-            - src/mongo/db/dbcommands_admin.cpp
-            - src/mongo/db/dur_journal.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
         -   symbol_name: boost::filesystem3::path::relative_path() const
             symbol_uses:
             - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
         -   symbol_name: boost::filesystem3::path::wchar_t_codecvt_facet()
             symbol_uses:
-            - src/mongo/db/durop.cpp
-            - src/mongo/scripting/engine.cpp
-            - src/mongo/unittest/temp_dir.cpp
-            - src/mongo/tools/dump.cpp
             - src/mongo/util/file_allocator.cpp
-            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
+            - src/mongo/db/storage/extent_manager.cpp
             - src/mongo/db/dur_recover.cpp
             - src/mongo/shell/shell_utils_launcher.cpp
-            - src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
+            - src/mongo/tools/dump.cpp
             - src/mongo/db/db.cpp
+            - src/mongo/db/durop.cpp
             - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
-            - src/mongo/db/dbhelpers.cpp
             - src/mongo/db/repair_database.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/dur_journal.cpp
-            - src/mongo/shell/shell_utils_extended.cpp
-            - src/mongo/tools/restore.cpp
-            - src/mongo/db/storage/extent_manager.cpp
             - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/scripting/engine.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
+            - src/mongo/unittest/temp_dir.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/framework_options.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/db/dbhelpers.cpp
         -   symbol_name: boost::filesystem3::path::operator/=(boost::filesystem3::path
                 const&)
             symbol_uses:
-            - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/tools/dump.cpp
             - src/mongo/util/file_allocator.cpp
-            - src/mongo/shell/shell_utils_launcher.cpp
-            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
-            - src/mongo/unittest/temp_dir.cpp
-            - src/mongo/db/repair_database.cpp
             - src/mongo/db/instance.cpp
+            - src/mongo/shell/shell_utils_launcher.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
+            - src/mongo/tools/dump.cpp
             - src/mongo/db/dur_journal.cpp
             - src/mongo/tools/restore.cpp
+            - src/mongo/unittest/temp_dir.cpp
         -   symbol_name: boost::filesystem3::path::m_path_iterator_increment(boost::filesystem3::path::iterator&)
             symbol_uses:
             - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
-        -   symbol_name: boost::filesystem3::path::root_directory() const
+        -   symbol_name: boost::filesystem3::path::root_name() const
             symbol_uses:
             - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
         -   symbol_name: boost::filesystem3::path::remove_filename()
@@ -2699,47 +2699,47 @@ module_groups:
             - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
         -   symbol_name: boost::filesystem3::path::parent_path() const
             symbol_uses:
-            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
-            - src/mongo/tools/restore.cpp
             - src/mongo/util/file_allocator.cpp
+            - src/mongo/tools/restore.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
         -   symbol_name: boost::filesystem3::path::m_erase_redundant_separator(unsigned
                 long)
             symbol_uses:
-            - src/mongo/db/storage/extent_manager.cpp
             - src/mongo/util/file_allocator.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/tools/dump.cpp
-            - src/mongo/db/durop.cpp
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/db/repair_database.cpp
             - src/mongo/db/instance.cpp
-            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/tools/dump.cpp
             - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/dbhelpers.cpp
         -   symbol_name: boost::filesystem3::path::m_append_separator_if_needed()
             symbol_uses:
-            - src/mongo/db/storage/extent_manager.cpp
             - src/mongo/util/file_allocator.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/tools/dump.cpp
-            - src/mongo/db/durop.cpp
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/db/repair_database.cpp
             - src/mongo/db/instance.cpp
-            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/tools/dump.cpp
             - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/db/durop.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/db/dbhelpers.cpp
         -   symbol_name: boost::filesystem3::path::begin() const
             symbol_uses:
             - src/third_party/boost/libs/filesystem/v3/src/operations.cpp
         -   symbol_name: boost::filesystem3::path::filename() const
             symbol_uses:
-            - src/mongo/tools/import.cpp
+            - src/mongo/shell/shell_utils_extended.cpp
             - src/mongo/db/dur_recover.cpp
             - src/mongo/shell/shell_utils_launcher.cpp
             - src/mongo/db/db.cpp
-            - src/mongo/db/repair_database.cpp
             - src/mongo/db/instance.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/tools/import.cpp
             - src/mongo/db/dur_journal.cpp
-            - src/mongo/shell/shell_utils_extended.cpp
             - src/mongo/tools/restore.cpp
         file_dependencies:
         -   symbol_name: vtable for boost::filesystem::detail::utf8_codecvt_facet
@@ -2946,14 +2946,14 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/config/preprocessor.hpp
         - src/third_party/boost/boost/mpl/aux_/config/static_constant.hpp
         file_interface:
-        -   symbol_name: boost::filesystem3::path_traits::convert(wchar_t const*,
-                wchar_t const*, std::string&, std::codecvt<wchar_t, char, __mbstate_t>
-                const&)
-            symbol_uses:
-            - src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
         -   symbol_name: boost::filesystem3::path_traits::convert(char const*, char
                 const*, std::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t>
                 >&, std::codecvt<wchar_t, char, __mbstate_t> const&)
+            symbol_uses:
+            - src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
+        -   symbol_name: boost::filesystem3::path_traits::convert(wchar_t const*,
+                wchar_t const*, std::string&, std::codecvt<wchar_t, char, __mbstate_t>
+                const&)
             symbol_uses:
             - src/third_party/boost/libs/filesystem/v3/src/unique_path.cpp
         file_dependencies:
@@ -3779,8 +3779,8 @@ module_groups:
         file_interface:
         -   symbol_name: vtable for boost::filesystem::detail::utf8_codecvt_facet
             symbol_uses:
-            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
             - src/third_party/boost/libs/filesystem/v2/src/v2_path.cpp
+            - src/third_party/boost/libs/filesystem/v3/src/path.cpp
         file_dependencies: []
     -   file_name: src/third_party/boost/libs/filesystem/v3/src/windows_file_codecvt.cpp
         file_executables:

@@ -422,9 +422,9 @@ module_groups:
         file_interface:
         -   symbol_name: _RunningOnValgrind
             symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-            - src/third_party/gperftools-2.0/src/base/sysinfo.cc
             - src/third_party/gperftools-2.0/src/malloc_extension.cc
+            - src/third_party/gperftools-2.0/src/base/sysinfo.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         file_dependencies: []
     -   file_name: src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
         file_executables:
@@ -613,24 +613,29 @@ module_groups:
         - src/third_party/gperftools-2.0/src/base/commandlineflags.h
         - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
         file_interface:
+        -   symbol_name: SpinLock::LINKER_INITIALIZED
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
         -   symbol_name: SpinLock::SlowLock()
             symbol_uses:
-            - src/third_party/gperftools-2.0/src/malloc_hook.cc
-            - src/third_party/gperftools-2.0/src/system-alloc.cc
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-            - src/third_party/gperftools-2.0/src/central_freelist.cc
             - src/third_party/gperftools-2.0/src/stack_trace_table.cc
             - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
             - src/third_party/gperftools-2.0/src/internal_logging.cc
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
         -   symbol_name: SpinLock::SlowUnlock(unsigned long long)
             symbol_uses:
-            - src/third_party/gperftools-2.0/src/malloc_hook.cc
-            - src/third_party/gperftools-2.0/src/system-alloc.cc
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-            - src/third_party/gperftools-2.0/src/central_freelist.cc
             - src/third_party/gperftools-2.0/src/stack_trace_table.cc
             - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
             - src/third_party/gperftools-2.0/src/internal_logging.cc
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
         file_dependencies:
         -   symbol_name: base::internal::SpinLockDelay(int volatile*, int, int)
             symbol_sources:
@@ -980,9 +985,15 @@ module_groups:
         - src/third_party/gperftools-2.0/src/base/basictypes.h
         - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
         file_interface:
+        -   symbol_name: tcmalloc::CentralFreeList::tc_length()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::CentralFreeList::OverheadBytes()
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::CentralFreeList::Init(unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
         -   symbol_name: tcmalloc::CentralFreeList::RemoveRange(void**, void**, int)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/thread_cache.cc
@@ -990,12 +1001,6 @@ module_groups:
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
             - src/third_party/gperftools-2.0/src/thread_cache.cc
-        -   symbol_name: tcmalloc::CentralFreeList::tc_length()
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::CentralFreeList::Init(unsigned long)
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/static_vars.cc
         file_dependencies:
         -   symbol_name: tcmalloc::PageHeap::RegisterSizeClass(tcmalloc::Span*, unsigned
                 long)
@@ -1088,20 +1093,21 @@ module_groups:
         - src/third_party/gperftools-2.0/src/windows/port.h
         - /usr/bin/g++
         file_interface:
-        -   symbol_name: tcmalloc::MetaDataAlloc(unsigned long)
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/static_vars.cc
-            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
-            - src/third_party/gperftools-2.0/src/page_heap.cc
-            - src/third_party/gperftools-2.0/src/thread_cache.cc
-            - src/third_party/gperftools-2.0/src/span.cc
-        -   symbol_name: tcmalloc::metadata_system_bytes()
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::SizeMap::Init()
             symbol_uses:
             - src/third_party/gperftools-2.0/src/static_vars.cc
+        -   symbol_name: tcmalloc::MetaDataAlloc(unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/span.cc
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/static_vars.cc
         -   symbol_name: tcmalloc::AlignmentForSize(unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::metadata_system_bytes()
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
         file_dependencies:
@@ -1392,14 +1398,14 @@ module_groups:
         -   symbol_name: tcmalloc::Log(tcmalloc::LogMode, char const*, int, tcmalloc::LogItem,
                 tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem)
             symbol_uses:
-            - src/third_party/gperftools-2.0/src/common.cc
-            - src/third_party/gperftools-2.0/src/static_vars.cc
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-            - src/third_party/gperftools-2.0/src/central_freelist.cc
             - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+            - src/third_party/gperftools-2.0/src/common.cc
             - src/third_party/gperftools-2.0/src/thread_cache.cc
-            - src/third_party/gperftools-2.0/src/page_heap.cc
             - src/third_party/gperftools-2.0/src/span.cc
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
         file_dependencies:
         -   symbol_name: SpinLock::SlowLock()
             symbol_sources:
@@ -1595,7 +1601,17 @@ module_groups:
         -   symbol_name: typeinfo for MallocExtension
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: MallocExtension::MallocMemoryStats(int*, unsigned long*,
+                int*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: SysAllocator::~SysAllocator()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/system-alloc.cc
+        -   symbol_name: vtable for MallocExtension
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: vtable for SysAllocator
             symbol_uses:
             - src/third_party/gperftools-2.0/src/system-alloc.cc
         -   symbol_name: MallocExtension::GetHeapSample(std::string*)
@@ -1612,9 +1628,9 @@ module_groups:
             - src/third_party/gperftools-2.0/src/system-alloc.cc
         -   symbol_name: MallocExtension::instance()
             symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
             - src/third_party/gperftools-2.0/src/internal_logging.cc
             - src/mongo/util/tcmalloc_server_status_section.cpp
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: MallocExtension::GetHeapGrowthStacks(std::string*)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
@@ -1633,20 +1649,16 @@ module_groups:
         -   symbol_name: MallocExtension::VerifyNewMemory(void const*)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: MallocExtension::MallocMemoryStats(int*, unsigned long*,
-                int*)
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         file_dependencies:
         -   symbol_name: tcmalloc::FillProcSelfMaps(char*, int, bool*)
             symbol_sources:
             - src/third_party/gperftools-2.0/src/base/sysinfo.cc
-        -   symbol_name: _RunningOnValgrind
-            symbol_sources:
-            - src/third_party/gperftools-2.0/src/base/dynamic_annotations.c
         -   symbol_name: perftools_pthread_once(_opaque_pthread_once_t*, void (*)())
             symbol_sources:
             - src/third_party/gperftools-2.0/src/maybe_threads.cc
+        -   symbol_name: _RunningOnValgrind
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/dynamic_annotations.c
     -   file_name: src/third_party/gperftools-2.0/src/malloc_hook-inl.h
         file_executables:
         - mongotop
@@ -1716,19 +1728,19 @@ module_groups:
         - src/third_party/gperftools-2.0/src/base/commandlineflags.h
         - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
         file_interface:
-        -   symbol_name: MallocHook::InvokeDeleteHookSlow(void const*)
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: base::internal::new_hook_
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: base::internal::delete_hooks_
+        -   symbol_name: MallocHook::InvokeDeleteHookSlow(void const*)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: base::internal::delete_hook_
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: base::internal::new_hooks_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: base::internal::delete_hooks_
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: MallocHook::InvokeNewHookSlow(void const*, unsigned long)
@@ -1826,8 +1838,8 @@ module_groups:
             - src/third_party/gperftools-2.0/src/thread_cache.cc
         -   symbol_name: perftools_pthread_once(_opaque_pthread_once_t*, void (*)())
             symbol_uses:
-            - src/third_party/gperftools-2.0/src/malloc_hook.cc
             - src/third_party/gperftools-2.0/src/malloc_extension.cc
+            - src/third_party/gperftools-2.0/src/malloc_hook.cc
         -   symbol_name: perftools_pthread_setspecific(unsigned long, void*)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/thread_cache.cc
@@ -1960,13 +1972,20 @@ module_groups:
         - src/third_party/gperftools-2.0/src/base/commandlineflags.h
         - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
         file_interface:
+        -   symbol_name: tcmalloc::PageHeap::Delete(tcmalloc::Span*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: FLAG__namespace_do_not_use_directly_use_DECLARE_double_instead::FLAGS_tcmalloc_release_rate
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::PageHeap::Delete(tcmalloc::Span*)
+        -   symbol_name: tcmalloc::PageHeap::Split(tcmalloc::Span*, unsigned long)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::PageHeap::New(unsigned long)
+            symbol_uses:
             - src/third_party/gperftools-2.0/src/central_freelist.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::PageHeap::RegisterSizeClass(tcmalloc::Span*, unsigned
                 long)
             symbol_uses:
@@ -1977,22 +1996,15 @@ module_groups:
         -   symbol_name: tcmalloc::PageHeap::GetNextRange(unsigned long, base::MallocRange*)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::PageHeap::New(unsigned long)
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-            - src/third_party/gperftools-2.0/src/central_freelist.cc
-        -   symbol_name: tcmalloc::PageHeap::PageHeap()
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/static_vars.cc
         -   symbol_name: tcmalloc::PageHeap::GetLargeSpanStats(tcmalloc::PageHeap::LargeSpanStats*)
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::PageHeap::Split(tcmalloc::Span*, unsigned long)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::PageHeap::GetSmallSpanStats(tcmalloc::PageHeap::SmallSpanStats*)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::PageHeap::PageHeap()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/static_vars.cc
         file_dependencies:
         -   symbol_name: tcmalloc::DLL_Remove(tcmalloc::Span*)
             symbol_sources:
@@ -2203,26 +2215,27 @@ module_groups:
         - src/third_party/gperftools-2.0/src/base/basictypes.h
         - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
         file_interface:
+        -   symbol_name: tcmalloc::NewSpan(unsigned long, unsigned long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::DLL_Init(tcmalloc::Span*)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/static_vars.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
         -   symbol_name: tcmalloc::DLL_Remove(tcmalloc::Span*)
             symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
             - src/third_party/gperftools-2.0/src/page_heap.cc
             - src/third_party/gperftools-2.0/src/central_freelist.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::DeleteSpan(tcmalloc::Span*)
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/page_heap.cc
-        -   symbol_name: tcmalloc::NewSpan(unsigned long, unsigned long)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/page_heap.cc
         -   symbol_name: tcmalloc::DLL_Prepend(tcmalloc::Span*, tcmalloc::Span*)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/page_heap.cc
             - src/third_party/gperftools-2.0/src/central_freelist.cc
-        -   symbol_name: tcmalloc::DLL_Init(tcmalloc::Span*)
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/static_vars.cc
-            - src/third_party/gperftools-2.0/src/page_heap.cc
-            - src/third_party/gperftools-2.0/src/central_freelist.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::DLL_Length(tcmalloc::Span const*)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/page_heap.cc
@@ -2308,17 +2321,17 @@ module_groups:
         - src/third_party/gperftools-2.0/src/base/basictypes.h
         - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
         file_interface:
-        -   symbol_name: tcmalloc::StackTraceTable::StackTraceTable()
+        -   symbol_name: tcmalloc::StackTraceTable::~StackTraceTable()
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::StackTraceTable::ReadStackTracesAndClear()
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::StackTraceTable::AddTrace(tcmalloc::StackTrace
                 const&)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::StackTraceTable::~StackTraceTable()
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::StackTraceTable::ReadStackTracesAndClear()
+        -   symbol_name: tcmalloc::StackTraceTable::StackTraceTable()
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
         file_dependencies:
@@ -2602,47 +2615,50 @@ module_groups:
         file_interface:
         -   symbol_name: tcmalloc::Static::sizemap_
             symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
             - src/third_party/gperftools-2.0/src/page_heap.cc
-            - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
             - src/third_party/gperftools-2.0/src/central_freelist.cc
-        -   symbol_name: tcmalloc::Static::bucket_allocator_
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
-        -   symbol_name: tcmalloc::Static::stacktrace_allocator_
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-            - src/third_party/gperftools-2.0/src/page_heap.cc
-        -   symbol_name: tcmalloc::Static::central_cache_
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
             - src/third_party/gperftools-2.0/src/thread_cache.cc
-            - src/third_party/gperftools-2.0/src/central_freelist.cc
-        -   symbol_name: tcmalloc::Static::pageheap_lock_
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
-            - src/third_party/gperftools-2.0/src/thread_cache.cc
-            - src/third_party/gperftools-2.0/src/central_freelist.cc
-        -   symbol_name: tcmalloc::Static::sampled_objects_
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::Static::pageheap_
             symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
             - src/third_party/gperftools-2.0/src/central_freelist.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::Static::span_allocator_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/span.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::Static::stacktrace_allocator_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::Static::InitStaticVars()
             symbol_uses:
             - src/third_party/gperftools-2.0/src/thread_cache.cc
-        -   symbol_name: tcmalloc::Static::span_allocator_
+        -   symbol_name: tcmalloc::Static::pageheap_lock_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::Static::sampled_objects_
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-            - src/third_party/gperftools-2.0/src/span.cc
         -   symbol_name: tcmalloc::Static::growth_stacks_
             symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
             - src/third_party/gperftools-2.0/src/page_heap.cc
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::Static::central_cache_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+            - src/third_party/gperftools-2.0/src/central_freelist.cc
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
+        -   symbol_name: tcmalloc::Static::bucket_allocator_
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
         file_dependencies:
+        -   symbol_name: SpinLock::LINKER_INITIALIZED
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
         -   symbol_name: tcmalloc::PageHeap::PageHeap()
             symbol_sources:
             - src/third_party/gperftools-2.0/src/page_heap.cc
@@ -2784,6 +2800,9 @@ module_groups:
         - src/third_party/gperftools-2.0/src/base/commandlineflags.h
         - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
         file_interface:
+        -   symbol_name: _sys_alloc
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: TCMalloc_SystemAlloc(unsigned long, unsigned long*, unsigned
                 long)
             symbol_uses:
@@ -2792,22 +2811,25 @@ module_groups:
         -   symbol_name: TCMalloc_SystemRelease(void*, unsigned long)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/page_heap.cc
-        -   symbol_name: _sys_alloc
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
         file_dependencies:
-        -   symbol_name: SysAllocator::~SysAllocator()
-            symbol_sources:
-            - src/third_party/gperftools-2.0/src/malloc_extension.cc
-        -   symbol_name: SpinLock::SlowLock()
-            symbol_sources:
-            - src/third_party/gperftools-2.0/src/base/spinlock.cc
         -   symbol_name: SpinLock::SlowUnlock(unsigned long long)
             symbol_sources:
             - src/third_party/gperftools-2.0/src/base/spinlock.cc
         -   symbol_name: typeinfo for SysAllocator
             symbol_sources:
             - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: SpinLock::LINKER_INITIALIZED
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
+        -   symbol_name: SysAllocator::~SysAllocator()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: vtable for SysAllocator
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: SpinLock::SlowLock()
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
     -   file_name: src/third_party/gperftools-2.0/src/system-alloc.h
         file_executables:
         - mongotop
@@ -2923,12 +2945,21 @@ module_groups:
         -   symbol_name: MallocExtension::GetHeapGrowthStacks(std::string*)
             symbol_sources:
             - src/third_party/gperftools-2.0/src/malloc_extension.cc
+        -   symbol_name: SpinLock::LINKER_INITIALIZED
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/base/spinlock.cc
         -   symbol_name: FLAG__namespace_do_not_use_directly_use_DECLARE_double_instead::FLAGS_tcmalloc_release_rate
             symbol_sources:
             - src/third_party/gperftools-2.0/src/page_heap.cc
         -   symbol_name: base::internal::new_hook_
             symbol_sources:
             - src/third_party/gperftools-2.0/src/malloc_hook.cc
+        -   symbol_name: tcmalloc::MetaDataAlloc(unsigned long)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/common.cc
+        -   symbol_name: tcmalloc::threadcache_allocator
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/thread_cache.cc
         -   symbol_name: tcmalloc::ThreadCache::overall_thread_cache_size_
             symbol_sources:
             - src/third_party/gperftools-2.0/src/thread_cache.cc
@@ -2936,9 +2967,9 @@ module_groups:
                 const&)
             symbol_sources:
             - src/third_party/gperftools-2.0/src/stack_trace_table.cc
-        -   symbol_name: tcmalloc::threadcache_allocator
+        -   symbol_name: vtable for MallocExtension
             symbol_sources:
-            - src/third_party/gperftools-2.0/src/thread_cache.cc
+            - src/third_party/gperftools-2.0/src/malloc_extension.cc
         -   symbol_name: tcmalloc::AlignmentForSize(unsigned long)
             symbol_sources:
             - src/third_party/gperftools-2.0/src/common.cc
@@ -3060,6 +3091,9 @@ module_groups:
         -   symbol_name: tcmalloc::PageHeap::GetSmallSpanStats(tcmalloc::PageHeap::SmallSpanStats*)
             symbol_sources:
             - src/third_party/gperftools-2.0/src/page_heap.cc
+        -   symbol_name: tcmalloc::DLL_Prepend(tcmalloc::Span*, tcmalloc::Span*)
+            symbol_sources:
+            - src/third_party/gperftools-2.0/src/span.cc
         -   symbol_name: MallocExtension::Register(MallocExtension*)
             symbol_sources:
             - src/third_party/gperftools-2.0/src/malloc_extension.cc
@@ -3204,21 +3238,17 @@ module_groups:
         -   symbol_name: tcmalloc::ThreadCache::overall_thread_cache_size_
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::ThreadCache::InitTSD()
+        -   symbol_name: tcmalloc::threadcache_allocator
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::ThreadCache::GetThreadStats(unsigned long long*,
-                unsigned long long*)
+        -   symbol_name: tcmalloc::ThreadCache::ListTooLong(tcmalloc::ThreadCache::FreeList*,
+                unsigned long)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::ThreadCache::set_overall_thread_cache_size(unsigned
-                long)
+        -   symbol_name: tcmalloc::ThreadCache::BecomeIdle()
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::ThreadCache::tsd_inited_
-            symbol_uses:
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::threadcache_allocator
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::ThreadCache::Scavenge()
@@ -3227,18 +3257,22 @@ module_groups:
         -   symbol_name: tcmalloc::ThreadCache::heap_key_
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::ThreadCache::GetSamplePeriod()
+        -   symbol_name: tcmalloc::ThreadCache::InitTSD()
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::ThreadCache::ListTooLong(tcmalloc::ThreadCache::FreeList*,
-                unsigned long)
+        -   symbol_name: tcmalloc::ThreadCache::GetThreadStats(unsigned long long*,
+                unsigned long long*)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::ThreadCache::FetchFromCentralCache(unsigned long,
                 unsigned long)
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
-        -   symbol_name: tcmalloc::ThreadCache::BecomeIdle()
+        -   symbol_name: tcmalloc::ThreadCache::set_overall_thread_cache_size(unsigned
+                long)
+            symbol_uses:
+            - src/third_party/gperftools-2.0/src/tcmalloc.cc
+        -   symbol_name: tcmalloc::ThreadCache::GetSamplePeriod()
             symbol_uses:
             - src/third_party/gperftools-2.0/src/tcmalloc.cc
         -   symbol_name: tcmalloc::ThreadCache::CreateCacheIfNecessary()

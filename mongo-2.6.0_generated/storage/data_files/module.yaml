@@ -215,7 +215,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/list/transform.hpp
         - src/third_party/boost/boost/functional/hash_fwd.hpp
         - src/third_party/boost/boost/date_time/posix_time/date_duration_operators.hpp
-        - src/third_party/boost/boost/mpl/or.hpp
+        - src/mongo/platform/atomic_intrinsics_gcc_intel.h
         - src/mongo/bson/inline_decls.h
         - src/third_party/boost/libs/system/src/local_free_on_destruction.hpp
         - src/third_party/boost/boost/memory_order.hpp
@@ -318,6 +318,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/na_assert.hpp
         - src/third_party/boost/boost/mpl/aux_/config/pp_counter.hpp
         - src/mongo/util/heapcheck.h
+        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
@@ -338,7 +339,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/mpl/aux_/arg_typedef.hpp
@@ -431,7 +432,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -503,7 +503,7 @@ module_groups:
         - src/third_party/boost/boost/utility/in_place_factory.hpp
         - src/third_party/boost/boost/preprocessor/facilities/overload.hpp
         - src/third_party/boost/boost/type_traits/is_pointer.hpp
-        - src/mongo/platform/atomic_intrinsics_gcc_intel.h
+        - src/third_party/boost/boost/mpl/or.hpp
         - src/third_party/boost/boost/mpl/integral_c.hpp
         - src/third_party/boost/boost/filesystem/v3/path.hpp
         - src/third_party/boost/boost/io_fwd.hpp
@@ -572,7 +572,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/spinlock.hpp
         - src/third_party/boost/boost/type_traits/is_void.hpp
         - src/third_party/boost/boost/smart_ptr/scoped_array.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/config/auto_link.hpp
         - src/third_party/boost/boost/preprocessor/list/for_each_i.hpp
         - src/third_party/boost/boost/preprocessor/logical/compl.hpp
@@ -627,86 +627,86 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
+        -   symbol_name: mongo::MongoFile::closeAllFiles(std::basic_stringstream<char,
+                std::char_traits<char>, std::allocator<char> >&)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::LockMongoFilesShared::era
+            symbol_uses:
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::MongoFile::flushAll(bool)
+            symbol_uses:
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/db/write_concern.cpp
+            - src/mongo/db/commands/fsync.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/repl/oplog.cpp
+        -   symbol_name: mongo::MongoFile::notifyPostFlush
+            symbol_uses:
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::MongoFile::notifyPreFlush
+            symbol_uses:
+            - src/mongo/db/dur_journal.cpp
+        -   symbol_name: mongo::LockMongoFilesShared::mmmutex
+            symbol_uses:
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/util/mmap_posix.cpp
+            - src/mongo/db/commands/touch.cpp
+        -   symbol_name: mongo::minOSPageSizeBytesTest(unsigned long)
+            symbol_uses:
+            - src/mongo/util/mmap_posix.cpp
+        -   symbol_name: mongo::MongoFileFinder::findByPath(std::string const&) const
+            symbol_uses:
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/dur_recover.cpp
         -   symbol_name: mongo::printMemInfo(char const*)
             symbol_uses:
             - src/mongo/util/mmap_posix.cpp
         -   symbol_name: mongo::dataSyncFailedHandler()
             symbol_uses:
             - src/mongo/util/mmap_posix.cpp
-        -   symbol_name: mongo::LockMongoFilesShared::mmmutex
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/pagefault.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/db/commands/touch.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/util/mmap_posix.cpp
-            - src/mongo/tools/sniffer.cpp
-            - src/mongo/db/storage/durable_mapped_file.cpp
         -   symbol_name: mongo::MongoFile::getAllFiles()
             symbol_uses:
-            - src/mongo/util/mmap_posix.cpp
             - src/mongo/db/dur.cpp
-        -   symbol_name: mongo::MongoFile::totalMappedLength()
-            symbol_uses:
-            - src/mongo/db/db.cpp
-            - src/mongo/db/clientcursor.cpp
+            - src/mongo/util/mmap_posix.cpp
         -   symbol_name: mongo::MongoFile::setFilename(std::string const&)
             symbol_uses:
             - src/mongo/util/mmap_posix.cpp
-        -   symbol_name: mongo::LockMongoFilesShared::era
-            symbol_uses:
-            - src/mongo/db/pagefault.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/storage/durable_mapped_file.cpp
-            - src/mongo/tools/sniffer.cpp
-            - src/mongo/util/mmap_posix.cpp
-        -   symbol_name: mongo::MongoFile::flushAll(bool)
-            symbol_uses:
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/write_concern.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/db/repair_database.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/commands/fsync.cpp
-        -   symbol_name: mongo::MongoFile::notifyPostFlush
-            symbol_uses:
-            - src/mongo/db/dur_journal.cpp
         -   symbol_name: mongo::MemoryMappedFile::mapWithOptions(char const*, int)
             symbol_uses:
-            - src/mongo/db/dur_recover.cpp
             - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/dur_recover.cpp
             - src/mongo/db/storage/durable_mapped_file.cpp
-        -   symbol_name: mongo::minOSPageSizeBytesTest(unsigned long)
-            symbol_uses:
-            - src/mongo/util/mmap_posix.cpp
         -   symbol_name: mongo::MongoFile::destroyed()
             symbol_uses:
             - src/mongo/util/mmap_posix.cpp
-        -   symbol_name: mongo::MongoFile::notifyPreFlush
+        -   symbol_name: mongo::MongoFile::totalMappedLength()
             symbol_uses:
-            - src/mongo/db/dur_journal.cpp
-        -   symbol_name: mongo::MongoFile::closeAllFiles(std::basic_stringstream<char,
-                std::char_traits<char>, std::allocator<char> >&)
-            symbol_uses:
-            - src/mongo/db/instance.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/db.cpp
         -   symbol_name: mongo::MongoFile::created()
             symbol_uses:
             - src/mongo/util/mmap_posix.cpp
-        -   symbol_name: mongo::MongoFileFinder::findByPath(std::string const&) const
-            symbol_uses:
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/dbtests/mmaptests.cpp
         -   symbol_name: mongo::MemoryMappedFile::map(char const*)
             symbol_uses:
             - src/mongo/client/examples/mongoperf.cpp
@@ -1150,6 +1150,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/na_assert.hpp
         - src/third_party/boost/boost/mpl/aux_/config/pp_counter.hpp
         - src/mongo/util/heapcheck.h
+        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
@@ -1169,7 +1170,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/mpl/aux_/arg_typedef.hpp
@@ -1264,7 +1265,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -1407,7 +1407,7 @@ module_groups:
         - src/mongo/util/timer-posixclock-inl.h
         - src/third_party/boost/boost/type_traits/is_void.hpp
         - src/third_party/boost/boost/smart_ptr/scoped_array.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/config/auto_link.hpp
         - src/third_party/boost/boost/preprocessor/list/for_each_i.hpp
         - src/third_party/boost/boost/mpl/aux_/msvc_never_true.hpp
@@ -1463,60 +1463,60 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::MemoryMappedFile::prepareFlush()
+        -   symbol_name: mongo::MemoryMappedFile::remapPrivateView(void*)
             symbol_uses:
             - src/mongo/db/storage/durable_mapped_file.cpp
-        -   symbol_name: mongo::MemoryMappedFile::close()
-            symbol_uses:
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/storage/durable_mapped_file.cpp
-            - src/mongo/tools/sniffer.cpp
-        -   symbol_name: mongo::MemoryMappedFile::createPrivateMap()
-            symbol_uses:
-            - src/mongo/db/storage/durable_mapped_file.cpp
-        -   symbol_name: vtable for mongo::MemoryMappedFile
-            symbol_uses:
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/client/examples/mongoperf.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/storage/durable_mapped_file.cpp
-            - src/mongo/tools/sniffer.cpp
-        -   symbol_name: mongo::MAdvise::MAdvise(void*, unsigned int, mongo::MAdvise::Advice)
-            symbol_uses:
-            - src/mongo/db/structure/record_store.cpp
-        -   symbol_name: typeinfo for mongo::MemoryMappedFile
-            symbol_uses:
-            - src/mongo/db/storage/durable_mapped_file.cpp
-        -   symbol_name: mongo::MAdvise::~MAdvise()
-            symbol_uses:
-            - src/mongo/db/structure/record_store.cpp
         -   symbol_name: mongo::MemoryMappedFile::map(char const*, unsigned long long&,
                 int)
             symbol_uses:
             - src/mongo/util/mmap.cpp
             - src/mongo/db/storage/durable_mapped_file.cpp
             - src/mongo/tools/sniffer.cpp
+        -   symbol_name: mongo::MAdvise::~MAdvise()
+            symbol_uses:
+            - src/mongo/db/structure/record_store.cpp
+        -   symbol_name: typeinfo for mongo::MemoryMappedFile
+            symbol_uses:
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::MemoryMappedFile::MemoryMappedFile()
+            symbol_uses:
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+        -   symbol_name: mongo::MemoryMappedFile::prepareFlush()
+            symbol_uses:
+            - src/mongo/db/storage/durable_mapped_file.cpp
+        -   symbol_name: mongo::MemoryMappedFile::close()
+            symbol_uses:
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/client/examples/mongoperf.cpp
         -   symbol_name: mongo::MemoryMappedFile::flush(bool)
             symbol_uses:
             - src/mongo/db/storage/durable_mapped_file.cpp
             - src/mongo/db/storage/data_file.cpp
-        -   symbol_name: mongo::MemoryMappedFile::remapPrivateView(void*)
+        -   symbol_name: mongo::MemoryMappedFile::createPrivateMap()
             symbol_uses:
             - src/mongo/db/storage/durable_mapped_file.cpp
-        -   symbol_name: mongo::g_minOSPageSizeBytes
+        -   symbol_name: vtable for mongo::MemoryMappedFile
             symbol_uses:
-            - src/mongo/db/prefetch.cpp
-            - src/mongo/util/touch_pages.cpp
-            - src/mongo/util/logfile.cpp
-        -   symbol_name: mongo::MemoryMappedFile::MemoryMappedFile()
-            symbol_uses:
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/client/examples/mongoperf.cpp
             - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/dur_recover.cpp
             - src/mongo/db/storage/durable_mapped_file.cpp
             - src/mongo/tools/sniffer.cpp
+            - src/mongo/client/examples/mongoperf.cpp
+        -   symbol_name: mongo::MAdvise::MAdvise(void*, unsigned int, mongo::MAdvise::Advice)
+            symbol_uses:
+            - src/mongo/db/structure/record_store.cpp
+        -   symbol_name: mongo::g_minOSPageSizeBytes
+            symbol_uses:
+            - src/mongo/util/logfile.cpp
+            - src/mongo/util/touch_pages.cpp
+            - src/mongo/db/prefetch.cpp
         file_dependencies:
         -   symbol_name: mongo::MongoFile::setFilename(std::string const&)
             symbol_sources:
@@ -1958,6 +1958,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/na_assert.hpp
         - src/third_party/boost/boost/mpl/aux_/config/pp_counter.hpp
         - src/mongo/util/heapcheck.h
+        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
@@ -1978,7 +1979,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/mongo/db/dur.h
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -2075,7 +2076,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -2218,7 +2218,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/spinlock.hpp
         - src/mongo/util/timer-posixclock-inl.h
         - src/third_party/boost/boost/smart_ptr/scoped_array.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/config/auto_link.hpp
         - src/third_party/boost/boost/preprocessor/list/for_each_i.hpp
         - src/third_party/boost/boost/mpl/aux_/msvc_never_true.hpp
@@ -2274,13 +2274,10 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::DataFile::openExisting(char const*)
-            symbol_uses:
-            - src/mongo/db/storage/extent_manager.cpp
         -   symbol_name: mongo::DataFile::open(char const*, int, bool)
             symbol_uses:
             - src/mongo/db/storage/extent_manager.cpp
-        -   symbol_name: mongo::DataFile::flush(bool)
+        -   symbol_name: mongo::DataFile::openExisting(char const*)
             symbol_uses:
             - src/mongo/db/storage/extent_manager.cpp
         -   symbol_name: mongo::DataFile::allocExtentArea(int)
@@ -2289,8 +2286,11 @@ module_groups:
         -   symbol_name: mongo::DataFile::maxSize()
             symbol_uses:
             - src/mongo/db/storage/extent_manager.cpp
-            - src/mongo/db/storage/extent.cpp
             - src/mongo/dbtests/pdfiletests.cpp
+            - src/mongo/db/storage/extent.cpp
+        -   symbol_name: mongo::DataFile::flush(bool)
+            symbol_uses:
+            - src/mongo/db/storage/extent_manager.cpp
         -   symbol_name: mongo::DataFile::badOfs(int) const
             symbol_uses:
             - src/mongo/db/storage/extent_manager.cpp
@@ -2303,11 +2303,11 @@ module_groups:
             - src/mongo/util/assert_util.cpp
         -   symbol_name: mongo::inShutdown()
             symbol_sources:
-            - src/mongo/client/scoped_db_conn_test.cpp
             - src/mongo/unittest/crutch.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/s/server.cpp
             - src/mongo/client/clientAndShell.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/scoped_db_conn_test.cpp
+            - src/mongo/s/server.cpp
         -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
                 int)
             symbol_sources:

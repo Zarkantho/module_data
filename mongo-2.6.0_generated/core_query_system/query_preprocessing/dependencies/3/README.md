@@ -284,6 +284,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for S2Region
+
+- Provided By:
+
+    - [src/third\_party/s2/s2region.cc](../../../../third\_party/s2)
+
+<div></div>
+
     mongo::msgasserted(int, std::string const&)
 
 - Provided By:
@@ -443,6 +451,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/third\_party/s2/s2cell.cc](../../../../third\_party/s2)
+
+<div></div>
+
+    vtable for S2Region
+
+- Provided By:
+
+    - [src/third\_party/s2/s2region.cc](../../../../third\_party/s2)
 
 <div></div>
 
@@ -1201,6 +1217,14 @@ This dependency information represents symbols that are used in this group but d
 <div></div>
 
     S2Region::~S2Region()
+
+- Provided By:
+
+    - [src/third\_party/s2/s2region.cc](../../../../third\_party/s2)
+
+<div></div>
+
+    vtable for S2Region
 
 - Provided By:
 

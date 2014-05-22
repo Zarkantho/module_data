@@ -338,7 +338,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/detail/dmc/auto_rec.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/mpl/arg.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/platform/cstdint.h
@@ -487,6 +487,7 @@ module_groups:
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/pcre-8.30/pcrecpp.h
         - src/third_party/boost/boost/math/tools/real_cast.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -520,7 +521,7 @@ module_groups:
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/third_party/boost/boost/preprocessor/control/detail/while.hpp
         - src/third_party/boost/boost/date_time/time_facet.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/mongo/db/namespace_string-inl.h
@@ -669,7 +670,6 @@ module_groups:
         - src/third_party/boost/boost/algorithm/string/detail/case_conv.hpp
         - src/third_party/boost/boost/date_time/date.hpp
         - src/third_party/boost/boost/mpl/void_fwd.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/numeric/conversion/detail/int_float_mixture.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
@@ -966,71 +966,71 @@ module_groups:
         - src/third_party/boost/boost/date_time/format_date_parser.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
+        -   symbol_name: mongo::Grid::getDBConfig(mongo::StringData const&, bool,
+                std::string const&)
+            symbol_uses:
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+            - src/mongo/s/request.cpp
+        -   symbol_name: mongo::Grid::addShard(std::string*, mongo::ConnectionString
+                const&, long long, std::string&)
+            symbol_uses:
+            - src/mongo/s/commands_admin.cpp
         -   symbol_name: mongo::Grid::shouldBalance(std::string const&, mongo::BSONObj*)
                 const
             symbol_uses:
             - src/mongo/s/balance.cpp
             - src/mongo/s/chunk.cpp
-        -   symbol_name: mongo::Grid::removeDBIfExists(mongo::DBConfig const&)
-            symbol_uses:
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/config.cpp
-        -   symbol_name: mongo::Grid::getDBConfig(mongo::StringData const&, bool,
-                std::string const&)
-            symbol_uses:
-            - src/mongo/s/request.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/version_manager.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/client/parallel.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-        -   symbol_name: mongo::Grid::removeDB(std::string const&)
-            symbol_uses:
-            - src/mongo/s/config.cpp
         -   symbol_name: mongo::Grid::getConfigSetting(std::string const&) const
             symbol_uses:
             - src/mongo/s/chunk.cpp
-        -   symbol_name: mongo::Grid::addShard(std::string*, mongo::ConnectionString
-                const&, long long, std::string&)
-            symbol_uses:
-            - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::Grid::setAllowLocalHost(bool)
-            symbol_uses:
-            - src/mongo/s/server.cpp
-        -   symbol_name: mongo::Grid::knowAboutShard(std::string const&) const
-            symbol_uses:
-            - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::Grid::flushConfig()
-            symbol_uses:
-            - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::grid
-            symbol_uses:
-            - src/mongo/s/request.cpp
-            - src/mongo/s/server.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/version_manager.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/client/parallel.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
         -   symbol_name: mongo::Grid::allowLocalHost() const
             symbol_uses:
             - src/mongo/s/commands_admin.cpp
             - src/mongo/s/server.cpp
+        -   symbol_name: mongo::Grid::removeDBIfExists(mongo::DBConfig const&)
+            symbol_uses:
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/config.cpp
+        -   symbol_name: mongo::Grid::setAllowLocalHost(bool)
+            symbol_uses:
+            - src/mongo/s/server.cpp
+        -   symbol_name: mongo::Grid::removeDB(std::string const&)
+            symbol_uses:
+            - src/mongo/s/config.cpp
+        -   symbol_name: mongo::grid
+            symbol_uses:
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+            - src/mongo/s/request.cpp
+        -   symbol_name: mongo::Grid::flushConfig()
+            symbol_uses:
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::Grid::knowAboutShard(std::string const&) const
+            symbol_uses:
+            - src/mongo/s/commands_admin.cpp
         file_dependencies:
         -   symbol_name: mongo::DBClientWithCommands::simpleCommand(std::string const&,
                 mongo::BSONObj*, std::string const&)
@@ -1093,8 +1093,8 @@ module_groups:
             - src/mongo/client/connpool.cpp
         -   symbol_name: mongo::isMongos()
             symbol_sources:
-            - src/mongo/db/sorter/sorter_test.cpp
             - src/mongo/db/server_options_helpers.cpp
+            - src/mongo/db/sorter/sorter_test.cpp
         -   symbol_name: mongo::msgasserted(int, char const*)
             symbol_sources:
             - src/mongo/util/assert_util.cpp
@@ -1606,7 +1606,7 @@ module_groups:
         - src/third_party/boost/boost/range/detail/const_iterator.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/facilities/identity.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
@@ -1760,6 +1760,7 @@ module_groups:
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/pcre-8.30/pcrecpp.h
         - src/third_party/boost/boost/math/tools/real_cast.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1793,7 +1794,7 @@ module_groups:
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/third_party/boost/boost/preprocessor/control/detail/while.hpp
         - src/third_party/boost/boost/date_time/time_facet.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/mongo/db/dur.h
@@ -1945,7 +1946,6 @@ module_groups:
         - src/third_party/boost/boost/date_time/date.hpp
         - src/third_party/boost/boost/preprocessor/punctuation/paren.hpp
         - src/third_party/boost/boost/mpl/void_fwd.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/numeric/conversion/detail/int_float_mixture.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
@@ -2270,112 +2270,139 @@ module_groups:
             symbol_uses:
             - src/mongo/s/grid.cpp
             - src/mongo/s/shard.cpp
-        -   symbol_name: mongo::configServer
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/server.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/d_state.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/s/version_manager.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
-            - src/mongo/s/config_server_checker_service.cpp
-            - src/mongo/s/dbclient_shard_resolver.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-            - src/mongo/s/d_split.cpp
-        -   symbol_name: mongo::DBConfig::getChunkManager(std::string const&, bool,
-                bool)
-            symbol_uses:
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/s/version_manager.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-        -   symbol_name: mongo::serverID
-            symbol_uses:
-            - src/mongo/s/version_manager.cpp
-            - src/mongo/s/server.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/writeback_listener.cpp
-        -   symbol_name: mongo::ConfigServer::reloadSettings()
-            symbol_uses:
-            - src/mongo/s/server.cpp
-        -   symbol_name: mongo::DBConfig::getShard(std::string const&)
-            symbol_uses:
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/s/commands_public.cpp
-        -   symbol_name: mongo::DBConfig::dropDatabase(std::string&)
-            symbol_uses:
-            - src/mongo/s/commands_public.cpp
-        -   symbol_name: mongo::ConfigServer::checkHostsAreUnique(std::vector<std::string,
-                std::allocator<std::string> > const&, std::string*)
-            symbol_uses:
-            - src/mongo/s/config_server_tests.cpp
         -   symbol_name: mongo::DBConfig::getChunkManagerIfExists(std::string const&,
                 bool, bool)
             symbol_uses:
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/balance.cpp
             - src/mongo/s/version_manager.cpp
-            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/chunk.cpp
             - src/mongo/client/parallel.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-        -   symbol_name: mongo::DBConfig::getChunkManagerOrPrimary(std::string const&,
-                boost::shared_ptr<mongo::ChunkManager const>&, boost::shared_ptr<mongo::Shard>&)
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
             - src/mongo/s/chunk_manager_targeter.cpp
             - src/mongo/s/commands_public.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/client/parallel.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+        -   symbol_name: mongo::DBConfig::getChunkManager(std::string const&, bool,
+                bool)
+            symbol_uses:
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
         -   symbol_name: mongo::configServerPtr
             symbol_uses:
             - src/mongo/s/grid.cpp
-        -   symbol_name: mongo::ConfigServer::logChange(std::string const&, std::string
-                const&, mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/s/d_split.cpp
-        -   symbol_name: mongo::DBConfig::getAllShards(std::set<mongo::Shard, std::less<mongo::Shard>,
-                std::allocator<mongo::Shard> >&) const
+        -   symbol_name: mongo::DBConfig::dropDatabase(std::string&)
             symbol_uses:
             - src/mongo/s/commands_public.cpp
-        -   symbol_name: mongo::ConfigServer::~ConfigServer()
-            symbol_uses:
-            - src/mongo/s/config_server_tests.cpp
         -   symbol_name: mongo::DBConfig::getAllShardedCollections(std::set<std::string,
                 std::less<std::string>, std::allocator<std::string> >&) const
             symbol_uses:
             - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::DBConfig::setPrimary(std::string const&)
+        -   symbol_name: mongo::DBConfig::isSharded(std::string const&)
+            symbol_uses:
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+        -   symbol_name: mongo::ConfigServer::allUp(std::string&)
             symbol_uses:
             - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/grid.cpp
-        -   symbol_name: mongo::ConfigServer::init(std::string const&)
+        -   symbol_name: mongo::DBConfig::removeSharding(std::string const&)
             symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/s/d_state.cpp
+            - src/mongo/s/commands_public.cpp
+        -   symbol_name: mongo::DBConfig::getShard(std::string const&)
+            symbol_uses:
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+        -   symbol_name: mongo::ConfigServer::logChange(std::string const&, std::string
+                const&, mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/s/d_split.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/chunk.cpp
+        -   symbol_name: mongo::ConfigServer::~ConfigServer()
+            symbol_uses:
+            - src/mongo/s/config_server_tests.cpp
+        -   symbol_name: mongo::ConfigServer::ok(bool)
+            symbol_uses:
+            - src/mongo/s/config_server_checker_service.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/server.cpp
+        -   symbol_name: mongo::DBConfig::reload()
+            symbol_uses:
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+        -   symbol_name: mongo::serverID
+            symbol_uses:
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/s/chunk.cpp
+        -   symbol_name: mongo::ConfigServer::checkHostsAreUnique(std::vector<std::string,
+                std::allocator<std::string> > const&, std::string*)
+            symbol_uses:
+            - src/mongo/s/config_server_tests.cpp
+        -   symbol_name: mongo::DBConfig::getChunkManagerOrPrimary(std::string const&,
+                boost::shared_ptr<mongo::ChunkManager const>&, boost::shared_ptr<mongo::Shard>&)
+            symbol_uses:
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
         -   symbol_name: mongo::DBConfig::enableSharding(bool)
             symbol_uses:
             - src/mongo/s/commands_public.cpp
             - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::DBConfig::removeSharding(std::string const&)
+        -   symbol_name: mongo::ConfigServer::init(std::string const&)
+            symbol_uses:
+            - src/mongo/s/d_state.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+        -   symbol_name: mongo::DBConfig::load()
+            symbol_uses:
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/grid.cpp
+        -   symbol_name: mongo::DBConfig::setPrimary(std::string const&)
+            symbol_uses:
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::configServer
+            symbol_uses:
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/s/dbclient_shard_resolver.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+        -   symbol_name: mongo::ConfigServer::allUp()
+            symbol_uses:
+            - src/mongo/s/chunk.cpp
+        -   symbol_name: mongo::DBConfig::getAllShards(std::set<mongo::Shard, std::less<mongo::Shard>,
+                std::allocator<mongo::Shard> >&) const
             symbol_uses:
             - src/mongo/s/commands_public.cpp
         -   symbol_name: mongo::DBConfig::shardCollection(std::string const&, mongo::ShardKeyPattern,
@@ -2384,36 +2411,9 @@ module_groups:
             symbol_uses:
             - src/mongo/s/commands_public.cpp
             - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::DBConfig::isSharded(std::string const&)
+        -   symbol_name: mongo::ConfigServer::reloadSettings()
             symbol_uses:
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/version_manager.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-        -   symbol_name: mongo::ConfigServer::ok(bool)
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/config_server_checker_service.cpp
             - src/mongo/s/server.cpp
-        -   symbol_name: mongo::DBConfig::load()
-            symbol_uses:
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/grid.cpp
-        -   symbol_name: mongo::ConfigServer::allUp()
-            symbol_uses:
-            - src/mongo/s/chunk.cpp
-        -   symbol_name: mongo::ConfigServer::allUp(std::string&)
-            symbol_uses:
-            - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::DBConfig::reload()
-            symbol_uses:
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/version_manager.cpp
-            - src/mongo/client/parallel.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
         -   symbol_name: mongo::ConfigServer::replicaSetChange(std::string const&,
                 std::string const&)
             symbol_uses:
@@ -2803,11 +2803,11 @@ module_groups:
             - src/mongo/client/dbclient.cpp
         -   symbol_name: mongo::dbexit(mongo::ExitCode, char const*)
             symbol_sources:
-            - src/mongo/client/scoped_db_conn_test.cpp
             - src/mongo/unittest/crutch.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/s/server.cpp
             - src/mongo/client/clientAndShell.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/scoped_db_conn_test.cpp
+            - src/mongo/s/server.cpp
         -   symbol_name: mongo::AScopedConnection::_numConnections
             symbol_sources:
             - src/mongo/client/connpool.cpp
@@ -3019,7 +3019,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -3098,6 +3098,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -3115,7 +3116,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -3203,7 +3204,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -3638,7 +3638,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -3717,6 +3717,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -3733,7 +3734,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -3821,7 +3822,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -4003,13 +4003,13 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
-        -   symbol_name: mongo::startConfigServerChecker()
-            symbol_uses:
-            - src/mongo/s/server.cpp
         -   symbol_name: mongo::isConfigServerConsistent()
             symbol_uses:
             - src/mongo/s/balance.cpp
             - src/mongo/s/chunk.cpp
+        -   symbol_name: mongo::startConfigServerChecker()
+            symbol_uses:
+            - src/mongo/s/server.cpp
         file_dependencies:
         -   symbol_name: mongo::ConfigServer::ok(bool)
             symbol_sources:
@@ -4019,11 +4019,11 @@ module_groups:
             - src/third_party/boost/libs/thread/src/pthread/thread.cpp
         -   symbol_name: mongo::inShutdown()
             symbol_sources:
-            - src/mongo/client/scoped_db_conn_test.cpp
             - src/mongo/unittest/crutch.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/s/server.cpp
             - src/mongo/client/clientAndShell.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/scoped_db_conn_test.cpp
+            - src/mongo/s/server.cpp
         -   symbol_name: boost::thread::~thread()
             symbol_sources:
             - src/third_party/boost/libs/thread/src/pthread/thread.cpp

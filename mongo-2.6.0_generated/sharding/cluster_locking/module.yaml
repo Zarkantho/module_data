@@ -288,6 +288,7 @@ module_groups:
         - src/third_party/boost/boost/optional/optional_fwd.hpp
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/bind/placeholders.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
@@ -306,7 +307,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -391,7 +392,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -516,7 +516,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/spinlock.hpp
         - src/mongo/util/timer-posixclock-inl.h
         - src/third_party/boost/boost/smart_ptr/scoped_array.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/config/auto_link.hpp
         - src/third_party/boost/boost/preprocessor/list/for_each_i.hpp
         - src/third_party/boost/boost/preprocessor/logical/compl.hpp
@@ -572,54 +572,54 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
+        -   symbol_name: mongo::DistributedLock::isLockHeld(double, std::string*)
+            symbol_uses:
+            - src/mongo/s/d_migrate.cpp
+        -   symbol_name: mongo::setLockPingerEnabled(bool)
+            symbol_uses:
+            - src/mongo/dbtests/config_server_fixture.cpp
+        -   symbol_name: mongo::ScopedDistributedLock::~ScopedDistributedLock()
+            symbol_uses:
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/s/config_upgrade.cpp
+        -   symbol_name: mongo::ScopedDistributedLock::acquire(long long, std::string*)
+            symbol_uses:
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/s/config_upgrade.cpp
+        -   symbol_name: mongo::DistributedLock::lock_try(std::string const&, bool,
+                mongo::BSONObj*, double)
+            symbol_uses:
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::ScopedDistributedLock::tryAcquire(std::string*)
+            symbol_uses:
+            - src/mongo/s/d_merge.cpp
+        -   symbol_name: mongo::DistributedLock::DistributedLock(mongo::ConnectionString
+                const&, std::string const&, unsigned long long, bool)
+            symbol_uses:
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::DistributedLock::unlock(mongo::BSONObj*)
+            symbol_uses:
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/commands_admin.cpp
         -   symbol_name: mongo::ScopedDistributedLock::ScopedDistributedLock(mongo::ConnectionString
                 const&, std::string const&)
             symbol_uses:
             - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/s/config_upgrade.cpp
             - src/mongo/s/d_merge.cpp
-        -   symbol_name: mongo::DistributedLock::isLockHeld(double, std::string*)
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-        -   symbol_name: mongo::DistributedLock::DistributedLock(mongo::ConnectionString
-                const&, std::string const&, unsigned long long, bool)
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/d_split.cpp
-        -   symbol_name: mongo::DistributedLock::unlock(mongo::BSONObj*)
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/d_split.cpp
-        -   symbol_name: mongo::ScopedDistributedLock::tryAcquire(std::string*)
-            symbol_uses:
-            - src/mongo/s/d_merge.cpp
-        -   symbol_name: mongo::ScopedDistributedLock::~ScopedDistributedLock()
-            symbol_uses:
-            - src/mongo/s/config_upgrade.cpp
-            - src/mongo/s/d_merge.cpp
-        -   symbol_name: mongo::DistributedLock::lock_try(std::string const&, bool,
-                mongo::BSONObj*, double)
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/d_split.cpp
-        -   symbol_name: mongo::setLockPingerEnabled(bool)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-        -   symbol_name: mongo::ScopedDistributedLock::acquire(long long, std::string*)
-            symbol_uses:
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
             - src/mongo/s/config_upgrade.cpp
         file_dependencies:
         -   symbol_name: typeinfo for boost::detail::thread_data_base
@@ -781,11 +781,11 @@ module_groups:
             - src/mongo/bson/oid.cpp
         -   symbol_name: mongo::inShutdown()
             symbol_sources:
-            - src/mongo/client/scoped_db_conn_test.cpp
             - src/mongo/unittest/crutch.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/s/server.cpp
             - src/mongo/client/clientAndShell.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/scoped_db_conn_test.cpp
+            - src/mongo/s/server.cpp
         -   symbol_name: mongo::ConnectionString::_finishInit()
             symbol_sources:
             - src/mongo/client/dbclient.cpp
@@ -1071,7 +1071,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/facilities/identity.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
@@ -1149,7 +1149,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/slot/slot.hpp
         - src/third_party/boost/boost/type_traits/is_enum.hpp
         - src/third_party/boost/boost/thread/pthread/timespec.hpp
-        - build/darwin/ssl/mongo/db/auth/action_type.h
+        - src/third_party/boost/boost/preprocessor/seq/size.hpp
         - src/third_party/boost/boost/random/detail/integer_log2.hpp
         - src/third_party/boost/boost/mpl/aux_/preprocessor/sub.hpp
         - src/third_party/boost/boost/random/detail/seed.hpp
@@ -1164,6 +1164,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1182,7 +1183,7 @@ module_groups:
         - src/mongo/base/initializer_dependency_graph.h
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/third_party/boost/boost/random/detail/generator_seed_seq.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -1243,6 +1244,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/empty.hpp
         - src/third_party/boost/boost/config/posix_features.hpp
         - src/third_party/boost/boost/optional/optional.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/db/auth/action_type.h
         - src/third_party/boost/boost/type_traits/type_with_alignment.hpp
         - src/third_party/boost/boost/operators.hpp
         - src/third_party/boost/boost/thread/detail/platform.hpp
@@ -1255,7 +1257,7 @@ module_groups:
         - src/mongo/platform/atomic_word.h
         - src/third_party/boost/boost/type_traits/detail/yes_no_type.hpp
         - src/third_party/boost/boost/date_time/adjust_functors.hpp
-        - src/mongo/db/commands.h
+        - src/mongo/util/assert_util.h
         - src/third_party/boost/boost/mpl/aux_/config/ttp.hpp
         - src/mongo/platform/unordered_set.h
         - src/third_party/boost/boost/preprocessor/control/detail/edg/while.hpp
@@ -1274,7 +1276,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -1306,7 +1307,6 @@ module_groups:
         - src/mongo/util/timer-generic-inl.h
         - src/third_party/boost/boost/random/detail/config.hpp
         - src/mongo/logger/log_domain.h
-        - src/third_party/boost/boost/preprocessor/seq/size.hpp
         - src/third_party/boost/boost/date_time/gregorian/greg_day.hpp
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/mpl/aux_/config/static_constant.hpp
@@ -1378,7 +1378,7 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/iteration/iterate.hpp
         - src/third_party/boost/boost/type_traits/remove_bounds.hpp
         - src/mongo/base/parse_number.h
-        - src/mongo/util/assert_util.h
+        - src/mongo/db/commands.h
         - src/third_party/boost/boost/bind/arg.hpp
         - src/third_party/boost/boost/mpl/limits/arity.hpp
         - src/third_party/boost/boost/date_time/gregorian/greg_duration.hpp

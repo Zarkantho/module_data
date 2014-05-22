@@ -16,20 +16,12 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::GeometryContainer::getRegion() const
-
-- Used By:
-
-    - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
-
-<div></div>
-
     mongo::GeometryContainer::parseFrom(mongo::BSONObj const&)
 
 - Used By:
 
-    - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
     - [src/mongo/db/matcher/expression\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
+    - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
 
 <div></div>
 
@@ -38,22 +30,6 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
-
-<div></div>
-
-    mongo::GeometryContainer::isSimpleContainer() const
-
-- Used By:
-
-    - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
-
-<div></div>
-
-    mongo::GeoQuery::satisfiesPredicate(mongo::GeometryContainer const&) const
-
-- Used By:
-
-    - [src/mongo/db/matcher/expression\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
 
 <div></div>
 
@@ -75,6 +51,22 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::GeometryContainer::getRegion() const
+
+- Used By:
+
+    - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
+
+<div></div>
+
+    mongo::GeoQuery::satisfiesPredicate(mongo::GeometryContainer const&) const
+
+- Used By:
+
+    - [src/mongo/db/matcher/expression\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
+
+<div></div>
+
     mongo::GeometryContainer::hasFlatRegion() const
 
 - Used By:
@@ -90,16 +82,15 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
 
-### src/mongo/db/geo/hash.cpp
-
 <div></div>
 
-    mongo::GeoHashConverter::unhashToBox(mongo::GeoHash const&) const
+    mongo::GeometryContainer::isSimpleContainer() const
 
 - Used By:
 
-    - [src/mongo/db/query/explain\_plan.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/index/s2\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
+
+### src/mongo/db/geo/hash.cpp
 
 <div></div>
 
@@ -123,6 +114,15 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::GeoHashConverter::sizeEdge(mongo::GeoHash const&) const
+
+- Used By:
+
+    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
@@ -170,14 +170,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::GeoHashConverter::hash(mongo::BSONObj const&, mongo::BSONObj const*) const
-
-- Used By:
-
-    - [src/mongo/db/index/2d\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
-
-<div></div>
-
     mongo::GeoHash::GeoHash()
 
 - Used By:
@@ -203,15 +195,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::GeoHashConverter::sizeEdge(mongo::GeoHash const&) const
-
-- Used By:
-
-    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
     mongo::GeoHash::atMinY() const
 
 - Used By:
@@ -229,11 +212,28 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::GeoHashConverter::unhashToBox(mongo::GeoHash const&) const
+
+- Used By:
+
+    - [src/mongo/db/query/explain\_plan.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
     mongo::GeoHash::atMaxY() const
 
 - Used By:
 
     - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::GeoHashConverter::hash(mongo::BSONObj const&, mongo::BSONObj const*) const
+
+- Used By:
+
+    - [src/mongo/db/index/2d\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
 
 <div></div>
 
@@ -267,9 +267,9 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/query/planner\_ixselect.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/index/external\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
     - [src/mongo/db/query/explain\_plan.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/index/2d\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/index/external\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
 
 <div></div>
 
@@ -318,41 +318,15 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::Point::Point(mongo::BSONObj const&)
+    mongo::Box::maxDim() const
 
 - Used By:
 
-    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::Box::toString() const
-
-- Used By:
-
-    - [src/mongo/db/query/explain\_plan.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
 
     mongo::Box::inside(mongo::Point, double) const
-
-- Used By:
-
-    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::Polygon::contains(mongo::Point const&) const
-
-- Used By:
-
-    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::Box::onBoundary(mongo::Point, double)
 
 - Used By:
 
@@ -368,7 +342,70 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::Box::fudge(double)
+    mongo::Point::Point(double, double)
+
+- Used By:
+
+    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::distance(mongo::Point const&, mongo::Point const&)
+
+- Used By:
+
+    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
+
+<div></div>
+
+    mongo::Box::truncate(double, double)
+
+- Used By:
+
+    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::Point::Point(mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
+
+<div></div>
+
+    mongo::Polygon::bounds()
+
+- Used By:
+
+    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::Box::Box()
+
+- Used By:
+
+    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::checkEarthBounds(mongo::Point const&)
+
+- Used By:
+
+    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::Box::onBoundary(mongo::Point, double)
 
 - Used By:
 
@@ -380,15 +417,6 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::Box::intersects(mongo::Box const&) const
-
-- Used By:
-
-    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
@@ -409,65 +437,12 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::Polygon::bounds()
-
-- Used By:
-
-    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::Box::maxDim() const
-
-- Used By:
-
-    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::checkEarthBounds(mongo::Point const&)
-
-- Used By:
-
-    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
     mongo::distanceWithin(mongo::Point const&, mongo::Point const&, double)
 
 - Used By:
 
+    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::distance(mongo::Point const&, mongo::Point const&)
-
-- Used By:
-
-    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/index/haystack\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
-
-<div></div>
-
-    mongo::Box::Box()
-
-- Used By:
-
-    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::Polygon::contains(mongo::Point const&, double) const
-
-- Used By:
-
-    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
 
@@ -488,7 +463,15 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::Point::Point(double, double)
+    mongo::Box::toString() const
+
+- Used By:
+
+    - [src/mongo/db/query/explain\_plan.cpp](../../../../core\_query\_system/query\_planner)
+
+<div></div>
+
+    mongo::Polygon::contains(mongo::Point const&) const
 
 - Used By:
 
@@ -496,7 +479,24 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::Box::truncate(double, double)
+    mongo::Box::intersects(mongo::Box const&) const
+
+- Used By:
+
+    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::Polygon::contains(mongo::Point const&, double) const
+
+- Used By:
+
+    - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::Box::fudge(double)
 
 - Used By:
 
@@ -508,12 +508,12 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/query/planner\_access.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/query/stage\_builder.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
-    - [src/mongo/db/query/query\_solution.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/db/matcher/expression\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
-    - [src/mongo/db/query/query\_planner.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/2dnear.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/matcher/expression\_parser\_geo.cpp](../../../../core\_query\_system/query\_preprocessing)
     - [src/mongo/db/exec/2d.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/planner\_access.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/query/query\_solution.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/query/query\_planner.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/query/stage\_builder.cpp](../../../../core\_query\_system/query\_execution)

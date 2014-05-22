@@ -6,7 +6,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::MemoryMappedFile::prepareFlush()
+    mongo::MemoryMappedFile::remapPrivateView(void*)
 
 - Used By:
 
@@ -14,39 +14,16 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::MemoryMappedFile::close()
+    mongo::MemoryMappedFile::map(char const*, unsigned long long&, int)
 
 - Used By:
 
-    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
-    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
     - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
 
 <div></div>
 
-    mongo::MemoryMappedFile::createPrivateMap()
-
-- Used By:
-
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
-
-<div></div>
-
-    vtable for mongo::MemoryMappedFile
-
-- Used By:
-
-    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
-    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
-    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
-
-<div></div>
-
-    mongo::MAdvise::MAdvise(void*, unsigned int, mongo::MAdvise::Advice)
+    mongo::MAdvise::~MAdvise()
 
 - Used By:
 
@@ -62,20 +39,35 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::MAdvise::~MAdvise()
+    mongo::MemoryMappedFile::MemoryMappedFile()
 
 - Used By:
 
-    - [src/mongo/db/structure/record\_store.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
-    mongo::MemoryMappedFile::map(char const*, unsigned long long&, int)
+    mongo::MemoryMappedFile::prepareFlush()
 
 - Used By:
 
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
+
+<div></div>
+
+    mongo::MemoryMappedFile::close()
+
+- Used By:
+
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
     - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -87,11 +79,31 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::MemoryMappedFile::remapPrivateView(void*)
+    mongo::MemoryMappedFile::createPrivateMap()
 
 - Used By:
 
     - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
+
+<div></div>
+
+    vtable for mongo::MemoryMappedFile
+
+- Used By:
+
+    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
+    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
+    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    mongo::MAdvise::MAdvise(void*, unsigned int, mongo::MAdvise::Advice)
+
+- Used By:
+
+    - [src/mongo/db/structure/record\_store.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -99,18 +111,6 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
-    - [src/mongo/util/touch\_pages.cpp](../../../../utilities/utilities)
     - [src/mongo/util/logfile.cpp](../../../../storage/journaling)
-
-<div></div>
-
-    mongo::MemoryMappedFile::MemoryMappedFile()
-
-- Used By:
-
-    - [src/mongo/db/dur\_recover.cpp](../../../../storage/journaling)
-    - [src/mongo/client/examples/mongoperf.cpp](../../../../network/cpp\_client\_driver)
-    - [src/mongo/dbtests/perftests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/storage/durable\_mapped\_file.cpp](../../../../storage/journaling)
-    - [src/mongo/tools/sniffer.cpp](../../../../tools/tools)
+    - [src/mongo/util/touch\_pages.cpp](../../../../utilities/utilities)
+    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)

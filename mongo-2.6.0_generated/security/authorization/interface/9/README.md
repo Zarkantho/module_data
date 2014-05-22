@@ -10,8 +10,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/tools/restore.cpp](../../../../tools/tools)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/tools/restore.cpp](../../../../tools/tools)
 
 ### src/mongo/db/auth/authz\_manager\_external\_state\_mock.cpp
 

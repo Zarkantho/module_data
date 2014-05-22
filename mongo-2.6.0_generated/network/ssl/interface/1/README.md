@@ -15,23 +15,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::storeSSLServerOptions(mongo::optionenvironment::Environment const&)
-
-- Used By:
-
-    - [src/mongo/db/server\_options\_helpers.cpp](../../../../process\_management/mongod\_and\_mongos\_command\_line\_options)
-
-<div></div>
-
-    mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)
-
-- Used By:
-
-    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongod\_and\_mongos\_command\_line\_options)
-    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongod\_and\_mongos\_command\_line\_options)
-
-<div></div>
-
     mongo::storeSSLClientOptions(mongo::optionenvironment::Environment const&)
 
 - Used By:
@@ -47,3 +30,20 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongod\_and\_mongos\_command\_line\_options)
     - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongod\_and\_mongos\_command\_line\_options)
+
+<div></div>
+
+    mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)
+
+- Used By:
+
+    - [src/mongo/db/mongod\_options.cpp](../../../../process\_management/mongod\_and\_mongos\_command\_line\_options)
+    - [src/mongo/s/mongos\_options.cpp](../../../../process\_management/mongod\_and\_mongos\_command\_line\_options)
+
+<div></div>
+
+    mongo::storeSSLServerOptions(mongo::optionenvironment::Environment const&)
+
+- Used By:
+
+    - [src/mongo/db/server\_options\_helpers.cpp](../../../../process\_management/mongod\_and\_mongos\_command\_line\_options)

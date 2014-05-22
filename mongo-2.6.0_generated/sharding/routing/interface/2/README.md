@@ -6,14 +6,14 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::clusterDelete(std::string const&, mongo::BSONObj const&, int, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
+    mongo::clusterInsert(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
 
 - Used By:
 
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
     - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
-    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
-    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/config\_metadata\_upgrade)
+    - [src/mongo/s/grid.cpp](../../../../sharding/cluster\_metadata\_management)
 
 <div></div>
 
@@ -37,10 +37,29 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/balance.cpp](../../../../sharding/balancer)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
     - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
     - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
+    - [src/mongo/s/balance.cpp](../../../../sharding/balancer)
+
+<div></div>
+
+    mongo::clusterDelete(std::string const&, mongo::BSONObj const&, int, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
+
+- Used By:
+
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
+
+<div></div>
+
+    mongo::ClusterWriterStats::getShardStats() const
+
+- Used By:
+
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -60,33 +79,14 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::clusterInsert(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
-
-- Used By:
-
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
-    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
-    - [src/mongo/s/cluster\_client\_internal.cpp](../../../../sharding/config\_metadata\_upgrade)
-    - [src/mongo/s/grid.cpp](../../../../sharding/cluster\_metadata\_management)
-
-<div></div>
-
-    mongo::ClusterWriterStats::getShardStats() const
-
-- Used By:
-
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
-
-<div></div>
-
     mongo::clusterUpdate(std::string const&, mongo::BSONObj const&, mongo::BSONObj const&, bool, bool, mongo::BSONObj const&, mongo::BatchedCommandResponse*)
 
 - Used By:
 
-    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
-    - [src/mongo/s/balance.cpp](../../../../sharding/balancer)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
-    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
     - [src/mongo/s/config\_upgrade\_helpers.cpp](../../../../sharding/config\_metadata\_upgrade)
-    - [src/mongo/s/config\_upgrade\_v0\_to\_v5.cpp](../../../../sharding/config\_metadata\_upgrade)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/balance.cpp](../../../../sharding/balancer)
+    - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
     - [src/mongo/s/commands\_admin.cpp](../../../../sharding/mongos\_commands)
+    - [src/mongo/s/config\_upgrade\_v0\_to\_v5.cpp](../../../../sharding/config\_metadata\_upgrade)

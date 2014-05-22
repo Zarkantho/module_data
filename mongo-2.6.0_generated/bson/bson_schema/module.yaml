@@ -17,7 +17,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -28,7 +28,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -204,7 +204,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -283,6 +283,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -299,7 +300,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -380,7 +381,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -829,7 +829,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -905,6 +905,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -921,7 +922,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -1000,7 +1001,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -1161,138 +1161,138 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
-        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::Date_t>
-                const&, mongo::Date_t*, std::string*)
-            symbol_uses:
-            - src/mongo/s/type_lockpings.cpp
-            - src/mongo/s/type_mongos.cpp
-            - src/mongo/s/type_changelog.cpp
-            - src/mongo/s/type_collection.cpp
         -   symbol_name: mongo::FieldParser::extractID(mongo::BSONObj, mongo::BSONField<mongo::BSONObj>
                 const&, mongo::BSONObj*, std::string*)
             symbol_uses:
             - src/mongo/s/write_ops/batched_upsert_detail.cpp
-        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<int>
-                const&, int*, std::string*)
-            symbol_uses:
-            - src/mongo/s/type_locks.cpp
-            - src/mongo/s/type_mongos.cpp
-            - src/mongo/s/write_ops/config_coordinator.cpp
-            - src/mongo/s/type_settings.cpp
-            - src/mongo/s/write_ops/batched_command_response.cpp
-            - src/mongo/s/write_ops/write_error_detail.cpp
-            - src/mongo/s/write_ops/wc_error_detail.cpp
-            - src/mongo/s/write_ops/batched_upsert_detail.cpp
         -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OpTime>
                 const&, mongo::OpTime*, std::string*)
             symbol_uses:
-            - src/mongo/s/write_ops/batched_command_response.cpp
             - src/mongo/db/commands/get_last_error.cpp
-        -   symbol_name: mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<std::string>
-                const&, std::string*, std::string*)
-            symbol_uses:
-            - src/mongo/db/auth/privilege_parser.cpp
-            - src/mongo/s/write_ops/batched_insert_request.cpp
-        -   symbol_name: mongo::FieldParser::extractNumber(mongo::BSONObj, mongo::BSONField<long
-                long> const&, long long*, std::string*)
-            symbol_uses:
-            - src/mongo/s/type_shard.cpp
-        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONArray>
-                const&, mongo::BSONArray*, std::string*)
-            symbol_uses:
-            - src/mongo/s/type_config_version.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/type_shard.cpp
+            - src/mongo/s/write_ops/batched_command_response.cpp
         -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string>
                 const&, std::string*, std::string*)
             symbol_uses:
-            - src/mongo/s/type_locks.cpp
+            - src/mongo/db/commands/merge_chunks_cmd.cpp
             - src/mongo/s/type_tags.cpp
-            - src/mongo/db/query/type_explain.cpp
             - src/mongo/s/type_mongos.cpp
+            - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
+            - src/mongo/s/type_shard.cpp
+            - src/mongo/s/write_ops/write_error_detail.cpp
+            - src/mongo/s/type_lockpings.cpp
+            - src/mongo/s/write_ops/batched_update_request.cpp
+            - src/mongo/s/type_database.cpp
+            - src/mongo/db/query/type_explain.cpp
+            - src/mongo/s/type_collection.cpp
+            - src/mongo/s/type_changelog.cpp
             - src/mongo/db/auth/privilege_parser.cpp
+            - src/mongo/s/write_ops/batched_delete_request.cpp
+            - src/mongo/s/write_ops/wc_error_detail.cpp
             - src/mongo/s/type_settings.cpp
             - src/mongo/s/write_ops/batched_request_metadata.cpp
-            - src/mongo/s/write_ops/batched_command_response.cpp
             - src/mongo/s/type_chunk.cpp
             - src/mongo/s/write_ops/config_coordinator.cpp
-            - src/mongo/s/write_ops/batched_delete_request.cpp
-            - src/mongo/s/write_ops/write_error_detail.cpp
+            - src/mongo/s/write_ops/batched_command_response.cpp
+            - src/mongo/s/type_locks.cpp
+        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONArray>
+                const&, mongo::BSONArray*, std::string*)
+            symbol_uses:
             - src/mongo/s/type_shard.cpp
-            - src/mongo/db/commands/merge_chunks_cmd.cpp
-            - src/mongo/s/write_ops/batched_update_request.cpp
-            - src/mongo/s/type_collection.cpp
-            - src/mongo/s/type_changelog.cpp
-            - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
-            - src/mongo/s/type_lockpings.cpp
-            - src/mongo/s/write_ops/wc_error_detail.cpp
-            - src/mongo/s/type_database.cpp
-        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj>
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/type_config_version.cpp
+        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<long
+                long> const&, long long*, std::string*)
+            symbol_uses:
+            - src/mongo/s/write_ops/batched_command_response.cpp
+            - src/mongo/db/query/type_explain.cpp
+            - src/mongo/s/write_ops/batched_request_metadata.cpp
+        -   symbol_name: mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<mongo::BSONObj>
                 const&, mongo::BSONObj*, std::string*)
             symbol_uses:
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/type_changelog.cpp
-            - src/mongo/s/write_ops/batched_update_document.cpp
-            - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
-            - src/mongo/s/type_config_version.cpp
-            - src/mongo/s/write_ops/write_error_detail.cpp
-            - src/mongo/s/write_ops/batched_delete_document.cpp
-            - src/mongo/s/write_ops/batched_delete_request.cpp
-            - src/mongo/s/type_tags.cpp
-            - src/mongo/s/write_ops/wc_error_detail.cpp
-            - src/mongo/s/type_chunk.cpp
-            - src/mongo/s/write_ops/batched_update_request.cpp
-            - src/mongo/db/query/type_explain.cpp
-            - src/mongo/s/type_settings.cpp
+            - src/mongo/s/write_ops/batched_insert_request.cpp
+            - src/mongo/db/commands/merge_chunks_cmd.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OID>
+                const&, mongo::OID*, std::string*)
+            symbol_uses:
             - src/mongo/s/type_collection.cpp
+            - src/mongo/db/commands/merge_chunks_cmd.cpp
+            - src/mongo/s/type_config_version.cpp
+            - src/mongo/s/write_ops/batched_command_response.cpp
+            - src/mongo/s/type_locks.cpp
+            - src/mongo/db/commands/get_last_error.cpp
         -   symbol_name: mongo::FieldParser::extractNumber(mongo::BSONObj, mongo::BSONField<int>
                 const&, int*, std::string*)
             symbol_uses:
-            - src/mongo/s/type_config_version.cpp
-            - src/mongo/s/write_ops/config_coordinator.cpp
             - src/mongo/s/write_ops/batched_delete_document.cpp
             - src/mongo/s/write_ops/batched_command_response.cpp
-        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool>
-                const&, bool*, std::string*)
+            - src/mongo/s/type_config_version.cpp
+            - src/mongo/s/write_ops/config_coordinator.cpp
+        -   symbol_name: mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<std::string>
+                const&, std::string*, std::string*)
             symbol_uses:
-            - src/mongo/s/type_mongos.cpp
+            - src/mongo/s/write_ops/batched_insert_request.cpp
             - src/mongo/db/auth/privilege_parser.cpp
-            - src/mongo/s/write_ops/batched_update_document.cpp
-            - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
-            - src/mongo/s/write_ops/batched_delete_request.cpp
-            - src/mongo/s/type_shard.cpp
-            - src/mongo/s/type_chunk.cpp
-            - src/mongo/s/config_upgrade_helpers.cpp
-            - src/mongo/s/type_database.cpp
-            - src/mongo/s/write_ops/batched_update_request.cpp
-            - src/mongo/db/query/type_explain.cpp
-            - src/mongo/s/type_settings.cpp
-            - src/mongo/s/type_collection.cpp
         -   symbol_name: mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<bool>
                 const&, bool*, std::string*)
             symbol_uses:
             - src/mongo/s/write_ops/batched_insert_request.cpp
-        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<long
-                long> const&, long long*, std::string*)
+        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool>
+                const&, bool*, std::string*)
             symbol_uses:
+            - src/mongo/s/type_chunk.cpp
+            - src/mongo/s/config_upgrade_helpers.cpp
+            - src/mongo/s/type_database.cpp
             - src/mongo/db/query/type_explain.cpp
-            - src/mongo/s/write_ops/batched_request_metadata.cpp
+            - src/mongo/s/type_collection.cpp
+            - src/mongo/s/type_mongos.cpp
+            - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
+            - src/mongo/s/write_ops/batched_update_request.cpp
+            - src/mongo/s/type_shard.cpp
+            - src/mongo/db/auth/privilege_parser.cpp
+            - src/mongo/s/write_ops/batched_delete_request.cpp
+            - src/mongo/s/type_settings.cpp
+            - src/mongo/s/write_ops/batched_update_document.cpp
+        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::Date_t>
+                const&, mongo::Date_t*, std::string*)
+            symbol_uses:
+            - src/mongo/s/type_changelog.cpp
+            - src/mongo/s/type_collection.cpp
+            - src/mongo/s/type_mongos.cpp
+            - src/mongo/s/type_lockpings.cpp
+        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<int>
+                const&, int*, std::string*)
+            symbol_uses:
+            - src/mongo/s/type_mongos.cpp
+            - src/mongo/s/write_ops/config_coordinator.cpp
             - src/mongo/s/write_ops/batched_command_response.cpp
-        -   symbol_name: mongo::FieldParser::extract(mongo::BSONElement, mongo::BSONField<mongo::BSONObj>
+            - src/mongo/s/write_ops/batched_upsert_detail.cpp
+            - src/mongo/s/type_locks.cpp
+            - src/mongo/s/write_ops/write_error_detail.cpp
+            - src/mongo/s/write_ops/wc_error_detail.cpp
+            - src/mongo/s/type_settings.cpp
+        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::BSONObj>
                 const&, mongo::BSONObj*, std::string*)
             symbol_uses:
-            - src/mongo/db/commands/merge_chunks_cmd.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-            - src/mongo/s/write_ops/batched_insert_request.cpp
-        -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<mongo::OID>
-                const&, mongo::OID*, std::string*)
-            symbol_uses:
-            - src/mongo/s/type_locks.cpp
+            - src/mongo/s/write_ops/batched_update_request.cpp
+            - src/mongo/s/type_changelog.cpp
+            - src/mongo/s/type_tags.cpp
             - src/mongo/s/type_config_version.cpp
-            - src/mongo/s/write_ops/batched_command_response.cpp
-            - src/mongo/db/commands/merge_chunks_cmd.cpp
-            - src/mongo/db/commands/get_last_error.cpp
+            - src/mongo/db/query/type_explain.cpp
             - src/mongo/s/type_collection.cpp
+            - src/mongo/s/type_chunk.cpp
+            - src/mongo/db/commands/cleanup_orphaned_cmd.cpp
+            - src/mongo/s/write_ops/batched_delete_document.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/write_ops/batched_delete_request.cpp
+            - src/mongo/s/write_ops/write_error_detail.cpp
+            - src/mongo/s/write_ops/wc_error_detail.cpp
+            - src/mongo/s/type_settings.cpp
+            - src/mongo/s/write_ops/batched_update_document.cpp
+        -   symbol_name: mongo::FieldParser::extractNumber(mongo::BSONObj, mongo::BSONField<long
+                long> const&, long long*, std::string*)
+            symbol_uses:
+            - src/mongo/s/type_shard.cpp
         file_dependencies:
         -   symbol_name: mongo::uasserted(int, char const*)
             symbol_sources:
@@ -1508,7 +1508,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -1587,6 +1587,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1603,7 +1604,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -1684,7 +1685,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -2168,7 +2168,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -2244,6 +2244,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2260,7 +2261,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -2339,7 +2340,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -2500,42 +2500,42 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
+        -   symbol_name: mongo::bsonExtractField(mongo::BSONObj const&, mongo::StringData
+                const&, mongo::BSONElement*)
+            symbol_uses:
+            - src/mongo/client/sasl_client_authenticate.cpp
+        -   symbol_name: mongo::bsonExtractTypedField(mongo::BSONObj const&, mongo::StringData
+                const&, mongo::BSONType, mongo::BSONElement*)
+            symbol_uses:
+            - src/mongo/db/commands/oplog_note.cpp
+            - src/mongo/db/auth/user_management_commands_parser.cpp
+            - src/mongo/db/auth/authz_manager_external_state_local.cpp
+            - src/mongo/db/auth/role_graph_update.cpp
         -   symbol_name: mongo::bsonExtractBooleanFieldWithDefault(mongo::BSONObj
                 const&, mongo::StringData const&, bool, bool*)
             symbol_uses:
             - src/mongo/client/dbclient.cpp
             - src/mongo/db/auth/user_management_commands_parser.cpp
-        -   symbol_name: mongo::bsonExtractStringFieldWithDefault(mongo::BSONObj const&,
-                mongo::StringData const&, mongo::StringData const&, std::string*)
+        -   symbol_name: mongo::bsonExtractIntegerFieldWithDefault(mongo::BSONObj
+                const&, mongo::StringData const&, long long, long long*)
             symbol_uses:
-            - src/mongo/db/auth/authorization_manager.cpp
-            - src/mongo/tools/restore.cpp
             - src/mongo/db/auth/user_management_commands_parser.cpp
-        -   symbol_name: mongo::bsonExtractIntegerField(mongo::BSONObj const&, mongo::StringData
-                const&, long long*)
-            symbol_uses:
-            - src/mongo/tools/restore.cpp
-        -   symbol_name: mongo::bsonExtractTypedField(mongo::BSONObj const&, mongo::StringData
-                const&, mongo::BSONType, mongo::BSONElement*)
-            symbol_uses:
-            - src/mongo/db/auth/role_graph_update.cpp
-            - src/mongo/db/commands/oplog_note.cpp
-            - src/mongo/db/auth/user_management_commands_parser.cpp
-            - src/mongo/db/auth/authz_manager_external_state_local.cpp
         -   symbol_name: mongo::bsonExtractStringField(mongo::BSONObj const&, mongo::StringData
                 const&, std::string*)
             symbol_uses:
             - src/mongo/client/dbclient.cpp
             - src/mongo/db/auth/user_management_commands_parser.cpp
             - src/mongo/db/commands/user_management_commands.cpp
-        -   symbol_name: mongo::bsonExtractIntegerFieldWithDefault(mongo::BSONObj
-                const&, mongo::StringData const&, long long, long long*)
+        -   symbol_name: mongo::bsonExtractStringFieldWithDefault(mongo::BSONObj const&,
+                mongo::StringData const&, mongo::StringData const&, std::string*)
             symbol_uses:
             - src/mongo/db/auth/user_management_commands_parser.cpp
-        -   symbol_name: mongo::bsonExtractField(mongo::BSONObj const&, mongo::StringData
-                const&, mongo::BSONElement*)
+            - src/mongo/db/auth/authorization_manager.cpp
+            - src/mongo/tools/restore.cpp
+        -   symbol_name: mongo::bsonExtractIntegerField(mongo::BSONObj const&, mongo::StringData
+                const&, long long*)
             symbol_uses:
-            - src/mongo/client/sasl_client_authenticate.cpp
+            - src/mongo/tools/restore.cpp
         file_dependencies:
         -   symbol_name: mongo::uasserted(int, char const*)
             symbol_sources:
@@ -2758,7 +2758,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -2837,6 +2837,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2853,7 +2854,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -2935,7 +2936,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp

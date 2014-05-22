@@ -41,8 +41,8 @@ module_groups:
                 const&)
             symbol_uses:
             - src/mongo/client/dbclient.cpp
-            - src/mongo/db/auth/security_key.cpp
             - src/mongo/db/auth/user_management_commands_parser.cpp
+            - src/mongo/db/auth/security_key.cpp
         file_dependencies:
         -   symbol_name: _md5_init
             symbol_sources:

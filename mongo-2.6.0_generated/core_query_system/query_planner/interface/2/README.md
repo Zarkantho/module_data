@@ -6,22 +6,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::PlanCache::notifyOfWriteOp()
-
-- Used By:
-
-    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::PlanCache::shouldCacheQuery(mongo::CanonicalQuery const&)
-
-- Used By:
-
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
     mongo::PlanCache::add(mongo::CanonicalQuery const&, std::vector<mongo::QuerySolution*, std::allocator<mongo::QuerySolution*> > const&, mongo::PlanRankingDecision*)
 
 - Used By:
@@ -34,13 +18,13 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../../core\_query\_system/query\_system\_commands)
     - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../../core\_query\_system/query\_system\_commands)
     - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../../core\_query\_system/query\_system\_commands)
 
 <div></div>
 
-    mongo::SolutionCacheData::toString() const
+    mongo::PlanCache::contains(mongo::CanonicalQuery const&) const
 
 - Used By:
 
@@ -48,7 +32,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::PlanCache::contains(mongo::CanonicalQuery const&) const
+    mongo::PlanCache::getAllEntries() const
 
 - Used By:
 
@@ -64,29 +48,20 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::PlanCache::~PlanCache()
+
+- Used By:
+
+    - [src/mongo/db/catalog/collection.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
     mongo::PlanCacheIndexTree::clone() const
 
 - Used By:
 
     - [src/mongo/db/query/subplan\_runner.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::PlanCache::~PlanCache()
-
-- Used By:
-
-    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/catalog/collection.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::PlanCache::clear()
-
-- Used By:
-
-    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../../core\_query\_system/query\_system\_commands)
 
 <div></div>
 
@@ -106,7 +81,24 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::PlanCache::getAllEntries() const
+    mongo::PlanCache::notifyOfWriteOp()
+
+- Used By:
+
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::PlanCache::clear()
+
+- Used By:
+
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../../core\_query\_system/query\_system\_commands)
+    - [src/mongo/db/catalog/collection\_info\_cache.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::PlanCacheEntry::~PlanCacheEntry()
 
 - Used By:
 
@@ -114,7 +106,15 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::PlanCacheEntry::~PlanCacheEntry()
+    mongo::PlanCache::shouldCacheQuery(mongo::CanonicalQuery const&)
+
+- Used By:
+
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::SolutionCacheData::toString() const
 
 - Used By:
 

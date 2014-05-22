@@ -100,11 +100,11 @@ This dependency information represents symbols that are used in this group but d
 
     - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
 
-### build/darwin/ssl/mongo/base/error\_codes.cpp
+### build/darwin/dbg\_off/opt\_off/ssl/mongo/base/error\_codes.cpp
 
 <div></div>
 
-    mongo::msgasserted(int, char const*)
+    mongo::verifyFailed(char const*, char const*, unsigned int)
 
 - Provided By:
 
@@ -112,7 +112,7 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::verifyFailed(char const*, char const*, unsigned int)
+    mongo::msgasserted(int, char const*)
 
 - Provided By:
 

@@ -6,14 +6,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::DataFile::openExisting(char const*)
-
-- Used By:
-
-    - [src/mongo/db/storage/extent\_manager.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
     mongo::DataFile::open(char const*, int, bool)
 
 - Used By:
@@ -22,7 +14,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::DataFile::flush(bool)
+    mongo::DataFile::openExisting(char const*)
 
 - Used By:
 
@@ -43,8 +35,16 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/storage/extent\_manager.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/storage/extent.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/dbtests/pdfiletests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/storage/extent.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::DataFile::flush(bool)
+
+- Used By:
+
+    - [src/mongo/db/storage/extent\_manager.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 

@@ -14,7 +14,7 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::IntrusiveCounterUnsigned::release() const
+    typeinfo for mongo::IntrusiveCounterUnsigned
 
 - Provided By:
 
@@ -22,7 +22,7 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    typeinfo for mongo::IntrusiveCounterUnsigned
+    mongo::IntrusiveCounterUnsigned::release() const
 
 - Provided By:
 
@@ -777,6 +777,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::BSONNULL
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     snappy::GetUncompressedLength(char const*, unsigned long, unsigned long*)
 
 - Provided By:
@@ -803,6 +811,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
     vtable for mongo::IntrusiveCounterUnsigned
 
 - Provided By:
@@ -818,38 +834,6 @@ This dependency information represents symbols that are used in this group but d
     - [src/mongo/util/intrusive\_counter.cpp](../../../../utilities/utilities)
 
 ### src/mongo/db/pipeline/document\_source\_match.cpp
-
-<div></div>
-
-    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
-
-- Provided By:
-
-    - [src/mongo/base/parse\_number.cpp](../../../../utilities/base\_utilites)
-
-<div></div>
-
-    mongo::IntrusiveCounterUnsigned::addRef() const
-
-- Provided By:
-
-    - [src/mongo/util/intrusive\_counter.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::BSONObjBuilder::numStrsReady
-
-- Provided By:
-
-    - [src/mongo/bson/oid.cpp](../../../../bson/bson)
-
-<div></div>
-
-    mongo::Matcher2::matches(mongo::BSONObj const&, mongo::MatchDetails*) const
-
-- Provided By:
-
-    - [src/mongo/db/matcher/matcher.cpp](../../../../core\_query\_system/query\_preprocessing)
 
 <div></div>
 
@@ -877,6 +861,46 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::IntrusiveCounterUnsigned
+
+- Provided By:
+
+    - [src/mongo/util/intrusive\_counter.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::msgasserted(int, char const*)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData const&, int, long*)
+
+- Provided By:
+
+    - [src/mongo/base/parse\_number.cpp](../../../../utilities/base\_utilites)
+
+<div></div>
+
+    mongo::IntrusiveCounterUnsigned::addRef() const
+
+- Provided By:
+
+    - [src/mongo/util/intrusive\_counter.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::IntrusiveCounterUnsigned::release() const
+
+- Provided By:
+
+    - [src/mongo/util/intrusive\_counter.cpp](../../../../utilities/utilities)
+
+<div></div>
+
     mongo::BSONObjBuilder::numStrs
 
 - Provided By:
@@ -893,14 +917,6 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    vtable for mongo::IntrusiveCounterUnsigned
-
-- Provided By:
-
-    - [src/mongo/util/intrusive\_counter.cpp](../../../../utilities/utilities)
-
-<div></div>
-
     mongo::uasserted(int, std::string const&)
 
 - Provided By:
@@ -909,19 +925,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::IntrusiveCounterUnsigned::release() const
+    mongo::Matcher2::Matcher2(mongo::BSONObj const&, bool)
 
 - Provided By:
 
-    - [src/mongo/util/intrusive\_counter.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::msgasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+    - [src/mongo/db/matcher/matcher.cpp](../../../../core\_query\_system/query\_preprocessing)
 
 <div></div>
 
@@ -933,7 +941,15 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::Matcher2::Matcher2(mongo::BSONObj const&, bool)
+    mongo::BSONObjBuilder::numStrsReady
+
+- Provided By:
+
+    - [src/mongo/bson/oid.cpp](../../../../bson/bson)
+
+<div></div>
+
+    mongo::Matcher2::matches(mongo::BSONObj const&, mongo::MatchDetails*) const
 
 - Provided By:
 
@@ -1365,6 +1381,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
     mongo::IntrusiveCounterUnsigned::release() const
 
 - Provided By:
@@ -1420,6 +1444,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/util/intrusive\_counter.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 

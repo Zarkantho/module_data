@@ -14,6 +14,31 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::LockState::Dump()
+
+- Used By:
+
+    - [src/mongo/db/storage/data\_file.cpp](../../../../storage/data\_files)
+
+<div></div>
+
+    mongo::LockState::hasAnyWriteLock() const
+
+- Used By:
+
+    - [src/mongo/db/client.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/db/curop.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::LockState::reportState()
+
+- Used By:
+
+    - [src/mongo/db/clientlistplugin.cpp](../../../../network/web\_server)
+
+<div></div>
+
     mongo::Acquiring::~Acquiring()
 
 - Used By:
@@ -45,28 +70,3 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/dbtests/counttests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/dbtests/documentsourcetests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::LockState::Dump()
-
-- Used By:
-
-    - [src/mongo/db/storage/data\_file.cpp](../../../../storage/data\_files)
-
-<div></div>
-
-    mongo::LockState::hasAnyWriteLock() const
-
-- Used By:
-
-    - [src/mongo/db/client.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
-    - [src/mongo/db/curop.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
-
-<div></div>
-
-    mongo::LockState::reportState()
-
-- Used By:
-
-    - [src/mongo/db/clientlistplugin.cpp](../../../../network/web\_server)

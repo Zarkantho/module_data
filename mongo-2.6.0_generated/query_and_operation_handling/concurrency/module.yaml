@@ -68,7 +68,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/multiplies.hpp
         - src/mongo/util/timer.h
         - src/third_party/boost/boost/type_traits/detail/cv_traits_impl.hpp
-        - src/third_party/boost/boost/mpl/pair.hpp
+        - src/third_party/boost/boost/mpl/sequence_tag_fwd.hpp
         - src/third_party/boost/boost/numeric/conversion/detail/old_numeric_cast.hpp
         - src/third_party/boost/boost/date_time/dst_rules.hpp
         - src/third_party/boost/boost/date_time/locale_config.hpp
@@ -326,7 +326,7 @@ module_groups:
         - src/third_party/boost/boost/range/detail/const_iterator.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/facilities/identity.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/mpl/aux_/config/has_apply.hpp
@@ -419,7 +419,6 @@ module_groups:
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/thread/exceptions.hpp
         - src/third_party/boost/boost/static_assert.hpp
-        - src/third_party/boost/boost/preprocessor/seq/seq.hpp
         - src/third_party/boost/boost/detail/lcast_precision.hpp
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_gcc_sparc.hpp
         - src/third_party/boost/boost/type_traits/detail/type_trait_def.hpp
@@ -447,7 +446,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/type_wrapper.hpp
         - src/third_party/boost/boost/type_traits/is_enum.hpp
         - src/third_party/boost/boost/range/reverse_iterator.hpp
-        - build/darwin/ssl/mongo/db/auth/action_type.h
+        - src/third_party/boost/boost/preprocessor/seq/size.hpp
         - src/third_party/boost/boost/numeric/conversion/converter_policies.hpp
         - src/third_party/boost/boost/range/detail/value_type.hpp
         - src/third_party/boost/boost/mpl/push_front_fwd.hpp
@@ -474,6 +473,7 @@ module_groups:
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/math/tools/real_cast.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -504,7 +504,7 @@ module_groups:
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/third_party/boost/boost/preprocessor/control/detail/while.hpp
         - src/third_party/boost/boost/date_time/time_facet.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/mpl/size.hpp
         - src/mongo/db/dur.h
@@ -595,7 +595,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/advance_backward.hpp
         - src/third_party/boost/boost/config/posix_features.hpp
         - src/third_party/boost/boost/optional/optional.hpp
-        - src/third_party/boost/boost/mpl/sequence_tag_fwd.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/db/auth/action_type.h
         - src/third_party/boost/boost/type_traits/detail/bool_trait_def.hpp
         - src/third_party/boost/boost/operators.hpp
         - src/third_party/boost/boost/thread/detail/platform.hpp
@@ -649,7 +649,6 @@ module_groups:
         - src/third_party/boost/boost/preprocessor/punctuation/paren.hpp
         - src/third_party/boost/boost/type_traits/msvc/remove_reference.hpp
         - src/third_party/boost/boost/mpl/void_fwd.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/numeric/conversion/detail/int_float_mixture.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
@@ -711,7 +710,7 @@ module_groups:
         - src/mongo/logger/log_domain.h
         - src/third_party/boost/boost/mpl/aux_/comparison_op.hpp
         - src/third_party/boost/boost/mpl/at.hpp
-        - src/third_party/boost/boost/preprocessor/seq/size.hpp
+        - src/third_party/boost/boost/preprocessor/seq/seq.hpp
         - src/third_party/boost/boost/preprocessor/seq/elem.hpp
         - src/third_party/boost/boost/date_time/period_formatter.hpp
         - src/third_party/boost/boost/numeric/conversion/numeric_cast_traits.hpp
@@ -933,381 +932,382 @@ module_groups:
         - src/third_party/boost/boost/functional/hash/hash_fwd.hpp
         - src/third_party/boost/boost/mpl/aux_/msvc_dtw.hpp
         - src/mongo/s/bson_serializable.h
+        - src/third_party/boost/boost/mpl/pair.hpp
         - src/third_party/boost/boost/scoped_array.hpp
         - src/third_party/boost/boost/mpl/aux_/adl_barrier.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/format_date_parser.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::Lock::ScopedLock::acquireFinished(mongo::LockStat*)
+        -   symbol_name: mongo::Lock::nestableLockStat(mongo::Lock::Nestable)
             symbol_uses:
             - src/mongo/db/lockstate.cpp
         -   symbol_name: mongo::Lock::isR()
             symbol_uses:
             - src/mongo/db/clientcursor.cpp
-        -   symbol_name: mongo::Lock::ParallelBatchWriterMode::iAmABatchParticipant()
-            symbol_uses:
-            - src/mongo/db/repl/rs_sync.cpp
-        -   symbol_name: mongo::Lock::somethingWriteLocked()
-            symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
-            - src/mongo/db/structure/btree/btree.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/kill_current_op.cpp
-            - src/mongo/db/storage/durable_mapped_file.cpp
-            - src/mongo/db/storage/data_file.cpp
-        -   symbol_name: mongo::Lock::GlobalWrite::downgrade()
-            symbol_uses:
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/commands/fsync.cpp
-            - src/mongo/db/dur.cpp
-        -   symbol_name: mongo::Lock::DBRead::DBRead(mongo::StringData const&)
-            symbol_uses:
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/storage/record.cpp
-            - src/mongo/db/pipeline/document_source_cursor.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/db/repl/rs.cpp
         -   symbol_name: mongo::Lock::isLocked()
             symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/cloner.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/repl/master_slave.cpp
             - src/mongo/dbtests/counttests.cpp
-            - src/mongo/db/dbcommands.cpp
             - src/mongo/db/catalog/index_pregen.cpp
             - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/pagefault.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/commands/fsync.cpp
+            - src/mongo/db/dbcommands.cpp
             - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/db/commands/mr.cpp
+            - src/mongo/db/commands/fsync.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/pagefault.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
             - src/mongo/db/auth/authz_session_external_state_d.cpp
             - src/mongo/db/repl/rs_sync.cpp
-        -   symbol_name: mongo::readlocktry::~readlocktry()
+            - src/mongo/db/dbhelpers.cpp
+        -   symbol_name: mongo::Lock::DBRead::DBRead(mongo::StringData const&)
             symbol_uses:
-            - src/mongo/db/restapi.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/db/commands/mr.cpp
             - src/mongo/db/instance.cpp
-            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/db/storage/record.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/pipeline/document_source_cursor.cpp
         -   symbol_name: mongo::Lock::GlobalRead::GlobalRead(int)
             symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/commands/test_commands.cpp
-            - src/mongo/db/dbcommands.cpp
             - src/mongo/db/dur.cpp
             - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/dbtests/threadedtests.cpp
             - src/mongo/db/auth/authz_manager_external_state_d.cpp
-        -   symbol_name: mongo::Lock::GlobalWrite::upgrade()
-            symbol_uses:
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/s/d_migrate.cpp
             - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/commands/test_commands.cpp
+        -   symbol_name: mongo::Lock::atLeastReadLocked(mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/client.cpp
             - src/mongo/db/dur.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+        -   symbol_name: mongo::Lock::isWriteLocked(mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/db/storage/extent_manager.cpp
+            - src/mongo/db/catalog/database_holder.cpp
+        -   symbol_name: mongo::Lock::GlobalRead::~GlobalRead()
+            symbol_uses:
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/commands/test_commands.cpp
         -   symbol_name: mongo::Lock::dbLevelLockingEnabled()
             symbol_uses:
             - src/mongo/dbtests/threadedtests.cpp
-        -   symbol_name: mongo::Lock::atLeastReadLocked(mongo::StringData const&)
-            symbol_uses:
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/dur.cpp
-        -   symbol_name: mongo::writelocktry::~writelocktry()
-            symbol_uses:
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/dbcommands.cpp
-        -   symbol_name: mongo::Lock::isWriteLocked(mongo::StringData const&)
-            symbol_uses:
-            - src/mongo/db/storage/extent_manager.cpp
-            - src/mongo/db/catalog/index_create.cpp
-            - src/mongo/db/catalog/database_holder.cpp
-        -   symbol_name: mongo::writelocktry::writelocktry(int)
-            symbol_uses:
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/dbcommands.cpp
-        -   symbol_name: mongo::Lock::ScopedLock::resetTime()
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::Lock::nested()
-            symbol_uses:
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/db/catalog/index_create.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/commands/apply_ops.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/commands/mr.cpp
-        -   symbol_name: mongo::Lock::ParallelBatchWriterMode::_batchLock
-            symbol_uses:
-            - src/mongo/db/repl/rs_sync.cpp
-        -   symbol_name: mongo::Lock::assertWriteLocked(mongo::StringData const&)
-            symbol_uses:
-            - src/mongo/db/catalog/index_catalog.cpp
-            - src/mongo/db/commands/create_indexes.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/db/pdfile.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/introspect.cpp
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-            - src/mongo/db/catalog/collection_info_cache.cpp
-            - src/mongo/s/d_state.cpp
-            - src/mongo/db/structure/catalog/namespace_index.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::Lock::DBWrite::~DBWrite()
-            symbol_uses:
-            - src/mongo/dbtests/query_stage_fetch.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/commands/compact.cpp
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/db/commands/apply_ops.cpp
-            - src/mongo/dbtests/query_stage_distinct.cpp
-            - src/mongo/dbtests/indexcatalogtests.cpp
-            - src/mongo/db/repl/rs_config.cpp
-            - src/mongo/dbtests/query_multi_plan_runner.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/db/repl/rs_initialsync.cpp
-            - src/mongo/dbtests/query_stage_and.cpp
-            - src/mongo/db/commands/test_commands.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/dbtests/query_stage_keep.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/s/d_state.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/dbtests/extsorttests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-            - src/mongo/db/index_builder.cpp
-            - src/mongo/db/commands/create_indexes.cpp
-            - src/mongo/s/d_split.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/tools/dump.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/db/index_rebuilder.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/dbtests/query_stage_merge_sort.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/query_stage_sort.cpp
-            - src/mongo/dbtests/query_stage_tests.cpp
-            - src/mongo/db/repl/sync_source_feedback.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/introspect.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/dbtests/queryutiltests.cpp
-            - src/mongo/dbtests/query_stage_count.cpp
-            - src/mongo/db/repl/rs_sync.cpp
-            - src/mongo/db/auth/auth_index_d.cpp
-        -   symbol_name: mongo::Lock::GlobalRead::~GlobalRead()
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/db/commands/test_commands.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-        -   symbol_name: mongo::Lock::DBWrite::UpgradeToExclusive::~UpgradeToExclusive()
-            symbol_uses:
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/dur.cpp
-        -   symbol_name: mongo::Lock::TempRelease::~TempRelease()
-            symbol_uses:
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/repl/resync.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/commands/mr.cpp
-        -   symbol_name: mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
-            symbol_uses:
-            - src/mongo/db/pipeline/pipeline_d.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/db/repair_database.cpp
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/catalog/database_holder.cpp
-        -   symbol_name: mongo::Lock::nestableLockStat(mongo::Lock::Nestable)
+        -   symbol_name: mongo::Lock::ScopedLock::acquireFinished(mongo::LockStat*)
             symbol_uses:
             - src/mongo/db/lockstate.cpp
-        -   symbol_name: mongo::Lock::DBWrite::UpgradeToExclusive::UpgradeToExclusive()
+        -   symbol_name: mongo::Lock::GlobalWrite::downgrade()
             symbol_uses:
-            - src/mongo/dbtests/threadedtests.cpp
             - src/mongo/db/dur.cpp
-        -   symbol_name: mongo::Lock::GlobalWrite::~GlobalWrite()
-            symbol_uses:
-            - src/mongo/dbtests/namespacetests.cpp
-            - src/mongo/db/repl/rs_initiate.cpp
-            - src/mongo/db/commands/test_commands.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/db/dbeval.cpp
-            - src/mongo/dbtests/basictests.cpp
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/db/instance.cpp
             - src/mongo/db/commands/fsync.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/dbtests/pdfiletests.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/db/pdfile.cpp
-            - src/mongo/dbtests/oplogstarttests.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/repl/replset_commands.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/db/repl/oplog.cpp
             - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/s/d_state.cpp
-            - src/mongo/db/repl/rs_sync.cpp
-        -   symbol_name: mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)
-            symbol_uses:
-            - src/mongo/db/commands/test_commands.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/db/commands/apply_ops.cpp
-            - src/mongo/db/commands/compact.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/s/d_state.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/d_split.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/repl/rs_sync.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/dbtests/queryutiltests.cpp
-            - src/mongo/db/introspect.cpp
-        -   symbol_name: mongo::Lock::TempRelease::TempRelease()
+        -   symbol_name: mongo::writelocktry::~writelocktry()
             symbol_uses:
             - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/cloner.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/dbtests/threadedtests.cpp
             - src/mongo/db/dbcommands.cpp
-            - src/mongo/db/clientcursor.cpp
+        -   symbol_name: mongo::Lock::DBWrite::~DBWrite()
+            symbol_uses:
+            - src/mongo/db/repl/rs_config.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
+            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/db/commands/compact.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/db/commands/apply_ops.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/dbtests/indexcatalogtests.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/commands/create_indexes.cpp
+            - src/mongo/db/auth/auth_index_d.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
+            - src/mongo/tools/dump.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/db/introspect.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/dbtests/query_stage_keep.cpp
+            - src/mongo/db/index_builder.cpp
             - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/db/commands/test_commands.cpp
+            - src/mongo/dbtests/extsorttests.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/db/index_rebuilder.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+            - src/mongo/db/repl/oplog.cpp
+        -   symbol_name: mongo::Lock::DBWrite::UpgradeToExclusive::~UpgradeToExclusive()
+            symbol_uses:
+            - src/mongo/db/dur.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+        -   symbol_name: mongo::Lock::TempRelease::~TempRelease()
+            symbol_uses:
+            - src/mongo/db/commands/mr.cpp
             - src/mongo/db/repl/master_slave.cpp
             - src/mongo/db/repl/resync.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/cloner.cpp
             - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/dbtests/counttests.cpp
+        -   symbol_name: mongo::Lock::DBWrite::DBWrite(mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/db/commands/compact.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/db/commands/apply_ops.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/introspect.cpp
+            - src/mongo/dbtests/counttests.cpp
             - src/mongo/db/commands/mr.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/db/commands/test_commands.cpp
+            - src/mongo/db/repl/oplog.cpp
         -   symbol_name: mongo::Lock::GlobalWrite::GlobalWrite(bool, int)
             symbol_uses:
-            - src/mongo/dbtests/namespacetests.cpp
-            - src/mongo/db/repl/rs_initiate.cpp
-            - src/mongo/db/commands/test_commands.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/db/dbeval.cpp
-            - src/mongo/dbtests/basictests.cpp
-            - src/mongo/db/dur_recover.cpp
             - src/mongo/db/dbcommands.cpp
             - src/mongo/dbtests/querytests.cpp
             - src/mongo/db/instance.cpp
-            - src/mongo/db/commands/fsync.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/dbtests/pdfiletests.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/db/pdfile.cpp
-            - src/mongo/dbtests/oplogstarttests.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/db/repl/rs.cpp
             - src/mongo/db/repl/replset_commands.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/mmaptests.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/dbtests/replsettests.cpp
             - src/mongo/dbtests/threadedtests.cpp
             - src/mongo/s/d_state.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/repl/rs_initiate.cpp
+            - src/mongo/dbtests/pdfiletests.cpp
             - src/mongo/db/repl/rs_sync.cpp
-        -   symbol_name: mongo::Lock::DBRead::~DBRead()
-            symbol_uses:
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/storage/record.cpp
-            - src/mongo/db/pipeline/document_source_cursor.cpp
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/dbtests/basictests.cpp
+            - src/mongo/dbtests/namespacetests.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
+            - src/mongo/db/commands/fsync.cpp
             - src/mongo/db/commands/mr.cpp
             - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/dbeval.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/commands/test_commands.cpp
+            - src/mongo/db/repl/oplog.cpp
         -   symbol_name: mongo::Lock::ScopedLock::recordTime()
             symbol_uses:
             - src/mongo/db/commands/write_commands/batch_executor.cpp
         -   symbol_name: mongo::readlocktry::readlocktry(int)
             symbol_uses:
-            - src/mongo/db/restapi.cpp
             - src/mongo/db/instance.cpp
             - src/mongo/db/repl/health.cpp
+            - src/mongo/db/restapi.cpp
         -   symbol_name: mongo::Lock::isReadLocked()
             symbol_uses:
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/db/instance.cpp
             - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+        -   symbol_name: mongo::Lock::somethingWriteLocked()
+            symbol_uses:
+            - src/mongo/db/client.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/structure/btree/btree.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/db/kill_current_op.cpp
+            - src/mongo/db/storage/data_file.cpp
+        -   symbol_name: mongo::Lock::isW()
+            symbol_uses:
+            - src/mongo/db/client.cpp
+            - src/mongo/db/stats/snapshots_webplugins.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/catalog/database_holder.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/repl/oplog.cpp
+        -   symbol_name: mongo::readlocktry::~readlocktry()
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/db/restapi.cpp
+        -   symbol_name: mongo::Lock::assertAtLeastReadLocked(mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/client.cpp
+            - src/mongo/db/catalog/database_holder.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/db/repair_database.cpp
+            - src/mongo/db/pipeline/pipeline_d.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/dbhelpers.cpp
+        -   symbol_name: mongo::Lock::ParallelBatchWriterMode::iAmABatchParticipant()
+            symbol_uses:
+            - src/mongo/db/repl/rs_sync.cpp
+        -   symbol_name: mongo::Lock::DBRead::~DBRead()
+            symbol_uses:
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/db/storage/record.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/db/pipeline/document_source_cursor.cpp
+        -   symbol_name: mongo::Lock::nested()
+            symbol_uses:
+            - src/mongo/db/client.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/db/catalog/index_create.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/commands/apply_ops.cpp
         -   symbol_name: mongo::Lock::globalLockStat()
             symbol_uses:
             - src/mongo/db/lockstate.cpp
-        -   symbol_name: mongo::Lock::isW()
+        -   symbol_name: mongo::Lock::GlobalWrite::upgrade()
+            symbol_uses:
+            - src/mongo/db/dur.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+        -   symbol_name: mongo::Lock::TempRelease::TempRelease()
+            symbol_uses:
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/repl/resync.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/dbtests/counttests.cpp
+        -   symbol_name: mongo::Lock::assertWriteLocked(mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/db/commands/create_indexes.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/db/catalog/index_catalog.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/db/introspect.cpp
+            - src/mongo/db/catalog/collection_info_cache.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/structure/catalog/namespace_details.cpp
+            - src/mongo/db/repl/oplog.cpp
+        -   symbol_name: mongo::writelocktry::writelocktry(int)
             symbol_uses:
             - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/db/dbcommands.cpp
+        -   symbol_name: mongo::Lock::ParallelBatchWriterMode::_batchLock
+            symbol_uses:
+            - src/mongo/db/repl/rs_sync.cpp
+        -   symbol_name: mongo::Lock::DBWrite::UpgradeToExclusive::UpgradeToExclusive()
+            symbol_uses:
+            - src/mongo/db/dur.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+        -   symbol_name: mongo::Lock::GlobalWrite::~GlobalWrite()
+            symbol_uses:
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/repl/rs_initiate.cpp
+            - src/mongo/dbtests/pdfiletests.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
             - src/mongo/db/client.cpp
             - src/mongo/db/dur.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/db/catalog/database_holder.cpp
-            - src/mongo/db/stats/snapshots_webplugins.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/dur_recover.cpp
+            - src/mongo/dbtests/mmaptests.cpp
+            - src/mongo/dbtests/basictests.cpp
+            - src/mongo/dbtests/namespacetests.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
+            - src/mongo/db/commands/fsync.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/dbeval.cpp
+            - src/mongo/db/pdfile.cpp
+            - src/mongo/db/commands/test_commands.cpp
+            - src/mongo/db/repl/oplog.cpp
+        -   symbol_name: mongo::Lock::ScopedLock::resetTime()
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
         file_dependencies:
         -   symbol_name: mongo::SimpleRWLock::lock_shared()
             symbol_sources:
@@ -1845,7 +1845,7 @@ module_groups:
         - src/third_party/boost/boost/range/detail/const_iterator.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/mpl/arg.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/mpl/list.hpp
@@ -1987,6 +1987,7 @@ module_groups:
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/math/tools/real_cast.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2015,7 +2016,7 @@ module_groups:
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/third_party/boost/boost/preprocessor/control/detail/while.hpp
         - src/third_party/boost/boost/date_time/time_facet.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/mpl/size.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -2151,7 +2152,6 @@ module_groups:
         - src/third_party/boost/boost/date_time/date.hpp
         - src/third_party/boost/boost/preprocessor/punctuation/paren.hpp
         - src/third_party/boost/boost/mpl/void_fwd.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/numeric/conversion/detail/int_float_mixture.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
@@ -2430,84 +2430,84 @@ module_groups:
         - src/third_party/boost/boost/date_time/format_date_parser.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::LockState::lockedStart(char)
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::LockState::isRW() const
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
         -   symbol_name: mongo::LockState::LockState()
             symbol_uses:
             - src/mongo/db/client.cpp
-        -   symbol_name: mongo::Acquiring::~Acquiring()
+        -   symbol_name: mongo::LockState::Dump()
             symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-        -   symbol_name: mongo::LockState::changeLockState(char)
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::LockState::isLocked(mongo::StringData const&)
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::LockState::lockedOther(mongo::StringData const&, int,
-                mongo::WrapperForRWLock*)
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::LockState::hasAnyReadLock() const
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/db/client.cpp
-        -   symbol_name: mongo::LockState::reportState(mongo::BSONObjBuilder&)
-            symbol_uses:
-            - src/mongo/db/curop.cpp
-        -   symbol_name: mongo::LockState::leaveScopedLock()
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::LockState::lockedNestable(mongo::Lock::Nestable, int)
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::AcquiringParallelWriter::~AcquiringParallelWriter()
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
+            - src/mongo/db/storage/data_file.cpp
         -   symbol_name: mongo::AcquiringParallelWriter::AcquiringParallelWriter(mongo::LockState&)
+            symbol_uses:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::LockState::lockedStart(char)
+            symbol_uses:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::LockState::hasAnyWriteLock() const
+            symbol_uses:
+            - src/mongo/db/client.cpp
+            - src/mongo/db/curop.cpp
+        -   symbol_name: mongo::LockState::lockedNestable(mongo::Lock::Nestable, int)
             symbol_uses:
             - src/mongo/db/d_concurrency.cpp
         -   symbol_name: mongo::LockState::unlockedNestable()
             symbol_uses:
             - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::Acquiring::Acquiring(mongo::Lock::ScopedLock*, mongo::LockState&)
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/dbtests/counttests.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
         -   symbol_name: mongo::LockState::lockedOther(int)
             symbol_uses:
             - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::LockState::unlocked()
+        -   symbol_name: mongo::LockState::enterScopedLock(mongo::Lock::ScopedLock*)
+            symbol_uses:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::AcquiringParallelWriter::~AcquiringParallelWriter()
+            symbol_uses:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::LockState::isRW() const
             symbol_uses:
             - src/mongo/db/d_concurrency.cpp
         -   symbol_name: mongo::LockState::dump()
             symbol_uses:
             - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::LockState::Dump()
+        -   symbol_name: mongo::LockState::isLocked(mongo::StringData const&)
             symbol_uses:
-            - src/mongo/db/storage/data_file.cpp
-        -   symbol_name: mongo::LockState::hasAnyWriteLock() const
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::LockState::isW() const
             symbol_uses:
-            - src/mongo/db/client.cpp
-            - src/mongo/db/curop.cpp
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::LockState::leaveScopedLock()
+            symbol_uses:
+            - src/mongo/db/d_concurrency.cpp
         -   symbol_name: mongo::LockState::reportState()
             symbol_uses:
             - src/mongo/db/clientlistplugin.cpp
         -   symbol_name: mongo::LockState::unlockedOther()
             symbol_uses:
             - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::LockState::enterScopedLock(mongo::Lock::ScopedLock*)
+        -   symbol_name: mongo::LockState::changeLockState(char)
             symbol_uses:
             - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::LockState::isW() const
+        -   symbol_name: mongo::Acquiring::~Acquiring()
             symbol_uses:
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::LockState::unlocked()
+            symbol_uses:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::LockState::hasAnyReadLock() const
+            symbol_uses:
+            - src/mongo/db/client.cpp
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::LockState::reportState(mongo::BSONObjBuilder&)
+            symbol_uses:
+            - src/mongo/db/curop.cpp
+        -   symbol_name: mongo::LockState::lockedOther(mongo::StringData const&, int,
+                mongo::WrapperForRWLock*)
+            symbol_uses:
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::Acquiring::Acquiring(mongo::Lock::ScopedLock*, mongo::LockState&)
+            symbol_uses:
+            - src/mongo/dbtests/counttests.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
             - src/mongo/db/d_concurrency.cpp
         file_dependencies:
         -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
@@ -2791,7 +2791,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -2857,6 +2857,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2873,7 +2874,6 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
         - src/third_party/boost/boost/mpl/aux_/logical_op.hpp
@@ -3080,27 +3080,27 @@ module_groups:
         file_interface:
         -   symbol_name: mongo::SimpleRWLock::lock_shared()
             symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
             - src/mongo/util/trace.cpp
+            - src/mongo/db/d_concurrency.cpp
         -   symbol_name: mongo::SimpleRWLock::unlock_shared()
             symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
             - src/mongo/util/trace.cpp
-        -   symbol_name: mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)
-            symbol_uses:
             - src/mongo/db/d_concurrency.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/util/trace.cpp
-        -   symbol_name: mongo::SimpleRWLock::unlock()
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/dbtests/threadedtests.cpp
-            - src/mongo/util/trace.cpp
         -   symbol_name: mongo::SimpleRWLock::lock()
             symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
             - src/mongo/dbtests/threadedtests.cpp
             - src/mongo/util/trace.cpp
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/util/trace.cpp
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::SimpleRWLock::unlock()
+            symbol_uses:
+            - src/mongo/dbtests/threadedtests.cpp
+            - src/mongo/util/trace.cpp
+            - src/mongo/db/d_concurrency.cpp
         file_dependencies:
         -   symbol_name: boost::this_thread::interruption_point()
             symbol_sources:
@@ -3344,7 +3344,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -3412,6 +3412,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -3426,7 +3427,6 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -3637,46 +3637,46 @@ module_groups:
         file_interface:
         -   symbol_name: mongo::SpinLock::SpinLock()
             symbol_uses:
-            - src/mongo/s/d_migrate.cpp
             - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/write_concern.cpp
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/util/net/sock.cpp
-            - src/mongo/db/prefetch.cpp
-            - src/mongo/db/curop.cpp
-            - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/stats/counters.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/dbtests/mock/mock_remote_db_server.cpp
-            - src/mongo/db/stats/service_stats.cpp
             - src/mongo/s/client_info.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/write_concern.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/db/stats/service_stats.cpp
+            - src/mongo/dbtests/mock/mock_remote_db_server.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/stats/counters.cpp
             - src/mongo/db/repl/rs.cpp
             - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/prefetch.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/curop.cpp
         -   symbol_name: mongo::SpinLock::~SpinLock()
             symbol_uses:
-            - src/mongo/s/d_migrate.cpp
             - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/db/write_concern.cpp
-            - src/mongo/db/dbhelpers.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/util/net/sock.cpp
-            - src/mongo/db/prefetch.cpp
-            - src/mongo/db/curop.cpp
-            - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/stats/counters.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/dbtests/mock/mock_remote_db_server.cpp
-            - src/mongo/db/stats/service_stats.cpp
             - src/mongo/s/client_info.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/dbhelpers.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/write_concern.cpp
+            - src/mongo/util/net/sock.cpp
+            - src/mongo/db/stats/service_stats.cpp
+            - src/mongo/dbtests/mock/mock_remote_db_server.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/db/stats/counters.cpp
             - src/mongo/db/repl/rs.cpp
             - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/db/prefetch.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/db/curop.cpp
         file_dependencies:
         -   symbol_name: mongo::StaticObserver::_destroyingStatics
             symbol_sources:
@@ -3693,14 +3693,14 @@ module_groups:
         - mongorestore
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - bsondump
         - mongoimport
         - mongos
         - mongooplog
         - test
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongosniff
         file_headers: []
         file_interface: []
@@ -3946,6 +3946,7 @@ module_groups:
         - src/third_party/boost/boost/optional/optional_fwd.hpp
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/bind/placeholders.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
@@ -3963,7 +3964,6 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -4144,7 +4144,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/spinlock.hpp
         - src/mongo/util/timer-posixclock-inl.h
         - src/third_party/boost/boost/type_traits/is_void.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/config/auto_link.hpp
         - src/third_party/boost/boost/preprocessor/list/for_each_i.hpp
         - src/third_party/boost/boost/preprocessor/logical/compl.hpp
@@ -4553,7 +4553,7 @@ module_groups:
         - src/third_party/boost/boost/range/detail/const_iterator.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/mpl/aux_/config/dmc_ambiguous_ctps.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/mpl/arg.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/mpl/list.hpp
@@ -4678,6 +4678,7 @@ module_groups:
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/math/tools/real_cast.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/numeric/conversion/detail/is_subranged.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -4706,7 +4707,6 @@ module_groups:
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/third_party/boost/boost/preprocessor/control/detail/while.hpp
         - src/third_party/boost/boost/date_time/time_facet.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/mpl/size.hpp
         - src/third_party/boost/boost/mpl/aux_/msvc_is_class.hpp
@@ -5061,20 +5061,20 @@ module_groups:
         - src/third_party/boost/boost/date_time/format_date_parser.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
+        -   symbol_name: mongo::Notification::Notification()
+            symbol_uses:
+            - src/mongo/dbtests/threadedtests.cpp
+        -   symbol_name: mongo::NotifyAll::awaitBeyondNow()
+            symbol_uses:
+            - src/mongo/db/dur.cpp
         -   symbol_name: mongo::NotifyAll::now()
             symbol_uses:
             - src/mongo/db/dur_commitjob.cpp
         -   symbol_name: mongo::Notification::notifyOne()
             symbol_uses:
-            - src/mongo/dbtests/threadedtests.cpp
             - src/mongo/db/range_deleter.cpp
-        -   symbol_name: mongo::NotifyAll::awaitBeyondNow()
-            symbol_uses:
-            - src/mongo/db/dur.cpp
-        -   symbol_name: mongo::Notification::waitToBeNotified()
-            symbol_uses:
             - src/mongo/dbtests/threadedtests.cpp
-        -   symbol_name: mongo::Notification::Notification()
+        -   symbol_name: mongo::Notification::waitToBeNotified()
             symbol_uses:
             - src/mongo/dbtests/threadedtests.cpp
         -   symbol_name: mongo::NotifyAll::NotifyAll()
@@ -5380,6 +5380,7 @@ module_groups:
         - src/third_party/boost/boost/ref.hpp
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/mongo/util/heapcheck.h
+        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
@@ -5398,7 +5399,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -5475,7 +5476,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -5589,7 +5589,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/spinlock.hpp
         - src/mongo/util/timer-posixclock-inl.h
         - src/third_party/boost/boost/smart_ptr/scoped_array.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/config/auto_link.hpp
         - src/third_party/boost/boost/preprocessor/list/for_each_i.hpp
         - src/third_party/boost/boost/preprocessor/logical/compl.hpp
@@ -5642,20 +5642,20 @@ module_groups:
         file_interface:
         -   symbol_name: mongo::LockStat::recordAcquireTimeMicros(char, long long)
             symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
             - src/mongo/db/lockstate.cpp
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::LockStat::report() const
+            symbol_uses:
+            - src/mongo/db/client.cpp
+            - src/mongo/db/curop.cpp
+            - src/mongo/db/d_concurrency.cpp
+        -   symbol_name: mongo::LockStat::recordLockTimeMicros(char, long long)
+            symbol_uses:
+            - src/mongo/db/d_concurrency.cpp
         -   symbol_name: mongo::LockStat::reset()
             symbol_uses:
             - src/mongo/db/curop.cpp
-        -   symbol_name: mongo::LockStat::report() const
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/db/curop.cpp
         -   symbol_name: mongo::LockStat::mapNo(char)
-            symbol_uses:
-            - src/mongo/db/d_concurrency.cpp
-        -   symbol_name: mongo::LockStat::recordLockTimeMicros(char, long long)
             symbol_uses:
             - src/mongo/db/d_concurrency.cpp
         -   symbol_name: mongo::LockStat::report(mongo::StringBuilderImpl<mongo::TrivialAllocator>&)

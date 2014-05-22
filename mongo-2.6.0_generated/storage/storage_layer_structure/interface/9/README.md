@@ -6,26 +6,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::CollectionCursorCache::registerRunner(mongo::Runner*)
-
-- Used By:
-
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
-    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/query/internal\_runner.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/query/get\_runner.cpp](../../../../core\_query\_system/query\_planner)
-
-<div></div>
-
-    mongo::CollectionCursorCache::invalidateDocument(mongo::DiskLoc const&, mongo::InvalidationType)
-
-- Used By:
-
-    - [src/mongo/db/ops/update.cpp](../../../../core\_query\_system/update\_system)
-
-<div></div>
-
     mongo::CollectionCursorCache::deregisterCursor(mongo::ClientCursor*)
 
 - Used By:
@@ -34,11 +14,10 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::CollectionCursorCache::find(long long)
+    mongo::CollectionCursorCache::registerCursor(mongo::ClientCursor*)
 
 - Used By:
 
-    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/clientcursor.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
 
 <div></div>
@@ -60,25 +39,25 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::CollectionCursorCache::invalidateAll(bool)
+
+- Used By:
+
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
     mongo::CollectionCursorCache::deregisterRunner(mongo::Runner*)
 
 - Used By:
 
-    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/query/internal\_runner.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
     - [src/mongo/db/query/plan\_executor.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/get\_runner.cpp](../../../../core\_query\_system/query\_planner)
-
-<div></div>
-
-    mongo::CollectionCursorCache::registerCursor(mongo::ClientCursor*)
-
-- Used By:
-
-    - [src/mongo/db/clientcursor.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -90,11 +69,32 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::CollectionCursorCache::invalidateAll(bool)
+    mongo::CollectionCursorCache::registerRunner(mongo::Runner*)
 
 - Used By:
 
+    - [src/mongo/dbtests/runner\_registry.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/d\_migrate.cpp](../../../../sharding/chunk\_management)
+    - [src/mongo/db/query/internal\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/get\_runner.cpp](../../../../core\_query\_system/query\_planner)
     - [src/mongo/dbtests/query\_single\_solution\_runner.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::CollectionCursorCache::invalidateDocument(mongo::DiskLoc const&, mongo::InvalidationType)
+
+- Used By:
+
+    - [src/mongo/db/ops/update.cpp](../../../../core\_query\_system/update\_system)
+
+<div></div>
+
+    mongo::CollectionCursorCache::find(long long)
+
+- Used By:
+
+    - [src/mongo/db/clientcursor.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 

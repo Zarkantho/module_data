@@ -296,7 +296,7 @@ module_groups:
         - src/third_party/boost/boost/range/detail/const_iterator.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/preprocessor/facilities/identity.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
@@ -411,6 +411,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -432,7 +433,7 @@ module_groups:
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/third_party/boost/boost/exception/detail/exception_ptr.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -545,7 +546,6 @@ module_groups:
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
         - src/third_party/boost/boost/mpl/void_fwd.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -778,6 +778,10 @@ module_groups:
                 const
             symbol_uses:
             - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::ReplicaSetMonitor::setConfigChangeHook(boost::function<void
+                (std::string const&, std::string const&)>)
+            symbol_uses:
+            - src/mongo/s/server.cpp
         -   symbol_name: mongo::ReplicaSetMonitor::contains(mongo::HostAndPort const&)
                 const
             symbol_uses:
@@ -788,18 +792,37 @@ module_groups:
             - src/mongo/s/dbclient_shard_resolver.cpp
         -   symbol_name: mongo::ReplicaSetMonitor::getServerAddress() const
             symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
             - src/mongo/s/grid.cpp
-        -   symbol_name: mongo::ReplicaSetMonitor::getMasterOrUassert()
-            symbol_uses:
             - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/s/dbclient_shard_resolver.cpp
         -   symbol_name: mongo::ReplicaSetMonitor::appendInfo(mongo::BSONObjBuilder&)
                 const
             symbol_uses:
-            - src/mongo/client/connpool.cpp
             - src/mongo/shell/shell_utils.cpp
+            - src/mongo/client/connpool.cpp
         -   symbol_name: mongo::ReplicaSetMonitor::failedHost(mongo::HostAndPort const&)
+            symbol_uses:
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::ReplicaSetMonitor::maxConsecutiveFailedChecks
+            symbol_uses:
+            - src/mongo/db/commands/parameters.cpp
+        -   symbol_name: mongo::ReplicaSetMonitor::isPrimary(mongo::HostAndPort const&)
+                const
+            symbol_uses:
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::ReplicaSetMonitor::remove(std::string const&, bool)
+            symbol_uses:
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::ReplicaSetMonitor::get(std::string const&, bool)
+            symbol_uses:
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/dbclient_shard_resolver.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/client/connpool.cpp
+        -   symbol_name: mongo::ReplicaSetMonitor::getHostOrRefresh(mongo::ReadPreferenceSetting
+                const&)
             symbol_uses:
             - src/mongo/client/dbclient_rs.cpp
         -   symbol_name: mongo::ReplicaSetMonitor::createIfNeeded(std::string const&,
@@ -807,33 +830,10 @@ module_groups:
                 > const&)
             symbol_uses:
             - src/mongo/client/dbclient_rs.cpp
-        -   symbol_name: mongo::ReplicaSetMonitor::isPrimary(mongo::HostAndPort const&)
-                const
+        -   symbol_name: mongo::ReplicaSetMonitor::getMasterOrUassert()
             symbol_uses:
             - src/mongo/client/dbclient_rs.cpp
-        -   symbol_name: mongo::ReplicaSetMonitor::setConfigChangeHook(boost::function<void
-                (std::string const&, std::string const&)>)
-            symbol_uses:
-            - src/mongo/s/server.cpp
-        -   symbol_name: mongo::ReplicaSetMonitor::remove(std::string const&, bool)
-            symbol_uses:
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/grid.cpp
-        -   symbol_name: mongo::ReplicaSetMonitor::get(std::string const&, bool)
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/shell/shell_utils.cpp
             - src/mongo/s/dbclient_shard_resolver.cpp
-            - src/mongo/client/connpool.cpp
-        -   symbol_name: mongo::ReplicaSetMonitor::getHostOrRefresh(mongo::ReadPreferenceSetting
-                const&)
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-        -   symbol_name: mongo::ReplicaSetMonitor::maxConsecutiveFailedChecks
-            symbol_uses:
-            - src/mongo/db/commands/parameters.cpp
         file_dependencies:
         -   symbol_name: mongo::curTimeMicros64()
             symbol_sources:
@@ -956,11 +956,11 @@ module_groups:
             - src/mongo/bson/oid.cpp
         -   symbol_name: mongo::inShutdown()
             symbol_sources:
-            - src/mongo/client/scoped_db_conn_test.cpp
             - src/mongo/unittest/crutch.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/s/server.cpp
             - src/mongo/client/clientAndShell.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/scoped_db_conn_test.cpp
+            - src/mongo/s/server.cpp
         -   symbol_name: mongo::ConnectionString::_finishInit()
             symbol_sources:
             - src/mongo/client/dbclient.cpp
@@ -1199,7 +1199,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -1281,6 +1281,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1298,7 +1299,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -1385,7 +1386,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -1950,6 +1950,7 @@ module_groups:
         - src/third_party/boost/boost/ref.hpp
         - src/third_party/boost/boost/smart_ptr/detail/sp_counted_base_pt.hpp
         - src/third_party/boost/boost/bind/placeholders.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
@@ -1969,7 +1970,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -2055,7 +2056,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -2181,7 +2181,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/spinlock.hpp
         - src/mongo/util/timer-posixclock-inl.h
         - src/third_party/boost/boost/smart_ptr/scoped_array.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/config/auto_link.hpp
         - src/third_party/boost/boost/preprocessor/list/for_each_i.hpp
         - src/third_party/boost/boost/preprocessor/logical/compl.hpp
@@ -2240,6 +2240,53 @@ module_groups:
             symbol_uses:
             - src/mongo/shell/dbshell.cpp
             - src/mongo/shell/shell_utils_launcher.cpp
+        -   symbol_name: mongo::inShutdown()
+            symbol_uses:
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/db/auth/user_cache_invalidator_job.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/util/assert_util.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/util/net/listen.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/client/connpool.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/db/storage/data_file.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/util/concurrency/task.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/stats/snapshots.cpp
+            - src/mongo/db/repl/rs.cpp
+        -   symbol_name: mongo::ClientBasic::getCurrent()
+            symbol_uses:
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/db/commands/group.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/db/commands/connection_status.cpp
+            - src/mongo/db/auth/authz_session_external_state_server_common.cpp
+            - src/mongo/db/matcher/expression_where.cpp
+            - src/mongo/db/dbeval.cpp
+            - src/mongo/db/server_extra_log_context.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/db/commands/server_status.cpp
+            - src/mongo/db/commands/authentication_commands.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/repl/rs_sync.cpp
+            - src/mongo/s/cursors.cpp
+            - src/mongo/s/commands_admin.cpp
         -   symbol_name: mongo::shell_utils::mongoProgramOutputMutex
             symbol_uses:
             - src/mongo/shell/dbshell.cpp
@@ -2250,77 +2297,30 @@ module_groups:
         -   symbol_name: mongo::createDirectClient()
             symbol_uses:
             - src/mongo/scripting/v8_db.cpp
-        -   symbol_name: mongo::dbexit(mongo::ExitCode, char const*)
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/tools/tool.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/db/dbcommands_generic.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/util/net/message_server_port.cpp
-            - src/mongo/dbtests/framework.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/structure/catalog/namespace_index.cpp
         -   symbol_name: mongo::Shard::isAShardNode(std::string const&)
             symbol_uses:
             - src/mongo/s/writeback_listener.cpp
         -   symbol_name: mongo::Shard::getAllShards(std::vector<mongo::Shard, std::allocator<mongo::Shard>
                 >&)
             symbol_uses:
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/s/strategy.cpp
             - src/mongo/s/shardconnection.cpp
+            - src/mongo/s/balance.cpp
             - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
             - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::inShutdown()
-            symbol_uses:
-            - src/mongo/db/repl/write_concern.cpp
-            - src/mongo/util/concurrency/task.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/s/writeback_listener.cpp
-            - src/mongo/s/config_server_checker_service.cpp
-            - src/mongo/db/storage/durable_mapped_file.cpp
-            - src/mongo/db/stats/snapshots.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/util/net/listen.cpp
-            - src/mongo/db/auth/user_cache_invalidator_job.cpp
-            - src/mongo/util/assert_util.cpp
-            - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
-            - src/mongo/util/net/message_server_port.cpp
-            - src/mongo/client/connpool.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/storage/data_file.cpp
-            - src/mongo/db/range_deleter.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/dur.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/db/dur_journal.cpp
-            - src/mongo/s/distlock.cpp
-        -   symbol_name: mongo::ClientBasic::getCurrent()
-            symbol_uses:
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/db/commands/server_status.cpp
-            - src/mongo/db/matcher/expression_where.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/commands/group.cpp
-            - src/mongo/db/server_extra_log_context.cpp
-            - src/mongo/s/server.cpp
-            - src/mongo/db/dbeval.cpp
             - src/mongo/s/strategy.cpp
-            - src/mongo/s/cursors.cpp
-            - src/mongo/db/commands/connection_status.cpp
-            - src/mongo/db/auth/authz_session_external_state_server_common.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
+        -   symbol_name: mongo::dbexit(mongo::ExitCode, char const*)
+            symbol_uses:
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/dbcommands_generic.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/framework.cpp
+            - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/tools/tool.cpp
             - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/repl/rs_sync.cpp
         file_dependencies:
         -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
             symbol_sources:
@@ -2574,7 +2574,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -2651,6 +2651,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2668,7 +2669,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -2755,7 +2756,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -2934,244 +2934,244 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: vtable for mongo::ScopedDbConnection
-            symbol_uses:
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/config_upgrade.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/writeback_listener.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
-            - src/mongo/s/d_split.cpp
-            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/cursors.cpp
-            - src/mongo/s/cluster_client_internal.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/metadata_loader.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/s/distlock.cpp
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/client/parallel.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/s/config_upgrade_helpers.cpp
-            - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::DBConnectionPool::appendInfo(mongo::BSONObjBuilder&)
-            symbol_uses:
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/db/commands.cpp
         -   symbol_name: mongo::DBConnectionPool::addHook(mongo::DBConnectionHook*)
             symbol_uses:
             - src/mongo/s/d_state.cpp
             - src/mongo/s/server.cpp
-        -   symbol_name: mongo::pool
-            symbol_uses:
-            - src/mongo/s/server.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/db/commands.cpp
-            - src/mongo/s/config_upgrade.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/writeback_listener.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
-            - src/mongo/s/d_split.cpp
-            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/s/d_state.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/cursors.cpp
-            - src/mongo/db/conn_pool_options.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/metadata_loader.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/s/distlock.cpp
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/cluster_client_internal.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/client/parallel.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/s/config_upgrade_helpers.cpp
-            - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::DBConnectionPool::get(mongo::ConnectionString const&,
-                double)
-            symbol_uses:
-            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/config_upgrade.cpp
-            - src/mongo/s/config_upgrade_helpers.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
-            - src/mongo/s/cluster_client_internal.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/s/dbclient_multi_command.cpp
-        -   symbol_name: mongo::DBConnectionPool::flush()
-            symbol_uses:
-            - src/mongo/db/commands.cpp
-        -   symbol_name: mongo::DBConnectionPool::removeHost(std::string const&)
-            symbol_uses:
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/client/replica_set_monitor.cpp
         -   symbol_name: mongo::ScopedDbConnection::_setSocketTimeout()
             symbol_uses:
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/config_upgrade.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/writeback_listener.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
             - src/mongo/s/d_split.cpp
-            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/metadata_loader.cpp
             - src/mongo/db/auth/authz_manager_external_state_s.cpp
             - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/cursors.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
             - src/mongo/s/cluster_client_internal.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/metadata_loader.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/s/distlock.cpp
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/client/parallel.cpp
             - src/mongo/s/balance.cpp
-            - src/mongo/s/config_upgrade_helpers.cpp
-            - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)
-            symbol_uses:
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/config_upgrade.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/writeback_listener.cpp
             - src/mongo/s/commands/auth_schema_upgrade_s.cpp
-            - src/mongo/s/d_split.cpp
+            - src/mongo/s/grid.cpp
             - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/cursors.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/metadata_loader.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/s/distlock.cpp
-            - src/mongo/s/dbclient_multi_command.cpp
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/s/config_upgrade_helpers.cpp
-            - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::DBConnectionPool::isConnectionGood(std::string const&,
-                mongo::DBClientBase*)
-            symbol_uses:
-            - src/mongo/s/shardconnection.cpp
-        -   symbol_name: mongo::DBConnectionPool::get(std::string const&, double)
-            symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/shard.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/grid.cpp
             - src/mongo/client/parallel.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/cursors.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/shard.cpp
             - src/mongo/s/writeback_listener.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/s/distlock.cpp
-            - src/mongo/s/metadata_loader.cpp
-            - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/s/d_split.cpp
+            - src/mongo/s/cursors.cpp
+            - src/mongo/s/config_upgrade_helpers.cpp
+            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands_admin.cpp
         -   symbol_name: mongo::DBConnectionPool::onHandedOut(mongo::DBClientBase*)
             symbol_uses:
             - src/mongo/s/shardconnection.cpp
         -   symbol_name: mongo::DBConnectionPool::~DBConnectionPool()
             symbol_uses:
             - src/mongo/s/shardconnection.cpp
+        -   symbol_name: mongo::DBConnectionPool::DBConnectionPool()
+            symbol_uses:
+            - src/mongo/s/shardconnection.cpp
+        -   symbol_name: vtable for mongo::ScopedDbConnection
+            symbol_uses:
+            - src/mongo/s/d_split.cpp
+            - src/mongo/s/metadata_loader.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+            - src/mongo/s/cluster_client_internal.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/s/cursors.cpp
+            - src/mongo/s/config_upgrade_helpers.cpp
+            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::DBConnectionPool::release(std::string const&, mongo::DBClientBase*)
+            symbol_uses:
+            - src/mongo/s/d_split.cpp
+            - src/mongo/s/metadata_loader.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+            - src/mongo/s/dbclient_multi_command.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/s/cursors.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/config_upgrade_helpers.cpp
+            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::DBConnectionPool::flush()
+            symbol_uses:
+            - src/mongo/db/commands.cpp
+        -   symbol_name: mongo::DBConnectionPool::removeHost(std::string const&)
+            symbol_uses:
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/commands_admin.cpp
         -   symbol_name: mongo::DBConnectionPool::serverNameCompare::operator()(std::string
                 const&, std::string const&) const
             symbol_uses:
             - src/mongo/s/shardconnection.cpp
+        -   symbol_name: mongo::ScopedDbConnection::~ScopedDbConnection()
+            symbol_uses:
+            - src/mongo/s/d_split.cpp
+            - src/mongo/s/metadata_loader.cpp
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/s/cursors.cpp
+            - src/mongo/s/config_upgrade_helpers.cpp
+            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::DBConnectionPool::appendInfo(mongo::BSONObjBuilder&)
+            symbol_uses:
+            - src/mongo/db/commands.cpp
+            - src/mongo/s/shardconnection.cpp
+        -   symbol_name: mongo::pool
+            symbol_uses:
+            - src/mongo/s/d_split.cpp
+            - src/mongo/s/metadata_loader.cpp
+            - src/mongo/db/conn_pool_options.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+            - src/mongo/s/cluster_client_internal.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/s/cursors.cpp
+            - src/mongo/db/commands.cpp
+            - src/mongo/s/config_upgrade_helpers.cpp
+            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::DBConnectionPool::get(mongo::ConnectionString const&,
+                double)
+            symbol_uses:
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/config_upgrade_helpers.cpp
+            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/s/dbclient_multi_command.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+            - src/mongo/s/cluster_client_internal.cpp
         -   symbol_name: mongo::DBConnectionPool::clear()
             symbol_uses:
             - src/mongo/s/shardconnection.cpp
+        -   symbol_name: mongo::DBConnectionPool::isConnectionGood(std::string const&,
+                mongo::DBClientBase*)
+            symbol_uses:
+            - src/mongo/s/shardconnection.cpp
+        -   symbol_name: mongo::DBConnectionPool::get(std::string const&, double)
+            symbol_uses:
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/metadata_loader.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/s/cursors.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/s/commands_admin.cpp
         -   symbol_name: mongo::AScopedConnection::_numConnections
             symbol_uses:
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/db/commands.cpp
-            - src/mongo/s/config_upgrade.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/writeback_listener.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
             - src/mongo/s/d_split.cpp
-            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/metadata_loader.cpp
             - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/cursors.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/s/cluster_client_internal.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/metadata_loader.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/s/distlock.cpp
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/client/parallel.cpp
             - src/mongo/s/balance.cpp
-            - src/mongo/s/config_upgrade_helpers.cpp
-            - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::DBConnectionPool::DBConnectionPool()
-            symbol_uses:
-            - src/mongo/s/shardconnection.cpp
-        -   symbol_name: mongo::ScopedDbConnection::~ScopedDbConnection()
-            symbol_uses:
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/s/distlock.cpp
             - src/mongo/s/config.cpp
-            - src/mongo/s/writeback_listener.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
-            - src/mongo/s/d_split.cpp
-            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/cursors.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/metadata_loader.cpp
             - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/s/distlock.cpp
-            - src/mongo/s/shard.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/commands/cluster_merge_chunks_cmd.cpp
+            - src/mongo/s/cluster_client_internal.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
             - src/mongo/s/grid.cpp
-            - src/mongo/s/balance.cpp
+            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/s/cursors.cpp
+            - src/mongo/db/commands.cpp
             - src/mongo/s/config_upgrade_helpers.cpp
+            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/strategy.cpp
             - src/mongo/s/commands_admin.cpp
         file_dependencies:
         -   symbol_name: typeinfo for mongo::SocketException
@@ -3259,11 +3259,11 @@ module_groups:
             - src/mongo/logger/logstream_builder.cpp
         -   symbol_name: mongo::inShutdown()
             symbol_sources:
-            - src/mongo/client/scoped_db_conn_test.cpp
             - src/mongo/unittest/crutch.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/s/server.cpp
             - src/mongo/client/clientAndShell.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/scoped_db_conn_test.cpp
+            - src/mongo/s/server.cpp
         -   symbol_name: mongo::ConnectionString::connect(std::string&, double) const
             symbol_sources:
             - src/mongo/client/dbclient.cpp
@@ -3529,7 +3529,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - /usr/local/Cellar/openssl/1.0.1e/include/openssl/objects.h
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
@@ -3616,6 +3616,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -3635,7 +3636,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/mongo/db/namespace_string-inl.h
@@ -3726,7 +3727,6 @@ module_groups:
         - src/mongo/util/hex.h
         - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ossl_typ.h
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -3920,320 +3920,359 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::DBClientWithCommands::simpleCommand(std::string const&,
-                mongo::BSONObj*, std::string const&)
+        -   symbol_name: mongo::DBClientConnection::_numConnections
             symbol_uses:
-            - src/mongo/db/repl/replset_commands.cpp
-            - src/mongo/db/commands/isself.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/tools/top.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/tools/dump.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/db/commands.cpp
+            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
             - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/db/repl/oplogreader.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/db/commands/isself.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/db/repl/rs_config.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/tools/sniffer.cpp
+        -   symbol_name: vtable for mongo::DBClientInterface
+            symbol_uses:
+            - src/mongo/db/repl/rs_config.cpp
+            - src/mongo/dbtests/gridfstest.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/dbtests/commandtests.cpp
+            - src/mongo/dbtests/querytests.cpp
             - src/mongo/db/instance.cpp
+            - src/mongo/db/pipeline/pipeline_d.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/dbtests/query_stage_keep.cpp
             - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/tools/restore.cpp
-            - src/mongo/s/commands_admin.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/db/restapi.cpp
+            - src/mongo/db/commands/isself.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/dbtests/perf/perftest.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/commands/apply_ops.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/repl/oplogreader.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
+            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/db/commands/drop_indexes.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
             - src/mongo/tools/tool.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/dbtests/btreebuildertests.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/extsorttests.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/dbtests/directclienttests.cpp
+        -   symbol_name: mongo::Query::minKey(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/dbtests/querytests.cpp
+        -   symbol_name: mongo::Query::Query(std::string const&)
+            symbol_uses:
+            - src/mongo/tools/export.cpp
+        -   symbol_name: mongo::DBClientWithCommands::getDatabaseNames()
+            symbol_uses:
+            - src/mongo/db/repl/rs_initialsync.cpp
+        -   symbol_name: mongo::getErrField(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/db/cloner.cpp
+        -   symbol_name: mongo::ConnectionString::sameLogicalEndpoint(mongo::ConnectionString
+                const&) const
+            symbol_uses:
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/commands_admin.cpp
+        -   symbol_name: mongo::DBClientConnection::_auth(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+        -   symbol_name: mongo::DBClientWithCommands::auth(std::string const&, std::string
+                const&, std::string const&, std::string&, bool)
+            symbol_uses:
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/scripting/bench.cpp
+        -   symbol_name: mongo::DBClientInterface::findN(std::vector<mongo::BSONObj,
+                std::allocator<mongo::BSONObj> >&, std::string const&, mongo::Query,
+                int, int, mongo::BSONObj const*, int)
+            symbol_uses:
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_merge.cpp
+        -   symbol_name: mongo::ConnectionString::typeToString(mongo::ConnectionString::ConnectionType)
+            symbol_uses:
+            - src/mongo/client/connpool.cpp
+        -   symbol_name: mongo::Query::hasReadPreference(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::Query::isExplain() const
+            symbol_uses:
+            - src/mongo/s/strategy.cpp
+        -   symbol_name: mongo::DBClientConnection::recv(mongo::Message&)
+            symbol_uses:
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+        -   symbol_name: mongo::Query::explain()
+            symbol_uses:
+            - src/mongo/dbtests/querytests.cpp
         -   symbol_name: vtable for mongo::DBClientBase
             symbol_uses:
-            - src/mongo/dbtests/query_stage_fetch.cpp
-            - src/mongo/db/commands/isself.cpp
-            - src/mongo/db/commands/drop_indexes.cpp
-            - src/mongo/dbtests/queryutiltests.cpp
-            - src/mongo/tools/tool.cpp
-            - src/mongo/db/repl/write_concern.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/db/commands/apply_ops.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/dbtests/query_stage_distinct.cpp
             - src/mongo/db/repl/rs_config.cpp
-            - src/mongo/dbtests/query_multi_plan_runner.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/db/repl/manager.cpp
-            - src/mongo/dbtests/query_stage_and.cpp
-            - src/mongo/tools/bridge.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
             - src/mongo/dbtests/gridfstest.cpp
-            - src/mongo/dbtests/query_stage_keep.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/db/repl/consensus.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/dbtests/extsorttests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/commandtests.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/tools/sniffer.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/db/repl/oplogreader.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/db/restapi.cpp
-            - src/mongo/dbtests/oplogstarttests.cpp
-            - src/mongo/dbtests/directclienttests.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/dbtests/perf/perftest.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/dbtests/query_stage_merge_sort.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/updatetests.cpp
-            - src/mongo/dbtests/query_stage_sort.cpp
-            - src/mongo/dbtests/query_stage_tests.cpp
-            - src/mongo/db/repl/sync_source_feedback.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
-            - src/mongo/db/pipeline/pipeline_d.cpp
             - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/dbtests/jstests.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-            - src/mongo/dbtests/btreebuildertests.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
             - src/mongo/dbtests/query_stage_count.cpp
-        -   symbol_name: mongo::DBClientWithCommands::reIndex(std::string const&)
-            symbol_uses:
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/dbtests/commandtests.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/pipeline/pipeline_d.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/dbtests/query_stage_keep.cpp
             - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
             - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
             - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::Query::toString() const
-            symbol_uses:
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/metadata_loader.cpp
-        -   symbol_name: mongo::DBClientBase::INVALID_SOCK_CREATION_TIME
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
             - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/client/connpool.cpp
-        -   symbol_name: mongo::DBClientWithCommands::setPostRunCommandHook(boost::function<void
-                (mongo::BSONObj const&, std::string const&)>)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/db/restapi.cpp
+            - src/mongo/db/commands/isself.cpp
             - src/mongo/dbtests/sharding.cpp
             - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::ConnectionString::_connectHookMutex
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/dbtests/perf/perftest.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/commands/apply_ops.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/repl/oplogreader.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
+            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/db/commands/drop_indexes.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/dbtests/btreebuildertests.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/extsorttests.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/dbtests/directclienttests.cpp
+        -   symbol_name: mongo::DBClientConnection::_checkConnection()
             symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/tools/stat.cpp
         -   symbol_name: mongo::Query::readPref(mongo::ReadPreference, mongo::BSONArray
                 const&)
             symbol_uses:
             - src/mongo/db/auth/authz_manager_external_state_s.cpp
-        -   symbol_name: mongo::DBClientWithCommands::getCollectionNames(std::string
-                const&)
+        -   symbol_name: mongo::DBClientConnection::_lazyKillCursor
             symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/db/db.cpp
-        -   symbol_name: mongo::DBClientWithCommands::getDatabaseNames()
-            symbol_uses:
-            - src/mongo/db/repl/rs_initialsync.cpp
-        -   symbol_name: mongo::DBClientBase::insert(std::string const&, mongo::BSONObj,
-                int)
-            symbol_uses:
-            - src/mongo/dbtests/query_stage_fetch.cpp
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/dbtests/query_stage_sort.cpp
-            - src/mongo/dbtests/query_stage_distinct.cpp
-            - src/mongo/dbtests/query_multi_plan_runner.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/query_stage_keep.cpp
-            - src/mongo/dbtests/jstests.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/commandtests.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/dbtests/query_stage_and.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/dbtests/queryutiltests.cpp
-            - src/mongo/dbtests/query_stage_merge_sort.cpp
-            - src/mongo/db/restapi.cpp
-            - src/mongo/dbtests/updatetests.cpp
-            - src/mongo/dbtests/query_stage_tests.cpp
-            - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-            - src/mongo/dbtests/query_stage_count.cpp
-        -   symbol_name: mongo::Query::ReadPrefField
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/s/strategy.cpp
-        -   symbol_name: mongo::getErrField(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
             - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/db/cloner.cpp
+            - src/mongo/s/server.cpp
         -   symbol_name: mongo::Query::Query(char const*)
             symbol_uses:
-            - src/mongo/dbtests/jstests.cpp
-            - src/mongo/dbtests/querytests.cpp
             - src/mongo/dbtests/updatetests.cpp
-            - src/mongo/tools/tool.cpp
-        -   symbol_name: mongo::DBClientWithCommands::count(std::string const&, mongo::BSONObj
-                const&, int, int, int)
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-        -   symbol_name: mongo::DBClientBase::query(boost::function<void (mongo::BSONObj
-                const&)>, std::string const&, mongo::Query, mongo::BSONObj const*,
-                int)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-        -   symbol_name: mongo::DBClientConnection::_auth(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-        -   symbol_name: mongo::Query::isExplain() const
-            symbol_uses:
-            - src/mongo/s/strategy.cpp
-        -   symbol_name: mongo::DBClientWithCommands::isMaster(bool&, mongo::BSONObj*)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::ConnectionString::parse(std::string const&, std::string&)
-            symbol_uses:
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/tools/tool.cpp
-            - src/mongo/s/client_info.cpp
-            - src/mongo/s/d_state.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/shell/shell_utils.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/writeback_listener.cpp
-            - src/mongo/s/cluster_client_internal.cpp
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/s/server.cpp
-            - src/mongo/s/dbclient_shard_resolver.cpp
-            - src/mongo/client/connpool.cpp
-            - src/mongo/scripting/v8_db.cpp
-        -   symbol_name: mongo::Query::getFilter() const
-            symbol_uses:
             - src/mongo/dbtests/querytests.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/client/parallel.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-        -   symbol_name: mongo::DBClientBase::update(std::string const&, mongo::Query,
-                mongo::BSONObj, bool, bool)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/tools/tool.cpp
             - src/mongo/dbtests/jstests.cpp
-            - src/mongo/db/repl/write_concern.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-        -   symbol_name: mongo::DBClientWithCommands::getLastErrorString(mongo::BSONObj
+        -   symbol_name: mongo::DBClientWithCommands::eval(std::string const&, std::string
                 const&)
             symbol_uses:
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/s/config_upgrade.cpp
-            - src/mongo/s/config_upgrade_helpers.cpp
-            - src/mongo/db/pipeline/document_source_out.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-            - src/mongo/s/cluster_client_internal.cpp
-            - src/mongo/s/distlock.cpp
-            - src/mongo/client/gridfs.cpp
-        -   symbol_name: mongo::DBClientWithCommands::ensureIndex(std::string const&,
-                mongo::BSONObj, bool, std::string const&, bool, bool, int, int)
+            - src/mongo/dbtests/jstests.cpp
+        -   symbol_name: typeinfo for mongo::DBClientBase
             symbol_uses:
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/dbtests/query_stage_distinct.cpp
-            - src/mongo/dbtests/query_multi_plan_runner.cpp
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
             - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/commandtests.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/dbtests/query_stage_and.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-            - src/mongo/dbtests/query_stage_merge_sort.cpp
-            - src/mongo/dbtests/query_stage_tests.cpp
-            - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/dbtests/sharding.cpp
             - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/dbtests/queryutiltests.cpp
-            - src/mongo/dbtests/query_stage_count.cpp
-        -   symbol_name: mongo::DBClientWithCommands::_auth(mongo::BSONObj const&)
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/scripting/engine_v8.cpp
+            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::ConnectionString::connect(std::string&, double) const
             symbol_uses:
+            - src/mongo/scripting/v8_db.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/client/connpool.cpp
+        -   symbol_name: mongo::DBClientWithCommands::getPrevError()
+            symbol_uses:
+            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/dbtests/querytests.cpp
+        -   symbol_name: mongo::DBClientWithCommands::simpleCommand(std::string const&,
+                mongo::BSONObj*, std::string const&)
+            symbol_uses:
+            - src/mongo/tools/top.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/db/commands/isself.cpp
+            - src/mongo/tools/dump.cpp
+            - src/mongo/db/repl/replset_commands.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
             - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/tools/stat.cpp
             - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/tools/tool.cpp
+        -   symbol_name: mongo::DBClientWithCommands::reIndex(std::string const&)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/clienttests.cpp
+        -   symbol_name: mongo::DBClientWithCommands::setPostRunCommandHook(boost::function<void
+                (mongo::BSONObj const&, std::string const&)>)
+            symbol_uses:
             - src/mongo/db/instance.cpp
             - src/mongo/dbtests/merge_chunk_tests.cpp
             - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+        -   symbol_name: mongo::ConnectionString::_connectHookMutex
+            symbol_uses:
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+        -   symbol_name: mongo::DBClientBase::query(std::string const&, mongo::Query,
+                int, int, mongo::BSONObj const*, int, int)
+            symbol_uses:
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::Query::ReadPrefModeField
+            symbol_uses:
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::DBClientWithCommands::getLastError(std::string const&,
+                bool, bool, int, int)
+            symbol_uses:
+            - src/mongo/tools/restore.cpp
+        -   symbol_name: mongo::DBClientWithCommands::isMaster(bool&, mongo::BSONObj*)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::DBClientWithCommands::getLastErrorDetailed(bool, bool,
+                int, int)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::DBClientWithCommands::auth(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/scripting/v8_db.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/db/auth/security_key.cpp
+        -   symbol_name: mongo::DBClientWithCommands::setRunCommandHook(boost::function<void
+                (mongo::BSONObjBuilder*)>)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
         -   symbol_name: mongo::DBClientConnection::setSoTimeout(double)
             symbol_uses:
             - src/mongo/db/repl/heartbeat.cpp
@@ -4241,500 +4280,435 @@ module_groups:
             - src/mongo/client/connpool.cpp
         -   symbol_name: vtable for mongo::DBClientWithCommands
             symbol_uses:
+            - src/mongo/db/repl/rs_config.cpp
+            - src/mongo/dbtests/gridfstest.cpp
+            - src/mongo/client/syncclusterconnection.cpp
             - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/dbtests/commandtests.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/pipeline/pipeline_d.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/dbtests/query_stage_keep.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/db/restapi.cpp
             - src/mongo/db/commands/isself.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/dbtests/perf/perftest.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/commands/apply_ops.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/repl/oplogreader.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
+            - src/mongo/dbtests/updatetests.cpp
             - src/mongo/db/commands/drop_indexes.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/db/repl/manager.cpp
             - src/mongo/dbtests/queryutiltests.cpp
             - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/db/repl/write_concern.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/db/commands/apply_ops.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/dbtests/query_stage_distinct.cpp
-            - src/mongo/db/repl/rs_config.cpp
-            - src/mongo/dbtests/query_multi_plan_runner.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/db/repl/manager.cpp
-            - src/mongo/tools/bridge.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/dbtests/gridfstest.cpp
-            - src/mongo/dbtests/query_stage_keep.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/db/repl/consensus.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/dbtests/extsorttests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/commandtests.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/tools/sniffer.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/db/repl/oplogreader.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/query_stage_and.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/db/restapi.cpp
-            - src/mongo/dbtests/oplogstarttests.cpp
-            - src/mongo/dbtests/directclienttests.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/dbtests/query_stage_merge_sort.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/updatetests.cpp
-            - src/mongo/dbtests/query_stage_sort.cpp
-            - src/mongo/dbtests/query_stage_tests.cpp
-            - src/mongo/db/repl/sync_source_feedback.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
-            - src/mongo/db/pipeline/pipeline_d.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/dbtests/jstests.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
             - src/mongo/dbtests/btreebuildertests.cpp
-            - src/mongo/dbtests/query_stage_count.cpp
-        -   symbol_name: mongo::DBClientWithCommands::dropIndex(std::string const&,
-                mongo::BSONObj)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::ConnectionString::typeToString(mongo::ConnectionString::ConnectionType)
-            symbol_uses:
-            - src/mongo/client/connpool.cpp
-        -   symbol_name: mongo::DBClientWithCommands::exists(std::string const&)
-            symbol_uses:
-            - src/mongo/tools/restore.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
             - src/mongo/db/commands/mr.cpp
-            - src/mongo/db/repl/master_slave.cpp
-        -   symbol_name: mongo::DBClientConnection::setReplSetClientCallback(mongo::DBClientReplicaSet*)
-            symbol_uses:
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/extsorttests.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/repl/rs.cpp
             - src/mongo/client/dbclient_rs.cpp
-        -   symbol_name: mongo::assembleRequest(std::string const&, mongo::BSONObj,
-                int, int, mongo::BSONObj const*, int, mongo::Message&)
-            symbol_uses:
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/dbtests/directclienttests.cpp
         -   symbol_name: mongo::DBClientBase::ConnectionIdSequence
             symbol_uses:
-            - src/mongo/dbtests/query_stage_fetch.cpp
-            - src/mongo/db/commands/isself.cpp
-            - src/mongo/db/commands/drop_indexes.cpp
-            - src/mongo/dbtests/queryutiltests.cpp
-            - src/mongo/tools/tool.cpp
-            - src/mongo/db/repl/write_concern.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/db/commands/apply_ops.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/dbtests/query_stage_distinct.cpp
             - src/mongo/db/repl/rs_config.cpp
-            - src/mongo/dbtests/query_multi_plan_runner.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/db/repl/manager.cpp
-            - src/mongo/dbtests/query_stage_and.cpp
-            - src/mongo/tools/bridge.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
             - src/mongo/dbtests/gridfstest.cpp
-            - src/mongo/dbtests/query_stage_keep.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/db/repl/consensus.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/dbtests/extsorttests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/commandtests.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/tools/sniffer.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/db/repl/oplogreader.cpp
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/dbtests/replsettests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/db/restapi.cpp
-            - src/mongo/dbtests/oplogstarttests.cpp
-            - src/mongo/dbtests/directclienttests.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/dbtests/perf/perftest.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/dbtests/query_stage_merge_sort.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/updatetests.cpp
-            - src/mongo/dbtests/query_stage_sort.cpp
-            - src/mongo/dbtests/query_stage_tests.cpp
-            - src/mongo/db/repl/sync_source_feedback.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
-            - src/mongo/db/pipeline/pipeline_d.cpp
             - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/dbtests/jstests.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-            - src/mongo/dbtests/btreebuildertests.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
             - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/dbtests/commandtests.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/pipeline/pipeline_d.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/dbtests/query_stage_keep.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/db/repl/sync_source_feedback.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/db/ttl.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/tools/sniffer.cpp
+            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/db/restapi.cpp
+            - src/mongo/db/commands/isself.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/dbtests/perf/perftest.cpp
+            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/db/commands/apply_ops.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/repl/oplogreader.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
+            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/db/commands/drop_indexes.cpp
+            - src/mongo/db/repl/heartbeat.cpp
+            - src/mongo/dbtests/oplogstarttests.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/db/repl/manager.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/dbtests/btreebuildertests.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/tools/bridge.cpp
+            - src/mongo/dbtests/replsettests.cpp
+            - src/mongo/dbtests/extsorttests.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+            - src/mongo/db/repl/oplog.cpp
+            - src/mongo/dbtests/directclienttests.cpp
         -   symbol_name: mongo::DBClientWithCommands::getLastError(bool, bool, int,
                 int)
             symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/tools/import.cpp
-            - src/mongo/tools/files.cpp
-            - src/mongo/dbtests/directclienttests.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/s/shardconnection.cpp
             - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/tools/files.cpp
+            - src/mongo/s/distlock.cpp
             - src/mongo/s/config.cpp
             - src/mongo/scripting/bench.cpp
-            - src/mongo/s/distlock.cpp
-            - src/mongo/s/cluster_client_internal.cpp
-        -   symbol_name: mongo::DBClientBase::remove(std::string const&, mongo::Query,
-                int)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-        -   symbol_name: mongo::Query::hint(std::string const&)
-            symbol_uses:
-            - src/mongo/dbtests/updatetests.cpp
-        -   symbol_name: mongo::DBClientInterface::findN(std::vector<mongo::BSONObj,
-                std::allocator<mongo::BSONObj> >&, std::string const&, mongo::Query,
-                int, int, mongo::BSONObj const*, int)
-            symbol_uses:
-            - src/mongo/s/d_merge.cpp
-            - src/mongo/dbtests/perftests.cpp
-        -   symbol_name: mongo::nsGetCollection(std::string const&)
-            symbol_uses:
-            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/dbtests/querytests.cpp
             - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/dbtests/query_stage_sort.cpp
-            - src/mongo/dbtests/query_stage_distinct.cpp
-            - src/mongo/dbtests/query_multi_plan_runner.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/query_stage_keep.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/dbtests/directclienttests.cpp
+            - src/mongo/tools/import.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/s/cluster_client_internal.cpp
+        -   symbol_name: mongo::DBClientWithCommands::eval(std::string const&, std::string
+                const&, mongo::BSONObj&, mongo::BSONElement&, mongo::BSONObj*)
+            symbol_uses:
             - src/mongo/dbtests/jstests.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+        -   symbol_name: mongo::DBClientWithCommands::resetIndexCache()
+            symbol_uses:
             - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/commandtests.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/client/parallel.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/dbtests/query_stage_and.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/dbtests/query_stage_merge_sort.cpp
-            - src/mongo/dbtests/query_stage_tests.cpp
-            - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/dbtests/sharding.cpp
             - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/s/version_manager.cpp
-            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: typeinfo for mongo::DBClientWithCommands
+            symbol_uses:
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/scripting/engine_v8.cpp
+        -   symbol_name: mongo::Query::getSort() const
+            symbol_uses:
+            - src/mongo/client/parallel.cpp
         -   symbol_name: mongo::DBClientWithCommands::isOk(mongo::BSONObj const&)
             symbol_uses:
             - src/mongo/client/syncclusterconnection.cpp
-        -   symbol_name: mongo::DBClientBase::update(std::string const&, mongo::Query,
-                mongo::BSONObj, int)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::ConnectionString::sameLogicalEndpoint(mongo::ConnectionString
-                const&) const
-            symbol_uses:
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/client/parallel.cpp
         -   symbol_name: non-virtual thunk to mongo::DBClientConnection::checkResponse(char
                 const*, int, bool*, std::string*)
             symbol_uses:
             - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-        -   symbol_name: mongo::DBClientWithCommands::auth(std::string const&, std::string
-                const&, std::string const&, std::string&, bool)
-            symbol_uses:
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/dbtests/perftests.cpp
         -   symbol_name: mongo::ConnectionString::_finishInit()
             symbol_uses:
             - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/commands_public.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
             - src/mongo/s/d_split.cpp
-            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/s/cluster_client_internal.cpp
-            - src/mongo/s/d_migrate.cpp
             - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/s/distlock.cpp
             - src/mongo/s/commands_admin.cpp
-        -   symbol_name: mongo::DBClientBase::query(boost::function<void (mongo::DBClientCursorBatchIterator&)>,
-                std::string const&, mongo::Query, mongo::BSONObj const*, int)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
             - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
             - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
+            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+            - src/mongo/s/commands_public.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/cluster_client_internal.cpp
+            - src/mongo/client/dbclient_rs.cpp
         -   symbol_name: mongo::ConnectionString::_fillServers(std::string)
             symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/s/shard.cpp
-            - src/mongo/s/cluster_write.cpp
             - src/mongo/s/commands_public.cpp
-            - src/mongo/s/balance.cpp
             - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
-            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/cluster_write.cpp
             - src/mongo/s/d_split.cpp
-        -   symbol_name: mongo::DBClientWithCommands::auth(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/tools/tool.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/auth/security_key.cpp
-            - src/mongo/scripting/v8_db.cpp
-        -   symbol_name: mongo::DBClientWithCommands::setRunCommandHook(boost::function<void
-                (mongo::BSONObjBuilder*)>)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::Query::explain()
-            symbol_uses:
-            - src/mongo/dbtests/querytests.cpp
-        -   symbol_name: mongo::Query::getSort() const
-            symbol_uses:
-            - src/mongo/client/parallel.cpp
-        -   symbol_name: mongo::DBClientWithCommands::getLastError(std::string const&,
-                bool, bool, int, int)
-            symbol_uses:
-            - src/mongo/tools/restore.cpp
-        -   symbol_name: mongo::DBClientWithCommands::resetIndexCache()
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/queryutiltests.cpp
-        -   symbol_name: mongo::Query::ReadPrefTagsField
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-        -   symbol_name: typeinfo for mongo::DBClientConnection
-            symbol_uses:
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/tools/dump.cpp
-        -   symbol_name: mongo::DBClientWithCommands::getLastErrorDetailed(bool, bool,
-                int, int)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::DBClientWithCommands::isNotMasterErrorString(mongo::BSONElement
-                const&)
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-        -   symbol_name: typeinfo for mongo::DBClientWithCommands
-            symbol_uses:
-            - src/mongo/scripting/engine_v8.cpp
-            - src/mongo/shell/shell_utils.cpp
-        -   symbol_name: mongo::DBClientWithCommands::runCommand(std::string const&,
-                mongo::BSONObj const&, mongo::BSONObj&, int)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/s/shard.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/commands/auth_schema_upgrade_s.cpp
             - src/mongo/dbtests/clienttests.cpp
+        -   symbol_name: mongo::DBClientBase::update(std::string const&, mongo::Query,
+                mongo::BSONObj, bool, bool)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
             - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/commandtests.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/dbtests/querytests.cpp
-        -   symbol_name: mongo::DBClientBase::insert(std::string const&, std::vector<mongo::BSONObj,
-                std::allocator<mongo::BSONObj> > const&, int)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-        -   symbol_name: mongo::nsGetDB(std::string const&)
-            symbol_uses:
-            - src/mongo/dbtests/query_stage_fetch.cpp
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/db/catalog/database.cpp
-            - src/mongo/dbtests/query_stage_sort.cpp
-            - src/mongo/dbtests/query_stage_distinct.cpp
-            - src/mongo/dbtests/query_multi_plan_runner.cpp
-            - src/mongo/dbtests/documentsourcetests.cpp
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/query_stage_keep.cpp
             - src/mongo/dbtests/jstests.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/commandtests.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/dbtests/query_stage_and.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/dbtests/query_stage_merge_sort.cpp
-            - src/mongo/dbtests/query_stage_tests.cpp
-            - src/mongo/dbtests/plan_ranking.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
             - src/mongo/dbtests/sharding.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
         -   symbol_name: mongo::DBClientConnection::connect(mongo::HostAndPort const&,
                 std::string&)
             symbol_uses:
+            - src/mongo/tools/stat.cpp
             - src/mongo/tools/bridge.cpp
             - src/mongo/db/commands/isself.cpp
-            - src/mongo/tools/stat.cpp
-        -   symbol_name: mongo::DBClientInterface::findOne(std::string const&, mongo::Query
-                const&, mongo::BSONObj const*, int)
+        -   symbol_name: mongo::DBClientWithCommands::runCommand(std::string const&,
+                mongo::BSONObj const&, mongo::BSONObj&, int)
             symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/db/commands/apply_ops.cpp
-            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/db/commands/mr.cpp
             - src/mongo/db/instance.cpp
-            - src/mongo/db/repl/rs_config.cpp
-            - src/mongo/dbtests/jstests.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-        -   symbol_name: mongo::DBClientConnection::_checkConnection()
-            symbol_uses:
-            - src/mongo/tools/stat.cpp
-        -   symbol_name: mongo::Query::hasReadPreference(mongo::BSONObj const&)
-            symbol_uses:
+            - src/mongo/dbtests/commandtests.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
             - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/db/dbcommands.cpp
+            - src/mongo/dbtests/clienttests.cpp
         -   symbol_name: mongo::Query::isComplex(bool*) const
             symbol_uses:
             - src/mongo/db/commands/find_and_modify.cpp
-        -   symbol_name: mongo::DBClientConnection::_numConnections
+        -   symbol_name: mongo::DBClientWithCommands::dropIndexes(std::string const&)
             symbol_uses:
-            - src/mongo/tools/bridge.cpp
-            - src/mongo/db/commands/isself.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/db/repl/heartbeat.cpp
-            - src/mongo/db/commands.cpp
-            - src/mongo/db/repl/sync_source_feedback.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/db/repl/consensus.cpp
+            - src/mongo/db/instance.cpp
             - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/db/repl/rs_config.cpp
-            - src/mongo/tools/sniffer.cpp
-            - src/mongo/db/repl/oplogreader.cpp
-            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
-            - src/mongo/db/repl/manager.cpp
-        -   symbol_name: mongo::DBClientWithCommands::dropIndex(std::string const&,
-                std::string const&)
-            symbol_uses:
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/dbtests/sharding.cpp
             - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/runner_registry.cpp
             - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/clienttests.cpp
+        -   symbol_name: mongo::DBClientWithCommands::_auth(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+        -   symbol_name: mongo::ConnectionString::_connectHook
+            symbol_uses:
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+        -   symbol_name: mongo::DBClientBase::INVALID_SOCK_CREATION_TIME
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/client/connpool.cpp
+        -   symbol_name: mongo::DBClientWithCommands::count(std::string const&, mongo::BSONObj
+                const&, int, int, int)
+            symbol_uses:
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::Query::toString() const
+            symbol_uses:
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/s/metadata_loader.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/s/chunk.cpp
+        -   symbol_name: mongo::DBClientWithCommands::getCollectionNames(std::string
+                const&)
+            symbol_uses:
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+        -   symbol_name: mongo::nsGetCollection(std::string const&)
+            symbol_uses:
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/dbtests/commandtests.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/s/version_manager.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/query_stage_keep.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+        -   symbol_name: mongo::DBClientBase::query(boost::function<void (mongo::BSONObj
+                const&)>, std::string const&, mongo::Query, mongo::BSONObj const*,
+                int)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::DBClientWithCommands::getLastErrorString(mongo::BSONObj
+                const&)
+            symbol_uses:
+            - src/mongo/s/config_upgrade_helpers.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/s/config_upgrade.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/s/distlock.cpp
+            - src/mongo/client/gridfs.cpp
+            - src/mongo/db/pipeline/document_source_out.cpp
+            - src/mongo/s/cluster_client_internal.cpp
+        -   symbol_name: mongo::DBClientBase::query(boost::function<void (mongo::DBClientCursorBatchIterator&)>,
+                std::string const&, mongo::Query, mongo::BSONObj const*, int)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::Query::sort(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/s/d_split.cpp
+            - src/mongo/db/dbcommands.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/s/metadata_loader.cpp
+            - src/mongo/db/repl/rs_rollback.cpp
+            - src/mongo/tools/restore.cpp
+            - src/mongo/tools/export.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/dbtests/perf/perftest.cpp
+            - src/mongo/db/repl/rs_initialsync.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/dbtests/repltests.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/s/balance.cpp
+            - src/mongo/s/grid.cpp
+            - src/mongo/db/repl/health.cpp
+            - src/mongo/tools/dump.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/s/config_upgrade_helpers.cpp
+            - src/mongo/s/chunk.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/dbtests/perftests.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/db/repl/oplog.cpp
+        -   symbol_name: mongo::Query::ReadPrefTagsField
+            symbol_uses:
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::DBClientInterface::findOne(std::string const&, mongo::Query
+                const&, mongo::BSONObj const*, int)
+            symbol_uses:
+            - src/mongo/db/repl/rs_config.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/db/commands/apply_ops.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
             - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
             - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::Query::minKey(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/s/d_merge.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/db/repl/rs.cpp
+            - src/mongo/db/repl/oplog.cpp
         -   symbol_name: mongo::Query::hint(mongo::BSONObj)
             symbol_uses:
             - src/mongo/dbtests/dbhelper_tests.cpp
@@ -4742,220 +4716,318 @@ module_groups:
             - src/mongo/dbtests/perf/perftest.cpp
         -   symbol_name: mongo::DBClientWithCommands::getIndexes(std::string const&)
             symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/client/syncclusterconnection.cpp
             - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::Query::Query(std::string const&)
-            symbol_uses:
-            - src/mongo/tools/export.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/clienttests.cpp
         -   symbol_name: mongo::Query::snapshot()
             symbol_uses:
+            - src/mongo/tools/dump.cpp
             - src/mongo/db/cloner.cpp
             - src/mongo/tools/export.cpp
-            - src/mongo/tools/dump.cpp
         -   symbol_name: mongo::DBClientWithCommands::createCollection(std::string
                 const&, long long, bool, int, mongo::BSONObj*)
             symbol_uses:
             - src/mongo/s/config.cpp
-            - src/mongo/dbtests/indexupdatetests.cpp
-            - src/mongo/dbtests/extsorttests.cpp
             - src/mongo/db/db.cpp
-            - src/mongo/dbtests/clienttests.cpp
             - src/mongo/dbtests/querytests.cpp
-            - src/mongo/dbtests/directclienttests.cpp
-            - src/mongo/dbtests/perf/perftest.cpp
             - src/mongo/s/cluster_client_internal.cpp
-        -   symbol_name: mongo::DBClientConnection::_lazyKillCursor
-            symbol_uses:
-            - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/s/server.cpp
-        -   symbol_name: mongo::DBClientWithCommands::getLastErrorDetailed(std::string
-                const&, bool, bool, int, int)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-        -   symbol_name: mongo::DBClientWithCommands::dropIndexes(std::string const&)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/perf/perftest.cpp
+            - src/mongo/dbtests/extsorttests.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
             - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-        -   symbol_name: mongo::DBClientBase::remove(std::string const&, mongo::Query,
-                bool)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/runner_registry.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/query_stage_and.cpp
-            - src/mongo/dbtests/dbhelper_tests.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/dbtests/query_stage_collscan.cpp
-            - src/mongo/db/auth/authz_manager_external_state_d.cpp
-            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/dbtests/directclienttests.cpp
         -   symbol_name: mongo::DBClientWithCommands::_lookupAvailableOptions()
             symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
             - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-        -   symbol_name: mongo::ConnectionString::_connectHook
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/sharding.cpp
-        -   symbol_name: mongo::Query::maxKey(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/s/d_merge.cpp
-        -   symbol_name: mongo::DBClientConnection::checkResponse(char const*, int,
-                bool*, std::string*)
-            symbol_uses:
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-        -   symbol_name: mongo::Query::ReadPrefModeField
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-        -   symbol_name: mongo::DBClientBase::query(std::string const&, mongo::Query,
-                int, int, mongo::BSONObj const*, int, int)
-            symbol_uses:
-            - src/mongo/db/instance.cpp
-            - src/mongo/tools/stat.cpp
-        -   symbol_name: mongo::Query::sort(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/db/repl/rs_rollback.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/tools/restore.cpp
-            - src/mongo/db/repl/rs_initialsync.cpp
-            - src/mongo/s/d_split.cpp
-            - src/mongo/db/repl/oplog.cpp
-            - src/mongo/db/dbcommands.cpp
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/db/commands/find_and_modify.cpp
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/s/chunk.cpp
-            - src/mongo/tools/dump.cpp
-            - src/mongo/tools/export.cpp
-            - src/mongo/s/metadata_loader.cpp
-            - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/db/commands/mr.cpp
-            - src/mongo/dbtests/perf/perftest.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/dbtests/repltests.cpp
-            - src/mongo/dbtests/clienttests.cpp
-            - src/mongo/dbtests/updatetests.cpp
-            - src/mongo/s/grid.cpp
-            - src/mongo/dbtests/perftests.cpp
-            - src/mongo/s/balance.cpp
-            - src/mongo/s/config_upgrade_helpers.cpp
-            - src/mongo/db/repl/health.cpp
-        -   symbol_name: mongo::DBClientConnection::logout(std::string const&, mongo::BSONObj&)
-            symbol_uses:
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-        -   symbol_name: non-virtual thunk to mongo::DBClientConnection::recv(mongo::Message&)
-            symbol_uses:
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-        -   symbol_name: mongo::DBClientWithCommands::logout(std::string const&, mongo::BSONObj&)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
             - src/mongo/client/syncclusterconnection.cpp
             - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::DBClientWithCommands::eval(std::string const&, std::string
-                const&)
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::DBClientConnection::setReplSetClientCallback(mongo::DBClientReplicaSet*)
             symbol_uses:
-            - src/mongo/dbtests/jstests.cpp
-        -   symbol_name: mongo::DBClientConnection::recv(mongo::Message&)
-            symbol_uses:
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/client/dbclient_rs.cpp
         -   symbol_name: vtable for mongo::DBClientConnection
             symbol_uses:
+            - src/mongo/db/repl/rs_config.cpp
+            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/db/repl/oplogreader.cpp
             - src/mongo/tools/bridge.cpp
             - src/mongo/db/commands/isself.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/db/repl/heartbeat.cpp
             - src/mongo/tools/stat.cpp
+            - src/mongo/db/cloner.cpp
             - src/mongo/db/repl/sync_source_feedback.cpp
             - src/mongo/dbtests/perftests.cpp
+            - src/mongo/db/repl/heartbeat.cpp
             - src/mongo/db/repl/consensus.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/repl/rs_config.cpp
-            - src/mongo/tools/sniffer.cpp
-            - src/mongo/db/repl/oplogreader.cpp
-            - src/mongo/db/commands/auth_schema_upgrade_d.cpp
             - src/mongo/db/repl/manager.cpp
-        -   symbol_name: mongo::DBClientWithCommands::eval(std::string const&, std::string
-                const&, mongo::BSONObj&, mongo::BSONElement&, mongo::BSONObj*)
-            symbol_uses:
-            - src/mongo/dbtests/jstests.cpp
-        -   symbol_name: mongo::ConnectionString::connect(std::string&, double) const
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/db/cloner.cpp
-            - src/mongo/tools/tool.cpp
-            - src/mongo/shell/shell_utils.cpp
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/client/connpool.cpp
-            - src/mongo/scripting/v8_db.cpp
-        -   symbol_name: typeinfo for mongo::DBClientBase
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/shell/shell_utils.cpp
-            - src/mongo/scripting/engine_v8.cpp
-            - src/mongo/client/syncclusterconnection.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/client/parallel.cpp
-            - src/mongo/s/config_upgrade.cpp
-        -   symbol_name: mongo::DBClientBase::getMore(std::string const&, long long,
-                int, int)
-            symbol_uses:
-            - src/mongo/dbtests/config_server_fixture.cpp
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/dbtests/config_upgrade_tests.cpp
-            - src/mongo/dbtests/merge_chunk_tests.cpp
-            - src/mongo/dbtests/sharding.cpp
             - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
-            - src/mongo/db/instance.cpp
-        -   symbol_name: mongo::hasErrField(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/client/dbclientcursor.cpp
-        -   symbol_name: mongo::DBClientWithCommands::getPrevError()
-            symbol_uses:
-            - src/mongo/dbtests/querytests.cpp
-            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/tools/sniffer.cpp
         -   symbol_name: mongo::DBClientWithCommands::_countCmd(std::string const&,
                 mongo::BSONObj const&, int, int, int)
             symbol_uses:
             - src/mongo/db/instance.cpp
+        -   symbol_name: mongo::ConnectionString::parse(std::string const&, std::string&)
+            symbol_uses:
+            - src/mongo/s/client_info.cpp
+            - src/mongo/s/server.cpp
+            - src/mongo/scripting/v8_db.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/s/dbclient_shard_resolver.cpp
+            - src/mongo/db/cloner.cpp
+            - src/mongo/s/cluster_client_internal.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/shell/shell_utils.cpp
+            - src/mongo/s/d_state.cpp
+            - src/mongo/client/connpool.cpp
+            - src/mongo/tools/tool.cpp
+        -   symbol_name: mongo::Query::ReadPrefField
+            symbol_uses:
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/s/strategy.cpp
+        -   symbol_name: mongo::DBClientWithCommands::ensureIndex(std::string const&,
+                mongo::BSONObj, bool, std::string const&, bool, bool, int, int)
+            symbol_uses:
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/dbtests/commandtests.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+        -   symbol_name: non-virtual thunk to mongo::DBClientConnection::recv(mongo::Message&)
+            symbol_uses:
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+        -   symbol_name: mongo::Query::getFilter() const
+            symbol_uses:
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/s/strategy.cpp
+        -   symbol_name: mongo::assembleRequest(std::string const&, mongo::BSONObj,
+                int, int, mongo::BSONObj const*, int, mongo::Message&)
+            symbol_uses:
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/dbtests/querytests.cpp
+        -   symbol_name: mongo::DBClientBase::remove(std::string const&, mongo::Query,
+                int)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+        -   symbol_name: mongo::Query::hint(std::string const&)
+            symbol_uses:
+            - src/mongo/dbtests/updatetests.cpp
+        -   symbol_name: mongo::DBClientWithCommands::exists(std::string const&)
+            symbol_uses:
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/tools/restore.cpp
+        -   symbol_name: mongo::DBClientWithCommands::isNotMasterErrorString(mongo::BSONElement
+                const&)
+            symbol_uses:
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::hasErrField(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::DBClientBase::insert(std::string const&, mongo::BSONObj,
+                int)
+            symbol_uses:
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/dbtests/commandtests.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/query_stage_keep.cpp
+            - src/mongo/dbtests/queryutiltests.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
+            - src/mongo/db/restapi.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/dbtests/updatetests.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+        -   symbol_name: mongo::DBClientBase::insert(std::string const&, std::vector<mongo::BSONObj,
+                std::allocator<mongo::BSONObj> > const&, int)
+            symbol_uses:
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+        -   symbol_name: mongo::nsGetDB(std::string const&)
+            symbol_uses:
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/query_stage_fetch.cpp
+            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/dbtests/commandtests.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/query_stage_merge_sort.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/dbtests/documentsourcetests.cpp
+            - src/mongo/dbtests/clienttests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/jstests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/query_stage_distinct.cpp
+            - src/mongo/client/dbclientcursor.cpp
+            - src/mongo/dbtests/query_multi_plan_runner.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/plan_ranking.cpp
+            - src/mongo/dbtests/indexupdatetests.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/query_stage_keep.cpp
+            - src/mongo/dbtests/query_stage_sort.cpp
+            - src/mongo/db/commands/mr.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/query_stage_tests.cpp
+            - src/mongo/db/catalog/database.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/query_single_solution_runner.cpp
+        -   symbol_name: mongo::DBClientWithCommands::dropIndex(std::string const&,
+                std::string const&)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: typeinfo for mongo::DBClientConnection
+            symbol_uses:
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/tools/dump.cpp
+        -   symbol_name: mongo::DBClientBase::update(std::string const&, mongo::Query,
+                mongo::BSONObj, int)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+        -   symbol_name: mongo::Query::maxKey(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/s/d_merge.cpp
+            - src/mongo/dbtests/querytests.cpp
+        -   symbol_name: mongo::DBClientWithCommands::getLastErrorDetailed(std::string
+                const&, bool, bool, int, int)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/db/commands/find_and_modify.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::DBClientBase::remove(std::string const&, mongo::Query,
+                bool)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/query_stage_count.cpp
+            - src/mongo/db/auth/authz_manager_external_state_d.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/querytests.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/dbhelper_tests.cpp
+            - src/mongo/dbtests/query_stage_collscan.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/query_stage_and.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: mongo::DBClientConnection::checkResponse(char const*, int,
+                bool*, std::string*)
+            symbol_uses:
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+        -   symbol_name: mongo::DBClientWithCommands::dropIndex(std::string const&,
+                mongo::BSONObj)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/runner_registry.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/dbtests/clienttests.cpp
+        -   symbol_name: mongo::DBClientConnection::logout(std::string const&, mongo::BSONObj&)
+            symbol_uses:
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+        -   symbol_name: mongo::DBClientWithCommands::logout(std::string const&, mongo::BSONObj&)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/client/syncclusterconnection.cpp
+        -   symbol_name: mongo::DBClientBase::getMore(std::string const&, long long,
+                int, int)
+            symbol_uses:
+            - src/mongo/db/instance.cpp
+            - src/mongo/dbtests/merge_chunk_tests.cpp
+            - src/mongo/dbtests/sharding.cpp
+            - src/mongo/dbtests/config_server_fixture.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_connection.cpp
+            - src/mongo/dbtests/config_upgrade_tests.cpp
+            - src/mongo/client/dbclient_rs.cpp
         file_dependencies:
         -   symbol_name: mongo::Socket::connect(mongo::SockAddr&)
             symbol_sources:
@@ -5358,7 +5430,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -5437,6 +5509,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -5455,7 +5528,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -5542,7 +5615,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -5721,16 +5793,19 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::DBClientReplicaSet::connect()
-            symbol_uses:
-            - src/mongo/client/dbclient.cpp
-        -   symbol_name: mongo::DBClientReplicaSet::slaveConn()
-            symbol_uses:
-            - src/mongo/tools/tool.cpp
         -   symbol_name: mongo::DBClientReplicaSet::isSecondaryQuery(std::string const&,
                 mongo::BSONObj const&, int)
             symbol_uses:
             - src/mongo/client/parallel.cpp
+        -   symbol_name: mongo::DBClientReplicaSet::slaveConn()
+            symbol_uses:
+            - src/mongo/tools/tool.cpp
+        -   symbol_name: typeinfo for mongo::DBClientReplicaSet
+            symbol_uses:
+            - src/mongo/client/parallel.cpp
+        -   symbol_name: mongo::DBClientReplicaSet::connect()
+            symbol_uses:
+            - src/mongo/client/dbclient.cpp
         -   symbol_name: mongo::DBClientReplicaSet::isntMaster()
             symbol_uses:
             - src/mongo/client/dbclient.cpp
@@ -5745,9 +5820,6 @@ module_groups:
                 > const&, double)
             symbol_uses:
             - src/mongo/client/dbclient.cpp
-        -   symbol_name: typeinfo for mongo::DBClientReplicaSet
-            symbol_uses:
-            - src/mongo/client/parallel.cpp
         file_dependencies:
         -   symbol_name: mongo::DBClientCursor::peekError(mongo::BSONObj*)
             symbol_sources:
@@ -5900,6 +5972,9 @@ module_groups:
                 mongo::BSONObj const&, mongo::BSONObj&, int)
             symbol_sources:
             - src/mongo/client/dbclient.cpp
+        -   symbol_name: vtable for mongo::DBClientInterface
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
         -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
                 std::string const&, mongo::logger::LogSeverity)
             symbol_sources:
@@ -6001,7 +6076,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -6012,7 +6087,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -6195,7 +6270,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -6277,6 +6352,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -6294,7 +6370,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -6381,7 +6457,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -6919,7 +6994,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -6999,6 +7074,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -7016,7 +7092,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -7103,7 +7179,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -7281,11 +7356,6 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::DBClientCursor::peekError(mongo::BSONObj*)
-            symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
-            - src/mongo/client/dbclient.cpp
-            - src/mongo/client/parallel.cpp
         -   symbol_name: mongo::DBClientCursor::init()
             symbol_uses:
             - src/mongo/client/dbclient.cpp
@@ -7295,39 +7365,26 @@ module_groups:
             symbol_uses:
             - src/mongo/db/repl/master_slave.cpp
             - src/mongo/client/parallel.cpp
-        -   symbol_name: mongo::DBClientCursor::more()
+        -   symbol_name: mongo::DBClientCursor::_finishConsInit()
+            symbol_uses:
+            - src/mongo/client/dbclient.cpp
+            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_cursor.cpp
+            - src/mongo/scripting/v8_db.cpp
+        -   symbol_name: mongo::DBClientCursor::initLazyFinish(bool&)
             symbol_uses:
             - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+            - src/mongo/client/parallel.cpp
         -   symbol_name: mongo::DBClientCursor::initLazy(bool)
             symbol_uses:
             - src/mongo/db/pipeline/document_source_merge_cursors.cpp
             - src/mongo/client/parallel.cpp
         -   symbol_name: mongo::DBClientCursor::peekFirst()
             symbol_uses:
+            - src/mongo/client/parallel.cpp
             - src/mongo/s/strategy.cpp
-            - src/mongo/client/parallel.cpp
         -   symbol_name: mongo::DBClientCursor::initCommand()
-            symbol_uses:
-            - src/mongo/client/parallel.cpp
-        -   symbol_name: mongo::DBClientCursor::_finishConsInit()
-            symbol_uses:
-            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-            - src/mongo/client/dbclient.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_cursor.cpp
-            - src/mongo/scripting/v8_db.cpp
-            - src/mongo/client/parallel.cpp
-        -   symbol_name: mongo::DBClientCursor::initLazyFinish(bool&)
-            symbol_uses:
-            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-            - src/mongo/client/parallel.cpp
-        -   symbol_name: vtable for mongo::DBClientCursor
-            symbol_uses:
-            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
-            - src/mongo/client/dbclient.cpp
-            - src/mongo/dbtests/mock/mock_dbclient_cursor.cpp
-            - src/mongo/scripting/v8_db.cpp
-            - src/mongo/client/parallel.cpp
-        -   symbol_name: mongo::DBClientCursor::attach(mongo::AScopedConnection*)
             symbol_uses:
             - src/mongo/client/parallel.cpp
         -   symbol_name: typeinfo for mongo::DBClientCursor
@@ -7341,6 +7398,24 @@ module_groups:
             symbol_uses:
             - src/mongo/db/pipeline/document_source_merge_cursors.cpp
             - src/mongo/dbtests/mock/mock_dbclient_cursor.cpp
+        -   symbol_name: mongo::DBClientCursor::more()
+            symbol_uses:
+            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+        -   symbol_name: mongo::DBClientCursor::peekError(mongo::BSONObj*)
+            symbol_uses:
+            - src/mongo/client/dbclient.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/client/dbclient_rs.cpp
+        -   symbol_name: vtable for mongo::DBClientCursor
+            symbol_uses:
+            - src/mongo/client/dbclient.cpp
+            - src/mongo/db/pipeline/document_source_merge_cursors.cpp
+            - src/mongo/client/parallel.cpp
+            - src/mongo/dbtests/mock/mock_dbclient_cursor.cpp
+            - src/mongo/scripting/v8_db.cpp
+        -   symbol_name: mongo::DBClientCursor::attach(mongo::AScopedConnection*)
+            symbol_uses:
+            - src/mongo/client/parallel.cpp
         file_dependencies:
         -   symbol_name: mongo::DBConnectionPool::get(std::string const&, double)
             symbol_sources:
@@ -7444,11 +7519,11 @@ module_groups:
             - src/mongo/bson/oid.cpp
         -   symbol_name: mongo::inShutdown()
             symbol_sources:
-            - src/mongo/client/scoped_db_conn_test.cpp
             - src/mongo/unittest/crutch.cpp
-            - src/mongo/db/instance.cpp
-            - src/mongo/s/server.cpp
             - src/mongo/client/clientAndShell.cpp
+            - src/mongo/db/instance.cpp
+            - src/mongo/client/scoped_db_conn_test.cpp
+            - src/mongo/s/server.cpp
         -   symbol_name: mongo::hasErrField(mongo::BSONObj const&)
             symbol_sources:
             - src/mongo/client/dbclient.cpp
@@ -7474,14 +7549,14 @@ module_groups:
         - mongosniff
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - bsondump
         - mongoimport
         - mongos
         - mongooplog
         - test
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongorestore
         file_headers: []
         file_interface: []
@@ -7495,14 +7570,14 @@ module_groups:
         - mongosniff
         - mongodump
         - mongobridge
-        - mongostat
+        - mongofiles
         - bsondump
         - mongoimport
         - mongos
         - mongooplog
         - test
         - mongoexport
-        - mongofiles
+        - mongostat
         - mongorestore
         file_headers: []
         file_interface: []
@@ -7712,7 +7787,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/util/fail_point_registry.h
@@ -7797,6 +7872,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -7813,7 +7889,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/mongo/base/initializer_dependency_graph.h
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -7900,7 +7976,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -8087,45 +8162,45 @@ module_groups:
             - src/mongo/scripting/v8_db.cpp
         -   symbol_name: mongo::dbexit(mongo::ExitCode, char const*)
             symbol_uses:
-            - src/mongo/s/d_migrate.cpp
-            - src/mongo/tools/tool.cpp
-            - src/mongo/db/db.cpp
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/db/repl/master_slave.cpp
             - src/mongo/db/dbcommands_generic.cpp
             - src/mongo/s/config.cpp
-            - src/mongo/db/repl/master_slave.cpp
-            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/db/db.cpp
             - src/mongo/dbtests/framework.cpp
-            - src/mongo/db/repl/rs.cpp
             - src/mongo/db/structure/catalog/namespace_index.cpp
+            - src/mongo/s/d_migrate.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/db/repl/rs.cpp
         -   symbol_name: mongo::inShutdown()
             symbol_uses:
-            - src/mongo/db/repl/write_concern.cpp
-            - src/mongo/util/concurrency/task.cpp
-            - src/mongo/db/db.cpp
-            - src/mongo/db/client.cpp
-            - src/mongo/s/writeback_listener.cpp
-            - src/mongo/s/config_server_checker_service.cpp
-            - src/mongo/db/storage/durable_mapped_file.cpp
-            - src/mongo/db/stats/snapshots.cpp
-            - src/mongo/client/replica_set_monitor.cpp
-            - src/mongo/client/dbclientcursor.cpp
-            - src/mongo/db/ttl.cpp
-            - src/mongo/s/shardconnection.cpp
-            - src/mongo/util/net/listen.cpp
-            - src/mongo/db/auth/user_cache_invalidator_job.cpp
-            - src/mongo/util/assert_util.cpp
-            - src/mongo/db/repl/bgsync.cpp
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
             - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/db/catalog/collection_cursor_cache.cpp
+            - src/mongo/db/auth/user_cache_invalidator_job.cpp
+            - src/mongo/db/storage/durable_mapped_file.cpp
+            - src/mongo/util/assert_util.cpp
+            - src/mongo/db/repl/write_concern.cpp
+            - src/mongo/util/net/listen.cpp
+            - src/mongo/db/ttl.cpp
             - src/mongo/client/connpool.cpp
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/storage/data_file.cpp
-            - src/mongo/db/range_deleter.cpp
-            - src/mongo/db/clientcursor.cpp
-            - src/mongo/db/dur.cpp
             - src/mongo/s/balance.cpp
-            - src/mongo/db/dur_journal.cpp
+            - src/mongo/client/dbclientcursor.cpp
             - src/mongo/s/distlock.cpp
+            - src/mongo/db/range_deleter.cpp
+            - src/mongo/db/storage/data_file.cpp
+            - src/mongo/client/replica_set_monitor.cpp
+            - src/mongo/util/concurrency/task.cpp
+            - src/mongo/db/client.cpp
+            - src/mongo/db/dur.cpp
+            - src/mongo/s/shardconnection.cpp
+            - src/mongo/db/clientcursor.cpp
+            - src/mongo/s/writeback_listener.cpp
+            - src/mongo/db/dur_journal.cpp
+            - src/mongo/s/config_server_checker_service.cpp
+            - src/mongo/db/repl/bgsync.cpp
+            - src/mongo/db/db.cpp
+            - src/mongo/db/stats/snapshots.cpp
+            - src/mongo/db/repl/rs.cpp
         -   symbol_name: mongo::haveLocalShardingInfo(std::string const&)
             symbol_uses:
             - src/mongo/scripting/v8_db.cpp
@@ -8255,6 +8330,9 @@ module_groups:
         -   symbol_name: vtable for mongo::DBClientConnection
             symbol_sources:
             - src/mongo/client/dbclient.cpp
+        -   symbol_name: vtable for mongo::DBClientInterface
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
         -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
                 std::string const&, mongo::logger::LogSeverity)
             symbol_sources:
@@ -8268,6 +8346,9 @@ module_groups:
         -   symbol_name: mongo::DBClientConnection::_numConnections
             symbol_sources:
             - src/mongo/client/dbclient.cpp
+        -   symbol_name: vtable for mongo::UserException
+            symbol_sources:
+            - src/mongo/util/assert_util.cpp
         -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
             symbol_sources:
             - src/mongo/logger/logstream_builder.cpp
@@ -8511,7 +8592,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -8591,6 +8672,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -8608,7 +8690,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/mongo/db/namespace_string-inl.h
@@ -8695,7 +8777,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -8879,12 +8960,12 @@ module_groups:
                 std::allocator<mongo::HostAndPort> > const&, double)
             symbol_uses:
             - src/mongo/client/dbclient.cpp
-        -   symbol_name: typeinfo for mongo::SyncClusterConnection
-            symbol_uses:
-            - src/mongo/s/config_upgrade.cpp
         -   symbol_name: mongo::SyncClusterConnection::setAllSoTimeouts(double)
             symbol_uses:
             - src/mongo/client/connpool.cpp
+        -   symbol_name: typeinfo for mongo::SyncClusterConnection
+            symbol_uses:
+            - src/mongo/s/config_upgrade.cpp
         file_dependencies:
         -   symbol_name: mongo::DBClientWithCommands::simpleCommand(std::string const&,
                 mongo::BSONObj*, std::string const&)
@@ -9008,6 +9089,9 @@ module_groups:
             symbol_sources:
             - src/mongo/client/dbclient.cpp
         -   symbol_name: vtable for mongo::DBClientConnection
+            symbol_sources:
+            - src/mongo/client/dbclient.cpp
+        -   symbol_name: vtable for mongo::DBClientInterface
             symbol_sources:
             - src/mongo/client/dbclient.cpp
         -   symbol_name: mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*,
@@ -9310,7 +9394,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -9391,6 +9475,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -9408,7 +9493,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/mongo/base/initializer_dependency_graph.h
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -9499,7 +9584,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -10015,6 +10099,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/aux_/na_assert.hpp
         - src/third_party/boost/boost/mpl/aux_/config/pp_counter.hpp
         - src/mongo/util/heapcheck.h
+        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
@@ -10035,7 +10120,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/mpl/aux_/arg_typedef.hpp
@@ -10129,7 +10214,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -10269,7 +10353,7 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/spinlock.hpp
         - src/mongo/util/timer-posixclock-inl.h
         - src/third_party/boost/boost/smart_ptr/scoped_array.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_convertible.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/config/auto_link.hpp
         - src/third_party/boost/boost/preprocessor/list/for_each_i.hpp
         - src/third_party/boost/boost/mpl/aux_/msvc_never_true.hpp
@@ -10448,7 +10532,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -10459,7 +10543,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -10469,7 +10553,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -10480,7 +10564,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -10490,7 +10574,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -10501,7 +10585,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -10751,7 +10835,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/mpl/arg.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
@@ -10841,6 +10925,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -10860,7 +10945,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/detail/scoped_enum_emulation.hpp
@@ -10963,7 +11048,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -11169,37 +11253,37 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
+        -   symbol_name: mongo::GridFS::storeFile(std::string const&, std::string
+                const&, std::string const&)
+            symbol_uses:
+            - src/mongo/tools/files.cpp
+        -   symbol_name: mongo::GridFile::write(std::string const&) const
+            symbol_uses:
+            - src/mongo/tools/files.cpp
+        -   symbol_name: mongo::GridFS::removeFile(std::string const&)
+            symbol_uses:
+            - src/mongo/tools/files.cpp
         -   symbol_name: mongo::GridFS::findFile(std::string const&) const
             symbol_uses:
             - src/mongo/tools/files.cpp
         -   symbol_name: mongo::GridFS::getChunkSize() const
             symbol_uses:
             - src/mongo/dbtests/gridfstest.cpp
-        -   symbol_name: mongo::GridFS::setChunkSize(unsigned int)
-            symbol_uses:
-            - src/mongo/dbtests/gridfstest.cpp
-        -   symbol_name: mongo::GridFS::storeFile(std::string const&, std::string
-                const&, std::string const&)
-            symbol_uses:
-            - src/mongo/tools/files.cpp
-        -   symbol_name: mongo::GridFS::list(mongo::BSONObj) const
-            symbol_uses:
-            - src/mongo/tools/files.cpp
-        -   symbol_name: mongo::GridFile::write(std::string const&) const
-            symbol_uses:
-            - src/mongo/tools/files.cpp
         -   symbol_name: mongo::GridFS::~GridFS()
             symbol_uses:
             - src/mongo/dbtests/gridfstest.cpp
+            - src/mongo/tools/files.cpp
+        -   symbol_name: mongo::GridFS::list(mongo::BSONObj) const
+            symbol_uses:
             - src/mongo/tools/files.cpp
         -   symbol_name: mongo::GridFS::GridFS(mongo::DBClientBase&, std::string const&,
                 std::string const&)
             symbol_uses:
             - src/mongo/dbtests/gridfstest.cpp
             - src/mongo/tools/files.cpp
-        -   symbol_name: mongo::GridFS::removeFile(std::string const&)
+        -   symbol_name: mongo::GridFS::setChunkSize(unsigned int)
             symbol_uses:
-            - src/mongo/tools/files.cpp
+            - src/mongo/dbtests/gridfstest.cpp
         file_dependencies:
         -   symbol_name: mongo::uasserted(int, char const*)
             symbol_sources:
@@ -11244,6 +11328,9 @@ module_groups:
         -   symbol_name: typeinfo for mongo::UserException
             symbol_sources:
             - src/mongo/util/assert_util.cpp
+        -   symbol_name: mongo::DATENOW
+            symbol_sources:
+            - src/mongo/db/jsobj.cpp
         -   symbol_name: mongo::DBException::toString() const
             symbol_sources:
             - src/mongo/util/assert_util.cpp
@@ -11467,7 +11554,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -11546,6 +11633,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -11564,7 +11652,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -11651,7 +11739,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -11830,60 +11917,60 @@ module_groups:
         file_interface:
         -   symbol_name: mongo::saslCommandUserFieldName
             symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/scripting/v8_db.cpp
             - src/mongo/db/initialize_server_global_state.cpp
-            - src/mongo/tools/tool.cpp
-            - src/mongo/tools/stat.cpp
+            - src/mongo/shell/dbshell.cpp
             - src/mongo/db/commands/parameters.cpp
-            - src/mongo/shell/dbshell.cpp
-            - src/mongo/db/auth/security_key.cpp
             - src/mongo/client/dbclient.cpp
-            - src/mongo/scripting/v8_db.cpp
-        -   symbol_name: mongo::saslCommandPasswordFieldName
-            symbol_uses:
-            - src/mongo/tools/stat.cpp
             - src/mongo/tools/tool.cpp
-            - src/mongo/shell/dbshell.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/client/dbclient_rs.cpp
             - src/mongo/db/auth/security_key.cpp
-            - src/mongo/client/dbclient.cpp
-            - src/mongo/scripting/v8_db.cpp
-        -   symbol_name: mongo::saslCommandDigestPasswordFieldName
+        -   symbol_name: mongo::saslDefaultServiceName
             symbol_uses:
-            - src/mongo/client/dbclient.cpp
-            - src/mongo/db/auth/security_key.cpp
+            - src/mongo/shell/shell_options.cpp
+            - src/mongo/tools/tool_options.cpp
+        -   symbol_name: mongo::saslCommandServiceNameFieldName
+            symbol_uses:
+            - src/mongo/tools/tool.cpp
         -   symbol_name: mongo::saslCommandServiceHostnameFieldName
             symbol_uses:
             - src/mongo/shell/dbshell.cpp
-            - src/mongo/tools/tool.cpp
-        -   symbol_name: mongo::saslCommandServiceNameFieldName
-            symbol_uses:
             - src/mongo/tools/tool.cpp
         -   symbol_name: mongo::saslClientAuthenticate
             symbol_uses:
             - src/mongo/client/dbclient.cpp
         -   symbol_name: mongo::saslCommandMechanismFieldName
             symbol_uses:
+            - src/mongo/scripting/v8_db.cpp
+            - src/mongo/db/initialize_server_global_state.cpp
+            - src/mongo/db/commands/parameters.cpp
             - src/mongo/client/dbclient.cpp
             - src/mongo/tools/tool.cpp
             - src/mongo/tools/stat.cpp
-            - src/mongo/db/commands/parameters.cpp
             - src/mongo/db/auth/security_key.cpp
-            - src/mongo/db/initialize_server_global_state.cpp
+        -   symbol_name: mongo::saslCommandPasswordFieldName
+            symbol_uses:
             - src/mongo/scripting/v8_db.cpp
+            - src/mongo/tools/stat.cpp
+            - src/mongo/shell/dbshell.cpp
+            - src/mongo/client/dbclient.cpp
+            - src/mongo/tools/tool.cpp
+            - src/mongo/db/auth/security_key.cpp
         -   symbol_name: mongo::saslCommandUserDBFieldName
             symbol_uses:
-            - src/mongo/client/dbclient_rs.cpp
+            - src/mongo/scripting/v8_db.cpp
+            - src/mongo/db/initialize_server_global_state.cpp
+            - src/mongo/db/commands/parameters.cpp
             - src/mongo/client/dbclient.cpp
             - src/mongo/tools/tool.cpp
             - src/mongo/tools/stat.cpp
-            - src/mongo/db/commands/parameters.cpp
+            - src/mongo/client/dbclient_rs.cpp
             - src/mongo/db/auth/security_key.cpp
-            - src/mongo/db/initialize_server_global_state.cpp
-            - src/mongo/scripting/v8_db.cpp
-        -   symbol_name: mongo::saslDefaultServiceName
+        -   symbol_name: mongo::saslCommandDigestPasswordFieldName
             symbol_uses:
-            - src/mongo/shell/shell_options.cpp
-            - src/mongo/tools/tool_options.cpp
+            - src/mongo/client/dbclient.cpp
+            - src/mongo/db/auth/security_key.cpp
         file_dependencies:
         -   symbol_name: mongo::Status::Status(mongo::ErrorCodes::Error, char const*,
                 int)

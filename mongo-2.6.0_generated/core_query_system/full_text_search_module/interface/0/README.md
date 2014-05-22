@@ -51,7 +51,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::fts::FTSMatcher::FTSMatcher(mongo::fts::FTSQuery const&, mongo::fts::FTSSpec const&)
+    mongo::fts::FTSMatcher::hasNegativeTerm(mongo::BSONObj const&) const
 
 - Used By:
 
@@ -59,13 +59,21 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::fts::FTSMatcher::hasNegativeTerm(mongo::BSONObj const&) const
+    mongo::fts::FTSMatcher::FTSMatcher(mongo::fts::FTSQuery const&, mongo::fts::FTSSpec const&)
 
 - Used By:
 
     - [src/mongo/db/exec/text.cpp](../../../../core\_query\_system/query\_execution)
 
 ### src/mongo/db/fts/fts\_query.cpp
+
+<div></div>
+
+    mongo::fts::FTSQuery::toBSON() const
+
+- Used By:
+
+    - [src/mongo/db/exec/text.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
 
@@ -76,14 +84,6 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/query/stage\_builder.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../../core\_query\_system/query\_execution)
 
-<div></div>
-
-    mongo::fts::FTSQuery::toBSON() const
-
-- Used By:
-
-    - [src/mongo/db/exec/text.cpp](../../../../core\_query\_system/query\_execution)
-
 ### src/mongo/db/fts/fts\_spec.cpp
 
 <div></div>
@@ -93,15 +93,6 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/index\_legacy.cpp](../../../../query\_and\_operation\_handling/indexing)
-
-<div></div>
-
-    mongo::fts::FTSSpec::FTSSpec(mongo::BSONObj const&)
-
-- Used By:
-
-    - [src/mongo/db/index/fts\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
-    - [src/mongo/db/index/fts\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)
 
 <div></div>
 
@@ -118,3 +109,12 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/exec/stagedebug\_cmd.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::fts::FTSSpec::FTSSpec(mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/db/index/fts\_key\_generator.cpp](../../../../query\_and\_operation\_handling/indexing)
+    - [src/mongo/db/index/fts\_access\_method.cpp](../../../../query\_and\_operation\_handling/indexing)

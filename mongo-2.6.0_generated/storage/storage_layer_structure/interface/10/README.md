@@ -14,7 +14,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::MultiIndexBlock::commit()
+    mongo::MultiIndexBlock::init(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >&)
 
 - Used By:
 
@@ -22,7 +22,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::MultiIndexBlock::init(std::vector<mongo::BSONObj, std::allocator<mongo::BSONObj> >&)
+    mongo::MultiIndexBlock::commit()
 
 - Used By:
 

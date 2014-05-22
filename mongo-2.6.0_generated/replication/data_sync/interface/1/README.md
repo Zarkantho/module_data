@@ -6,22 +6,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::replset::SyncTail::SyncTail(mongo::replset::BackgroundSyncInterface*)
-
-- Used By:
-
-    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    typeinfo for mongo::replset::InitialSync
-
-- Used By:
-
-    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
     mongo::GhostSync::associateSlave(mongo::BSONObj const&, int)
 
 - Used By:
@@ -30,19 +14,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::GhostSync::clearCache()
+    mongo::ReplSetImpl::blockSync(bool)
 
 - Used By:
 
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
-
-<div></div>
-
-    mongo::GhostSync::updateSlave(mongo::OID const&, mongo::OpTime const&)
-
-- Used By:
-
-    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/write\_concern)
+    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
 
 <div></div>
 
@@ -51,22 +27,6 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::replset::InitialSync::oplogApplication(mongo::BSONObj const&, mongo::BSONObj const&)
-
-- Used By:
-
-    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::ReplSetImpl::forceSyncFrom(std::string const&, std::string&, mongo::BSONObjBuilder&)
-
-- Used By:
-
-    - [src/mongo/db/repl/replset\_commands.cpp](../../../../replication/replication\_commands)
 
 <div></div>
 
@@ -86,6 +46,30 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::ReplSetImpl::forceSyncFrom(std::string const&, std::string&, mongo::BSONObjBuilder&)
+
+- Used By:
+
+    - [src/mongo/db/repl/replset\_commands.cpp](../../../../replication/replication\_commands)
+
+<div></div>
+
+    mongo::GhostSync::updateSlave(mongo::OID const&, mongo::OpTime const&)
+
+- Used By:
+
+    - [src/mongo/db/repl/write\_concern.cpp](../../../../replication/write\_concern)
+
+<div></div>
+
+    mongo::startSyncThread()
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+
+<div></div>
+
     mongo::replset::SyncTail::oplogApplication()
 
 - Used By:
@@ -94,15 +78,39 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::ReplSetImpl::blockSync(bool)
+    mongo::replset::SyncTail::syncApply(mongo::BSONObj const&, bool)
 
 - Used By:
 
-    - [src/mongo/db/repl/manager.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
-    mongo::replset::SyncTail::syncApply(mongo::BSONObj const&, bool)
+    mongo::GhostSync::clearCache()
+
+- Used By:
+
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
+
+<div></div>
+
+    mongo::replset::SyncTail::SyncTail(mongo::replset::BackgroundSyncInterface*)
+
+- Used By:
+
+    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::replset::InitialSync::oplogApplication(mongo::BSONObj const&, mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    typeinfo for mongo::replset::InitialSync
 
 - Used By:
 
@@ -116,15 +124,16 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
 
+### src/mongo/db/repl/sync.cpp
+
 <div></div>
 
-    mongo::startSyncThread()
+    mongo::Sync::getMissingDoc(mongo::BSONObj const&)
 
 - Used By:
 
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
-
-### src/mongo/db/repl/sync.cpp
+    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -132,9 +141,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
     - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
+    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -150,15 +159,6 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/repl/master\_slave.cpp](../../../../replication/master\_slave)
-    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::Sync::getMissingDoc(mongo::BSONObj const&)
-
-- Used By:
-
     - [src/mongo/dbtests/repltests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)

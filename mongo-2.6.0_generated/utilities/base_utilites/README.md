@@ -55,8 +55,8 @@ These are the general error codes for MongoDB.  Error codes have some semantic m
 - src/mongo/base/status\_with.h   (mongod, tools, mongos)
 - src/mongo/base/error\_codes.err   (mongod, tools, mongos)
 - src/mongo/base/generate\_error\_codes.py   (mongod, tools, mongos)
-- build/darwin/ssl/mongo/base/error\_codes.h   (mongod, tools, mongos)
-- build/darwin/ssl/mongo/base/error\_codes.cpp   (mongod, tools, mongos)
+- build/darwin/dbg\_off/opt\_off/ssl/mongo/base/error\_codes.h   (mongod, tools, mongos)
+- build/darwin/dbg\_off/opt\_off/ssl/mongo/base/error\_codes.cpp   (mongod, tools, mongos)
 
 #### [Interface](interface/3)
 

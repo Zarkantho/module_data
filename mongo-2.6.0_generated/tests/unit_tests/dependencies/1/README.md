@@ -198,6 +198,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::BSONNULL
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::demangleName(std::type_info const&)
 
 - Provided By:
@@ -459,6 +467,14 @@ This dependency information represents symbols that are used in this group but d
 <div></div>
 
     vtable for mongo::DBClientWithCommands
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
 
 - Provided By:
 
@@ -919,6 +935,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -1014,6 +1038,14 @@ This dependency information represents symbols that are used in this group but d
     - [src/mongo/db/storage\_options.cpp](../../../../storage/storage\_layer\_structure)
 
 ### src/mongo/dbtests/commandtests.cpp
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -1539,6 +1571,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
 - Provided By:
@@ -1632,6 +1672,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::DBDirectClient
+
+- Provided By:
+
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -2117,6 +2165,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::DBClientBase::getMore(std::string const&, long long, int, int)
 
 - Provided By:
@@ -2234,6 +2290,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::DBDirectClient
+
+- Provided By:
+
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -2900,6 +2964,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Status::operator==(mongo::Status const&) const
 
 - Provided By:
@@ -3144,6 +3216,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     vtable for mongo::DBClientWithCommands
 
 - Provided By:
@@ -3287,6 +3367,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/d\_concurrency.cpp](../../../../query\_and\_operation\_handling/concurrency)
+
+<div></div>
+
+    mongo::BSONNULL
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -3689,6 +3777,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/pipeline/document\_source\_geo\_near.cpp](../../../../core\_query\_system/aggregation\_framework)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -4841,11 +4937,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    typeinfo for mongo::IntrusiveCounterUnsigned
+    mongo::BSONUndefined
 
 - Provided By:
 
-    - [src/mongo/util/intrusive\_counter.cpp](../../../../utilities/utilities)
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -4910,6 +5006,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/pipeline/document.cpp](../../../../core\_query\_system/aggregation\_framework)
+
+<div></div>
+
+    typeinfo for mongo::IntrusiveCounterUnsigned
+
+- Provided By:
+
+    - [src/mongo/util/intrusive\_counter.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -5100,6 +5204,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -5166,95 +5278,7 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::BackgroundJob::go()
-
-- Provided By:
-
-    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::printGitVersion()
-
-- Provided By:
-
-    - [src/mongo/util/version\_reporting.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::dur::startup()
-
-- Provided By:
-
-    - [src/mongo/db/dur.cpp](../../../../storage/journaling)
-
-<div></div>
-
-    mongo::acquirePathLock(bool)
-
-- Provided By:
-
-    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::BackgroundJob::~BackgroundJob()
-
-- Provided By:
-
-    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::printOpenSSLVersion()
-
-- Provided By:
-
-    - [src/mongo/util/version\_reporting.cpp](../../../../utilities/utilities)
-
-<div></div>
-
     mongo::FileAllocator::get()
-
-- Provided By:
-
-    - [src/mongo/util/file\_allocator.cpp](../../../../storage/file\_allocation)
-
-<div></div>
-
-    mongo::logger::LogstreamBuilder::makeStream()
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
-
-<div></div>
-
-    mongo::sleepsecs(int)
-
-- Provided By:
-
-    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::FileAllocator::start()
 
 - Provided By:
 
@@ -5279,14 +5303,6 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
-
-- Provided By:
-
-    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
-
-<div></div>
-
     mongo::Client::initThread(char const*, mongo::AbstractMessagingPort*)
 
 - Provided By:
@@ -5296,11 +5312,12 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    typeinfo for mongo::BackgroundJob
+    mongo::currentClient
 
 - Provided By:
 
-    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
+    - [src/mongo/db/client.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/s/s\_only.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
 
 <div></div>
 
@@ -5328,11 +5345,67 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    boost::system::generic_category()
+
+- Provided By:
+
+    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
+
+<div></div>
+
+    mongo::BackgroundJob::go()
+
+- Provided By:
+
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::dur::startup()
+
+- Provided By:
+
+    - [src/mongo/db/dur.cpp](../../../../storage/journaling)
+
+<div></div>
+
+    mongo::BackgroundJob::~BackgroundJob()
+
+- Provided By:
+
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
     mongo::logger::globalLogManager()
 
 - Provided By:
 
     - [src/mongo/logger/logger.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    mongo::FileAllocator::start()
+
+- Provided By:
+
+    - [src/mongo/util/file\_allocator.cpp](../../../../storage/file\_allocation)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
 
 <div></div>
 
@@ -5344,12 +5417,59 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::currentClient
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
 
 - Provided By:
 
-    - [src/mongo/db/client.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
-    - [src/mongo/s/s\_only.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    mongo::printGitVersion()
+
+- Provided By:
+
+    - [src/mongo/util/version\_reporting.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::acquirePathLock(bool)
+
+- Provided By:
+
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::printOpenSSLVersion()
+
+- Provided By:
+
+    - [src/mongo/util/version\_reporting.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::sleepsecs(int)
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    typeinfo for mongo::BackgroundJob
+
+- Provided By:
+
+    - [src/mongo/util/background.cpp](../../../../utilities/utilities)
 
 <div></div>
 
@@ -5357,10 +5477,10 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
-    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/client/clientAndShell.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/client/scoped\_db\_conn\_test.cpp](../../../../network/cpp\_client\_driver)
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
 
 <div></div>
 
@@ -5369,14 +5489,6 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/util/background.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    boost::system::generic_category()
-
-- Provided By:
-
-    - [src/third\_party/boost/libs/system/src/error\_code.cpp](../../../../third\_party/boost\_system)
 
 ### src/mongo/dbtests/framework\_options.cpp
 
@@ -5754,6 +5866,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::DBClientBase::insert(std::string const&, mongo::BSONObj, int)
 
 - Provided By:
@@ -5893,6 +6013,14 @@ This dependency information represents symbols that are used in this group but d
 <div></div>
 
     vtable for mongo::DBClientWithCommands
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
 
 - Provided By:
 
@@ -6441,6 +6569,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -6771,14 +6907,6 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::KeyV1::woCompare(mongo::KeyV1 const&, mongo::Ordering const&) const
-
-- Provided By:
-
-    - [src/mongo/db/structure/btree/key.cpp](../../../../query\_and\_operation\_handling/indexing)
-
-<div></div>
-
     mongo::uasserted(int, std::string const&)
 
 - Provided By:
@@ -6836,6 +6964,22 @@ This dependency information represents symbols that are used in this group but d
 <div></div>
 
     mongo::NE
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
+    mongo::KeyV1::woCompare(mongo::KeyV1 const&, mongo::Ordering const&) const
+
+- Provided By:
+
+    - [src/mongo/db/structure/btree/key.cpp](../../../../query\_and\_operation\_handling/indexing)
+
+<div></div>
+
+    mongo::DATENOW
 
 - Provided By:
 
@@ -7519,6 +7663,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
 - Provided By:
@@ -7657,6 +7809,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::MAXKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::uasserted(int, char const*)
 
 - Provided By:
@@ -7702,6 +7862,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::MINKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -8394,6 +8562,14 @@ This dependency information represents symbols that are used in this group but d
 <div></div>
 
     vtable for mongo::DBClientConnection
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
 
 - Provided By:
 
@@ -9326,6 +9502,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::BSONNULL
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::Database::dropCollection(mongo::StringData const&)
 
 - Provided By:
@@ -9589,6 +9773,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -9933,6 +10125,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientWithCommands
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::BSONObj::jsonString(mongo::JsonStringFormat, int) const
 
 - Provided By:
@@ -10066,6 +10266,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -10593,6 +10801,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
 - Provided By:
@@ -10710,7 +10926,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 
@@ -11270,6 +11486,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -11381,6 +11605,14 @@ This dependency information represents symbols that are used in this group but d
     - [src/mongo/db/query/query\_knobs.cpp](../../../../core\_query\_system/query\_system\_parameters)
 
 ### src/mongo/dbtests/profile\_test.cpp
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -11707,6 +11939,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -12006,6 +12246,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::CollectionCursorCache::invalidateAll(bool)
 
 - Provided By:
@@ -12208,6 +12456,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientBase
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::DBClientBase::ConnectionIdSequence
 
 - Provided By:
@@ -12288,14 +12544,6 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    vtable for mongo::DBClientBase
-
-- Provided By:
-
-    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
-
-<div></div>
-
     mongo::WorkingSet::WorkingSet()
 
 - Provided By:
@@ -12349,6 +12597,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -12684,6 +12940,14 @@ This dependency information represents symbols that are used in this group but d
 <div></div>
 
     mongo::DBClientBase::remove(std::string const&, mongo::Query, bool)
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
 
 - Provided By:
 
@@ -13061,6 +13325,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -13340,6 +13612,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/query/index\_bounds\_builder.cpp](../../../../core\_query\_system/query\_planner)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -13665,6 +13945,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -13952,6 +14240,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -14327,6 +14623,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -14641,11 +14945,27 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:
 
     - [src/mongo/db/client.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+
+<div></div>
+
+    mongo::WorkingSetMember::hasObj() const
+
+- Provided By:
+
+    - [src/mongo/db/exec/working\_set.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
 
@@ -14734,14 +15054,6 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/storage\_options.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
-    mongo::WorkingSetMember::hasObj() const
-
-- Provided By:
-
-    - [src/mongo/db/exec/working\_set.cpp](../../../../core\_query\_system/query\_execution)
 
 ### src/mongo/dbtests/query\_stage\_tests.cpp
 
@@ -14912,6 +15224,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/query/plan\_executor.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -15397,6 +15717,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::Client::Context::~Context()
 
 - Provided By:
@@ -15712,6 +16040,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::MINKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::FieldRangeVector::toString() const
 
 - Provided By:
@@ -15792,7 +16128,7 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::FieldRangeSetPair::assertValidIndex(mongo::NamespaceDetails const*, int) const
+    mongo::FieldRangeVectorIterator::prepDive()
 
 - Provided By:
 
@@ -15976,6 +16312,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::MAXKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::NE
 
 - Provided By:
@@ -15984,7 +16328,7 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::FieldRangeVectorIterator::prepDive()
+    mongo::FieldRangeSetPair::assertValidIndex(mongo::NamespaceDetails const*, int) const
 
 - Provided By:
 
@@ -16021,6 +16365,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/queryutil.cpp](../../../../core\_query\_system/legacy\_query\_code)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -16813,6 +17165,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::replset::BackgroundSyncInterface
+
+- Provided By:
+
+    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/data\_sync)
+
+<div></div>
+
     boost::detail::get_current_thread_data()
 
 - Provided By:
@@ -16858,6 +17218,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/repl/rs\_config.cpp](../../../../replication/replica\_set\_configuration)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -17312,6 +17680,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
 - Provided By:
@@ -17687,6 +18063,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 
@@ -18188,6 +18572,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
 
 - Provided By:
@@ -18289,6 +18681,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/s/type\_chunk.cpp](../../../../sharding/config\_server\_schema)
+
+<div></div>
+
+    vtable for mongo::DBDirectClient
+
+- Provided By:
+
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -19228,6 +19628,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/bson/mutable/document.cpp](../../../../bson/mutable\_bson)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 

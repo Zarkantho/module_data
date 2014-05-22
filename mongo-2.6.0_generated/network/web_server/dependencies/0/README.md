@@ -124,7 +124,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 
@@ -326,7 +326,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 
@@ -594,6 +594,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/clientcursor.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+
+<div></div>
+
+    vtable for mongo::DBClientInterface
+
+- Provided By:
+
+    - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
 
 <div></div>
 

@@ -6,13 +6,52 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::networkCounter
+
+- Used By:
+
+    - [src/mongo/db/commands/server\_status.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../../network/network\_core)
+
+<div></div>
+
+    mongo::NetworkCounter::hit(long long, long long)
+
+- Used By:
+
+    - [src/mongo/util/net/message\_server\_port.cpp](../../../../network/network\_core)
+
+<div></div>
+
     mongo::replOpCounters
 
 - Used By:
 
+    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/db/repl/replication\_server\_status.cpp](../../../../replication/replica\_set\_state)
     - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
+
+<div></div>
+
+    mongo::globalOpCounters
+
+- Used By:
+
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
     - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/s/request.cpp](../../../../network/network\_core)
+    - [src/mongo/db/commands/server\_status.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
+
+<div></div>
+
+    mongo::NetworkCounter::append(mongo::BSONObjBuilder&)
+
+- Used By:
+
+    - [src/mongo/db/commands/server\_status.cpp](../../../../query\_and\_operation\_handling/database\_commands)
 
 <div></div>
 
@@ -25,45 +64,6 @@ This interface information represents symbols that are defined in this group but
 <div></div>
 
     mongo::OpCounters::getObj() const
-
-- Used By:
-
-    - [src/mongo/db/commands/server\_status.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-
-<div></div>
-
-    mongo::NetworkCounter::hit(long long, long long)
-
-- Used By:
-
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../../network/network\_core)
-
-<div></div>
-
-    mongo::globalOpCounters
-
-- Used By:
-
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
-    - [src/mongo/db/commands/server\_status.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/repl/oplog.cpp](../../../../replication/data\_sync)
-    - [src/mongo/db/dbcommands.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/s/request.cpp](../../../../network/network\_core)
-
-<div></div>
-
-    mongo::networkCounter
-
-- Used By:
-
-    - [src/mongo/db/commands/server\_status.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/util/net/message\_server\_port.cpp](../../../../network/network\_core)
-
-<div></div>
-
-    mongo::NetworkCounter::append(mongo::BSONObjBuilder&)
 
 - Used By:
 
@@ -83,37 +83,14 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::TimerStats::getReport() const
-
-- Used By:
-
-    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/data\_sync)
-    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
-    - [src/mongo/s/client\_info.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
-    - [src/mongo/db/write\_concern.cpp](../../../../replication/write\_concern)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
-
-<div></div>
-
     mongo::TimerHolder::TimerHolder(mongo::TimerStats*)
 
 - Used By:
 
     - [src/mongo/db/repl/bgsync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
     - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
     - [src/mongo/db/write\_concern.cpp](../../../../replication/write\_concern)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
-
-<div></div>
-
-    mongo::TimerHolder::~TimerHolder()
-
-- Used By:
-
-    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/data\_sync)
-    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
-    - [src/mongo/db/write\_concern.cpp](../../../../replication/write\_concern)
-    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
 
 <div></div>
 
@@ -123,16 +100,30 @@ This interface information represents symbols that are defined in this group but
 
     - [src/mongo/db/write\_concern.cpp](../../../../replication/write\_concern)
 
-### src/mongo/db/stats/top.cpp
-
 <div></div>
 
-    mongo::Top::global
+    mongo::TimerHolder::~TimerHolder()
 
 - Used By:
 
-    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
-    - [src/mongo/db/curop.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
+    - [src/mongo/db/write\_concern.cpp](../../../../replication/write\_concern)
+
+<div></div>
+
+    mongo::TimerStats::getReport() const
+
+- Used By:
+
+    - [src/mongo/db/repl/bgsync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/s/client\_info.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
+    - [src/mongo/db/repl/rs\_sync.cpp](../../../../replication/data\_sync)
+    - [src/mongo/db/prefetch.cpp](../../../../storage/page\_fault\_utilities)
+    - [src/mongo/db/write\_concern.cpp](../../../../replication/write\_concern)
+
+### src/mongo/db/stats/top.cpp
 
 <div></div>
 
@@ -149,3 +140,12 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+
+<div></div>
+
+    mongo::Top::global
+
+- Used By:
+
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/curop.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)

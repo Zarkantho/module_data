@@ -6,17 +6,17 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::getOrCreateProfileCollection(mongo::Database*, bool, std::string*)
-
-- Used By:
-
-    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)
-
-<div></div>
-
     mongo::profile(mongo::Client const&, int, mongo::CurOp&)
 
 - Used By:
 
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::getOrCreateProfileCollection(mongo::Database*, bool, std::string*)
+
+- Used By:
+
+    - [src/mongo/db/catalog/database.cpp](../../../../storage/storage\_layer\_structure)

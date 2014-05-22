@@ -174,6 +174,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::Status::Status(mongo::ErrorCodes::Error, char const*, int)
+
+- Provided By:
+
+    - [src/mongo/base/status.cpp](../../../../utilities/base\_utilites)
+
+<div></div>
+
     mongo::logger::LogstreamBuilder::makeStream()
 
 - Provided By:
@@ -380,6 +388,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/server\_parameters.cpp](../../../../process\_management/startup\_initialization)
+
+<div></div>
+
+    mongo::storageGlobalParams
+
+- Provided By:
+
+    - [src/mongo/db/storage\_options.cpp](../../../../storage/storage\_layer\_structure)
 
 ### src/mongo/db/structure/btree/btree\_stats.cpp
 

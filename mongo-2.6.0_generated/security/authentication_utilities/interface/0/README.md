@@ -11,5 +11,5 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/client/dbclient.cpp](../../../../network/cpp\_client\_driver)
-    - [src/mongo/db/auth/security\_key.cpp](../../../../security/authentication)
     - [src/mongo/db/auth/user\_management\_commands\_parser.cpp](../../../../security/authorization)
+    - [src/mongo/db/auth/security\_key.cpp](../../../../security/authentication)

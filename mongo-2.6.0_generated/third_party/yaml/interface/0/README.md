@@ -6,7 +6,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)
+    YAML::detail::memory::create_node()
 
 - Used By:
 
@@ -14,7 +14,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    YAML::detail::memory::create_node()
+    YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)
 
 - Used By:
 
@@ -24,23 +24,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    YAML::detail::node_data::end()
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
-
-<div></div>
-
     YAML::detail::node_data::begin()
-
-- Used By:
-
-    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
-
-<div></div>
-
-    YAML::detail::node_data::mark_defined()
 
 - Used By:
 
@@ -57,6 +41,22 @@ This interface information represents symbols that are defined in this group but
 <div></div>
 
     YAML::detail::node_data::set_null()
+
+- Used By:
+
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
+
+<div></div>
+
+    YAML::detail::node_data::mark_defined()
+
+- Used By:
+
+    - [src/mongo/util/options\_parser/options\_parser.cpp](../../../../process\_management/startup\_initialization)
+
+<div></div>
+
+    YAML::detail::node_data::end()
 
 - Used By:
 

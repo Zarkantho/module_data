@@ -22,6 +22,15 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::SimpleRWLock::lock()
+
+- Used By:
+
+    - [src/mongo/dbtests/threadedtests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/util/trace.cpp](../../../../dead\_code/dead\_code)
+
+<div></div>
+
     mongo::SimpleRWLock::SimpleRWLock(mongo::StringData const&)
 
 - Used By:
@@ -32,15 +41,6 @@ This interface information represents symbols that are defined in this group but
 <div></div>
 
     mongo::SimpleRWLock::unlock()
-
-- Used By:
-
-    - [src/mongo/dbtests/threadedtests.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/util/trace.cpp](../../../../dead\_code/dead\_code)
-
-<div></div>
-
-    mongo::SimpleRWLock::lock()
 
 - Used By:
 

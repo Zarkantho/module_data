@@ -6,6 +6,22 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::Notification::Notification()
+
+- Used By:
+
+    - [src/mongo/dbtests/threadedtests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::NotifyAll::awaitBeyondNow()
+
+- Used By:
+
+    - [src/mongo/db/dur.cpp](../../../../storage/journaling)
+
+<div></div>
+
     mongo::NotifyAll::now()
 
 - Used By:
@@ -18,28 +34,12 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/threadedtests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/range\_deleter.cpp](../../../../sharding/chunk\_management)
-
-<div></div>
-
-    mongo::NotifyAll::awaitBeyondNow()
-
-- Used By:
-
-    - [src/mongo/db/dur.cpp](../../../../storage/journaling)
+    - [src/mongo/dbtests/threadedtests.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
     mongo::Notification::waitToBeNotified()
-
-- Used By:
-
-    - [src/mongo/dbtests/threadedtests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::Notification::Notification()
 
 - Used By:
 

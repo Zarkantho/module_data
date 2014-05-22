@@ -20,5 +20,5 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/base/string\_data.cpp](../../../../utilities/base\_utilites)
     - [src/mongo/db/fts/fts\_index\_format.cpp](../../../../core\_query\_system/full\_text\_search\_module)
+    - [src/mongo/base/string\_data.cpp](../../../../utilities/base\_utilites)

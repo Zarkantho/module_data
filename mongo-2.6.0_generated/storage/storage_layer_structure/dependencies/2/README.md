@@ -103,6 +103,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for mongo::ComparisonMatchExpression
+
+- Provided By:
+
+    - [src/mongo/db/matcher/expression\_leaf.cpp](../../../../core\_query\_system/query\_preprocessing)
+
+<div></div>
+
     mongo::getcurns
 
 - Provided By:
@@ -539,7 +547,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/base/error\_codes.cpp](../../../../utilities/base\_utilites)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/base/error\_codes.cpp](../../../../utilities/base\_utilites)
 
 <div></div>
 

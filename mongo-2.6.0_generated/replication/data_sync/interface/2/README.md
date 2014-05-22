@@ -6,6 +6,32 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::replset::BackgroundSync::get()
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/health.cpp](../../../../replication/replica\_set\_state)
+    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)
+
+<div></div>
+
+    vtable for mongo::replset::BackgroundSyncInterface
+
+- Used By:
+
+    - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::replset::BackgroundSync::producerThread()
+
+- Used By:
+
+    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
+
+<div></div>
+
     mongo::replset::BackgroundSync::stopReplicationAndFlushBuffer()
 
 - Used By:
@@ -38,26 +64,8 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::replset::BackgroundSync::producerThread()
-
-- Used By:
-
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
-
-<div></div>
-
     typeinfo for mongo::replset::BackgroundSyncInterface
 
 - Used By:
 
     - [src/mongo/dbtests/replsettests.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::replset::BackgroundSync::get()
-
-- Used By:
-
-    - [src/mongo/db/repl/heartbeat.cpp](../../../../replication/replica\_set\_state)
-    - [src/mongo/db/repl/health.cpp](../../../../replication/replica\_set\_state)
-    - [src/mongo/db/repl/rs.cpp](../../../../replication/replica\_set\_state)

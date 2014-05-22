@@ -15,14 +15,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::TypeExplain::scanAndOrder
-
-- Used By:
-
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
-
-<div></div>
-
     mongo::TypeExplain::getAllPlansAt(unsigned long) const
 
 - Used By:
@@ -63,7 +55,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::TypeExplain::isIndexBoundsSet() const
+    mongo::TypeExplain::scanAndOrder
 
 - Used By:
 
@@ -71,7 +63,16 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::TypeExplain::sizeClauses() const
+    mongo::TypeExplain::setCursor(mongo::StringData const&)
+
+- Used By:
+
+    - [src/mongo/db/query/eof\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/idhack\_runner.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::TypeExplain::getIsMultiKey() const
 
 - Used By:
 
@@ -95,6 +96,14 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::TypeExplain::getClausesAt(unsigned long) const
+
+- Used By:
+
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
+
+<div></div>
+
     mongo::TypeExplain::setIDHack(bool)
 
 - Used By:
@@ -103,7 +112,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::TypeExplain::isIsMultiKeySet() const
+    mongo::TypeExplain::isIndexBoundsSet() const
 
 - Used By:
 
@@ -144,10 +153,39 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::TypeExplain::isNScannedObjectsSet() const
+
+- Used By:
+
+    - [src/mongo/db/query/new\_find.cpp](../../../../core\_query\_system/query\_system\_entry\_points)
+
+<div></div>
+
+    mongo::TypeExplain::getIndexBounds() const
+
+- Used By:
+
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
+
+<div></div>
+
     mongo::TypeExplain::setIndexFilterApplied(bool)
 
 - Used By:
 
+    - [src/mongo/db/query/single\_solution\_runner.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::TypeExplain::getNScannedObjects() const
+
+- Used By:
+
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../../core\_query\_system/full\_text\_search\_module)
+    - [src/mongo/db/query/new\_find.cpp](../../../../core\_query\_system/query\_system\_entry\_points)
+    - [src/mongo/db/commands/distinct.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/query/internal\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/commands/geonear.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/db/query/single\_solution\_runner.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
@@ -170,25 +208,21 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::TypeExplain::isScanAndOrderSet() const
+
+- Used By:
+
+    - [src/mongo/db/query/new\_find.cpp](../../../../core\_query\_system/query\_system\_entry\_points)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
+
+<div></div>
+
     mongo::TypeExplain::setNScannedObjects(long long)
 
 - Used By:
 
     - [src/mongo/db/query/eof\_runner.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/idhack\_runner.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::TypeExplain::getNScannedObjects() const
-
-- Used By:
-
-    - [src/mongo/db/commands/geonear.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/query/internal\_runner.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/query/single\_solution\_runner.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/query/new\_find.cpp](../../../../core\_query\_system/query\_system\_entry\_points)
-    - [src/mongo/db/commands/distinct.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../../core\_query\_system/full\_text\_search\_module)
 
 <div></div>
 
@@ -201,24 +235,24 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::TypeExplain::isAllPlansSet() const
-
-- Used By:
-
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
-
-<div></div>
-
     mongo::TypeExplain::getNScanned() const
 
 - Used By:
 
-    - [src/mongo/db/commands/geonear.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/query/internal\_runner.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/query/single\_solution\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../../core\_query\_system/full\_text\_search\_module)
     - [src/mongo/db/query/new\_find.cpp](../../../../core\_query\_system/query\_system\_entry\_points)
     - [src/mongo/db/commands/distinct.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/fts/fts\_command\_mongod.cpp](../../../../core\_query\_system/full\_text\_search\_module)
+    - [src/mongo/db/query/internal\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/commands/geonear.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/query/single\_solution\_runner.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::TypeExplain::isIsMultiKeySet() const
+
+- Used By:
+
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
 
 <div></div>
 
@@ -230,22 +264,30 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::TypeExplain::isCursorSet() const
+
+- Used By:
+
+    - [src/mongo/db/commands/distinct.cpp](../../../../query\_and\_operation\_handling/database\_commands)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
+
+<div></div>
+
     mongo::TypeExplain::addToAllPlans(mongo::TypeExplain*)
 
 - Used By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/single\_solution\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/eof\_runner.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/internal\_runner.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
 
-    mongo::TypeExplain::setCursor(mongo::StringData const&)
+    mongo::TypeExplain::isAllPlansSet() const
 
 - Used By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/query/idhack\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
 
 <div></div>
 
@@ -265,15 +307,6 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::TypeExplain::isScanAndOrderSet() const
-
-- Used By:
-
-    - [src/mongo/db/query/new\_find.cpp](../../../../core\_query\_system/query\_system\_entry\_points)
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
-
-<div></div>
-
     mongo::TypeExplain::isClausesSet() const
 
 - Used By:
@@ -282,11 +315,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::TypeExplain::isNScannedObjectsSet() const
+    mongo::TypeExplain::sizeClauses() const
 
 - Used By:
 
-    - [src/mongo/db/query/new\_find.cpp](../../../../core\_query\_system/query\_system\_entry\_points)
+    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
 
 <div></div>
 
@@ -298,29 +331,13 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::TypeExplain::getIsMultiKey() const
-
-- Used By:
-
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
-
-<div></div>
-
     mongo::TypeExplain::setNScannedAllPlans(long long)
 
 - Used By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/single\_solution\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/eof\_runner.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/internal\_runner.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::TypeExplain::getClausesAt(unsigned long) const
-
-- Used By:
-
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
 
 <div></div>
 
@@ -328,26 +345,9 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/query/eof\_runner.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/single\_solution\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/eof\_runner.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/internal\_runner.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::TypeExplain::isCursorSet() const
-
-- Used By:
-
-    - [src/mongo/db/commands/distinct.cpp](../../../../query\_and\_operation\_handling/database\_commands)
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
-
-<div></div>
-
-    mongo::TypeExplain::getIndexBounds() const
-
-- Used By:
-
-    - [src/mongo/db/pipeline/document\_source\_cursor.cpp](../../../../core\_query\_system/aggregation\_framework)
 
 <div></div>
 
@@ -387,6 +387,6 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/query/new\_find.cpp](../../../../core\_query\_system/query\_system\_entry\_points)
     - [src/mongo/db/query/eof\_runner.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/query/idhack\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/new\_find.cpp](../../../../core\_query\_system/query\_system\_entry\_points)

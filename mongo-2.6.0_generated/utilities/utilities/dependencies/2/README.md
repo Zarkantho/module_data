@@ -22,14 +22,6 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::unittest::Test::tearDown()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
     typeinfo for mongo::unittest::Test
 
 - Provided By:
@@ -46,6 +38,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::MAXKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::fromjson(char const*, int*)
 
 - Provided By:
@@ -59,6 +59,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
+    mongo::BSONNULL
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
 
 <div></div>
 
@@ -94,6 +102,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::BSONUndefined
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::unittest::TestAssertion::fail(std::string const&) const
 
 - Provided By:
@@ -118,6 +134,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::MINKEY
+
+- Provided By:
+
+    - [src/mongo/db/jsobj.cpp](../../../../bson/bson)
+
+<div></div>
+
     mongo::unittest::Test::run()
 
 - Provided By:
@@ -131,6 +155,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/bson/oid.cpp](../../../../bson/bson)
+
+<div></div>
+
+    mongo::unittest::Test::tearDown()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 

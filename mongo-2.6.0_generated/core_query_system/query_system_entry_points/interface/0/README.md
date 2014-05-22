@@ -27,5 +27,5 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/dbtests/querytests.cpp](../../../../tests/unit\_tests)

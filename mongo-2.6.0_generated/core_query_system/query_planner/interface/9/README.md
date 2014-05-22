@@ -6,53 +6,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::IndexBounds::toBSON() const
-
-- Used By:
-
-    - [src/mongo/db/exec/index\_scan.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::IndexBoundsChecker::IndexBoundsChecker(mongo::IndexBounds const*, mongo::BSONObj const&, int)
-
-- Used By:
-
-    - [src/mongo/db/exec/index\_scan.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/exec/distinct\_scan.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/exec/sort.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::OrderedIntervalList::toString() const
-
-- Used By:
-
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::IndexBounds::isValidFor(mongo::BSONObj const&, int)
-
-- Used By:
-
-    - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
     mongo::OrderedIntervalList::isValidFor(int) const
 
 - Used By:
 
     - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::IndexBoundsChecker::isValidKey(mongo::BSONObj const&)
-
-- Used By:
-
-    - [src/mongo/db/exec/sort.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
 
@@ -74,6 +32,48 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::IndexBounds::toBSON() const
+
+- Used By:
+
+    - [src/mongo/db/exec/index\_scan.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::IndexBounds::isValidFor(mongo::BSONObj const&, int)
+
+- Used By:
+
+    - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::IndexBoundsChecker::IndexBoundsChecker(mongo::IndexBounds const*, mongo::BSONObj const&, int)
+
+- Used By:
+
+    - [src/mongo/db/exec/index\_scan.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/distinct\_scan.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/exec/sort.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::IndexBoundsChecker::isValidKey(mongo::BSONObj const&)
+
+- Used By:
+
+    - [src/mongo/db/exec/sort.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
+    mongo::OrderedIntervalList::toString() const
+
+- Used By:
+
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
     mongo::IndexBounds::toString() const
 
 - Used By:
@@ -81,6 +81,14 @@ This interface information represents symbols that are defined in this group but
     - [src/mongo/db/exec/index\_scan.cpp](../../../../core\_query\_system/query\_execution)
 
 ### src/mongo/db/query/index\_bounds\_builder.cpp
+
+<div></div>
+
+    mongo::IndexBoundsBuilder::makePointInterval(std::string const&)
+
+- Used By:
+
+    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
 
 <div></div>
 
@@ -104,16 +112,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/exec/2dcommon.cpp](../../../../core\_query\_system/query\_execution)
-
-<div></div>
-
-    mongo::IndexBoundsBuilder::makePointInterval(std::string const&)
-
-- Used By:
-
-    - [src/mongo/db/exec/s2near.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/dbtests/query\_stage\_distinct.cpp](../../../../tests/unit\_tests)
 
 ### src/mongo/db/query/index\_tag.cpp
 

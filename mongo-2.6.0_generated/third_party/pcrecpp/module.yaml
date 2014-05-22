@@ -159,10 +159,10 @@ module_groups:
         file_interface:
         -   symbol_name: __pcre_default_tables
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_dfa_exec.c
-            - src/third_party/pcre-8.30/pcre_fullinfo.c
-            - src/third_party/pcre-8.30/pcre_compile.c
             - src/third_party/pcre-8.30/pcre_exec.c
+            - src/third_party/pcre-8.30/pcre_dfa_exec.c
+            - src/third_party/pcre-8.30/pcre_compile.c
+            - src/third_party/pcre-8.30/pcre_fullinfo.c
         file_dependencies: []
     -   file_name: src/third_party/pcre-8.30/pcre_compile.c
         file_executables:
@@ -224,6 +224,9 @@ module_groups:
         -   symbol_name: __pcre_utf8_table4
             symbol_sources:
             - src/third_party/pcre-8.30/pcre_tables.c
+        -   symbol_name: __pcre_valid_utf
+            symbol_sources:
+            - src/third_party/pcre-8.30/pcre_valid_utf8.c
         -   symbol_name: _pcre_free
             symbol_sources:
             - src/third_party/pcre-8.30/pcre_globals.c
@@ -242,9 +245,6 @@ module_groups:
         -   symbol_name: __pcre_OP_lengths
             symbol_sources:
             - src/third_party/pcre-8.30/pcre_tables.c
-        -   symbol_name: __pcre_valid_utf
-            symbol_sources:
-            - src/third_party/pcre-8.30/pcre_valid_utf8.c
     -   file_name: src/third_party/pcre-8.30/pcre_config.c
         file_executables:
         - mongotop
@@ -360,8 +360,8 @@ module_groups:
         file_interface:
         -   symbol_name: _pcre_exec
             symbol_uses:
-            - src/third_party/pcre-8.30/pcreposix.c
             - src/third_party/pcre-8.30/pcrecpp.cc
+            - src/third_party/pcre-8.30/pcreposix.c
         file_dependencies:
         -   symbol_name: __pcre_xclass
             symbol_sources:
@@ -438,10 +438,10 @@ module_groups:
         file_interface:
         -   symbol_name: _pcre_fullinfo
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_study.c
-            - src/third_party/pcre-8.30/pcre_get.c
-            - src/third_party/pcre-8.30/pcreposix.c
             - src/third_party/pcre-8.30/pcrecpp.cc
+            - src/third_party/pcre-8.30/pcreposix.c
+            - src/third_party/pcre-8.30/pcre_get.c
+            - src/third_party/pcre-8.30/pcre_study.c
         file_dependencies:
         -   symbol_name: __pcre_default_tables
             symbol_sources:
@@ -511,26 +511,26 @@ module_groups:
             - src/third_party/pcre-8.30/pcre_exec.c
         -   symbol_name: _pcre_malloc
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_study.c
-            - src/third_party/pcre-8.30/pcre_get.c
-            - src/third_party/pcre-8.30/pcre_maketables.c
-            - src/third_party/pcre-8.30/pcre_compile.c
             - src/third_party/pcre-8.30/pcre_exec.c
+            - src/third_party/pcre-8.30/pcre_get.c
+            - src/third_party/pcre-8.30/pcre_compile.c
+            - src/third_party/pcre-8.30/pcre_study.c
+            - src/third_party/pcre-8.30/pcre_maketables.c
         -   symbol_name: _pcre_stack_free
             symbol_uses:
             - src/third_party/pcre-8.30/pcre_exec.c
         -   symbol_name: _pcre_free
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_study.c
             - src/third_party/pcre-8.30/pcrecpp.cc
-            - src/third_party/pcre-8.30/pcre_compile.c
-            - src/third_party/pcre-8.30/pcre_exec.c
             - src/third_party/pcre-8.30/pcreposix.c
+            - src/third_party/pcre-8.30/pcre_exec.c
             - src/third_party/pcre-8.30/pcre_get.c
+            - src/third_party/pcre-8.30/pcre_study.c
+            - src/third_party/pcre-8.30/pcre_compile.c
         -   symbol_name: _pcre_callout
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_dfa_exec.c
             - src/third_party/pcre-8.30/pcre_exec.c
+            - src/third_party/pcre-8.30/pcre_dfa_exec.c
         file_dependencies: []
     -   file_name: src/third_party/pcre-8.30/pcre_internal.h
         file_executables:
@@ -609,13 +609,13 @@ module_groups:
         file_interface:
         -   symbol_name: __pcre_is_newline
             symbol_uses:
+            - src/third_party/pcre-8.30/pcre_exec.c
             - src/third_party/pcre-8.30/pcre_dfa_exec.c
             - src/third_party/pcre-8.30/pcre_compile.c
-            - src/third_party/pcre-8.30/pcre_exec.c
         -   symbol_name: __pcre_was_newline
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_dfa_exec.c
             - src/third_party/pcre-8.30/pcre_exec.c
+            - src/third_party/pcre-8.30/pcre_dfa_exec.c
         file_dependencies: []
     -   file_name: src/third_party/pcre-8.30/pcre_ord2utf8.c
         file_executables:
@@ -644,9 +644,9 @@ module_groups:
         file_interface:
         -   symbol_name: __pcre_ord2utf
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_study.c
-            - src/third_party/pcre-8.30/pcre_compile.c
             - src/third_party/pcre-8.30/pcre_exec.c
+            - src/third_party/pcre-8.30/pcre_compile.c
+            - src/third_party/pcre-8.30/pcre_study.c
         file_dependencies:
         -   symbol_name: __pcre_utf8_table1
             symbol_sources:
@@ -935,18 +935,18 @@ module_groups:
             - src/third_party/pcre-8.30/pcre_compile.c
         -   symbol_name: __pcre_ucp_gentype
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_dfa_exec.c
             - src/third_party/pcre-8.30/pcre_xclass.c
-            - src/third_party/pcre-8.30/pcre_compile.c
             - src/third_party/pcre-8.30/pcre_exec.c
+            - src/third_party/pcre-8.30/pcre_dfa_exec.c
+            - src/third_party/pcre-8.30/pcre_compile.c
         -   symbol_name: __pcre_utt
             symbol_uses:
             - src/third_party/pcre-8.30/pcre_compile.c
         -   symbol_name: __pcre_utf8_table4
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_study.c
             - src/third_party/pcre-8.30/pcre_valid_utf8.c
             - src/third_party/pcre-8.30/pcre_compile.c
+            - src/third_party/pcre-8.30/pcre_study.c
         -   symbol_name: __pcre_utf8_table1
             symbol_uses:
             - src/third_party/pcre-8.30/pcre_ord2utf8.c
@@ -961,10 +961,10 @@ module_groups:
             - src/third_party/pcre-8.30/pcre_ord2utf8.c
         -   symbol_name: __pcre_OP_lengths
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_study.c
+            - src/third_party/pcre-8.30/pcre_exec.c
             - src/third_party/pcre-8.30/pcre_dfa_exec.c
             - src/third_party/pcre-8.30/pcre_compile.c
-            - src/third_party/pcre-8.30/pcre_exec.c
+            - src/third_party/pcre-8.30/pcre_study.c
         file_dependencies: []
     -   file_name: src/third_party/pcre-8.30/pcre_ucd.c
         file_executables:
@@ -993,25 +993,25 @@ module_groups:
         file_interface:
         -   symbol_name: __pcre_ucd_stage1
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_study.c
-            - src/third_party/pcre-8.30/pcre_dfa_exec.c
             - src/third_party/pcre-8.30/pcre_xclass.c
-            - src/third_party/pcre-8.30/pcre_compile.c
             - src/third_party/pcre-8.30/pcre_exec.c
+            - src/third_party/pcre-8.30/pcre_dfa_exec.c
+            - src/third_party/pcre-8.30/pcre_compile.c
+            - src/third_party/pcre-8.30/pcre_study.c
         -   symbol_name: __pcre_ucd_records
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_study.c
-            - src/third_party/pcre-8.30/pcre_dfa_exec.c
             - src/third_party/pcre-8.30/pcre_xclass.c
-            - src/third_party/pcre-8.30/pcre_compile.c
             - src/third_party/pcre-8.30/pcre_exec.c
+            - src/third_party/pcre-8.30/pcre_dfa_exec.c
+            - src/third_party/pcre-8.30/pcre_compile.c
+            - src/third_party/pcre-8.30/pcre_study.c
         -   symbol_name: __pcre_ucd_stage2
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_study.c
-            - src/third_party/pcre-8.30/pcre_dfa_exec.c
             - src/third_party/pcre-8.30/pcre_xclass.c
-            - src/third_party/pcre-8.30/pcre_compile.c
             - src/third_party/pcre-8.30/pcre_exec.c
+            - src/third_party/pcre-8.30/pcre_dfa_exec.c
+            - src/third_party/pcre-8.30/pcre_compile.c
+            - src/third_party/pcre-8.30/pcre_study.c
         file_dependencies: []
     -   file_name: src/third_party/pcre-8.30/pcre_valid_utf8.c
         file_executables:
@@ -1040,9 +1040,9 @@ module_groups:
         file_interface:
         -   symbol_name: __pcre_valid_utf
             symbol_uses:
+            - src/third_party/pcre-8.30/pcre_exec.c
             - src/third_party/pcre-8.30/pcre_dfa_exec.c
             - src/third_party/pcre-8.30/pcre_compile.c
-            - src/third_party/pcre-8.30/pcre_exec.c
         file_dependencies:
         -   symbol_name: __pcre_utf8_table4
             symbol_sources:
@@ -1100,8 +1100,8 @@ module_groups:
         file_interface:
         -   symbol_name: __pcre_xclass
             symbol_uses:
-            - src/third_party/pcre-8.30/pcre_dfa_exec.c
             - src/third_party/pcre-8.30/pcre_exec.c
+            - src/third_party/pcre-8.30/pcre_dfa_exec.c
         file_dependencies:
         -   symbol_name: __pcre_ucd_stage1
             symbol_sources:
@@ -1142,6 +1142,11 @@ module_groups:
         - src/third_party/pcre-8.30/config.h
         - src/third_party/pcre-8.30/pcrecpp.h
         file_interface:
+        -   symbol_name: pcrecpp::Arg::parse_string(char const*, int, void*)
+            symbol_uses:
+            - src/mongo/db/dbwebserver.cpp
+            - src/mongo/util/net/miniwebserver.cpp
+            - src/mongo/tools/tool_options.cpp
         -   symbol_name: pcrecpp::RE::FullMatch(pcrecpp::StringPiece const&, pcrecpp::Arg
                 const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&,
                 pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
@@ -1149,50 +1154,45 @@ module_groups:
                 pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
                 const&, pcrecpp::Arg const&) const
             symbol_uses:
-            - src/mongo/scripting/bench.cpp
             - src/mongo/util/options_parser/constraints.cpp
-        -   symbol_name: pcrecpp::Arg::parse_string(char const*, int, void*)
-            symbol_uses:
-            - src/mongo/util/net/miniwebserver.cpp
-            - src/mongo/db/dbwebserver.cpp
-            - src/mongo/tools/tool_options.cpp
+            - src/mongo/scripting/bench.cpp
         -   symbol_name: pcrecpp::RE::QuoteMeta(pcrecpp::StringPiece const&)
             symbol_uses:
-            - src/mongo/tools/files.cpp
             - src/mongo/s/config.cpp
             - src/mongo/db/repl/master_slave.cpp
+            - src/mongo/tools/files.cpp
             - src/mongo/s/grid.cpp
         -   symbol_name: pcrecpp::RE::~RE()
             symbol_uses:
             - src/third_party/pcre-8.30/pcre_scanner.cc
-            - src/mongo/tools/tool_options.cpp
-            - src/mongo/util/options_parser/constraints.cpp
-            - src/mongo/shell/dbshell.cpp
-            - src/mongo/scripting/bench.cpp
             - src/mongo/db/dbwebserver.cpp
-            - src/mongo/db/matcher/expression_leaf.cpp
+            - src/mongo/tools/tool_options.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/shell/dbshell.cpp
             - src/mongo/util/net/miniwebserver.cpp
+            - src/mongo/util/options_parser/constraints.cpp
+            - src/mongo/db/matcher/expression_leaf.cpp
         -   symbol_name: pcrecpp::RE::no_arg
             symbol_uses:
             - src/third_party/pcre-8.30/pcre_scanner.cc
-            - src/mongo/tools/tool_options.cpp
-            - src/mongo/util/options_parser/constraints.cpp
-            - src/mongo/shell/dbshell.cpp
-            - src/mongo/scripting/bench.cpp
             - src/mongo/db/dbwebserver.cpp
-            - src/mongo/db/matcher/expression_leaf.cpp
+            - src/mongo/tools/tool_options.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/shell/dbshell.cpp
             - src/mongo/util/net/miniwebserver.cpp
+            - src/mongo/util/options_parser/constraints.cpp
+            - src/mongo/db/matcher/expression_leaf.cpp
         -   symbol_name: pcrecpp::RE::Init(std::string const&, pcrecpp::RE_Options
                 const*)
             symbol_uses:
             - src/third_party/pcre-8.30/pcre_scanner.cc
-            - src/mongo/tools/tool_options.cpp
-            - src/mongo/util/options_parser/constraints.cpp
-            - src/mongo/shell/dbshell.cpp
-            - src/mongo/scripting/bench.cpp
             - src/mongo/db/dbwebserver.cpp
-            - src/mongo/db/matcher/expression_leaf.cpp
+            - src/mongo/tools/tool_options.cpp
+            - src/mongo/scripting/bench.cpp
+            - src/mongo/shell/dbshell.cpp
             - src/mongo/util/net/miniwebserver.cpp
+            - src/mongo/util/options_parser/constraints.cpp
+            - src/mongo/db/matcher/expression_leaf.cpp
         -   symbol_name: pcrecpp::RE::Consume(pcrecpp::StringPiece*, pcrecpp::Arg
                 const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&,
                 pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
@@ -1200,10 +1200,10 @@ module_groups:
                 pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
                 const&, pcrecpp::Arg const&) const
             symbol_uses:
-            - src/mongo/util/net/miniwebserver.cpp
-            - src/mongo/db/dbwebserver.cpp
-            - src/mongo/tools/tool_options.cpp
             - src/third_party/pcre-8.30/pcre_scanner.cc
+            - src/mongo/db/dbwebserver.cpp
+            - src/mongo/util/net/miniwebserver.cpp
+            - src/mongo/tools/tool_options.cpp
         -   symbol_name: pcrecpp::RE::PartialMatch(pcrecpp::StringPiece const&, pcrecpp::Arg
                 const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&,
                 pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
@@ -1211,8 +1211,8 @@ module_groups:
                 pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg const&, pcrecpp::Arg
                 const&, pcrecpp::Arg const&) const
             symbol_uses:
-            - src/mongo/shell/dbshell.cpp
             - src/mongo/db/matcher/expression_leaf.cpp
+            - src/mongo/shell/dbshell.cpp
         -   symbol_name: pcrecpp::RE::DoMatch(pcrecpp::StringPiece const&, pcrecpp::RE::Anchor,
                 int*, pcrecpp::Arg const* const*, int) const
             symbol_uses:

@@ -150,7 +150,7 @@ This dependency information represents symbols that are used in this group but d
 
     - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
 
-### build/darwin/ssl/mongo/db/auth/action\_type.cpp
+### build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp
 
 <div></div>
 

@@ -10,5 +10,5 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../../security/authorization)
     - [src/mongo/dbtests/config\_upgrade\_tests.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/s/commands/auth\_schema\_upgrade\_s.cpp](../../../../security/authorization)

@@ -6,17 +6,17 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::startConfigServerChecker()
-
-- Used By:
-
-    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
-
-<div></div>
-
     mongo::isConfigServerConsistent()
 
 - Used By:
 
     - [src/mongo/s/balance.cpp](../../../../sharding/balancer)
     - [src/mongo/s/chunk.cpp](../../../../sharding/chunk\_management)
+
+<div></div>
+
+    mongo::startConfigServerChecker()
+
+- Used By:
+
+    - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)

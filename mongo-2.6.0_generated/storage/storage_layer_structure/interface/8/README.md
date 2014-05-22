@@ -6,6 +6,18 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::CollectionInfoCache::getPlanCache() const
+
+- Used By:
+
+    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../../core\_query\_system/query\_system\_commands)
+    - [src/mongo/db/query/get\_runner.cpp](../../../../core\_query\_system/query\_planner)
+    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../../core\_query\_system/query\_system\_commands)
+    - [src/mongo/db/query/cached\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
+    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
+
+<div></div>
+
     mongo::CollectionInfoCache::computeIndexKeys()
 
 - Used By:
@@ -18,17 +30,5 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/query/get\_runner.cpp](../../../../core\_query\_system/query\_planner)
-    - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../../core\_query\_system/query\_system\_commands)
-
-<div></div>
-
-    mongo::CollectionInfoCache::getPlanCache() const
-
-- Used By:
-
-    - [src/mongo/db/query/cached\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
-    - [src/mongo/db/commands/plan\_cache\_commands.cpp](../../../../core\_query\_system/query\_system\_commands)
-    - [src/mongo/db/query/multi\_plan\_runner.cpp](../../../../core\_query\_system/query\_execution)
     - [src/mongo/db/commands/index\_filter\_commands.cpp](../../../../core\_query\_system/query\_system\_commands)
     - [src/mongo/db/query/get\_runner.cpp](../../../../core\_query\_system/query\_planner)

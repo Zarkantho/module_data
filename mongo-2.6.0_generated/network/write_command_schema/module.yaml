@@ -202,7 +202,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -278,6 +278,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -295,7 +296,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -376,7 +377,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -538,134 +538,140 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
+        -   symbol_name: mongo::BatchedCommandResponse::getOk() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/write_commands.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/config_coordinator.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
         -   symbol_name: mongo::BatchedCommandResponse::setWriteConcernError(mongo::WCErrorDetail*)
             symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::isWriteConcernErrorSet() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+            - src/mongo/s/cluster_write.cpp
         -   symbol_name: mongo::BatchedCommandResponse::getUpsertDetails() const
             symbol_uses:
             - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::toString() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_write_exec.cpp
         -   symbol_name: mongo::BatchedCommandResponse::getErrDetails() const
             symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_downconvert.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
         -   symbol_name: mongo::BatchedCommandResponse::setElectionId(mongo::OID const&)
             symbol_uses:
             - src/mongo/db/commands/write_commands/batch_executor.cpp
         -   symbol_name: mongo::BatchedCommandResponse::isErrDetailsSet() const
             symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
             - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
         -   symbol_name: mongo::BatchedCommandResponse::setErrDetails(std::vector<mongo::WriteErrorDetail*,
                 std::allocator<mongo::WriteErrorDetail*> > const&)
             symbol_uses:
             - src/mongo/db/commands/write_commands/batch_executor.cpp
         -   symbol_name: mongo::BatchedCommandResponse::setN(long long)
             symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
             - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::toString() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::BatchedCommandResponse()
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/db/commands/write_commands/write_commands.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/config.cpp
+            - src/mongo/s/write_ops/config_coordinator.cpp
+            - src/mongo/s/dbclient_multi_command.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::getNModified() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::setErrCode(int)
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/config_coordinator.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::setLastOp(mongo::OpTime)
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::getWriteConcernError() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/cluster_write.cpp
         -   symbol_name: mongo::BatchedCommandResponse::sizeUpsertDetails() const
             symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::addToErrDetails(mongo::WriteErrorDetail*)
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::unsetWriteConcernError()
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::getN() const
+            symbol_uses:
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/config_coordinator.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
         -   symbol_name: mongo::BatchedCommandResponse::isLastOpSet() const
             symbol_uses:
             - src/mongo/s/write_ops/batch_write_exec.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::setOk(int)
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/config_coordinator.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::BatchedCommandResponse()
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/s/write_ops/config_coordinator.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/s/config.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/dbclient_multi_command.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::setErrCode(int)
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/config_coordinator.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::addToErrDetails(mongo::WriteErrorDetail*)
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::unsetWriteConcernError()
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
         -   symbol_name: mongo::BatchedCommandResponse::getErrDetailsAt(unsigned long)
                 const
             symbol_uses:
             - src/mongo/s/commands/cluster_write_cmd.cpp
         -   symbol_name: mongo::BatchedCommandResponse::~BatchedCommandResponse()
             symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/db/auth/authz_manager_external_state_s.cpp
             - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/s/write_ops/config_coordinator.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
             - src/mongo/s/cluster_write.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
             - src/mongo/s/config.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/s/dbclient_multi_command.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::getN() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
             - src/mongo/s/write_ops/config_coordinator.cpp
-            - src/mongo/db/auth/authz_manager_external_state_s.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/dbclient_multi_command.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
         -   symbol_name: mongo::BatchedCommandResponse::getErrCode() const
             symbol_uses:
             - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::isWriteConcernErrorSet() const
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
         -   symbol_name: mongo::BatchedCommandResponse::sizeErrDetails() const
             symbol_uses:
             - src/mongo/s/write_ops/batch_downconvert.cpp
         -   symbol_name: mongo::BatchedCommandResponse::addToUpsertDetails(mongo::BatchedUpsertDetail*)
             symbol_uses:
             - src/mongo/s/write_ops/batch_downconvert.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::getErrMessage() const
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
         -   symbol_name: mongo::BatchedCommandResponse::setUpsertDetails(std::vector<mongo::BatchedUpsertDetail*,
                 std::allocator<mongo::BatchedUpsertDetail*> > const&)
             symbol_uses:
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
         -   symbol_name: mongo::BatchedCommandResponse::getLastOp() const
             symbol_uses:
             - src/mongo/s/write_ops/batch_write_exec.cpp
@@ -676,26 +682,24 @@ module_groups:
         -   symbol_name: mongo::BatchedCommandResponse::getElectionId() const
             symbol_uses:
             - src/mongo/s/write_ops/batch_write_exec.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::isElectionIdSet() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::getWriteConcernError() const
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
         -   symbol_name: mongo::BatchedCommandResponse::setNModified(long long)
             symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
         -   symbol_name: mongo::BatchedCommandResponse::setErrMessage(mongo::StringData
                 const&)
             symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-            - src/mongo/s/cluster_write.cpp
             - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
             - src/mongo/s/write_ops/config_coordinator.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::getErrMessage() const
+            symbol_uses:
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
         -   symbol_name: mongo::BatchedCommandResponse::isUpsertDetailsSet() const
             symbol_uses:
             - src/mongo/s/write_ops/batch_write_op.cpp
@@ -704,29 +708,25 @@ module_groups:
         -   symbol_name: mongo::BatchedCommandResponse::toBSON() const
             symbol_uses:
             - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
             - src/mongo/s/config.cpp
-            - src/mongo/s/dbclient_multi_command.cpp
             - src/mongo/s/write_ops/config_coordinator.cpp
+            - src/mongo/s/dbclient_multi_command.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
         -   symbol_name: mongo::BatchedCommandResponse::cloneTo(mongo::BatchedCommandResponse*)
                 const
             symbol_uses:
             - src/mongo/s/write_ops/config_coordinator.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::getOk() const
+        -   symbol_name: mongo::BatchedCommandResponse::setOk(int)
             symbol_uses:
-            - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/config_coordinator.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::setLastOp(mongo::OpTime)
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
             - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::BatchedCommandResponse::getNModified() const
-            symbol_uses:
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/config_coordinator.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+        -   symbol_name: mongo::BatchedCommandResponse::isElectionIdSet() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_exec.cpp
         file_dependencies:
         -   symbol_name: mongo::Status mongo::parseNumberFromStringWithBase<long>(mongo::StringData
                 const&, int, long*)
@@ -997,7 +997,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -1076,6 +1076,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1093,7 +1094,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -1176,7 +1177,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -1674,7 +1674,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -1751,6 +1751,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1768,7 +1769,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/mongo/db/namespace_string-inl.h
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -1847,7 +1848,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -2012,15 +2012,69 @@ module_groups:
         - src/mongo/s/write_ops/batched_delete_request.h
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
+        -   symbol_name: mongo::BatchedCommandRequest::isVerboseWC() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/cluster_write.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::setWriteConcern(mongo::BSONObj
+                const&)
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/cluster_write.cpp
+        -   symbol_name: vtable for mongo::BatchedCommandRequest
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/write_commands.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/config_coordinator.cpp
+            - src/mongo/s/dbclient_multi_command.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::isMetadataSet() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::isValid(std::string*) const
+            symbol_uses:
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/db/commands/write_commands/write_commands.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::getBatchType() const
+            symbol_uses:
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+            - src/mongo/s/write_ops/config_coordinator.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::toString() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::isInsertIndexRequest() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+            - src/mongo/s/cluster_write.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::getUpdateRequest() const
+            symbol_uses:
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::kMaxWriteBatchSize
+            symbol_uses:
+            - src/mongo/db/repl/replication_server_status.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/commands_admin.cpp
+            - src/mongo/s/cluster_write.cpp
         -   symbol_name: mongo::BatchedCommandRequest::parseBSON(mongo::BSONObj const&,
                 std::string*)
             symbol_uses:
-            - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
             - src/mongo/s/dbclient_multi_command.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::isUniqueIndexRequest() const
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/db/commands/write_commands/write_commands.cpp
         -   symbol_name: mongo::BatchedCommandRequest::containsUpserts(mongo::BSONObj
                 const&)
             symbol_uses:
@@ -2028,168 +2082,114 @@ module_groups:
         -   symbol_name: mongo::BatchedCommandRequest::BatchedCommandRequest(mongo::BatchedCommandRequest::BatchType)
             symbol_uses:
             - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/s/dbclient_multi_command.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
             - src/mongo/s/write_ops/config_coordinator.cpp
+            - src/mongo/s/dbclient_multi_command.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::sizeWriteOps() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::isWriteConcernSet() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::getDeleteRequest() const
+            symbol_uses:
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::setMetadata(mongo::BatchedRequestMetadata*)
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::getIndexKeyPattern() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
         -   symbol_name: mongo::BatchedCommandRequest::setOrdered(bool)
             symbol_uses:
             - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::setWriteConcern(mongo::BSONObj
-                const&)
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::getInsertRequest() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::getNS() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/s/write_ops/config_coordinator.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/strategy.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-            - src/mongo/s/dbclient_multi_command.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::cloneTo(mongo::BatchedCommandRequest*)
-                const
-            symbol_uses:
-            - src/mongo/s/write_ops/config_coordinator.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::getBatchType() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/write_ops/config_coordinator.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::getTargetingNS() const
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::isWriteConcernSet() const
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::getUpdateRequest() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: vtable for mongo::BatchedCommandRequest
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/dbclient_multi_command.cpp
-            - src/mongo/s/write_ops/config_coordinator.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::getDeleteRequest() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::isInsertIndexRequest() const
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
         -   symbol_name: mongo::BatchedCommandRequest::setNS(mongo::StringData const&)
             symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/db/commands/write_commands/write_commands.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
             - src/mongo/s/write_ops/config_coordinator.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/strategy.cpp
             - src/mongo/s/dbclient_multi_command.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::isMetadataSet() const
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::isOrderedSet() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::getMetadata() const
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::getIndexKeyPattern() const
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::isValid(std::string*) const
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/write_commands.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::sizeWriteOps() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::setMetadata(mongo::BatchedRequestMetadata*)
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::getOrdered() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
             - src/mongo/s/strategy.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::getWriteConcern() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::toString() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::kMaxWriteBatchSize
-            symbol_uses:
-            - src/mongo/db/repl/replication_server_status.cpp
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/commands_admin.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
         -   symbol_name: mongo::BatchedCommandRequest::getIndexedNS(mongo::BSONObj
                 const&, std::string*, std::string*)
             symbol_uses:
             - src/mongo/db/commands/write_commands/write_commands_common.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::isUniqueIndexRequest() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::cloneTo(mongo::BatchedCommandRequest*)
+                const
+            symbol_uses:
+            - src/mongo/s/write_ops/config_coordinator.cpp
         -   symbol_name: mongo::BatchedCommandRequest::isValidIndexRequest(std::string*)
                 const
             symbol_uses:
-            - src/mongo/s/cluster_write.cpp
             - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::BatchedCommandRequest::isVerboseWC() const
-            symbol_uses:
             - src/mongo/s/cluster_write.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::isOrderedSet() const
+            symbol_uses:
             - src/mongo/s/write_ops/batch_write_op.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::getInsertRequest() const
+            symbol_uses:
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::getWriteConcern() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::getNS() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/db/commands/write_commands/write_commands.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/config_coordinator.cpp
+            - src/mongo/s/dbclient_multi_command.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::getTargetingNS() const
+            symbol_uses:
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/cluster_write.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::getMetadata() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+        -   symbol_name: mongo::BatchedCommandRequest::getOrdered() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/strategy.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
         file_dependencies:
         -   symbol_name: mongo::BatchedDeleteRequest::setCollName(mongo::StringData
                 const&)
@@ -2629,7 +2629,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -2705,6 +2705,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -2722,7 +2723,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -2801,7 +2802,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -2964,33 +2964,33 @@ module_groups:
         file_interface:
         -   symbol_name: mongo::BatchedDeleteDocument::setLimit(int)
             symbol_uses:
-            - src/mongo/s/cluster_write.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
-        -   symbol_name: mongo::BatchedDeleteDocument::getLimit() const
-            symbol_uses:
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/s/cluster_write.cpp
         -   symbol_name: mongo::BatchedDeleteDocument::BatchedDeleteDocument()
             symbol_uses:
             - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batched_delete_request.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
+        -   symbol_name: mongo::BatchedDeleteDocument::setQuery(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/cluster_write.cpp
+        -   symbol_name: mongo::BatchedDeleteDocument::getQuery() const
+            symbol_uses:
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+        -   symbol_name: mongo::BatchedDeleteDocument::getLimit() const
+            symbol_uses:
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
         -   symbol_name: mongo::BatchedDeleteDocument::cloneTo(mongo::BatchedDeleteDocument*)
                 const
             symbol_uses:
-            - src/mongo/s/write_ops/batched_delete_request.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedDeleteDocument::setQuery(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-        -   symbol_name: mongo::BatchedDeleteDocument::getQuery() const
-            symbol_uses:
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batched_delete_request.cpp
         file_dependencies:
         -   symbol_name: mongo::uasserted(int, char const*)
             symbol_sources:
@@ -3223,7 +3223,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -3299,6 +3299,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -3316,7 +3317,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -3395,7 +3396,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -3588,22 +3588,28 @@ module_groups:
         -   symbol_name: mongo::BatchedDeleteRequest::getMetadata() const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
-        -   symbol_name: mongo::BatchedDeleteRequest::getDeletesAt(unsigned long)
-                const
+        -   symbol_name: mongo::BatchedDeleteRequest::getOrdered() const
             symbol_uses:
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedDeleteRequest::addToDeletes(mongo::BatchedDeleteDocument*)
             symbol_uses:
-            - src/mongo/s/cluster_write.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/cluster_write.cpp
         -   symbol_name: mongo::BatchedDeleteRequest::cloneTo(mongo::BatchedDeleteRequest*)
                 const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
+        -   symbol_name: mongo::BatchedDeleteRequest::unsetCollName()
+            symbol_uses:
+            - src/mongo/s/write_ops/batched_command_request.cpp
+        -   symbol_name: mongo::BatchedDeleteRequest::getDeletesAt(unsigned long)
+                const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/write_op.cpp
         -   symbol_name: mongo::BatchedDeleteRequest::isWriteConcernSet() const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
@@ -3621,16 +3627,10 @@ module_groups:
         -   symbol_name: mongo::BatchedDeleteRequest::getWriteConcern() const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
-        -   symbol_name: mongo::BatchedDeleteRequest::unsetWriteConcern()
-            symbol_uses:
-            - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedDeleteRequest::unsetOrdered()
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
-        -   symbol_name: mongo::BatchedDeleteRequest::unsetCollName()
-            symbol_uses:
-            - src/mongo/s/write_ops/batched_command_request.cpp
-        -   symbol_name: mongo::BatchedDeleteRequest::getOrdered() const
+        -   symbol_name: mongo::BatchedDeleteRequest::unsetWriteConcern()
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
         file_dependencies:
@@ -3883,7 +3883,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -3962,6 +3962,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -3979,7 +3980,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -4060,7 +4061,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -4540,7 +4540,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -4616,6 +4616,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -4632,7 +4633,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -4711,7 +4712,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -4878,7 +4878,7 @@ module_groups:
         -   symbol_name: mongo::BatchedInsertRequest::documents
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
-        -   symbol_name: mongo::BatchedInsertRequest::setMetadata(mongo::BatchedRequestMetadata*)
+        -   symbol_name: mongo::BatchedInsertRequest::getOrdered() const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedInsertRequest::BatchedInsertRequest()
@@ -4891,19 +4891,16 @@ module_groups:
         -   symbol_name: mongo::BatchedInsertRequest::getDocumentsAt(unsigned long)
                 const
             symbol_uses:
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/s/write_ops/batched_command_request.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedInsertRequest::unsetMetadata()
-            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/batched_command_request.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/write_op.cpp
         -   symbol_name: mongo::BatchedInsertRequest::setWriteConcern(mongo::BSONObj
                 const&)
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
-        -   symbol_name: mongo::BatchedInsertRequest::getOrdered() const
+        -   symbol_name: mongo::BatchedInsertRequest::setMetadata(mongo::BatchedRequestMetadata*)
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedInsertRequest::setOrdered(bool)
@@ -4925,6 +4922,9 @@ module_groups:
         -   symbol_name: mongo::BatchedInsertRequest::unsetWriteConcern()
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
+        -   symbol_name: mongo::BatchedInsertRequest::unsetMetadata()
+            symbol_uses:
+            - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedInsertRequest::sizeDocuments() const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
@@ -4944,8 +4944,8 @@ module_groups:
                 const&)
             symbol_uses:
             - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
         -   symbol_name: mongo::BatchedInsertRequest::setCollName(mongo::StringData
                 const&)
             symbol_uses:
@@ -5199,7 +5199,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -5278,6 +5278,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -5294,7 +5295,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -5375,7 +5376,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -5849,7 +5849,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -5925,6 +5925,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -5941,7 +5942,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -6021,7 +6022,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -6182,57 +6182,57 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
-        -   symbol_name: mongo::BatchedUpdateDocument::getUpdateExpr() const
-            symbol_uses:
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-        -   symbol_name: mongo::BatchedUpdateDocument::BatchedUpdateDocument()
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/batched_update_request.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedUpdateDocument::upsert
-            symbol_uses:
-            - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateDocument::cloneTo(mongo::BatchedUpdateDocument*)
                 const
             symbol_uses:
-            - src/mongo/s/write_ops/batched_update_request.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batched_update_request.cpp
         -   symbol_name: mongo::BatchedUpdateDocument::getMulti() const
             symbol_uses:
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+        -   symbol_name: mongo::BatchedUpdateDocument::setUpsert(bool)
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/cluster_write.cpp
+        -   symbol_name: mongo::BatchedUpdateDocument::setQuery(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/cluster_write.cpp
+        -   symbol_name: mongo::BatchedUpdateDocument::getUpdateExpr() const
+            symbol_uses:
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+        -   symbol_name: mongo::BatchedUpdateDocument::getUpsert() const
+            symbol_uses:
+            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
+        -   symbol_name: mongo::BatchedUpdateDocument::upsert
+            symbol_uses:
+            - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateDocument::setUpdateExpr(mongo::BSONObj
                 const&)
             symbol_uses:
-            - src/mongo/s/cluster_write.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
-        -   symbol_name: mongo::BatchedUpdateDocument::setUpsert(bool)
-            symbol_uses:
             - src/mongo/s/cluster_write.cpp
+        -   symbol_name: mongo::BatchedUpdateDocument::setMulti(bool)
+            symbol_uses:
             - src/mongo/s/write_ops/batch_upconvert.cpp
-        -   symbol_name: mongo::BatchedUpdateDocument::getUpsert() const
-            symbol_uses:
-            - src/mongo/s/chunk_manager_targeter.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-        -   symbol_name: mongo::BatchedUpdateDocument::setQuery(mongo::BSONObj const&)
-            symbol_uses:
             - src/mongo/s/cluster_write.cpp
+        -   symbol_name: mongo::BatchedUpdateDocument::BatchedUpdateDocument()
+            symbol_uses:
+            - src/mongo/s/write_ops/batched_update_request.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
         -   symbol_name: mongo::BatchedUpdateDocument::getQuery() const
             symbol_uses:
-            - src/mongo/s/chunk_manager_targeter.cpp
             - src/mongo/s/write_ops/dbclient_safe_writer.cpp
             - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::BatchedUpdateDocument::setMulti(bool)
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/chunk_manager_targeter.cpp
         file_dependencies:
         -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<bool>
                 const&, bool*, std::string*)
@@ -6466,7 +6466,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -6542,6 +6542,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -6558,7 +6559,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -6638,7 +6639,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -6806,25 +6806,22 @@ module_groups:
             - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::addToUpdates(mongo::BatchedUpdateDocument*)
             symbol_uses:
-            - src/mongo/s/cluster_write.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/cluster_write.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::setOrdered(bool)
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
-        -   symbol_name: mongo::BatchedUpdateRequest::unsetOrdered()
+        -   symbol_name: mongo::BatchedUpdateRequest::isWriteConcernSet() const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::setMetadata(mongo::BatchedRequestMetadata*)
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
-        -   symbol_name: mongo::BatchedUpdateRequest::unsetMetadata()
-            symbol_uses:
-            - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::unsetWriteConcern()
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
-        -   symbol_name: mongo::BatchedUpdateRequest::getOrdered() const
+        -   symbol_name: mongo::BatchedUpdateRequest::unsetOrdered()
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::getMetadata() const
@@ -6837,33 +6834,36 @@ module_groups:
         -   symbol_name: mongo::BatchedUpdateRequest::isMetadataSet() const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
-        -   symbol_name: mongo::BatchedUpdateRequest::isWriteConcernSet() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::getCollName() const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::getUpdatesAt(unsigned long)
                 const
             symbol_uses:
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/dbclient_safe_writer.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/write_op.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::sizeUpdates() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batched_command_request.cpp
+        -   symbol_name: mongo::BatchedUpdateRequest::getOrdered() const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::setCollName(mongo::StringData
                 const&)
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
+        -   symbol_name: mongo::BatchedUpdateRequest::unsetMetadata()
+            symbol_uses:
+            - src/mongo/s/write_ops/batched_command_request.cpp
+        -   symbol_name: mongo::BatchedUpdateRequest::getWriteConcern() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::unsetCollName()
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::isCollNameSet() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batched_command_request.cpp
-        -   symbol_name: mongo::BatchedUpdateRequest::getWriteConcern() const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_request.cpp
         -   symbol_name: mongo::BatchedUpdateRequest::BatchedUpdateRequest()
@@ -7129,7 +7129,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -7208,6 +7208,7 @@ module_groups:
         - src/mongo/util/heapcheck.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -7224,7 +7225,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -7306,7 +7307,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -7791,7 +7791,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -7867,6 +7867,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -7883,7 +7884,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -7962,7 +7963,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -8124,35 +8124,35 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
+        -   symbol_name: mongo::BatchedUpsertDetail::setIndex(int)
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
         -   symbol_name: mongo::BatchedUpsertDetail::getIndex() const
             symbol_uses:
             - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_upconvert.cpp
-        -   symbol_name: mongo::BatchedUpsertDetail::setIndex(int)
+        -   symbol_name: mongo::BatchedUpsertDetail::BatchedUpsertDetail()
             symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batched_command_response.cpp
             - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedUpsertDetail::getUpsertedID() const
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+        -   symbol_name: mongo::BatchedUpsertDetail::setUpsertedID(mongo::BSONObj
+                const&)
             symbol_uses:
             - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
         -   symbol_name: mongo::BatchedUpsertDetail::cloneTo(mongo::BatchedUpsertDetail*)
                 const
             symbol_uses:
             - src/mongo/s/write_ops/batched_command_response.cpp
-        -   symbol_name: mongo::BatchedUpsertDetail::setUpsertedID(mongo::BSONObj
-                const&)
+        -   symbol_name: mongo::BatchedUpsertDetail::getUpsertedID() const
             symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedUpsertDetail::BatchedUpsertDetail()
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/batched_command_response.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
         file_dependencies:
         -   symbol_name: mongo::uasserted(int, char const*)
             symbol_sources:
@@ -8394,7 +8394,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -8470,6 +8470,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -8486,7 +8487,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -8565,7 +8566,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -8730,34 +8730,34 @@ module_groups:
         file_interface:
         -   symbol_name: mongo::BatchedRequestMetadata::BatchedRequestMetadata()
             symbol_uses:
-            - src/mongo/s/write_ops/batched_delete_request.cpp
             - src/mongo/s/write_ops/batched_update_request.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batched_insert_request.cpp
-        -   symbol_name: mongo::BatchedRequestMetadata::setSession(long long)
-            symbol_uses:
             - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::BatchedRequestMetadata::getShardVersion() const
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::BatchedRequestMetadata::isShardVersionSet() const
-            symbol_uses:
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batched_delete_request.cpp
         -   symbol_name: mongo::BatchedRequestMetadata::setShardVersion(mongo::ChunkVersion
                 const&)
             symbol_uses:
             - src/mongo/s/write_ops/batch_write_op.cpp
+        -   symbol_name: mongo::BatchedRequestMetadata::isShardVersionSet() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
         -   symbol_name: mongo::BatchedRequestMetadata::cloneTo(mongo::BatchedRequestMetadata*)
                 const
             symbol_uses:
-            - src/mongo/s/write_ops/batched_delete_request.cpp
             - src/mongo/s/write_ops/batched_update_request.cpp
             - src/mongo/s/write_ops/batched_insert_request.cpp
+            - src/mongo/s/write_ops/batched_delete_request.cpp
         -   symbol_name: mongo::BatchedRequestMetadata::getShardName() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+        -   symbol_name: mongo::BatchedRequestMetadata::getShardVersion() const
             symbol_uses:
             - src/mongo/db/commands/write_commands/batch_executor.cpp
         -   symbol_name: mongo::BatchedRequestMetadata::setShardName(mongo::StringData
                 const&)
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+        -   symbol_name: mongo::BatchedRequestMetadata::setSession(long long)
             symbol_uses:
             - src/mongo/s/write_ops/batch_write_op.cpp
         file_dependencies:
@@ -8997,7 +8997,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
         - src/mongo/base/status-inl.h
@@ -9076,6 +9076,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -9092,7 +9093,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/function/function4.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -9174,7 +9175,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/preprocessor/tuple/elem.hpp
@@ -9638,7 +9638,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -9714,6 +9714,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -9730,7 +9731,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -9810,7 +9811,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -9971,42 +9971,42 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
+        -   symbol_name: mongo::WCErrorDetail::setErrMessage(mongo::StringData const&)
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+        -   symbol_name: mongo::WCErrorDetail::setErrInfo(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+        -   symbol_name: mongo::WCErrorDetail::setErrCode(int)
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+        -   symbol_name: mongo::WCErrorDetail::getErrMessage() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+        -   symbol_name: mongo::WCErrorDetail::~WCErrorDetail()
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+        -   symbol_name: mongo::WCErrorDetail::getErrCode() const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/cluster_write.cpp
         -   symbol_name: mongo::WCErrorDetail::cloneTo(mongo::WCErrorDetail*) const
             symbol_uses:
             - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batched_command_response.cpp
-        -   symbol_name: mongo::WCErrorDetail::setErrMessage(mongo::StringData const&)
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::WCErrorDetail::getErrMessage() const
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::WCErrorDetail::setErrCode(int)
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::WCErrorDetail::getErrCode() const
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::WCErrorDetail::~WCErrorDetail()
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::WCErrorDetail::setErrInfo(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
         -   symbol_name: mongo::WCErrorDetail::WCErrorDetail()
             symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batched_command_response.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
         file_dependencies:
         -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string>
                 const&, std::string*, std::string*)
@@ -10243,7 +10243,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - src/mongo/base/status-inl.h
         - src/third_party/boost/boost/preprocessor/tuple/to_list.hpp
@@ -10319,6 +10319,7 @@ module_groups:
         - src/mongo/platform/cstdint.h
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -10336,7 +10337,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
         - src/third_party/boost/boost/date_time/time_clock.hpp
@@ -10415,7 +10416,6 @@ module_groups:
         - src/mongo/util/hex.h
         - src/third_party/boost/boost/intrusive_ptr.hpp
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_duration.hpp
@@ -10576,82 +10576,82 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/config/no_tr1/functional.hpp
         file_interface:
-        -   symbol_name: mongo::WriteErrorDetail::getErrMessage() const
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
         -   symbol_name: mongo::WriteErrorDetail::setErrCode(int)
             symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_write_exec.cpp
             - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-        -   symbol_name: mongo::WriteErrorDetail::WriteErrorDetail()
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/s/write_ops/batched_command_response.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
         -   symbol_name: mongo::WriteErrorDetail::setErrMessage(mongo::StringData
                 const&)
             symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_write_exec.cpp
             - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-        -   symbol_name: mongo::WriteErrorDetail::getErrCode() const
-            symbol_uses:
-            - src/mongo/s/cluster_write.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-        -   symbol_name: mongo::WriteErrorDetail::~WriteErrorDetail()
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_write_exec.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::WriteErrorDetail::setErrInfo(mongo::BSONObj const&)
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
         -   symbol_name: mongo::WriteErrorDetail::getErrInfo() const
             symbol_uses:
             - src/mongo/db/commands/write_commands/batch_executor.cpp
             - src/mongo/s/write_ops/batch_write_exec.cpp
-        -   symbol_name: mongo::WriteErrorDetail::cloneTo(mongo::WriteErrorDetail*)
-                const
-            symbol_uses:
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/batched_command_response.cpp
-        -   symbol_name: mongo::WriteErrorDetail::setIndex(int)
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-        -   symbol_name: mongo::WriteErrorDetail::getIndex() const
-            symbol_uses:
-            - src/mongo/s/write_ops/batch_downconvert.cpp
-            - src/mongo/s/commands/cluster_write_cmd.cpp
-            - src/mongo/s/write_ops/write_op.cpp
-            - src/mongo/db/commands/write_commands/batch_executor.cpp
-            - src/mongo/s/write_ops/batch_write_op.cpp
-            - src/mongo/s/write_ops/batch_upconvert.cpp
         -   symbol_name: mongo::WriteErrorDetail::isErrInfoSet() const
             symbol_uses:
             - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+        -   symbol_name: mongo::WriteErrorDetail::getErrMessage() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+        -   symbol_name: mongo::WriteErrorDetail::getIndex() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/commands/cluster_write_cmd.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+        -   symbol_name: mongo::WriteErrorDetail::setIndex(int)
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+        -   symbol_name: mongo::WriteErrorDetail::getErrCode() const
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/cluster_write.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+        -   symbol_name: mongo::WriteErrorDetail::setErrInfo(mongo::BSONObj const&)
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+        -   symbol_name: mongo::WriteErrorDetail::cloneTo(mongo::WriteErrorDetail*)
+                const
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batched_command_response.cpp
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+        -   symbol_name: mongo::WriteErrorDetail::WriteErrorDetail()
+            symbol_uses:
+            - src/mongo/db/commands/write_commands/batch_executor.cpp
+            - src/mongo/s/write_ops/batch_downconvert.cpp
+            - src/mongo/s/write_ops/batch_write_exec.cpp
+            - src/mongo/s/write_ops/batch_write_op.cpp
+            - src/mongo/s/write_ops/batched_command_response.cpp
+            - src/mongo/s/write_ops/batch_upconvert.cpp
+            - src/mongo/s/write_ops/write_op.cpp
+        -   symbol_name: mongo::WriteErrorDetail::~WriteErrorDetail()
+            symbol_uses:
+            - src/mongo/s/write_ops/batch_write_op.cpp
             - src/mongo/s/write_ops/batch_write_exec.cpp
         file_dependencies:
         -   symbol_name: mongo::FieldParser::extract(mongo::BSONObj, mongo::BSONField<std::string>

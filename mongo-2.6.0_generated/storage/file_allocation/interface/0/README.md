@@ -14,20 +14,12 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::ensureParentDirCreated(boost::filesystem3::path const&)
-
-- Used By:
-
-    - [src/mongo/db/durop.cpp](../../../../storage/journaling)
-
-<div></div>
-
     mongo::FileAllocator::waitUntilFinished() const
 
 - Used By:
 
-    - [src/mongo/db/repair\_database.cpp](../../../../storage/repair\_database)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/repair\_database.cpp](../../../../storage/repair\_database)
     - [src/mongo/dbtests/perf/perftest.cpp](../../../../tests/unit\_tests)
 
 <div></div>
@@ -40,19 +32,27 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::ensureParentDirCreated(boost::filesystem3::path const&)
+
+- Used By:
+
+    - [src/mongo/db/durop.cpp](../../../../storage/journaling)
+
+<div></div>
+
     mongo::FileAllocator::get()
 
 - Used By:
 
-    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
-    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/db/client.cpp](../../../../query\_and\_operation\_handling/client\_and\_operation\_tracking)
-    - [src/mongo/db/repair\_database.cpp](../../../../storage/repair\_database)
     - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
+    - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
     - [src/mongo/dbtests/framework.cpp](../../../../tests/unit\_tests)
-    - [src/mongo/dbtests/perf/perftest.cpp](../../../../tests/unit\_tests)
+    - [src/mongo/db/repair\_database.cpp](../../../../storage/repair\_database)
+    - [src/mongo/tools/tool.cpp](../../../../tools/tools)
     - [src/mongo/util/mmap\_posix.cpp](../../../../storage/data\_files)
     - [src/mongo/db/storage/data\_file.cpp](../../../../storage/data\_files)
+    - [src/mongo/dbtests/perf/perftest.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -68,6 +68,6 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/dbtests/framework.cpp](../../../../tests/unit\_tests)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/dbtests/framework.cpp](../../../../tests/unit\_tests)
     - [src/mongo/tools/tool.cpp](../../../../tools/tools)

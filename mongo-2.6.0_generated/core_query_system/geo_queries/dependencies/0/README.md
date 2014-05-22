@@ -262,6 +262,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    vtable for S2Region
+
+- Provided By:
+
+    - [src/third\_party/s2/s2region.cc](../../../../third\_party/s2)
+
+<div></div>
+
     S2PolygonBuilderOptions::set_xor_edges(bool)
 
 - Provided By:
@@ -333,6 +341,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::unittest::Test::~Test()
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -480,15 +496,15 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::unittest::Test::~Test()
+    S2Region::~S2Region()
 
 - Provided By:
 
-    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+    - [src/third\_party/s2/s2region.cc](../../../../third\_party/s2)
 
 <div></div>
 
-    S2Region::~S2Region()
+    vtable for S2Region
 
 - Provided By:
 
@@ -719,6 +735,14 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    vtable for S2Region
+
+- Provided By:
+
+    - [src/third\_party/s2/s2region.cc](../../../../third\_party/s2)
 
 <div></div>
 
@@ -1020,7 +1044,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/db/auth/action\_type.cpp](../../../../security/authorization)
 
 <div></div>
 
@@ -1372,6 +1396,14 @@ This dependency information represents symbols that are used in this group but d
 <div></div>
 
     S2Region::~S2Region()
+
+- Provided By:
+
+    - [src/third\_party/s2/s2region.cc](../../../../third\_party/s2)
+
+<div></div>
+
+    vtable for S2Region
 
 - Provided By:
 

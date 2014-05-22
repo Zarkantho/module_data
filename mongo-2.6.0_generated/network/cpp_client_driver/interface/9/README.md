@@ -6,6 +6,30 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::GridFS::storeFile(std::string const&, std::string const&, std::string const&)
+
+- Used By:
+
+    - [src/mongo/tools/files.cpp](../../../../tools/tools)
+
+<div></div>
+
+    mongo::GridFile::write(std::string const&) const
+
+- Used By:
+
+    - [src/mongo/tools/files.cpp](../../../../tools/tools)
+
+<div></div>
+
+    mongo::GridFS::removeFile(std::string const&)
+
+- Used By:
+
+    - [src/mongo/tools/files.cpp](../../../../tools/tools)
+
+<div></div>
+
     mongo::GridFS::findFile(std::string const&) const
 
 - Used By:
@@ -22,18 +46,11 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::GridFS::setChunkSize(unsigned int)
+    mongo::GridFS::~GridFS()
 
 - Used By:
 
     - [src/mongo/dbtests/gridfstest.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::GridFS::storeFile(std::string const&, std::string const&, std::string const&)
-
-- Used By:
-
     - [src/mongo/tools/files.cpp](../../../../tools/tools)
 
 <div></div>
@@ -42,23 +59,6 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../../../../tools/tools)
-
-<div></div>
-
-    mongo::GridFile::write(std::string const&) const
-
-- Used By:
-
-    - [src/mongo/tools/files.cpp](../../../../tools/tools)
-
-<div></div>
-
-    mongo::GridFS::~GridFS()
-
-- Used By:
-
-    - [src/mongo/dbtests/gridfstest.cpp](../../../../tests/unit\_tests)
     - [src/mongo/tools/files.cpp](../../../../tools/tools)
 
 <div></div>
@@ -72,8 +72,8 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::GridFS::removeFile(std::string const&)
+    mongo::GridFS::setChunkSize(unsigned int)
 
 - Used By:
 
-    - [src/mongo/tools/files.cpp](../../../../tools/tools)
+    - [src/mongo/dbtests/gridfstest.cpp](../../../../tests/unit\_tests)

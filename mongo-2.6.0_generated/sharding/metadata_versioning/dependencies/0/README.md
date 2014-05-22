@@ -70,6 +70,14 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::unittest::TestAssertion::fail(std::string const&) const
+
+- Provided By:
+
+    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
+
+<div></div>
+
     mongo::unittest::Test::run()
 
 - Provided By:

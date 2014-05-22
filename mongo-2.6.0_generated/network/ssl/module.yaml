@@ -211,7 +211,7 @@ module_groups:
         - src/third_party/boost/boost/mpl/bool.hpp
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - /usr/local/Cellar/openssl/1.0.1e/include/openssl/objects.h
         - src/third_party/boost/boost/preprocessor/logical/bitand.hpp
@@ -294,6 +294,7 @@ module_groups:
         - src/third_party/boost/boost/bind/placeholders.hpp
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -309,7 +310,6 @@ module_groups:
         - src/third_party/boost/boost/type_traits/is_abstract.hpp
         - src/mongo/base/initializer_dependency_graph.h
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/weak_ptr.hpp
@@ -555,33 +555,33 @@ module_groups:
         - src/third_party/boost/boost/smart_ptr/detail/lightweight_mutex.hpp
         - src/third_party/boost/boost/date_time/date_clock_device.hpp
         file_interface:
-        -   symbol_name: mongo::sslGlobalParams
-            symbol_uses:
-            - src/mongo/util/net/message_port.cpp
-            - src/mongo/db/commands/parameters.cpp
-            - src/mongo/client/dbclient.cpp
-            - src/mongo/util/net/ssl_options.cpp
-        -   symbol_name: mongo::isSSLServer
-            symbol_uses:
-            - src/mongo/s/server.cpp
-            - src/mongo/db/db.cpp
         -   symbol_name: mongo::getSSLVersion(std::string const&, std::string const&)
             symbol_uses:
             - src/mongo/util/version_reporting.cpp
-        -   symbol_name: mongo::getSSLManager()
-            symbol_uses:
-            - src/mongo/client/dbclient.cpp
-            - src/mongo/util/background.cpp
-            - src/mongo/db/commands/user_management_commands.cpp
-            - src/mongo/db/initialize_server_global_state.cpp
-            - src/mongo/db/commands/parameters.cpp
-            - src/mongo/util/net/listen.cpp
-            - src/mongo/util/net/message_server_port.cpp
-            - src/mongo/db/commands/authentication_commands.cpp
-            - src/mongo/util/net/httpclient.cpp
         -   symbol_name: mongo::SSLConnection::~SSLConnection()
             symbol_uses:
             - src/mongo/util/net/sock.cpp
+        -   symbol_name: mongo::isSSLServer
+            symbol_uses:
+            - src/mongo/db/db.cpp
+            - src/mongo/s/server.cpp
+        -   symbol_name: mongo::getSSLManager()
+            symbol_uses:
+            - src/mongo/util/net/message_server_port.cpp
+            - src/mongo/util/background.cpp
+            - src/mongo/util/net/httpclient.cpp
+            - src/mongo/db/initialize_server_global_state.cpp
+            - src/mongo/db/commands/parameters.cpp
+            - src/mongo/util/net/listen.cpp
+            - src/mongo/client/dbclient.cpp
+            - src/mongo/db/commands/user_management_commands.cpp
+            - src/mongo/db/commands/authentication_commands.cpp
+        -   symbol_name: mongo::sslGlobalParams
+            symbol_uses:
+            - src/mongo/client/dbclient.cpp
+            - src/mongo/db/commands/parameters.cpp
+            - src/mongo/util/net/message_port.cpp
+            - src/mongo/util/net/ssl_options.cpp
         file_dependencies:
         -   symbol_name: typeinfo for mongo::SocketException
             symbol_sources:
@@ -669,7 +669,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -680,7 +680,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []
@@ -981,7 +981,7 @@ module_groups:
         - src/third_party/boost/boost/type_traits/add_rvalue_reference.hpp
         - src/third_party/boost/boost/cstdint.hpp
         - src/third_party/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
-        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+        - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
         - src/third_party/boost/boost/mpl/arg.hpp
         - src/third_party/boost/boost/type_traits/detail/ice_and.hpp
         - /usr/local/Cellar/openssl/1.0.1e/include/openssl/objects.h
@@ -1114,6 +1114,7 @@ module_groups:
         - src/third_party/boost/boost/date_time/time_iterator.hpp
         - src/third_party/boost/boost/preprocessor/arithmetic/detail/div_base.hpp
         - src/third_party/boost/boost/math/tools/real_cast.hpp
+        - src/third_party/boost/boost/smart_ptr/detail/sp_has_sync.hpp
         - src/third_party/boost/boost/smart_ptr/detail/lwm_nop.hpp
         - src/third_party/boost/boost/preprocessor/control/if.hpp
         - src/third_party/boost/boost/date_time/posix_time/posix_time_types.hpp
@@ -1140,7 +1141,7 @@ module_groups:
         - src/third_party/boost/boost/utility/base_from_member.hpp
         - src/third_party/boost/boost/thread/detail/thread_heap_alloc.hpp
         - src/third_party/boost/boost/mpl/multiplies.hpp
-        - build/darwin/ssl/mongo/base/error_codes.h
+        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/smart_ptr/shared_ptr.hpp
         - src/third_party/boost/boost/type_traits/config.hpp
         - src/third_party/boost/boost/detail/scoped_enum_emulation.hpp
@@ -1266,7 +1267,6 @@ module_groups:
         - src/mongo/util/hex.h
         - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ossl_typ.h
         - src/third_party/boost/boost/date_time/date.hpp
-        - src/third_party/boost/boost/preprocessor/tuple/rem.hpp
         - src/third_party/boost/boost/numeric/conversion/detail/int_float_mixture.hpp
         - src/third_party/boost/boost/bind/storage.hpp
         - src/third_party/boost/boost/thread/condition_variable.hpp
@@ -1530,14 +1530,6 @@ module_groups:
             symbol_uses:
             - src/mongo/shell/shell_options.cpp
             - src/mongo/tools/tool_options.cpp
-        -   symbol_name: mongo::storeSSLServerOptions(mongo::optionenvironment::Environment
-                const&)
-            symbol_uses:
-            - src/mongo/db/server_options_helpers.cpp
-        -   symbol_name: mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)
-            symbol_uses:
-            - src/mongo/db/mongod_options.cpp
-            - src/mongo/s/mongos_options.cpp
         -   symbol_name: mongo::storeSSLClientOptions(mongo::optionenvironment::Environment
                 const&)
             symbol_uses:
@@ -1547,6 +1539,14 @@ module_groups:
             symbol_uses:
             - src/mongo/db/mongod_options.cpp
             - src/mongo/s/mongos_options.cpp
+        -   symbol_name: mongo::addSSLServerOptions(mongo::optionenvironment::OptionSection*)
+            symbol_uses:
+            - src/mongo/db/mongod_options.cpp
+            - src/mongo/s/mongos_options.cpp
+        -   symbol_name: mongo::storeSSLServerOptions(mongo::optionenvironment::Environment
+                const&)
+            symbol_uses:
+            - src/mongo/db/server_options_helpers.cpp
         file_dependencies:
         -   symbol_name: mongo::logger::LogstreamBuilder::~LogstreamBuilder()
             symbol_sources:
@@ -1662,7 +1662,7 @@ module_groups:
         - mongod
         - perftest
         - mongoperf
-        - mongorestore
+        - mongosniff
         - mongodump
         - mongobridge
         - mongofiles
@@ -1673,7 +1673,7 @@ module_groups:
         - test
         - mongoexport
         - mongostat
-        - mongosniff
+        - mongorestore
         file_headers: []
         file_interface: []
         file_dependencies: []

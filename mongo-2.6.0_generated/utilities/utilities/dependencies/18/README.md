@@ -181,8 +181,8 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
     - [src/mongo/s/server.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/db/instance.cpp](../../../../storage/storage\_layer\_structure)
 
 <div></div>
 
@@ -231,6 +231,40 @@ This dependency information represents symbols that are used in this group but d
 - Provided By:
 
     - [src/mongo/db/log\_process\_details.cpp](../../../../process\_management/logging\_system)
+
+### src/mongo/util/stack\_introspect.cpp
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::~LogstreamBuilder()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::makeStream()
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    mongo::logger::LogstreamBuilder::LogstreamBuilder(mongo::logger::LogDomain<mongo::logger::MessageEventEphemeral>*, std::string const&, mongo::logger::LogSeverity)
+
+- Provided By:
+
+    - [src/mongo/logger/logstream\_builder.cpp](../../../../process\_management/logging\_system)
+
+<div></div>
+
+    mongo::logger::globalLogManager()
+
+- Provided By:
+
+    - [src/mongo/logger/logger.cpp](../../../../process\_management/logging\_system)
 
 ### src/mongo/util/stacktrace.cpp
 
@@ -784,7 +818,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 
@@ -808,7 +842,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 
@@ -824,7 +858,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 
@@ -856,7 +890,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 
@@ -864,7 +898,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 
@@ -872,7 +906,7 @@ This dependency information represents symbols that are used in this group but d
 
 - Provided By:
 
-    - [build/darwin/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
+    - [build/darwin/dbg\_off/opt\_off/ssl/mongo/buildinfo.cpp](../../../../process\_management/build\_information)
 
 ### src/mongo/util/version\_test.cpp
 

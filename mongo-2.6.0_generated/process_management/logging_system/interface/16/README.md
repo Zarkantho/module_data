@@ -10,8 +10,8 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/version\_mongos.cpp](../../../../process\_management/build\_information)
     - [src/mongo/db/db.cpp](../../../../process\_management/mongos\_and\_mongod\_mains)
+    - [src/mongo/s/version\_mongos.cpp](../../../../process\_management/build\_information)
 
 <div></div>
 
@@ -19,5 +19,5 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/db/dbcommands\_generic.cpp](../../../../query\_and\_operation\_handling/database\_commands)
     - [src/mongo/util/signal\_handlers.cpp](../../../../utilities/utilities)
+    - [src/mongo/db/dbcommands\_generic.cpp](../../../../query\_and\_operation\_handling/database\_commands)

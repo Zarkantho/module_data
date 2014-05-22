@@ -16,7 +16,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::logger::RotatableFileWriter::Use::Use(mongo::logger::RotatableFileWriter*)
+    mongo::logger::RotatableFileWriter::Use::status()
 
 - Used By:
 
@@ -24,7 +24,7 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::logger::RotatableFileWriter::Use::status()
+    mongo::logger::RotatableFileWriter::Use::Use(mongo::logger::RotatableFileWriter*)
 
 - Used By:
 

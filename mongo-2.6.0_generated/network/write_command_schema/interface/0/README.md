@@ -6,13 +6,36 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
+    mongo::BatchedCommandResponse::getOk() const
+
+- Used By:
+
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
+    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../../network/write\_commands)
+
+<div></div>
+
     mongo::BatchedCommandResponse::setWriteConcernError(mongo::WCErrorDetail*)
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::isWriteConcernErrorSet() const
+
+- Used By:
+
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -25,22 +48,14 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::BatchedCommandResponse::toString() const
-
-- Used By:
-
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
-
-<div></div>
-
     mongo::BatchedCommandResponse::getErrDetails() const
 
 - Used By:
 
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -56,12 +71,12 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
     - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -77,9 +92,72 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::toString() const
+
+- Used By:
+
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::BatchedCommandResponse()
+
+- Used By:
+
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
+    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
+    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
+    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::getNModified() const
+
+- Used By:
+
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::setErrCode(int)
+
+- Used By:
+
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::setLastOp(mongo::OpTime)
+
+- Used By:
+
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::getWriteConcernError() const
+
+- Used By:
+
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
 
 <div></div>
 
@@ -92,62 +170,12 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::BatchedCommandResponse::isLastOpSet() const
-
-- Used By:
-
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
-
-<div></div>
-
-    mongo::BatchedCommandResponse::setOk(int)
-
-- Used By:
-
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
-
-<div></div>
-
-    mongo::BatchedCommandResponse::BatchedCommandResponse()
-
-- Used By:
-
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
-    - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
-    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
-    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
-
-<div></div>
-
-    mongo::BatchedCommandResponse::setErrCode(int)
-
-- Used By:
-
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
-
-<div></div>
-
     mongo::BatchedCommandResponse::addToErrDetails(mongo::WriteErrorDetail*)
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -156,6 +184,26 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::getN() const
+
+- Used By:
+
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::isLastOpSet() const
+
+- Used By:
+
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -171,28 +219,16 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
     - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
     - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
-    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
-    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
-
-<div></div>
-
-    mongo::BatchedCommandResponse::getN() const
-
-- Used By:
-
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
-    - [src/mongo/db/auth/authz\_manager\_external\_state\_s.cpp](../../../../security/authorization)
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/strategy.cpp](../../../../network/network\_core)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -201,18 +237,8 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
-
-<div></div>
-
-    mongo::BatchedCommandResponse::isWriteConcernErrorSet() const
-
-- Used By:
-
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -232,22 +258,12 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::BatchedCommandResponse::getErrMessage() const
-
-- Used By:
-
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
-
-<div></div>
-
     mongo::BatchedCommandResponse::setUpsertDetails(std::vector<mongo::BatchedUpsertDetail*, std::allocator<mongo::BatchedUpsertDetail*> > const&)
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -275,30 +291,13 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::BatchedCommandResponse::isElectionIdSet() const
-
-- Used By:
-
-    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
-
-<div></div>
-
-    mongo::BatchedCommandResponse::getWriteConcernError() const
-
-- Used By:
-
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
-
-<div></div>
-
     mongo::BatchedCommandResponse::setNModified(long long)
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -306,11 +305,21 @@ This interface information represents symbols that are defined in this group but
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
+
+<div></div>
+
+    mongo::BatchedCommandResponse::getErrMessage() const
+
+- Used By:
+
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -329,10 +338,10 @@ This interface information represents symbols that are defined in this group but
 - Used By:
 
     - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
     - [src/mongo/s/config.cpp](../../../../sharding/cluster\_metadata\_management)
-    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../../network/write\_commands)
     - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/dbclient\_multi\_command.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
 
 <div></div>
 
@@ -344,30 +353,21 @@ This interface information represents symbols that are defined in this group but
 
 <div></div>
 
-    mongo::BatchedCommandResponse::getOk() const
+    mongo::BatchedCommandResponse::setOk(int)
 
 - Used By:
 
-    - [src/mongo/db/commands/write\_commands/write\_commands.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
-    - [src/mongo/s/write\_ops/batch\_upconvert.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
-    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
-
-<div></div>
-
-    mongo::BatchedCommandResponse::setLastOp(mongo::OpTime)
-
-- Used By:
-
-    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
     - [src/mongo/db/commands/write\_commands/batch\_executor.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/cluster\_write.cpp](../../../../sharding/routing)
+    - [src/mongo/s/write\_ops/batch\_downconvert.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/config\_coordinator.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/commands/cluster\_write\_cmd.cpp](../../../../network/write\_commands)
 
 <div></div>
 
-    mongo::BatchedCommandResponse::getNModified() const
+    mongo::BatchedCommandResponse::isElectionIdSet() const
 
 - Used By:
 
-    - [src/mongo/s/write\_ops/batch\_write\_op.cpp](../../../../network/write\_commands)
+    - [src/mongo/s/write\_ops/batch\_write\_exec.cpp](../../../../network/write\_commands)
