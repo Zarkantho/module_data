@@ -3,11 +3,11 @@ Categorization and documentation of the MongoDB server codebase.  This is a work
 
 NOTE:  This README and entire subtree is automatically generated.
 
-Build flags: --jobs 8 --mute --dbg=off --opt=off --ssl --cpppath /usr/local/Cellar/openssl/1.0.1e/include --libpath /usr/local/Cellar/openssl/1.0.1e/lib
-Build platform: macosx-10.8-intel
-Version hash: 1c1c76aeca21c5983dc178920f5052c298db616c
-Version branch: (no branch)
-Version tag: r2.6.0
+* Build flags: --jobs 8 --mute --dbg=off --opt=off --ssl --cpppath /usr/local/Cellar/openssl/1.0.1e/include --libpath /usr/local/Cellar/openssl/1.0.1e/lib
+* Build platform: macosx-10.8-intel
+* Version hash: 1c1c76aeca21c5983dc178920f5052c298db616c
+* Version branch: (no branch)
+* Version tag: r2.6.0
 
 ## [Third Party](third\_party)
 Third Party systems used in MongoDB
