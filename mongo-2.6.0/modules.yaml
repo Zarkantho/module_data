@@ -4791,6 +4791,11 @@
             group_files:
             - src/mongo/util/log.cpp
             - src/mongo/util/log.h
+        -   group_title: Logstream Builder
+            group_description: Class that provides a streaming interface to the logging system.
+            group_files:
+            - src/mongo/logger/logstream_builder.cpp
+            - src/mongo/logger/logstream_builder.h
         -   group_title: Log System Globals Access
             group_description: Free functions to get access to the global instances
                 of the various components of the logging system.
@@ -4849,12 +4854,6 @@
             - src/mongo/logger/log_severity-inl.h
             - src/mongo/logger/log_severity.cpp
             - src/mongo/logger/log_severity.h
-        -   group_title: Message Event
-            group_description: Class containing all the details behind a log event,
-                such as the date and the severity.
-            group_files:
-            - src/mongo/logger/logstream_builder.cpp
-            - src/mongo/logger/logstream_builder.h
         -   group_title: Message Event
             group_description: Class containing all the details behind a log event,
                 such as the date and the severity.
