@@ -17,6 +17,19 @@ Helper functions that hide the more complex details of the logging function and 
 
 -------------
 
+## Logstream Builder
+Class that provides a streaming interface to the logging system.
+
+#### Files
+- [src/mongo/logger/logstream\_builder.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/logstream_builder.cpp)   (mongod, tools, mongos)
+- [src/mongo/logger/logstream\_builder.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/logstream_builder.h)   (mongod, tools, mongos)
+
+#### [Interface](interface/1)
+
+#### [Dependencies](dependencies/1)
+
+-------------
+
 ## Log System Globals Access
 Free functions to get access to the global instances of the various components of the logging system.
 
@@ -24,9 +37,9 @@ Free functions to get access to the global instances of the various components o
 - [src/mongo/logger/logger.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/logger.cpp)   (mongod, tools, mongos)
 - [src/mongo/logger/logger.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/logger.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/1)
+#### [Interface](interface/2)
 
-#### [Dependencies](dependencies/1)
+#### [Dependencies](dependencies/2)
 
 -------------
 
@@ -36,9 +49,9 @@ Interface for an object that logs can be appended to.  This is what allows us to
 #### Files
 - [src/mongo/logger/appender.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/appender.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/2)
+#### [Interface](interface/3)
 
-#### [Dependencies](dependencies/2)
+#### [Dependencies](dependencies/3)
 
 -------------
 
@@ -50,9 +63,9 @@ Implementation of an appender that sends messages to a console.  For example, th
 - [src/mongo/logger/console.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/console.h)   (mongod, tools, mongos)
 - [src/mongo/logger/console\_appender.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/console_appender.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/3)
+#### [Interface](interface/4)
 
-#### [Dependencies](dependencies/3)
+#### [Dependencies](dependencies/4)
 
 -------------
 
@@ -62,9 +75,9 @@ Implementation of an appender that sends messages to syslog.
 #### Files
 - [src/mongo/logger/syslog\_appender.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/syslog_appender.h)   (mongod, mongos)
 
-#### [Interface](interface/4)
+#### [Interface](interface/5)
 
-#### [Dependencies](dependencies/4)
+#### [Dependencies](dependencies/5)
 
 -------------
 
@@ -75,9 +88,9 @@ In memory log that can be accessed using the "getLog" command.  See http://docs.
 - [src/mongo/logger/ramlog.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/ramlog.cpp)   (mongod, tools, mongos)
 - [src/mongo/logger/ramlog.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/ramlog.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/5)
+#### [Interface](interface/6)
 
-#### [Dependencies](dependencies/5)
+#### [Dependencies](dependencies/6)
 
 -------------
 
@@ -87,9 +100,9 @@ Class that can be streamed to a log builder to add another output location for w
 #### Files
 - [src/mongo/logger/tee.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/tee.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/6)
+#### [Interface](interface/7)
 
-#### [Dependencies](dependencies/6)
+#### [Dependencies](dependencies/7)
 
 -------------
 
@@ -102,9 +115,9 @@ A class to manage appenders.  A single log domain can have many appenders (log s
 - [src/mongo/logger/message\_log\_domain.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/message_log_domain.cpp)   (mongod, tools, mongos)
 - [src/mongo/logger/message\_log\_domain.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/message_log_domain.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/7)
+#### [Interface](interface/8)
 
-#### [Dependencies](dependencies/7)
+#### [Dependencies](dependencies/8)
 
 -------------
 
@@ -115,9 +128,9 @@ Class to manage log domains.  Allows access to log domains by name.
 - [src/mongo/logger/log\_manager.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/log_manager.cpp)   (mongod, tools, mongos)
 - [src/mongo/logger/log\_manager.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/log_manager.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/8)
+#### [Interface](interface/9)
 
-#### [Dependencies](dependencies/8)
+#### [Dependencies](dependencies/9)
 
 -------------
 
@@ -129,19 +142,6 @@ Classes representing the severity of log messages.  Currently, we log messages i
 - [src/mongo/logger/log\_severity-inl.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/log_severity-inl.h)   (mongod, tools, mongos)
 - [src/mongo/logger/log\_severity.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/log_severity.cpp)   (mongod, tools, mongos)
 - [src/mongo/logger/log\_severity.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/log_severity.h)   (mongod, tools, mongos)
-
-#### [Interface](interface/9)
-
-#### [Dependencies](dependencies/9)
-
--------------
-
-## Message Event
-Class containing all the details behind a log event, such as the date and the severity.
-
-#### Files
-- [src/mongo/logger/logstream\_builder.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/logstream_builder.cpp)   (mongod, tools, mongos)
-- [src/mongo/logger/logstream\_builder.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/logger/logstream_builder.h)   (mongod, tools, mongos)
 
 #### [Interface](interface/10)
 

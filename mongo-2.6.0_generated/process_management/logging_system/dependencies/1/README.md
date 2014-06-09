@@ -1,8 +1,24 @@
 
-# Interface for Log System Globals Access
+# Interface for Logstream Builder
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
-### src/mongo/logger/logger.cpp
+### src/mongo/logger/logstream\_builder.cpp
+
+<div></div>
+
+    mongo::curTimeMillis64()
+
+- Provided By:
+
+    - [src/mongo/util/time\_support.cpp](../../../../utilities/utilities)
+
+<div></div>
+
+    mongo::verifyFailed(char const*, char const*, unsigned int)
+
+- Provided By:
+
+    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
 
 <div></div>
 
