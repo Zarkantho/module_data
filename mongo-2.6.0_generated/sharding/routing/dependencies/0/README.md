@@ -1,5 +1,5 @@
 
-# Interface for Operation Targeter
+# Dependencies for Operation Targeter
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/dbtests/chunk\_manager\_targeter\_test.cpp

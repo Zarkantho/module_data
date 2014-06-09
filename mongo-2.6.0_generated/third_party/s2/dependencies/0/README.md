@@ -1,5 +1,5 @@
 
-# Interface for S2 Library
+# Dependencies for S2 Library
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/third\_party/s2/base/logging.cc

@@ -1,5 +1,5 @@
 
-# Interface for Mutable BSON Tests
+# Dependencies for Mutable BSON Tests
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/bson/mutable/mutable\_bson\_algo\_test.cpp

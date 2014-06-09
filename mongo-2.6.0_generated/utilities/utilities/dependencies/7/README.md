@@ -1,5 +1,5 @@
 
-# Interface for Thread Name
+# Dependencies for Thread Name
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/util/concurrency/thread\_name.cpp

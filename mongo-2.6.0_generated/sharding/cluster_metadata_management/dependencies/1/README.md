@@ -1,5 +1,5 @@
 
-# Interface for Database And Collection Configuration
+# Dependencies for Database And Collection Configuration
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/config.cpp

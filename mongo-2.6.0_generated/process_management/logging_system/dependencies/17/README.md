@@ -1,5 +1,5 @@
 
-# Interface for Extra Log Context
+# Dependencies for Extra Log Context
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/server\_extra\_log\_context.cpp

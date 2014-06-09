@@ -1,5 +1,5 @@
 
-# Interface for Config Server Schema
+# Dependencies for Config Server Schema
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/type\_changelog.cpp

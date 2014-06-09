@@ -1,5 +1,5 @@
 
-# Interface for BSON Field Parser
+# Dependencies for BSON Field Parser
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/field\_parser.cpp

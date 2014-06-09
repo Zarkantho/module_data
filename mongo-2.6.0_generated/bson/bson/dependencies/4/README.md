@@ -1,5 +1,5 @@
 
-# Interface for Raw Builder
+# Dependencies for Raw Builder
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/bson/util/builder\_test.cpp

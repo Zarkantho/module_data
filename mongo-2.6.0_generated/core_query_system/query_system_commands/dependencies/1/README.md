@@ -1,5 +1,5 @@
 
-# Interface for Mongos Query System Commands
+# Dependencies for Mongos Query System Commands
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/commands/cluster\_index\_filter\_cmd.cpp

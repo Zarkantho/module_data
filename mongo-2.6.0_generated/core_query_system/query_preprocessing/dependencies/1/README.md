@@ -1,5 +1,5 @@
 
-# Interface for Lite Parsed Query
+# Dependencies for Lite Parsed Query
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/query/lite\_parsed\_query.cpp

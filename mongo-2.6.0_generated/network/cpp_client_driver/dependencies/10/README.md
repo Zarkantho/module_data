@@ -1,5 +1,5 @@
 
-# Interface for Sasl Client Authentication
+# Dependencies for Sasl Client Authentication
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/client/sasl\_client\_authenticate.cpp

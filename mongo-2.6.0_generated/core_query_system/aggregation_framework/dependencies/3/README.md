@@ -1,5 +1,5 @@
 
-# Interface for Pipeline Stages
+# Dependencies for Pipeline Stages
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/pipeline/document\_source.cpp

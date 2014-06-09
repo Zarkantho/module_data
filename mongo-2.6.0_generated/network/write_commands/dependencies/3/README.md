@@ -1,5 +1,5 @@
 
-# Interface for Write Commands Utilities
+# Dependencies for Write Commands Utilities
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/commands/write\_commands/write\_commands\_common.cpp

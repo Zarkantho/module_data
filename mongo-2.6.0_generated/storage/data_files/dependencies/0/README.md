@@ -1,5 +1,5 @@
 
-# Interface for Mmapped File Interface
+# Dependencies for Mmapped File Interface
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/util/mmap.cpp

@@ -1,5 +1,5 @@
 
-# Interface for Replica Set Background Sync Threads
+# Dependencies for Replica Set Background Sync Threads
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/repl/bgsync.cpp

@@ -1,5 +1,5 @@
 
-# Interface for Legacy Pdfile File
+# Dependencies for Legacy Pdfile File
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/pdfile.cpp

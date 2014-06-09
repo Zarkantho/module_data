@@ -1,5 +1,5 @@
 
-# Interface for Interupt Status Checks
+# Dependencies for Interupt Status Checks
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/interrupt\_status\_mongod.cpp

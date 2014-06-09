@@ -1,5 +1,5 @@
 
-# Interface for Write Concern Replication Checks
+# Dependencies for Write Concern Replication Checks
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/repl/write\_concern.cpp

@@ -1,5 +1,5 @@
 
-# Interface for Chunk Version
+# Dependencies for Chunk Version
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/chunk\_version\_test.cpp

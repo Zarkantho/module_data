@@ -1,5 +1,5 @@
 
-# Interface for Data File Layout
+# Dependencies for Data File Layout
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/storage/data\_file.cpp

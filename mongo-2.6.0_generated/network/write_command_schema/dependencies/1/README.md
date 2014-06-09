@@ -1,5 +1,5 @@
 
-# Interface for Write Commands Request Schema Interface
+# Dependencies for Write Commands Request Schema Interface
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/write\_ops/batched\_command\_request.cpp

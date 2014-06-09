@@ -1,5 +1,5 @@
 
-# Interface for Mongod Split Commands
+# Dependencies for Mongod Split Commands
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/d\_split.cpp

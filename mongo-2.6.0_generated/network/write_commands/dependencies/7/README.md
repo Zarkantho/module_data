@@ -1,5 +1,5 @@
 
-# Interface for Mongos Write Commands Lifecycle Tracking
+# Dependencies for Mongos Write Commands Lifecycle Tracking
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/write\_ops/batch\_write\_op.cpp

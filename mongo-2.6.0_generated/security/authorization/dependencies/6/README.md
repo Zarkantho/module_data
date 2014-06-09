@@ -1,5 +1,5 @@
 
-# Interface for User Cache Invalidator
+# Dependencies for User Cache Invalidator
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/auth/user\_cache\_invalidator\_job.cpp

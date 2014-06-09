@@ -1,5 +1,5 @@
 
-# Interface for Merge Chunks Command
+# Dependencies for Merge Chunks Command
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/d\_merge.cpp

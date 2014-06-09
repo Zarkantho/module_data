@@ -1,5 +1,5 @@
 
-# Interface for Replica Set Web Information
+# Dependencies for Replica Set Web Information
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/repl/replset\_web\_handler.cpp

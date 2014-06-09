@@ -1,5 +1,5 @@
 
-# Interface for Explain Document Schema
+# Dependencies for Explain Document Schema
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/query/type\_explain.cpp

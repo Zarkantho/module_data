@@ -1,5 +1,5 @@
 
-# Interface for Namespace Index
+# Dependencies for Namespace Index
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/structure/catalog/namespace\_index.cpp

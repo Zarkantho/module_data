@@ -1,5 +1,5 @@
 
-# Interface for Message Encoder
+# Dependencies for Message Encoder
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/logger/message\_event\_utf8\_encoder.cpp

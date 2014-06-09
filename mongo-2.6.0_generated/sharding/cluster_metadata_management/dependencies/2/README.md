@@ -1,5 +1,5 @@
 
-# Interface for Config Server Consistency Check Job
+# Dependencies for Config Server Consistency Check Job
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/config\_server\_checker\_service.cpp

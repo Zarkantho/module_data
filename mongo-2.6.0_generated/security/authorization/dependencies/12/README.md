@@ -1,5 +1,5 @@
 
-# Interface for Authorization Session Specialization
+# Dependencies for Authorization Session Specialization
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/auth/authz\_session\_external\_state\_d.cpp

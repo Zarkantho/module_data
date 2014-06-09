@@ -1,5 +1,5 @@
 
-# Interface for Mongod WriteBack Queue and writebacklisten Command
+# Dependencies for Mongod WriteBack Queue and writebacklisten Command
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/d\_writeback.cpp

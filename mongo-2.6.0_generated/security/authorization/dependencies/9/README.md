@@ -1,5 +1,5 @@
 
-# Interface for Authorization Manager Specialization
+# Dependencies for Authorization Manager Specialization
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/auth/authz\_manager\_external\_state.cpp

@@ -1,5 +1,5 @@
 
-# Interface for Internal Cluster Authentication
+# Dependencies for Internal Cluster Authentication
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/auth/security\_key.cpp

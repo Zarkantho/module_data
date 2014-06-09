@@ -1,5 +1,5 @@
 
-# Interface for Update Lifecycle
+# Dependencies for Update Lifecycle
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/ops/update\_lifecycle\_impl.cpp

@@ -1,5 +1,5 @@
 
-# Interface for Index Details
+# Dependencies for Index Details
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/structure/catalog/index\_details.cpp

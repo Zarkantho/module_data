@@ -1,5 +1,5 @@
 
-# Interface for BSON Field Schema
+# Dependencies for BSON Field Schema
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/bson/bson\_field\_test.cpp

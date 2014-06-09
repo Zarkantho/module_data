@@ -1,5 +1,5 @@
 
-# Interface for Query Plan Stage Builder
+# Dependencies for Query Plan Stage Builder
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/query/stage\_builder.cpp

@@ -1,5 +1,5 @@
 
-# Interface for Replication Server Status Section
+# Dependencies for Replication Server Status Section
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/repl/replication\_server\_status.cpp

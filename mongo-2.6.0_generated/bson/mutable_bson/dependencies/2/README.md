@@ -1,5 +1,5 @@
 
-# Interface for Mutable BSON Element
+# Dependencies for Mutable BSON Element
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/bson/mutable/element.cpp

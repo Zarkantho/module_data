@@ -1,5 +1,5 @@
 
-# Interface for Boost Filesystem
+# Dependencies for Boost Filesystem
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/third\_party/boost/libs/filesystem/v2/src/v2\_operations.cpp

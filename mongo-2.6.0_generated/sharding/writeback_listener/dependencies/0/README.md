@@ -1,5 +1,5 @@
 
-# Interface for Mongos Writeback Listener Thread
+# Dependencies for Mongos Writeback Listener Thread
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/s/writeback\_listener.cpp

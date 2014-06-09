@@ -1,5 +1,5 @@
 
-# Interface for Index Key Pregeneration
+# Dependencies for Index Key Pregeneration
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/catalog/index\_pregen.cpp

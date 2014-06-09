@@ -1,5 +1,5 @@
 
-# Interface for Update Modifiers
+# Dependencies for Update Modifiers
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/ops/modifier\_add\_to\_set.cpp

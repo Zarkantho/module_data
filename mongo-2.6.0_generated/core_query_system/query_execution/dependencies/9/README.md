@@ -1,5 +1,5 @@
 
-# Interface for Cache Aware Query Runners
+# Dependencies for Cache Aware Query Runners
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
 ### src/mongo/db/query/cached\_plan\_runner.cpp
