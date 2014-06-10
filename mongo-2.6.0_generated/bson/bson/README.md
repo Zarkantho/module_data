@@ -31,17 +31,6 @@ Helper to check if a BSON object is valid
 
 -------------
 
-## Old BSON Example
-Old example of how to use BSON that should be updated with the current recommended methods.
-
-#### Files
-
-#### [Interface](interface/2)
-
-#### [Dependencies](dependencies/2)
-
--------------
-
 ## BSON Builder
 Class to build a BSON object.  Note that the low level BSON object construction is append only since BSON is a packed binary format.
 
@@ -50,9 +39,9 @@ Class to build a BSON object.  Note that the low level BSON object construction 
 - [src/mongo/bson/bsonobjbuilder.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/bsonobjbuilder.h)   (mongod, tools, mongos)
 - [src/mongo/bson/bsonobjbuilder\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/bsonobjbuilder_test.cpp)   ()
 
-#### [Interface](interface/3)
+#### [Interface](interface/2)
 
-#### [Dependencies](dependencies/3)
+#### [Dependencies](dependencies/2)
 
 -------------
 
@@ -63,9 +52,9 @@ Class that provides an append interface to an automatically growing buffer.  Use
 - [src/mongo/bson/util/builder.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/util/builder.h)   (mongod, tools, mongos)
 - [src/mongo/bson/util/builder\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/util/builder_test.cpp)   ()
 
-#### [Interface](interface/4)
+#### [Interface](interface/3)
 
-#### [Dependencies](dependencies/4)
+#### [Dependencies](dependencies/3)
 
 -------------
 
@@ -75,9 +64,9 @@ Class to iterate a BSON object.
 #### Files
 - [src/mongo/bson/bsonobjiterator.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/bsonobjiterator.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/5)
+#### [Interface](interface/4)
 
-#### [Dependencies](dependencies/5)
+#### [Dependencies](dependencies/4)
 
 -------------
 
@@ -88,9 +77,9 @@ Class wrapper for a BSON object that can optionally handle the memory management
 - [src/mongo/bson/bsonobj.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/bsonobj.h)   (mongod, tools, mongos)
 - [src/mongo/bson/bson\_obj\_test.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/bson_obj_test.cpp)   ()
 
-#### [Interface](interface/6)
+#### [Interface](interface/5)
 
-#### [Dependencies](dependencies/6)
+#### [Dependencies](dependencies/5)
 
 -------------
 
@@ -100,9 +89,9 @@ Representation of a single element in a BSON object.  Note that a BSONElement do
 #### Files
 - [src/mongo/bson/bsonelement.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/bsonelement.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/7)
+#### [Interface](interface/6)
 
-#### [Dependencies](dependencies/7)
+#### [Dependencies](dependencies/6)
 
 -------------
 
@@ -112,9 +101,9 @@ Top level header to include to pull in the entire BSON library.
 #### Files
 - [src/mongo/db/jsobj.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/jsobj.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/8)
+#### [Interface](interface/7)
 
-#### [Dependencies](dependencies/8)
+#### [Dependencies](dependencies/7)
 
 -------------
 
@@ -124,9 +113,9 @@ Legacy compact representation for a key pattern or a sort specification, such as
 #### Files
 - [src/mongo/bson/ordering.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/ordering.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/9)
+#### [Interface](interface/8)
 
-#### [Dependencies](dependencies/9)
+#### [Dependencies](dependencies/8)
 
 -------------
 
@@ -137,9 +126,9 @@ C++ representation of the BSON ObjectId type.
 - [src/mongo/bson/oid.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/oid.cpp)   (mongod, tools, mongos)
 - [src/mongo/bson/oid.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/oid.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/10)
+#### [Interface](interface/9)
 
-#### [Dependencies](dependencies/10)
+#### [Dependencies](dependencies/9)
 
 -------------
 
@@ -152,9 +141,9 @@ Note that the relationship between this class, the BSON Timestamp, the BSON Date
 - [src/mongo/bson/optime.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/optime.cpp)   (mongod, tools, mongos)
 - [src/mongo/bson/optime.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/optime.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/11)
+#### [Interface](interface/10)
 
-#### [Dependencies](dependencies/11)
+#### [Dependencies](dependencies/10)
 
 -------------
 
@@ -164,9 +153,9 @@ List of all the native BSON types used in the BSON code.
 #### Files
 - [src/mongo/bson/bsontypes.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/bsontypes.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/12)
+#### [Interface](interface/11)
 
-#### [Dependencies](dependencies/12)
+#### [Dependencies](dependencies/11)
 
 -------------
 
@@ -176,9 +165,9 @@ Wrapper around a BSONElement that allows for modification of BSON types that can
 #### Files
 - [src/mongo/db/jsobjmanipulator.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/jsobjmanipulator.h)   (mongod, tools)
 
-#### [Interface](interface/13)
+#### [Interface](interface/12)
 
-#### [Dependencies](dependencies/13)
+#### [Dependencies](dependencies/12)
 
 -------------
 
@@ -188,9 +177,9 @@ Class representing an integer that supports atomic read modify write operations.
 #### Files
 - [src/mongo/bson/util/atomic\_int.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/util/atomic_int.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/14)
+#### [Interface](interface/13)
 
-#### [Dependencies](dependencies/14)
+#### [Dependencies](dependencies/13)
 
 -------------
 
@@ -205,6 +194,6 @@ BSON code that is not organized in any specific way.  Most of this code is eithe
 - [src/mongo/bson/util/misc.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/bson/util/misc.h)   (mongod, tools, mongos)
 - [src/mongo/db/jsobj.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/jsobj.cpp)   (mongod, tools, mongos)
 
-#### [Interface](interface/15)
+#### [Interface](interface/14)
 
-#### [Dependencies](dependencies/15)
+#### [Dependencies](dependencies/14)

@@ -1,8 +1,8 @@
 
-# Dependencies for BSON Builder
+# Dependencies for Raw Builder
 This dependency information represents symbols that are used in this group but defined in other modules.  Does not include symbols used in this group that are defined inside this module.
 
-### src/mongo/bson/bsonobjbuilder\_test.cpp
+### src/mongo/bson/util/builder\_test.cpp
 
 <div></div>
 
@@ -30,31 +30,7 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::uasserted(int, char const*)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
-
-<div></div>
-
     mongo::unittest::Test::~Test()
-
-- Provided By:
-
-    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::unittest::TestAssertion::TestAssertion(char const*, unsigned int)
 
 - Provided By:
 
@@ -78,11 +54,11 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
-    mongo::msgasserted(int, std::string const&)
+    mongo::unittest::Suite::add(std::string const&, boost::function<void ()> const&)
 
 - Provided By:
 
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
+    - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
 
 <div></div>
 
@@ -94,35 +70,19 @@ This dependency information represents symbols that are used in this group but d
 
 <div></div>
 
+    mongo::operator<<(std::ostream&, mongo::StringData const&)
+
+- Provided By:
+
+    - [src/mongo/base/string\_data.cpp](../../../../utilities/base\_utilites)
+
+<div></div>
+
     mongo::unittest::Test::run()
 
 - Provided By:
 
     - [src/mongo/unittest/unittest.cpp](../../../../tests/unit\_tests)
-
-<div></div>
-
-    mongo::verifyFailed(char const*, char const*, unsigned int)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    mongo::uasserted(int, std::string const&)
-
-- Provided By:
-
-    - [src/mongo/util/assert\_util.cpp](../../../../utilities/utilities)
-
-<div></div>
-
-    std::string mongo::integerToHex<int>(int)
-
-- Provided By:
-
-    - [src/mongo/util/hex.cpp](../../../../utilities/utilities)
 
 <div></div>
 

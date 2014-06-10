@@ -114,17 +114,6 @@ Thread based implementation of a message server, and helpers. Listens on the pro
 
 -------------
 
-## Async Message Server
-Experimental async implementation of a message server.  This is experimental and will probably be deleted before it gets used for real.
-
-#### Files
-
-#### [Interface](interface/8)
-
-#### [Dependencies](dependencies/8)
-
--------------
-
 ## Mongos Request Handling Implementation
 Implementation of the logic to handle incoming messages on mongos. The Request class is the entry point that decodes the operation type and calls to the STRATEGY object to do the work of handling the specific operation.
 
@@ -134,9 +123,9 @@ Implementation of the logic to handle incoming messages on mongos. The Request c
 - [src/mongo/s/strategy.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/strategy.cpp)   (mongos)
 - [src/mongo/s/strategy.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/s/strategy.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/9)
+#### [Interface](interface/8)
 
-#### [Dependencies](dependencies/9)
+#### [Dependencies](dependencies/8)
 
 -------------
 
@@ -147,6 +136,6 @@ Globals and helpers for keeping track of the data needed for getLastError (part 
 - [src/mongo/db/lasterror.cpp](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/lasterror.cpp)   (mongod, tools, mongos)
 - [src/mongo/db/lasterror.h](https://github.com/mongodb/mongo/tree/r2.6.0/src/mongo/db/lasterror.h)   (mongod, tools, mongos)
 
-#### [Interface](interface/10)
+#### [Interface](interface/9)
 
-#### [Dependencies](dependencies/10)
+#### [Dependencies](dependencies/9)

@@ -3292,10 +3292,6 @@
             - src/mongo/bson/bson_validate.cpp
             - src/mongo/bson/bson_validate.h
             - src/mongo/bson/bson_validate_test.cpp
-        -   group_title: Old BSON Example
-            group_description: Old example of how to use BSON that should be updated
-                with the current recommended methods.
-            group_files: []
         -   group_title: BSON Builder
             group_description: Class to build a BSON object.  Note that the low level
                 BSON object construction is append only since BSON is a packed binary
@@ -5232,11 +5228,6 @@
                 server.
             group_files:
             - src/mongo/util/net/message_server_port.cpp
-        -   group_title: Async Message Server
-            group_description: Experimental async implementation of a message server.  This
-                is experimental and will probably be deleted before it gets used for
-                real.
-            group_files: []
         -   group_title: Mongos Request Handling Implementation
             group_description: Implementation of the logic to handle incoming messages
                 on mongos. The Request class is the entry point that decodes the operation
