@@ -8,50 +8,7 @@
         module_groups:
         -   group_title: SSL Headers
             group_description: Headers for the SSL build
-            group_files:
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pem2.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509_vfy.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/crypto.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl3.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/srtp.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl23.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ecdsa.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/evp.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ossl_typ.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/obj_mac.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/bn.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/kssl.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ec.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/lhash.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ebcdic.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pkcs7.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/tls1.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/e_os2.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/conf.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dtls1.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/symhacks.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pqueue.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/objects.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/sha.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/comp.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/asn1.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/hmac.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/opensslconf.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/bio.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/x509v3.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ecdh.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/err.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/pem.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/buffer.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl2.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/rsa.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dh.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/safestack.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/ssl.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/opensslv.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/dsa.h
-            - /usr/local/Cellar/openssl/1.0.1e/include/openssl/stack.h
+            group_files: []
     -   module_title: Snappy
         module_name: snappy
         module_description: Third Party - Snappy compression library
@@ -60,14 +17,6 @@
             group_description: Third Party - Snappy compression library
             group_files:
             - src/third_party/shim_snappy.cpp
-            - src/third_party/snappy/config.h
-            - src/third_party/snappy/snappy-internal.h
-            - src/third_party/snappy/snappy-sinksource.cc
-            - src/third_party/snappy/snappy-sinksource.h
-            - src/third_party/snappy/snappy-stubs-internal.h
-            - src/third_party/snappy/snappy-stubs-public.h
-            - src/third_party/snappy/snappy.cc
-            - src/third_party/snappy/snappy.h
     -   module_title: Murmurhash3
         module_name: murmurhash3
         module_description: Third Party - Non cryptographic hashing library
@@ -285,9 +234,7 @@
         module_groups:
         -   group_title: Auto Generated Files
             group_description: Third Party - V8 Javascript engine auto generated files
-            group_files:
-            - build/darwin/dbg_off/opt_off/ssl/third_party/v8/src/experimental-libraries.cc
-            - build/darwin/dbg_off/opt_off/ssl/third_party/v8/src/libraries.cc
+            group_files: []
         -   group_title: V8 Javascript Engine
             group_description: Third Party - V8 Javascript engine
             group_files:
@@ -502,7 +449,6 @@
             - src/third_party/v8/src/optimizing-compiler-thread.h
             - src/third_party/v8/src/parser.cc
             - src/third_party/v8/src/parser.h
-            - src/third_party/v8/src/platform-macos.cc
             - src/third_party/v8/src/platform-posix.cc
             - src/third_party/v8/src/platform-posix.h
             - src/third_party/v8/src/platform-tls-mac.h
@@ -1865,99 +1811,6 @@
             group_description: Third Party - Google performance tools and tcmalloc
             group_files:
             - src/third_party/shim_allocator.cpp
-            - src/third_party/gperftools-2.0/src/base/arm_instruction_set_select.h
-            - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-generic.h
-            - src/third_party/gperftools-2.0/src/base/atomicops-internals-arm-v6plus.h
-            - src/third_party/gperftools-2.0/src/base/atomicops-internals-linuxppc.h
-            - src/third_party/gperftools-2.0/src/base/atomicops-internals-macosx.h
-            - src/third_party/gperftools-2.0/src/base/atomicops-internals-windows.h
-            - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.cc
-            - src/third_party/gperftools-2.0/src/base/atomicops-internals-x86.h
-            - src/third_party/gperftools-2.0/src/base/atomicops.h
-            - src/third_party/gperftools-2.0/src/base/basictypes.h
-            - src/third_party/gperftools-2.0/src/base/commandlineflags.h
-            - src/third_party/gperftools-2.0/src/base/cycleclock.h
-            - src/third_party/gperftools-2.0/src/base/dynamic_annotations.c
-            - src/third_party/gperftools-2.0/src/base/dynamic_annotations.h
-            - src/third_party/gperftools-2.0/src/base/elf_mem_image.h
-            - src/third_party/gperftools-2.0/src/base/googleinit.h
-            - src/third_party/gperftools-2.0/src/base/linux_syscall_support.h
-            - src/third_party/gperftools-2.0/src/base/logging.cc
-            - src/third_party/gperftools-2.0/src/base/logging.h
-            - src/third_party/gperftools-2.0/src/base/spinlock.cc
-            - src/third_party/gperftools-2.0/src/base/spinlock.h
-            - src/third_party/gperftools-2.0/src/base/spinlock_internal.cc
-            - src/third_party/gperftools-2.0/src/base/spinlock_internal.h
-            - src/third_party/gperftools-2.0/src/base/spinlock_linux-inl.h
-            - src/third_party/gperftools-2.0/src/base/spinlock_posix-inl.h
-            - src/third_party/gperftools-2.0/src/base/spinlock_win32-inl.h
-            - src/third_party/gperftools-2.0/src/base/synchronization_profiling.h
-            - src/third_party/gperftools-2.0/src/base/sysinfo.cc
-            - src/third_party/gperftools-2.0/src/base/sysinfo.h
-            - src/third_party/gperftools-2.0/src/base/thread_annotations.h
-            - src/third_party/gperftools-2.0/src/base/vdso_support.h
-            - src/third_party/gperftools-2.0/src/central_freelist.cc
-            - src/third_party/gperftools-2.0/src/central_freelist.h
-            - src/third_party/gperftools-2.0/src/common.cc
-            - src/third_party/gperftools-2.0/src/common.h
-            - src/third_party/gperftools-2.0/src/config-10gen-linux.h
-            - src/third_party/gperftools-2.0/src/config-10gen-macos.h
-            - src/third_party/gperftools-2.0/src/config.h
-            - src/third_party/gperftools-2.0/src/gperftools/heap-checker.h
-            - src/third_party/gperftools-2.0/src/gperftools/malloc_extension.h
-            - src/third_party/gperftools-2.0/src/gperftools/malloc_extension_c.h
-            - src/third_party/gperftools-2.0/src/gperftools/malloc_hook.h
-            - src/third_party/gperftools-2.0/src/gperftools/malloc_hook_c.h
-            - src/third_party/gperftools-2.0/src/gperftools/stacktrace.h
-            - src/third_party/gperftools-2.0/src/gperftools/tcmalloc.h
-            - src/third_party/gperftools-2.0/src/internal_logging.cc
-            - src/third_party/gperftools-2.0/src/internal_logging.h
-            - src/third_party/gperftools-2.0/src/libc_override.h
-            - src/third_party/gperftools-2.0/src/libc_override_gcc_and_weak.h
-            - src/third_party/gperftools-2.0/src/libc_override_glibc.h
-            - src/third_party/gperftools-2.0/src/libc_override_osx.h
-            - src/third_party/gperftools-2.0/src/libc_override_redefine.h
-            - src/third_party/gperftools-2.0/src/linked_list.h
-            - src/third_party/gperftools-2.0/src/malloc_extension.cc
-            - src/third_party/gperftools-2.0/src/malloc_hook-inl.h
-            - src/third_party/gperftools-2.0/src/malloc_hook.cc
-            - src/third_party/gperftools-2.0/src/malloc_hook_mmap_freebsd.h
-            - src/third_party/gperftools-2.0/src/malloc_hook_mmap_linux.h
-            - src/third_party/gperftools-2.0/src/maybe_threads.cc
-            - src/third_party/gperftools-2.0/src/maybe_threads.h
-            - src/third_party/gperftools-2.0/src/memfs_malloc.cc
-            - src/third_party/gperftools-2.0/src/packed-cache-inl.h
-            - src/third_party/gperftools-2.0/src/page_heap.cc
-            - src/third_party/gperftools-2.0/src/page_heap.h
-            - src/third_party/gperftools-2.0/src/page_heap_allocator.h
-            - src/third_party/gperftools-2.0/src/pagemap.h
-            - src/third_party/gperftools-2.0/src/sampler.cc
-            - src/third_party/gperftools-2.0/src/sampler.h
-            - src/third_party/gperftools-2.0/src/span.cc
-            - src/third_party/gperftools-2.0/src/span.h
-            - src/third_party/gperftools-2.0/src/stack_trace_table.cc
-            - src/third_party/gperftools-2.0/src/stack_trace_table.h
-            - src/third_party/gperftools-2.0/src/stacktrace.cc
-            - src/third_party/gperftools-2.0/src/stacktrace_arm-inl.h
-            - src/third_party/gperftools-2.0/src/stacktrace_config.h
-            - src/third_party/gperftools-2.0/src/stacktrace_generic-inl.h
-            - src/third_party/gperftools-2.0/src/stacktrace_libunwind-inl.h
-            - src/third_party/gperftools-2.0/src/stacktrace_powerpc-inl.h
-            - src/third_party/gperftools-2.0/src/stacktrace_win32-inl.h
-            - src/third_party/gperftools-2.0/src/stacktrace_x86-inl.h
-            - src/third_party/gperftools-2.0/src/static_vars.cc
-            - src/third_party/gperftools-2.0/src/static_vars.h
-            - src/third_party/gperftools-2.0/src/symbolize.cc
-            - src/third_party/gperftools-2.0/src/symbolize.h
-            - src/third_party/gperftools-2.0/src/system-alloc.cc
-            - src/third_party/gperftools-2.0/src/system-alloc.h
-            - src/third_party/gperftools-2.0/src/tcmalloc.cc
-            - src/third_party/gperftools-2.0/src/tcmalloc_guard.h
-            - src/third_party/gperftools-2.0/src/third_party/valgrind.h
-            - src/third_party/gperftools-2.0/src/thread_cache.cc
-            - src/third_party/gperftools-2.0/src/thread_cache.h
-            - src/third_party/gperftools-2.0/src/windows/mingw.h
-            - src/third_party/gperftools-2.0/src/windows/port.h
 -   system_title: Tests
     system_name: tests
     system_description: MongoDB Unit Tests and Unit Test Helpers
@@ -1985,9 +1838,6 @@
             group_files:
             - src/mongo/dbtests/accumulatortests.cpp
             - src/mongo/dbtests/basictests.cpp
-            - src/mongo/dbtests/btreebuildertests.cpp
-            - src/mongo/dbtests/btreetests.cpp
-            - src/mongo/dbtests/btreetests.inl
             - src/mongo/dbtests/chunktests.cpp
             - src/mongo/dbtests/clienttests.cpp
             - src/mongo/dbtests/commandtests.cpp
@@ -2002,7 +1852,6 @@
             - src/mongo/dbtests/documentsourcetests.cpp
             - src/mongo/dbtests/documenttests.cpp
             - src/mongo/dbtests/expressiontests.cpp
-            - src/mongo/dbtests/extsorttests.cpp
             - src/mongo/dbtests/framework.cpp
             - src/mongo/dbtests/framework.h
             - src/mongo/dbtests/framework_options.cpp
@@ -2015,8 +1864,6 @@
             - src/mongo/dbtests/jsobjtests.cpp
             - src/mongo/dbtests/jsontests.cpp
             - src/mongo/dbtests/jstests.cpp
-            - src/mongo/dbtests/keypatterntests.cpp
-            - src/mongo/dbtests/macrotests.cpp
             - src/mongo/dbtests/matchertests.cpp
             - src/mongo/dbtests/mmaptests.cpp
             - src/mongo/dbtests/mock/mock_conn_registry.cpp
@@ -2034,13 +1881,10 @@
             - src/mongo/dbtests/namespacetests.cpp
             - src/mongo/dbtests/oplogstarttests.cpp
             - src/mongo/dbtests/pdfiletests.cpp
-            - src/mongo/dbtests/perf/perftest.cpp
             - src/mongo/dbtests/perftests.cpp
             - src/mongo/dbtests/pipelinetests.cpp
             - src/mongo/dbtests/plan_ranking.cpp
-            - src/mongo/dbtests/profile_test.cpp
             - src/mongo/dbtests/query_multi_plan_runner.cpp
-            - src/mongo/dbtests/query_single_solution_runner.cpp
             - src/mongo/dbtests/query_stage_and.cpp
             - src/mongo/dbtests/query_stage_collscan.cpp
             - src/mongo/dbtests/query_stage_count.cpp
@@ -2052,14 +1896,10 @@
             - src/mongo/dbtests/query_stage_sort.cpp
             - src/mongo/dbtests/query_stage_tests.cpp
             - src/mongo/dbtests/querytests.cpp
-            - src/mongo/dbtests/queryutiltests.cpp
             - src/mongo/dbtests/replica_set_monitor_test.cpp
-            - src/mongo/dbtests/replsettests.cpp
             - src/mongo/dbtests/repltests.cpp
-            - src/mongo/dbtests/runner_registry.cpp
             - src/mongo/dbtests/sharding.cpp
             - src/mongo/dbtests/socktests.cpp
-            - src/mongo/dbtests/stacktests.cpp
             - src/mongo/dbtests/threadedtests.cpp
             - src/mongo/dbtests/updatetests.cpp
     -   module_title: Fail Points
@@ -2093,9 +1933,7 @@
                 work in the shell because they are actually compiled in, which means
                 that sometimes the server needs to be recompiled to see changes in
                 Javascript files
-            group_files:
-            - build/darwin/dbg_off/opt_off/ssl/mongo/shell/mongo-server.cpp
-            - build/darwin/dbg_off/opt_off/ssl/mongo/shell/mongo.cpp
+            group_files: []
         -   group_title: Shell Bulk API
             group_description: Helpers for using write command bulk operations from
                 the shell.  If write commands are not supported, it emulates the bulk
@@ -2177,8 +2015,6 @@
         -   group_title: Benchrun
             group_description: Benchrunner suite. See# https://blog.serverdensity.com/real-world-mongodb-benchmarks-with-benchrun/.
             group_files:
-            - src/mongo/scripting/bench.cpp
-            - src/mongo/scripting/bench.h
             - src/mongo/scripting/bson_template_evaluator.cpp
             - src/mongo/scripting/bson_template_evaluator.h
             - src/mongo/scripting/bson_template_evaluator_test.cpp
@@ -2228,8 +2064,6 @@
             - src/mongo/base/status_with.h
             - src/mongo/base/error_codes.err
             - src/mongo/base/generate_error_codes.py
-            - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.h
-            - build/darwin/dbg_off/opt_off/ssl/mongo/base/error_codes.cpp
         -   group_title: Number To String Conversion
             group_description: Cross platform utilities to convert numbers to strings
             group_files:
@@ -2304,7 +2138,6 @@
         -   group_title: Debug Utilities
             group_description: Debug macros and gdb server helpers
             group_files:
-            - src/mongo/util/debug_util.cpp
             - src/mongo/util/debug_util.h
         -   group_title: Thread Name
             group_description: Library to get and set the name of the current thread.
@@ -2337,8 +2170,7 @@
                 sometime in the future by the event loop in this task.  Some functions
                 just register the function and return, and others will block until
                 the function is executed.
-            group_files:
-            - src/mongo/util/concurrency/msg.h
+            group_files: []
         -   group_title: Map Utilities
             group_description: mapFindWithDefault - looks something up in a map with
                 a default value.
@@ -2347,9 +2179,7 @@
         -   group_title: Pch
             group_description: I still do not know what this was originally for, but
                 I know we are slowly getting rid of it.
-            group_files:
-            - src/mongo/pch.cpp
-            - src/mongo/pch.h
+            group_files: []
         -   group_title: Assertions
             group_description: Assertion library.
             group_files:
@@ -2395,9 +2225,6 @@
             - src/mongo/util/signal_handlers.h
             - src/mongo/util/signal_win32.cpp
             - src/mongo/util/signal_win32.h
-            - src/mongo/util/stack_introspect.cpp
-            - src/mongo/util/stack_introspect.h
-            - src/mongo/util/stacktrace.cpp
             - src/mongo/util/stacktrace.h
             - src/mongo/util/startup_test.cpp
             - src/mongo/util/startup_test.h
@@ -2414,25 +2241,18 @@
             - src/mongo/util/time_support.cpp
             - src/mongo/util/time_support.h
             - src/mongo/util/time_support_test.cpp
-            - src/mongo/util/timer-generic-inl.h
-            - src/mongo/util/timer-inl.h
-            - src/mongo/util/timer-posixclock-inl.h
-            - src/mongo/util/timer-win32-inl.h
             - src/mongo/util/timer.cpp
             - src/mongo/util/timer.h
             - src/mongo/util/touch_pages.cpp
             - src/mongo/util/touch_pages.h
-            - src/mongo/util/trace.h
             - src/mongo/util/unordered_fast_key_table.h
             - src/mongo/util/unordered_fast_key_table_internal.h
-            - src/mongo/util/util.cpp
             - src/mongo/util/version_reporting.cpp
             - src/mongo/util/version_reporting.h
             - src/mongo/util/version_test.cpp
             - src/mongo/util/winutil.h
             - src/mongo/util/admin_access.h
             - src/mongo/util/allocator.h
-            - src/mongo/util/array.h
             - src/mongo/util/base64.cpp
             - src/mongo/util/base64.h
             - src/mongo/util/bson_util.h
@@ -2440,13 +2260,8 @@
             - src/mongo/util/checksum.h
             - src/mongo/util/compress.cpp
             - src/mongo/util/compress.h
-            - src/mongo/util/concurrency/list.h
-            - src/mongo/util/concurrency/mapsf.h
             - src/mongo/util/concurrency/mutex.h
-            - src/mongo/util/concurrency/mutexdebugger.cpp
-            - src/mongo/util/concurrency/mutexdebugger.h
             - src/mongo/util/concurrency/mvar.h
-            - src/mongo/util/concurrency/race.h
             - src/mongo/util/concurrency/shared_mutex_win.hpp
             - src/mongo/util/concurrency/simplerwlock.h
             - src/mongo/util/concurrency/thread_pool.cpp
@@ -2462,16 +2277,13 @@
             - src/mongo/util/exception_filter_win32.h
             - src/mongo/util/exit_code.h
             - src/mongo/util/gcov.h
-            - src/mongo/util/goodies.h
             - src/mongo/util/heapcheck.h
         -   group_title: 'TODO: Name this group'
             group_description: 'Platform specific code? TODO: Verify this and document
                 what they are for.'
             group_files:
             - src/mongo/platform/atomic_intrinsics.h
-            - src/mongo/platform/atomic_intrinsics_gcc_generic.h
             - src/mongo/platform/atomic_intrinsics_gcc_intel.h
-            - src/mongo/platform/atomic_intrinsics_win32.h
             - src/mongo/platform/atomic_word.h
             - src/mongo/platform/atomic_word_test.cpp
             - src/mongo/platform/backtrace.cpp
@@ -2502,10 +2314,7 @@
             - src/mongo/util/platform_init.cpp
             - src/mongo/util/processinfo.cpp
             - src/mongo/util/processinfo.h
-            - src/mongo/util/processinfo_darwin.cpp
             - src/mongo/util/processinfo_test.cpp
-            - src/mongo/util/mongoutils/checksum.h
-            - src/mongo/util/mongoutils/hash.h
             - src/mongo/util/mongoutils/html.h
             - src/mongo/util/mongoutils/str.h
 -   system_title: Replication
@@ -2533,8 +2342,7 @@
                 that there is not a clear class separation between things related
                 to elections and things not related to elections, so the method implementations
                 in this file span multiple classes.
-            group_files:
-            - src/mongo/db/repl/consensus.cpp
+            group_files: []
         -   group_title: Parallel Command Dispatching
             group_description: Helpers to send a command to multiple servers in parallel
                 and collect the results.  Used in the election process.
@@ -2604,21 +2412,17 @@
         module_groups:
         -   group_title: Replica Set Initiate
             group_description: rs.initiate() (replSetInitiate) command
-            group_files:
-            - src/mongo/db/repl/rs_initiate.cpp
+            group_files: []
         -   group_title: Replica Set Config
             group_description: Class that manages the configuration of a replica set.  This
                 is the static configuration in which changes are only really triggered
                 by the user.  See the output of rs.conf(), which queries the current
                 replica set configuration from the local database.
-            group_files:
-            - src/mongo/db/repl/rs_config.cpp
-            - src/mongo/db/repl/rs_config.h
+            group_files: []
         -   group_title: Replication Command Line Options
             group_description: Global configuration options for replication from the
                 command line.
-            group_files:
-            - src/mongo/db/repl/replication_server_status.h
+            group_files: []
     -   module_title: Replica Set State
         module_name: replica_set_state
         module_description: Non persistent runtime state of a replica set.
@@ -2627,56 +2431,45 @@
             group_description: Contains the replica set heartbeat command implementation
                 as well as the task that actually sends the heartbeat commands to
                 check the health of other nodes in the set.
-            group_files:
-            - src/mongo/db/repl/heartbeat.cpp
+            group_files: []
         -   group_title: Heath Status Helpers
             group_description: Grab bag of miscellaneous helpers that report the status
                 of a replica set or replica set node.  Most of this could be pushed
                 into other files more connected with the classes they come from
-            group_files:
-            - src/mongo/db/repl/health.cpp
+            group_files: []
         -   group_title: Dead Code
             group_description: HealthOptions class is not really used anywhere
-            group_files:
-            - src/mongo/db/repl/health.h
+            group_files: []
         -   group_title: Top Level Replica Set Classes
             group_description: The top level classes for replcation.  Contains the
                 class representing an entire replica set as well as the class representing
                 information about a node of a replica set.  Note that the header contains
                 a mix of different classes.
-            group_files:
-            - src/mongo/db/repl/rs.cpp
-            - src/mongo/db/repl/rs.h
+            group_files: []
         -   group_title: Master Check Helpers
             group_description: Helpers to check in code whether this node is a "master",
                 since there are things that we can only do if we are a master (primary).  Note
                 that this is not the "isMaster" command.  That lives in replication_server_status.cpp
-            group_files:
-            - src/mongo/db/repl/is_master.h
+            group_files: []
         -   group_title: Replication Server Status Section
             group_description: Code to add replication information to the server status
                 results. Also currently has the implementation of the "isMaster" command
-            group_files:
-            - src/mongo/db/repl/replication_server_status.cpp
+            group_files: []
         -   group_title: State Transition Manager
             group_description: Thin layer on top of the main replica set class.  Seems
                 to be intended to manage state transitions in a replica set.  It does
                 things like look at the current state of our set to determine if the
                 node should step down or try to elect ourself as primary.  This gets
                 called by the heartbeat thread when a state change is detected.
-            group_files:
-            - src/mongo/db/repl/manager.cpp
+            group_files: []
         -   group_title: Reads Allowed
             group_description: Code to check if we can read from this node.  Checks
                 if we are the primary or slaveOk is true.
-            group_files:
-            - src/mongo/db/repl/repl_reads_ok.cpp
-            - src/mongo/db/repl/repl_reads_ok.h
+            group_files: []
         -   group_title: Member State Information
             group_description: Contains class holding all possible states of a replica
                 set member. Also contains class defining the heartbeat information.
-            group_files:
-            - src/mongo/db/repl/rs_member.h
+            group_files: []
     -   module_title: Networking
         module_name: networking
         module_description: Replication specific networking layer.  Reimplements some
@@ -2687,8 +2480,7 @@
                 one connection per remote host, protected by a mutex.  Note that this
                 also means only one thread can be contacting a given host at a time
                 using this class.
-            group_files:
-            - src/mongo/db/repl/connections.h
+            group_files: []
     -   module_title: Replication Initialization
         module_name: replication_initialization
         module_description: Code to initialize the replication subsystem
@@ -2697,9 +2489,7 @@
             group_description: Entry point for starting up replication when we are
                 initializing the server.  Will check whether we are using replication
                 or master/slave and do the proper initialization
-            group_files:
-            - src/mongo/db/repl/repl_start.cpp
-            - src/mongo/db/repl/repl_start.h
+            group_files: []
     -   module_title: Replication Commands
         module_name: replication_commands
         module_description: Commands specifically related to replication
@@ -2714,8 +2504,7 @@
         module_groups:
         -   group_title: Replication Exceptions
             group_description: Exceptions that can be thrown from replication code
-            group_files:
-            - src/mongo/db/repl/rs_exception.h
+            group_files: []
     -   module_title: Replication Web Interface
         module_name: replication_web_interface
         module_description: Web interface to a replica set
@@ -2723,8 +2512,7 @@
         -   group_title: Replica Set Web Information
             group_description: Code to handle the web page that reports replica set
                 information. See the database web server code for more details.
-            group_files:
-            - src/mongo/db/repl/replset_web_handler.cpp
+            group_files: []
     -   module_title: Write Concern
         module_name: write_concern
         module_description: Code where we ask the user how "concerned" they are about
@@ -2742,9 +2530,7 @@
                 checks. Contains code for making sure an operation has been replicated
                 to a certain number of nodes, but does not contain code for dealing
                 with disk related write concern values.
-            group_files:
-            - src/mongo/db/repl/write_concern.cpp
-            - src/mongo/db/repl/write_concern.h
+            group_files: []
         -   group_title: Write Concern Object Parser
             group_description: Helper to parse write concern options out of a BSONObj
                 representing a "write concern object"
@@ -2827,20 +2613,15 @@
         -   group_title: Mongos Writeback Listener Thread
             group_description: Thread on mongos that polls the shards for writebacks
                 and sends any queued writebacks to the correct shard
-            group_files:
-            - src/mongo/s/writeback_listener.cpp
-            - src/mongo/s/writeback_listener.h
+            group_files: []
         -   group_title: Mongod WriteBack Queue and writebacklisten Command
             group_description: Queue where mongod stores writebacks and command that
                 the writebacklistener on mongos calls to poll the shard
-            group_files:
-            - src/mongo/s/d_writeback.cpp
-            - src/mongo/s/d_writeback.h
+            group_files: []
         -   group_title: Mongod WriteBack Checks
             group_description: Code to check if an operation should result in a writeback
                 being queued on the shard
-            group_files:
-            - src/mongo/s/d_logic.cpp
+            group_files: []
     -   module_title: Chunk Management
         module_name: chunk_management
         module_description: Commands and utilities to manage chunks in a sharded cluster
@@ -2877,9 +2658,6 @@
             - src/mongo/db/range_deleter_mock_env.h
             - src/mongo/db/range_deleter_service.cpp
             - src/mongo/db/range_deleter_service.h
-            - src/mongo/db/range_deleter_stat_test.cpp
-            - src/mongo/db/range_deleter_stats.cpp
-            - src/mongo/db/range_deleter_stats.h
             - src/mongo/db/range_deleter_test.cpp
             - src/mongo/db/range_preserver.h
         -   group_title: Range Comparison
@@ -2997,8 +2775,7 @@
             group_description: Declarations for a bunch of globals used in sharding.  The
                 actual definitions are unfortunately scatterned between d_logic.cpp,
                 d_state.cpp, and others.
-            group_files:
-            - src/mongo/s/d_logic.h
+            group_files: []
     -   module_title: Cluster Locking
         module_name: cluster_locking
         module_description: Locking that is specific to a sharded cluster
@@ -3024,8 +2801,6 @@
             - src/mongo/s/config_upgrade.h
             - src/mongo/s/config_upgrade_helpers.cpp
             - src/mongo/s/config_upgrade_helpers.h
-            - src/mongo/s/config_upgrade_v0_to_v5.cpp
-            - src/mongo/s/config_upgrade_v4_to_v5.cpp
         -   group_title: Version Validity Checker
             group_description: Helpers to check whether a version is within a range
                 of versions. It is used by the config metadata upgrade system to determine
@@ -3051,7 +2826,6 @@
                 for an operation.  Currently only used for write operations.  Built
                 on the ChunkManager
             group_files:
-            - src/mongo/dbtests/chunk_manager_targeter_test.cpp
             - src/mongo/s/chunk_manager_targeter.cpp
             - src/mongo/s/chunk_manager_targeter.h
             - src/mongo/s/ns_targeter.h
@@ -3097,8 +2871,6 @@
             group_files:
             - src/mongo/s/shard_key_pattern.cpp
             - src/mongo/s/shard_key_pattern.h
-            - src/mongo/s/shardkey.cpp
-            - src/mongo/s/shardkey.h
     -   module_title: Cluster Metadata Management
         module_name: cluster_metadata_management
         module_description: Helpers and wrappers to manage cluster metadata.  These
@@ -3154,7 +2926,6 @@
                 It does this by using the latest version that has been seen and makes
                 a query that does not return anything lower than that version.'
             group_files:
-            - src/mongo/s/chunk_diff-inl.cpp
             - src/mongo/s/chunk_diff.h
             - src/mongo/s/chunk_diff_test.cpp
         -   group_title: Chunk Version
@@ -3226,8 +2997,7 @@
                 references symbols in the storage layer, which should not be built
                 into mongos.  You should not care about this file unless you are trying
                 to fix our build dependencies.
-            group_files:
-            - src/mongo/s/mongos_persistence_stubs.cpp
+            group_files: []
 -   system_title: BSON
     system_name: bson
     system_description: MongoDB BSON support
@@ -3297,7 +3067,6 @@
                 BSON object construction is append only since BSON is a packed binary
                 format.
             group_files:
-            - src/mongo/bson/bson_builder_base.h
             - src/mongo/bson/bsonobjbuilder.h
             - src/mongo/bson/bsonobjbuilder_test.cpp
         -   group_title: Raw Builder
@@ -3358,13 +3127,11 @@
         -   group_title: BSON Element Manipulator
             group_description: Wrapper around a BSONElement that allows for modification
                 of BSON types that can be altered in place, such as number values.
-            group_files:
-            - src/mongo/db/jsobjmanipulator.h
+            group_files: []
         -   group_title: Atomic Integer
             group_description: Class representing an integer that supports atomic
                 read modify write operations.  Also used outside the BSON library.
-            group_files:
-            - src/mongo/bson/util/atomic_int.h
+            group_files: []
         -   group_title: Miscellaneous BSON Code
             group_description: BSON code that is not organized in any specific way.  Most
                 of this code is either implementing random parts of the various BSON
@@ -3372,12 +3139,9 @@
                 that should not be with the BSON code, or is legacy code that should
                 be removed.
             group_files:
-            - src/mongo/bson/bson-inl.h
             - src/mongo/bson/bson_db.h
             - src/mongo/bson/bsonmisc.h
             - src/mongo/bson/inline_decls.h
-            - src/mongo/bson/util/misc.h
-            - src/mongo/db/jsobj.cpp
     -   module_title: Mutable BSON
         module_name: mutable_bson
         module_description: Mutable BSON is built on top of the BSON library, and
@@ -3474,24 +3238,16 @@
         -   group_title: Current Operation
             group_description: The current "operation" within the current "Client"
             group_files:
-            - src/mongo/db/curop-inl.h
             - src/mongo/db/curop.cpp
             - src/mongo/db/curop.h
             - src/mongo/db/curop_test.cpp
         -   group_title: Kill Current Operation
             group_description: Functions to kill the current "operation"
-            group_files:
-            - src/mongo/db/kill_current_op.cpp
-            - src/mongo/db/kill_current_op.h
+            group_files: []
         -   group_title: Interupt Status Checks
             group_description: Helpers to check whether the current operation in the
                 current client has been interrupted.
-            group_files:
-            - src/mongo/db/interrupt_status.h
-            - src/mongo/db/interrupt_status_mongod.cpp
-            - src/mongo/db/interrupt_status_mongod.h
-            - src/mongo/s/interrupt_status_mongos.cpp
-            - src/mongo/s/interrupt_status_mongos.h
+            group_files: []
         -   group_title: Shared Client State Interface
             group_description: 'Base class for a Client on mongod and mongos: ClientBasic'
             group_files:
@@ -3535,9 +3291,7 @@
         module_groups:
         -   group_title: Mongod Concurrency System Interface
             group_description: Top level entry point into the mongod concurrency system.
-            group_files:
-            - src/mongo/db/d_concurrency.cpp
-            - src/mongo/db/d_concurrency.h
+            group_files: []
         -   group_title: Lock State
             group_description: 'State of all the locks that this client/thread/operation
                 has aquired.  There is one LockState per thread stored in thread local
@@ -3545,9 +3299,8 @@
 
                 The three lock types are:
 
-                1. Global
-                2. DB Level - called "other" in the code
-                3. Special DB Level - called "nestable" in the code
+                1. Global 2. DB Level - called "other" in the code 3. Special DB Level
+                - called "nestable" in the code
 
                 The "Special DB Level" locks are for the "admin" and "local" databases.  The
                 idea is that sometimes we want to do something to one of those databases
@@ -3558,9 +3311,7 @@
 
                 All the DB level locks are "Reader Writer Locks", and the global lock
                 is a "Quad Lock".'
-            group_files:
-            - src/mongo/db/lockstate.cpp
-            - src/mongo/db/lockstate.h
+            group_files: []
         -   group_title: Reader Writer Locks
             group_description: Implementation of a reader writer lock primitive.
             group_files:
@@ -3576,14 +3327,9 @@
 
                 The mapping between the names of the states are as follows:
 
-                <state in MongoDB Quad Lock> = <state in SQL Server Lock>
-                r = IS
-                w = IX
-                R = S
-                W = X
-                X = U'
-            group_files:
-            - src/mongo/util/concurrency/qlock.h
+                <state in MongoDB Quad Lock> = <state in SQL Server Lock> r = IS w
+                = IX R = S W = X X = U'
+            group_files: []
         -   group_title: Spin Locks
             group_description: Spin locks
             group_files:
@@ -3597,9 +3343,7 @@
             - src/mongo/util/concurrency/synchronization.h
         -   group_title: Lock Stats
             group_description: Statistics about locking behavior.
-            group_files:
-            - src/mongo/db/lockstat.cpp
-            - src/mongo/db/lockstat.h
+            group_files: []
     -   module_title: Database Commands
         module_name: database_commands
         module_description: 'In the base MongoDB wire protocol, each packet has an
@@ -3651,11 +3395,9 @@
             - src/mongo/db/commands/find_and_modify.cpp
             - src/mongo/db/commands/find_and_modify.h
             - src/mongo/db/commands/find_and_modify_common.cpp
-            - src/mongo/db/commands/geonear.cpp
             - src/mongo/db/commands/get_last_error.cpp
             - src/mongo/db/commands/group.cpp
             - src/mongo/db/commands/hashcmd.cpp
-            - src/mongo/db/commands/index_stats.cpp
             - src/mongo/db/commands/isself.cpp
             - src/mongo/db/commands/mr.cpp
             - src/mongo/db/commands/mr.h
@@ -3668,13 +3410,10 @@
             - src/mongo/db/commands/rename_collection_common.cpp
             - src/mongo/db/commands/server_status.cpp
             - src/mongo/db/commands/server_status.h
-            - src/mongo/db/commands/shutdown.cpp
             - src/mongo/db/commands/shutdown.h
-            - src/mongo/db/commands/storage_details.cpp
             - src/mongo/db/commands/test_commands.cpp
             - src/mongo/db/commands/touch.cpp
             - src/mongo/db/commands/validate.cpp
-            - src/mongo/db/dbcommands_admin.cpp
             - src/mongo/db/dbcommands_generic.cpp
             - src/mongo/db/dbeval.cpp
             - src/mongo/db/driverHelpers.cpp
@@ -3700,9 +3439,7 @@
         -   group_title: Index Key Generation Interface
             group_description: Interface for a class that is responsible for generating
                 the index keys for a given document.
-            group_files:
-            - src/mongo/db/index/key_generator.cpp
-            - src/mongo/db/index/key_generator.h
+            group_files: []
         -   group_title: Index Cursor Interface
             group_description: Top level interface for iterating elements in an index.
             group_files:
@@ -3715,23 +3452,13 @@
         -   group_title: Btree Interface
             group_description: Interface to interact with the underlying btree datastructure.
                 Abstracts away the difference between our different index formats.
-            group_files:
-            - src/mongo/db/index/btree_interface.cpp
-            - src/mongo/db/index/btree_interface.h
+            group_files: []
         -   group_title: Btree Datastructure
             group_description: Files containing the btree datastructure implementation.  Currently
                 this is the only index datastructure we use.  While this is intended
                 to be a low level datastructure, it currently has a few fingers into
                 replication and other parts of the server, including calling isMaster
-            group_files:
-            - src/mongo/db/structure/btree/btree.cpp
-            - src/mongo/db/structure/btree/btree.h
-            - src/mongo/db/structure/btree/btree_stats.cpp
-            - src/mongo/db/structure/btree/btree_stats.h
-            - src/mongo/db/structure/btree/btreebuilder.cpp
-            - src/mongo/db/structure/btree/btreebuilder.h
-            - src/mongo/db/structure/btree/key.cpp
-            - src/mongo/db/structure/btree/key.h
+            group_files: []
         -   group_title: Btree Indexes
             group_description: Btree based index implementation
             group_files:
@@ -3745,37 +3472,27 @@
             - src/mongo/db/index/2d_access_method.cpp
             - src/mongo/db/index/2d_access_method.h
             - src/mongo/db/index/2d_common.h
-            - src/mongo/db/index/2d_key_generator.cpp
-            - src/mongo/db/index/2d_key_generator.h
         -   group_title: S2 Indexes
             group_description: S2 index implementation
             group_files:
             - src/mongo/db/index/s2_access_method.cpp
             - src/mongo/db/index/s2_access_method.h
-            - src/mongo/db/index/s2_key_generator.cpp
-            - src/mongo/db/index/s2_key_generator.h
         -   group_title: Fts Indexes
             group_description: Fts index implementation
             group_files:
             - src/mongo/db/index/fts_access_method.cpp
             - src/mongo/db/index/fts_access_method.h
-            - src/mongo/db/index/fts_key_generator.cpp
-            - src/mongo/db/index/fts_key_generator.h
         -   group_title: Hashed Indexes
             group_description: Hashed index implementation
             group_files:
             - src/mongo/db/index/hash_access_method.cpp
             - src/mongo/db/index/hash_access_method.h
-            - src/mongo/db/index/hash_key_generator.cpp
-            - src/mongo/db/index/hash_key_generator.h
         -   group_title: Haystack Indexes
             group_description: Haystack index implementation
             group_files:
             - src/mongo/db/index/haystack_access_method.cpp
             - src/mongo/db/index/haystack_access_method.h
             - src/mongo/db/index/haystack_access_method_internal.h
-            - src/mongo/db/index/haystack_key_generator.cpp
-            - src/mongo/db/index/haystack_key_generator.h
         -   group_title: Index Descriptor
             group_description: In memory datastructure containing all information
                 about a single index.
@@ -3785,8 +3502,7 @@
         -   group_title: Index Expression Helpers
             group_description: Helpers for indexes where the index entries are some
                 function of the index, including s2 indexes and hashed indexes.
-            group_files:
-            - src/mongo/db/index/expression_index.h
+            group_files: []
         -   group_title: Index Spec Parsing
             group_description: Helpers to parse index specifications, like the ones
                 that come from users when they run the ensureIndex command
@@ -3832,16 +3548,11 @@
                 have been indexed in this collection.  Used to check whether an in
                 place update will change a field that is indexed and thus cannot be
                 done in place.
-            group_files:
-            - src/mongo/db/index_set.cpp
-            - src/mongo/db/index_set.h
-            - src/mongo/db/index_set_test.cpp
+            group_files: []
         -   group_title: Index Key Pregeneration
             group_description: Helpers to pregenerate a bunch of index keys outside
                 a lock.
-            group_files:
-            - src/mongo/db/catalog/index_pregen.cpp
-            - src/mongo/db/catalog/index_pregen.h
+            group_files: []
         -   group_title: Index Key Validation
             group_description: Check to see if an index spec passed in by the user
                 is valid for creating an index.
@@ -3919,10 +3630,7 @@
                 like range intersection and application of skip and limit. These are
                 allllmost dead. The functionality should be replaced by the new matcher,
                 expressions, and query system.
-            group_files:
-            - src/mongo/db/queryutil-inl.h
-            - src/mongo/db/queryutil.cpp
-            - src/mongo/db/queryutil.h
+            group_files: []
     -   module_title: Query System Entry Points
         module_name: query_system_entry_points
         module_description: Entry points into the query system from outside the query
@@ -3935,15 +3643,11 @@
             group_description: Top level entry point for find and getMore operations.  Essentially
                 a bunch of glue that connects all the different pieces of the query
                 system together.
-            group_files:
-            - src/mongo/db/query/new_find.cpp
-            - src/mongo/db/query/new_find.h
+            group_files: []
         -   group_title: Count Command
             group_description: Entry point to run the count command.  Defers actual
                 work to the core query system.
-            group_files:
-            - src/mongo/db/ops/count.cpp
-            - src/mongo/db/ops/count.h
+            group_files: []
     -   module_title: Query Preprocessing
         module_name: query_preprocessing
         module_description: Classes that do processing of queries that is independent
@@ -4034,7 +3738,6 @@
             group_files:
             - src/mongo/db/matcher/matcher.cpp
             - src/mongo/db/matcher/matcher.h
-            - src/mongo/db/matcher.h
         -   group_title: Match Details
             group_description: Helper for requesting more details about what matched
                 our query from the matcher system.
@@ -4087,22 +3790,15 @@
                 that are passed in, and executes the query planner.  In essence, this
                 code is the glue that is responsible for multiplexing between the
                 different types of runners.
-            group_files:
-            - src/mongo/db/query/get_runner.cpp
-            - src/mongo/db/query/get_runner.h
-            - src/mongo/db/query/get_runner_test.cpp
+            group_files: []
         -   group_title: Query Explain Plan
             group_description: Code to handle constructing user facing explain output
                 from internal query execution information.
-            group_files:
-            - src/mongo/db/query/explain_plan.cpp
-            - src/mongo/db/query/explain_plan.h
+            group_files: []
         -   group_title: Explain Document Schema
             group_description: Schema of the document returned by the explain command,
                 which is how the user gets information about query execution.
-            group_files:
-            - src/mongo/db/query/type_explain.cpp
-            - src/mongo/db/query/type_explain.h
+            group_files: []
         -   group_title: Query Planner
             group_description: 'TODO: Document what these are for and how they fit
                 into the query system.'
@@ -4185,12 +3881,6 @@
             group_description: Implementations for all the types of plan stages that
                 can comprise a query.
             group_files:
-            - src/mongo/db/exec/2d.cpp
-            - src/mongo/db/exec/2d.h
-            - src/mongo/db/exec/2dcommon.cpp
-            - src/mongo/db/exec/2dcommon.h
-            - src/mongo/db/exec/2dnear.cpp
-            - src/mongo/db/exec/2dnear.h
             - src/mongo/db/exec/and_common-inl.h
             - src/mongo/db/exec/and_hash.cpp
             - src/mongo/db/exec/and_hash.h
@@ -4214,8 +3904,6 @@
             - src/mongo/db/exec/limit.h
             - src/mongo/db/exec/merge_sort.cpp
             - src/mongo/db/exec/merge_sort.h
-            - src/mongo/db/exec/mock_stage.cpp
-            - src/mongo/db/exec/mock_stage.h
             - src/mongo/db/exec/oplogstart.cpp
             - src/mongo/db/exec/oplogstart.h
             - src/mongo/db/exec/or.cpp
@@ -4225,8 +3913,6 @@
             - src/mongo/db/exec/projection_exec.cpp
             - src/mongo/db/exec/projection_exec.h
             - src/mongo/db/exec/projection_exec_test.cpp
-            - src/mongo/db/exec/s2near.cpp
-            - src/mongo/db/exec/s2near.h
             - src/mongo/db/exec/shard_filter.cpp
             - src/mongo/db/exec/shard_filter.h
             - src/mongo/db/exec/skip.cpp
@@ -4257,33 +3943,17 @@
             - src/mongo/db/exec/working_set_test.cpp
         -   group_title: Query Runner Interface
             group_description: 'Interface for an object that '
-            group_files:
-            - src/mongo/db/query/runner.h
+            group_files: []
         -   group_title: Cache Aware Query Runners
             group_description: Query runners that exist because of our strategy of
                 running multiple plans and caching the best one.  They both are aware
                 of the cache and provide feeback to it based on the results of the
                 query execution.
-            group_files:
-            - src/mongo/db/query/cached_plan_runner.cpp
-            - src/mongo/db/query/cached_plan_runner.h
-            - src/mongo/db/query/multi_plan_runner.cpp
-            - src/mongo/db/query/multi_plan_runner.h
+            group_files: []
         -   group_title: Query Runners
             group_description: 'TODO: Document what these are for and how they fit
                 into the query system.'
-            group_files:
-            - src/mongo/db/query/eof_runner.cpp
-            - src/mongo/db/query/eof_runner.h
-            - src/mongo/db/query/idhack_runner.cpp
-            - src/mongo/db/query/idhack_runner.h
-            - src/mongo/db/query/internal_runner.cpp
-            - src/mongo/db/query/internal_runner.h
-            - src/mongo/db/query/runner_yield_policy.h
-            - src/mongo/db/query/single_solution_runner.cpp
-            - src/mongo/db/query/single_solution_runner.h
-            - src/mongo/db/query/subplan_runner.cpp
-            - src/mongo/db/query/subplan_runner.h
+            group_files: []
     -   module_title: Insert Operations
         module_name: insert_operations
         module_description: Code that is specific to insert operations
@@ -4317,9 +3987,7 @@
                 exists to centralize all the delete execution code as well as to separate
                 the processing and actual execution of a delete request so that as
                 much is done outside a write lock as possible.
-            group_files:
-            - src/mongo/db/ops/delete_executor.h
-            - src/mongo/db/ops/delete_executor.cpp
+            group_files: []
     -   module_title: Update System
         module_name: update_system
         module_description: System for handling update operations against the database.  See
@@ -4443,9 +4111,7 @@
                 exists to centralize all the update execution code as well as to separate
                 the processing and actual execution of an update request so that as
                 much is done outside a write lock as possible.
-            group_files:
-            - src/mongo/db/ops/update_executor.h
-            - src/mongo/db/ops/update_executor.cpp
+            group_files: []
         -   group_title: Update Result
             group_description: Container for all information about the results of
                 an update operation
@@ -4581,15 +4247,12 @@
         -   group_title: External Sorter
             group_description: Code for external sort. This sits inside the sorter,
                 and the sorter "spills over" to disk if external sorting is allowed
-            group_files:
-            - src/mongo/db/extsort.cpp
-            - src/mongo/db/extsort.h
+            group_files: []
         -   group_title: Index Key Sorter
             group_description: Wrapper around the External Sorter specialized for
                 index keys.  Used in bottom up fast index builds where keys are pre
                 sorted.
-            group_files:
-            - src/mongo/db/sort_phase_one.h
+            group_files: []
     -   module_title: Full Text Search Module
         module_name: full_text_search_module
         module_description: 'TODO: full_text_search_module description'
@@ -4597,10 +4260,6 @@
         -   group_title: 'TODO: Name this group'
             group_description: Uncategorized Full Text Search Code
             group_files:
-            - src/mongo/db/fts/fts_command.cpp
-            - src/mongo/db/fts/fts_command.h
-            - src/mongo/db/fts/fts_command_mongod.cpp
-            - src/mongo/db/fts/fts_command_mongos.cpp
             - src/mongo/db/fts/fts_element_iterator.cpp
             - src/mongo/db/fts/fts_element_iterator.h
             - src/mongo/db/fts/fts_element_iterator_test.cpp
@@ -4637,8 +4296,6 @@
                 auto generated C++ files.
             group_files:
             - src/mongo/db/fts/generate_stop_words.py
-            - build/darwin/dbg_off/opt_off/ssl/mongo/db/fts/stop_words_list.cpp
-            - build/darwin/dbg_off/opt_off/ssl/mongo/db/fts/stop_words_list.h
             - src/mongo/db/fts/stop_words_danish.txt
             - src/mongo/db/fts/stop_words_dutch.txt
             - src/mongo/db/fts/stop_words_english.txt
@@ -4665,20 +4322,15 @@
             group_description: 'GEO query code. TODO: describe the structure of this
                 and how it interacts with the new index# system.'
             group_files:
-            - src/mongo/db/geo/core.h
             - src/mongo/db/geo/geoconstants.h
             - src/mongo/db/geo/geoparser.cpp
             - src/mongo/db/geo/geoparser.h
             - src/mongo/db/geo/geoparser_test.cpp
-            - src/mongo/db/geo/geoquery.cpp
-            - src/mongo/db/geo/geoquery.h
             - src/mongo/db/geo/hash.cpp
             - src/mongo/db/geo/hash.h
             - src/mongo/db/geo/hash_test.cpp
             - src/mongo/db/geo/haystack.cpp
             - src/mongo/db/geo/s2.h
-            - src/mongo/db/geo/s2common.cpp
-            - src/mongo/db/geo/s2common.h
             - src/mongo/db/geo/shapes.cpp
             - src/mongo/db/geo/shapes.h
 -   system_title: Tools
@@ -4695,54 +4347,9 @@
                 "bridge.cpp" is the main for "mongobridge".
             group_files:
             - src/mongo/tools/bridge.cpp
-            - src/mongo/tools/bsondump.cpp
-            - src/mongo/tools/bsondump_options.cpp
-            - src/mongo/tools/bsondump_options.h
-            - src/mongo/tools/bsondump_options_init.cpp
-            - src/mongo/tools/dump.cpp
-            - src/mongo/tools/export.cpp
-            - src/mongo/tools/files.cpp
-            - src/mongo/tools/import.cpp
             - src/mongo/tools/mongobridge_options.cpp
             - src/mongo/tools/mongobridge_options.h
             - src/mongo/tools/mongobridge_options_init.cpp
-            - src/mongo/tools/mongodump_options.cpp
-            - src/mongo/tools/mongodump_options.h
-            - src/mongo/tools/mongodump_options_init.cpp
-            - src/mongo/tools/mongoexport_options.cpp
-            - src/mongo/tools/mongoexport_options.h
-            - src/mongo/tools/mongoexport_options_init.cpp
-            - src/mongo/tools/mongofiles_options.cpp
-            - src/mongo/tools/mongofiles_options.h
-            - src/mongo/tools/mongofiles_options_init.cpp
-            - src/mongo/tools/mongoimport_options.cpp
-            - src/mongo/tools/mongoimport_options.h
-            - src/mongo/tools/mongoimport_options_init.cpp
-            - src/mongo/tools/mongooplog_options.cpp
-            - src/mongo/tools/mongooplog_options.h
-            - src/mongo/tools/mongooplog_options_init.cpp
-            - src/mongo/tools/mongorestore_options.cpp
-            - src/mongo/tools/mongorestore_options.h
-            - src/mongo/tools/mongorestore_options_init.cpp
-            - src/mongo/tools/mongostat_options.cpp
-            - src/mongo/tools/mongostat_options.h
-            - src/mongo/tools/mongostat_options_init.cpp
-            - src/mongo/tools/mongotop_options.cpp
-            - src/mongo/tools/mongotop_options.h
-            - src/mongo/tools/mongotop_options_init.cpp
-            - src/mongo/tools/oplog.cpp
-            - src/mongo/tools/restore.cpp
-            - src/mongo/tools/sniffer.cpp
-            - src/mongo/tools/stat.cpp
-            - src/mongo/tools/stat_util.cpp
-            - src/mongo/tools/stat_util.h
-            - src/mongo/tools/tool.cpp
-            - src/mongo/tools/tool.h
-            - src/mongo/tools/tool_logger.cpp
-            - src/mongo/tools/tool_logger.h
-            - src/mongo/tools/tool_options.cpp
-            - src/mongo/tools/tool_options.h
-            - src/mongo/tools/top.cpp
 -   system_title: Process Management
     system_name: process_management
     system_description: Process management code.  Handles shutdown, startup, and configuration
@@ -4758,9 +4365,7 @@
             group_description: Source files that get automatically generated in each
                 compile.  Contains functions to get things like compile flags and
                 the Javascript interpreter version
-            group_files:
-            - build/darwin/dbg_off/opt_off/ssl/buildinfo.cpp
-            - build/darwin/dbg_off/opt_off/ssl/mongo/buildinfo.cpp
+            group_files: []
         -   group_title: Server Version Information
             group_description: Contains the string for the current server version
                 that gets bumped when we release, as well as code to parse it
@@ -4788,7 +4393,8 @@
             - src/mongo/util/log.cpp
             - src/mongo/util/log.h
         -   group_title: Logstream Builder
-            group_description: Class that provides a streaming interface to the logging system.
+            group_description: Class that provides a streaming interface to the logging
+                system.
             group_files:
             - src/mongo/logger/logstream_builder.cpp
             - src/mongo/logger/logstream_builder.h
@@ -4948,9 +4554,7 @@
             group_description: Check various expected startup conditions, such as
                 whether mongod is running in 32 bit mode or on a numa machine, and
                 log warnings to the startup warnings log if necessary
-            group_files:
-            - src/mongo/db/startup_warnings.cpp
-            - src/mongo/db/startup_warnings.h
+            group_files: []
         -   group_title: Initialization Framework
             group_description: MONGO_INITIALIZER startup initialization framework.  Used
                 by anything that shares the server code, which currently includes
@@ -5056,8 +4660,7 @@
             group_description: Stubs to initialize the client driver when it is used
                 standalone. Calls MONGO_INITIALIZERs among# other things. Not built
                 into the server.
-            group_files:
-            - src/mongo/client/init.h
+            group_files: []
         -   group_title: Cpp Driver Core
             group_description: 'The Core C++ Client Driver Library
 
@@ -5067,7 +4670,6 @@
             - src/mongo/client/connpool.h
             - src/mongo/client/constants.h
             - src/mongo/client/dbclient.cpp
-            - src/mongo/client/dbclient.h
             - src/mongo/client/dbclient_rs.cpp
             - src/mongo/client/dbclient_rs.h
             - src/mongo/client/dbclient_rs_test.cpp
@@ -5400,8 +5002,6 @@
             - src/mongo/s/write_ops/batch_downconvert.cpp
             - src/mongo/s/write_ops/batch_downconvert.h
             - src/mongo/s/write_ops/batch_downconvert_test.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.cpp
-            - src/mongo/s/write_ops/dbclient_safe_writer.h
         -   group_title: Wire Version
             group_description: Header to enumerate the wire protocol version, along
                 with the max and min supported versions.  The versions so far carry
@@ -5519,76 +5119,57 @@
         module_groups:
         -   group_title: Page Aligned Buffer
             group_description: Page aligned buffer builder
-            group_files:
-            - src/mongo/util/alignedbuilder.cpp
-            - src/mongo/util/alignedbuilder.h
+            group_files: []
         -   group_title: Write Intents
             group_description: In memory classes that store operations from clients
                 that need to be journaled that have not yet been serialized into journal
                 entries.
-            group_files:
-            - src/mongo/db/dur_commitjob.cpp
-            - src/mongo/db/dur_commitjob.h
+            group_files: []
         -   group_title: Journal Entry Serialization
             group_description: Stage of journaling that takes the in memory representation
                 of operations that need to be journaled and processes them to create
                 the actual buffers that get written back to the journal files.  Also
                 handles merging of overlapping entries.
-            group_files:
-            - src/mongo/db/dur_preplogbuffer.cpp
+            group_files: []
         -   group_title: Journal File Management
             group_description: Used to manage the journal files, including allocation
                 and appending data.  Actually writes the data to the on disk journal
                 files.
-            group_files:
-            - src/mongo/db/dur_journal.cpp
-            - src/mongo/db/dur_journal.h
-            - src/mongo/db/dur_journalimpl.h
+            group_files: []
         -   group_title: Persistent Data File Writes
             group_description: Stage of journaling that actully applies the journal
                 operations to the shared view of the data files, logically writing
                 the changes back to disk.  Journal files only get deleted when the
                 changes have actually been written to disk.
-            group_files:
-            - src/mongo/db/dur_writetodatafiles.cpp
+            group_files: []
         -   group_title: Journaled Non Write Operations
             group_description: Operations that need to be journaled that are not writes,
                 such as data file creation.
-            group_files:
-            - src/mongo/db/durop.cpp
-            - src/mongo/db/durop.h
+            group_files: []
         -   group_title: Journaling Main
             group_description: Top level interface to the journaling system as well
                 as the journal commit thread.  This interface can be transparently
                 swapped out with a class that does not actually do the journaling
                 in the case where journaling is disabled.
-            group_files:
-            - src/mongo/db/dur.cpp
-            - src/mongo/db/dur.h
+            group_files: []
         -   group_title: Journal Format
             group_description: On disk format of all journaling related objects.
-            group_files:
-            - src/mongo/db/dur_journalformat.h
+            group_files: []
         -   group_title: Journal Recovery
             group_description: Code to actually apply the journal operations when
                 the system is recovering.  Note that currently this is also used during
                 normal operation when writing to the persistent representation of
                 the datafiles.
-            group_files:
-            - src/mongo/db/dur_recover.cpp
-            - src/mongo/db/dur_recover.h
+            group_files: []
         -   group_title: Journal Stats
             group_description: Statistics about our journal operation.
-            group_files:
-            - src/mongo/db/dur_stats.h
+            group_files: []
         -   group_title: Journaling Memory Map Management
             group_description: Classes to make it easier to manage and keep track
                 of the private and shared "views" of a file needed by the journaling
                 system.  This also handles remapping the private view to allow the
                 OS to free the pages that are no longer needed.
-            group_files:
-            - src/mongo/db/storage/durable_mapped_file.cpp
-            - src/mongo/db/storage/durable_mapped_file.h
+            group_files: []
         -   group_title: Append Only File
             group_description: Used by journaling system to write our prepared buffers
                 to the journal files.
@@ -5614,14 +5195,11 @@
         -   group_title: Windows Mmapped File Implementation
             group_description: Implementation for dealing with memory mapped files
                 in Windows.
-            group_files:
-            - src/mongo/util/mmap_win.cpp
+            group_files: []
         -   group_title: Data File Layout
             group_description: Class for interacting with a database data file and
                 managing the on disk data file format.
-            group_files:
-            - src/mongo/db/storage/data_file.cpp
-            - src/mongo/db/storage/data_file.h
+            group_files: []
     -   module_title: Page Fault Utilities
         module_name: page_fault_utilities
         module_description: 'TODO: page_fault_utilities description'
@@ -5629,9 +5207,7 @@
         -   group_title: 'TODO: Name this group'
             group_description: Contains the PageFaultException and NoPageFaultsAllowed
                 classes.## where are these used?
-            group_files:
-            - src/mongo/db/pagefault.cpp
-            - src/mongo/db/pagefault.h
+            group_files: []
         -   group_title: 'TODO: Name this group'
             group_description: Code to go in and touch pages so that they are brought
                 into memory.## who calls these?
@@ -5655,11 +5231,7 @@
         -   group_title: Namespace Holder
             group_description: Class to hold namespace strings that look like "<db>.<collection>"
                 in a fixed width form
-            group_files:
-            - src/mongo/db/structure/catalog/namespace.cpp
-            - src/mongo/db/structure/catalog/namespace.h
-            - src/mongo/db/structure/catalog/namespace-inl.h
-            - src/mongo/db/structure/catalog/namespace_test.cpp
+            group_files: []
         -   group_title: Index Catalog
             group_description: Classes to manage and iterate indexes.  There should
                 only be one index catalog per collection.  Contains some subset of
@@ -5687,18 +5259,13 @@
         -   group_title: Namespace Details
             group_description: Class to manage the disk format of an entry for a single
                 collection in the ".ns" files
-            group_files:
-            - src/mongo/db/structure/catalog/namespace_details-inl.h
-            - src/mongo/db/structure/catalog/namespace_details.cpp
-            - src/mongo/db/structure/catalog/namespace_details.h
+            group_files: []
         -   group_title: Namespace Index
             group_description: Manages the disk format for the ".ns" files, including
                 adding the metadata for a new namespace or removing metadata for a
                 deleted namespace.  Provides a way to access the Namespace Details
                 for a single namespace
-            group_files:
-            - src/mongo/db/structure/catalog/namespace_index.cpp
-            - src/mongo/db/structure/catalog/namespace_index.h
+            group_files: []
         -   group_title: Collection Class
             group_description: Class to manage a single collection, including collection
                 data and collection metadata.
@@ -5716,9 +5283,7 @@
                 and invalidation purposes.  The pattern is that the relevant objects
                 must be registered here so that this code can essentially call back
                 to do the invalidation when necessary
-            group_files:
-            - src/mongo/db/catalog/collection_cursor_cache.cpp
-            - src/mongo/db/catalog/collection_cursor_cache.h
+            group_files: []
         -   group_title: Foreground Index Creation
             group_description: 'Free function to create an index in the foreground.  TODO:
                 Find all the ways an index can be created and put them in the same
@@ -5735,36 +5300,27 @@
         -   group_title: Capped Collection Management
             group_description: Contains code to do low level storage management of
                 a capped collection, such as allocation of new records
-            group_files:
-            - src/mongo/db/structure/catalog/cap.cpp
+            group_files: []
         -   group_title: Persistent Hash Table
             group_description: Fixed size hash table that is appropriate for managing
                 memory that is persisted to disk
-            group_files:
-            - src/mongo/db/structure/catalog/hashtab.h
+            group_files: []
         -   group_title: Index Details
             group_description: On disk format of index metadata
-            group_files:
-            - src/mongo/db/structure/catalog/index_details.cpp
-            - src/mongo/db/structure/catalog/index_details.h
+            group_files: []
         -   group_title: Collection Compact
             group_description: 'Contains the code that actually does the work of compacting
                 a collection.  TODO: put this near the actual compact command'
-            group_files:
-            - src/mongo/db/structure/collection_compact.cpp
+            group_files: []
         -   group_title: Collection Iterator
             group_description: Contains code that essentially does a table scan of
                 a collection. Has iterators for both capped and non capped collections.
-            group_files:
-            - src/mongo/db/structure/collection_iterator.cpp
-            - src/mongo/db/structure/collection_iterator.h
+            group_files: []
         -   group_title: DiskLoc Class
             group_description: A DiskLoc is simply a file number and offset into the
                 file for a db. You can think of this as an# "address" into our database
                 storage space.
-            group_files:
-            - src/mongo/db/diskloc.h
-            - src/mongo/db/diskloc_test.cpp
+            group_files: []
         -   group_title: DiskLoc Invalidation Type
             group_description: Type of a DiskLoc invalidation.
             group_files:
@@ -5773,30 +5329,22 @@
             group_description: A record is simply a "node" in a linked list. It contains
                 "prev" and "next" offsets, as well as# the offset of the extent in
                 the current file.
-            group_files:
-            - src/mongo/db/storage/record.cpp
-            - src/mongo/db/storage/record.h
+            group_files: []
         -   group_title: Record Store
             group_description: Manages Records.  Contains code to delete and insert
                 records, as well as helpers to construct a Record object from a DiscLoc.  Also
                 handles allocating new extents if the current extent does not have
                 room for another record.
-            group_files:
-            - src/mongo/db/structure/record_store.cpp
-            - src/mongo/db/structure/record_store.h
+            group_files: []
         -   group_title: Extent Class
             group_description: An extent is a bucket of records. Extents themselves
                 are in a kind of linked list, except instead# of offsets into a single
                 datafile, their "prev" and "next" members are DiskLocs.
-            group_files:
-            - src/mongo/db/storage/extent.cpp
-            - src/mongo/db/storage/extent.h
+            group_files: []
         -   group_title: Extent Manager
             group_description: Sits above an extent and has helper functions to manage
                 them as a whole. This is the new way to# iterate extents.
-            group_files:
-            - src/mongo/db/storage/extent_manager.cpp
-            - src/mongo/db/storage/extent_manager.h
+            group_files: []
         -   group_title: Cloner And Copy Commands
             group_description: Contains various commands to copy entire collections
                 and databases, as well as the Cloner class, which contains the actual
@@ -5837,11 +5385,7 @@
                 That also explains why this is "pdfile" for "P Data File".  It contains
                 various old functions for interacting directly with the storage layer
                 that should soon die a horrible death.'
-            group_files:
-            - src/mongo/db/pdfile.cpp
-            - src/mongo/db/pdfile.h
-            - src/mongo/db/pdfile_private.h
-            - src/mongo/db/pdfile_version.h
+            group_files: []
 -   system_title: Dead Code
     system_name: dead_code
     system_description: Code to ignore.  Either dead or going away.
@@ -5853,9 +5397,7 @@
         -   group_title: d
             group_description: Legacy files that should go away. Global class called
                 "d" that used to contain a bunch of mongod global variables.
-            group_files:
-            - src/mongo/db/d_globals.cpp
-            - src/mongo/db/d_globals.h
+            group_files: []
     -   module_title: Dead Code
         module_name: dead_code
         module_description: Code that is not used by anything but is still in the
@@ -5864,16 +5406,7 @@
         -   group_title: Dead Code
             group_description: Code that is not used by anything but is still in the
                 tree
-            group_files:
-            - src/mongo/util/trace.cpp
-            - src/mongo/db/tests.cpp
-            - src/mongo/db/stats/service_stats.cpp
-            - src/mongo/db/stats/service_stats.h
-            - src/mongo/util/histogram.cpp
-            - src/mongo/util/histogram.h
-            - src/mongo/dbtests/histogram_test.cpp
-            - src/mongo/util/lruishmap.h
-            - src/mongo/db/taskqueue.h
+            group_files: []
 -   system_title: Security
     system_name: security
     system_description: MongoDB security code
@@ -5914,8 +5447,6 @@
             - src/mongo/db/auth/action_set.h
             - src/mongo/db/auth/action_set_test.cpp
             - src/mongo/db/auth/action_types.txt
-            - build/darwin/dbg_off/opt_off/ssl/mongo/db/auth/action_type.h
-            - build/darwin/dbg_off/opt_off/ssl/mongo/db/auth/action_type.cpp
             - src/mongo/db/auth/generate_action_types.py
         -   group_title: Privileges
             group_description: A privilege represents a set of actions that can be
@@ -6080,5 +5611,803 @@
         module_groups:
         -   group_title: Legacy Server Parameters
             group_description: Legacy parameters set via setParameter.
+            group_files: []
+-   system_name: uncategorized_system
+    system_title: Uncategorized System
+    system_description: Uncategorized System
+    system_modules:
+    -   module_name: uncategorized_module
+        module_title: Uncategorized Module
+        module_description: Uncategorized Module
+        module_groups:
+        -   group_title: Uncategorized Group
+            group_description: Uncategorized Group
             group_files:
-            - src/mongo/db/auth/auth_server_parameters.cpp
+            - build/linux2/normal/buildinfo.cpp
+            - build/linux2/normal/mongo/base/error_codes.cpp
+            - build/linux2/normal/mongo/base/error_codes.h
+            - build/linux2/normal/mongo/buildinfo.cpp
+            - build/linux2/normal/mongo/db/auth/action_type.cpp
+            - build/linux2/normal/mongo/db/auth/action_type.h
+            - build/linux2/normal/mongo/db/fts/stop_words_list.cpp
+            - build/linux2/normal/mongo/db/fts/stop_words_list.h
+            - build/linux2/normal/mongo/shell/mongo-server.cpp
+            - build/linux2/normal/mongo/shell/mongo.cpp
+            - build/linux2/normal/third_party/v8/src/experimental-libraries.cc
+            - build/linux2/normal/third_party/v8/src/libraries.cc
+            - build/linux2/normal/third_party/wiredtiger/wiredtiger.h
+            - src/mongo/base/checked_cast.h
+            - src/mongo/base/compare_numbers.h
+            - src/mongo/base/data_cursor.h
+            - src/mongo/base/data_cursor_test.cpp
+            - src/mongo/base/data_view.h
+            - src/mongo/base/data_view_test.cpp
+            - src/mongo/base/encoded_value_storage.h
+            - src/mongo/base/encoded_value_storage_test.cpp
+            - src/mongo/base/validate_locale.cpp
+            - src/mongo/bson/bson_startuptest.cpp
+            - src/mongo/bson/bsonelement.cpp
+            - src/mongo/bson/bsonmisc.cpp
+            - src/mongo/bson/bsonobj.cpp
+            - src/mongo/bson/bsonobjbuilder.cpp
+            - src/mongo/bson/bsonobjiterator.cpp
+            - src/mongo/bson/bsontypes.cpp
+            - src/mongo/bson/oid_test.cpp
+            - src/mongo/bson/util/bson_check.h
+            - src/mongo/bson/util/bson_check_test.cpp
+            - src/mongo/client/native_sasl_client_session.cpp
+            - src/mongo/client/native_sasl_client_session.h
+            - src/mongo/client/sasl_client_authenticate_impl.cpp
+            - src/mongo/client/sasl_client_conversation.cpp
+            - src/mongo/client/sasl_client_conversation.h
+            - src/mongo/client/sasl_client_session.cpp
+            - src/mongo/client/sasl_client_session.h
+            - src/mongo/client/sasl_plain_client_conversation.cpp
+            - src/mongo/client/sasl_plain_client_conversation.h
+            - src/mongo/client/sasl_scramsha1_client_conversation.cpp
+            - src/mongo/client/sasl_scramsha1_client_conversation.h
+            - src/mongo/crypto/crypto.h
+            - src/mongo/crypto/crypto_test.cpp
+            - src/mongo/crypto/crypto_tom.cpp
+            - src/mongo/crypto/mechanism_scram.cpp
+            - src/mongo/crypto/mechanism_scram.h
+            - src/mongo/crypto/tom/tomcrypt.h
+            - src/mongo/crypto/tom/tomcrypt_argchk.h
+            - src/mongo/crypto/tom/tomcrypt_cfg.h
+            - src/mongo/crypto/tom/tomcrypt_cipher.h
+            - src/mongo/crypto/tom/tomcrypt_custom.h
+            - src/mongo/crypto/tom/tomcrypt_hash.h
+            - src/mongo/crypto/tom/tomcrypt_mac.h
+            - src/mongo/crypto/tom/tomcrypt_macros.h
+            - src/mongo/crypto/tom/tomcrypt_misc.h
+            - src/mongo/db/auth/internal_user_auth.cpp
+            - src/mongo/db/auth/internal_user_auth.h
+            - src/mongo/db/auth/native_sasl_authentication_session.cpp
+            - src/mongo/db/auth/native_sasl_authentication_session.h
+            - src/mongo/db/auth/sasl_authentication_session.cpp
+            - src/mongo/db/auth/sasl_authentication_session.h
+            - src/mongo/db/auth/sasl_commands.cpp
+            - src/mongo/db/auth/sasl_options.cpp
+            - src/mongo/db/auth/sasl_options.h
+            - src/mongo/db/auth/sasl_plain_server_conversation.cpp
+            - src/mongo/db/auth/sasl_plain_server_conversation.h
+            - src/mongo/db/auth/sasl_scramsha1_server_conversation.cpp
+            - src/mongo/db/auth/sasl_scramsha1_server_conversation.h
+            - src/mongo/db/auth/sasl_server_conversation.cpp
+            - src/mongo/db/auth/sasl_server_conversation.h
+            - src/mongo/db/auth/sasl_test_crutch.cpp
+            - src/mongo/db/catalog/collection_catalog_entry.h
+            - src/mongo/db/catalog/collection_compact.cpp
+            - src/mongo/db/catalog/collection_options.cpp
+            - src/mongo/db/catalog/collection_options.h
+            - src/mongo/db/catalog/collection_options_test.cpp
+            - src/mongo/db/catalog/cursor_manager.cpp
+            - src/mongo/db/catalog/cursor_manager.h
+            - src/mongo/db/catalog/database_catalog_entry.h
+            - src/mongo/db/catalog/head_manager.h
+            - src/mongo/db/commands/clone.cpp
+            - src/mongo/db/commands/clone_collection.cpp
+            - src/mongo/db/commands/copydb.cpp
+            - src/mongo/db/commands/copydb_start_commands.cpp
+            - src/mongo/db/commands/copydb_start_commands.h
+            - src/mongo/db/commands/count.cpp
+            - src/mongo/db/commands/explain_cmd.cpp
+            - src/mongo/db/commands/explain_cmd.h
+            - src/mongo/db/commands/find_cmd.cpp
+            - src/mongo/db/commands/find_cmd.h
+            - src/mongo/db/commands/geo_near_cmd.cpp
+            - src/mongo/db/commands/group.h
+            - src/mongo/db/commands/list_collections.cpp
+            - src/mongo/db/commands/list_databases.cpp
+            - src/mongo/db/commands/list_indexes.cpp
+            - src/mongo/db/commands/mr_test.cpp
+            - src/mongo/db/commands/repair_cursor.cpp
+            - src/mongo/db/commands/server_status_internal.cpp
+            - src/mongo/db/commands/server_status_internal.h
+            - src/mongo/db/commands/server_status_metric.cpp
+            - src/mongo/db/commands/server_status_metric.h
+            - src/mongo/db/commands/writeback_compatibility_shim.cpp
+            - src/mongo/db/concurrency/d_concurrency.cpp
+            - src/mongo/db/concurrency/d_concurrency.h
+            - src/mongo/db/concurrency/d_concurrency_test.cpp
+            - src/mongo/db/concurrency/deadlock_detection_test.cpp
+            - src/mongo/db/concurrency/fast_map_noalloc.h
+            - src/mongo/db/concurrency/fast_map_noalloc_test.cpp
+            - src/mongo/db/concurrency/lock_manager.cpp
+            - src/mongo/db/concurrency/lock_manager.h
+            - src/mongo/db/concurrency/lock_manager_defs.h
+            - src/mongo/db/concurrency/lock_manager_test.cpp
+            - src/mongo/db/concurrency/lock_manager_test_help.h
+            - src/mongo/db/concurrency/lock_request_list.h
+            - src/mongo/db/concurrency/lock_state.cpp
+            - src/mongo/db/concurrency/lock_state.h
+            - src/mongo/db/concurrency/lock_state_test.cpp
+            - src/mongo/db/concurrency/lock_stats.cpp
+            - src/mongo/db/concurrency/lock_stats.h
+            - src/mongo/db/concurrency/lock_stats_test.cpp
+            - src/mongo/db/concurrency/locker.h
+            - src/mongo/db/concurrency/locker_noop.h
+            - src/mongo/db/concurrency/write_conflict_exception.cpp
+            - src/mongo/db/concurrency/write_conflict_exception.h
+            - src/mongo/db/currentop_command.cpp
+            - src/mongo/db/currentop_command.h
+            - src/mongo/db/dbdirectclient.cpp
+            - src/mongo/db/dbdirectclient.h
+            - src/mongo/db/dbmessage_test.cpp
+            - src/mongo/db/exec/cached_plan.cpp
+            - src/mongo/db/exec/cached_plan.h
+            - src/mongo/db/exec/count_scan.cpp
+            - src/mongo/db/exec/count_scan.h
+            - src/mongo/db/exec/delete.cpp
+            - src/mongo/db/exec/delete.h
+            - src/mongo/db/exec/eof.cpp
+            - src/mongo/db/exec/eof.h
+            - src/mongo/db/exec/geo_near.cpp
+            - src/mongo/db/exec/geo_near.h
+            - src/mongo/db/exec/group.cpp
+            - src/mongo/db/exec/group.h
+            - src/mongo/db/exec/idhack.cpp
+            - src/mongo/db/exec/idhack.h
+            - src/mongo/db/exec/multi_iterator.cpp
+            - src/mongo/db/exec/multi_iterator.h
+            - src/mongo/db/exec/multi_plan.cpp
+            - src/mongo/db/exec/multi_plan.h
+            - src/mongo/db/exec/near.cpp
+            - src/mongo/db/exec/near.h
+            - src/mongo/db/exec/pipeline_proxy.cpp
+            - src/mongo/db/exec/pipeline_proxy.h
+            - src/mongo/db/exec/queued_data_stage.cpp
+            - src/mongo/db/exec/queued_data_stage.h
+            - src/mongo/db/exec/queued_data_stage_test.cpp
+            - src/mongo/db/exec/scoped_timer.cpp
+            - src/mongo/db/exec/scoped_timer.h
+            - src/mongo/db/exec/subplan.cpp
+            - src/mongo/db/exec/subplan.h
+            - src/mongo/db/exec/update.cpp
+            - src/mongo/db/exec/update.h
+            - src/mongo/db/geo/big_polygon.cpp
+            - src/mongo/db/geo/big_polygon.h
+            - src/mongo/db/geo/big_polygon_test.cpp
+            - src/mongo/db/geo/geometry_container.cpp
+            - src/mongo/db/geo/geometry_container.h
+            - src/mongo/db/geo/r2_region_coverer.cpp
+            - src/mongo/db/geo/r2_region_coverer.h
+            - src/mongo/db/geo/r2_region_coverer_test.cpp
+            - src/mongo/db/get_status_from_command_result.cpp
+            - src/mongo/db/get_status_from_command_result.h
+            - src/mongo/db/global_environment_d.cpp
+            - src/mongo/db/global_environment_d.h
+            - src/mongo/db/global_environment_experiment.cpp
+            - src/mongo/db/global_environment_experiment.h
+            - src/mongo/db/global_environment_noop.cpp
+            - src/mongo/db/global_environment_noop.h
+            - src/mongo/db/global_optime.cpp
+            - src/mongo/db/global_optime.h
+            - src/mongo/db/index/btree_based_bulk_access_method.cpp
+            - src/mongo/db/index/btree_based_bulk_access_method.h
+            - src/mongo/db/index/btree_key_generator_test.cpp
+            - src/mongo/db/index/expression_keys_private.cpp
+            - src/mongo/db/index/expression_keys_private.h
+            - src/mongo/db/index/s2_common.h
+            - src/mongo/db/keypattern_test.cpp
+            - src/mongo/db/matcher/expression_where_noop.cpp
+            - src/mongo/db/namespace_string.cpp
+            - src/mongo/db/operation_context.h
+            - src/mongo/db/operation_context_impl.cpp
+            - src/mongo/db/operation_context_impl.h
+            - src/mongo/db/operation_context_noop.h
+            - src/mongo/db/ops/parsed_delete.cpp
+            - src/mongo/db/ops/parsed_delete.h
+            - src/mongo/db/ops/parsed_update.cpp
+            - src/mongo/db/ops/parsed_update.h
+            - src/mongo/db/ops/update_result.cpp
+            - src/mongo/db/query/explain.cpp
+            - src/mongo/db/query/explain.h
+            - src/mongo/db/query/explain_common.cpp
+            - src/mongo/db/query/explain_common.h
+            - src/mongo/db/query/expression_index.cpp
+            - src/mongo/db/query/expression_index.h
+            - src/mongo/db/query/expression_index_knobs.cpp
+            - src/mongo/db/query/expression_index_knobs.h
+            - src/mongo/db/query/find.cpp
+            - src/mongo/db/query/find.h
+            - src/mongo/db/query/get_executor.cpp
+            - src/mongo/db/query/get_executor.h
+            - src/mongo/db/query/get_executor_test.cpp
+            - src/mongo/db/query/plan_yield_policy.cpp
+            - src/mongo/db/query/plan_yield_policy.h
+            - src/mongo/db/query/planner_analysis_test.cpp
+            - src/mongo/db/query/query_planner_common.cpp
+            - src/mongo/db/query/query_yield.cpp
+            - src/mongo/db/query/query_yield.h
+            - src/mongo/db/record_id.h
+            - src/mongo/db/record_id_test.cpp
+            - src/mongo/db/repl/check_quorum_for_config_change.cpp
+            - src/mongo/db/repl/check_quorum_for_config_change.h
+            - src/mongo/db/repl/check_quorum_for_config_change_test.cpp
+            - src/mongo/db/repl/elect_cmd_runner.cpp
+            - src/mongo/db/repl/elect_cmd_runner.h
+            - src/mongo/db/repl/elect_cmd_runner_test.cpp
+            - src/mongo/db/repl/freshness_checker.cpp
+            - src/mongo/db/repl/freshness_checker.h
+            - src/mongo/db/repl/freshness_checker_test.cpp
+            - src/mongo/db/repl/handshake_args.cpp
+            - src/mongo/db/repl/handshake_args.h
+            - src/mongo/db/repl/heartbeat_response_action.cpp
+            - src/mongo/db/repl/heartbeat_response_action.h
+            - src/mongo/db/repl/initial_sync.cpp
+            - src/mongo/db/repl/initial_sync.h
+            - src/mongo/db/repl/is_master_response.cpp
+            - src/mongo/db/repl/is_master_response.h
+            - src/mongo/db/repl/isself.cpp
+            - src/mongo/db/repl/isself.h
+            - src/mongo/db/repl/isself_test.cpp
+            - src/mongo/db/repl/member_config.cpp
+            - src/mongo/db/repl/member_config.h
+            - src/mongo/db/repl/member_config_test.cpp
+            - src/mongo/db/repl/member_heartbeat_data.cpp
+            - src/mongo/db/repl/member_heartbeat_data.h
+            - src/mongo/db/repl/member_state.h
+            - src/mongo/db/repl/minvalid.cpp
+            - src/mongo/db/repl/minvalid.h
+            - src/mongo/db/repl/multicmd.cpp
+            - src/mongo/db/repl/network_interface_impl.cpp
+            - src/mongo/db/repl/network_interface_impl.h
+            - src/mongo/db/repl/network_interface_mock.cpp
+            - src/mongo/db/repl/network_interface_mock.h
+            - src/mongo/db/repl/operation_context_repl_mock.cpp
+            - src/mongo/db/repl/operation_context_repl_mock.h
+            - src/mongo/db/repl/repl_set_heartbeat_args.cpp
+            - src/mongo/db/repl/repl_set_heartbeat_args.h
+            - src/mongo/db/repl/repl_set_heartbeat_response.cpp
+            - src/mongo/db/repl/repl_set_heartbeat_response.h
+            - src/mongo/db/repl/repl_set_heartbeat_response_test.cpp
+            - src/mongo/db/repl/repl_set_seed_list.cpp
+            - src/mongo/db/repl/repl_set_seed_list.h
+            - src/mongo/db/repl/repl_settings.cpp
+            - src/mongo/db/repl/repl_settings.h
+            - src/mongo/db/repl/replica_set_config.cpp
+            - src/mongo/db/repl/replica_set_config.h
+            - src/mongo/db/repl/replica_set_config_checks.cpp
+            - src/mongo/db/repl/replica_set_config_checks.h
+            - src/mongo/db/repl/replica_set_config_checks_test.cpp
+            - src/mongo/db/repl/replica_set_config_test.cpp
+            - src/mongo/db/repl/replica_set_tag.cpp
+            - src/mongo/db/repl/replica_set_tag.h
+            - src/mongo/db/repl/replica_set_tag_test.cpp
+            - src/mongo/db/repl/replication_coordinator.cpp
+            - src/mongo/db/repl/replication_coordinator.h
+            - src/mongo/db/repl/replication_coordinator_external_state.cpp
+            - src/mongo/db/repl/replication_coordinator_external_state.h
+            - src/mongo/db/repl/replication_coordinator_external_state_impl.cpp
+            - src/mongo/db/repl/replication_coordinator_external_state_impl.h
+            - src/mongo/db/repl/replication_coordinator_external_state_mock.cpp
+            - src/mongo/db/repl/replication_coordinator_external_state_mock.h
+            - src/mongo/db/repl/replication_coordinator_global.cpp
+            - src/mongo/db/repl/replication_coordinator_global.h
+            - src/mongo/db/repl/replication_coordinator_impl.cpp
+            - src/mongo/db/repl/replication_coordinator_impl.h
+            - src/mongo/db/repl/replication_coordinator_impl_elect.cpp
+            - src/mongo/db/repl/replication_coordinator_impl_elect_test.cpp
+            - src/mongo/db/repl/replication_coordinator_impl_heartbeat.cpp
+            - src/mongo/db/repl/replication_coordinator_impl_heartbeat_test.cpp
+            - src/mongo/db/repl/replication_coordinator_impl_reconfig_test.cpp
+            - src/mongo/db/repl/replication_coordinator_impl_test.cpp
+            - src/mongo/db/repl/replication_coordinator_mock.cpp
+            - src/mongo/db/repl/replication_coordinator_mock.h
+            - src/mongo/db/repl/replication_coordinator_test_fixture.cpp
+            - src/mongo/db/repl/replication_coordinator_test_fixture.h
+            - src/mongo/db/repl/replication_executor.cpp
+            - src/mongo/db/repl/replication_executor.h
+            - src/mongo/db/repl/replication_executor_test.cpp
+            - src/mongo/db/repl/replication_info.cpp
+            - src/mongo/db/repl/replset_commands.h
+            - src/mongo/db/repl/rs_initialsync.h
+            - src/mongo/db/repl/rs_rollback.h
+            - src/mongo/db/repl/rslog.cpp
+            - src/mongo/db/repl/rslog.h
+            - src/mongo/db/repl/scatter_gather_algorithm.cpp
+            - src/mongo/db/repl/scatter_gather_algorithm.h
+            - src/mongo/db/repl/scatter_gather_runner.cpp
+            - src/mongo/db/repl/scatter_gather_runner.h
+            - src/mongo/db/repl/scoped_conn.cpp
+            - src/mongo/db/repl/scoped_conn.h
+            - src/mongo/db/repl/server.h
+            - src/mongo/db/repl/sync_tail.cpp
+            - src/mongo/db/repl/sync_tail.h
+            - src/mongo/db/repl/topology_coordinator.cpp
+            - src/mongo/db/repl/topology_coordinator.h
+            - src/mongo/db/repl/topology_coordinator_impl.cpp
+            - src/mongo/db/repl/topology_coordinator_impl.h
+            - src/mongo/db/repl/topology_coordinator_impl_test.cpp
+            - src/mongo/db/repl/update_position_args.cpp
+            - src/mongo/db/repl/update_position_args.h
+            - src/mongo/db/startup_warnings_common.cpp
+            - src/mongo/db/startup_warnings_common.h
+            - src/mongo/db/startup_warnings_mongod.cpp
+            - src/mongo/db/startup_warnings_mongod.h
+            - src/mongo/db/startup_warnings_mongod_test.cpp
+            - src/mongo/db/stats/lock_server_status_section.cpp
+            - src/mongo/db/stats/range_deleter_server_status.cpp
+            - src/mongo/db/storage/bson_collection_catalog_entry.cpp
+            - src/mongo/db/storage/bson_collection_catalog_entry.h
+            - src/mongo/db/storage/capped_callback.h
+            - src/mongo/db/storage/devnull/devnull_init.cpp
+            - src/mongo/db/storage/devnull/devnull_kv_engine.cpp
+            - src/mongo/db/storage/devnull/devnull_kv_engine.h
+            - src/mongo/db/storage/in_memory/in_memory_btree_impl.cpp
+            - src/mongo/db/storage/in_memory/in_memory_btree_impl.h
+            - src/mongo/db/storage/in_memory/in_memory_btree_impl_test.cpp
+            - src/mongo/db/storage/in_memory/in_memory_engine.cpp
+            - src/mongo/db/storage/in_memory/in_memory_engine.h
+            - src/mongo/db/storage/in_memory/in_memory_engine_test.cpp
+            - src/mongo/db/storage/in_memory/in_memory_init.cpp
+            - src/mongo/db/storage/in_memory/in_memory_record_store.cpp
+            - src/mongo/db/storage/in_memory/in_memory_record_store.h
+            - src/mongo/db/storage/in_memory/in_memory_record_store_test.cpp
+            - src/mongo/db/storage/in_memory/in_memory_recovery_unit.cpp
+            - src/mongo/db/storage/in_memory/in_memory_recovery_unit.h
+            - src/mongo/db/storage/index_entry_comparison.cpp
+            - src/mongo/db/storage/index_entry_comparison.h
+            - src/mongo/db/storage/key_string.cpp
+            - src/mongo/db/storage/key_string.h
+            - src/mongo/db/storage/key_string_test.cpp
+            - src/mongo/db/storage/kv/kv_catalog.cpp
+            - src/mongo/db/storage/kv/kv_catalog.h
+            - src/mongo/db/storage/kv/kv_collection_catalog_entry.cpp
+            - src/mongo/db/storage/kv/kv_collection_catalog_entry.h
+            - src/mongo/db/storage/kv/kv_database_catalog_entry.cpp
+            - src/mongo/db/storage/kv/kv_database_catalog_entry.h
+            - src/mongo/db/storage/kv/kv_database_catalog_entry_get_index.cpp
+            - src/mongo/db/storage/kv/kv_database_catalog_entry_get_index_mock.cpp
+            - src/mongo/db/storage/kv/kv_database_catalog_entry_test.cpp
+            - src/mongo/db/storage/kv/kv_engine.h
+            - src/mongo/db/storage/kv/kv_engine_test_harness.cpp
+            - src/mongo/db/storage/kv/kv_engine_test_harness.h
+            - src/mongo/db/storage/kv/kv_storage_engine.cpp
+            - src/mongo/db/storage/kv/kv_storage_engine.h
+            - src/mongo/db/storage/mmap_v1/aligned_builder.cpp
+            - src/mongo/db/storage/mmap_v1/aligned_builder.h
+            - src/mongo/db/storage/mmap_v1/btree/btree_interface.cpp
+            - src/mongo/db/storage/mmap_v1/btree/btree_interface.h
+            - src/mongo/db/storage/mmap_v1/btree/btree_interface_test.cpp
+            - src/mongo/db/storage/mmap_v1/btree/btree_logic.cpp
+            - src/mongo/db/storage/mmap_v1/btree/btree_logic.h
+            - src/mongo/db/storage/mmap_v1/btree/btree_logic_test.cpp
+            - src/mongo/db/storage/mmap_v1/btree/btree_ondisk.cpp
+            - src/mongo/db/storage/mmap_v1/btree/btree_ondisk.h
+            - src/mongo/db/storage/mmap_v1/btree/btree_test_help.cpp
+            - src/mongo/db/storage/mmap_v1/btree/btree_test_help.h
+            - src/mongo/db/storage/mmap_v1/btree/key.cpp
+            - src/mongo/db/storage/mmap_v1/btree/key.h
+            - src/mongo/db/storage/mmap_v1/catalog/hashtab.cpp
+            - src/mongo/db/storage/mmap_v1/catalog/hashtab.h
+            - src/mongo/db/storage/mmap_v1/catalog/index_details.cpp
+            - src/mongo/db/storage/mmap_v1/catalog/index_details.h
+            - src/mongo/db/storage/mmap_v1/catalog/namespace-inl.h
+            - src/mongo/db/storage/mmap_v1/catalog/namespace.cpp
+            - src/mongo/db/storage/mmap_v1/catalog/namespace.h
+            - src/mongo/db/storage/mmap_v1/catalog/namespace_details.cpp
+            - src/mongo/db/storage/mmap_v1/catalog/namespace_details.h
+            - src/mongo/db/storage/mmap_v1/catalog/namespace_details_collection_entry.cpp
+            - src/mongo/db/storage/mmap_v1/catalog/namespace_details_collection_entry.h
+            - src/mongo/db/storage/mmap_v1/catalog/namespace_details_rsv1_metadata.cpp
+            - src/mongo/db/storage/mmap_v1/catalog/namespace_details_rsv1_metadata.h
+            - src/mongo/db/storage/mmap_v1/catalog/namespace_index.cpp
+            - src/mongo/db/storage/mmap_v1/catalog/namespace_index.h
+            - src/mongo/db/storage/mmap_v1/catalog/namespace_test.cpp
+            - src/mongo/db/storage/mmap_v1/data_file.cpp
+            - src/mongo/db/storage/mmap_v1/data_file.h
+            - src/mongo/db/storage/mmap_v1/data_file_sync.cpp
+            - src/mongo/db/storage/mmap_v1/data_file_sync.h
+            - src/mongo/db/storage/mmap_v1/diskloc.h
+            - src/mongo/db/storage/mmap_v1/dur.cpp
+            - src/mongo/db/storage/mmap_v1/dur.h
+            - src/mongo/db/storage/mmap_v1/dur_commitjob.cpp
+            - src/mongo/db/storage/mmap_v1/dur_commitjob.h
+            - src/mongo/db/storage/mmap_v1/dur_journal.cpp
+            - src/mongo/db/storage/mmap_v1/dur_journal.h
+            - src/mongo/db/storage/mmap_v1/dur_journal_writer.cpp
+            - src/mongo/db/storage/mmap_v1/dur_journal_writer.h
+            - src/mongo/db/storage/mmap_v1/dur_journalformat.h
+            - src/mongo/db/storage/mmap_v1/dur_journalimpl.h
+            - src/mongo/db/storage/mmap_v1/dur_preplogbuffer.cpp
+            - src/mongo/db/storage/mmap_v1/dur_recover.cpp
+            - src/mongo/db/storage/mmap_v1/dur_recover.h
+            - src/mongo/db/storage/mmap_v1/dur_recovery_unit.cpp
+            - src/mongo/db/storage/mmap_v1/dur_recovery_unit.h
+            - src/mongo/db/storage/mmap_v1/dur_stats.h
+            - src/mongo/db/storage/mmap_v1/durable_mapped_file.cpp
+            - src/mongo/db/storage/mmap_v1/durable_mapped_file.h
+            - src/mongo/db/storage/mmap_v1/durop.cpp
+            - src/mongo/db/storage/mmap_v1/durop.h
+            - src/mongo/db/storage/mmap_v1/extent.cpp
+            - src/mongo/db/storage/mmap_v1/extent.h
+            - src/mongo/db/storage/mmap_v1/extent_manager.cpp
+            - src/mongo/db/storage/mmap_v1/extent_manager.h
+            - src/mongo/db/storage/mmap_v1/heap_record_store_btree.cpp
+            - src/mongo/db/storage/mmap_v1/heap_record_store_btree.h
+            - src/mongo/db/storage/mmap_v1/journal_latency_test_cmd.cpp
+            - src/mongo/db/storage/mmap_v1/mmap_v1_database_catalog_entry.cpp
+            - src/mongo/db/storage/mmap_v1/mmap_v1_database_catalog_entry.h
+            - src/mongo/db/storage/mmap_v1/mmap_v1_engine.cpp
+            - src/mongo/db/storage/mmap_v1/mmap_v1_engine.h
+            - src/mongo/db/storage/mmap_v1/mmap_v1_extent_manager.cpp
+            - src/mongo/db/storage/mmap_v1/mmap_v1_extent_manager.h
+            - src/mongo/db/storage/mmap_v1/mmap_v1_init.cpp
+            - src/mongo/db/storage/mmap_v1/mmap_v1_init_test.cpp
+            - src/mongo/db/storage/mmap_v1/mmap_v1_options.cpp
+            - src/mongo/db/storage/mmap_v1/mmap_v1_options.h
+            - src/mongo/db/storage/mmap_v1/mmap_v1_record_store_test.cpp
+            - src/mongo/db/storage/mmap_v1/record.h
+            - src/mongo/db/storage/mmap_v1/record_access_tracker.cpp
+            - src/mongo/db/storage/mmap_v1/record_access_tracker.h
+            - src/mongo/db/storage/mmap_v1/record_access_tracker_test.cpp
+            - src/mongo/db/storage/mmap_v1/record_store_v1_base.cpp
+            - src/mongo/db/storage/mmap_v1/record_store_v1_base.h
+            - src/mongo/db/storage/mmap_v1/record_store_v1_capped.cpp
+            - src/mongo/db/storage/mmap_v1/record_store_v1_capped.h
+            - src/mongo/db/storage/mmap_v1/record_store_v1_capped_iterator.cpp
+            - src/mongo/db/storage/mmap_v1/record_store_v1_capped_iterator.h
+            - src/mongo/db/storage/mmap_v1/record_store_v1_capped_test.cpp
+            - src/mongo/db/storage/mmap_v1/record_store_v1_repair_iterator.cpp
+            - src/mongo/db/storage/mmap_v1/record_store_v1_repair_iterator.h
+            - src/mongo/db/storage/mmap_v1/record_store_v1_simple.cpp
+            - src/mongo/db/storage/mmap_v1/record_store_v1_simple.h
+            - src/mongo/db/storage/mmap_v1/record_store_v1_simple_iterator.cpp
+            - src/mongo/db/storage/mmap_v1/record_store_v1_simple_iterator.h
+            - src/mongo/db/storage/mmap_v1/record_store_v1_simple_test.cpp
+            - src/mongo/db/storage/mmap_v1/record_store_v1_test_help.cpp
+            - src/mongo/db/storage/mmap_v1/record_store_v1_test_help.h
+            - src/mongo/db/storage/mmap_v1/repair_database.cpp
+            - src/mongo/db/storage/oplog_hack.cpp
+            - src/mongo/db/storage/oplog_hack.h
+            - src/mongo/db/storage/record_data.h
+            - src/mongo/db/storage/record_fetcher.h
+            - src/mongo/db/storage/record_store.h
+            - src/mongo/db/storage/record_store_test_datafor.cpp
+            - src/mongo/db/storage/record_store_test_datasize.cpp
+            - src/mongo/db/storage/record_store_test_deleterecord.cpp
+            - src/mongo/db/storage/record_store_test_docwriter.h
+            - src/mongo/db/storage/record_store_test_harness.cpp
+            - src/mongo/db/storage/record_store_test_harness.h
+            - src/mongo/db/storage/record_store_test_insertrecord.cpp
+            - src/mongo/db/storage/record_store_test_manyiter.cpp
+            - src/mongo/db/storage/record_store_test_recorditer.cpp
+            - src/mongo/db/storage/record_store_test_recordstore.cpp
+            - src/mongo/db/storage/record_store_test_repairiter.cpp
+            - src/mongo/db/storage/record_store_test_storagesize.cpp
+            - src/mongo/db/storage/record_store_test_touch.cpp
+            - src/mongo/db/storage/record_store_test_truncate.cpp
+            - src/mongo/db/storage/record_store_test_updaterecord.cpp
+            - src/mongo/db/storage/record_store_test_updaterecord.h
+            - src/mongo/db/storage/record_store_test_updatewithdamages.cpp
+            - src/mongo/db/storage/record_store_test_validate.cpp
+            - src/mongo/db/storage/record_store_test_validate.h
+            - src/mongo/db/storage/recovery_unit.h
+            - src/mongo/db/storage/recovery_unit_noop.h
+            - src/mongo/db/storage/snapshot.h
+            - src/mongo/db/storage/sorted_data_interface.h
+            - src/mongo/db/storage/sorted_data_interface_test_bulkbuilder.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_cursor.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_cursor_advanceto.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_cursor_locate.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_cursor_position.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_cursor_saverestore.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_dupkeycheck.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_fullvalidate.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_harness.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_harness.h
+            - src/mongo/db/storage/sorted_data_interface_test_insert.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_isempty.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_rollback.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_spaceused.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_touch.cpp
+            - src/mongo/db/storage/sorted_data_interface_test_unindex.cpp
+            - src/mongo/db/storage/storage_engine.h
+            - src/mongo/db/storage/storage_engine_lock_file.h
+            - src/mongo/db/storage/storage_engine_lock_file_posix.cpp
+            - src/mongo/db/storage/storage_engine_lock_file_test.cpp
+            - src/mongo/db/storage/storage_engine_metadata.cpp
+            - src/mongo/db/storage/storage_engine_metadata.h
+            - src/mongo/db/storage/storage_engine_metadata_test.cpp
+            - src/mongo/db/storage/storage_init.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_global_options.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_global_options.h
+            - src/mongo/db/storage/wiredtiger/wiredtiger_index.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_index.h
+            - src/mongo/db/storage/wiredtiger/wiredtiger_index_test.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_init.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_init_test.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_kv_engine.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_kv_engine.h
+            - src/mongo/db/storage/wiredtiger/wiredtiger_kv_engine_test.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_options_init.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_parameters.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_parameters.h
+            - src/mongo/db/storage/wiredtiger/wiredtiger_record_store.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_record_store.h
+            - src/mongo/db/storage/wiredtiger/wiredtiger_record_store_mock.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_record_store_mongod.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_record_store_test.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_recovery_unit.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_recovery_unit.h
+            - src/mongo/db/storage/wiredtiger/wiredtiger_server_status.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_server_status.h
+            - src/mongo/db/storage/wiredtiger/wiredtiger_session_cache.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_session_cache.h
+            - src/mongo/db/storage/wiredtiger/wiredtiger_size_storer.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_size_storer.h
+            - src/mongo/db/storage/wiredtiger/wiredtiger_util.cpp
+            - src/mongo/db/storage/wiredtiger/wiredtiger_util.h
+            - src/mongo/db/storage/wiredtiger/wiredtiger_util_test.cpp
+            - src/mongo/db/update_index_data.cpp
+            - src/mongo/db/update_index_data.h
+            - src/mongo/db/update_index_data_test.cpp
+            - src/mongo/dbtests/executor_registry.cpp
+            - src/mongo/dbtests/query_plan_executor.cpp
+            - src/mongo/dbtests/query_stage_count_scan.cpp
+            - src/mongo/dbtests/query_stage_delete.cpp
+            - src/mongo/dbtests/query_stage_ixscan.cpp
+            - src/mongo/dbtests/query_stage_near.cpp
+            - src/mongo/dbtests/query_stage_subplan.cpp
+            - src/mongo/dbtests/query_stage_update.cpp
+            - src/mongo/dbtests/rollbacktests.cpp
+            - src/mongo/logger/component_message_log_domain.cpp
+            - src/mongo/logger/component_message_log_domain.h
+            - src/mongo/logger/log_component.cpp
+            - src/mongo/logger/log_component.h
+            - src/mongo/logger/log_component_settings.cpp
+            - src/mongo/logger/log_component_settings.h
+            - src/mongo/logger/log_function_test.cpp
+            - src/mongo/logger/log_test.h
+            - src/mongo/logger/parse_log_component_settings.cpp
+            - src/mongo/logger/parse_log_component_settings.h
+            - src/mongo/logger/parse_log_component_settings_test.cpp
+            - src/mongo/platform/atomic_intrinsics_gcc_atomic.h
+            - src/mongo/platform/atomic_intrinsics_gcc_sync.h
+            - src/mongo/platform/atomic_word_cxx11.h
+            - src/mongo/platform/atomic_word_intrinsics.h
+            - src/mongo/platform/endian.h
+            - src/mongo/platform/endian_test.cpp
+            - src/mongo/s/chunk_diff-inl.h
+            - src/mongo/s/chunk_manager_targeter_test.cpp
+            - src/mongo/s/cluster_explain.cpp
+            - src/mongo/s/cluster_explain.h
+            - src/mongo/s/commands/cluster_explain_cmd.cpp
+            - src/mongo/s/commands/cluster_explain_cmd.h
+            - src/mongo/s/commands/cluster_find_cmd.cpp
+            - src/mongo/s/commands/cluster_find_cmd.h
+            - src/mongo/s/config_upgrade_v0_to_v6.cpp
+            - src/mongo/s/config_upgrade_v5_to_v6.cpp
+            - src/mongo/s/d_state.h
+            - src/mongo/s/multi_host_query.cpp
+            - src/mongo/s/multi_host_query.h
+            - src/mongo/s/multi_host_query_test.cpp
+            - src/mongo/s/scc_fast_query_handler.cpp
+            - src/mongo/s/scc_fast_query_handler.h
+            - src/mongo/s/shard_key_pattern_test.cpp
+            - src/mongo/s/type_actionlog.cpp
+            - src/mongo/s/type_actionlog.h
+            - src/mongo/shell/bench.cpp
+            - src/mongo/shell/bench.h
+            - src/mongo/shell/explain_query.js
+            - src/mongo/shell/explainable.js
+            - src/mongo/shell/mongodtest.js
+            - src/mongo/shell/utils_auth.js
+            - src/mongo/stdx/functional.h
+            - src/mongo/stdx/list.h
+            - src/mongo/unittest/unittest_helpers.cpp
+            - src/mongo/unittest/unittest_helpers.h
+            - src/mongo/util/allocator.cpp
+            - src/mongo/util/concurrency/mutex.cpp
+            - src/mongo/util/concurrency/ticketholder.cpp
+            - src/mongo/util/debugger.cpp
+            - src/mongo/util/debugger.h
+            - src/mongo/util/exit.h
+            - src/mongo/util/file_allocator_bench.cpp
+            - src/mongo/util/mongoutils/str_test.cpp
+            - src/mongo/util/net/hostandport.cpp
+            - src/mongo/util/net/hostandport_test.cpp
+            - src/mongo/util/net/ssl_expiration.cpp
+            - src/mongo/util/net/ssl_expiration.h
+            - src/mongo/util/print.h
+            - src/mongo/util/processinfo_linux2.cpp
+            - src/mongo/util/ptr.h
+            - src/mongo/util/quick_exit.cpp
+            - src/mongo/util/quick_exit.h
+            - src/mongo/util/shared_buffer.h
+            - src/mongo/util/signal_handlers_synchronous.cpp
+            - src/mongo/util/signal_handlers_synchronous.h
+            - src/mongo/util/stacktrace_posix.cpp
+            - src/mongo/util/tcmalloc_set_parameter.cpp
+            - src/mongo/util/thread_safe_string.cpp
+            - src/mongo/util/thread_safe_string.h
+            - src/third_party/boost/boost/asio/detail/config.hpp
+            - src/third_party/boost/boost/asio/detail/old_win_sdk_compat.hpp
+            - src/third_party/boost/boost/asio/detail/pop_options.hpp
+            - src/third_party/boost/boost/asio/detail/push_options.hpp
+            - src/third_party/boost/boost/asio/detail/shared_ptr.hpp
+            - src/third_party/boost/boost/asio/detail/socket_ops.hpp
+            - src/third_party/boost/boost/asio/detail/socket_types.hpp
+            - src/third_party/boost/boost/asio/detail/weak_ptr.hpp
+            - src/third_party/boost/boost/asio/error.hpp
+            - src/third_party/gperftools-2.2/src/base/arm_instruction_set_select.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-arm-generic.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-arm-v6plus.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-gcc.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-linuxppc.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-macosx.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-mips.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-windows.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-x86.cc
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-x86.h
+            - src/third_party/gperftools-2.2/src/base/atomicops.h
+            - src/third_party/gperftools-2.2/src/base/basictypes.h
+            - src/third_party/gperftools-2.2/src/base/commandlineflags.h
+            - src/third_party/gperftools-2.2/src/base/cycleclock.h
+            - src/third_party/gperftools-2.2/src/base/dynamic_annotations.h
+            - src/third_party/gperftools-2.2/src/base/elf_mem_image.cc
+            - src/third_party/gperftools-2.2/src/base/elf_mem_image.h
+            - src/third_party/gperftools-2.2/src/base/googleinit.h
+            - src/third_party/gperftools-2.2/src/base/linux_syscall_support.h
+            - src/third_party/gperftools-2.2/src/base/logging.cc
+            - src/third_party/gperftools-2.2/src/base/logging.h
+            - src/third_party/gperftools-2.2/src/base/spinlock.cc
+            - src/third_party/gperftools-2.2/src/base/spinlock.h
+            - src/third_party/gperftools-2.2/src/base/spinlock_internal.cc
+            - src/third_party/gperftools-2.2/src/base/spinlock_internal.h
+            - src/third_party/gperftools-2.2/src/base/spinlock_linux-inl.h
+            - src/third_party/gperftools-2.2/src/base/spinlock_posix-inl.h
+            - src/third_party/gperftools-2.2/src/base/spinlock_win32-inl.h
+            - src/third_party/gperftools-2.2/src/base/synchronization_profiling.h
+            - src/third_party/gperftools-2.2/src/base/sysinfo.cc
+            - src/third_party/gperftools-2.2/src/base/sysinfo.h
+            - src/third_party/gperftools-2.2/src/base/thread_annotations.h
+            - src/third_party/gperftools-2.2/src/base/vdso_support.cc
+            - src/third_party/gperftools-2.2/src/base/vdso_support.h
+            - src/third_party/gperftools-2.2/src/central_freelist.cc
+            - src/third_party/gperftools-2.2/src/central_freelist.h
+            - src/third_party/gperftools-2.2/src/common.cc
+            - src/third_party/gperftools-2.2/src/common.h
+            - src/third_party/gperftools-2.2/src/config-10gen-linux.h
+            - src/third_party/gperftools-2.2/src/config-10gen-macos.h
+            - src/third_party/gperftools-2.2/src/config.h
+            - src/third_party/gperftools-2.2/src/getenv_safe.h
+            - src/third_party/gperftools-2.2/src/gperftools/heap-checker.h
+            - src/third_party/gperftools-2.2/src/gperftools/malloc_extension.h
+            - src/third_party/gperftools-2.2/src/gperftools/malloc_extension_c.h
+            - src/third_party/gperftools-2.2/src/gperftools/malloc_hook.h
+            - src/third_party/gperftools-2.2/src/gperftools/malloc_hook_c.h
+            - src/third_party/gperftools-2.2/src/gperftools/stacktrace.h
+            - src/third_party/gperftools-2.2/src/gperftools/tcmalloc.h
+            - src/third_party/gperftools-2.2/src/internal_logging.cc
+            - src/third_party/gperftools-2.2/src/internal_logging.h
+            - src/third_party/gperftools-2.2/src/libc_override.h
+            - src/third_party/gperftools-2.2/src/libc_override_gcc_and_weak.h
+            - src/third_party/gperftools-2.2/src/libc_override_glibc.h
+            - src/third_party/gperftools-2.2/src/libc_override_osx.h
+            - src/third_party/gperftools-2.2/src/libc_override_redefine.h
+            - src/third_party/gperftools-2.2/src/linked_list.h
+            - src/third_party/gperftools-2.2/src/malloc_extension.cc
+            - src/third_party/gperftools-2.2/src/malloc_hook-inl.h
+            - src/third_party/gperftools-2.2/src/malloc_hook.cc
+            - src/third_party/gperftools-2.2/src/malloc_hook_mmap_freebsd.h
+            - src/third_party/gperftools-2.2/src/malloc_hook_mmap_linux.h
+            - src/third_party/gperftools-2.2/src/maybe_threads.cc
+            - src/third_party/gperftools-2.2/src/maybe_threads.h
+            - src/third_party/gperftools-2.2/src/memfs_malloc.cc
+            - src/third_party/gperftools-2.2/src/packed-cache-inl.h
+            - src/third_party/gperftools-2.2/src/page_heap.cc
+            - src/third_party/gperftools-2.2/src/page_heap.h
+            - src/third_party/gperftools-2.2/src/page_heap_allocator.h
+            - src/third_party/gperftools-2.2/src/pagemap.h
+            - src/third_party/gperftools-2.2/src/sampler.cc
+            - src/third_party/gperftools-2.2/src/sampler.h
+            - src/third_party/gperftools-2.2/src/span.cc
+            - src/third_party/gperftools-2.2/src/span.h
+            - src/third_party/gperftools-2.2/src/stack_trace_table.cc
+            - src/third_party/gperftools-2.2/src/stack_trace_table.h
+            - src/third_party/gperftools-2.2/src/stacktrace.cc
+            - src/third_party/gperftools-2.2/src/stacktrace_arm-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_generic-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_impl_setup-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_instrument-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_libunwind-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_powerpc-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_win32-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_x86-inl.h
+            - src/third_party/gperftools-2.2/src/static_vars.cc
+            - src/third_party/gperftools-2.2/src/static_vars.h
+            - src/third_party/gperftools-2.2/src/symbolize.cc
+            - src/third_party/gperftools-2.2/src/symbolize.h
+            - src/third_party/gperftools-2.2/src/system-alloc.cc
+            - src/third_party/gperftools-2.2/src/system-alloc.h
+            - src/third_party/gperftools-2.2/src/tcmalloc.cc
+            - src/third_party/gperftools-2.2/src/tcmalloc_guard.h
+            - src/third_party/gperftools-2.2/src/third_party/valgrind.h
+            - src/third_party/gperftools-2.2/src/thread_cache.cc
+            - src/third_party/gperftools-2.2/src/thread_cache.h
+            - src/third_party/gperftools-2.2/src/windows/mingw.h
+            - src/third_party/gperftools-2.2/src/windows/port.h
+            - src/third_party/shim_tz.cpp
+            - src/third_party/shim_wiredtiger.cpp
+            - src/third_party/shim_zlib.cpp
+            - src/third_party/snappy-1.1.2/snappy-c.cc
+            - src/third_party/snappy-1.1.2/snappy-c.h
+            - src/third_party/snappy-1.1.2/snappy-internal.h
+            - src/third_party/snappy-1.1.2/snappy-sinksource.cc
+            - src/third_party/snappy-1.1.2/snappy-sinksource.h
+            - src/third_party/snappy-1.1.2/snappy-stubs-internal.h
+            - src/third_party/snappy-1.1.2/snappy-stubs-public.h
+            - src/third_party/snappy-1.1.2/snappy.cc
+            - src/third_party/snappy-1.1.2/snappy.h
+            - src/third_party/v8/src/platform-linux.cc
+            - src/third_party/wiredtiger/build_linux/wiredtiger_config.h
+            - src/third_party/wiredtiger/src/include/api.h
+            - src/third_party/wiredtiger/src/include/async.h
+            - src/third_party/wiredtiger/src/include/block.h
+            - src/third_party/wiredtiger/src/include/bloom.h
+            - src/third_party/wiredtiger/src/include/btmem.h
+            - src/third_party/wiredtiger/src/include/btree.h
+            - src/third_party/wiredtiger/src/include/cache.h
+            - src/third_party/wiredtiger/src/include/compact.h
+            - src/third_party/wiredtiger/src/include/config.h
+            - src/third_party/wiredtiger/src/include/connection.h
+            - src/third_party/wiredtiger/src/include/cursor.h
+            - src/third_party/wiredtiger/src/include/dhandle.h
+            - src/third_party/wiredtiger/src/include/dlh.h
+            - src/third_party/wiredtiger/src/include/error.h
+            - src/third_party/wiredtiger/src/include/extern.h
+            - src/third_party/wiredtiger/src/include/flags.h
+            - src/third_party/wiredtiger/src/include/gcc.h
+            - src/third_party/wiredtiger/src/include/hardware.h
+            - src/third_party/wiredtiger/src/include/lint.h
+            - src/third_party/wiredtiger/src/include/log.h
+            - src/third_party/wiredtiger/src/include/lsm.h
+            - src/third_party/wiredtiger/src/include/meta.h
+            - src/third_party/wiredtiger/src/include/misc.h
+            - src/third_party/wiredtiger/src/include/msvc.h
+            - src/third_party/wiredtiger/src/include/mutex.h
+            - src/third_party/wiredtiger/src/include/os.h
+            - src/third_party/wiredtiger/src/include/os_windows.h
+            - src/third_party/wiredtiger/src/include/posix.h
+            - src/third_party/wiredtiger/src/include/queue.h
+            - src/third_party/wiredtiger/src/include/schema.h
+            - src/third_party/wiredtiger/src/include/session.h
+            - src/third_party/wiredtiger/src/include/stat.h
+            - src/third_party/wiredtiger/src/include/txn.h
+            - src/third_party/wiredtiger/src/include/verify_build.h
+            - src/third_party/wiredtiger/src/include/wiredtiger_ext.h
+            - src/third_party/wiredtiger/src/include/wt_internal.h
+            - src/third_party/zlib-1.2.8/crc32.h
+            - src/third_party/zlib-1.2.8/deflate.h
+            - src/third_party/zlib-1.2.8/gzguts.h
+            - src/third_party/zlib-1.2.8/inffast.h
+            - src/third_party/zlib-1.2.8/inffixed.h
+            - src/third_party/zlib-1.2.8/inflate.h
+            - src/third_party/zlib-1.2.8/inftrees.h
+            - src/third_party/zlib-1.2.8/trees.h
+            - src/third_party/zlib-1.2.8/zconf.h
+            - src/third_party/zlib-1.2.8/zlib.h
+            - src/third_party/zlib-1.2.8/zutil.h
