@@ -17,6 +17,15 @@
             group_description: Third Party - Snappy compression library
             group_files:
             - src/third_party/shim_snappy.cpp
+            - src/third_party/snappy-1.1.2/snappy-c.cc
+            - src/third_party/snappy-1.1.2/snappy-c.h
+            - src/third_party/snappy-1.1.2/snappy-internal.h
+            - src/third_party/snappy-1.1.2/snappy-sinksource.cc
+            - src/third_party/snappy-1.1.2/snappy-sinksource.h
+            - src/third_party/snappy-1.1.2/snappy-stubs-internal.h
+            - src/third_party/snappy-1.1.2/snappy-stubs-public.h
+            - src/third_party/snappy-1.1.2/snappy.cc
+            - src/third_party/snappy-1.1.2/snappy.h
     -   module_title: Murmurhash3
         module_name: murmurhash3
         module_description: Third Party - Non cryptographic hashing library
@@ -234,7 +243,9 @@
         module_groups:
         -   group_title: Auto Generated Files
             group_description: Third Party - V8 Javascript engine auto generated files
-            group_files: []
+            group_files:
+            - build/linux2/normal/third_party/v8/src/experimental-libraries.cc
+            - build/linux2/normal/third_party/v8/src/libraries.cc
         -   group_title: V8 Javascript Engine
             group_description: Third Party - V8 Javascript engine
             group_files:
@@ -449,6 +460,7 @@
             - src/third_party/v8/src/optimizing-compiler-thread.h
             - src/third_party/v8/src/parser.cc
             - src/third_party/v8/src/parser.h
+            - src/third_party/v8/src/platform-linux.cc
             - src/third_party/v8/src/platform-posix.cc
             - src/third_party/v8/src/platform-posix.h
             - src/third_party/v8/src/platform-tls-mac.h
@@ -736,6 +748,15 @@
             - src/third_party/boost/boost/algorithm/string/yes_no_type.hpp
             - src/third_party/boost/boost/aligned_storage.hpp
             - src/third_party/boost/boost/any.hpp
+            - src/third_party/boost/boost/asio/detail/config.hpp
+            - src/third_party/boost/boost/asio/detail/old_win_sdk_compat.hpp
+            - src/third_party/boost/boost/asio/detail/pop_options.hpp
+            - src/third_party/boost/boost/asio/detail/push_options.hpp
+            - src/third_party/boost/boost/asio/detail/shared_ptr.hpp
+            - src/third_party/boost/boost/asio/detail/socket_ops.hpp
+            - src/third_party/boost/boost/asio/detail/socket_types.hpp
+            - src/third_party/boost/boost/asio/detail/weak_ptr.hpp
+            - src/third_party/boost/boost/asio/error.hpp
             - src/third_party/boost/boost/assert.hpp
             - src/third_party/boost/boost/bind.hpp
             - src/third_party/boost/boost/bind/arg.hpp
@@ -1811,6 +1832,178 @@
             group_description: Third Party - Google performance tools and tcmalloc
             group_files:
             - src/third_party/shim_allocator.cpp
+            - src/third_party/gperftools-2.2/src/base/arm_instruction_set_select.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-arm-generic.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-arm-v6plus.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-gcc.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-linuxppc.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-macosx.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-mips.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-windows.h
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-x86.cc
+            - src/third_party/gperftools-2.2/src/base/atomicops-internals-x86.h
+            - src/third_party/gperftools-2.2/src/base/atomicops.h
+            - src/third_party/gperftools-2.2/src/base/basictypes.h
+            - src/third_party/gperftools-2.2/src/base/commandlineflags.h
+            - src/third_party/gperftools-2.2/src/base/cycleclock.h
+            - src/third_party/gperftools-2.2/src/base/dynamic_annotations.h
+            - src/third_party/gperftools-2.2/src/base/elf_mem_image.cc
+            - src/third_party/gperftools-2.2/src/base/elf_mem_image.h
+            - src/third_party/gperftools-2.2/src/base/googleinit.h
+            - src/third_party/gperftools-2.2/src/base/linux_syscall_support.h
+            - src/third_party/gperftools-2.2/src/base/logging.cc
+            - src/third_party/gperftools-2.2/src/base/logging.h
+            - src/third_party/gperftools-2.2/src/base/spinlock.cc
+            - src/third_party/gperftools-2.2/src/base/spinlock.h
+            - src/third_party/gperftools-2.2/src/base/spinlock_internal.cc
+            - src/third_party/gperftools-2.2/src/base/spinlock_internal.h
+            - src/third_party/gperftools-2.2/src/base/spinlock_linux-inl.h
+            - src/third_party/gperftools-2.2/src/base/spinlock_posix-inl.h
+            - src/third_party/gperftools-2.2/src/base/spinlock_win32-inl.h
+            - src/third_party/gperftools-2.2/src/base/synchronization_profiling.h
+            - src/third_party/gperftools-2.2/src/base/sysinfo.cc
+            - src/third_party/gperftools-2.2/src/base/sysinfo.h
+            - src/third_party/gperftools-2.2/src/base/thread_annotations.h
+            - src/third_party/gperftools-2.2/src/base/vdso_support.cc
+            - src/third_party/gperftools-2.2/src/base/vdso_support.h
+            - src/third_party/gperftools-2.2/src/central_freelist.cc
+            - src/third_party/gperftools-2.2/src/central_freelist.h
+            - src/third_party/gperftools-2.2/src/common.cc
+            - src/third_party/gperftools-2.2/src/common.h
+            - src/third_party/gperftools-2.2/src/config-10gen-linux.h
+            - src/third_party/gperftools-2.2/src/config-10gen-macos.h
+            - src/third_party/gperftools-2.2/src/config.h
+            - src/third_party/gperftools-2.2/src/getenv_safe.h
+            - src/third_party/gperftools-2.2/src/gperftools/heap-checker.h
+            - src/third_party/gperftools-2.2/src/gperftools/malloc_extension.h
+            - src/third_party/gperftools-2.2/src/gperftools/malloc_extension_c.h
+            - src/third_party/gperftools-2.2/src/gperftools/malloc_hook.h
+            - src/third_party/gperftools-2.2/src/gperftools/malloc_hook_c.h
+            - src/third_party/gperftools-2.2/src/gperftools/stacktrace.h
+            - src/third_party/gperftools-2.2/src/gperftools/tcmalloc.h
+            - src/third_party/gperftools-2.2/src/internal_logging.cc
+            - src/third_party/gperftools-2.2/src/internal_logging.h
+            - src/third_party/gperftools-2.2/src/libc_override.h
+            - src/third_party/gperftools-2.2/src/libc_override_gcc_and_weak.h
+            - src/third_party/gperftools-2.2/src/libc_override_glibc.h
+            - src/third_party/gperftools-2.2/src/libc_override_osx.h
+            - src/third_party/gperftools-2.2/src/libc_override_redefine.h
+            - src/third_party/gperftools-2.2/src/linked_list.h
+            - src/third_party/gperftools-2.2/src/malloc_extension.cc
+            - src/third_party/gperftools-2.2/src/malloc_hook-inl.h
+            - src/third_party/gperftools-2.2/src/malloc_hook.cc
+            - src/third_party/gperftools-2.2/src/malloc_hook_mmap_freebsd.h
+            - src/third_party/gperftools-2.2/src/malloc_hook_mmap_linux.h
+            - src/third_party/gperftools-2.2/src/maybe_threads.cc
+            - src/third_party/gperftools-2.2/src/maybe_threads.h
+            - src/third_party/gperftools-2.2/src/memfs_malloc.cc
+            - src/third_party/gperftools-2.2/src/packed-cache-inl.h
+            - src/third_party/gperftools-2.2/src/page_heap.cc
+            - src/third_party/gperftools-2.2/src/page_heap.h
+            - src/third_party/gperftools-2.2/src/page_heap_allocator.h
+            - src/third_party/gperftools-2.2/src/pagemap.h
+            - src/third_party/gperftools-2.2/src/sampler.cc
+            - src/third_party/gperftools-2.2/src/sampler.h
+            - src/third_party/gperftools-2.2/src/span.cc
+            - src/third_party/gperftools-2.2/src/span.h
+            - src/third_party/gperftools-2.2/src/stack_trace_table.cc
+            - src/third_party/gperftools-2.2/src/stack_trace_table.h
+            - src/third_party/gperftools-2.2/src/stacktrace.cc
+            - src/third_party/gperftools-2.2/src/stacktrace_arm-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_generic-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_impl_setup-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_instrument-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_libunwind-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_powerpc-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_win32-inl.h
+            - src/third_party/gperftools-2.2/src/stacktrace_x86-inl.h
+            - src/third_party/gperftools-2.2/src/static_vars.cc
+            - src/third_party/gperftools-2.2/src/static_vars.h
+            - src/third_party/gperftools-2.2/src/symbolize.cc
+            - src/third_party/gperftools-2.2/src/symbolize.h
+            - src/third_party/gperftools-2.2/src/system-alloc.cc
+            - src/third_party/gperftools-2.2/src/system-alloc.h
+            - src/third_party/gperftools-2.2/src/tcmalloc.cc
+            - src/third_party/gperftools-2.2/src/tcmalloc_guard.h
+            - src/third_party/gperftools-2.2/src/third_party/valgrind.h
+            - src/third_party/gperftools-2.2/src/thread_cache.cc
+            - src/third_party/gperftools-2.2/src/thread_cache.h
+            - src/third_party/gperftools-2.2/src/windows/mingw.h
+            - src/third_party/gperftools-2.2/src/windows/port.h
+            - src/third_party/boost/libs/thread/src/pthread/timeconv.inl
+    -   module_title: Wiredtiger
+        module_name: wiredtiger
+        module_description: Third Party - Wiredtiger storage engine
+        module_groups:
+        -   group_title: Wiredtiger
+            group_description: Third Party - Wiredtiger storage engine
+            group_files:
+            - build/linux2/normal/third_party/wiredtiger/wiredtiger.h
+            - src/third_party/shim_wiredtiger.cpp
+            - src/third_party/wiredtiger/build_linux/wiredtiger_config.h
+            - src/third_party/wiredtiger/src/include/api.h
+            - src/third_party/wiredtiger/src/include/async.h
+            - src/third_party/wiredtiger/src/include/block.h
+            - src/third_party/wiredtiger/src/include/bloom.h
+            - src/third_party/wiredtiger/src/include/btmem.h
+            - src/third_party/wiredtiger/src/include/btree.h
+            - src/third_party/wiredtiger/src/include/cache.h
+            - src/third_party/wiredtiger/src/include/compact.h
+            - src/third_party/wiredtiger/src/include/config.h
+            - src/third_party/wiredtiger/src/include/connection.h
+            - src/third_party/wiredtiger/src/include/cursor.h
+            - src/third_party/wiredtiger/src/include/dhandle.h
+            - src/third_party/wiredtiger/src/include/dlh.h
+            - src/third_party/wiredtiger/src/include/error.h
+            - src/third_party/wiredtiger/src/include/extern.h
+            - src/third_party/wiredtiger/src/include/flags.h
+            - src/third_party/wiredtiger/src/include/gcc.h
+            - src/third_party/wiredtiger/src/include/hardware.h
+            - src/third_party/wiredtiger/src/include/lint.h
+            - src/third_party/wiredtiger/src/include/log.h
+            - src/third_party/wiredtiger/src/include/lsm.h
+            - src/third_party/wiredtiger/src/include/meta.h
+            - src/third_party/wiredtiger/src/include/misc.h
+            - src/third_party/wiredtiger/src/include/msvc.h
+            - src/third_party/wiredtiger/src/include/mutex.h
+            - src/third_party/wiredtiger/src/include/os.h
+            - src/third_party/wiredtiger/src/include/os_windows.h
+            - src/third_party/wiredtiger/src/include/posix.h
+            - src/third_party/wiredtiger/src/include/queue.h
+            - src/third_party/wiredtiger/src/include/schema.h
+            - src/third_party/wiredtiger/src/include/session.h
+            - src/third_party/wiredtiger/src/include/stat.h
+            - src/third_party/wiredtiger/src/include/txn.h
+            - src/third_party/wiredtiger/src/include/verify_build.h
+            - src/third_party/wiredtiger/src/include/wiredtiger_ext.h
+            - src/third_party/wiredtiger/src/include/wt_internal.h
+    -   module_title: Zlib
+        module_name: zlib
+        module_description: Third Party - Zlib compression library
+        module_groups:
+        -   group_title: Zlib
+            group_description: Third Party - Zlib compression library
+            group_files:
+            - src/third_party/shim_zlib.cpp
+            - src/third_party/zlib-1.2.8/crc32.h
+            - src/third_party/zlib-1.2.8/deflate.h
+            - src/third_party/zlib-1.2.8/gzguts.h
+            - src/third_party/zlib-1.2.8/inffast.h
+            - src/third_party/zlib-1.2.8/inffixed.h
+            - src/third_party/zlib-1.2.8/inflate.h
+            - src/third_party/zlib-1.2.8/inftrees.h
+            - src/third_party/zlib-1.2.8/trees.h
+            - src/third_party/zlib-1.2.8/zconf.h
+            - src/third_party/zlib-1.2.8/zlib.h
+            - src/third_party/zlib-1.2.8/zutil.h
+    -   module_title: Tz
+        module_name: tz
+        module_description: Third Party - Tz library for platforms without proper time support
+        module_groups:
+        -   group_title: Tz
+            group_description: Third Party - Tz library for platforms without proper time support
+            group_files:
+            - src/third_party/shim_tz.cpp
 -   system_title: Tests
     system_name: tests
     system_description: MongoDB Unit Tests and Unit Test Helpers
@@ -5633,9 +5826,6 @@
             - build/linux2/normal/mongo/db/fts/stop_words_list.h
             - build/linux2/normal/mongo/shell/mongo-server.cpp
             - build/linux2/normal/mongo/shell/mongo.cpp
-            - build/linux2/normal/third_party/v8/src/experimental-libraries.cc
-            - build/linux2/normal/third_party/v8/src/libraries.cc
-            - build/linux2/normal/third_party/wiredtiger/wiredtiger.h
             - src/mongo/base/checked_cast.h
             - src/mongo/base/compare_numbers.h
             - src/mongo/base/data_cursor.h
@@ -6243,171 +6433,3 @@
             - src/mongo/util/tcmalloc_set_parameter.cpp
             - src/mongo/util/thread_safe_string.cpp
             - src/mongo/util/thread_safe_string.h
-            - src/third_party/boost/boost/asio/detail/config.hpp
-            - src/third_party/boost/boost/asio/detail/old_win_sdk_compat.hpp
-            - src/third_party/boost/boost/asio/detail/pop_options.hpp
-            - src/third_party/boost/boost/asio/detail/push_options.hpp
-            - src/third_party/boost/boost/asio/detail/shared_ptr.hpp
-            - src/third_party/boost/boost/asio/detail/socket_ops.hpp
-            - src/third_party/boost/boost/asio/detail/socket_types.hpp
-            - src/third_party/boost/boost/asio/detail/weak_ptr.hpp
-            - src/third_party/boost/boost/asio/error.hpp
-            - src/third_party/gperftools-2.2/src/base/arm_instruction_set_select.h
-            - src/third_party/gperftools-2.2/src/base/atomicops-internals-arm-generic.h
-            - src/third_party/gperftools-2.2/src/base/atomicops-internals-arm-v6plus.h
-            - src/third_party/gperftools-2.2/src/base/atomicops-internals-gcc.h
-            - src/third_party/gperftools-2.2/src/base/atomicops-internals-linuxppc.h
-            - src/third_party/gperftools-2.2/src/base/atomicops-internals-macosx.h
-            - src/third_party/gperftools-2.2/src/base/atomicops-internals-mips.h
-            - src/third_party/gperftools-2.2/src/base/atomicops-internals-windows.h
-            - src/third_party/gperftools-2.2/src/base/atomicops-internals-x86.cc
-            - src/third_party/gperftools-2.2/src/base/atomicops-internals-x86.h
-            - src/third_party/gperftools-2.2/src/base/atomicops.h
-            - src/third_party/gperftools-2.2/src/base/basictypes.h
-            - src/third_party/gperftools-2.2/src/base/commandlineflags.h
-            - src/third_party/gperftools-2.2/src/base/cycleclock.h
-            - src/third_party/gperftools-2.2/src/base/dynamic_annotations.h
-            - src/third_party/gperftools-2.2/src/base/elf_mem_image.cc
-            - src/third_party/gperftools-2.2/src/base/elf_mem_image.h
-            - src/third_party/gperftools-2.2/src/base/googleinit.h
-            - src/third_party/gperftools-2.2/src/base/linux_syscall_support.h
-            - src/third_party/gperftools-2.2/src/base/logging.cc
-            - src/third_party/gperftools-2.2/src/base/logging.h
-            - src/third_party/gperftools-2.2/src/base/spinlock.cc
-            - src/third_party/gperftools-2.2/src/base/spinlock.h
-            - src/third_party/gperftools-2.2/src/base/spinlock_internal.cc
-            - src/third_party/gperftools-2.2/src/base/spinlock_internal.h
-            - src/third_party/gperftools-2.2/src/base/spinlock_linux-inl.h
-            - src/third_party/gperftools-2.2/src/base/spinlock_posix-inl.h
-            - src/third_party/gperftools-2.2/src/base/spinlock_win32-inl.h
-            - src/third_party/gperftools-2.2/src/base/synchronization_profiling.h
-            - src/third_party/gperftools-2.2/src/base/sysinfo.cc
-            - src/third_party/gperftools-2.2/src/base/sysinfo.h
-            - src/third_party/gperftools-2.2/src/base/thread_annotations.h
-            - src/third_party/gperftools-2.2/src/base/vdso_support.cc
-            - src/third_party/gperftools-2.2/src/base/vdso_support.h
-            - src/third_party/gperftools-2.2/src/central_freelist.cc
-            - src/third_party/gperftools-2.2/src/central_freelist.h
-            - src/third_party/gperftools-2.2/src/common.cc
-            - src/third_party/gperftools-2.2/src/common.h
-            - src/third_party/gperftools-2.2/src/config-10gen-linux.h
-            - src/third_party/gperftools-2.2/src/config-10gen-macos.h
-            - src/third_party/gperftools-2.2/src/config.h
-            - src/third_party/gperftools-2.2/src/getenv_safe.h
-            - src/third_party/gperftools-2.2/src/gperftools/heap-checker.h
-            - src/third_party/gperftools-2.2/src/gperftools/malloc_extension.h
-            - src/third_party/gperftools-2.2/src/gperftools/malloc_extension_c.h
-            - src/third_party/gperftools-2.2/src/gperftools/malloc_hook.h
-            - src/third_party/gperftools-2.2/src/gperftools/malloc_hook_c.h
-            - src/third_party/gperftools-2.2/src/gperftools/stacktrace.h
-            - src/third_party/gperftools-2.2/src/gperftools/tcmalloc.h
-            - src/third_party/gperftools-2.2/src/internal_logging.cc
-            - src/third_party/gperftools-2.2/src/internal_logging.h
-            - src/third_party/gperftools-2.2/src/libc_override.h
-            - src/third_party/gperftools-2.2/src/libc_override_gcc_and_weak.h
-            - src/third_party/gperftools-2.2/src/libc_override_glibc.h
-            - src/third_party/gperftools-2.2/src/libc_override_osx.h
-            - src/third_party/gperftools-2.2/src/libc_override_redefine.h
-            - src/third_party/gperftools-2.2/src/linked_list.h
-            - src/third_party/gperftools-2.2/src/malloc_extension.cc
-            - src/third_party/gperftools-2.2/src/malloc_hook-inl.h
-            - src/third_party/gperftools-2.2/src/malloc_hook.cc
-            - src/third_party/gperftools-2.2/src/malloc_hook_mmap_freebsd.h
-            - src/third_party/gperftools-2.2/src/malloc_hook_mmap_linux.h
-            - src/third_party/gperftools-2.2/src/maybe_threads.cc
-            - src/third_party/gperftools-2.2/src/maybe_threads.h
-            - src/third_party/gperftools-2.2/src/memfs_malloc.cc
-            - src/third_party/gperftools-2.2/src/packed-cache-inl.h
-            - src/third_party/gperftools-2.2/src/page_heap.cc
-            - src/third_party/gperftools-2.2/src/page_heap.h
-            - src/third_party/gperftools-2.2/src/page_heap_allocator.h
-            - src/third_party/gperftools-2.2/src/pagemap.h
-            - src/third_party/gperftools-2.2/src/sampler.cc
-            - src/third_party/gperftools-2.2/src/sampler.h
-            - src/third_party/gperftools-2.2/src/span.cc
-            - src/third_party/gperftools-2.2/src/span.h
-            - src/third_party/gperftools-2.2/src/stack_trace_table.cc
-            - src/third_party/gperftools-2.2/src/stack_trace_table.h
-            - src/third_party/gperftools-2.2/src/stacktrace.cc
-            - src/third_party/gperftools-2.2/src/stacktrace_arm-inl.h
-            - src/third_party/gperftools-2.2/src/stacktrace_generic-inl.h
-            - src/third_party/gperftools-2.2/src/stacktrace_impl_setup-inl.h
-            - src/third_party/gperftools-2.2/src/stacktrace_instrument-inl.h
-            - src/third_party/gperftools-2.2/src/stacktrace_libunwind-inl.h
-            - src/third_party/gperftools-2.2/src/stacktrace_powerpc-inl.h
-            - src/third_party/gperftools-2.2/src/stacktrace_win32-inl.h
-            - src/third_party/gperftools-2.2/src/stacktrace_x86-inl.h
-            - src/third_party/gperftools-2.2/src/static_vars.cc
-            - src/third_party/gperftools-2.2/src/static_vars.h
-            - src/third_party/gperftools-2.2/src/symbolize.cc
-            - src/third_party/gperftools-2.2/src/symbolize.h
-            - src/third_party/gperftools-2.2/src/system-alloc.cc
-            - src/third_party/gperftools-2.2/src/system-alloc.h
-            - src/third_party/gperftools-2.2/src/tcmalloc.cc
-            - src/third_party/gperftools-2.2/src/tcmalloc_guard.h
-            - src/third_party/gperftools-2.2/src/third_party/valgrind.h
-            - src/third_party/gperftools-2.2/src/thread_cache.cc
-            - src/third_party/gperftools-2.2/src/thread_cache.h
-            - src/third_party/gperftools-2.2/src/windows/mingw.h
-            - src/third_party/gperftools-2.2/src/windows/port.h
-            - src/third_party/shim_tz.cpp
-            - src/third_party/shim_wiredtiger.cpp
-            - src/third_party/shim_zlib.cpp
-            - src/third_party/snappy-1.1.2/snappy-c.cc
-            - src/third_party/snappy-1.1.2/snappy-c.h
-            - src/third_party/snappy-1.1.2/snappy-internal.h
-            - src/third_party/snappy-1.1.2/snappy-sinksource.cc
-            - src/third_party/snappy-1.1.2/snappy-sinksource.h
-            - src/third_party/snappy-1.1.2/snappy-stubs-internal.h
-            - src/third_party/snappy-1.1.2/snappy-stubs-public.h
-            - src/third_party/snappy-1.1.2/snappy.cc
-            - src/third_party/snappy-1.1.2/snappy.h
-            - src/third_party/v8/src/platform-linux.cc
-            - src/third_party/wiredtiger/build_linux/wiredtiger_config.h
-            - src/third_party/wiredtiger/src/include/api.h
-            - src/third_party/wiredtiger/src/include/async.h
-            - src/third_party/wiredtiger/src/include/block.h
-            - src/third_party/wiredtiger/src/include/bloom.h
-            - src/third_party/wiredtiger/src/include/btmem.h
-            - src/third_party/wiredtiger/src/include/btree.h
-            - src/third_party/wiredtiger/src/include/cache.h
-            - src/third_party/wiredtiger/src/include/compact.h
-            - src/third_party/wiredtiger/src/include/config.h
-            - src/third_party/wiredtiger/src/include/connection.h
-            - src/third_party/wiredtiger/src/include/cursor.h
-            - src/third_party/wiredtiger/src/include/dhandle.h
-            - src/third_party/wiredtiger/src/include/dlh.h
-            - src/third_party/wiredtiger/src/include/error.h
-            - src/third_party/wiredtiger/src/include/extern.h
-            - src/third_party/wiredtiger/src/include/flags.h
-            - src/third_party/wiredtiger/src/include/gcc.h
-            - src/third_party/wiredtiger/src/include/hardware.h
-            - src/third_party/wiredtiger/src/include/lint.h
-            - src/third_party/wiredtiger/src/include/log.h
-            - src/third_party/wiredtiger/src/include/lsm.h
-            - src/third_party/wiredtiger/src/include/meta.h
-            - src/third_party/wiredtiger/src/include/misc.h
-            - src/third_party/wiredtiger/src/include/msvc.h
-            - src/third_party/wiredtiger/src/include/mutex.h
-            - src/third_party/wiredtiger/src/include/os.h
-            - src/third_party/wiredtiger/src/include/os_windows.h
-            - src/third_party/wiredtiger/src/include/posix.h
-            - src/third_party/wiredtiger/src/include/queue.h
-            - src/third_party/wiredtiger/src/include/schema.h
-            - src/third_party/wiredtiger/src/include/session.h
-            - src/third_party/wiredtiger/src/include/stat.h
-            - src/third_party/wiredtiger/src/include/txn.h
-            - src/third_party/wiredtiger/src/include/verify_build.h
-            - src/third_party/wiredtiger/src/include/wiredtiger_ext.h
-            - src/third_party/wiredtiger/src/include/wt_internal.h
-            - src/third_party/zlib-1.2.8/crc32.h
-            - src/third_party/zlib-1.2.8/deflate.h
-            - src/third_party/zlib-1.2.8/gzguts.h
-            - src/third_party/zlib-1.2.8/inffast.h
-            - src/third_party/zlib-1.2.8/inffixed.h
-            - src/third_party/zlib-1.2.8/inflate.h
-            - src/third_party/zlib-1.2.8/inftrees.h
-            - src/third_party/zlib-1.2.8/trees.h
-            - src/third_party/zlib-1.2.8/zconf.h
-            - src/third_party/zlib-1.2.8/zlib.h
-            - src/third_party/zlib-1.2.8/zutil.h
